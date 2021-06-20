@@ -108,7 +108,7 @@ def main(arguments):
     # other arguments are left intact as defaults, check config.py
     # add new arguments: model
     args.d = 13  # the number of features (fixed)
-    args.c = 13  # the number of classes (fixed)
+    args.c = 12  # the number of classes (fixed)
     args.n = 4690  # the number of nodes in padded graph (fixed for experiment)
     args.batch_size = int(arguments[0])  # batch size
     args.path = str(arguments[1])  # the path to load the data
@@ -140,15 +140,14 @@ def main(arguments):
         'Benign': 1,
         'Bifrose': 2,
         'Hupigon': 3,
-        'Koobface': 4,
-        'Ldpinch': 5,
-        'Lmir': 6,
-        'Rbot': 7,
-        'Sdbot': 8,
-        'Swizzor': 9,
-        'Vundo': 10,
-        'Zbot': 11,
-        'Zlob': 12
+        'Ldpinch': 4,
+        'Lmir': 5,
+        'Rbot': 6,
+        'Sdbot': 7,
+        'Swizzor': 8,
+        'Vundo': 9,
+        'Zbot': 10,
+        'Zlob': 11
     }
 
     # run explain code

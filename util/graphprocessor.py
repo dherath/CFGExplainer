@@ -53,7 +53,7 @@ class YANCFG:
         feat = list(nx.get_node_attributes(graph, "feat").values())
 
         # label vector (one hot encoded)
-        num_classes = 13
+        num_classes = 12
         one_hot_label = [0 for _ in range(num_classes)]
         one_hot_label[label] = 1
         
