@@ -1,0 +1,6 @@
+0_list.txt
+padded_02B1C0B9216072C68CF738D853806C0A.gpickle
+padded_31B958D0FB3D4123331E83056C4C51B7.VIR.gpickle
+padded_77f382efe92a5d5f54aa7b6f7bc48f1f.EXE.gpickle
+padded_Trojan-PSW.Win32.LdPinch.cpo.gpickle
+padded_Trojan-PSW.Win32.LdPinch.vxu.gpickle

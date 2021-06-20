@@ -1,0 +1,16 @@
+0_list.txt
+padded_8c4567b464e29f634baaf747a905ea95.gpickle
+padded_Email-Worm.Win32.Bagle.cy.gpickle
+padded_Email-Worm.Win32.Bagle.df.gpickle
+padded_Email-Worm.Win32.Bagle.do.gpickle
+padded_Email-Worm.Win32.Bagle.ds.gpickle
+padded_Email-Worm.Win32.Bagle.iu.gpickle
+padded_Email-Worm.Win32.Bagle.jn.gpickle
+padded_Email-Worm.Win32.Bagle.m.gpickle
+padded_Email-Worm.Win32.Bagle.maj.gpickle
+padded_Email-Worm.Win32.Bagle.t.gpickle
+padded_Email-Worm.Win32.Bagle.u.gpickle
+padded_Trojan-Downloader.Win32.Bagle.bj.gpickle
+padded_Trojan-Downloader.Win32.Bagle.ch.gpickle
+padded_Trojan-Downloader.Win32.Bagle.cq.gpickle
+padded_Trojan-Downloader.Win32.Bagle.v.gpickle

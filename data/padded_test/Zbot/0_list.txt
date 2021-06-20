@@ -1,0 +1,6 @@
+0_list.txt
+padded_8d71c506d8327c087b92d38388847615.gpickle
+padded_Trojan-Spy.Win32.Zbot.ann.gpickle
+padded_Trojan-Spy.Win32.Zbot.cza.gpickle
+padded_zeusbin_766c50aa69e76d72bb891581b01d4c19.ex0.gpickle
+padded_zeusbin_ab34431743553466ed606d06c14e659e.ex0.gpickle

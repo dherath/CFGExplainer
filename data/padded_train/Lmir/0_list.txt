@@ -1,0 +1,16 @@
+0_list.txt
+padded_Trojan-GameThief.Win32.Lmir.ach.gpickle
+padded_Trojan-GameThief.Win32.Lmir.afy.gpickle
+padded_Trojan-GameThief.Win32.Lmir.ain.gpickle
+padded_Trojan-GameThief.Win32.Lmir.ao.gpickle
+padded_Trojan-GameThief.Win32.Lmir.aon.gpickle
+padded_Trojan-GameThief.Win32.Lmir.aqw.gpickle
+padded_Trojan-GameThief.Win32.Lmir.atr.gpickle
+padded_Trojan-GameThief.Win32.Lmir.b.gpickle
+padded_Trojan-GameThief.Win32.Lmir.oz.gpickle
+padded_Trojan-GameThief.Win32.Lmir.vr.gpickle
+padded_Trojan-GameThief.Win32.Lmir.xh.gpickle
+padded_Trojan-PSW.Win32.Lmir.arm.gpickle
+padded_Trojan-PSW.Win32.Lmir.ayd.gpickle
+padded_Trojan-PSW.Win32.Lmir.oz.gpickle
+padded_Trojan-PSW.Win32.Lmir.qy.gpickle

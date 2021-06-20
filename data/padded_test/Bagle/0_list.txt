@@ -1,0 +1,6 @@
+0_list.txt
+padded_Email-Worm.Win32.Bagle.ab.gpickle
+padded_Email-Worm.Win32.Bagle.db.gpickle
+padded_Email-Worm.Win32.Bagle.t.gpickle
+padded_Trojan-Downloader.Win32.Bagle.vx.gpickle
+padded_Trojan-Downloader.Win32.Bagle.x.gpickle

@@ -1,0 +1,16 @@
+0_list.txt
+padded_Backdoor.Win32.SdBot.04.a.gpickle
+padded_Backdoor.Win32.SdBot.agj.gpickle
+padded_Backdoor.Win32.SdBot.amv.gpickle
+padded_Backdoor.Win32.SdBot.bud.gpickle
+padded_Backdoor.Win32.SdBot.ev.gpickle
+padded_Backdoor.Win32.SdBot.hj.gpickle
+padded_Backdoor.Win32.SdBot.hv.gpickle
+padded_Backdoor.Win32.SdBot.m.gpickle
+padded_Backdoor.Win32.SdBot.mw.gpickle
+padded_Backdoor.Win32.SdBot.ob.gpickle
+padded_Backdoor.Win32.SdBot.wj.gpickle
+padded_Backdoor.Win32.SdBot.wr.gpickle
+padded_Backdoor.Win32.SdBot.xj.gpickle
+padded_Backdoor.Win32.SdBot.xu.gpickle
+padded_Backdoor.Win32.SdBot.zr.gpickle

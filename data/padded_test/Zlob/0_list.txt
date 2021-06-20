@@ -1,0 +1,6 @@
+0_list.txt
+padded_Trojan-Downloader.Win32.Zlob.w.gpickle
+padded_Trojan-Downloader.Win32.Zlob.ydb.gpickle
+padded_Trojan-Downloader.Win32.Zlob.ydd.gpickle
+padded_Trojan-Downloader.Win32.Zlob.yn.gpickle
+padded_Trojan-Downloader.Win32.Zlob.zn.gpickle

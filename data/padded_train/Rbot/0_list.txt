@@ -1,0 +1,16 @@
+0_list.txt
+padded_Backdoor.Win32.IRCBot.ao.gpickle
+padded_Backdoor.Win32.Rbot.io.gpickle
+padded_Backdoor.Win32.Rbot.it.gpickle
+padded_Backdoor.Win32.Rbot.jls.gpickle
+padded_Backdoor.Win32.Rbot.kkx.gpickle
+padded_Backdoor.Win32.Rbot.row.gpickle
+padded_Backdoor.Win32.Rbot.soy.gpickle
+padded_Backdoor.Win32.Rbot.ud.gpickle
+padded_Backdoor.Win32.Rbot.un.gpickle
+padded_Backdoor.Win32.Rbot.xa.gpickle
+padded_Backdoor.Win32.Rbot.y.gpickle
+padded_Trojan-GameThief.Win32.Lmir.fa.gpickle
+padded_Trojan-GameThief.Win32.Lmir.ro.gpickle
+padded_Trojan-PSW.Win32.LdPinch.dis.gpickle
+padded_Trojan-PSW.Win32.LdPinch.th.gpickle
