@@ -212,7 +212,7 @@ def scaled_interpret_experiment(malware_name, class_label, graph_load_path, path
         # 4. save the results: top_blocks.pickle, top_blocks.txt, class_probability.txt, <adjacency matrices of subgraphs>
         graph_name = name.strip('padded_')
         graph_name = graph_name.strip('gpickle')
-        save_path = './results/interpretability_results/' + malware_name + '/' + graph_name
+        save_path = './interpretability_results/' + malware_name + '/' + graph_name
         if isdir(save_path) is False:
             mkdir(save_path)
 
@@ -299,11 +299,10 @@ def main(arguments):
         'Zlob': 11
     }
     
-    print('\n arguments: \n', args)
     # loading the model
     model = GCN(input_dim=args.d, output_dim=args.c)
     model.load_weights(args.save_path + args.dataset)  # load the weights
-    print('+ loaded surrogate model: ', model)
+    print('+ loaded GCN model: ', model)
 
     # loading the explainer
     # explainer_name = "_ep300_b32_elr00005_sciflow_CFGExplainer_"  # MLP-version1
@@ -316,7 +315,7 @@ def main(arguments):
         print('+ loaded explainer model: ', explainer)
 
     for malware_name, class_label in malware_list.items():
-        save_path = "./results/interpretability_results/" + malware_name
+        save_path = "./interpretability_results/" + malware_name
         if isdir(save_path) is False:
             mkdir(save_path)
         print('\n>> running ', malware_name, ' CFGExplainer experiment')

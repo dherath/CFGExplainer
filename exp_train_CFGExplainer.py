@@ -20,7 +20,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 def train_CFGExplainer():
     """
-    will run the training for explainer and generate explanations for all graphs
+    will run the training for explainer
     """
     
     # 1. load pre-trained GCN model
@@ -44,7 +44,7 @@ def train_CFGExplainer():
     with tf.device(device):
         explainer = ExplainerModule(model=model, output_dim=args.c)
         optimizer = tf.keras.optimizers.Adam(learning_rate=args.elr)
-    print('+ surrogate model:', model)
+    print('+ gcn model:', model)
     print('+ explainer model:', explainer)
     print('+ all args: \n', args)
 
@@ -133,7 +133,7 @@ def main(arguments):
     # new params [explainer]
     args.explainer_name = str(arguments[7])
     args.explainer_path = './checkpoints/explainer_' + str(arguments[7]) + args.model_name_flag + args.dataset  # path to save the explainer model
-    args.results_save_path = './results'  # the path to save the results (add a git-ignore?)
+    args.results_save_path = './interpretability_results'  # the path to save the results (add a git-ignore?)
     
     args.malware_list = {
         'Bagle': 0,

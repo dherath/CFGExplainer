@@ -42,7 +42,6 @@ def train_GCNClassifier():
     print('+ model: \n', model)
     
     optimizer = tf.keras.optimizers.Adam(learning_rate=args.lr)
-    print('+ all args: \n', args)
     
     # running the training epochs
     for epoch in tqdm(range(args.epochs), disable=args.disable_tqdm):
