@@ -1,0 +1,203 @@
+sys.args:  ['exp_prune_graphs.py', '5', '../../../y_datasets/YANCFG_sample2', '1024-512-128', 'classifier_lynxv2_', 'yancfg_complete_sample2', 'ep300_b32_elr00001_']
+> Dynamic Prune graphs [will run CFGExplainer iteratively]
+
+ arguments: 
+ Namespace(act='relu', batch=True, batch_size=5, bias=True, bn=False, c=13, concat=False, d=13, dataset='yancfg_complete_sample2', debug=False, device='0', disable_tqdm=True, dropout=0.0, dtype='float32', early_stop=100, eepochs=20, elr=0.05, embnormlize=False, epochs=5000, hiddens='1024-512-128', id='default_id', initializer='glorot', lr=0.001, model_name_flag='classifier_lynxv2_', n=4690, normadj=False, order='AW', path='../../../y_datasets/YANCFG_sample2', random_edges_motif=0, save_model=True, save_path='./checkpoints/classifier_lynxv2_', seed=1234, setting=2, valid=False, weight_decay=0.0)
+created Graph GCN model
++ loaded surrogate model:  <util.models.GCN object at 0x7f3b5bce0750>
++ loaded explainer model:  <Explainer.ExplainerModule object at 0x7f3b5815b990>
+
+>> running  Bagle  CFGExplainer experiment
++ [dynamic-exp] Bagle % = 100 | acc = 1.0 | avg.#e = 648.5333333333333
++ [dynamic-exp] Bagle % = 90 | acc = 1.0 | avg.#e = 564.6
++ [dynamic-exp] Bagle % = 80 | acc = 1.0 | avg.#e = 495.6666666666667
++ [dynamic-exp] Bagle % = 70 | acc = 1.0 | avg.#e = 426.46666666666664
++ [dynamic-exp] Bagle % = 60 | acc = 1.0 | avg.#e = 363.46666666666664
++ [dynamic-exp] Bagle % = 50 | acc = 1.0 | avg.#e = 297.73333333333335
++ [dynamic-exp] Bagle % = 40 | acc = 1.0 | avg.#e = 235.66666666666666
++ [dynamic-exp] Bagle % = 30 | acc = 0.93333334 | avg.#e = 175.2
++ [dynamic-exp] Bagle % = 20 | acc = 1.0 | avg.#e = 112.4
++ [dynamic-exp] Bagle % = 10 | acc = 0.8 | avg.#e = 54.46666666666667
+: completed : Bagle
+[0.8, 1.0, 0.93333334, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+
+
+>> running  Benign  CFGExplainer experiment
++ [dynamic-exp] Benign % = 100 | acc = 1.0 | avg.#e = 6316.266666666666
++ [dynamic-exp] Benign % = 90 | acc = 1.0 | avg.#e = 5487.2
++ [dynamic-exp] Benign % = 80 | acc = 1.0 | avg.#e = 4790.533333333334
++ [dynamic-exp] Benign % = 70 | acc = 0.93333334 | avg.#e = 4134.4
++ [dynamic-exp] Benign % = 60 | acc = 0.93333334 | avg.#e = 3532.3333333333335
++ [dynamic-exp] Benign % = 50 | acc = 0.93333334 | avg.#e = 2930.3333333333335
++ [dynamic-exp] Benign % = 40 | acc = 0.8 | avg.#e = 2282.266666666667
++ [dynamic-exp] Benign % = 30 | acc = 0.8 | avg.#e = 1686.2
++ [dynamic-exp] Benign % = 20 | acc = 0.6666667 | avg.#e = 1098.8666666666666
++ [dynamic-exp] Benign % = 10 | acc = 0.46666667 | avg.#e = 483.4
+: completed : Benign
+[0.46666667, 0.6666667, 0.8, 0.8, 0.93333334, 0.93333334, 0.93333334, 1.0, 1.0, 1.0]
+
+
+>> running  Bifrose  CFGExplainer experiment
++ [dynamic-exp] Bifrose % = 100 | acc = 1.0 | avg.#e = 4247.266666666666
++ [dynamic-exp] Bifrose % = 90 | acc = 1.0 | avg.#e = 3572.5333333333333
++ [dynamic-exp] Bifrose % = 80 | acc = 1.0 | avg.#e = 3066.6
++ [dynamic-exp] Bifrose % = 70 | acc = 1.0 | avg.#e = 2615.4666666666667
++ [dynamic-exp] Bifrose % = 60 | acc = 0.8666667 | avg.#e = 2198.4666666666667
++ [dynamic-exp] Bifrose % = 50 | acc = 0.8666667 | avg.#e = 1780.0
++ [dynamic-exp] Bifrose % = 40 | acc = 0.2 | avg.#e = 1351.1333333333334
++ [dynamic-exp] Bifrose % = 30 | acc = 0.2 | avg.#e = 962.4
++ [dynamic-exp] Bifrose % = 20 | acc = 0.2 | avg.#e = 648.6666666666666
++ [dynamic-exp] Bifrose % = 10 | acc = 0.33333334 | avg.#e = 276.26666666666665
+: completed : Bifrose
+[0.33333334, 0.2, 0.2, 0.2, 0.8666667, 0.8666667, 1.0, 1.0, 1.0, 1.0]
+
+
+>> running  Hupigon  CFGExplainer experiment
++ [dynamic-exp] Hupigon % = 100 | acc = 1.0 | avg.#e = 4860.066666666667
++ [dynamic-exp] Hupigon % = 90 | acc = 1.0 | avg.#e = 4290.6
++ [dynamic-exp] Hupigon % = 80 | acc = 1.0 | avg.#e = 3764.3333333333335
++ [dynamic-exp] Hupigon % = 70 | acc = 1.0 | avg.#e = 3303.866666666667
++ [dynamic-exp] Hupigon % = 60 | acc = 0.93333334 | avg.#e = 2830.4666666666667
++ [dynamic-exp] Hupigon % = 50 | acc = 0.93333334 | avg.#e = 2301.0666666666666
++ [dynamic-exp] Hupigon % = 40 | acc = 0.8 | avg.#e = 1733.2666666666667
++ [dynamic-exp] Hupigon % = 30 | acc = 0.8 | avg.#e = 1288.5333333333333
++ [dynamic-exp] Hupigon % = 20 | acc = 0.46666667 | avg.#e = 821.7333333333333
++ [dynamic-exp] Hupigon % = 10 | acc = 0.4 | avg.#e = 384.93333333333334
+: completed : Hupigon
+[0.4, 0.46666667, 0.8, 0.8, 0.93333334, 0.93333334, 1.0, 1.0, 1.0, 1.0]
+
+
+>> running  Koobface  CFGExplainer experiment
++ [dynamic-exp] Koobface % = 100 | acc = 0.93333334 | avg.#e = 4.066666666666666
++ [dynamic-exp] Koobface % = 90 | acc = 0.93333334 | avg.#e = 3.933333333333333
++ [dynamic-exp] Koobface % = 80 | acc = 0.93333334 | avg.#e = 3.933333333333333
++ [dynamic-exp] Koobface % = 70 | acc = 0.93333334 | avg.#e = 3.933333333333333
++ [dynamic-exp] Koobface % = 60 | acc = 0.93333334 | avg.#e = 3.8666666666666667
++ [dynamic-exp] Koobface % = 50 | acc = 0.93333334 | avg.#e = 3.8666666666666667
++ [dynamic-exp] Koobface % = 40 | acc = 1.0 | avg.#e = 3.8
++ [dynamic-exp] Koobface % = 30 | acc = 1.0 | avg.#e = 3.7333333333333334
++ [dynamic-exp] Koobface % = 20 | acc = 1.0 | avg.#e = 3.6666666666666665
++ [dynamic-exp] Koobface % = 10 | acc = 1.0 | avg.#e = 3.6
+: completed : Koobface
+[1.0, 1.0, 1.0, 1.0, 0.93333334, 0.93333334, 0.93333334, 0.93333334, 0.93333334, 0.93333334]
+
+
+>> running  Ldpinch  CFGExplainer experiment
++ [dynamic-exp] Ldpinch % = 100 | acc = 0.93333334 | avg.#e = 1925.1333333333334
++ [dynamic-exp] Ldpinch % = 90 | acc = 0.93333334 | avg.#e = 1656.6666666666667
++ [dynamic-exp] Ldpinch % = 80 | acc = 0.93333334 | avg.#e = 1385.8
++ [dynamic-exp] Ldpinch % = 70 | acc = 0.93333334 | avg.#e = 1164.3333333333333
++ [dynamic-exp] Ldpinch % = 60 | acc = 0.8666667 | avg.#e = 956.7333333333333
++ [dynamic-exp] Ldpinch % = 50 | acc = 0.8 | avg.#e = 743.0666666666667
++ [dynamic-exp] Ldpinch % = 40 | acc = 0.6666667 | avg.#e = 558.6
++ [dynamic-exp] Ldpinch % = 30 | acc = 0.6666667 | avg.#e = 420.8666666666667
++ [dynamic-exp] Ldpinch % = 20 | acc = 0.6666667 | avg.#e = 275.0
++ [dynamic-exp] Ldpinch % = 10 | acc = 0.53333336 | avg.#e = 124.33333333333333
+: completed : Ldpinch
+[0.53333336, 0.6666667, 0.6666667, 0.6666667, 0.8, 0.8666667, 0.93333334, 0.93333334, 0.93333334, 0.93333334]
+
+
+>> running  Lmir  CFGExplainer experiment
++ [dynamic-exp] Lmir % = 100 | acc = 1.0 | avg.#e = 5184.266666666666
++ [dynamic-exp] Lmir % = 90 | acc = 1.0 | avg.#e = 4652.0
++ [dynamic-exp] Lmir % = 80 | acc = 0.93333334 | avg.#e = 4010.4666666666667
++ [dynamic-exp] Lmir % = 70 | acc = 0.8666667 | avg.#e = 3396.2
++ [dynamic-exp] Lmir % = 60 | acc = 0.6 | avg.#e = 2833.866666666667
++ [dynamic-exp] Lmir % = 50 | acc = 0.53333336 | avg.#e = 2386.0
++ [dynamic-exp] Lmir % = 40 | acc = 0.46666667 | avg.#e = 1927.9333333333334
++ [dynamic-exp] Lmir % = 30 | acc = 0.4 | avg.#e = 1424.8666666666666
++ [dynamic-exp] Lmir % = 20 | acc = 0.13333334 | avg.#e = 918.4666666666667
++ [dynamic-exp] Lmir % = 10 | acc = 0.26666668 | avg.#e = 445.26666666666665
+: completed : Lmir
+[0.26666668, 0.13333334, 0.4, 0.46666667, 0.53333336, 0.6, 0.8666667, 0.93333334, 1.0, 1.0]
+
+
+>> running  Rbot  CFGExplainer experiment
++ [dynamic-exp] Rbot % = 100 | acc = 0.8666667 | avg.#e = 2587.866666666667
++ [dynamic-exp] Rbot % = 90 | acc = 0.8666667 | avg.#e = 2218.4666666666667
++ [dynamic-exp] Rbot % = 80 | acc = 0.8666667 | avg.#e = 1935.4666666666667
++ [dynamic-exp] Rbot % = 70 | acc = 0.8 | avg.#e = 1639.9333333333334
++ [dynamic-exp] Rbot % = 60 | acc = 0.8 | avg.#e = 1382.7333333333333
++ [dynamic-exp] Rbot % = 50 | acc = 0.73333335 | avg.#e = 1149.1333333333334
++ [dynamic-exp] Rbot % = 40 | acc = 0.73333335 | avg.#e = 881.5333333333333
++ [dynamic-exp] Rbot % = 30 | acc = 0.73333335 | avg.#e = 658.6666666666666
++ [dynamic-exp] Rbot % = 20 | acc = 0.6666667 | avg.#e = 428.2
++ [dynamic-exp] Rbot % = 10 | acc = 0.53333336 | avg.#e = 196.93333333333334
+: completed : Rbot
+[0.53333336, 0.6666667, 0.73333335, 0.73333335, 0.73333335, 0.8, 0.8, 0.8666667, 0.8666667, 0.8666667]
+
+
+>> running  Sdbot  CFGExplainer experiment
++ [dynamic-exp] Sdbot % = 100 | acc = 1.0 | avg.#e = 4480.066666666667
++ [dynamic-exp] Sdbot % = 90 | acc = 0.93333334 | avg.#e = 3876.4
++ [dynamic-exp] Sdbot % = 80 | acc = 0.8666667 | avg.#e = 3368.3333333333335
++ [dynamic-exp] Sdbot % = 70 | acc = 0.8666667 | avg.#e = 2901.8
++ [dynamic-exp] Sdbot % = 60 | acc = 0.8 | avg.#e = 2454.6
++ [dynamic-exp] Sdbot % = 50 | acc = 0.73333335 | avg.#e = 2010.4666666666667
++ [dynamic-exp] Sdbot % = 40 | acc = 0.6 | avg.#e = 1581.2666666666667
++ [dynamic-exp] Sdbot % = 30 | acc = 0.6 | avg.#e = 1168.0
++ [dynamic-exp] Sdbot % = 20 | acc = 0.46666667 | avg.#e = 754.5333333333333
++ [dynamic-exp] Sdbot % = 10 | acc = 0.4 | avg.#e = 344.4
+: completed : Sdbot
+[0.4, 0.46666667, 0.6, 0.6, 0.73333335, 0.8, 0.8666667, 0.8666667, 0.93333334, 1.0]
+
+
+>> running  Swizzor  CFGExplainer experiment
++ [dynamic-exp] Swizzor % = 100 | acc = 1.0 | avg.#e = 6435.266666666666
++ [dynamic-exp] Swizzor % = 90 | acc = 1.0 | avg.#e = 5517.333333333333
++ [dynamic-exp] Swizzor % = 80 | acc = 1.0 | avg.#e = 4830.733333333334
++ [dynamic-exp] Swizzor % = 70 | acc = 1.0 | avg.#e = 4198.066666666667
++ [dynamic-exp] Swizzor % = 60 | acc = 1.0 | avg.#e = 3613.133333333333
++ [dynamic-exp] Swizzor % = 50 | acc = 1.0 | avg.#e = 2978.4
++ [dynamic-exp] Swizzor % = 40 | acc = 1.0 | avg.#e = 2349.8
++ [dynamic-exp] Swizzor % = 30 | acc = 0.93333334 | avg.#e = 1719.9333333333334
++ [dynamic-exp] Swizzor % = 20 | acc = 0.8666667 | avg.#e = 1112.5333333333333
++ [dynamic-exp] Swizzor % = 10 | acc = 0.6666667 | avg.#e = 517.8666666666667
+: completed : Swizzor
+[0.6666667, 0.8666667, 0.93333334, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+
+
+>> running  Vundo  CFGExplainer experiment
++ [dynamic-exp] Vundo % = 100 | acc = 0.6666667 | avg.#e = 3388.3333333333335
++ [dynamic-exp] Vundo % = 90 | acc = 0.6666667 | avg.#e = 2904.3333333333335
++ [dynamic-exp] Vundo % = 80 | acc = 0.6666667 | avg.#e = 2532.5333333333333
++ [dynamic-exp] Vundo % = 70 | acc = 0.6666667 | avg.#e = 2189.4666666666667
++ [dynamic-exp] Vundo % = 60 | acc = 0.6666667 | avg.#e = 1863.2666666666667
++ [dynamic-exp] Vundo % = 50 | acc = 0.6666667 | avg.#e = 1503.5333333333333
++ [dynamic-exp] Vundo % = 40 | acc = 0.73333335 | avg.#e = 1174.6
++ [dynamic-exp] Vundo % = 30 | acc = 0.6 | avg.#e = 836.1333333333333
++ [dynamic-exp] Vundo % = 20 | acc = 0.4 | avg.#e = 545.2666666666667
++ [dynamic-exp] Vundo % = 10 | acc = 0.26666668 | avg.#e = 239.13333333333333
+: completed : Vundo
+[0.26666668, 0.4, 0.6, 0.73333335, 0.6666667, 0.6666667, 0.6666667, 0.6666667, 0.6666667, 0.6666667]
+
+
+>> running  Zbot  CFGExplainer experiment
++ [dynamic-exp] Zbot % = 100 | acc = 1.0 | avg.#e = 3408.6
++ [dynamic-exp] Zbot % = 90 | acc = 0.93333334 | avg.#e = 2938.866666666667
++ [dynamic-exp] Zbot % = 80 | acc = 0.93333334 | avg.#e = 2521.6666666666665
++ [dynamic-exp] Zbot % = 70 | acc = 0.93333334 | avg.#e = 2164.866666666667
++ [dynamic-exp] Zbot % = 60 | acc = 0.93333334 | avg.#e = 1825.8
++ [dynamic-exp] Zbot % = 50 | acc = 0.93333334 | avg.#e = 1492.8
++ [dynamic-exp] Zbot % = 40 | acc = 0.8 | avg.#e = 1171.8
++ [dynamic-exp] Zbot % = 30 | acc = 0.73333335 | avg.#e = 848.2666666666667
++ [dynamic-exp] Zbot % = 20 | acc = 0.53333336 | avg.#e = 544.7333333333333
++ [dynamic-exp] Zbot % = 10 | acc = 0.46666667 | avg.#e = 254.8
+: completed : Zbot
+[0.46666667, 0.53333336, 0.73333335, 0.8, 0.93333334, 0.93333334, 0.93333334, 0.93333334, 0.93333334, 1.0]
+
+
+>> running  Zlob  CFGExplainer experiment
++ [dynamic-exp] Zlob % = 100 | acc = 1.0 | avg.#e = 4329.2
++ [dynamic-exp] Zlob % = 90 | acc = 0.93333334 | avg.#e = 3725.3333333333335
++ [dynamic-exp] Zlob % = 80 | acc = 0.93333334 | avg.#e = 3246.5333333333333
++ [dynamic-exp] Zlob % = 70 | acc = 0.93333334 | avg.#e = 2828.133333333333
++ [dynamic-exp] Zlob % = 60 | acc = 0.93333334 | avg.#e = 2401.266666666667
++ [dynamic-exp] Zlob % = 50 | acc = 0.8666667 | avg.#e = 2003.6
++ [dynamic-exp] Zlob % = 40 | acc = 0.8666667 | avg.#e = 1566.4666666666667
++ [dynamic-exp] Zlob % = 30 | acc = 0.6666667 | avg.#e = 1152.8666666666666
++ [dynamic-exp] Zlob % = 20 | acc = 0.53333336 | avg.#e = 753.0666666666667
++ [dynamic-exp] Zlob % = 10 | acc = 0.4 | avg.#e = 318.06666666666666
+: completed : Zlob
+[0.4, 0.53333336, 0.6666667, 0.8666667, 0.8666667, 0.93333334, 0.93333334, 0.93333334, 0.93333334, 1.0]
+

@@ -1,0 +1,4230 @@
+CFGExplainer result: [malware = Zbot |  graph = 748aafaa4c870949acd5a282005f33c4.EXE| #nodes = 451]
+
+node :1
+node start(4207185) info:
+ start: 4207185
+ prev: []
+ instructions: 
+  4207185, ['test', 'ebx,100000h']
+  4207191, ['jz', 'loc_40326A']
+ next: [4207197, 4207210]
+
+node :2
+node start(4207144) info:
+ start: 4207144
+ prev: []
+ instructions: 
+  4207144, ['test', 'dwordptr[ebp-8],400h']
+  4207151, ['jz', 'loc_40323A']
+ next: [4207157, 4207162]
+
+node :3
+node start(4207081) info:
+ start: 4207081
+ prev: []
+ instructions: 
+  4207081, ['cmp', 'edx,76h']
+  4207084, ['jnz', 'loc_4031FB']
+ next: [4207090, 4207099]
+
+node :4
+node start(4207162) info:
+ start: 4207162
+ prev: []
+ instructions: 
+  4207162, ['test', 'dwordptr[ebp-24h],1000h']
+  4207169, ['jnz', 'loc_403251']
+ next: [4207175, 4207185]
+
+node :5
+node start(4207119) info:
+ start: 4207119
+ prev: []
+ instructions: 
+  4207119, ['test', 'dwordptr[ebp-30h],200h']
+  4207126, ['jz', 'loc_403228']
+ next: [4207132, 4207144]
+
+node :6
+node start(4207041) info:
+ start: 4207041
+ prev: []
+ instructions: 
+  4207041, ['pop', 'edx']
+  4207042, ['pop', 'eax']
+  4207043, ['cmp', 'dwordptr[ebp-24h],61h']
+  4207047, ['jnz', 'loc_4031D8']
+ next: [4207053, 4207064]
+
+node :7
+node start(4207210) info:
+ start: 4207210
+ prev: []
+ instructions: 
+  4207210, ['test', 'ecx,8000h']
+  4207216, ['jnz', 'loc_40327F']
+ next: [4207222, 4207231]
+
+node :8
+node start(4207099) info:
+ start: 4207099
+ prev: []
+ instructions: 
+  4207099, ['test', 'dwordptr[ebp-20h],1']
+  4207106, ['jz', 'loc_40320F']
+ next: [4207112, 4207119]
+
+node :9
+node start(4207064) info:
+ start: 4207064
+ prev: []
+ instructions: 
+  4207064, ['cmp', 'edx,49h']
+  4207067, ['jnz', 'loc_4031E9']
+ next: [4207073, 4207081]
+
+node :10
+node start(4201717) info:
+ start: 4201717
+ prev: []
+ instructions: 
+  4201717, ['test', 'dwordptr[ebp-20h],20000h']
+  4201724, ['jz', 'shortloc_401D10']
+ next: [4201726, 4201744]
+
+node :11
+node start(4201744) info:
+ start: 4201744
+ prev: []
+ instructions: 
+  4201744, ['cmp', 'edx,483135h']
+  4201750, ['jz', 'shortloc_401D1F']
+ next: [4201752, 4201759]
+
+node :12
+node sub_407271(4223376) info:
+ start: 4223376
+ prev: []
+ instructions: 
+  4223376, ['pop', 'esi']
+  4223377, ['add', 'eax,4A9h']
+  4223383, ['sbb', 'ecx,ebx']
+  4223385, ['push', 'eax']
+  4223386, ['not', 'edi']
+  4223388, ['sub', 'eax,4A9h']
+  4223394, ['and', 'edx,56h']
+  4223397, ['jmp', 'loc_406F6D']
+ next: [4222829]
+
+node :13
+node sub_407271(4221208) info:
+ start: 4221208
+ prev: []
+ instructions: 
+  4221208, ['inc', 'esi']
+  4221209, ['or', 'edi,eax']
+  4221211, ['inc', 'eax']
+  4221212, ['sbb', 'edi,ecx']
+  4221214, ['not', 'edi']
+  4221216, ['dec', 'edx']
+  4221217, ['and', 'edi,ecx']
+  4221219, ['mov', 'ecx,edx']
+  4221221, ['not', 'edi']
+  4221223, ['jmp', 'loc_406A8D']
+ next: [4221581]
+
+node :14
+node start(4201696) info:
+ start: 4201696
+ prev: []
+ instructions: 
+  4201696, ['cmp', 'ebx,7749h']
+  4201702, ['jnz', 'shortloc_401CF5']
+ next: [4201704, 4201717]
+
+node :15
+node start(4201625) info:
+ start: 4201625
+ prev: []
+ instructions: 
+  4201625, ['cmp', 'dwordptr[ebp-20h],6Bh']
+  4201629, ['jz', 'shortloc_401CC0']
+ next: [4201631, 4201664]
+
+node :16
+node sub_407271(4221581) info:
+ start: 4221581
+ prev: []
+ instructions: 
+  4221581, ['or', 'edi,6C74h']
+  4221587, ['sub', 'ecx,2CDD9885h']
+  4221593, ['neg', 'edi']
+  4221595, ['sub', 'edi,7831h']
+  4221601, ['cmp', 'ecx,0D322677Bh']
+  4221607, ['jnz', 'loc_406F82']
+ next: [4221613, 4222850]
+
+node :17
+node sub_407271(4222829) info:
+ start: 4222829
+ prev: []
+ instructions: 
+  4222829, ['sub', 'ecx,edx']
+  4222831, ['dec', 'ebx']
+  4222832, ['mov', 'edx,5BC30B1Dh']
+  4222837, ['mov', 'ebx,594Fh']
+  4222842, ['xor', 'edx,5BC3396Eh']
+  4222848, ['and', 'ecx,esi']
+ next: [4222850]
+
+node :18
+node start(4201664) info:
+ start: 4201664
+ prev: []
+ instructions: 
+  4201664, ['cmp', 'dwordptr[ebp-3Ch],3247h']
+  4201671, ['jnz', 'shortloc_401CCD']
+ next: [4201673, 4201677]
+
+node :19
+node start(4201759) info:
+ start: 4201759
+ prev: []
+ instructions: 
+  4201759, ['cmp', 'dwordptr[ebp-30h],5652h']
+  4201766, ['jz', 'shortloc_401D3D']
+ next: [4201768, 4201789]
+
+node :20
+node start(4201605) info:
+ start: 4201605
+ prev: []
+ instructions: 
+  4201605, ['cmp', 'dwordptr[ebp-1Ch],43h']
+  4201609, ['jz', 'loc_401C99']
+ next: [4201615, 4201625]
+
+node :21
+node start(4201542) info:
+ start: 4201542
+ prev: []
+ instructions: 
+  4201542, ['mov', 'edx,eax']
+  4201544, ['or', 'ebx,edx']
+  4201546, ['inc', 'ebx']
+  4201547, ['add', 'edx,eax']
+  4201549, ['sub', 'edi,eax']
+  4201551, ['inc', 'edi']
+  4201552, ['sub', 'ebx,674D506Ch']
+  4201558, ['sub', 'edx,ebx']
+  4201560, ['or', 'edx,ebx']
+  4201562, ['sbb', 'edi,eax']
+  4201564, ['or', 'edi,ebx']
+  4201566, ['push', 'ebp']
+  4201567, ['mov', 'ebp,esp']
+  4201569, ['add', 'esp,0FFFFFF1Ch']
+  4201575, ['cmp', 'dwordptr[ebp-18h],384B50h']
+  4201582, ['jnz', 'loc_401C85']
+ next: [4201588, 4201605]
+
+node :22
+node start(4201677) info:
+ start: 4201677
+ prev: []
+ instructions: 
+  4201677, ['test', 'dwordptr[ebp-4],2000000h']
+  4201684, ['jz', 'shortloc_401CE0']
+ next: [4201686, 4201696]
+
+node :23
+node sub_407271(4223181) info:
+ start: 4223181
+ prev: []
+ instructions: 
+  4223181, ['push', '45h']
+  4223183, ['push', 'esi']
+  4223184, ['call', 'sub_406D88']
+  4223189, ['push', '0FFFFFFFFh']
+  4223191, ['push', 'ecx']
+  4223192, ['push', 'edi']
+  4223193, ['jmp', 'loc_406B8F']
+ next: [4221839]
+
+node :24
+node start(4207231) info:
+ start: 4207231
+ prev: []
+ instructions: 
+  4207231, ['dec', 'ebx']
+  4207232, ['jmp', 'loc_401C46']
+ next: [4201542]
+
+node :25
+node sub_407271(4223515) info:
+ start: 4223515
+ prev: []
+ instructions: 
+  4223515, ['push', '61h']
+  4223517, ['call', 'sub_406CB6']
+  4223522, ['push', '0']
+  4223524, ['lea', 'eax,[ebp-74h]']
+  4223527, ['push', 'eax']
+  4223528, ['call', 'sub_406616']
+  4223533, ['mov', 'dwordptr[esp-200h],0']
+  4223544, ['lea', 'eax,[esp-200h]']
+  4223551, ['push', 'eax']
+  4223552, ['push', '7457h']
+  4223557, ['jmp', 'loc_4070CD']
+ next: [4223181]
+
+node :26
+node start(4201752) info:
+ start: 4201752
+ prev: []
+ instructions: 
+  4201752, ['not', 'eax']
+  4201754, ['dec', 'edx']
+  4201755, ['and', 'ecx,esi']
+  4201757, ['jmp', 'shortloc_401D3D']
+ next: [4201789]
+
+node :27
+node start(4201615) info:
+ start: 4201615
+ prev: []
+ instructions: 
+  4201615, ['add', 'edi,esi']
+  4201617, ['dec', 'ecx']
+  4201618, ['neg', 'edx']
+  4201620, ['jmp', 'loc_401D3D']
+ next: [4201789]
+
+node :28
+node start(4201768) info:
+ start: 4201768
+ prev: []
+ instructions: 
+  4201768, ['push', 'dwordptr[ebp-7Ch]']
+  4201771, ['push', 'dwordptr[ebp-13Ch]']
+  4201777, ['push', '52h']
+  4201779, ['push', '476A7462h']
+  4201784, ['call', 'sub_4030FA']
+ next: [4201789]
+
+node :29
+node start(4201588) info:
+ start: 4201588
+ prev: []
+ instructions: 
+  4201588, ['xor', 'eax,4A75h']
+  4201594, ['sbb', 'eax,584C7464h']
+  4201600, ['jmp', 'loc_401D3D']
+ next: [4201789]
+
+node :30
+node start(4201673) info:
+ start: 4201673
+ prev: []
+ instructions: 
+  4201673, ['mov', 'edi,eax']
+  4201675, ['jmp', 'shortloc_401D3D']
+ next: [4201789]
+
+node :31
+node start(4201726) info:
+ start: 4201726
+ prev: []
+ instructions: 
+  4201726, ['push', 'edi']
+  4201727, ['push', '3559h']
+  4201732, ['push', '6936h']
+  4201737, ['call', 'sub_403114']
+  4201742, ['jmp', 'shortloc_401D3D']
+ next: [4201789]
+
+node :32
+node start(4201704) info:
+ start: 4201704
+ prev: []
+ instructions: 
+  4201704, ['push', 'dwordptr[ebp-1A8h]']
+  4201710, ['call', 'sub_403142']
+  4201715, ['jmp', 'shortloc_401D3D']
+ next: [4201789]
+
+node :33
+node start(4201631) info:
+ start: 4201631
+ prev: []
+ instructions: 
+  4201631, ['push', 'dwordptr[ebp-11Ch]']
+  4201637, ['push', '383743h']
+  4201642, ['push', '6B5351h']
+  4201647, ['push', 'dwordptr[ebp-64h]']
+  4201650, ['lea', 'eax,[ebp-19Ch]']
+  4201656, ['push', 'eax']
+  4201657, ['call', 'sub_403176']
+  4201662, ['jmp', 'shortloc_401D3D']
+ next: [4201789]
+
+node :34
+node start(4201686) info:
+ start: 4201686
+ prev: []
+ instructions: 
+  4201686, ['inc', 'esi']
+  4201687, ['dec', 'edi']
+  4201688, ['sub', 'esi,563566h']
+  4201694, ['jmp', 'shortloc_401D3D']
+ next: [4201789]
+
+node :35
+node sub_407271(4222850) info:
+ start: 4222850
+ prev: []
+ instructions: 
+  4222850, ['inc', 'edi']
+  4222851, ['xor', 'bh,bh']
+  4222853, ['jmp', 'loc_406EFD']
+ next: [4222717]
+
+node :36
+node start(4207037) info:
+ start: 4207037
+ prev: []
+ instructions: 
+  4207037, ['or', 'ecx,ecx']
+  4207039, ['jnz', 'shortloc_4031B7']
+ next: [4207031, 4207041]
+
+node :37
+node start(4207021) info:
+ start: 4207021
+ prev: []
+ instructions: 
+  4207021, ['push', '0FFFFFFFFh']
+  4207023, ['push', 'eax']
+  4207024, ['mov', 'ecx,0FFFFFFFFh']
+  4207029, ['jmp', 'shortloc_4031BD']
+ next: [4207037]
+
+node :38
+node start(4207031) info:
+ start: 4207031
+ prev: []
+ instructions: 
+  4207031, ['sub', 'ecx,0FFFFh']
+ next: [4207037]
+
+node :39
+node sub_407271(4221839) info:
+ start: 4221839
+ prev: []
+ instructions: 
+  4221839, ['push', 'dwordptr[ebp-1D8h];BaseAddress']
+  4221845, ['push', 'dwordptr[ebp-1E0h];ProcessHandle']
+  4221851, ['call', 'sub_406F40']
+  4221856, ['call', 'j_NtAllocateVirtualMemory']
+  4221861, ['mov', 'eax,[esp+14h+var_224]']
+  4221868, ['jmp', 'loc_406836']
+ next: [4220982]
+
+node :40
+node sub_407271(4222717) info:
+ start: 4222717
+ prev: []
+ instructions: 
+  4222717, ['or', 'bh,[esi]']
+  4222719, ['neg', 'bh']
+  4222721, ['add', 'bh,0AFh']
+  4222724, ['xor', 'bh,65h']
+  4222727, ['ror', 'bh,18h']
+  4222730, ['rol', 'bh,2']
+  4222733, ['sub', 'bh,20h']
+  4222736, ['add', '[eax],bh']
+  4222738, ['jmp', 'loc_406918']
+ next: [4221208]
+
+node :41
+node sub_407271(4220982) info:
+ start: 4220982
+ prev: []
+ instructions: 
+  4220982, ['mov', 'ecx,esp']
+  4220984, ['add', 'ecx,0D88h']
+  4220990, ['push', 'eax']
+  4220991, ['pop', 'dwordptr[ecx-0D74h]']
+  4220997, ['sbb', 'edx,4Ah']
+  4221000, ['add', 'edi,574Dh']
+  4221006, ['xor', 'edi,eax']
+  4221008, ['neg', 'edx']
+  4221010, ['jmp', 'loc_407190']
+ next: [4223376]
+
+node :42
+node start(4207157) info:
+ start: 4207157
+ prev: []
+ instructions: 
+  4207157, ['jmp', 'loc_40327F']
+ next: [4207231]
+
+node :43
+node start(4207175) info:
+ start: 4207175
+ prev: []
+ instructions: 
+  4207175, ['xor', 'edx,69h']
+  4207178, ['not', 'ecx']
+  4207180, ['jmp', 'loc_40327F']
+ next: [4207231]
+
+node :44
+node start(4207197) info:
+ start: 4207197
+ prev: []
+ instructions: 
+  4207197, ['sbb', 'edi,ecx']
+  4207199, ['xor', 'edi,ecx']
+  4207201, ['add', 'edx,ecx']
+  4207203, ['and', 'edx,esi']
+  4207205, ['jmp', 'loc_40327F']
+ next: [4207231]
+
+node :45
+node start(4207132) info:
+ start: 4207132
+ prev: []
+ instructions: 
+  4207132, ['add', 'edi,ebx']
+  4207134, ['sbb', 'eax,edx']
+  4207136, ['xor', 'edx,6Eh']
+  4207139, ['jmp', 'loc_40327F']
+ next: [4207231]
+
+node :46
+node start(4207053) info:
+ start: 4207053
+ prev: []
+ instructions: 
+  4207053, ['sbb', 'eax,573136h']
+  4207059, ['jmp', 'loc_40327F']
+ next: [4207231]
+
+node :47
+node start(4207073) info:
+ start: 4207073
+ prev: []
+ instructions: 
+  4207073, ['mov', 'ecx,esi']
+  4207075, ['dec', 'eax']
+  4207076, ['jmp', 'loc_40327F']
+ next: [4207231]
+
+node :48
+node start(4207112) info:
+ start: 4207112
+ prev: []
+ instructions: 
+  4207112, ['mov', 'ecx,edx']
+  4207114, ['jmp', 'loc_40327F']
+ next: [4207231]
+
+node :49
+node start(4207222) info:
+ start: 4207222
+ prev: []
+ instructions: 
+  4207222, ['and', 'eax,ecx']
+  4207224, ['neg', 'ebx']
+  4207226, ['and', 'ebx,edx']
+  4207228, ['or', 'edi,48h']
+ next: [4207231]
+
+node :50
+node start(4207090) info:
+ start: 4207090
+ prev: []
+ instructions: 
+  4207090, ['sbb', 'edi,esi']
+  4207092, ['add', 'edx,ecx']
+  4207094, ['jmp', 'loc_40327F']
+ next: [4207231]
+
+node :51
+node sub_407271(4222497) info:
+ start: 4222497
+ prev: []
+ instructions: 
+  4222497, ['push', '0F8EDE9C8h']
+  4222502, ['lea', 'ecx,[ebp-88h]']
+  4222508, ['push', 'ecx']
+  4222509, ['call', 'j_FormatMessageW']
+  4222514, ['push', 'dwordptr[ebp-18h]']
+  4222517, ['jmp', 'loc_406C5F']
+ next: [4222047]
+
+node :52
+node start(4207254) info:
+ start: 4207254
+ prev: []
+ instructions: 
+  4207254, ['call', 'sub_407271']
+  4207259, ['xor', 'edi,[edx]']
+  4207261, ['cmp', 'al,dl']
+  4207263, ['xor', 'esi,[ebx]']
+  4207265, ['cmp', 'bh,[ebx]']
+  4207267, ['xor', 'eax,edx']
+  4207269, ['xor', 'di,[ebx]']
+  4207272, ['xchg', 'al,[esi+3B3AC23Ah]']
+  4207278, ['retn', '3B3Ah']
+ next: []
+
+node :53
+node start(4205585) info:
+ start: 4205585
+ prev: []
+ instructions: 
+  4205585, ['push', 'ecx']
+  4205586, ['push', 'dwordptr[ebp-200h]']
+  4205592, ['push', 'ecx']
+  4205593, ['push', '0CF56800Dh']
+  4205598, ['call', 'j_DefWindowProcW']
+  4205603, ['call', 'j_GetCommandLineW']
+  4205608, ['sub', 'edx,41686D6Ch']
+  4205614, ['call', 'j_GetCurrentThreadId_0']
+  4205619, ['add', 'edx,ecx']
+  4205621, ['push', '0C630CCE4h']
+  4205626, ['call', 'j_SetEvent']
+  4205631, ['sbb', 'ebx,31h']
+  4205634, ['lea', 'eax,[ebp-1B4h]']
+  4205640, ['push', 'eax']
+  4205641, ['push', 'dwordptr[ebp-1D0h]']
+  4205647, ['push', '0CBC7C8EEh']
+  4205652, ['call', 'j_GetModuleFileNameA']
+  4205657, ['push', '0C19h']
+  4205662, ['push', '0']
+  4205664, ['call', 'j_LoadIconW']
+  4205669, ['push', '8A9h']
+  4205674, ['push', '0']
+  4205676, ['call', 'j_LoadIconW_0']
+  4205681, ['inc', 'edx']
+  4205682, ['push', '83D36B16h']
+  4205687, ['call', 'j_DestroyWindow']
+  4205692, ['dec', 'edx']
+  4205693, ['leave']
+  4205694, ['jmp', 'loc_403296']
+ next: [4207254]
+
+node :54
+node sub_407271(4222047) info:
+ start: 4222047
+ prev: []
+ instructions: 
+  4222047, ['lea', 'ecx,[ebp-74h]']
+  4222050, ['push', 'ecx']
+  4222051, ['push', '47525952h']
+  4222056, ['push', '0D7C47F54h']
+  4222061, ['call', 'j_SendMessageW']
+  4222066, ['push', '55h']
+  4222068, ['push', 'dwordptr[ebp-0D8h]']
+  4222074, ['push', 'esi']
+  4222075, ['jmp', 'loc_4068CA']
+ next: [4221130]
+
+node :55
+node start(4201789) info:
+ start: 4201789
+ prev: []
+ instructions: 
+  4201789, ['call', 'j_GetCurrentThreadId']
+  4201794, ['push', '7861746Eh']
+  4201799, ['call', 'sub_4030D2']
+  4201804, ['neg', 'ebx']
+  4201806, ['lea', 'ecx,[ebp-178h]']
+  4201812, ['push', 'ecx']
+  4201813, ['push', 'dwordptr[ebp-198h]']
+  4201819, ['push', '0B772F798h']
+  4201824, ['call', 'j_CreateCompatibleBitmap_0']
+  4201829, ['push', 'dwordptr[ebp-0A0h]']
+  4201835, ['push', 'dwordptr[ebp-1B4h]']
+  4201841, ['push', 'dwordptr[ebp-6Ch]']
+  4201844, ['call', 'sub_403023']
+  4201849, ['push', 'esi']
+  4201850, ['push', 'esi']
+  4201851, ['push', '7142h']
+  4201856, ['push', '3775h']
+  4201861, ['call', 'sub_403016']
+  4201866, ['push', 'dwordptr[ebp-110h]']
+  4201872, ['push', 'ebx']
+  4201873, ['push', '0E0E5C2BDh']
+  4201878, ['call', 'j_CreateCompatibleBitmap']
+  4201883, ['push', '0EFC1C796h']
+  4201888, ['push', '0DB77E917h']
+  4201893, ['call', 'j_SelectObject']
+  4201898, ['push', '45h']
+  4201900, ['lea', 'eax,[ebp-0A0h]']
+  4201906, ['push', 'eax']
+  4201907, ['call', 'sub_403007']
+  4201912, ['sub', 'edi,edx']
+  4201914, ['lea', 'edx,[ebp-1Ch]']
+  4201917, ['push', 'edx']
+  4201918, ['call', 'sub_402F64']
+  4201923, ['push', 'dwordptr[ebp-1D0h]']
+  4201929, ['push', '4168764Dh']
+  4201934, ['push', '6Dh']
+  4201936, ['push', '0BFCF1AC6h']
+  4201941, ['call', 'j_PostMessageW']
+  4201946, ['or', 'eax,eax']
+  4201948, ['jz', 'loc_402C11']
+ next: [4201954, 4205585]
+
+node :56
+node sub_407271(4220832) info:
+ start: 4220832
+ prev: []
+ instructions: 
+  4220832, ['push', 'edi']
+  4220833, ['call', 'sub_406B5C']
+  4220838, ['call', 'sub_40704B']
+  4220843, ['push', 'dwordptr[ebp-100h]']
+  4220849, ['push', 'edx']
+  4220850, ['lea', 'eax,[ebp-0ACh]']
+  4220856, ['push', 'eax']
+  4220857, ['jmp', 'loc_406FB0']
+ next: [4222896]
+
+node :57
+node sub_407271(4220342) info:
+ start: 4220342
+ prev: []
+ instructions: 
+  4220342, ['call', 'sub_40668A']
+  4220347, ['push', '1000h']
+  4220352, ['push', 'edx']
+  4220353, ['lea', 'eax,[ebp-0B0h]']
+  4220359, ['push', 'eax']
+  4220360, ['push', 'eax']
+  4220361, ['call', 'sub_4071EA']
+  4220366, ['mov', '[esp+14h+Protect],10000h']
+  4220377, ['jmp', 'loc_40687D']
+ next: [4221053]
+
+node :58
+node sub_407271(4221703) info:
+ start: 4221703
+ prev: []
+ instructions: 
+  4221703, ['call', 'j_PostMessageW_1']
+  4221708, ['lea', 'edx,[ebp-150h]']
+  4221714, ['push', 'edx']
+  4221715, ['push', 'ebx']
+  4221716, ['lea', 'ecx,[ebp-140h]']
+  4221722, ['push', 'ecx']
+  4221723, ['lea', 'eax,[ebp-0F4h]']
+  4221729, ['push', 'eax']
+  4221730, ['jmp', 'loc_4067A0']
+ next: [4220832]
+
+node :59
+node sub_407271(4221130) info:
+ start: 4221130
+ prev: []
+ instructions: 
+  4221130, ['push', 'edx']
+  4221131, ['lea', 'eax,[ebp-13Ch]']
+  4221137, ['push', 'eax']
+  4221138, ['call', 'sub_40710F']
+  4221143, ['push', '0BCD2B8F0h']
+  4221148, ['push', 'esi']
+  4221149, ['lea', 'ecx,[ebp-0C8h]']
+  4221155, ['push', 'ecx']
+  4221156, ['push', '0']
+  4221158, ['call', 'j_GetMessageW']
+  4221163, ['push', '6963h']
+  4221168, ['jmp', 'loc_406646']
+ next: [4220486]
+
+node :60
+node sub_407271(4220486) info:
+ start: 4220486
+ prev: []
+ instructions: 
+  4220486, ['lea', 'edx,[ebp-11Ch]']
+  4220492, ['push', 'edx']
+  4220493, ['push', 'dwordptr[ebp-68h]']
+  4220496, ['push', 'edx']
+  4220497, ['lea', 'eax,[ebp-1E8h]']
+  4220503, ['push', 'eax']
+  4220504, ['call', 'sub_406EBB']
+  4220509, ['jmp', 'loc_4069AA']
+ next: [4221354]
+
+node :61
+node sub_407271(4223601) info:
+ start: 4223601
+ prev: []
+ instructions: 
+  4223601, ['push', '4869h']
+  4223606, ['push', 'dwordptr[ebp-24h]']
+  4223609, ['push', 'edi']
+  4223610, ['push', '0CE760870h']
+  4223615, ['jmp', 'loc_406B07']
+ next: [4221703]
+
+node :62
+node sub_407271(4222896) info:
+ start: 4222896
+ prev: []
+ instructions: 
+  4222896, ['push', '0B3443790h']
+  4222901, ['call', 'j_PostMessageW_0']
+  4222906, ['call', 'j_GetProcessHeap']
+  4222911, ['push', '71h']
+  4222913, ['push', '68h']
+  4222915, ['push', '0']
+  4222917, ['lea', 'ecx,[ebp-110h]']
+  4222923, ['push', 'ecx']
+  4222924, ['push', 'edx']
+  4222925, ['jmp', 'loc_406E21']
+ next: [4222497]
+
+node :63
+node sub_407271(4221053) info:
+ start: 4221053
+ prev: []
+ instructions: 
+  4221053, ['lea', 'eax,[esp+14h+Protect]']
+  4221060, ['push', 'eax;Protect']
+  4221061, ['push', 'dwordptr[ebp-1FCh];AllocationType']
+  4221067, ['push', '6D66h;AllocationSize']
+  4221072, ['push', 'dwordptr[ebp-148h];ZeroBits']
+  4221078, ['push', '32h']
+  4221080, ['jmp', 'loc_40721B']
+ next: [4223515]
+
+node :64
+node sub_407271(4221354) info:
+ start: 4221354
+ prev: []
+ instructions: 
+  4221354, ['call', 'sub_406D53']
+  4221359, ['push', '0']
+  4221361, ['push', '1']
+  4221363, ['call', 'j_SleepEx']
+  4221368, ['movzx', 'eax,wordptr[ecx]']
+  4221371, ['cmp', 'eax,8C2h']
+  4221376, ['jz', 'loc_4066C5']
+ next: [4220613, 4221382]
+
+node :65
+node sub_407271(4220613) info:
+ start: 4220613
+ prev: []
+ instructions: 
+  4220613, ['push', '0']
+  4220615, ['call', 'j_GetModuleHandleW']
+  4220620, ['push', '47757450h']
+  4220625, ['push', 'dwordptr[ebp-44h]']
+  4220628, ['push', '0D2819452h']
+  4220633, ['call', 'j_CreateCompatibleBitmap_1']
+  4220638, ['lea', 'eax,[ebp-0D8h]']
+  4220644, ['push', 'eax']
+  4220645, ['push', 'edx']
+  4220646, ['jmp', 'loc_406567']
+ next: [4220263]
+
+node :66
+node j_CreateCompatibleBitmap_8(4201479) info:
+ start: 4201479
+ prev: []
+ instructions: 
+  4201479, ['jmp', 'ds:CreateCompatibleBitmap']
+ next: []
+
+node :67
+node j_LocalAlloc_1(4205221) info:
+ start: 4205221
+ prev: []
+ instructions: 
+  4205221, ['jmp', 'ds:LocalAlloc']
+ next: []
+
+node :68
+node j_GetCurrentThreadId_1(4198423) info:
+ start: 4198423
+ prev: []
+ instructions: 
+  4198423, ['jmp', 'ds:GetCurrentThreadId']
+ next: []
+
+node :69
+node j_GetCommandLineW_1(4198813) info:
+ start: 4198813
+ prev: []
+ instructions: 
+  4198813, ['jmp', 'ds:GetCommandLineW']
+ next: []
+
+node :70
+node j_GetDC_3(4201503) info:
+ start: 4201503
+ prev: []
+ instructions: 
+  4201503, ['jmp', 'ds:GetDC']
+ next: []
+
+node :71
+node j_DestroyWindow_1(4198963) info:
+ start: 4198963
+ prev: []
+ instructions: 
+  4198963, ['jmp', 'ds:DestroyWindow']
+ next: []
+
+node :72
+node sub_403023(4206739) info:
+ start: 4206739
+ prev: []
+ instructions: 
+  4206739, ['jmp', 'ds:CreateCompatibleDC']
+ next: []
+
+node :73
+node j_GetMessageW_1(4198657) info:
+ start: 4198657
+ prev: []
+ instructions: 
+  4198657, ['jmp', 'ds:GetMessageW']
+ next: []
+
+node :74
+node j_LineTo_0(4198903) info:
+ start: 4198903
+ prev: []
+ instructions: 
+  4198903, ['jmp', 'ds:LineTo']
+ next: []
+
+node :75
+node j_GetProcessHeap_1(4198987) info:
+ start: 4198987
+ prev: []
+ instructions: 
+  4198987, ['jmp', 'ds:GetProcessHeap']
+ next: []
+
+node :76
+node j_DefWindowProcW_7(4203311) info:
+ start: 4203311
+ prev: []
+ instructions: 
+  4203311, ['jmp', 'ds:DefWindowProcW']
+ next: []
+
+node :77
+node j_GetCommandLineW_4(4200318) info:
+ start: 4200318
+ prev: []
+ instructions: 
+  4200318, ['jmp', 'ds:GetCommandLineW']
+ next: []
+
+node :78
+node j_FormatMessageW_5(4205215) info:
+ start: 4205215
+ prev: []
+ instructions: 
+  4205215, ['jmp', 'ds:FormatMessageW']
+ next: []
+
+node :79
+node j_SendMessageW_3(4201473) info:
+ start: 4201473
+ prev: []
+ instructions: 
+  4201473, ['jmp', 'ds:SendMessageW']
+ next: []
+
+node :80
+node j_ShowWindow_4(4201443) info:
+ start: 4201443
+ prev: []
+ instructions: 
+  4201443, ['jmp', 'ds:ShowWindow']
+ next: []
+
+node :81
+node j_DeleteObject_5(4202032) info:
+ start: 4202032
+ prev: []
+ instructions: 
+  4202032, ['jmp', 'ds:DeleteObject']
+ next: []
+
+node :82
+node j_CreateCompatibleDC_1(4203867) info:
+ start: 4203867
+ prev: []
+ instructions: 
+  4203867, ['jmp', 'ds:CreateCompatibleDC']
+ next: []
+
+node :83
+node j_PatBlt_4(4202597) info:
+ start: 4202597
+ prev: []
+ instructions: 
+  4202597, ['jmp', 'ds:PatBlt']
+ next: []
+
+node :84
+node j_GetCurrentProcess_2(4205289) info:
+ start: 4205289
+ prev: []
+ instructions: 
+  4205289, ['jmp', 'ds:GetCurrentProcess']
+ next: []
+
+node :85
+node j_BitBlt_2(4198909) info:
+ start: 4198909
+ prev: []
+ instructions: 
+  4198909, ['jmp', 'ds:BitBlt']
+ next: []
+
+node :86
+node j_GetStockObject_4(4202008) info:
+ start: 4202008
+ prev: []
+ instructions: 
+  4202008, ['jmp', 'ds:GetStockObject']
+ next: []
+
+node :87
+node j_CreateCompatibleDC_2(4206299) info:
+ start: 4206299
+ prev: []
+ instructions: 
+  4206299, ['jmp', 'ds:CreateCompatibleDC']
+ next: []
+
+node :88
+node j_GetCurrentProcessId_1(4203299) info:
+ start: 4203299
+ prev: []
+ instructions: 
+  4203299, ['jmp', 'ds:GetCurrentProcessId']
+ next: []
+
+node :89
+node sub_40710F(4223247) info:
+ start: 4223247
+ prev: []
+ instructions: 
+  4223247, ['push', 'ebp']
+  4223248, ['mov', 'ebp,esp']
+  4223250, ['add', 'esp,0FFFFFF18h']
+  4223256, ['jmp', 'loc_406DB9']
+ next: [4222393]
+
+node :90
+node sub_407271(4220263) info:
+ start: 4220263
+ prev: []
+ instructions: 
+  4220263, ['push', '0B60FED8Eh']
+  4220268, ['call', 'j_GetObjectW']
+  4220273, ['push', '0A29BD83Ch']
+  4220278, ['call', 'j_DeleteObject']
+  4220283, ['push', '4Bh']
+  4220285, ['push', 'esi']
+  4220286, ['push', 'esi']
+  4220287, ['call', 'sub_406955']
+  4220292, ['jmp', 'loc_407147']
+ next: [4223303]
+
+node :91
+node sub_403023(4206751) info:
+ start: 4206751
+ prev: []
+ instructions: 
+  4206751, ['jmp', 'j_LocalFree_1']
+ next: [4206359]
+
+node :92
+node j_DeleteDC(4198615) info:
+ start: 4198615
+ prev: []
+ instructions: 
+  4198615, ['jmp', 'ds:DeleteDC']
+ next: []
+
+node :93
+node j_SetEvent_4(4206293) info:
+ start: 4206293
+ prev: []
+ instructions: 
+  4206293, ['jmp', 'ds:SetEvent']
+ next: []
+
+node :94
+node j_SetUnhandledExceptionFilter_2(4201437) info:
+ start: 4201437
+ prev: []
+ instructions: 
+  4201437, ['jmp', 'ds:SetUnhandledExceptionFilter']
+ next: []
+
+node :95
+node j_FormatMessageW_0(4198507) info:
+ start: 4198507
+ prev: []
+ instructions: 
+  4198507, ['jmp', 'ds:FormatMessageW']
+ next: []
+
+node :96
+node j_MultiByteToWideChar_3(4200905) info:
+ start: 4200905
+ prev: []
+ instructions: 
+  4200905, ['jmp', 'ds:MultiByteToWideChar']
+ next: []
+
+node :97
+node j_PatBlt(4198501) info:
+ start: 4198501
+ prev: []
+ instructions: 
+  4198501, ['jmp', 'ds:PatBlt']
+ next: []
+
+node :98
+node j_FormatMessageW_2(4198705) info:
+ start: 4198705
+ prev: []
+ instructions: 
+  4198705, ['jmp', 'ds:FormatMessageW']
+ next: []
+
+node :99
+node j_GetTextMetricsW_0(4198573) info:
+ start: 4198573
+ prev: []
+ instructions: 
+  4198573, ['jmp', 'ds:GetTextMetricsW']
+ next: []
+
+node :100
+node sub_403023(4206359) info:
+ start: 4206359
+ prev: []
+ instructions: 
+  4206359, ['jmp', 'ds:LocalFree']
+ next: []
+
+node :101
+node j_ShowWindow_2(4199089) info:
+ start: 4199089
+ prev: []
+ instructions: 
+  4199089, ['jmp', 'ds:ShowWindow']
+ next: []
+
+node :102
+node j_GetDlgItem_2(4199125) info:
+ start: 4199125
+ prev: []
+ instructions: 
+  4199125, ['jmp', 'ds:GetDlgItem']
+ next: []
+
+node :103
+node j_SetUnhandledExceptionFilter_0(4198555) info:
+ start: 4198555
+ prev: []
+ instructions: 
+  4198555, ['jmp', 'ds:SetUnhandledExceptionFilter']
+ next: []
+
+node :104
+node j_SetTextColor_0(4200324) info:
+ start: 4200324
+ prev: []
+ instructions: 
+  4200324, ['jmp', 'ds:SetTextColor']
+ next: []
+
+node :105
+node j_GetDlgItem_6(4205307) info:
+ start: 4205307
+ prev: []
+ instructions: 
+  4205307, ['jmp', 'ds:GetDlgItem']
+ next: []
+
+node :106
+node j_PatBlt_1(4199107) info:
+ start: 4199107
+ prev: []
+ instructions: 
+  4199107, ['jmp', 'ds:PatBlt']
+ next: []
+
+node :107
+node j_DestroyWindow_3(4200360) info:
+ start: 4200360
+ prev: []
+ instructions: 
+  4200360, ['jmp', 'ds:DestroyWindow']
+ next: []
+
+node :108
+node j_MultiByteToWideChar_2(4199727) info:
+ start: 4199727
+ prev: []
+ instructions: 
+  4199727, ['jmp', 'ds:MultiByteToWideChar']
+ next: []
+
+node :109
+node j_GetCommandLineA_2(4205295) info:
+ start: 4205295
+ prev: []
+ instructions: 
+  4205295, ['jmp', 'ds:GetCommandLineA']
+ next: []
+
+node :110
+node j_GetWindowRect_0(4198873) info:
+ start: 4198873
+ prev: []
+ instructions: 
+  4198873, ['jmp', 'ds:GetWindowRect']
+ next: []
+
+node :111
+node j_PostMessageW_5(4199739) info:
+ start: 4199739
+ prev: []
+ instructions: 
+  4199739, ['jmp', 'ds:PostMessageW']
+ next: []
+
+node :112
+node j_QueryPerformanceCounter(4198669) info:
+ start: 4198669
+ prev: []
+ instructions: 
+  4198669, ['jmp', 'ds:QueryPerformanceCounter']
+ next: []
+
+node :113
+node j_LoadIconW(4199035) info:
+ start: 4199035
+ prev: []
+ instructions: 
+  4199035, ['jmp', 'ds:LoadIconW']
+ next: []
+
+node :114
+node j_SetTextColor_6(4203287) info:
+ start: 4203287
+ prev: []
+ instructions: 
+  4203287, ['jmp', 'ds:SetTextColor']
+ next: []
+
+node :115
+node j_GetTextMetricsW_3(4200917) info:
+ start: 4200917
+ prev: []
+ instructions: 
+  4200917, ['jmp', 'ds:GetTextMetricsW']
+ next: []
+
+node :116
+node j_CreateCompatibleBitmap_0(4199751) info:
+ start: 4199751
+ prev: []
+ instructions: 
+  4199751, ['jmp', 'ds:CreateCompatibleBitmap']
+ next: []
+
+node :117
+node sub_403023(4206678) info:
+ start: 4206678
+ prev: []
+ instructions: 
+  4206678, ['jmp', 'ds:GetObjectW']
+ next: []
+
+node :118
+node sub_403023(4206721) info:
+ start: 4206721
+ prev: []
+ instructions: 
+  4206721, ['jmp', 'ds:GetDlgItem']
+ next: []
+
+node :119
+node j_GetCommandLineW_6(4202675) info:
+ start: 4202675
+ prev: []
+ instructions: 
+  4202675, ['jmp', 'ds:GetCommandLineW']
+ next: []
+
+node :120
+node j_ShowWindow_5(4201990) info:
+ start: 4201990
+ prev: []
+ instructions: 
+  4201990, ['jmp', 'ds:ShowWindow']
+ next: []
+
+node :121
+node sub_40710F(4222393) info:
+ start: 4222393
+ prev: []
+ instructions: 
+  4222393, ['xor', '[ebp+var_90],7557h']
+  4222403, ['neg', '[ebp+var_C8]']
+  4222409, ['and', '[ebp+var_88],edi']
+  4222415, ['sub', '[ebp+var_2C],ecx']
+  4222418, ['mov', '[ebp+var_E4],6434h']
+  4222428, ['inc', '[ebp+var_78]']
+  4222431, ['add', '[ebp+var_D8],51h']
+  4222438, ['mov', '[ebp+var_B0],eax']
+  4222444, ['or', '[ebp+var_7C],eax']
+  4222447, ['jmp', 'loc_407043']
+ next: [4223043]
+
+node :122
+node j_GetTickCount_2(4206311) info:
+ start: 4206311
+ prev: []
+ instructions: 
+  4206311, ['jmp', 'ds:GetTickCount']
+ next: []
+
+node :123
+node j_QueryPerformanceCounter_1(4199101) info:
+ start: 4199101
+ prev: []
+ instructions: 
+  4199101, ['jmp', 'ds:QueryPerformanceCounter']
+ next: []
+
+node :124
+node j_GetCurrentProcess(4199757) info:
+ start: 4199757
+ prev: []
+ instructions: 
+  4199757, ['jmp', 'ds:GetCurrentProcess']
+ next: []
+
+node :125
+node j_GetCurrentProcessId_2(4205173) info:
+ start: 4205173
+ prev: []
+ instructions: 
+  4205173, ['jmp', 'ds:GetCurrentProcessId']
+ next: []
+
+node :126
+node j_CreateCompatibleBitmap_7(4200857) info:
+ start: 4200857
+ prev: []
+ instructions: 
+  4200857, ['jmp', 'ds:CreateCompatibleBitmap']
+ next: []
+
+node :127
+node j_BitBlt_3(4198993) info:
+ start: 4198993
+ prev: []
+ instructions: 
+  4198993, ['jmp', 'ds:BitBlt']
+ next: []
+
+node :128
+node j_FormatMessageW_3(4198729) info:
+ start: 4198729
+ prev: []
+ instructions: 
+  4198729, ['jmp', 'ds:FormatMessageW']
+ next: []
+
+node :129
+node j_GetCommandLineW(4199029) info:
+ start: 4199029
+ prev: []
+ instructions: 
+  4199029, ['jmp', 'ds:GetCommandLineW']
+ next: []
+
+node :130
+node j_GetDC_1(4198801) info:
+ start: 4198801
+ prev: []
+ instructions: 
+  4198801, ['jmp', 'ds:GetDC']
+ next: []
+
+node :131
+node j_GetDlgItem_4(4204602) info:
+ start: 4204602
+ prev: []
+ instructions: 
+  4204602, ['jmp', 'ds:GetDlgItem']
+ next: []
+
+node :132
+node j_ReleaseDC_5(4203909) info:
+ start: 4203909
+ prev: []
+ instructions: 
+  4203909, ['jmp', 'ds:ReleaseDC']
+ next: []
+
+node :133
+node j_GetModuleHandleW_1(4205313) info:
+ start: 4205313
+ prev: []
+ instructions: 
+  4205313, ['jmp', 'ds:GetModuleHandleW']
+ next: []
+
+node :134
+node sub_406715(4220693) info:
+ start: 4220693
+ prev: []
+ instructions: 
+  4220693, ['add', 'esp,0FFFFFF00h']
+  4220699, ['sub', '[ebp-94h],eax']
+  4220705, ['mov', '[ebp-6Ch],edx']
+  4220708, ['mov', '[ebp-0E4h],esi']
+  4220714, ['adc', 'dwordptr[ebp-0F4h],4Ch']
+  4220721, ['sub', 'dwordptr[ebp-1Ch],49486Fh']
+  4220728, ['jmp', 'loc_40707D']
+ next: [4223101]
+
+node :135
+node sub_406955(4221269) info:
+ start: 4221269
+ prev: []
+ instructions: 
+  4221269, ['push', 'ebp']
+  4221270, ['mov', 'ebp,esp']
+  4221272, ['add', 'esp,0FFFFFF54h']
+  4221278, ['sub', '[ebp+var_58],eax']
+  4221281, ['or', '[ebp+var_44],edx']
+  4221284, ['neg', '[ebp+var_78]']
+  4221287, ['or', '[ebp+var_AC],0']
+  4221294, ['neg', '[ebp+var_28]']
+  4221297, ['jmp', 'loc_406D39']
+ next: [4222265]
+
+node :136
+node sub_407271(4223303) info:
+ start: 4223303
+ prev: []
+ instructions: 
+  4223303, ['push', '40h']
+  4223305, ['push', '45747657h']
+  4223310, ['lea', 'eax,[ebp-198h]']
+  4223316, ['push', 'eax']
+  4223317, ['lea', 'ecx,[ebp-1DCh]']
+  4223323, ['push', 'ecx']
+  4223324, ['lea', 'eax,[ebp-78h]']
+  4223327, ['push', 'eax']
+  4223328, ['push', 'dwordptr[ebp-1A0h]']
+  4223334, ['jmp', 'loc_4065B6']
+ next: [4220342]
+
+node :137
+node j_SetTextColor_5(4203269) info:
+ start: 4203269
+ prev: []
+ instructions: 
+  4203269, ['jmp', 'ds:SetTextColor']
+ next: []
+
+node :138
+node j_MoveToEx_3(4199745) info:
+ start: 4199745
+ prev: []
+ instructions: 
+  4199745, ['jmp', 'ds:MoveToEx']
+ next: []
+
+node :139
+node j_GetACP(4198459) info:
+ start: 4198459
+ prev: []
+ instructions: 
+  4198459, ['jmp', 'ds:GetACP']
+ next: []
+
+node :140
+node j_GetCurrentThreadId_6(4206287) info:
+ start: 4206287
+ prev: []
+ instructions: 
+  4206287, ['jmp', 'ds:GetCurrentThreadId']
+ next: []
+
+node :141
+node j_GetCommandLineA_1(4200887) info:
+ start: 4200887
+ prev: []
+ instructions: 
+  4200887, ['jmp', 'ds:GetCommandLineA']
+ next: []
+
+node :142
+node j_SetTimer_0(4198885) info:
+ start: 4198885
+ prev: []
+ instructions: 
+  4198885, ['jmp', 'ds:SetTimer']
+ next: []
+
+node :143
+node j_MoveToEx_1(4198627) info:
+ start: 4198627
+ prev: []
+ instructions: 
+  4198627, ['jmp', 'ds:MoveToEx']
+ next: []
+
+node :144
+node sub_406D88(4222344) info:
+ start: 4222344
+ prev: []
+ instructions: 
+  4222344, ['push', 'ebp']
+  4222345, ['jmp', 'loc_406E62']
+ next: [4222562]
+
+node :145
+node j_PostMessageW_4(4198663) info:
+ start: 4198663
+ prev: []
+ instructions: 
+  4198663, ['jmp', 'ds:PostMessageW']
+ next: []
+
+node :146
+node j_SetEvent_1(4198879) info:
+ start: 4198879
+ prev: []
+ instructions: 
+  4198879, ['jmp', 'ds:SetEvent']
+ next: []
+
+node :147
+node j_ShowWindow_1(4199077) info:
+ start: 4199077
+ prev: []
+ instructions: 
+  4199077, ['jmp', 'ds:ShowWindow']
+ next: []
+
+node :148
+node j_CreateCompatibleBitmap_5(4199095) info:
+ start: 4199095
+ prev: []
+ instructions: 
+  4199095, ['jmp', 'ds:CreateCompatibleBitmap']
+ next: []
+
+node :149
+node sub_403023(4206733) info:
+ start: 4206733
+ prev: []
+ instructions: 
+  4206733, ['jmp', 'ds:GetMessageW']
+ next: []
+
+node :150
+node j_DestroyWindow_6(4203293) info:
+ start: 4203293
+ prev: []
+ instructions: 
+  4203293, ['jmp', 'ds:DestroyWindow']
+ next: []
+
+node :151
+node j_LocalAlloc_0(4202693) info:
+ start: 4202693
+ prev: []
+ instructions: 
+  4202693, ['jmp', 'ds:LocalAlloc']
+ next: []
+
+node :152
+node j_GetTextMetricsW_1(4198975) info:
+ start: 4198975
+ prev: []
+ instructions: 
+  4198975, ['jmp', 'ds:GetTextMetricsW']
+ next: []
+
+node :153
+node j_GetCommandLineW_5(4201966) info:
+ start: 4201966
+ prev: []
+ instructions: 
+  4201966, ['jmp', 'ds:GetCommandLineW']
+ next: []
+
+node :154
+node j_ReleaseDC_3(4200330) info:
+ start: 4200330
+ prev: []
+ instructions: 
+  4200330, ['jmp', 'ds:ReleaseDC']
+ next: []
+
+node :155
+node j_ShowWindow_0(4198855) info:
+ start: 4198855
+ prev: []
+ instructions: 
+  4198855, ['jmp', 'ds:ShowWindow']
+ next: []
+
+node :156
+node j_SendMessageW_4(4204590) info:
+ start: 4204590
+ prev: []
+ instructions: 
+  4204590, ['jmp', 'ds:SendMessageW']
+ next: []
+
+node :157
+node sub_407271(4221613) info:
+ start: 4221613
+ prev: []
+ instructions: 
+  4221613, ['retn']
+ next: []
+
+node :158
+node j_MoveToEx_0(4198591) info:
+ start: 4198591
+ prev: []
+ instructions: 
+  4198591, ['jmp', 'ds:MoveToEx']
+ next: []
+
+node :159
+node j_SendMessageW(4220198) info:
+ start: 4220198
+ prev: []
+ instructions: 
+  4220198, ['jmp', 'ds:SendMessageW']
+ next: []
+
+node :160
+node j_DeleteObject_2(4200342) info:
+ start: 4200342
+ prev: []
+ instructions: 
+  4200342, ['jmp', 'ds:DeleteObject']
+ next: []
+
+node :161
+node sub_406715(4223101) info:
+ start: 4223101
+ prev: []
+ instructions: 
+  4223101, ['add', 'dwordptr[ebp-30h],626Ch']
+  4223108, ['not', 'dwordptr[ebp-0B4h]']
+  4223114, ['neg', 'dwordptr[ebp-48h]']
+  4223117, ['neg', 'dwordptr[ebp-90h]']
+  4223123, ['not', 'dwordptr[ebp-0F4h]']
+  4223129, ['dec', 'dwordptr[ebp-5Ch]']
+  4223132, ['sub', '[ebp-60h],edx']
+  4223135, ['jmp', 'loc_406B57']
+ next: [4221783]
+
+node :162
+node j_MultiByteToWideChar_5(4203239) info:
+ start: 4203239
+ prev: []
+ instructions: 
+  4203239, ['jmp', 'ds:MultiByteToWideChar']
+ next: []
+
+node :163
+node j_GetCurrentThreadId_0(4205434) info:
+ start: 4205434
+ prev: []
+ instructions: 
+  4205434, ['jmp', 'ds:GetCurrentThreadId']
+ next: []
+
+node :164
+node sub_4030FA(4206842) info:
+ start: 4206842
+ prev: []
+ instructions: 
+  4206842, ['push', 'ebp']
+  4206843, ['mov', 'ebp,esp']
+  4206845, ['add', 'esp,0FFFFFF18h']
+  4206851, ['adc', '[ebp+var_84],6Bh']
+  4206858, ['neg', '[ebp+var_C0]']
+  4206864, ['leave']
+  4206865, ['retn', '10h']
+ next: []
+
+node :165
+node j_GetWindowRect(4198753) info:
+ start: 4198753
+ prev: []
+ instructions: 
+  4198753, ['jmp', 'ds:GetWindowRect']
+ next: []
+
+node :166
+node j_PostMessageW_3(4198537) info:
+ start: 4198537
+ prev: []
+ instructions: 
+  4198537, ['jmp', 'ds:PostMessageW']
+ next: []
+
+node :167
+node j_GetModuleFileNameA_1(4200869) info:
+ start: 4200869
+ prev: []
+ instructions: 
+  4200869, ['jmp', 'ds:GetModuleFileNameA']
+ next: []
+
+node :168
+node j_GetACP_0(4202014) info:
+ start: 4202014
+ prev: []
+ instructions: 
+  4202014, ['jmp', 'ds:GetACP']
+ next: []
+
+node :169
+node j_GetDC_2(4199011) info:
+ start: 4199011
+ prev: []
+ instructions: 
+  4199011, ['jmp', 'ds:GetDC']
+ next: []
+
+node :170
+node j_QueryPerformanceCounter_2(4199113) info:
+ start: 4199113
+ prev: []
+ instructions: 
+  4199113, ['jmp', 'ds:QueryPerformanceCounter']
+ next: []
+
+node :171
+node sub_403176(4206966) info:
+ start: 4206966
+ prev: []
+ instructions: 
+  4206966, ['push', 'ebp']
+  4206967, ['mov', 'ebp,esp']
+  4206969, ['add', 'esp,0FFFFFF68h']
+  4206975, ['xor', 'edi,ebx']
+  4206977, ['not', 'edx']
+  4206979, ['and', 'ebx,44h']
+  4206982, ['not', 'esi']
+  4206984, ['add', '[ebp+var_40],edi']
+  4206987, ['xor', '[ebp+var_14],0']
+  4206991, ['and', '[ebp+var_60],eax']
+  4206994, ['and', '[ebp+var_68],eax']
+  4206997, ['mov', '[ebp+var_90],edx']
+  4207003, ['add', '[ebp+var_10],63455564h']
+  4207010, ['or', '[ebp+var_34],edi']
+  4207013, ['sub', '[ebp+var_8],0']
+  4207017, ['leave']
+  4207018, ['retn', '14h']
+ next: []
+
+node :172
+node j_GetStockObject_5(4205410) info:
+ start: 4205410
+ prev: []
+ instructions: 
+  4205410, ['jmp', 'ds:GetStockObject']
+ next: []
+
+node :173
+node sub_406C16(4221974) info:
+ start: 4221974
+ prev: []
+ instructions: 
+  4221974, ['add', 'esp,0FFFFFF24h']
+  4221980, ['sbb', 'ecx,346Dh']
+  4221986, ['sbb', 'dwordptr[ebp-48h],46h']
+  4221990, ['and', 'dwordptr[ebp-24h],6548h']
+  4221997, ['jmp', 'loc_406AB4']
+ next: [4221620]
+
+node :174
+node j_GetCurrentProcess_1(4200354) info:
+ start: 4200354
+ prev: []
+ instructions: 
+  4200354, ['jmp', 'ds:GetCurrentProcess']
+ next: []
+
+node :175
+node sub_406955(4222265) info:
+ start: 4222265
+ prev: []
+ instructions: 
+  4222265, ['sbb', '[ebp+var_18],esi']
+  4222268, ['xor', '[ebp+var_50],5964h']
+  4222275, ['mov', '[ebp+var_9C],edx']
+  4222281, ['inc', '[ebp+var_3C]']
+  4222284, ['sub', '[ebp+var_74],eax']
+  4222287, ['leave']
+  4222288, ['retn', '0Ch']
+ next: []
+
+node :176
+node j_SetEvent_3(4202663) info:
+ start: 4202663
+ prev: []
+ instructions: 
+  4202663, ['jmp', 'ds:SetEvent']
+ next: []
+
+node :177
+node j_GetCurrentThreadId(4198711) info:
+ start: 4198711
+ prev: []
+ instructions: 
+  4198711, ['jmp', 'ds:GetCurrentThreadId']
+ next: []
+
+node :178
+node sub_406EBB(4222651) info:
+ start: 4222651
+ prev: []
+ instructions: 
+  4222651, ['push', 'ebp']
+  4222652, ['mov', 'ebp,esp']
+  4222654, ['add', 'esp,0FFFFFF74h']
+  4222660, ['sub', '[ebp+var_70],4F6B57h']
+  4222667, ['jmp', 'loc_406BD9']
+ next: [4221913]
+
+node :179
+node sub_403023(4206627) info:
+ start: 4206627
+ prev: []
+ instructions: 
+  4206627, ['push', 'ebp']
+  4206628, ['mov', 'ebp,esp']
+  4206630, ['add', 'esp,0FFFFFF58h']
+  4206636, ['inc', '[ebp+var_1C]']
+  4206639, ['sbb', '[ebp+var_68],ebx']
+  4206642, ['sbb', '[ebp+var_3C],65h']
+  4206646, ['xor', '[ebp+var_68],4278h']
+  4206653, ['or', '[ebp+var_20],7773h']
+  4206660, ['adc', '[ebp+var_10],50h']
+  4206664, ['jmp', 'shortloc_4030B8']
+ next: [4206776]
+
+node :180
+node sub_403023(4206756) info:
+ start: 4206756
+ prev: []
+ instructions: 
+  4206756, ['and', 'al,24h']
+  4206758, ['inc', 'esp']
+  4206759, ['add', 'dl,[eax+2240244h]']
+  4206765, ['and', 'al,2']
+  4206767, ['add', 'dl,[eax+2200220h]']
+  4206773, ['adc', '[esp+0A8h+var_A8],esp']
+ next: [4206776]
+
+node :181
+node sub_40668A(4220554) info:
+ start: 4220554
+ prev: []
+ instructions: 
+  4220554, ['push', 'ebp']
+  4220555, ['mov', 'ebp,esp']
+  4220557, ['add', 'esp,0FFFFFF2Ch']
+  4220563, ['leave']
+  4220564, ['jmp', 'nullsub_2']
+ next: [4221266]
+
+node :182
+node j_PostMessageW_1(4222350) info:
+ start: 4222350
+ prev: []
+ instructions: 
+  4222350, ['jmp', 'ds:PostMessageW']
+ next: []
+
+node :183
+node j_GetStockObject_0(4198735) info:
+ start: 4198735
+ prev: []
+ instructions: 
+  4198735, ['jmp', 'ds:GetStockObject']
+ next: []
+
+node :184
+node j_SetTimer_5(4205360) info:
+ start: 4205360
+ prev: []
+ instructions: 
+  4205360, ['jmp', 'ds:SetTimer']
+ next: []
+
+node :185
+node j_GetWindowRect_2(4202020) info:
+ start: 4202020
+ prev: []
+ instructions: 
+  4202020, ['jmp', 'ds:GetWindowRect']
+ next: []
+
+node :186
+node j_ShowWindow_3(4200863) info:
+ start: 4200863
+ prev: []
+ instructions: 
+  4200863, ['jmp', 'ds:ShowWindow']
+ next: []
+
+node :187
+node j_GetCurrentThreadId_3(4201978) info:
+ start: 4201978
+ prev: []
+ instructions: 
+  4201978, ['jmp', 'ds:GetCurrentThreadId']
+ next: []
+
+node :188
+node j_DeleteDC_1(4199023) info:
+ start: 4199023
+ prev: []
+ instructions: 
+  4199023, ['jmp', 'ds:DeleteDC']
+ next: []
+
+node :189
+node sub_406B5C(4221788) info:
+ start: 4221788
+ prev: []
+ instructions: 
+  4221788, ['push', 'ebp']
+  4221789, ['jmp', 'loc_406A3B']
+ next: [4221499]
+
+node :190
+node j_GetCommandLineA_0(4200312) info:
+ start: 4200312
+ prev: []
+ instructions: 
+  4200312, ['jmp', 'ds:GetCommandLineA']
+ next: []
+
+node :191
+node j_MultiByteToWideChar_4(4202657) info:
+ start: 4202657
+ prev: []
+ instructions: 
+  4202657, ['jmp', 'ds:MultiByteToWideChar']
+ next: []
+
+node :192
+node sub_403142(4206914) info:
+ start: 4206914
+ prev: []
+ instructions: 
+  4206914, ['push', 'ebp']
+  4206915, ['mov', 'ebp,esp']
+  4206917, ['add', 'esp,0FFFFFF6Ch']
+  4206923, ['not', '[ebp+var_84]']
+  4206929, ['sbb', '[ebp+var_20],esi']
+  4206932, ['add', '[ebp+var_38],58h']
+  4206936, ['xor', '[ebp+var_1C],ecx']
+  4206939, ['sub', '[ebp+var_38],ebx']
+  4206942, ['neg', '[ebp+var_44]']
+  4206945, ['sub', '[ebp+var_64],66h']
+  4206949, ['not', '[ebp+var_2C]']
+  4206952, ['and', '[ebp+var_38],774753h']
+  4206959, ['or', '[ebp+var_6C],esi']
+  4206962, ['leave']
+  4206963, ['retn', '4']
+ next: []
+
+node :193
+node j_ReleaseDC(4198489) info:
+ start: 4198489
+ prev: []
+ instructions: 
+  4198489, ['jmp', 'ds:ReleaseDC']
+ next: []
+
+node :194
+node j_DeleteDC_3(4205227) info:
+ start: 4205227
+ prev: []
+ instructions: 
+  4205227, ['jmp', 'ds:DeleteDC']
+ next: []
+
+node :195
+node j_ReleaseDC_1(4198861) info:
+ start: 4198861
+ prev: []
+ instructions: 
+  4198861, ['jmp', 'ds:ReleaseDC']
+ next: []
+
+node :196
+node j_GetDlgItem_5(4205251) info:
+ start: 4205251
+ prev: []
+ instructions: 
+  4205251, ['jmp', 'ds:GetDlgItem']
+ next: []
+
+node :197
+node j_SetTimer(4198819) info:
+ start: 4198819
+ prev: []
+ instructions: 
+  4198819, ['jmp', 'ds:SetTimer']
+ next: []
+
+node :198
+node j_CreateWindowExW_0(4199017) info:
+ start: 4199017
+ prev: []
+ instructions: 
+  4199017, ['jmp', 'ds:CreateWindowExW']
+ next: []
+
+node :199
+node j_SetUnhandledExceptionFilter_1(4199703) info:
+ start: 4199703
+ prev: []
+ instructions: 
+  4199703, ['jmp', 'ds:SetUnhandledExceptionFilter']
+ next: []
+
+node :200
+node j_GetModuleFileNameA_0(4200300) info:
+ start: 4200300
+ prev: []
+ instructions: 
+  4200300, ['jmp', 'ds:GetModuleFileNameA']
+ next: []
+
+node :201
+node j_PostMessageW_0(4220222) info:
+ start: 4220222
+ prev: []
+ instructions: 
+  4220222, ['jmp', 'ds:PostMessageW']
+ next: []
+
+node :202
+node j_SelectObject_1(4200306) info:
+ start: 4200306
+ prev: []
+ instructions: 
+  4200306, ['jmp', 'ds:SelectObject']
+ next: []
+
+node :203
+node j_CreateCompatibleDC(4198765) info:
+ start: 4198765
+ prev: []
+ instructions: 
+  4198765, ['jmp', 'ds:CreateCompatibleDC']
+ next: []
+
+node :204
+node j_SetTimer_1(4201960) info:
+ start: 4201960
+ prev: []
+ instructions: 
+  4201960, ['jmp', 'ds:SetTimer']
+ next: []
+
+node :205
+node j_BitBlt_5(4200899) info:
+ start: 4200899
+ prev: []
+ instructions: 
+  4200899, ['jmp', 'ds:BitBlt']
+ next: []
+
+node :206
+node sub_406F40(4222784) info:
+ start: 4222784
+ prev: []
+ instructions: 
+  4222784, ['push', 'ebp']
+  4222785, ['mov', 'ebp,esp']
+  4222787, ['jmp', 'sub_406D7E']
+ next: [4222334]
+
+node :207
+node j_SendMessageW_1(4198693) info:
+ start: 4198693
+ prev: []
+ instructions: 
+  4198693, ['jmp', 'ds:SendMessageW']
+ next: []
+
+node :208
+node j_GetCommandLineA(4199685) info:
+ start: 4199685
+ prev: []
+ instructions: 
+  4199685, ['jmp', 'ds:GetCommandLineA']
+ next: []
+
+node :209
+node j_GetTextMetricsW_4(4201491) info:
+ start: 4201491
+ prev: []
+ instructions: 
+  4201491, ['jmp', 'ds:GetTextMetricsW']
+ next: []
+
+node :210
+node sub_40668A(4221266) info:
+ start: 4221266
+ prev: []
+ instructions: 
+  4221266, ['retn', '14h']
+ next: []
+
+node :211
+node j_CreateWindowExW_1(4199131) info:
+ start: 4199131
+ prev: []
+ instructions: 
+  4199131, ['jmp', 'ds:CreateWindowExW']
+ next: []
+
+node :212
+node sub_403023(4206776) info:
+ start: 4206776
+ prev: []
+ instructions: 
+  4206776, ['inc', '[ebp+var_84]']
+  4206782, ['and', '[ebp+var_80],ecx']
+  4206785, ['mov', '[ebp+var_5C],4872h']
+  4206792, ['not', '[ebp+var_24]']
+  4206795, ['xor', 'ebx,71h']
+  4206798, ['leave']
+  4206799, ['retn', '0Ch']
+ next: []
+
+node :213
+node j_GetModuleFileNameA(4200851) info:
+ start: 4200851
+ prev: []
+ instructions: 
+  4200851, ['jmp', 'ds:GetModuleFileNameA']
+ next: []
+
+node :214
+node j_LocalAlloc(4198417) info:
+ start: 4198417
+ prev: []
+ instructions: 
+  4198417, ['jmp', 'ds:LocalAlloc']
+ next: []
+
+node :215
+node j_MultiByteToWideChar_6(4206341) info:
+ start: 4206341
+ prev: []
+ instructions: 
+  4206341, ['jmp', 'ds:MultiByteToWideChar']
+ next: []
+
+node :216
+node j_GetSystemMetrics_0(4199691) info:
+ start: 4199691
+ prev: []
+ instructions: 
+  4199691, ['jmp', 'ds:GetSystemMetrics']
+ next: []
+
+node :217
+node j_GetModuleFileNameA_2(4203921) info:
+ start: 4203921
+ prev: []
+ instructions: 
+  4203921, ['jmp', 'ds:GetModuleFileNameA']
+ next: []
+
+node :218
+node j_DefWindowProcW_10(4205191) info:
+ start: 4205191
+ prev: []
+ instructions: 
+  4205191, ['jmp', 'ds:DefWindowProcW']
+ next: []
+
+node :219
+node j_SendMessageW_0(4198525) info:
+ start: 4198525
+ prev: []
+ instructions: 
+  4198525, ['jmp', 'ds:SendMessageW']
+ next: []
+
+node :220
+node j_SelectObject_2(4200893) info:
+ start: 4200893
+ prev: []
+ instructions: 
+  4200893, ['jmp', 'ds:SelectObject']
+ next: []
+
+node :221
+node j_DestroyWindow_7(4205319) info:
+ start: 4205319
+ prev: []
+ instructions: 
+  4205319, ['jmp', 'ds:DestroyWindow']
+ next: []
+
+node :222
+node j_BitBlt(4198771) info:
+ start: 4198771
+ prev: []
+ instructions: 
+  4198771, ['jmp', 'ds:BitBlt']
+ next: []
+
+node :223
+node sub_406616(4220438) info:
+ start: 4220438
+ prev: []
+ instructions: 
+  4220438, ['push', 'ebp']
+  4220439, ['jmp', 'loc_406CE5']
+ next: [4222181]
+
+node :224
+node sub_406EBB(4221913) info:
+ start: 4221913
+ prev: []
+ instructions: 
+  4221913, ['dec', '[ebp+var_28]']
+  4221916, ['adc', '[ebp+var_58],ebx']
+  4221919, ['sbb', '[ebp+var_24],esi']
+  4221922, ['or', '[ebp+var_68],esi']
+  4221925, ['or', '[ebp+var_54],esi']
+  4221928, ['xor', '[ebp+var_48],0']
+  4221932, ['jmp', 'loc_407108']
+ next: [4223240]
+
+node :225
+node sub_406D88(4222562) info:
+ start: 4222562
+ prev: []
+ instructions: 
+  4222562, ['mov', 'ebp,esp']
+  4222564, ['add', 'esp,0FFFFFF54h']
+  4222570, ['neg', 'dwordptr[ebp-7Ch]']
+  4222573, ['and', 'dwordptr[ebp-74h],31h']
+  4222577, ['sub', '[ebp-34h],eax']
+  4222580, ['neg', 'dwordptr[ebp-3Ch]']
+  4222583, ['and', 'dwordptr[ebp-98h],0']
+  4222590, ['jmp', 'loc_4067E7']
+ next: [4220903]
+
+node :226
+node sub_4071EA(4223466) info:
+ start: 4223466
+ prev: []
+ instructions: 
+  4223466, ['push', 'ebp']
+  4223467, ['mov', 'ebp,esp']
+  4223469, ['jmp', 'sub_4069EF']
+ next: [4221423]
+
+node :227
+node j_GetTextMetricsW_2(4199083) info:
+ start: 4199083
+ prev: []
+ instructions: 
+  4199083, ['jmp', 'ds:GetTextMetricsW']
+ next: []
+
+node :228
+node j_CreateCompatibleBitmap_11(4205233) info:
+ start: 4205233
+ prev: []
+ instructions: 
+  4205233, ['jmp', 'ds:CreateCompatibleBitmap']
+ next: []
+
+node :229
+node j_SetTimer_7(4206353) info:
+ start: 4206353
+ prev: []
+ instructions: 
+  4206353, ['jmp', 'ds:SetTimer']
+ next: []
+
+node :230
+node j_GetDC_5(4205348) info:
+ start: 4205348
+ prev: []
+ instructions: 
+  4205348, ['jmp', 'ds:GetDC']
+ next: []
+
+node :231
+node j_GetSystemMetrics(4198849) info:
+ start: 4198849
+ prev: []
+ instructions: 
+  4198849, ['jmp', 'ds:GetSystemMetrics']
+ next: []
+
+node :232
+node j_GetCurrentProcessId_0(4198825) info:
+ start: 4198825
+ prev: []
+ instructions: 
+  4198825, ['jmp', 'ds:GetCurrentProcessId']
+ next: []
+
+node :233
+node j_NtAllocateVirtualMemory(4220216) info:
+ start: 4220216
+ prev: []
+ instructions: 
+  4220216, ['jmp', 'ds:NtAllocateVirtualMemory']
+ next: []
+
+node :234
+node j_GetStockObject_3(4199119) info:
+ start: 4199119
+ prev: []
+ instructions: 
+  4199119, ['jmp', 'ds:GetStockObject']
+ next: []
+
+node :235
+node j_SetTimer_3(4203873) info:
+ start: 4203873
+ prev: []
+ instructions: 
+  4203873, ['jmp', 'ds:SetTimer']
+ next: []
+
+node :236
+node j_SetTextColor_7(4206305) info:
+ start: 4206305
+ prev: []
+ instructions: 
+  4206305, ['jmp', 'ds:SetTextColor']
+ next: []
+
+node :237
+node j_GetProcessHeap_0(4198429) info:
+ start: 4198429
+ prev: []
+ instructions: 
+  4198429, ['jmp', 'ds:GetProcessHeap']
+ next: []
+
+node :238
+node j_GetTickCount_0(4205354) info:
+ start: 4205354
+ prev: []
+ instructions: 
+  4205354, ['jmp', 'ds:GetTickCount']
+ next: []
+
+node :239
+node sub_406EBB(4223240) info:
+ start: 4223240
+ prev: []
+ instructions: 
+  4223240, ['add', '[ebp+var_2C],edx']
+  4223243, ['leave']
+  4223244, ['retn', '14h']
+ next: []
+
+node :240
+node j_CreateCompatibleDC_0(4202038) info:
+ start: 4202038
+ prev: []
+ instructions: 
+  4202038, ['jmp', 'ds:CreateCompatibleDC']
+ next: []
+
+node :241
+node sub_4071EA(4221423) info:
+ start: 4221423
+ prev: []
+ instructions: 
+  4221423, ['add', 'esp,0FFFFFF74h']
+ next: []
+
+node :242
+node j_DestroyWindow_8(4205404) info:
+ start: 4205404
+ prev: []
+ instructions: 
+  4205404, ['jmp', 'ds:DestroyWindow']
+ next: []
+
+node :243
+node j_CreateCompatibleBitmap_2(4198495) info:
+ start: 4198495
+ prev: []
+ instructions: 
+  4198495, ['jmp', 'ds:CreateCompatibleBitmap']
+ next: []
+
+node :244
+node j_GetDlgItem_1(4198741) info:
+ start: 4198741
+ prev: []
+ instructions: 
+  4198741, ['jmp', 'ds:GetDlgItem']
+ next: []
+
+node :245
+node j_GetMessageW_3(4198939) info:
+ start: 4198939
+ prev: []
+ instructions: 
+  4198939, ['jmp', 'ds:GetMessageW']
+ next: []
+
+node :246
+node j_GetObjectW_4(4205203) info:
+ start: 4205203
+ prev: []
+ instructions: 
+  4205203, ['jmp', 'ds:GetObjectW']
+ next: []
+
+node :247
+node j_FormatMessageW_4(4202627) info:
+ start: 4202627
+ prev: []
+ instructions: 
+  4202627, ['jmp', 'ds:FormatMessageW']
+ next: []
+
+node :248
+node j_PatBlt_2(4201461) info:
+ start: 4201461
+ prev: []
+ instructions: 
+  4201461, ['jmp', 'ds:PatBlt']
+ next: []
+
+node :249
+node j_GetDlgItem_0(4198543) info:
+ start: 4198543
+ prev: []
+ instructions: 
+  4198543, ['jmp', 'ds:GetDlgItem']
+ next: []
+
+node :250
+node j_WaitForSingleObject(4198783) info:
+ start: 4198783
+ prev: []
+ instructions: 
+  4198783, ['jmp', 'ds:WaitForSingleObject']
+ next: []
+
+node :251
+node j_GetDeviceCaps_1(4198759) info:
+ start: 4198759
+ prev: []
+ instructions: 
+  4198759, ['jmp', 'ds:GetDeviceCaps']
+ next: []
+
+node :252
+node j_LoadIconW_1(4198981) info:
+ start: 4198981
+ prev: []
+ instructions: 
+  4198981, ['jmp', 'ds:LoadIconW']
+ next: []
+
+node :253
+node j_DestroyWindow_2(4199715) info:
+ start: 4199715
+ prev: []
+ instructions: 
+  4199715, ['jmp', 'ds:DestroyWindow']
+ next: []
+
+node :254
+node j_PostMessageW_8(4205392) info:
+ start: 4205392
+ prev: []
+ instructions: 
+  4205392, ['jmp', 'ds:PostMessageW']
+ next: []
+
+node :255
+node j_GetMessageW(4220204) info:
+ start: 4220204
+ prev: []
+ instructions: 
+  4220204, ['jmp', 'ds:GetMessageW']
+ next: []
+
+node :256
+node j_GetDeviceCaps_3(4199775) info:
+ start: 4199775
+ prev: []
+ instructions: 
+  4199775, ['jmp', 'ds:GetDeviceCaps']
+ next: []
+
+node :257
+node j_SetTextColor_2(4201521) info:
+ start: 4201521
+ prev: []
+ instructions: 
+  4201521, ['jmp', 'ds:SetTextColor']
+ next: []
+
+node :258
+node sub_4069EF(4221423) info:
+ start: 4221423
+ prev: []
+ instructions: 
+  4221423, ['add', 'esp,0FFFFFF74h']
+  4221429, ['add', '[ebp-88h],eax']
+  4221435, ['mov', '[ebp-74h],edi']
+  4221438, ['dec', 'dwordptr[ebp-4]']
+  4221441, ['neg', 'dwordptr[ebp-14h]']
+  4221444, ['mov', '[ebp-58h],esi']
+  4221447, ['adc', 'dwordptr[ebp-3Ch],7938h']
+  4221454, ['inc', 'dwordptr[ebp-20h]']
+  4221457, ['jmp', 'locret_406686']
+ next: [4220550]
+
+node :259
+node j_QueryPerformanceCounter_3(4200881) info:
+ start: 4200881
+ prev: []
+ instructions: 
+  4200881, ['jmp', 'ds:QueryPerformanceCounter']
+ next: []
+
+node :260
+node j_SelectObject_0(4199763) info:
+ start: 4199763
+ prev: []
+ instructions: 
+  4199763, ['jmp', 'ds:SelectObject']
+ next: []
+
+node :261
+node j_LineTo_1(4202026) info:
+ start: 4202026
+ prev: []
+ instructions: 
+  4202026, ['jmp', 'ds:LineTo']
+ next: []
+
+node :262
+node j_GetCurrentThreadId_4(4202603) info:
+ start: 4202603
+ prev: []
+ instructions: 
+  4202603, ['jmp', 'ds:GetCurrentThreadId']
+ next: []
+
+node :263
+node j_DestroyWindow_4(4201449) info:
+ start: 4201449
+ prev: []
+ instructions: 
+  4201449, ['jmp', 'ds:DestroyWindow']
+ next: []
+
+node :264
+node sub_406D7E(4222334) info:
+ start: 4222334
+ prev: []
+ instructions: 
+  4222334, ['add', 'esp,0FFFFFF38h']
+  4222340, ['leave']
+  4222341, ['retn', '10h']
+ next: []
+
+node :265
+node j_FormatMessageW(4220444) info:
+ start: 4220444
+ prev: []
+ instructions: 
+  4220444, ['jmp', 'ds:FormatMessageW']
+ next: []
+
+node :266
+node j_DefWindowProcW_3(4198933) info:
+ start: 4198933
+ prev: []
+ instructions: 
+  4198933, ['jmp', 'ds:DefWindowProcW']
+ next: []
+
+node :267
+node j_DefWindowProcW_6(4201515) info:
+ start: 4201515
+ prev: []
+ instructions: 
+  4201515, ['jmp', 'ds:DefWindowProcW']
+ next: []
+
+node :268
+node j_MultiByteToWideChar_1(4199047) info:
+ start: 4199047
+ prev: []
+ instructions: 
+  4199047, ['jmp', 'ds:MultiByteToWideChar']
+ next: []
+
+node :269
+node j_GetObjectW_0(4198585) info:
+ start: 4198585
+ prev: []
+ instructions: 
+  4198585, ['jmp', 'ds:GetObjectW']
+ next: []
+
+node :270
+node sub_406616(4222181) info:
+ start: 4222181
+ prev: []
+ instructions: 
+  4222181, ['mov', 'ebp,esp']
+  4222183, ['add', 'esp,0FFFFFF44h']
+  4222189, ['dec', 'dwordptr[ebp-1Ch]']
+  4222192, ['not', 'dwordptr[ebp-78h]']
+  4222195, ['adc', 'dwordptr[ebp-3Ch],41h']
+  4222199, ['dec', 'dwordptr[ebp-0B4h]']
+  4222205, ['inc', 'dwordptr[ebp-84h]']
+  4222211, ['inc', 'dwordptr[ebp-18h]']
+  4222214, ['sbb', 'dwordptr[ebp-7Ch],0']
+  4222218, ['jmp', 'shortloc_406CA9']
+ next: [4222121]
+
+node :271
+node sub_406D88(4220903) info:
+ start: 4220903
+ prev: []
+ instructions: 
+  4220903, ['mov', 'dwordptr[ebp-48h],33h']
+  4220910, ['and', '[ebp-38h],ebx']
+  4220913, ['inc', 'dwordptr[ebp-80h]']
+  4220916, ['mov', '[ebp-24h],edx']
+  4220919, ['neg', 'dwordptr[ebp-70h]']
+  4220922, ['inc', 'dwordptr[ebp-40h]']
+  4220925, ['adc', '[ebp-0A0h],ecx']
+  4220931, ['or', '[ebp-0Ch],eax']
+  4220934, ['jmp', 'loc_406FFE']
+ next: [4222974]
+
+node :272
+node j_ShowWindow(4198561) info:
+ start: 4198561
+ prev: []
+ instructions: 
+  4198561, ['jmp', 'ds:ShowWindow']
+ next: []
+
+node :273
+node j_GetDC(4198597) info:
+ start: 4198597
+ prev: []
+ instructions: 
+  4198597, ['jmp', 'ds:GetDC']
+ next: []
+
+node :274
+node j_GetDlgItem(4198441) info:
+ start: 4198441
+ prev: []
+ instructions: 
+  4198441, ['jmp', 'ds:GetDlgItem']
+ next: []
+
+node :275
+node j_PostMessageW(4202645) info:
+ start: 4202645
+ prev: []
+ instructions: 
+  4202645, ['jmp', 'ds:PostMessageW']
+ next: []
+
+node :276
+node j_SetEvent(4204578) info:
+ start: 4204578
+ prev: []
+ instructions: 
+  4204578, ['jmp', 'ds:SetEvent']
+ next: []
+
+node :277
+node j_GetTickCount_3(4206317) info:
+ start: 4206317
+ prev: []
+ instructions: 
+  4206317, ['jmp', 'ds:GetTickCount']
+ next: []
+
+node :278
+node j_WaitForSingleObject_0(4198951) info:
+ start: 4198951
+ prev: []
+ instructions: 
+  4198951, ['jmp', 'ds:WaitForSingleObject']
+ next: []
+
+node :279
+node j_SetTextColor_1(4201425) info:
+ start: 4201425
+ prev: []
+ instructions: 
+  4201425, ['jmp', 'ds:SetTextColor']
+ next: []
+
+node :280
+node j_GetDeviceCaps(4198477) info:
+ start: 4198477
+ prev: []
+ instructions: 
+  4198477, ['jmp', 'ds:GetDeviceCaps']
+ next: []
+
+node :281
+node j_GetMessageW_0(4198447) info:
+ start: 4198447
+ prev: []
+ instructions: 
+  4198447, ['jmp', 'ds:GetMessageW']
+ next: []
+
+node :282
+node j_QueryPerformanceCounter_6(4204608) info:
+ start: 4204608
+ prev: []
+ instructions: 
+  4204608, ['jmp', 'ds:QueryPerformanceCounter']
+ next: []
+
+node :283
+node j_PostMessageW_2(4198513) info:
+ start: 4198513
+ prev: []
+ instructions: 
+  4198513, ['jmp', 'ds:PostMessageW']
+ next: []
+
+node :284
+node j_SetTextColor_3(4202651) info:
+ start: 4202651
+ prev: []
+ instructions: 
+  4202651, ['jmp', 'ds:SetTextColor']
+ next: []
+
+node :285
+node j_DefWindowProcW_8(4203885) info:
+ start: 4203885
+ prev: []
+ instructions: 
+  4203885, ['jmp', 'ds:DefWindowProcW']
+ next: []
+
+node :286
+node j_ReleaseDC_9(4205342) info:
+ start: 4205342
+ prev: []
+ instructions: 
+  4205342, ['jmp', 'ds:ReleaseDC']
+ next: []
+
+node :287
+node j_GetProcessHeap(4220733) info:
+ start: 4220733
+ prev: []
+ instructions: 
+  4220733, ['jmp', 'ds:GetProcessHeap']
+ next: []
+
+node :288
+node j_PatBlt_0(4198945) info:
+ start: 4198945
+ prev: []
+ instructions: 
+  4198945, ['jmp', 'ds:PatBlt']
+ next: []
+
+node :289
+node j_DeleteDC_2(4200336) info:
+ start: 4200336
+ prev: []
+ instructions: 
+  4200336, ['jmp', 'ds:DeleteDC']
+ next: []
+
+node :290
+node j_GetStockObject(4198675) info:
+ start: 4198675
+ prev: []
+ instructions: 
+  4198675, ['jmp', 'ds:GetStockObject']
+ next: []
+
+node :291
+node sub_403023(4206666) info:
+ start: 4206666
+ prev: []
+ instructions: 
+  4206666, ['jmp', 'ds:QueryPerformanceCounter']
+ next: []
+
+node :292
+node j_DeleteObject_8(4203903) info:
+ start: 4203903
+ prev: []
+ instructions: 
+  4203903, ['jmp', 'ds:DeleteObject']
+ next: []
+
+node :293
+node sub_403016(4206614) info:
+ start: 4206614
+ prev: []
+ instructions: 
+  4206614, ['push', 'ebp']
+  4206615, ['mov', 'ebp,esp']
+  4206617, ['add', 'esp,0FFFFFF44h']
+  4206623, ['leave']
+  4206624, ['retn', '10h']
+ next: []
+
+node :294
+node j_GetObjectW(4221342) info:
+ start: 4221342
+ prev: []
+ instructions: 
+  4221342, ['jmp', 'ds:GetObjectW']
+ next: []
+
+node :295
+node sub_406616(4222121) info:
+ start: 4222121
+ prev: []
+ instructions: 
+  4222121, ['sub', '[ebp-58h],eax']
+  4222124, ['adc', '[ebp-0Ch],edx']
+  4222127, ['add', '[ebp-74h],edx']
+  4222130, ['leave']
+  4222131, ['retn', '4']
+ next: []
+
+node :296
+node j_SelectObject_6(4205331) info:
+ start: 4205331
+ prev: []
+ instructions: 
+  4205331, ['jmp', 'ds:SelectObject']
+ next: []
+
+node :297
+node sub_403023(4206727) info:
+ start: 4206727
+ prev: []
+ instructions: 
+  4206727, ['jmp', 'ds:PostMessageW']
+ next: []
+
+node :298
+node j_DestroyWindow_0(4198645) info:
+ start: 4198645
+ prev: []
+ instructions: 
+  4198645, ['jmp', 'ds:DestroyWindow']
+ next: []
+
+node :299
+node j_LineTo(4198621) info:
+ start: 4198621
+ prev: []
+ instructions: 
+  4198621, ['jmp', 'ds:LineTo']
+ next: []
+
+node :300
+node j_CreateCompatibleBitmap(4198717) info:
+ start: 4198717
+ prev: []
+ instructions: 
+  4198717, ['jmp', 'ds:CreateCompatibleBitmap']
+ next: []
+
+node :301
+node j_GetTickCount(4199005) info:
+ start: 4199005
+ prev: []
+ instructions: 
+  4199005, ['jmp', 'ds:GetTickCount']
+ next: []
+
+node :302
+node sub_406D53(4222291) info:
+ start: 4222291
+ prev: []
+ instructions: 
+  4222291, ['push', 'ebp']
+  4222292, ['mov', 'ebp,esp']
+  4222294, ['jmp', 'sub_406EAE']
+ next: [4222638]
+
+node :303
+node j_DeleteObject(4221348) info:
+ start: 4221348
+ prev: []
+ instructions: 
+  4221348, ['jmp', 'ds:DeleteObject']
+ next: []
+
+node :304
+node j_GetDlgItem_7(4206335) info:
+ start: 4206335
+ prev: []
+ instructions: 
+  4206335, ['jmp', 'ds:GetDlgItem']
+ next: []
+
+node :305
+node j_CreateWindowExW_2(4202639) info:
+ start: 4202639
+ prev: []
+ instructions: 
+  4202639, ['jmp', 'ds:CreateWindowExW']
+ next: []
+
+node :306
+node j_GetProcessHeap_2(4204620) info:
+ start: 4204620
+ prev: []
+ instructions: 
+  4204620, ['jmp', 'ds:GetProcessHeap']
+ next: []
+
+node :307
+node sub_402F64(4206436) info:
+ start: 4206436
+ prev: []
+ instructions: 
+  4206436, ['push', 'ebp']
+  4206437, ['mov', 'ebp,esp']
+  4206439, ['add', 'esp,0FFFFFF28h']
+  4206445, ['not', '[ebp+var_3C]']
+  4206448, ['inc', '[ebp+var_48]']
+  4206451, ['xor', '[ebp+var_84],esi']
+  4206457, ['or', '[ebp+var_54],ebx']
+  4206460, ['sub', '[ebp+var_10],esi']
+  4206463, ['add', '[ebp+var_24],4Bh']
+  4206467, ['adc', '[ebp+var_54],0']
+  4206471, ['mov', '[ebp+var_20],384532h']
+  4206478, ['neg', '[ebp+var_80]']
+  4206481, ['adc', '[ebp+var_28],edx']
+  4206484, ['not', '[ebp+var_24]']
+  4206487, ['sub', '[ebp+var_9C],6857h']
+  4206497, ['mov', 'edi,ebx']
+  4206499, ['add', 'esi,6Dh']
+  4206502, ['neg', '[ebp+var_30]']
+  4206505, ['mov', '[ebp+var_98],75h']
+  4206515, ['xor', '[ebp+var_C4],ecx']
+  4206521, ['add', '[ebp+var_78],edi']
+  4206524, ['mov', '[ebp+var_9C],eax']
+  4206530, ['sbb', '[ebp+var_2C],ecx']
+  4206533, ['sub', '[ebp+var_A8],eax']
+  4206539, ['sbb', '[ebp+var_34],esi']
+  4206542, ['sbb', '[ebp+var_3C],0']
+  4206546, ['or', '[ebp+var_8],esi']
+  4206549, ['neg', '[ebp+var_D4]']
+  4206555, ['neg', '[ebp+var_C0]']
+  4206561, ['mov', '[ebp+var_A8],edx']
+  4206567, ['or', '[ebp+var_8],7954h']
+  4206574, ['xor', '[ebp+var_C],48h']
+  4206578, ['adc', '[ebp+var_90],644F32h']
+  4206588, ['adc', '[ebp+var_3C],7675h']
+  4206595, ['leave']
+  4206596, ['retn', '4']
+ next: []
+
+node :308
+node j_DefWindowProcW_0(4198471) info:
+ start: 4198471
+ prev: []
+ instructions: 
+  4198471, ['jmp', 'ds:DefWindowProcW']
+ next: []
+
+node :309
+node j_CreateCompatibleBitmap_6(4199769) info:
+ start: 4199769
+ prev: []
+ instructions: 
+  4199769, ['jmp', 'ds:CreateCompatibleBitmap']
+ next: []
+
+node :310
+node j_DeleteObject_1(4198837) info:
+ start: 4198837
+ prev: []
+ instructions: 
+  4198837, ['jmp', 'ds:DeleteObject']
+ next: []
+
+node :311
+node j_GetDeviceCaps_2(4198843) info:
+ start: 4198843
+ prev: []
+ instructions: 
+  4198843, ['jmp', 'ds:GetDeviceCaps']
+ next: []
+
+node :312
+node j_GetACP_1(4205167) info:
+ start: 4205167
+ prev: []
+ instructions: 
+  4205167, ['jmp', 'ds:GetACP']
+ next: []
+
+node :313
+node j_DeleteObject_7(4202621) info:
+ start: 4202621
+ prev: []
+ instructions: 
+  4202621, ['jmp', 'ds:DeleteObject']
+ next: []
+
+node :314
+node sub_403023(4206697) info:
+ start: 4206697
+ prev: []
+ instructions: 
+  4206697, ['jmp', 'ds:GetACP']
+ next: []
+
+node :315
+node sub_406D88(4222974) info:
+ start: 4222974
+ prev: []
+ instructions: 
+  4222974, ['sub', '[ebp-64h],edx']
+  4222977, ['or', 'dwordptr[ebp-8Ch],7349h']
+  4222987, ['dec', 'dwordptr[ebp-24h]']
+  4222990, ['adc', 'dwordptr[ebp-38h],63h']
+  4222994, ['sub', 'dwordptr[ebp-0A4h],0']
+  4223001, ['jmp', 'loc_406604']
+ next: [4220420]
+
+node :316
+node sub_406CB6(4222134) info:
+ start: 4222134
+ prev: []
+ instructions: 
+  4222134, ['push', 'ebp']
+  4222135, ['mov', 'ebp,esp']
+  4222137, ['jmp', 'sub_406C16']
+ next: [4221974]
+
+node :317
+node j_BitBlt_0(4198891) info:
+ start: 4198891
+ prev: []
+ instructions: 
+  4198891, ['jmp', 'ds:BitBlt']
+ next: []
+
+node :318
+node j_GetCommandLineW_3(4198927) info:
+ start: 4198927
+ prev: []
+ instructions: 
+  4198927, ['jmp', 'ds:GetCommandLineW']
+ next: []
+
+node :319
+node sub_407271(4221382) info:
+ start: 4221382
+ prev: []
+ instructions: 
+  4221382, ['retn']
+ next: []
+
+node :320
+node j_SelectObject_3(4201431) info:
+ start: 4201431
+ prev: []
+ instructions: 
+  4201431, ['jmp', 'ds:SelectObject']
+ next: []
+
+node :321
+node j_DeleteObject_9(4205416) info:
+ start: 4205416
+ prev: []
+ instructions: 
+  4205416, ['jmp', 'ds:DeleteObject']
+ next: []
+
+node :322
+node sub_406D88(4220420) info:
+ start: 4220420
+ prev: []
+ instructions: 
+  4220420, ['sbb', 'dwordptr[ebp-50h],0']
+  4220424, ['adc', 'dwordptr[ebp-38h],656Fh']
+  4220431, ['mov', '[ebp-4Ch],eax']
+  4220434, ['leave']
+  4220435, ['retn', '0Ch']
+ next: []
+
+node :323
+node j_GetMessageW_4(4202633) info:
+ start: 4202633
+ prev: []
+ instructions: 
+  4202633, ['jmp', 'ds:GetMessageW']
+ next: []
+
+node :324
+node j_GetDC_0(4198639) info:
+ start: 4198639
+ prev: []
+ instructions: 
+  4198639, ['jmp', 'ds:GetDC']
+ next: []
+
+node :325
+node j_DefWindowProcW_5(4201455) info:
+ start: 4201455
+ prev: []
+ instructions: 
+  4201455, ['jmp', 'ds:DefWindowProcW']
+ next: []
+
+node :326
+node sub_403023(4206745) info:
+ start: 4206745
+ prev: []
+ instructions: 
+  4206745, ['jmp', 'ds:GetDeviceCaps']
+ next: []
+
+node :327
+node j_DefWindowProcW(4199679) info:
+ start: 4199679
+ prev: []
+ instructions: 
+  4199679, ['jmp', 'ds:DefWindowProcW']
+ next: []
+
+node :328
+node sub_402F2A(4206378) info:
+ start: 4206378
+ prev: []
+ instructions: 
+  4206378, ['push', 'ebp']
+  4206379, ['mov', 'ebp,esp']
+  4206381, ['add', 'esp,0FFFFFF58h']
+  4206387, ['adc', 'eax,4Fh']
+  4206390, ['add', 'esi,504A4272h']
+  4206396, ['or', '[ebp+var_58],ebx']
+  4206399, ['or', '[ebp+var_24],esi']
+  4206402, ['mov', '[ebp+var_8C],0']
+  4206412, ['xor', '[ebp+var_20],edi']
+  4206415, ['sub', '[ebp+var_C],edx']
+  4206418, ['mov', '[ebp+var_3C],7031h']
+  4206425, ['sub', '[ebp+var_10],36h']
+  4206429, ['neg', '[ebp+var_20]']
+  4206432, ['leave']
+  4206433, ['retn', '10h']
+ next: []
+
+node :329
+node j_CreateWindowExW(4198483) info:
+ start: 4198483
+ prev: []
+ instructions: 
+  4198483, ['jmp', 'ds:CreateWindowExW']
+ next: []
+
+node :330
+node j_PatBlt_5(4202699) info:
+ start: 4202699
+ prev: []
+ instructions: 
+  4202699, ['jmp', 'ds:PatBlt']
+ next: []
+
+node :331
+node j_SelectObject(4198723) info:
+ start: 4198723
+ prev: []
+ instructions: 
+  4198723, ['jmp', 'ds:SelectObject']
+ next: []
+
+node :332
+node j_DefWindowProcW_11(4205398) info:
+ start: 4205398
+ prev: []
+ instructions: 
+  4205398, ['jmp', 'ds:DefWindowProcW']
+ next: []
+
+node :333
+node j_MultiByteToWideChar_0(4198687) info:
+ start: 4198687
+ prev: []
+ instructions: 
+  4198687, ['jmp', 'ds:MultiByteToWideChar']
+ next: []
+
+node :334
+node j_GetCurrentProcessId_3(4205301) info:
+ start: 4205301
+ prev: []
+ instructions: 
+  4205301, ['jmp', 'ds:GetCurrentProcessId']
+ next: []
+
+node :335
+node j_QueryPerformanceCounter_4(4201485) info:
+ start: 4201485
+ prev: []
+ instructions: 
+  4201485, ['jmp', 'ds:QueryPerformanceCounter']
+ next: []
+
+node :336
+node j_BitBlt_9(4205185) info:
+ start: 4205185
+ prev: []
+ instructions: 
+  4205185, ['jmp', 'ds:BitBlt']
+ next: []
+
+node :337
+node j_SetTimer_2(4201996) info:
+ start: 4201996
+ prev: []
+ instructions: 
+  4201996, ['jmp', 'ds:SetTimer']
+ next: []
+
+node :338
+node sub_406CB6(4221974) info:
+ start: 4221974
+ prev: []
+ instructions: 
+  4221974, ['add', 'esp,0FFFFFF24h']
+ next: []
+
+node :339
+node sub_4030D2(4206802) info:
+ start: 4206802
+ prev: []
+ instructions: 
+  4206802, ['push', 'ebp']
+  4206803, ['mov', 'ebp,esp']
+  4206805, ['add', 'esp,0FFFFFF18h']
+  4206811, ['add', '[ebp+var_DC],61h']
+  4206818, ['add', '[ebp+var_4],6Fh']
+  4206822, ['add', '[ebp+var_E4],ecx']
+  4206828, ['mov', '[ebp+var_60],4936h']
+  4206835, ['or', '[ebp+var_5C],ebx']
+  4206838, ['leave']
+  4206839, ['retn', '4']
+ next: []
+
+node :340
+node j_LoadIconW_0(4205440) info:
+ start: 4205440
+ prev: []
+ instructions: 
+  4205440, ['jmp', 'ds:LoadIconW']
+ next: []
+
+node :341
+node j_WaitForSingleObject_1(4199733) info:
+ start: 4199733
+ prev: []
+ instructions: 
+  4199733, ['jmp', 'ds:WaitForSingleObject']
+ next: []
+
+node :342
+node j_GetDC_4(4205245) info:
+ start: 4205245
+ prev: []
+ instructions: 
+  4205245, ['jmp', 'ds:GetDC']
+ next: []
+
+node :343
+node j_GetSystemMetrics_1(4201972) info:
+ start: 4201972
+ prev: []
+ instructions: 
+  4201972, ['jmp', 'ds:GetSystemMetrics']
+ next: []
+
+node :344
+node sub_403023(4206715) info:
+ start: 4206715
+ prev: []
+ instructions: 
+  4206715, ['jmp', 'ds:SelectObject']
+ next: []
+
+node :345
+node j_DefWindowProcW_9(4203891) info:
+ start: 4203891
+ prev: []
+ instructions: 
+  4203891, ['jmp', 'ds:DefWindowProcW']
+ next: []
+
+node :346
+node sub_403023(4206703) info:
+ start: 4206703
+ prev: []
+ instructions: 
+  4206703, ['jmp', 'ds:DestroyWindow']
+ next: []
+
+node :347
+node j_GetDlgItem_3(4200294) info:
+ start: 4200294
+ prev: []
+ instructions: 
+  4200294, ['jmp', 'ds:GetDlgItem']
+ next: []
+
+node :348
+node j_CreateCompatibleBitmap_9(4202687) info:
+ start: 4202687
+ prev: []
+ instructions: 
+  4202687, ['jmp', 'ds:CreateCompatibleBitmap']
+ next: []
+
+node :349
+node j_DeleteObject_0(4198435) info:
+ start: 4198435
+ prev: []
+ instructions: 
+  4198435, ['jmp', 'ds:DeleteObject']
+ next: []
+
+node :350
+node j_MoveToEx(4198549) info:
+ start: 4198549
+ prev: []
+ instructions: 
+  4198549, ['jmp', 'ds:MoveToEx']
+ next: []
+
+node :351
+node j_ReleaseDC_6(4205161) info:
+ start: 4205161
+ prev: []
+ instructions: 
+  4205161, ['jmp', 'ds:ReleaseDC']
+ next: []
+
+node :352
+node j_BitBlt_6(4200923) info:
+ start: 4200923
+ prev: []
+ instructions: 
+  4200923, ['jmp', 'ds:BitBlt']
+ next: []
+
+node :353
+node j_GetCurrentProcess_0(4200348) info:
+ start: 4200348
+ prev: []
+ instructions: 
+  4200348, ['jmp', 'ds:GetCurrentProcess']
+ next: []
+
+node :354
+node j_CreateCompatibleBitmap_4(4198999) info:
+ start: 4198999
+ prev: []
+ instructions: 
+  4198999, ['jmp', 'ds:CreateCompatibleBitmap']
+ next: []
+
+node :355
+node j_PatBlt_3(4201467) info:
+ start: 4201467
+ prev: []
+ instructions: 
+  4201467, ['jmp', 'ds:PatBlt']
+ next: []
+
+node :356
+node j_QueryPerformanceCounter_5(4203915) info:
+ start: 4203915
+ prev: []
+ instructions: 
+  4203915, ['jmp', 'ds:QueryPerformanceCounter']
+ next: []
+
+node :357
+node j_DefWindowProcW_1(4198531) info:
+ start: 4198531
+ prev: []
+ instructions: 
+  4198531, ['jmp', 'ds:DefWindowProcW']
+ next: []
+
+node :358
+node j_GetCommandLineW_2(4198921) info:
+ start: 4198921
+ prev: []
+ instructions: 
+  4198921, ['jmp', 'ds:GetCommandLineW']
+ next: []
+
+node :359
+node sub_406EAE(4222638) info:
+ start: 4222638
+ prev: []
+ instructions: 
+  4222638, ['add', 'esp,0FFFFFF6Ch']
+  4222644, ['add', 'eax,ebx']
+  4222646, ['adc', 'edx,46h']
+  4222649, ['leave']
+  4222650, ['retn']
+ next: []
+
+node :360
+node sub_40704B(4223051) info:
+ start: 4223051
+ prev: []
+ instructions: 
+  4223051, ['push', 'ebp']
+  4223052, ['mov', 'ebp,esp']
+  4223054, ['jmp', 'sub_406715']
+ next: [4220693]
+
+node :361
+node start(4201954) info:
+ start: 4201954
+ prev: []
+ instructions: 
+  4201954, ['leave']
+  4201955, ['jmp', 'nullsub_1']
+ next: [4200377]
+
+node :362
+node j_GetCurrentThreadId_2(4198603) info:
+ start: 4198603
+ prev: []
+ instructions: 
+  4198603, ['jmp', 'ds:GetCurrentThreadId']
+ next: []
+
+node :363
+node j_GetCommandLineW_0(4198579) info:
+ start: 4198579
+ prev: []
+ instructions: 
+  4198579, ['jmp', 'ds:GetCommandLineW']
+ next: []
+
+node :364
+node j_GetStockObject_1(4198795) info:
+ start: 4198795
+ prev: []
+ instructions: 
+  4198795, ['jmp', 'ds:GetStockObject']
+ next: []
+
+node :365
+node j_DeleteObject_6(4202615) info:
+ start: 4202615
+ prev: []
+ instructions: 
+  4202615, ['jmp', 'ds:DeleteObject']
+ next: []
+
+node :366
+node j_LocalFree_1(4206359) info:
+ start: 4206359
+ prev: []
+ instructions: 
+  4206359, ['jmp', 'ds:LocalFree']
+ next: []
+
+node :367
+node j_DeleteDC_0(4198789) info:
+ start: 4198789
+ prev: []
+ instructions: 
+  4198789, ['jmp', 'ds:DeleteDC']
+ next: []
+
+node :368
+node Root info:
+ start: 0
+ prev: []
+ instructions: 
+ next: ['j_LocalAlloc(4198417)', 'j_GetCurrentThreadId_1(4198423)', 'j_GetProcessHeap_0(4198429)', 'j_DeleteObject_0(4198435)', 'j_GetDlgItem(4198441)', 'j_GetMessageW_0(4198447)', 'j_VirtualFree(4198453)', 'j_GetACP(4198459)', 'j_SetUnhandledExceptionFilter(4198465)', 'j_DefWindowProcW_0(4198471)', 'j_GetDeviceCaps(4198477)', 'j_CreateWindowExW(4198483)', 'j_ReleaseDC(4198489)', 'j_CreateCompatibleBitmap_2(4198495)', 'j_PatBlt(4198501)', 'j_FormatMessageW_0(4198507)', 'j_PostMessageW_2(4198513)', 'j_MultiByteToWideChar(4198519)', 'j_SendMessageW_0(4198525)', 'j_DefWindowProcW_1(4198531)', 'j_PostMessageW_3(4198537)', 'j_GetDlgItem_0(4198543)', 'j_MoveToEx(4198549)', 'j_SetUnhandledExceptionFilter_0(4198555)', 'j_ShowWindow(4198561)', 'j_GetTextMetricsW(4198567)', 'j_GetTextMetricsW_0(4198573)', 'j_GetCommandLineW_0(4198579)', 'j_GetObjectW_0(4198585)', 'j_MoveToEx_0(4198591)', 'j_GetDC(4198597)', 'j_GetCurrentThreadId_2(4198603)', 'j_GetCurrentProcessId(4198609)', 'j_DeleteDC(4198615)', 'j_LineTo(4198621)', 'j_MoveToEx_1(4198627)', 'j_ReleaseDC_0(4198633)', 'j_GetDC_0(4198639)', 'j_DestroyWindow_0(4198645)', 'j_FormatMessageW_1(4198651)', 'j_GetMessageW_1(4198657)', 'j_PostMessageW_4(4198663)', 'j_QueryPerformanceCounter(4198669)', 'j_GetStockObject(4198675)', 'j_DefWindowProcW_2(4198681)', 'j_MultiByteToWideChar_0(4198687)', 'j_SendMessageW_1(4198693)', 'j_GetDeviceCaps_0(4198699)', 'j_FormatMessageW_2(4198705)', 'j_GetCurrentThreadId(4198711)', 'j_CreateCompatibleBitmap(4198717)', 'j_SelectObject(4198723)', 'j_FormatMessageW_3(4198729)', 'j_GetStockObject_0(4198735)', 'j_GetDlgItem_1(4198741)', 'j_GetMessageW_2(4198747)', 'j_GetWindowRect(4198753)', 'j_GetDeviceCaps_1(4198759)', 'j_CreateCompatibleDC(4198765)', 'j_BitBlt(4198771)', 'j_MoveToEx_2(4198777)', 'j_WaitForSingleObject(4198783)', 'j_DeleteDC_0(4198789)', 'j_GetStockObject_1(4198795)', 'j_GetDC_1(4198801)', 'j_GetObjectW_1(4198807)', 'j_GetCommandLineW_1(4198813)', 'j_SetTimer(4198819)', 'j_GetCurrentProcessId_0(4198825)', 'j_SetEvent_0(4198831)', 'j_DeleteObject_1(4198837)', 'j_GetDeviceCaps_2(4198843)', 'j_GetSystemMetrics(4198849)', 'j_ShowWindow_0(4198855)', 'j_ReleaseDC_1(4198861)', 'j_QueryPerformanceCounter_0(4198867)', 'j_GetWindowRect_0(4198873)', 'j_SetEvent_1(4198879)', 'j_SetTimer_0(4198885)', 'j_BitBlt_0(4198891)', 'j_BitBlt_1(4198897)', 'j_LineTo_0(4198903)', 'j_BitBlt_2(4198909)', 'j_LocalFree(4198915)', 'j_GetCommandLineW_2(4198921)', 'j_GetCommandLineW_3(4198927)', 'j_DefWindowProcW_3(4198933)', 'j_GetMessageW_3(4198939)', 'j_PatBlt_0(4198945)', 'j_WaitForSingleObject_0(4198951)', 'j_ReleaseDC_2(4198957)', 'j_DestroyWindow_1(4198963)', 'j_CreateCompatibleBitmap_3(4198969)', 'j_GetTextMetricsW_1(4198975)', 'j_LoadIconW_1(4198981)', 'j_GetProcessHeap_1(4198987)', 'j_BitBlt_3(4198993)', 'j_CreateCompatibleBitmap_4(4198999)', 'j_GetTickCount(4199005)', 'j_GetDC_2(4199011)', 'j_CreateWindowExW_0(4199017)', 'j_DeleteDC_1(4199023)', 'j_GetCommandLineW(4199029)', 'j_LoadIconW(4199035)', 'j_BitBlt_4(4199041)', 'j_MultiByteToWideChar_1(4199047)', 'j_GetStockObject_2(4199053)', 'j_SetEvent_2(4199059)', 'j_GetObjectW_2(4199065)', 'j_SendMessageW_2(4199071)', 'j_ShowWindow_1(4199077)', 'j_GetTextMetricsW_2(4199083)', 'j_ShowWindow_2(4199089)', 'j_CreateCompatibleBitmap_5(4199095)', 'j_QueryPerformanceCounter_1(4199101)', 'j_PatBlt_1(4199107)', 'j_QueryPerformanceCounter_2(4199113)', 'j_GetStockObject_3(4199119)', 'j_GetDlgItem_2(4199125)', 'j_CreateWindowExW_1(4199131)', 'j_DefWindowProcW(4199679)', 'j_GetCommandLineA(4199685)', 'j_GetSystemMetrics_0(4199691)', 'j_DefWindowProcW_4(4199697)', 'j_SetUnhandledExceptionFilter_1(4199703)', 'j_GetModuleHandleW_0(4199709)', 'j_DestroyWindow_2(4199715)', 'j_SetTextColor(4199721)', 'j_MultiByteToWideChar_2(4199727)', 'j_WaitForSingleObject_1(4199733)', 'j_PostMessageW_5(4199739)', 'j_MoveToEx_3(4199745)', 'j_CreateCompatibleBitmap_0(4199751)', 'j_GetCurrentProcess(4199757)', 'j_SelectObject_0(4199763)', 'j_CreateCompatibleBitmap_6(4199769)', 'j_GetDeviceCaps_3(4199775)', 'j_GetDlgItem_3(4200294)', 'j_GetModuleFileNameA_0(4200300)', 'j_SelectObject_1(4200306)', 'j_GetCommandLineA_0(4200312)', 'j_GetCommandLineW_4(4200318)', 'j_SetTextColor_0(4200324)', 'j_ReleaseDC_3(4200330)', 'j_DeleteDC_2(4200336)', 'j_DeleteObject_2(4200342)', 'j_GetCurrentProcess_0(4200348)', 'j_GetCurrentProcess_1(4200354)', 'j_DestroyWindow_3(4200360)', 'nullsub_1(4200377)', 'j_GetModuleFileNameA(4200851)', 'j_CreateCompatibleBitmap_7(4200857)', 'j_ShowWindow_3(4200863)', 'j_GetModuleFileNameA_1(4200869)', 'j_LocalFree_0(4200875)', 'j_QueryPerformanceCounter_3(4200881)', 'j_GetCommandLineA_1(4200887)', 'j_SelectObject_2(4200893)', 'j_BitBlt_5(4200899)', 'j_MultiByteToWideChar_3(4200905)', 'j_GetWindowRect_1(4200911)', 'j_GetTextMetricsW_3(4200917)', 'j_BitBlt_6(4200923)', 'j_SetTextColor_1(4201425)', 'j_SelectObject_3(4201431)', 'j_SetUnhandledExceptionFilter_2(4201437)', 'j_ShowWindow_4(4201443)', 'j_DestroyWindow_4(4201449)', 'j_DefWindowProcW_5(4201455)', 'j_PatBlt_2(4201461)', 'j_PatBlt_3(4201467)', 'j_SendMessageW_3(4201473)', 'j_CreateCompatibleBitmap_8(4201479)', 'j_QueryPerformanceCounter_4(4201485)', 'j_GetTextMetricsW_4(4201491)', 'j_DeleteObject_3(4201497)', 'j_GetDC_3(4201503)', 'j_DeleteObject_4(4201509)', 'j_DefWindowProcW_6(4201515)', 'j_SetTextColor_2(4201521)', 'j_SetTimer_1(4201960)', 'j_GetCommandLineW_5(4201966)', 'j_GetSystemMetrics_1(4201972)', 'j_GetCurrentThreadId_3(4201978)', 'j_WaitForSingleObject_2(4201984)', 'j_ShowWindow_5(4201990)', 'j_SetTimer_2(4201996)', 'j_GetDeviceCaps_4(4202002)', 'j_GetStockObject_4(4202008)', 'j_GetACP_0(4202014)', 'j_GetWindowRect_2(4202020)', 'j_LineTo_1(4202026)', 'j_DeleteObject_5(4202032)', 'j_CreateCompatibleDC_0(4202038)', 'j_PatBlt_4(4202597)', 'j_GetCurrentThreadId_4(4202603)', 'j_LoadIconW_2(4202609)', 'j_DeleteObject_6(4202615)', 'j_DeleteObject_7(4202621)', 'j_FormatMessageW_4(4202627)', 'j_GetMessageW_4(4202633)', 'j_CreateWindowExW_2(4202639)', 'j_PostMessageW(4202645)', 'j_SetTextColor_3(4202651)', 'j_MultiByteToWideChar_4(4202657)', 'j_SetEvent_3(4202663)', 'j_SelectObject_4(4202669)', 'j_GetCommandLineW_6(4202675)', 'j_DestroyWindow_5(4202681)', 'j_CreateCompatibleBitmap_9(4202687)', 'j_LocalAlloc_0(4202693)', 'j_PatBlt_5(4202699)', 'j_GetModuleHandleA(4203233)', 'j_MultiByteToWideChar_5(4203239)', 'j_ReleaseDC_4(4203245)', 'j_SelectObject_5(4203251)', 'j_SetTextColor_4(4203257)', 'j_GetSystemMetrics_2(4203263)', 'j_SetTextColor_5(4203269)', 'j_GetSystemMetrics_3(4203275)', 'j_CreateWindowExW_3(4203281)', 'j_SetTextColor_6(4203287)', 'j_DestroyWindow_6(4203293)', 'j_GetCurrentProcessId_1(4203299)', 'j_PatBlt_6(4203305)', 'j_DefWindowProcW_7(4203311)', 'j_CreateCompatibleBitmap_10(4203861)', 'j_CreateCompatibleDC_1(4203867)', 'j_SetTimer_3(4203873)', 'j_GetCurrentThreadId_5(4203879)', 'j_DefWindowProcW_8(4203885)', 'j_DefWindowProcW_9(4203891)', 'j_PostMessageW_6(4203897)', 'j_DeleteObject_8(4203903)', 'j_ReleaseDC_5(4203909)', 'j_QueryPerformanceCounter_5(4203915)', 'j_GetModuleFileNameA_2(4203921)', 'j_SetEvent(4204578)', 'j_GetObjectW_3(4204584)', 'j_SendMessageW_4(4204590)', 'j_GetTextMetricsW_5(4204596)', 'j_GetDlgItem_4(4204602)', 'j_QueryPerformanceCounter_6(4204608)', 'j_BitBlt_7(4204614)', 'j_GetProcessHeap_2(4204620)', 'j_ReleaseDC_6(4205161)', 'j_GetACP_1(4205167)', 'j_GetCurrentProcessId_2(4205173)', 'j_BitBlt_8(4205179)', 'j_BitBlt_9(4205185)', 'j_DefWindowProcW_10(4205191)', 'j_ReleaseDC_7(4205197)', 'j_GetObjectW_4(4205203)', 'j_ReleaseDC_8(4205209)', 'j_FormatMessageW_5(4205215)', 'j_LocalAlloc_1(4205221)', 'j_DeleteDC_3(4205227)', 'j_CreateCompatibleBitmap_11(4205233)', 'j_BitBlt_10(4205239)', 'j_GetDC_4(4205245)', 'j_GetDlgItem_5(4205251)', 'j_PostMessageW_7(4205257)', 'j_SetTimer_4(4205263)', 'j_GetCurrentProcess_2(4205289)', 'j_GetCommandLineA_2(4205295)', 'j_GetCurrentProcessId_3(4205301)', 'j_GetDlgItem_6(4205307)', 'j_GetModuleHandleW_1(4205313)', 'j_DestroyWindow_7(4205319)', 'j_GetDeviceCaps_5(4205325)', 'j_SelectObject_6(4205331)', 'j_ReleaseDC_9(4205342)', 'j_GetDC_5(4205348)', 'j_GetTickCount_0(4205354)', 'j_SetTimer_5(4205360)', 'j_CreateWindowExW_4(4205386)', 'j_PostMessageW_8(4205392)', 'j_DefWindowProcW_11(4205398)', 'j_DestroyWindow_8(4205404)', 'j_GetStockObject_5(4205410)', 'j_DeleteObject_9(4205416)', 'j_GetTickCount_1(4205422)', 'j_SetTimer_6(4205428)', 'j_GetCurrentThreadId_0(4205434)', 'j_LoadIconW_0(4205440)', 'j_DestroyWindow(4205446)', 'j_LineTo_2(4206281)', 'j_GetCurrentThreadId_6(4206287)', 'j_SetEvent_4(4206293)', 'j_CreateCompatibleDC_2(4206299)', 'j_SetTextColor_7(4206305)', 'j_GetTickCount_2(4206311)', 'j_GetTickCount_3(4206317)', 'j_GetDlgItem_7(4206335)', 'j_MultiByteToWideChar_6(4206341)', 'j_MultiByteToWideChar_7(4206347)', 'j_SetTimer_7(4206353)', 'j_LocalFree_1(4206359)', 'sub_402F1D(4206365)', 'sub_402F2A(4206378)', 'sub_402F64(4206436)', 'sub_403007(4206599)', 'sub_403016(4206614)', 'sub_403023(4206627)', 'sub_4030D2(4206802)', 'sub_4030FA(4206842)', 'sub_403114(4206868)', 'sub_403142(4206914)', 'sub_403176(4206966)', 'start(4207021)', 'j_SendMessageW(4220198)', 'j_GetMessageW(4220204)', 'j_CreateCompatibleBitmap_1(4220210)', 'j_NtAllocateVirtualMemory(4220216)', 'j_PostMessageW_0(4220222)', 'sub_406616(4220438)', 'j_FormatMessageW(4220444)', 'sub_40668A(4220554)', 'sub_406715(4220693)', 'j_GetProcessHeap(4220733)', 'nullsub_2(4221266)', 'sub_406955(4221269)', 'j_GetObjectW(4221342)', 'j_DeleteObject(4221348)', 'sub_4069EF(4221423)', 'j_SleepEx(4221777)', 'sub_406B5C(4221788)', 'sub_406C16(4221974)', 'sub_406CB6(4222134)', 'sub_406D53(4222291)', 'sub_406D7E(4222334)', 'sub_406D88(4222344)', 'j_PostMessageW_1(4222350)', 'j_GetModuleHandleW(4222632)', 'sub_406EAE(4222638)', 'sub_406EBB(4222651)', 'sub_406F40(4222784)', 'sub_40704B(4223051)', 'sub_40710F(4223247)', 'sub_4071EA(4223466)', 'sub_407271(4223601)']
+
+node :369
+node j_GetCurrentThreadId_5(4203879) info:
+ start: 4203879
+ prev: []
+ instructions: 
+  4203879, ['jmp', 'ds:GetCurrentThreadId']
+ next: []
+
+node :370
+node j_CreateCompatibleBitmap_3(4198969) info:
+ start: 4198969
+ prev: []
+ instructions: 
+  4198969, ['jmp', 'ds:CreateCompatibleBitmap']
+ next: []
+
+node :371
+node j_SetTextColor_4(4203257) info:
+ start: 4203257
+ prev: []
+ instructions: 
+  4203257, ['jmp', 'ds:SetTextColor']
+ next: []
+
+node :372
+node j_SetEvent_2(4199059) info:
+ start: 4199059
+ prev: []
+ instructions: 
+  4199059, ['jmp', 'ds:SetEvent']
+ next: []
+
+node :373
+node sub_40710F(4223043) info:
+ start: 4223043
+ prev: []
+ instructions: 
+  4223043, ['and', '[ebp+var_40],73h']
+  4223047, ['leave']
+  4223048, ['retn', '14h']
+ next: []
+
+node :374
+node start(4200377) info:
+ start: 4200377
+ prev: []
+ instructions: 
+  4200377, ['retn']
+ next: []
+
+node :375
+node j_GetObjectW_2(4199065) info:
+ start: 4199065
+ prev: []
+ instructions: 
+  4199065, ['jmp', 'ds:GetObjectW']
+ next: []
+
+node :376
+node j_CreateWindowExW_3(4203281) info:
+ start: 4203281
+ prev: []
+ instructions: 
+  4203281, ['jmp', 'ds:CreateWindowExW']
+ next: []
+
+node :377
+node sub_403007(4206599) info:
+ start: 4206599
+ prev: []
+ instructions: 
+  4206599, ['push', 'ebp']
+  4206600, ['mov', 'ebp,esp']
+  4206602, ['add', 'esp,0FFFFFF6Ch']
+  4206608, ['and', 'edi,eax']
+  4206610, ['leave']
+  4206611, ['retn', '8']
+ next: []
+
+node :378
+node j_GetModuleHandleA(4203233) info:
+ start: 4203233
+ prev: []
+ instructions: 
+  4203233, ['jmp', 'ds:GetModuleHandleA']
+ next: []
+
+node :379
+node j_ReleaseDC_2(4198957) info:
+ start: 4198957
+ prev: []
+ instructions: 
+  4198957, ['jmp', 'ds:ReleaseDC']
+ next: []
+
+node :380
+node j_CreateWindowExW_4(4205386) info:
+ start: 4205386
+ prev: []
+ instructions: 
+  4205386, ['jmp', 'ds:CreateWindowExW']
+ next: []
+
+node :381
+node j_GetDeviceCaps_5(4205325) info:
+ start: 4205325
+ prev: []
+ instructions: 
+  4205325, ['jmp', 'ds:GetDeviceCaps']
+ next: []
+
+node :382
+node sub_406F40(4222334) info:
+ start: 4222334
+ prev: []
+ instructions: 
+  4222334, ['add', 'esp,0FFFFFF38h']
+ next: []
+
+node :383
+node j_SetEvent_0(4198831) info:
+ start: 4198831
+ prev: []
+ instructions: 
+  4198831, ['jmp', 'ds:SetEvent']
+ next: []
+
+node :384
+node j_GetCurrentProcessId(4198609) info:
+ start: 4198609
+ prev: []
+ instructions: 
+  4198609, ['jmp', 'ds:GetCurrentProcessId']
+ next: []
+
+node :385
+node j_BitBlt_1(4198897) info:
+ start: 4198897
+ prev: []
+ instructions: 
+  4198897, ['jmp', 'ds:BitBlt']
+ next: []
+
+node :386
+node j_MultiByteToWideChar(4198519) info:
+ start: 4198519
+ prev: []
+ instructions: 
+  4198519, ['jmp', 'ds:MultiByteToWideChar']
+ next: []
+
+node :387
+node sub_406C16(4221620) info:
+ start: 4221620
+ prev: []
+ instructions: 
+  4221620, ['sub', '[ebp-0D0h],edi']
+  4221626, ['sbb', '[ebp-7Ch],edx']
+  4221629, ['and', '[ebp-88h],edx']
+  4221635, ['and', 'dwordptr[ebp-0C0h],73h']
+  4221642, ['dec', 'dwordptr[ebp-54h]']
+  4221645, ['sub', '[ebp-9Ch],ecx']
+  4221651, ['mov', '[ebp-90h],esi']
+  4221657, ['sub', '[ebp-8Ch],edi']
+  4221663, ['jmp', 'loc_4071D6']
+ next: [4223446]
+
+node :388
+node j_LocalFree_0(4200875) info:
+ start: 4200875
+ prev: []
+ instructions: 
+  4200875, ['jmp', 'ds:LocalFree']
+ next: []
+
+node :389
+node j_ReleaseDC_0(4198633) info:
+ start: 4198633
+ prev: []
+ instructions: 
+  4198633, ['jmp', 'ds:ReleaseDC']
+ next: []
+
+node :390
+node sub_406D53(4222638) info:
+ start: 4222638
+ prev: []
+ instructions: 
+  4222638, ['add', 'esp,0FFFFFF6Ch']
+ next: []
+
+node :391
+node sub_402F1D(4206365) info:
+ start: 4206365
+ prev: []
+ instructions: 
+  4206365, ['push', 'ebp']
+  4206366, ['mov', 'ebp,esp']
+  4206368, ['add', 'esp,0FFFFFF04h']
+  4206374, ['leave']
+  4206375, ['retn', '8']
+ next: []
+
+node :392
+node j_SelectObject_4(4202669) info:
+ start: 4202669
+ prev: []
+ instructions: 
+  4202669, ['jmp', 'ds:SelectObject']
+ next: []
+
+node :393
+node j_QueryPerformanceCounter_0(4198867) info:
+ start: 4198867
+ prev: []
+ instructions: 
+  4198867, ['jmp', 'ds:QueryPerformanceCounter']
+ next: []
+
+node :394
+node j_LineTo_2(4206281) info:
+ start: 4206281
+ prev: []
+ instructions: 
+  4206281, ['jmp', 'ds:LineTo']
+ next: []
+
+node :395
+node j_BitBlt_4(4199041) info:
+ start: 4199041
+ prev: []
+ instructions: 
+  4199041, ['jmp', 'ds:BitBlt']
+ next: []
+
+node :396
+node j_BitBlt_8(4205179) info:
+ start: 4205179
+ prev: []
+ instructions: 
+  4205179, ['jmp', 'ds:BitBlt']
+ next: []
+
+node :397
+node sub_406B5C(4221499) info:
+ start: 4221499
+ prev: []
+ instructions: 
+  4221499, ['mov', 'ebp,esp']
+  4221501, ['add', 'esp,0FFFFFF18h']
+  4221507, ['add', 'edx,esi']
+  4221509, ['xor', 'dwordptr[ebp-7Ch],64h']
+  4221513, ['sbb', '[ebp-4],ebx']
+  4221516, ['not', 'dwordptr[ebp-7Ch]']
+  4221519, ['and', 'dwordptr[ebp-0C4h],365666h']
+  4221529, ['and', 'dwordptr[ebp-38h],5871h']
+  4221536, ['jmp', 'locret_40726D']
+ next: [4223597]
+
+node :398
+node j_SetUnhandledExceptionFilter(4198465) info:
+ start: 4198465
+ prev: []
+ instructions: 
+  4198465, ['jmp', 'ds:SetUnhandledExceptionFilter']
+ next: []
+
+node :399
+node j_GetTextMetricsW_5(4204596) info:
+ start: 4204596
+ prev: []
+ instructions: 
+  4204596, ['jmp', 'ds:GetTextMetricsW']
+ next: []
+
+node :400
+node j_ReleaseDC_7(4205197) info:
+ start: 4205197
+ prev: []
+ instructions: 
+  4205197, ['jmp', 'ds:ReleaseDC']
+ next: []
+
+node :401
+node sub_40704B(4220693) info:
+ start: 4220693
+ prev: []
+ instructions: 
+  4220693, ['add', 'esp,0FFFFFF00h']
+ next: []
+
+node :402
+node j_WaitForSingleObject_2(4201984) info:
+ start: 4201984
+ prev: []
+ instructions: 
+  4201984, ['jmp', 'ds:WaitForSingleObject']
+ next: []
+
+node :403
+node j_DefWindowProcW_2(4198681) info:
+ start: 4198681
+ prev: []
+ instructions: 
+  4198681, ['jmp', 'ds:DefWindowProcW']
+ next: []
+
+node :404
+node sub_4069EF(4220550) info:
+ start: 4220550
+ prev: []
+ instructions: 
+  4220550, ['leave']
+  4220551, ['retn', '0Ch']
+ next: []
+
+node :405
+node sub_406715(4221783) info:
+ start: 4221783
+ prev: []
+ instructions: 
+  4221783, ['sub', '[ebp-50h],eax']
+  4221786, ['leave']
+  4221787, ['retn']
+ next: []
+
+node :406
+node j_GetModuleHandleW_0(4199709) info:
+ start: 4199709
+ prev: []
+ instructions: 
+  4199709, ['jmp', 'ds:GetModuleHandleW']
+ next: []
+
+node :407
+node j_DeleteObject_3(4201497) info:
+ start: 4201497
+ prev: []
+ instructions: 
+  4201497, ['jmp', 'ds:DeleteObject']
+ next: []
+
+node :408
+node j_CreateCompatibleBitmap_10(4203861) info:
+ start: 4203861
+ prev: []
+ instructions: 
+  4203861, ['jmp', 'ds:CreateCompatibleBitmap']
+ next: []
+
+node :409
+node j_PostMessageW_6(4203897) info:
+ start: 4203897
+ prev: []
+ instructions: 
+  4203897, ['jmp', 'ds:PostMessageW']
+ next: []
+
+node :410
+node j_GetTickCount_1(4205422) info:
+ start: 4205422
+ prev: []
+ instructions: 
+  4205422, ['jmp', 'ds:GetTickCount']
+ next: []
+
+node :411
+node j_GetSystemMetrics_3(4203275) info:
+ start: 4203275
+ prev: []
+ instructions: 
+  4203275, ['jmp', 'ds:GetSystemMetrics']
+ next: []
+
+node :412
+node nullsub_2(4221266) info:
+ start: 4221266
+ prev: []
+ instructions: 
+  4221266, ['retn', '14h']
+ next: []
+
+node :413
+node j_GetDeviceCaps_4(4202002) info:
+ start: 4202002
+ prev: []
+ instructions: 
+  4202002, ['jmp', 'ds:GetDeviceCaps']
+ next: []
+
+node :414
+node j_GetStockObject_2(4199053) info:
+ start: 4199053
+ prev: []
+ instructions: 
+  4199053, ['jmp', 'ds:GetStockObject']
+ next: []
+
+node :415
+node j_CreateCompatibleBitmap_1(4220210) info:
+ start: 4220210
+ prev: []
+ instructions: 
+  4220210, ['jmp', 'ds:CreateCompatibleBitmap']
+ next: []
+
+node :416
+node sub_403023(4206672) info:
+ start: 4206672
+ prev: []
+ instructions: 
+  4206672, ['jmp', 'ds:GetTickCount']
+ next: []
+
+node :417
+node j_ReleaseDC_8(4205209) info:
+ start: 4205209
+ prev: []
+ instructions: 
+  4205209, ['jmp', 'ds:ReleaseDC']
+ next: []
+
+node :418
+node j_SendMessageW_2(4199071) info:
+ start: 4199071
+ prev: []
+ instructions: 
+  4199071, ['jmp', 'ds:SendMessageW']
+ next: []
+
+node :419
+node j_BitBlt_7(4204614) info:
+ start: 4204614
+ prev: []
+ instructions: 
+  4204614, ['jmp', 'ds:BitBlt']
+ next: []
+
+node :420
+node j_GetModuleHandleW(4222632) info:
+ start: 4222632
+ prev: []
+ instructions: 
+  4222632, ['jmp', 'ds:GetModuleHandleW']
+ next: []
+
+node :421
+node j_BitBlt_10(4205239) info:
+ start: 4205239
+ prev: []
+ instructions: 
+  4205239, ['jmp', 'ds:BitBlt']
+ next: []
+
+node :422
+node sub_403114(4206868) info:
+ start: 4206868
+ prev: []
+ instructions: 
+  4206868, ['push', 'ebp']
+  4206869, ['mov', 'ebp,esp']
+  4206871, ['add', 'esp,0FFFFFF28h']
+  4206877, ['or', '[ebp+var_48],edx']
+  4206880, ['and', '[ebp+var_90],edi']
+  4206886, ['and', '[ebp+var_80],edi']
+  4206889, ['sbb', '[ebp+var_74],ecx']
+  4206892, ['or', '[ebp+var_58],6245h']
+  4206899, ['mov', '[ebp+var_60],57h']
+  4206906, ['adc', '[ebp+var_40],0']
+  4206910, ['leave']
+  4206911, ['retn', '0Ch']
+ next: []
+
+node :423
+node sub_403023(4206709) info:
+ start: 4206709
+ prev: []
+ instructions: 
+  4206709, ['jmp', 'ds:DeleteObject']
+ next: []
+
+node :424
+node nullsub_1(4200377) info:
+ start: 4200377
+ prev: []
+ instructions: 
+  4200377, ['retn']
+ next: []
+
+node :425
+node j_PatBlt_6(4203305) info:
+ start: 4203305
+ prev: []
+ instructions: 
+  4203305, ['jmp', 'ds:PatBlt']
+ next: []
+
+node :426
+node j_DeleteObject_4(4201509) info:
+ start: 4201509
+ prev: []
+ instructions: 
+  4201509, ['jmp', 'ds:DeleteObject']
+ next: []
+
+node :427
+node j_FormatMessageW_1(4198651) info:
+ start: 4198651
+ prev: []
+ instructions: 
+  4198651, ['jmp', 'ds:FormatMessageW']
+ next: []
+
+node :428
+node j_GetMessageW_2(4198747) info:
+ start: 4198747
+ prev: []
+ instructions: 
+  4198747, ['jmp', 'ds:GetMessageW']
+ next: []
+
+node :429
+node j_GetTextMetricsW(4198567) info:
+ start: 4198567
+ prev: []
+ instructions: 
+  4198567, ['jmp', 'ds:GetTextMetricsW']
+ next: []
+
+node :430
+node j_GetObjectW_1(4198807) info:
+ start: 4198807
+ prev: []
+ instructions: 
+  4198807, ['jmp', 'ds:GetObjectW']
+ next: []
+
+node :431
+node j_SelectObject_5(4203251) info:
+ start: 4203251
+ prev: []
+ instructions: 
+  4203251, ['jmp', 'ds:SelectObject']
+ next: []
+
+node :432
+node j_GetWindowRect_1(4200911) info:
+ start: 4200911
+ prev: []
+ instructions: 
+  4200911, ['jmp', 'ds:GetWindowRect']
+ next: []
+
+node :433
+node j_ReleaseDC_4(4203245) info:
+ start: 4203245
+ prev: []
+ instructions: 
+  4203245, ['jmp', 'ds:ReleaseDC']
+ next: []
+
+node :434
+node sub_406B5C(4223597) info:
+ start: 4223597
+ prev: []
+ instructions: 
+  4223597, ['leave']
+  4223598, ['retn', '14h']
+ next: []
+
+node :435
+node j_DestroyWindow_5(4202681) info:
+ start: 4202681
+ prev: []
+ instructions: 
+  4202681, ['jmp', 'ds:DestroyWindow']
+ next: []
+
+node :436
+node j_GetSystemMetrics_2(4203263) info:
+ start: 4203263
+ prev: []
+ instructions: 
+  4203263, ['jmp', 'ds:GetSystemMetrics']
+ next: []
+
+node :437
+node j_DestroyWindow(4205446) info:
+ start: 4205446
+ prev: []
+ instructions: 
+  4205446, ['jmp', 'ds:DestroyWindow']
+ next: []
+
+node :438
+node j_VirtualFree(4198453) info:
+ start: 4198453
+ prev: []
+ instructions: 
+  4198453, ['jmp', 'ds:VirtualFree']
+ next: []
+
+node :439
+node j_SleepEx(4221777) info:
+ start: 4221777
+ prev: []
+ instructions: 
+  4221777, ['jmp', 'ds:SleepEx']
+ next: []
+
+node :440
+node j_SetTimer_6(4205428) info:
+ start: 4205428
+ prev: []
+ instructions: 
+  4205428, ['jmp', 'ds:SetTimer']
+ next: []
+
+node :441
+node j_MoveToEx_2(4198777) info:
+ start: 4198777
+ prev: []
+ instructions: 
+  4198777, ['jmp', 'ds:MoveToEx']
+ next: []
+
+node :442
+node j_GetObjectW_3(4204584) info:
+ start: 4204584
+ prev: []
+ instructions: 
+  4204584, ['jmp', 'ds:GetObjectW']
+ next: []
+
+node :443
+node j_PostMessageW_7(4205257) info:
+ start: 4205257
+ prev: []
+ instructions: 
+  4205257, ['jmp', 'ds:PostMessageW']
+ next: []
+
+node :444
+node j_LoadIconW_2(4202609) info:
+ start: 4202609
+ prev: []
+ instructions: 
+  4202609, ['jmp', 'ds:LoadIconW']
+ next: []
+
+node :445
+node j_SetTextColor(4199721) info:
+ start: 4199721
+ prev: []
+ instructions: 
+  4199721, ['jmp', 'ds:SetTextColor']
+ next: []
+
+node :446
+node sub_406C16(4223446) info:
+ start: 4223446
+ prev: []
+ instructions: 
+  4223446, ['mov', 'edx,ecx']
+  4223448, ['sbb', 'edi,ecx']
+  4223450, ['neg', 'dwordptr[ebp-0D0h]']
+  4223456, ['adc', '[ebp-30h],ebx']
+  4223459, ['xor', '[ebp-7Ch],esi']
+  4223462, ['leave']
+  4223463, ['retn', '14h']
+ next: []
+
+node :447
+node j_LocalFree(4198915) info:
+ start: 4198915
+ prev: []
+ instructions: 
+  4198915, ['jmp', 'ds:LocalFree']
+ next: []
+
+node :448
+node j_GetDeviceCaps_0(4198699) info:
+ start: 4198699
+ prev: []
+ instructions: 
+  4198699, ['jmp', 'ds:GetDeviceCaps']
+ next: []
+
+node :449
+node j_MultiByteToWideChar_7(4206347) info:
+ start: 4206347
+ prev: []
+ instructions: 
+  4206347, ['jmp', 'ds:MultiByteToWideChar']
+ next: []
+
+node :450
+node j_SetTimer_4(4205263) info:
+ start: 4205263
+ prev: []
+ instructions: 
+  4205263, ['jmp', 'ds:SetTimer']
+ next: []
+
+node :451
+node j_DefWindowProcW_4(4199697) info:
+ start: 4199697
+ prev: []
+ instructions: 
+  4199697, ['jmp', 'ds:DefWindowProcW']
+ next: []
+

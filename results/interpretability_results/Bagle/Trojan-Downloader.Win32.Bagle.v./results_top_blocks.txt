@@ -1,0 +1,8016 @@
+CFGExplainer result: [malware = Bagle |  graph = Trojan-Downloader.Win32.Bagle.v| #nodes = 613]
+
+node :1
+node DriverEntry(155276) info:
+ start: 155276
+ prev: []
+ instructions: 
+  155276, ['push', 'edx']
+  155277, ['and', 'edx,eax']
+  155279, ['pop', 'edx']
+  155280, ['cmp', 'edx,edx']
+  155282, ['jnz', 'shortloc_25EB8']
+ next: [155284, 155320]
+
+node :2
+node DriverEntry(155272) info:
+ start: 155272
+ prev: []
+ instructions: 
+  155272, ['cmp', 'ecx,ebx']
+  155274, ['jb', 'shortloc_25EB8']
+ next: [155276, 155320]
+
+node :3
+node DriverEntry(155284) info:
+ start: 155284
+ prev: []
+ instructions: 
+  155284, ['push', 'eax']
+  155285, ['and', 'eax,edx']
+  155287, ['pop', 'eax']
+  155288, ['cmp', 'ebp,ecx']
+  155290, ['jbe', 'shortloc_25EB8']
+ next: [155292, 155320]
+
+node :4
+node DriverEntry(153040) info:
+ start: 153040
+ prev: []
+ instructions: 
+  153040, ['cmp', 'ecx,edx']
+  153042, ['jz', 'loc_256D4']
+ next: [153048, 153300]
+
+node :5
+node DriverEntry(155592) info:
+ start: 155592
+ prev: []
+ instructions: 
+  155592, ['cmp', 'ebx,edx']
+  155594, ['jnb', 'shortloc_25FD0']
+ next: [155596, 155600]
+
+node :6
+node DriverEntry(155324) info:
+ start: 155324
+ prev: []
+ instructions: 
+  155324, ['push', 'ebp']
+  155325, ['xor', 'ebp,edx']
+  155327, ['pop', 'ebp']
+  155328, ['push', 'edx']
+  155329, ['xor', 'edx,ebp']
+  155331, ['cmp', 'eax,ebx']
+  155333, ['jz', 'shortloc_25ECB']
+ next: [155335, 155339]
+
+node :7
+node DriverEntry(155239) info:
+ start: 155239
+ prev: []
+ instructions: 
+  155239, ['pusha']
+  155240, ['mov', 'edx,[esp+20h+arg_0]']
+  155244, ['call', '$+5']
+  155249, ['pop', 'ebx']
+  155250, ['sub', 'ebx,2F4h']
+  155256, ['mov', 'ebp,ebx']
+  155258, ['mov', '[ebp+44h],edx']
+  155261, ['mov', 'ebx,[ebp+18h]']
+  155264, ['cmp', 'edx,edx']
+  155266, ['jb', 'shortloc_25E88']
+ next: [155268, 155272]
+
+node :8
+node DriverEntry(155339) info:
+ start: 155339
+ prev: []
+ instructions: 
+  155339, ['pop', 'edx']
+  155340, ['cmp', 'ebp,ecx']
+  155342, ['jbe', 'shortloc_25ED8']
+ next: [155344, 155352]
+
+node :9
+node DriverEntry(155600) info:
+ start: 155600
+ prev: []
+ instructions: 
+  155600, ['cmp', 'ebx,ecx']
+  155602, ['jbe', 'shortloc_26000']
+ next: [155604, 155648]
+
+node :10
+node DriverEntry(155320) info:
+ start: 155320
+ prev: []
+ instructions: 
+  155320, ['cmp', 'ebx,ebp']
+  155322, ['jnz', 'shortloc_25ED8']
+ next: [155324, 155352]
+
+node :11
+node DriverEntry(153131) info:
+ start: 153131
+ prev: []
+ instructions: 
+  153131, ['push', 'ebp']
+  153132, ['or', 'ebp,ebp']
+  153134, ['cmp', 'ecx,edx']
+  153136, ['jnz', 'shortloc_25646']
+ next: [153138, 153158]
+
+node :12
+node DriverEntry(152968) info:
+ start: 152968
+ prev: []
+ instructions: 
+  152968, ['cmp', 'ebx,eax']
+  152970, ['jz', 'shortloc_25590']
+ next: [152972, 152976]
+
+node :13
+node DriverEntry(155639) info:
+ start: 155639
+ prev: []
+ instructions: 
+  155639, ['pop', 'ebp']
+  155640, ['cmp', 'ebp,eax']
+  155642, ['jnb', 'shortloc_26000']
+ next: [155644, 155648]
+
+node :14
+node DriverEntry(155292) info:
+ start: 155292
+ prev: []
+ instructions: 
+  155292, ['push', 'ebx']
+  155293, ['xor', 'ebx,ecx']
+  155295, ['pop', 'ebx']
+  155296, ['push', 'eax']
+  155297, ['and', 'eax,ebx']
+  155299, ['cmp', 'eax,ebp']
+  155301, ['jz', 'shortloc_25EB3']
+ next: [155303, 155315]
+
+node :15
+node DriverEntry(153048) info:
+ start: 153048
+ prev: []
+ instructions: 
+  153048, ['push', 'edx']
+  153049, ['or', 'edx,ebx']
+  153051, ['pop', 'edx']
+  153052, ['push', 'edx']
+  153053, ['sub', 'edx,eax']
+  153055, ['cmp', 'eax,edx']
+  153057, ['jnz', 'shortloc_25647']
+ next: [153059, 153159]
+
+node :16
+node DriverEntry(153020) info:
+ start: 153020
+ prev: []
+ instructions: 
+  153020, ['cmp', 'edx,ebx']
+  153022, ['jb', 'shortloc_255D0']
+ next: [153024, 153040]
+
+node :17
+node DriverEntry(155315) info:
+ start: 155315
+ prev: []
+ instructions: 
+  155315, ['pop', 'eax']
+  155316, ['push', 'eax']
+  155317, ['sub', 'eax,edx']
+  155319, ['pop', 'eax']
+ next: [155320]
+
+node :18
+node DriverEntry(155596) info:
+ start: 155596
+ prev: []
+ instructions: 
+  155596, ['push', 'ecx']
+  155597, ['mov', 'ecx,ebp']
+  155599, ['pop', 'ecx']
+ next: [155600]
+
+node :19
+node DriverEntry(155604) info:
+ start: 155604
+ prev: []
+ instructions: 
+  155604, ['push', 'ebx']
+  155605, ['sub', 'ebx,eax']
+  155607, ['pop', 'ebx']
+  155608, ['cmp', 'ebp,ecx']
+  155610, ['jb', 'shortloc_26000']
+ next: [155612, 155648]
+
+node :20
+node DriverEntry(152960) info:
+ start: 152960
+ prev: []
+ instructions: 
+  152960, ['cmp', 'ebx,edx']
+  152962, ['jz', 'shortloc_25588']
+ next: [152964, 152968]
+
+node :21
+node DriverEntry(155939) info:
+ start: 155939
+ prev: []
+ instructions: 
+  155939, ['pop', 'ebx']
+  155940, ['cmp', 'eax,ebp']
+  155942, ['jz', 'shortloc_26130']
+ next: [155944, 155952]
+
+node :22
+node DriverEntry(156459) info:
+ start: 156459
+ prev: []
+ instructions: 
+  156459, ['push', 'eax']
+  156460, ['and', 'eax,edx']
+  156462, ['pop', 'eax']
+  156463, ['cmp', 'ebp,eax']
+  156465, ['jz', 'shortloc_26337']
+ next: [156467, 156471]
+
+node :23
+node DriverEntry(155612) info:
+ start: 155612
+ prev: []
+ instructions: 
+  155612, ['push', 'edx']
+  155613, ['sub', 'edx,ebx']
+  155615, ['pop', 'edx']
+  155616, ['push', 'ebx']
+  155617, ['mov', 'ebx,edx']
+  155619, ['pop', 'ebx']
+  155620, ['push', 'ebp']
+  155621, ['and', 'ebp,eax']
+  155623, ['cmp', 'ecx,ebx']
+  155625, ['jbe', 'shortloc_25FF7']
+ next: [155627, 155639]
+
+node :24
+node DriverEntry(153138) info:
+ start: 153138
+ prev: []
+ instructions: 
+  153138, ['push', 'ecx']
+  153139, ['xor', 'ecx,eax']
+  153141, ['pop', 'ecx']
+  153142, ['cmp', 'edx,ebp']
+  153144, ['jb', 'shortloc_25646']
+ next: [153146, 153158]
+
+node :25
+node DriverEntry(155223) info:
+ start: 155223
+ prev: []
+ instructions: 
+  155223, ['cmp', 'ebp,eax']
+  155225, ['jbe', 'shortloc_25E67']
+ next: [155227, 155239]
+
+node :26
+node DriverEntry(155908) info:
+ start: 155908
+ prev: []
+ instructions: 
+  155908, ['cmp', 'eax,ecx']
+  155910, ['jb', 'shortloc_26130']
+ next: [155912, 155952]
+
+node :27
+node DriverEntry(156455) info:
+ start: 156455
+ prev: []
+ instructions: 
+  156455, ['cmp', 'ebp,ebx']
+  156457, ['jbe', 'shortloc_26337']
+ next: [156459, 156471]
+
+node :28
+node DriverEntry(155268) info:
+ start: 155268
+ prev: []
+ instructions: 
+  155268, ['push', 'eax']
+  155269, ['xor', 'eax,ebx']
+  155271, ['pop', 'eax']
+ next: [155272]
+
+node :29
+node DriverEntry(152976) info:
+ start: 152976
+ prev: []
+ instructions: 
+  152976, ['cmp', 'edx,ecx']
+  152978, ['jnb', 'shortloc_255BC']
+ next: [152980, 153020]
+
+node :30
+node DriverEntry(155227) info:
+ start: 155227
+ prev: []
+ instructions: 
+  155227, ['push', 'ecx']
+  155228, ['mov', 'ecx,eax']
+  155230, ['pop', 'ecx']
+  155231, ['cmp', 'ebx,eax']
+  155233, ['jbe', 'shortloc_25E67']
+ next: [155235, 155239]
+
+node :31
+node DriverEntry(153159) info:
+ start: 153159
+ prev: []
+ instructions: 
+  153159, ['pop', 'edx']
+  153160, ['cmp', 'ebx,edx']
+  153162, ['jbe', 'loc_256D4']
+ next: [153168, 153300]
+
+node :32
+node DriverEntry(155335) info:
+ start: 155335
+ prev: []
+ instructions: 
+  155335, ['push', 'ecx']
+  155336, ['and', 'ecx,edx']
+  155338, ['pop', 'ecx']
+ next: [155339]
+
+node :33
+node DriverEntry(155663) info:
+ start: 155663
+ prev: []
+ instructions: 
+  155663, ['push', 'edx']
+  155664, ['or', 'edx,edx']
+  155666, ['pop', 'edx']
+  155667, ['cmp', 'ebx,ebx']
+  155669, ['jbe', 'shortloc_2604F']
+ next: [155671, 155727]
+
+node :34
+node DriverEntry(155648) info:
+ start: 155648
+ prev: []
+ instructions: 
+  155648, ['cmp', 'eax,eax']
+  155650, ['jnb', 'shortloc_26050']
+ next: [155652, 155728]
+
+node :35
+node DriverEntry(155944) info:
+ start: 155944
+ prev: []
+ instructions: 
+  155944, ['push', 'edx']
+  155945, ['or', 'edx,ecx']
+  155947, ['pop', 'edx']
+  155948, ['push', 'ebp']
+  155949, ['and', 'ebp,edx']
+  155951, ['pop', 'ebp']
+ next: [155952]
+
+node :36
+node DriverEntry(156467) info:
+ start: 156467
+ prev: []
+ instructions: 
+  156467, ['push', 'ebx']
+  156468, ['or', 'ebx,edx']
+  156470, ['pop', 'ebx']
+ next: [156471]
+
+node :37
+node DriverEntry(155983) info:
+ start: 155983
+ prev: []
+ instructions: 
+  155983, ['or', 'ecx,ecx']
+  155985, ['jnz', 'shortloc_2614A']
+ next: [155978, 155987]
+
+node :38
+node DriverEntry(156487) info:
+ start: 156487
+ prev: []
+ instructions: 
+  156487, ['or', 'ecx,ecx']
+  156489, ['jnz', 'shortloc_26342']
+ next: [156482, 156491]
+
+node :39
+node DriverEntry(155580) info:
+ start: 155580
+ prev: []
+ instructions: 
+  155580, ['cmp', 'ebp,ecx']
+  155582, ['jz', 'shortloc_25FC8']
+ next: [155584, 155592]
+
+node :40
+node DriverEntry(155303) info:
+ start: 155303
+ prev: []
+ instructions: 
+  155303, ['push', 'edx']
+  155304, ['and', 'edx,edx']
+  155306, ['pop', 'edx']
+  155307, ['cmp', 'edx,eax']
+  155309, ['jbe', 'shortloc_25EB3']
+ next: [155311, 155315]
+
+node :41
+node DriverEntry(153039) info:
+ start: 153039
+ prev: []
+ instructions: 
+  153039, ['pop', 'eax']
+ next: [153040]
+
+node :42
+node DriverEntry(155352) info:
+ start: 155352
+ prev: []
+ instructions: 
+  155352, ['cmp', 'ebp,edx']
+  155354, ['jnb', 'shortloc_25F08']
+ next: [155356, 155400]
+
+node :43
+node DriverEntry(153146) info:
+ start: 153146
+ prev: []
+ instructions: 
+  153146, ['push', 'edx']
+  153147, ['mov', 'edx,edx']
+  153149, ['pop', 'edx']
+  153150, ['cmp', 'eax,ecx']
+  153152, ['jb', 'shortloc_25646']
+ next: [153154, 153158]
+
+node :44
+node DriverEntry(153024) info:
+ start: 153024
+ prev: []
+ instructions: 
+  153024, ['push', 'eax']
+  153025, ['or', 'eax,edx']
+  153027, ['pop', 'eax']
+  153028, ['push', 'eax']
+  153029, ['or', 'eax,ebx']
+  153031, ['cmp', 'ecx,eax']
+  153033, ['jnb', 'shortloc_255CF']
+ next: [153035, 153039]
+
+node :45
+node DriverEntry(153019) info:
+ start: 153019
+ prev: []
+ instructions: 
+  153019, ['pop', 'ebx']
+ next: [153020]
+
+node :46
+node DriverEntry(155671) info:
+ start: 155671
+ prev: []
+ instructions: 
+  155671, ['push', 'ebp']
+  155672, ['and', 'ebp,ecx']
+  155674, ['pop', 'ebp']
+  155675, ['push', 'ebp']
+  155676, ['or', 'ebp,eax']
+  155678, ['pop', 'ebp']
+  155679, ['cmp', 'ebp,eax']
+  155681, ['jnz', 'shortloc_2604F']
+ next: [155683, 155727]
+
+node :47
+node DriverEntry(155652) info:
+ start: 155652
+ prev: []
+ instructions: 
+  155652, ['push', 'ebx']
+  155653, ['and', 'ebx,ecx']
+  155655, ['pop', 'ebx']
+  155656, ['push', 'edx']
+  155657, ['xor', 'edx,edx']
+  155659, ['cmp', 'ecx,ebx']
+  155661, ['jb', 'shortloc_2604F']
+ next: [155663, 155727]
+
+node :48
+node DriverEntry(155627) info:
+ start: 155627
+ prev: []
+ instructions: 
+  155627, ['push', 'eax']
+  155628, ['mov', 'eax,ebx']
+  155630, ['pop', 'eax']
+  155631, ['push', 'ebx']
+  155632, ['mov', 'ebx,ebx']
+  155634, ['pop', 'ebx']
+  155635, ['push', 'eax']
+  155636, ['mov', 'eax,eax']
+  155638, ['pop', 'eax']
+ next: [155639]
+
+node :49
+node DriverEntry(155091) info:
+ start: 155091
+ prev: []
+ instructions: 
+  155091, ['cmp', 'eax,ecx']
+  155093, ['jnz', 'shortloc_25DDB']
+ next: [155095, 155099]
+
+node :50
+node DriverEntry(154875) info:
+ start: 154875
+ prev: []
+ instructions: 
+  154875, ['cmp', 'ecx,edx']
+  154877, ['jnz', 'shortloc_25D03']
+ next: [154879, 154883]
+
+node :51
+node DriverEntry(156660) info:
+ start: 156660
+ prev: []
+ instructions: 
+  156660, ['cmp', 'ebp,ebx']
+  156662, ['jnb', 'shortloc_2640C']
+ next: [156664, 156684]
+
+node :52
+node DriverEntry(156680) info:
+ start: 156680
+ prev: []
+ instructions: 
+  156680, ['push', 'ebp']
+  156681, ['sub', 'ebp,edx']
+  156683, ['pop', 'ebp']
+ next: [156684]
+
+node :53
+node DriverEntry(152964) info:
+ start: 152964
+ prev: []
+ instructions: 
+  152964, ['push', 'edx']
+  152965, ['mov', 'edx,ecx']
+  152967, ['pop', 'edx']
+ next: [152968]
+
+node :54
+node DriverEntry(156684) info:
+ start: 156684
+ prev: []
+ instructions: 
+  156684, ['cmp', 'ebp,edx']
+  156686, ['jb', 'shortloc_26480']
+ next: [156688, 156800]
+
+node :55
+node DriverEntry(153158) info:
+ start: 153158
+ prev: []
+ instructions: 
+  153158, ['pop', 'ebp']
+ next: [153159]
+
+node :56
+node DriverEntry(152972) info:
+ start: 152972
+ prev: []
+ instructions: 
+  152972, ['push', 'edx']
+  152973, ['or', 'edx,ecx']
+  152975, ['pop', 'edx']
+ next: [152976]
+
+node :57
+node DriverEntry(153154) info:
+ start: 153154
+ prev: []
+ instructions: 
+  153154, ['push', 'eax']
+  153155, ['and', 'eax,ebp']
+  153157, ['pop', 'eax']
+ next: [153158]
+
+node :58
+node DriverEntry(155644) info:
+ start: 155644
+ prev: []
+ instructions: 
+  155644, ['push', 'ebp']
+  155645, ['mov', 'ebp,ecx']
+  155647, ['pop', 'ebp']
+ next: [155648]
+
+node :59
+node DriverEntry(156450) info:
+ start: 156450
+ prev: []
+ instructions: 
+  156450, ['pop', 'edx']
+  156451, ['push', 'eax']
+  156452, ['or', 'eax,ecx']
+  156454, ['pop', 'eax']
+ next: [156455]
+
+node :60
+node DriverEntry(156431) info:
+ start: 156431
+ prev: []
+ instructions: 
+  156431, ['cmp', 'edx,ebp']
+  156433, ['jnz', 'shortloc_26327']
+ next: [156435, 156455]
+
+node :61
+node DriverEntry(155584) info:
+ start: 155584
+ prev: []
+ instructions: 
+  155584, ['push', 'ebx']
+  155585, ['sub', 'ebx,ebp']
+  155587, ['pop', 'ebx']
+  155588, ['push', 'ebx']
+  155589, ['or', 'ebx,edx']
+  155591, ['pop', 'ebx']
+ next: [155592]
+
+node :62
+node DriverEntry(155235) info:
+ start: 155235
+ prev: []
+ instructions: 
+  155235, ['push', 'ebp']
+  155236, ['or', 'ebp,eax']
+  155238, ['pop', 'ebp']
+ next: [155239]
+
+node :63
+node DriverEntry(155683) info:
+ start: 155683
+ prev: []
+ instructions: 
+  155683, ['push', 'ecx']
+  155684, ['sub', 'ecx,ebx']
+  155686, ['pop', 'ecx']
+  155687, ['cmp', 'eax,ebx']
+  155689, ['jb', 'shortloc_2604F']
+ next: [155691, 155727]
+
+node :64
+node DriverEntry(153035) info:
+ start: 153035
+ prev: []
+ instructions: 
+  153035, ['push', 'ecx']
+  153036, ['mov', 'ecx,ebp']
+  153038, ['pop', 'ecx']
+ next: [153039]
+
+node :65
+node DriverEntry(155015) info:
+ start: 155015
+ prev: []
+ instructions: 
+  155015, ['cmp', 'ecx,ebp']
+  155017, ['jnz', 'shortloc_25DD3']
+ next: [155019, 155091]
+
+node :66
+node DriverEntry(155090) info:
+ start: 155090
+ prev: []
+ instructions: 
+  155090, ['pop', 'eax']
+ next: [155091]
+
+node :67
+node DriverEntry(155344) info:
+ start: 155344
+ prev: []
+ instructions: 
+  155344, ['push', 'eax']
+  155345, ['and', 'eax,eax']
+  155347, ['pop', 'eax']
+  155348, ['push', 'edx']
+  155349, ['xor', 'edx,edx']
+  155351, ['pop', 'edx']
+ next: [155352]
+
+node :68
+node DriverEntry(155311) info:
+ start: 155311
+ prev: []
+ instructions: 
+  155311, ['push', 'edx']
+  155312, ['or', 'edx,ecx']
+  155314, ['pop', 'edx']
+ next: [155315]
+
+node :69
+node DriverEntry(153168) info:
+ start: 153168
+ prev: []
+ instructions: 
+  153168, ['push', 'ebx']
+  153169, ['sub', 'ebx,ebp']
+  153171, ['pop', 'ebx']
+  153172, ['push', 'ebp']
+  153173, ['and', 'ebp,eax']
+  153175, ['pop', 'ebp']
+  153176, ['cmp', 'ecx,eax']
+  153178, ['jnb', 'shortloc_256D4']
+ next: [153180, 153300]
+
+node :70
+node DriverEntry(153299) info:
+ start: 153299
+ prev: []
+ instructions: 
+  153299, ['pop', 'ebp']
+ next: [153300]
+
+node :71
+node DriverEntry(154879) info:
+ start: 154879
+ prev: []
+ instructions: 
+  154879, ['push', 'ebx']
+  154880, ['mov', 'ebx,ecx']
+  154882, ['pop', 'ebx']
+ next: [154883]
+
+node :72
+node DriverEntry(152995) info:
+ start: 152995
+ prev: []
+ instructions: 
+  152995, ['pop', 'ebx']
+  152996, ['push', 'ebx']
+  152997, ['mov', 'ebx,ebx']
+  152999, ['cmp', 'ebx,eax']
+  153001, ['jb', 'shortloc_255BB']
+ next: [153003, 153019]
+
+node :73
+node DriverEntry(155912) info:
+ start: 155912
+ prev: []
+ instructions: 
+  155912, ['push', 'ebp']
+  155913, ['xor', 'ebp,ecx']
+  155915, ['pop', 'ebp']
+  155916, ['push', 'ebx']
+  155917, ['or', 'ebx,edx']
+  155919, ['cmp', 'edx,ebp']
+  155921, ['jz', 'shortloc_26123']
+ next: [155923, 155939]
+
+node :74
+node DriverEntry(155907) info:
+ start: 155907
+ prev: []
+ instructions: 
+  155907, ['pop', 'eax']
+ next: [155908]
+
+node :75
+node DriverEntry(155888) info:
+ start: 155888
+ prev: []
+ instructions: 
+  155888, ['cmp', 'eax,ebx']
+  155890, ['jnb', 'shortloc_26104']
+ next: [155892, 155908]
+
+node :76
+node DriverEntry(156799) info:
+ start: 156799
+ prev: []
+ instructions: 
+  156799, ['pop', 'ebx']
+ next: [156800]
+
+node :77
+node DriverEntry(153059) info:
+ start: 153059
+ prev: []
+ instructions: 
+  153059, ['push', 'ebp']
+  153060, ['xor', 'ebp,eax']
+  153062, ['pop', 'ebp']
+  153063, ['cmp', 'ebx,eax']
+  153065, ['jnz', 'shortloc_2562B']
+ next: [153067, 153131]
+
+node :78
+node DriverEntry(156688) info:
+ start: 156688
+ prev: []
+ instructions: 
+  156688, ['push', 'ebp']
+  156689, ['or', 'ebp,ebp']
+  156691, ['pop', 'ebp']
+  156692, ['push', 'eax']
+  156693, ['mov', 'eax,eax']
+  156695, ['pop', 'eax']
+  156696, ['push', 'ebx']
+  156697, ['mov', 'ebx,ebp']
+  156699, ['cmp', 'ecx,eax']
+  156701, ['jbe', 'shortloc_2647F']
+ next: [156703, 156799]
+
+node :79
+node DriverEntry(155876) info:
+ start: 155876
+ prev: []
+ instructions: 
+  155876, ['cmp', 'ebp,edx']
+  155878, ['jb', 'shortloc_260F0']
+ next: [155880, 155888]
+
+node :80
+node DriverEntry(155356) info:
+ start: 155356
+ prev: []
+ instructions: 
+  155356, ['push', 'ecx']
+  155357, ['and', 'ecx,eax']
+  155359, ['pop', 'ecx']
+  155360, ['push', 'ebp']
+  155361, ['and', 'ebp,ebp']
+  155363, ['pop', 'ebp']
+  155364, ['push', 'ecx']
+  155365, ['and', 'ecx,ecx']
+  155367, ['pop', 'ecx']
+  155368, ['cmp', 'ecx,eax']
+  155370, ['jnz', 'shortloc_25F08']
+ next: [155372, 155400]
+
+node :81
+node DriverEntry(155399) info:
+ start: 155399
+ prev: []
+ instructions: 
+  155399, ['pop', 'edx']
+ next: [155400]
+
+node :82
+node DriverEntry(153300) info:
+ start: 153300
+ prev: []
+ instructions: 
+  153300, ['cmp', 'ebp,edx']
+  153302, ['jnz', 'shortloc_256E4']
+ next: [153304, 153316]
+
+node :83
+node DriverEntry(154859) info:
+ start: 154859
+ prev: []
+ instructions: 
+  154859, ['cmp', 'eax,edx']
+  154861, ['jbe', 'shortloc_25CFB']
+ next: [154863, 154875]
+
+node :84
+node DriverEntry(155400) info:
+ start: 155400
+ prev: []
+ instructions: 
+  155400, ['cmp', 'edx,eax']
+  155402, ['jbe', 'shortloc_25F10']
+ next: [155404, 155408]
+
+node :85
+node DriverEntry(155978) info:
+ start: 155978
+ prev: []
+ instructions: 
+  155978, ['xor', 'byteptr[esi],33h']
+  155981, ['inc', 'esi']
+  155982, ['dec', 'ecx']
+ next: [155983]
+
+node :86
+node DriverEntry(156471) info:
+ start: 156471
+ prev: []
+ instructions: 
+  156471, ['mov', 'esi,[ebp+30h]']
+  156474, ['add', 'esi,[ebp+18h]']
+  156477, ['mov', 'ecx,[ebp+34h]']
+  156480, ['jmp', 'shortloc_26347']
+ next: [156487]
+
+node :87
+node DriverEntry(156482) info:
+ start: 156482
+ prev: []
+ instructions: 
+  156482, ['xor', 'byteptr[esi],33h']
+  156485, ['inc', 'esi']
+  156486, ['dec', 'ecx']
+ next: [156487]
+
+node :88
+node DriverEntry(155952) info:
+ start: 155952
+ prev: []
+ instructions: 
+  155952, ['call', '$+5']
+  155957, ['pop', 'ecx']
+  155958, ['mov', 'eax,[ebp+18h]']
+  155961, ['add', '[ecx+48Dh],eax']
+  155967, ['mov', 'esi,[ebp+28h]']
+  155970, ['add', 'esi,[ebp+18h]']
+  155973, ['mov', 'ecx,[ebp+2Ch]']
+  155976, ['jmp', 'shortloc_2614F']
+ next: [155983]
+
+node :89
+node DriverEntry(156800) info:
+ start: 156800
+ prev: []
+ instructions: 
+  156800, ['cmp', 'eax,eax']
+  156802, ['jnz', 'shortloc_264AC']
+ next: [156804, 156844]
+
+node :90
+node DriverEntry(155095) info:
+ start: 155095
+ prev: []
+ instructions: 
+  155095, ['push', 'eax']
+  155096, ['or', 'eax,ecx']
+  155098, ['pop', 'eax']
+ next: [155099]
+
+node :91
+node DriverEntry(154851) info:
+ start: 154851
+ prev: []
+ instructions: 
+  154851, ['cmp', 'ecx,ebp']
+  154853, ['jnz', 'shortloc_25CEB']
+ next: [154855, 154859]
+
+node :92
+node DriverEntry(154850) info:
+ start: 154850
+ prev: []
+ instructions: 
+  154850, ['pop', 'eax']
+ next: [154851]
+
+node :93
+node DriverEntry(154723) info:
+ start: 154723
+ prev: []
+ instructions: 
+  154723, ['nop']
+  154724, ['nop']
+  154725, ['nop']
+  154726, ['nop']
+  154727, ['nop']
+  154728, ['nop']
+  154729, ['nop']
+  154730, ['nop']
+  154731, ['nop']
+  154732, ['nop']
+  154733, ['nop']
+  154734, ['nop']
+  154735, ['nop']
+  154736, ['nop']
+  154737, ['nop']
+  154738, ['nop']
+  154739, ['nop']
+  154740, ['nop']
+  154741, ['nop']
+  154742, ['nop']
+  154743, ['nop']
+  154744, ['nop']
+  154745, ['nop']
+  154746, ['nop']
+  154747, ['nop']
+  154748, ['nop']
+  154749, ['nop']
+  154750, ['nop']
+  154751, ['nop']
+  154752, ['nop']
+  154753, ['nop']
+  154754, ['nop']
+  154755, ['nop']
+  154756, ['nop']
+  154757, ['nop']
+  154758, ['nop']
+  154759, ['nop']
+  154760, ['nop']
+  154761, ['nop']
+  154762, ['nop']
+  154763, ['nop']
+  154764, ['nop']
+  154765, ['nop']
+  154766, ['nop']
+  154767, ['nop']
+  154768, ['nop']
+  154769, ['nop']
+  154770, ['nop']
+  154771, ['nop']
+  154772, ['nop']
+  154773, ['nop']
+  154774, ['nop']
+  154775, ['nop']
+  154776, ['nop']
+  154777, ['nop']
+  154778, ['nop']
+  154779, ['nop']
+  154780, ['nop']
+  154781, ['nop']
+  154782, ['nop']
+  154783, ['nop']
+  154784, ['nop']
+  154785, ['nop']
+  154786, ['nop']
+  154787, ['nop']
+  154788, ['nop']
+  154789, ['nop']
+  154790, ['nop']
+  154791, ['nop']
+  154792, ['nop']
+  154793, ['nop']
+  154794, ['nop']
+  154795, ['nop']
+  154796, ['nop']
+  154797, ['nop']
+  154798, ['nop']
+  154799, ['nop']
+  154800, ['nop']
+  154801, ['nop']
+  154802, ['nop']
+  154803, ['nop']
+  154804, ['nop']
+  154805, ['nop']
+  154806, ['nop']
+  154807, ['nop']
+  154808, ['nop']
+  154809, ['nop']
+  154810, ['nop']
+  154811, ['nop']
+  154812, ['nop']
+  154813, ['nop']
+  154814, ['nop']
+  154815, ['nop']
+  154816, ['nop']
+  154817, ['nop']
+  154818, ['nop']
+  154819, ['nop']
+  154820, ['nop']
+  154821, ['nop']
+  154822, ['nop']
+  154823, ['cmp', 'eax,edx']
+  154825, ['jbe', 'shortloc_25CE3']
+ next: [154827, 154851]
+
+node :94
+node DriverEntry(154906) info:
+ start: 154906
+ prev: []
+ instructions: 
+  154906, ['pop', 'ecx']
+ next: [154907]
+
+node :95
+node DriverEntry(154883) info:
+ start: 154883
+ prev: []
+ instructions: 
+  154883, ['cmp', 'ecx,ebx']
+  154885, ['jnb', 'shortloc_25D1B']
+ next: [154887, 154907]
+
+node :96
+node DriverEntry(153304) info:
+ start: 153304
+ prev: []
+ instructions: 
+  153304, ['push', 'edx']
+  153305, ['sub', 'edx,ecx']
+  153307, ['pop', 'edx']
+  153308, ['cmp', 'ebp,ebx']
+  153310, ['jz', 'shortloc_256E4']
+ next: [153312, 153316]
+
+node :97
+node DriverEntry(155691) info:
+ start: 155691
+ prev: []
+ instructions: 
+  155691, ['push', 'edx']
+  155692, ['xor', 'edx,edx']
+  155694, ['pop', 'edx']
+  155695, ['push', 'ebp']
+  155696, ['sub', 'ebp,eax']
+  155698, ['pop', 'ebp']
+  155699, ['cmp', 'ecx,ebx']
+  155701, ['jnb', 'shortloc_2604F']
+ next: [155703, 155727]
+
+node :98
+node DriverEntry(152980) info:
+ start: 152980
+ prev: []
+ instructions: 
+  152980, ['push', 'eax']
+  152981, ['xor', 'eax,ebx']
+  152983, ['pop', 'eax']
+  152984, ['push', 'ebx']
+  152985, ['xor', 'ebx,ebp']
+  152987, ['cmp', 'eax,eax']
+  152989, ['jb', 'shortloc_255A3']
+ next: [152991, 152995]
+
+node :99
+node DriverEntry(154907) info:
+ start: 154907
+ prev: []
+ instructions: 
+  154907, ['cmp', 'ecx,eax']
+  154909, ['jnb', 'shortloc_25D27']
+ next: [154911, 154919]
+
+node :100
+node DriverEntry(156804) info:
+ start: 156804
+ prev: []
+ instructions: 
+  156804, ['push', 'ecx']
+  156805, ['and', 'ecx,ebp']
+  156807, ['pop', 'ecx']
+  156808, ['cmp', 'ebp,ebx']
+  156810, ['jbe', 'shortloc_264AC']
+ next: [156812, 156844]
+
+node :101
+node DriverEntry(155099) info:
+ start: 155099
+ prev: []
+ instructions: 
+  155099, ['cmp', 'ebp,edx']
+  155101, ['jnz', 'shortloc_25E0F']
+ next: [155103, 155151]
+
+node :102
+node DriverEntry(155404) info:
+ start: 155404
+ prev: []
+ instructions: 
+  155404, ['push', 'eax']
+  155405, ['sub', 'eax,eax']
+  155407, ['pop', 'eax']
+ next: [155408]
+
+node :103
+node DriverEntry(153312) info:
+ start: 153312
+ prev: []
+ instructions: 
+  153312, ['push', 'eax']
+  153313, ['sub', 'eax,eax']
+  153315, ['pop', 'eax']
+ next: [153316]
+
+node :104
+node DriverEntry(155703) info:
+ start: 155703
+ prev: []
+ instructions: 
+  155703, ['push', 'ebx']
+  155704, ['and', 'ebx,ecx']
+  155706, ['pop', 'ebx']
+  155707, ['cmp', 'ebx,eax']
+  155709, ['jnb', 'shortloc_2604F']
+ next: [155711, 155727]
+
+node :105
+node DriverEntry(156812) info:
+ start: 156812
+ prev: []
+ instructions: 
+  156812, ['push', 'eax']
+  156813, ['or', 'eax,edx']
+  156815, ['pop', 'eax']
+  156816, ['cmp', 'ebp,eax']
+  156818, ['jz', 'shortloc_264AC']
+ next: [156820, 156844]
+
+node :106
+node DriverEntry(156843) info:
+ start: 156843
+ prev: []
+ instructions: 
+  156843, ['pop', 'edx']
+ next: [156844]
+
+node :107
+node DriverEntry(153355) info:
+ start: 153355
+ prev: []
+ instructions: 
+  153355, ['pop', 'edx']
+  153356, ['push', 'edx']
+  153357, ['or', 'edx,ecx']
+  153359, ['pop', 'edx']
+ next: [153360]
+
+node :108
+node DriverEntry(154911) info:
+ start: 154911
+ prev: []
+ instructions: 
+  154911, ['push', 'ebx']
+  154912, ['sub', 'ebx,ebx']
+  154914, ['pop', 'ebx']
+  154915, ['push', 'ebx']
+  154916, ['or', 'ebx,ebp']
+  154918, ['pop', 'ebx']
+ next: [154919]
+
+node :109
+node DriverEntry(155103) info:
+ start: 155103
+ prev: []
+ instructions: 
+  155103, ['push', 'ecx']
+  155104, ['xor', 'ecx,edx']
+  155106, ['pop', 'ecx']
+  155107, ['push', 'ebp']
+  155108, ['and', 'ebp,eax']
+  155110, ['cmp', 'ebp,eax']
+  155112, ['jbe', 'shortloc_25E0E']
+ next: [155114, 155150]
+
+node :110
+node DriverEntry(153411) info:
+ start: 153411
+ prev: []
+ instructions: 
+  153411, ['push', 'eax']
+  153412, ['mov', 'eax,ebx']
+  153414, ['pop', 'eax']
+ next: [153415]
+
+node :111
+node DriverEntry(153383) info:
+ start: 153383
+ prev: []
+ instructions: 
+  153383, ['pop', 'edx']
+  153384, ['push', 'eax']
+  153385, ['and', 'eax,edx']
+  153387, ['cmp', 'edx,ebx']
+  153389, ['jbe', 'shortloc_25747']
+ next: [153391, 153415]
+
+node :112
+node DriverEntry(155408) info:
+ start: 155408
+ prev: []
+ instructions: 
+  155408, ['cmp', 'edx,ebp']
+  155410, ['jb', 'shortloc_25F3C']
+ next: [155412, 155452]
+
+node :113
+node DriverEntry(153316) info:
+ start: 153316
+ prev: []
+ instructions: 
+  153316, ['cmp', 'ebp,edx']
+  153318, ['jz', 'shortloc_25710']
+ next: [153320, 153360]
+
+node :114
+node DriverEntry(155727) info:
+ start: 155727
+ prev: []
+ instructions: 
+  155727, ['pop', 'edx']
+ next: [155728]
+
+node :115
+node DriverEntry(153067) info:
+ start: 153067
+ prev: []
+ instructions: 
+  153067, ['push', 'ebp']
+  153068, ['mov', 'ebp,ecx']
+  153070, ['pop', 'ebp']
+  153071, ['push', 'ebx']
+  153072, ['or', 'ebx,eax']
+  153074, ['cmp', 'edx,ebp']
+  153076, ['jnz', 'shortloc_255FA']
+ next: [153078, 153082]
+
+node :116
+node DriverEntry(156844) info:
+ start: 156844
+ prev: []
+ instructions: 
+  156844, ['cmp', 'eax,ebx']
+  156846, ['jnz', 'shortloc_264B4']
+ next: [156848, 156852]
+
+node :117
+node DriverEntry(155747) info:
+ start: 155747
+ prev: []
+ instructions: 
+  155747, ['pop', 'edx']
+ next: [155748]
+
+node :118
+node DriverEntry(153360) info:
+ start: 153360
+ prev: []
+ instructions: 
+  153360, ['cmp', 'ebp,eax']
+  153362, ['jnb', 'shortloc_25748']
+ next: [153364, 153416]
+
+node :119
+node DriverEntry(156507) info:
+ start: 156507
+ prev: []
+ instructions: 
+  156507, ['or', 'ecx,ecx']
+  156509, ['jnz', 'shortloc_26356']
+ next: [156502, 156511]
+
+node :120
+node DriverEntry(154919) info:
+ start: 154919
+ prev: []
+ instructions: 
+  154919, ['cmp', 'ebp,ecx']
+  154921, ['jbe', 'shortloc_25D37']
+ next: [154923, 154935]
+
+node :121
+node DriverEntry(155114) info:
+ start: 155114
+ prev: []
+ instructions: 
+  155114, ['push', 'ecx']
+  155115, ['sub', 'ecx,eax']
+  155117, ['pop', 'ecx']
+  155118, ['cmp', 'edx,ebx']
+  155120, ['jbe', 'shortloc_25E0E']
+ next: [155122, 155150]
+
+node :122
+node DriverEntry(155808) info:
+ start: 155808
+ prev: []
+ instructions: 
+  155808, ['cmp', 'ebx,ebp']
+  155810, ['jbe', 'shortloc_260B4']
+ next: [155812, 155828]
+
+node :123
+node DriverEntry(153415) info:
+ start: 153415
+ prev: []
+ instructions: 
+  153415, ['pop', 'eax']
+ next: [153416]
+
+node :124
+node DriverEntry(155728) info:
+ start: 155728
+ prev: []
+ instructions: 
+  155728, ['cmp', 'eax,ecx']
+  155730, ['jnz', 'shortloc_26064']
+ next: [155732, 155748]
+
+node :125
+node DriverEntry(155412) info:
+ start: 155412
+ prev: []
+ instructions: 
+  155412, ['push', 'ebx']
+  155413, ['or', 'ebx,ebx']
+  155415, ['pop', 'ebx']
+  155416, ['cmp', 'ebx,eax']
+  155418, ['jz', 'shortloc_25F3C']
+ next: [155420, 155452]
+
+node :126
+node DriverEntry(155827) info:
+ start: 155827
+ prev: []
+ instructions: 
+  155827, ['pop', 'ecx']
+ next: [155828]
+
+node :127
+node DriverEntry(154887) info:
+ start: 154887
+ prev: []
+ instructions: 
+  154887, ['push', 'edx']
+  154888, ['mov', 'edx,ebp']
+  154890, ['pop', 'edx']
+  154891, ['push', 'ecx']
+  154892, ['sub', 'ecx,eax']
+  154894, ['cmp', 'ebp,ebx']
+  154896, ['jb', 'shortloc_25D1A']
+ next: [154898, 154906]
+
+node :128
+node DriverEntry(153003) info:
+ start: 153003
+ prev: []
+ instructions: 
+  153003, ['push', 'eax']
+  153004, ['xor', 'eax,ecx']
+  153006, ['pop', 'eax']
+  153007, ['push', 'ecx']
+  153008, ['xor', 'ecx,ebp']
+  153010, ['pop', 'ecx']
+  153011, ['cmp', 'ecx,eax']
+  153013, ['jbe', 'shortloc_255BB']
+ next: [153015, 153019]
+
+node :129
+node DriverEntry(155711) info:
+ start: 155711
+ prev: []
+ instructions: 
+  155711, ['push', 'ebx']
+  155712, ['or', 'ebx,ebx']
+  155714, ['pop', 'ebx']
+  155715, ['cmp', 'eax,eax']
+  155717, ['jnz', 'shortloc_2604F']
+ next: [155719, 155727]
+
+node :130
+node DriverEntry(155732) info:
+ start: 155732
+ prev: []
+ instructions: 
+  155732, ['push', 'ebx']
+  155733, ['xor', 'ebx,ebp']
+  155735, ['pop', 'ebx']
+  155736, ['push', 'edx']
+  155737, ['xor', 'edx,ebp']
+  155739, ['cmp', 'edx,edx']
+  155741, ['jz', 'shortloc_26063']
+ next: [155743, 155747]
+
+node :131
+node DriverEntry(155215) info:
+ start: 155215
+ prev: []
+ instructions: 
+  155215, ['cmp', 'ecx,eax']
+  155217, ['jz', 'shortloc_25E57']
+ next: [155219, 155223]
+
+node :132
+node DriverEntry(155923) info:
+ start: 155923
+ prev: []
+ instructions: 
+  155923, ['push', 'edx']
+  155924, ['xor', 'edx,ecx']
+  155926, ['pop', 'edx']
+  155927, ['cmp', 'ecx,eax']
+  155929, ['jbe', 'shortloc_26123']
+ next: [155931, 155939]
+
+node :133
+node DriverEntry(155748) info:
+ start: 155748
+ prev: []
+ instructions: 
+  155748, ['cmp', 'ebx,ebx']
+  155750, ['jbe', 'shortloc_260A0']
+ next: [155752, 155808]
+
+node :134
+node DriverEntry(154863) info:
+ start: 154863
+ prev: []
+ instructions: 
+  154863, ['push', 'ecx']
+  154864, ['and', 'ecx,ebx']
+  154866, ['pop', 'ecx']
+  154867, ['cmp', 'ecx,ebp']
+  154869, ['jz', 'shortloc_25CFB']
+ next: [154871, 154875]
+
+node :135
+node DriverEntry(155420) info:
+ start: 155420
+ prev: []
+ instructions: 
+  155420, ['push', 'ebx']
+  155421, ['and', 'ebx,edx']
+  155423, ['pop', 'ebx']
+  155424, ['cmp', 'eax,ecx']
+  155426, ['jnz', 'shortloc_25F3C']
+ next: [155428, 155452]
+
+node :136
+node DriverEntry(155122) info:
+ start: 155122
+ prev: []
+ instructions: 
+  155122, ['push', 'ebp']
+  155123, ['mov', 'ebp,ebx']
+  155125, ['pop', 'ebp']
+  155126, ['cmp', 'ebx,ebx']
+  155128, ['jnz', 'shortloc_25E0E']
+ next: [155130, 155150]
+
+node :137
+node DriverEntry(155428) info:
+ start: 155428
+ prev: []
+ instructions: 
+  155428, ['push', 'edx']
+  155429, ['or', 'edx,ebp']
+  155431, ['pop', 'edx']
+  155432, ['push', 'ebx']
+  155433, ['or', 'ebx,ebp']
+  155435, ['cmp', 'eax,ebp']
+  155437, ['jbe', 'shortloc_25F33']
+ next: [155439, 155443]
+
+node :138
+node DriverEntry(153082) info:
+ start: 153082
+ prev: []
+ instructions: 
+  153082, ['pop', 'ebx']
+  153083, ['cmp', 'edx,ebx']
+  153085, ['jbe', 'shortloc_2562B']
+ next: [153087, 153131]
+
+node :139
+node DriverEntry(153078) info:
+ start: 153078
+ prev: []
+ instructions: 
+  153078, ['push', 'eax']
+  153079, ['or', 'eax,ecx']
+  153081, ['pop', 'eax']
+ next: [153082]
+
+node :140
+node DriverEntry(156703) info:
+ start: 156703
+ prev: []
+ instructions: 
+  156703, ['push', 'edx']
+  156704, ['mov', 'edx,ebx']
+  156706, ['pop', 'edx']
+  156707, ['cmp', 'eax,ecx']
+  156709, ['jb', 'shortloc_2647F']
+ next: [156711, 156799]
+
+node :141
+node DriverEntry(155880) info:
+ start: 155880
+ prev: []
+ instructions: 
+  155880, ['push', 'eax']
+  155881, ['or', 'eax,ebp']
+  155883, ['pop', 'eax']
+  155884, ['push', 'ecx']
+  155885, ['xor', 'ecx,ecx']
+  155887, ['pop', 'ecx']
+ next: [155888]
+
+node :142
+node DriverEntry(154855) info:
+ start: 154855
+ prev: []
+ instructions: 
+  154855, ['push', 'eax']
+  154856, ['xor', 'eax,ebx']
+  154858, ['pop', 'eax']
+ next: [154859]
+
+node :143
+node DriverEntry(155987) info:
+ start: 155987
+ prev: []
+ instructions: 
+  155987, ['cmp', 'ebp,eax']
+  155989, ['jb', 'shortloc_2615B']
+ next: [155991, 155995]
+
+node :144
+node DriverEntry(154923) info:
+ start: 154923
+ prev: []
+ instructions: 
+  154923, ['push', 'ecx']
+  154924, ['sub', 'ecx,eax']
+  154926, ['pop', 'ecx']
+  154927, ['cmp', 'ebx,ebp']
+  154929, ['jb', 'shortloc_25D37']
+ next: [154931, 154935]
+
+node :145
+node DriverEntry(156848) info:
+ start: 156848
+ prev: []
+ instructions: 
+  156848, ['push', 'ebp']
+  156849, ['mov', 'ebp,edx']
+  156851, ['pop', 'ebp']
+ next: [156852]
+
+node :146
+node DriverEntry(154943) info:
+ start: 154943
+ prev: []
+ instructions: 
+  154943, ['cmp', 'ebp,eax']
+  154945, ['jbe', 'shortloc_25D87']
+ next: [154947, 155015]
+
+node :147
+node DriverEntry(155006) info:
+ start: 155006
+ prev: []
+ instructions: 
+  155006, ['pop', 'ecx']
+  155007, ['cmp', 'eax,ebx']
+  155009, ['jnz', 'shortloc_25D87']
+ next: [155011, 155015]
+
+node :148
+node DriverEntry(153424) info:
+ start: 153424
+ prev: []
+ instructions: 
+  153424, ['nop']
+  153425, ['nop']
+  153426, ['nop']
+  153427, ['nop']
+  153428, ['nop']
+  153429, ['nop']
+  153430, ['nop']
+  153431, ['nop']
+  153432, ['nop']
+  153433, ['nop']
+  153434, ['nop']
+  153435, ['nop']
+  153436, ['nop']
+  153437, ['nop']
+  153438, ['nop']
+  153439, ['nop']
+  153440, ['nop']
+  153441, ['nop']
+  153442, ['nop']
+  153443, ['nop']
+  153444, ['nop']
+  153445, ['nop']
+  153446, ['nop']
+  153447, ['nop']
+  153448, ['nop']
+  153449, ['nop']
+  153450, ['nop']
+  153451, ['nop']
+  153452, ['nop']
+  153453, ['nop']
+  153454, ['nop']
+  153455, ['nop']
+  153456, ['nop']
+  153457, ['nop']
+  153458, ['nop']
+  153459, ['nop']
+  153460, ['nop']
+  153461, ['nop']
+  153462, ['nop']
+  153463, ['nop']
+  153464, ['nop']
+  153465, ['nop']
+  153466, ['nop']
+  153467, ['nop']
+  153468, ['nop']
+  153469, ['nop']
+  153470, ['nop']
+  153471, ['nop']
+  153472, ['nop']
+  153473, ['nop']
+  153474, ['nop']
+  153475, ['nop']
+  153476, ['nop']
+  153477, ['nop']
+  153478, ['nop']
+  153479, ['nop']
+  153480, ['nop']
+  153481, ['nop']
+  153482, ['nop']
+  153483, ['nop']
+  153484, ['nop']
+  153485, ['nop']
+  153486, ['nop']
+  153487, ['nop']
+  153488, ['nop']
+  153489, ['nop']
+  153490, ['nop']
+  153491, ['nop']
+  153492, ['nop']
+  153493, ['nop']
+  153494, ['nop']
+  153495, ['nop']
+  153496, ['nop']
+  153497, ['nop']
+  153498, ['nop']
+  153499, ['nop']
+  153500, ['nop']
+  153501, ['nop']
+  153502, ['nop']
+  153503, ['nop']
+  153504, ['nop']
+  153505, ['nop']
+  153506, ['nop']
+  153507, ['nop']
+  153508, ['nop']
+  153509, ['nop']
+  153510, ['nop']
+  153511, ['nop']
+  153512, ['nop']
+  153513, ['nop']
+  153514, ['nop']
+  153515, ['nop']
+  153516, ['nop']
+  153517, ['nop']
+  153518, ['nop']
+  153519, ['nop']
+  153520, ['nop']
+  153521, ['nop']
+  153522, ['nop']
+  153523, ['nop']
+  153524, ['nop']
+  153525, ['nop']
+  153526, ['nop']
+  153527, ['nop']
+  153528, ['nop']
+  153529, ['nop']
+  153530, ['nop']
+  153531, ['nop']
+  153532, ['nop']
+  153533, ['nop']
+  153534, ['nop']
+  153535, ['nop']
+  153536, ['nop']
+  153537, ['nop']
+  153538, ['nop']
+  153539, ['nop']
+  153540, ['nop']
+  153541, ['nop']
+  153542, ['nop']
+  153543, ['nop']
+  153544, ['nop']
+  153545, ['nop']
+  153546, ['nop']
+  153547, ['nop']
+  153548, ['nop']
+  153549, ['nop']
+  153550, ['nop']
+  153551, ['nop']
+  153552, ['nop']
+  153553, ['nop']
+  153554, ['nop']
+  153555, ['nop']
+  153556, ['nop']
+  153557, ['nop']
+  153558, ['nop']
+  153559, ['nop']
+  153560, ['nop']
+  153561, ['nop']
+  153562, ['nop']
+  153563, ['nop']
+  153564, ['nop']
+  153565, ['nop']
+  153566, ['nop']
+  153567, ['nop']
+  153568, ['nop']
+  153569, ['nop']
+  153570, ['nop']
+  153571, ['nop']
+  153572, ['nop']
+  153573, ['nop']
+  153574, ['nop']
+  153575, ['nop']
+  153576, ['nop']
+  153577, ['nop']
+  153578, ['nop']
+  153579, ['nop']
+  153580, ['nop']
+  153581, ['nop']
+  153582, ['nop']
+  153583, ['nop']
+  153584, ['nop']
+  153585, ['nop']
+  153586, ['nop']
+  153587, ['nop']
+  153588, ['nop']
+  153589, ['nop']
+  153590, ['nop']
+  153591, ['nop']
+  153592, ['nop']
+  153593, ['nop']
+  153594, ['nop']
+  153595, ['nop']
+  153596, ['nop']
+  153597, ['nop']
+  153598, ['nop']
+  153599, ['nop']
+  153600, ['nop']
+  153601, ['nop']
+  153602, ['nop']
+  153603, ['nop']
+  153604, ['nop']
+  153605, ['nop']
+  153606, ['nop']
+  153607, ['nop']
+  153608, ['nop']
+  153609, ['nop']
+  153610, ['nop']
+  153611, ['nop']
+  153612, ['nop']
+  153613, ['nop']
+  153614, ['nop']
+  153615, ['nop']
+  153616, ['nop']
+  153617, ['nop']
+  153618, ['nop']
+  153619, ['nop']
+  153620, ['nop']
+  153621, ['nop']
+  153622, ['nop']
+  153623, ['nop']
+  153624, ['nop']
+  153625, ['nop']
+  153626, ['nop']
+  153627, ['nop']
+  153628, ['nop']
+  153629, ['nop']
+  153630, ['nop']
+  153631, ['nop']
+  153632, ['nop']
+  153633, ['nop']
+  153634, ['nop']
+  153635, ['nop']
+  153636, ['nop']
+  153637, ['nop']
+  153638, ['nop']
+  153639, ['nop']
+  153640, ['nop']
+  153641, ['nop']
+  153642, ['nop']
+  153643, ['nop']
+  153644, ['nop']
+  153645, ['nop']
+  153646, ['nop']
+  153647, ['nop']
+  153648, ['nop']
+  153649, ['nop']
+  153650, ['nop']
+  153651, ['nop']
+  153652, ['nop']
+  153653, ['nop']
+  153654, ['nop']
+  153655, ['nop']
+  153656, ['nop']
+  153657, ['nop']
+  153658, ['nop']
+  153659, ['nop']
+  153660, ['nop']
+  153661, ['nop']
+  153662, ['nop']
+  153663, ['nop']
+  153664, ['nop']
+  153665, ['nop']
+  153666, ['nop']
+  153667, ['nop']
+  153668, ['nop']
+  153669, ['nop']
+  153670, ['nop']
+  153671, ['nop']
+  153672, ['nop']
+  153673, ['nop']
+  153674, ['nop']
+  153675, ['nop']
+  153676, ['nop']
+  153677, ['nop']
+  153678, ['nop']
+  153679, ['nop']
+  153680, ['nop']
+  153681, ['nop']
+  153682, ['nop']
+  153683, ['nop']
+  153684, ['nop']
+  153685, ['nop']
+  153686, ['nop']
+  153687, ['nop']
+  153688, ['nop']
+  153689, ['nop']
+  153690, ['nop']
+  153691, ['nop']
+  153692, ['nop']
+  153693, ['nop']
+  153694, ['nop']
+  153695, ['nop']
+  153696, ['nop']
+  153697, ['nop']
+  153698, ['nop']
+  153699, ['nop']
+  153700, ['nop']
+  153701, ['nop']
+  153702, ['nop']
+  153703, ['nop']
+  153704, ['nop']
+  153705, ['nop']
+  153706, ['nop']
+  153707, ['nop']
+  153708, ['nop']
+  153709, ['nop']
+  153710, ['nop']
+  153711, ['nop']
+  153712, ['nop']
+  153713, ['nop']
+  153714, ['nop']
+  153715, ['nop']
+  153716, ['nop']
+  153717, ['nop']
+  153718, ['nop']
+  153719, ['nop']
+  153720, ['nop']
+  153721, ['nop']
+  153722, ['nop']
+  153723, ['nop']
+  153724, ['nop']
+  153725, ['nop']
+  153726, ['nop']
+  153727, ['nop']
+  153728, ['nop']
+  153729, ['nop']
+  153730, ['nop']
+  153731, ['nop']
+  153732, ['nop']
+  153733, ['nop']
+  153734, ['nop']
+  153735, ['nop']
+  153736, ['nop']
+  153737, ['nop']
+  153738, ['nop']
+  153739, ['nop']
+  153740, ['nop']
+  153741, ['nop']
+  153742, ['nop']
+  153743, ['nop']
+  153744, ['nop']
+  153745, ['nop']
+  153746, ['nop']
+  153747, ['nop']
+  153748, ['nop']
+  153749, ['nop']
+  153750, ['nop']
+  153751, ['nop']
+  153752, ['nop']
+  153753, ['nop']
+  153754, ['nop']
+  153755, ['nop']
+  153756, ['nop']
+  153757, ['nop']
+  153758, ['nop']
+  153759, ['nop']
+  153760, ['nop']
+  153761, ['nop']
+  153762, ['nop']
+  153763, ['nop']
+  153764, ['nop']
+  153765, ['nop']
+  153766, ['nop']
+  153767, ['nop']
+  153768, ['nop']
+  153769, ['nop']
+  153770, ['nop']
+  153771, ['nop']
+  153772, ['nop']
+  153773, ['nop']
+  153774, ['nop']
+  153775, ['nop']
+  153776, ['nop']
+  153777, ['nop']
+  153778, ['nop']
+  153779, ['nop']
+  153780, ['nop']
+  153781, ['nop']
+  153782, ['nop']
+  153783, ['nop']
+  153784, ['nop']
+  153785, ['nop']
+  153786, ['nop']
+  153787, ['nop']
+  153788, ['nop']
+  153789, ['nop']
+  153790, ['nop']
+  153791, ['nop']
+  153792, ['nop']
+  153793, ['nop']
+  153794, ['nop']
+  153795, ['nop']
+  153796, ['nop']
+  153797, ['nop']
+  153798, ['nop']
+  153799, ['nop']
+  153800, ['nop']
+  153801, ['nop']
+  153802, ['nop']
+  153803, ['nop']
+  153804, ['nop']
+  153805, ['nop']
+  153806, ['nop']
+  153807, ['nop']
+  153808, ['nop']
+  153809, ['nop']
+  153810, ['nop']
+  153811, ['nop']
+  153812, ['nop']
+  153813, ['nop']
+  153814, ['nop']
+  153815, ['nop']
+  153816, ['nop']
+  153817, ['nop']
+  153818, ['nop']
+  153819, ['nop']
+  153820, ['nop']
+  153821, ['nop']
+  153822, ['nop']
+  153823, ['nop']
+  153824, ['nop']
+  153825, ['nop']
+  153826, ['nop']
+  153827, ['nop']
+  153828, ['nop']
+  153829, ['nop']
+  153830, ['nop']
+  153831, ['nop']
+  153832, ['nop']
+  153833, ['nop']
+  153834, ['nop']
+  153835, ['nop']
+  153836, ['nop']
+  153837, ['nop']
+  153838, ['nop']
+  153839, ['nop']
+  153840, ['nop']
+  153841, ['nop']
+  153842, ['nop']
+  153843, ['nop']
+  153844, ['nop']
+  153845, ['nop']
+  153846, ['nop']
+  153847, ['nop']
+  153848, ['nop']
+  153849, ['nop']
+  153850, ['nop']
+  153851, ['nop']
+  153852, ['nop']
+  153853, ['nop']
+  153854, ['nop']
+  153855, ['nop']
+  153856, ['nop']
+  153857, ['nop']
+  153858, ['nop']
+  153859, ['nop']
+  153860, ['nop']
+  153861, ['nop']
+  153862, ['nop']
+  153863, ['nop']
+  153864, ['nop']
+  153865, ['nop']
+  153866, ['nop']
+  153867, ['nop']
+  153868, ['nop']
+  153869, ['nop']
+  153870, ['nop']
+  153871, ['nop']
+  153872, ['nop']
+  153873, ['nop']
+  153874, ['nop']
+  153875, ['nop']
+  153876, ['nop']
+  153877, ['nop']
+  153878, ['nop']
+  153879, ['nop']
+  153880, ['nop']
+  153881, ['nop']
+  153882, ['nop']
+  153883, ['nop']
+  153884, ['nop']
+  153885, ['nop']
+  153886, ['nop']
+  153887, ['nop']
+  153888, ['nop']
+  153889, ['nop']
+  153890, ['nop']
+  153891, ['nop']
+  153892, ['nop']
+  153893, ['nop']
+  153894, ['nop']
+  153895, ['nop']
+  153896, ['nop']
+  153897, ['nop']
+  153898, ['nop']
+  153899, ['nop']
+  153900, ['nop']
+  153901, ['nop']
+  153902, ['nop']
+  153903, ['nop']
+  153904, ['nop']
+  153905, ['nop']
+  153906, ['nop']
+  153907, ['nop']
+  153908, ['nop']
+  153909, ['nop']
+  153910, ['nop']
+  153911, ['nop']
+  153912, ['nop']
+  153913, ['nop']
+  153914, ['nop']
+  153915, ['nop']
+  153916, ['nop']
+  153917, ['nop']
+  153918, ['nop']
+  153919, ['nop']
+  153920, ['nop']
+  153921, ['nop']
+  153922, ['nop']
+  153923, ['nop']
+  153924, ['nop']
+  153925, ['nop']
+  153926, ['nop']
+  153927, ['nop']
+  153928, ['nop']
+  153929, ['nop']
+  153930, ['nop']
+  153931, ['nop']
+  153932, ['nop']
+  153933, ['nop']
+  153934, ['nop']
+  153935, ['nop']
+  153936, ['nop']
+  153937, ['nop']
+  153938, ['nop']
+  153939, ['nop']
+  153940, ['nop']
+  153941, ['nop']
+  153942, ['nop']
+  153943, ['nop']
+  153944, ['nop']
+  153945, ['nop']
+  153946, ['nop']
+  153947, ['nop']
+  153948, ['nop']
+  153949, ['nop']
+  153950, ['nop']
+  153951, ['nop']
+  153952, ['nop']
+  153953, ['nop']
+  153954, ['nop']
+  153955, ['nop']
+  153956, ['nop']
+  153957, ['nop']
+  153958, ['nop']
+  153959, ['nop']
+  153960, ['nop']
+  153961, ['nop']
+  153962, ['nop']
+  153963, ['nop']
+  153964, ['nop']
+  153965, ['nop']
+  153966, ['nop']
+  153967, ['nop']
+  153968, ['nop']
+  153969, ['nop']
+  153970, ['nop']
+  153971, ['nop']
+  153972, ['nop']
+  153973, ['nop']
+  153974, ['nop']
+  153975, ['nop']
+  153976, ['nop']
+  153977, ['nop']
+  153978, ['nop']
+  153979, ['nop']
+  153980, ['nop']
+  153981, ['nop']
+  153982, ['nop']
+  153983, ['nop']
+  153984, ['nop']
+  153985, ['nop']
+  153986, ['nop']
+  153987, ['nop']
+  153988, ['nop']
+  153989, ['nop']
+  153990, ['nop']
+  153991, ['nop']
+  153992, ['nop']
+  153993, ['nop']
+  153994, ['nop']
+  153995, ['nop']
+  153996, ['nop']
+  153997, ['nop']
+  153998, ['nop']
+  153999, ['nop']
+  154000, ['nop']
+  154001, ['nop']
+  154002, ['nop']
+  154003, ['nop']
+  154004, ['nop']
+  154005, ['nop']
+  154006, ['nop']
+  154007, ['nop']
+  154008, ['nop']
+  154009, ['nop']
+  154010, ['nop']
+  154011, ['nop']
+  154012, ['nop']
+  154013, ['nop']
+  154014, ['nop']
+  154015, ['nop']
+  154016, ['nop']
+  154017, ['nop']
+  154018, ['nop']
+  154019, ['nop']
+  154020, ['nop']
+  154021, ['nop']
+  154022, ['nop']
+  154023, ['nop']
+  154024, ['nop']
+  154025, ['nop']
+  154026, ['nop']
+  154027, ['nop']
+  154028, ['nop']
+  154029, ['nop']
+  154030, ['nop']
+  154031, ['nop']
+  154032, ['nop']
+  154033, ['nop']
+  154034, ['nop']
+  154035, ['nop']
+  154036, ['nop']
+  154037, ['nop']
+  154038, ['nop']
+  154039, ['nop']
+  154040, ['nop']
+  154041, ['nop']
+  154042, ['nop']
+  154043, ['nop']
+  154044, ['nop']
+  154045, ['nop']
+  154046, ['nop']
+  154047, ['nop']
+  154048, ['nop']
+  154049, ['nop']
+  154050, ['nop']
+  154051, ['nop']
+  154052, ['nop']
+  154053, ['nop']
+  154054, ['nop']
+  154055, ['nop']
+  154056, ['nop']
+  154057, ['nop']
+  154058, ['nop']
+  154059, ['nop']
+  154060, ['nop']
+  154061, ['nop']
+  154062, ['nop']
+  154063, ['nop']
+  154064, ['nop']
+  154065, ['nop']
+  154066, ['nop']
+  154067, ['nop']
+  154068, ['nop']
+  154069, ['nop']
+  154070, ['nop']
+  154071, ['nop']
+  154072, ['nop']
+  154073, ['nop']
+  154074, ['nop']
+  154075, ['nop']
+  154076, ['nop']
+  154077, ['nop']
+  154078, ['nop']
+  154079, ['nop']
+  154080, ['nop']
+  154081, ['nop']
+  154082, ['nop']
+  154083, ['nop']
+  154084, ['nop']
+  154085, ['nop']
+  154086, ['nop']
+  154087, ['nop']
+  154088, ['nop']
+  154089, ['nop']
+  154090, ['nop']
+  154091, ['nop']
+  154092, ['nop']
+  154093, ['nop']
+  154094, ['nop']
+  154095, ['nop']
+  154096, ['nop']
+  154097, ['nop']
+  154098, ['nop']
+  154099, ['nop']
+  154100, ['nop']
+  154101, ['nop']
+  154102, ['nop']
+  154103, ['nop']
+  154104, ['nop']
+  154105, ['nop']
+  154106, ['nop']
+  154107, ['nop']
+  154108, ['nop']
+  154109, ['nop']
+  154110, ['nop']
+  154111, ['nop']
+  154112, ['nop']
+  154113, ['nop']
+  154114, ['nop']
+  154115, ['nop']
+  154116, ['nop']
+  154117, ['nop']
+  154118, ['nop']
+  154119, ['nop']
+  154120, ['nop']
+  154121, ['nop']
+  154122, ['nop']
+  154123, ['nop']
+  154124, ['nop']
+  154125, ['nop']
+  154126, ['nop']
+  154127, ['nop']
+  154128, ['nop']
+  154129, ['nop']
+  154130, ['nop']
+  154131, ['nop']
+  154132, ['nop']
+  154133, ['nop']
+  154134, ['nop']
+  154135, ['nop']
+  154136, ['nop']
+  154137, ['nop']
+  154138, ['nop']
+  154139, ['nop']
+  154140, ['nop']
+  154141, ['nop']
+  154142, ['nop']
+  154143, ['nop']
+  154144, ['nop']
+  154145, ['nop']
+  154146, ['nop']
+  154147, ['nop']
+  154148, ['nop']
+  154149, ['nop']
+  154150, ['nop']
+  154151, ['nop']
+  154152, ['nop']
+  154153, ['nop']
+  154154, ['nop']
+  154155, ['nop']
+  154156, ['nop']
+  154157, ['nop']
+  154158, ['nop']
+  154159, ['nop']
+  154160, ['nop']
+  154161, ['nop']
+  154162, ['nop']
+  154163, ['nop']
+  154164, ['nop']
+  154165, ['nop']
+  154166, ['nop']
+  154167, ['nop']
+  154168, ['nop']
+  154169, ['nop']
+  154170, ['nop']
+  154171, ['nop']
+  154172, ['nop']
+  154173, ['nop']
+  154174, ['nop']
+  154175, ['nop']
+  154176, ['nop']
+  154177, ['nop']
+  154178, ['nop']
+  154179, ['nop']
+  154180, ['nop']
+  154181, ['nop']
+  154182, ['nop']
+  154183, ['nop']
+  154184, ['nop']
+  154185, ['nop']
+  154186, ['nop']
+  154187, ['nop']
+  154188, ['nop']
+  154189, ['nop']
+  154190, ['nop']
+  154191, ['nop']
+  154192, ['nop']
+  154193, ['nop']
+  154194, ['nop']
+  154195, ['nop']
+  154196, ['nop']
+  154197, ['nop']
+  154198, ['nop']
+  154199, ['nop']
+  154200, ['nop']
+  154201, ['nop']
+  154202, ['nop']
+  154203, ['nop']
+  154204, ['nop']
+  154205, ['nop']
+  154206, ['nop']
+  154207, ['nop']
+  154208, ['nop']
+  154209, ['nop']
+  154210, ['nop']
+  154211, ['nop']
+  154212, ['nop']
+  154213, ['nop']
+  154214, ['nop']
+  154215, ['nop']
+  154216, ['nop']
+  154217, ['nop']
+  154218, ['nop']
+  154219, ['nop']
+  154220, ['nop']
+  154221, ['nop']
+  154222, ['nop']
+  154223, ['nop']
+  154224, ['nop']
+  154225, ['nop']
+  154226, ['nop']
+  154227, ['nop']
+  154228, ['nop']
+  154229, ['nop']
+  154230, ['nop']
+  154231, ['nop']
+  154232, ['nop']
+  154233, ['nop']
+  154234, ['nop']
+  154235, ['nop']
+  154236, ['nop']
+  154237, ['nop']
+  154238, ['nop']
+  154239, ['nop']
+  154240, ['nop']
+  154241, ['nop']
+  154242, ['nop']
+  154243, ['nop']
+  154244, ['nop']
+  154245, ['nop']
+  154246, ['nop']
+  154247, ['nop']
+  154248, ['nop']
+  154249, ['nop']
+  154250, ['nop']
+  154251, ['nop']
+  154252, ['nop']
+  154253, ['nop']
+  154254, ['nop']
+  154255, ['nop']
+  154256, ['nop']
+  154257, ['nop']
+  154258, ['nop']
+  154259, ['nop']
+  154260, ['nop']
+  154261, ['nop']
+  154262, ['nop']
+  154263, ['nop']
+  154264, ['nop']
+  154265, ['nop']
+  154266, ['nop']
+  154267, ['nop']
+  154268, ['nop']
+  154269, ['nop']
+  154270, ['nop']
+  154271, ['nop']
+  154272, ['nop']
+  154273, ['nop']
+  154274, ['nop']
+  154275, ['nop']
+  154276, ['nop']
+  154277, ['nop']
+  154278, ['nop']
+  154279, ['nop']
+  154280, ['nop']
+  154281, ['nop']
+  154282, ['nop']
+  154283, ['nop']
+  154284, ['nop']
+  154285, ['nop']
+  154286, ['nop']
+  154287, ['nop']
+  154288, ['nop']
+  154289, ['nop']
+  154290, ['nop']
+  154291, ['nop']
+  154292, ['nop']
+  154293, ['nop']
+  154294, ['nop']
+  154295, ['nop']
+  154296, ['nop']
+  154297, ['nop']
+  154298, ['nop']
+  154299, ['nop']
+  154300, ['nop']
+  154301, ['nop']
+  154302, ['nop']
+  154303, ['nop']
+  154304, ['nop']
+  154305, ['nop']
+  154306, ['nop']
+  154307, ['nop']
+  154308, ['nop']
+  154309, ['nop']
+  154310, ['nop']
+  154311, ['nop']
+  154312, ['nop']
+  154313, ['nop']
+  154314, ['nop']
+  154315, ['nop']
+  154316, ['nop']
+  154317, ['nop']
+  154318, ['nop']
+  154319, ['nop']
+  154320, ['nop']
+  154321, ['nop']
+  154322, ['nop']
+  154323, ['nop']
+  154324, ['nop']
+  154325, ['nop']
+  154326, ['nop']
+  154327, ['nop']
+  154328, ['nop']
+  154329, ['nop']
+  154330, ['nop']
+  154331, ['nop']
+  154332, ['nop']
+  154333, ['nop']
+  154334, ['nop']
+  154335, ['nop']
+  154336, ['nop']
+  154337, ['nop']
+  154338, ['nop']
+  154339, ['nop']
+  154340, ['nop']
+  154341, ['nop']
+  154342, ['nop']
+  154343, ['nop']
+  154344, ['nop']
+  154345, ['nop']
+  154346, ['nop']
+  154347, ['nop']
+  154348, ['nop']
+  154349, ['nop']
+  154350, ['nop']
+  154351, ['nop']
+  154352, ['nop']
+  154353, ['nop']
+  154354, ['nop']
+  154355, ['nop']
+  154356, ['nop']
+  154357, ['nop']
+  154358, ['nop']
+  154359, ['nop']
+  154360, ['nop']
+  154361, ['nop']
+  154362, ['nop']
+  154363, ['nop']
+  154364, ['nop']
+  154365, ['nop']
+  154366, ['nop']
+  154367, ['nop']
+  154368, ['nop']
+  154369, ['nop']
+  154370, ['nop']
+  154371, ['nop']
+  154372, ['nop']
+  154373, ['nop']
+  154374, ['nop']
+  154375, ['nop']
+  154376, ['nop']
+  154377, ['nop']
+  154378, ['nop']
+  154379, ['nop']
+  154380, ['nop']
+  154381, ['nop']
+  154382, ['nop']
+  154383, ['nop']
+  154384, ['nop']
+  154385, ['nop']
+  154386, ['nop']
+  154387, ['nop']
+  154388, ['nop']
+  154389, ['nop']
+  154390, ['nop']
+  154391, ['nop']
+  154392, ['nop']
+  154393, ['nop']
+  154394, ['nop']
+  154395, ['nop']
+  154396, ['nop']
+  154397, ['nop']
+  154398, ['nop']
+  154399, ['nop']
+  154400, ['nop']
+  154401, ['nop']
+  154402, ['nop']
+  154403, ['nop']
+  154404, ['nop']
+  154405, ['nop']
+  154406, ['nop']
+  154407, ['nop']
+  154408, ['nop']
+  154409, ['nop']
+  154410, ['nop']
+  154411, ['nop']
+  154412, ['nop']
+  154413, ['nop']
+  154414, ['nop']
+  154415, ['nop']
+  154416, ['nop']
+  154417, ['nop']
+  154418, ['nop']
+  154419, ['nop']
+  154420, ['nop']
+  154421, ['nop']
+  154422, ['nop']
+  154423, ['nop']
+  154424, ['nop']
+  154425, ['nop']
+  154426, ['nop']
+  154427, ['nop']
+  154428, ['nop']
+  154429, ['nop']
+  154430, ['nop']
+  154431, ['nop']
+  154432, ['nop']
+  154433, ['nop']
+  154434, ['nop']
+  154435, ['nop']
+  154436, ['nop']
+  154437, ['nop']
+  154438, ['nop']
+  154439, ['nop']
+  154440, ['nop']
+  154441, ['nop']
+  154442, ['nop']
+  154443, ['nop']
+  154444, ['nop']
+  154445, ['nop']
+  154446, ['nop']
+  154447, ['nop']
+  154448, ['jmp', 'loc_25C63']
+ next: [154723]
+
+node :149
+node DriverEntry(152991) info:
+ start: 152991
+ prev: []
+ instructions: 
+  152991, ['push', 'ebx']
+  152992, ['or', 'ebx,edx']
+  152994, ['pop', 'ebx']
+ next: [152995]
+
+node :150
+node DriverEntry(153320) info:
+ start: 153320
+ prev: []
+ instructions: 
+  153320, ['push', 'edx']
+  153321, ['or', 'edx,ebp']
+  153323, ['pop', 'edx']
+  153324, ['push', 'edx']
+  153325, ['or', 'edx,edx']
+  153327, ['cmp', 'ebp,ebx']
+  153329, ['jb', 'shortloc_2570B']
+ next: [153331, 153355]
+
+node :151
+node DriverEntry(155828) info:
+ start: 155828
+ prev: []
+ instructions: 
+  155828, ['cmp', 'ebx,ebp']
+  155830, ['jb', 'shortloc_260E4']
+ next: [155832, 155876]
+
+node :152
+node DriverEntry(156011) info:
+ start: 156011
+ prev: []
+ instructions: 
+  156011, ['cmp', 'ebp,ecx']
+  156013, ['jz', 'shortloc_26173']
+ next: [156015, 156019]
+
+node :153
+node DriverEntry(156491) info:
+ start: 156491
+ prev: []
+ instructions: 
+  156491, ['mov', 'esi,[ebp+4Ch]']
+  156494, ['add', 'esi,[ebp+18h]']
+  156497, ['mov', 'ecx,[ebp+50h]']
+  156500, ['jmp', 'shortloc_2635B']
+ next: [156507]
+
+node :154
+node DriverEntry(156502) info:
+ start: 156502
+ prev: []
+ instructions: 
+  156502, ['xor', 'byteptr[esi],33h']
+  156505, ['inc', 'esi']
+  156506, ['dec', 'ecx']
+ next: [156507]
+
+node :155
+node DriverEntry(155130) info:
+ start: 155130
+ prev: []
+ instructions: 
+  155130, ['push', 'eax']
+  155131, ['and', 'eax,ebp']
+  155133, ['pop', 'eax']
+  155134, ['cmp', 'ebp,ebx']
+  155136, ['jbe', 'shortloc_25E0E']
+ next: [155138, 155150]
+
+node :156
+node DriverEntry(155995) info:
+ start: 155995
+ prev: []
+ instructions: 
+  155995, ['cmp', 'edx,ebp']
+  155997, ['jbe', 'shortloc_2616B']
+ next: [155999, 156011]
+
+node :157
+node DriverEntry(154931) info:
+ start: 154931
+ prev: []
+ instructions: 
+  154931, ['push', 'ecx']
+  154932, ['sub', 'ecx,ebp']
+  154934, ['pop', 'ecx']
+ next: [154935]
+
+node :158
+node DriverEntry(156852) info:
+ start: 156852
+ prev: []
+ instructions: 
+  156852, ['cmp', 'ecx,ebx']
+  156854, ['jbe', 'shortloc_264C4']
+ next: [156856, 156868]
+
+node :159
+node DriverEntry(156019) info:
+ start: 156019
+ prev: []
+ instructions: 
+  156019, ['cmp', 'edx,ebp']
+  156021, ['jbe', 'loc_262B3']
+ next: [156027, 156339]
+
+node :160
+node DriverEntry(155991) info:
+ start: 155991
+ prev: []
+ instructions: 
+  155991, ['push', 'eax']
+  155992, ['xor', 'eax,edx']
+  155994, ['pop', 'eax']
+ next: [155995]
+
+node :161
+node DriverEntry(154935) info:
+ start: 154935
+ prev: []
+ instructions: 
+  154935, ['cmp', 'eax,ebp']
+  154937, ['jnb', 'shortloc_25D3F']
+ next: [154939, 154943]
+
+node :162
+node DriverEntry(155439) info:
+ start: 155439
+ prev: []
+ instructions: 
+  155439, ['push', 'eax']
+  155440, ['xor', 'eax,ebp']
+  155442, ['pop', 'eax']
+ next: [155443]
+
+node :163
+node DriverEntry(153331) info:
+ start: 153331
+ prev: []
+ instructions: 
+  153331, ['push', 'ecx']
+  153332, ['or', 'ecx,ebx']
+  153334, ['pop', 'ecx']
+  153335, ['push', 'edx']
+  153336, ['sub', 'edx,ecx']
+  153338, ['pop', 'edx']
+  153339, ['cmp', 'ebp,eax']
+  153341, ['jb', 'shortloc_2570B']
+ next: [153343, 153355]
+
+node :164
+node DriverEntry(155150) info:
+ start: 155150
+ prev: []
+ instructions: 
+  155150, ['pop', 'ebp']
+ next: [155151]
+
+node :165
+node DriverEntry(153416) info:
+ start: 153416
+ prev: []
+ instructions: 
+  153416, ['cmp', 'eax,eax']
+  153418, ['jnz', 'shortloc_25750']
+ next: [153420, 153424]
+
+node :166
+node DriverEntry(155151) info:
+ start: 155151
+ prev: []
+ instructions: 
+  155151, ['cmp', 'eax,eax']
+  155153, ['jbe', 'shortloc_25E4F']
+ next: [155155, 155215]
+
+node :167
+node DriverEntry(156338) info:
+ start: 156338
+ prev: []
+ instructions: 
+  156338, ['pop', 'ecx']
+ next: [156339]
+
+node :168
+node DriverEntry(156027) info:
+ start: 156027
+ prev: []
+ instructions: 
+  156027, ['push', 'eax']
+  156028, ['mov', 'eax,ebp']
+  156030, ['pop', 'eax']
+  156031, ['cmp', 'eax,ebx']
+  156033, ['jbe', 'loc_262B3']
+ next: [156039, 156339]
+
+node :169
+node DriverEntry(155752) info:
+ start: 155752
+ prev: []
+ instructions: 
+  155752, ['push', 'edx']
+  155753, ['and', 'edx,edx']
+  155755, ['pop', 'edx']
+  155756, ['push', 'ecx']
+  155757, ['xor', 'ecx,edx']
+  155759, ['cmp', 'ebx,ebp']
+  155761, ['jz', 'shortloc_26077']
+ next: [155763, 155767]
+
+node :170
+node DriverEntry(157093) info:
+ start: 157093
+ prev: []
+ instructions: 
+  157093, ['xor', 'eax,eax']
+  157095, ['lodsw']
+  157097, ['or', 'eax,eax']
+  157099, ['jz', 'shortloc_265B6']
+ next: [157101, 157110]
+
+node :171
+node DriverEntry(156856) info:
+ start: 156856
+ prev: []
+ instructions: 
+  156856, ['push', 'ebx']
+  156857, ['xor', 'ebx,ebp']
+  156859, ['pop', 'ebx']
+  156860, ['cmp', 'ebp,eax']
+  156862, ['jz', 'shortloc_264C4']
+ next: [156864, 156868]
+
+node :172
+node DriverEntry(155443) info:
+ start: 155443
+ prev: []
+ instructions: 
+  155443, ['pop', 'ebx']
+  155444, ['cmp', 'edx,eax']
+  155446, ['jnb', 'shortloc_25F3C']
+ next: [155448, 155452]
+
+node :173
+node DriverEntry(156339) info:
+ start: 156339
+ prev: []
+ instructions: 
+  156339, ['cmp', 'ebx,ecx']
+  156341, ['jnz', 'shortloc_262F3']
+ next: [156343, 156403]
+
+node :174
+node DriverEntry(155452) info:
+ start: 155452
+ prev: []
+ instructions: 
+  155452, ['cmp', 'edx,ebp']
+  155454, ['jz', 'shortloc_25F44']
+ next: [155456, 155460]
+
+node :175
+node DriverEntry(156868) info:
+ start: 156868
+ prev: []
+ instructions: 
+  156868, ['cmp', 'ebp,ecx']
+  156870, ['jbe', 'shortloc_264CC']
+ next: [156872, 156876]
+
+node :176
+node DriverEntry(155763) info:
+ start: 155763
+ prev: []
+ instructions: 
+  155763, ['push', 'ecx']
+  155764, ['and', 'ecx,ebp']
+  155766, ['pop', 'ecx']
+ next: [155767]
+
+node :177
+node DriverEntry(157116) info:
+ start: 157116
+ prev: []
+ instructions: 
+  157116, ['or', 'ecx,ecx']
+  157118, ['jnz', 'shortloc_26593']
+ next: [157075, 157120]
+
+node :178
+node DriverEntry(157101) info:
+ start: 157101
+ prev: []
+ instructions: 
+  157101, ['and', 'eax,0FFFh']
+  157106, ['add', 'eax,edi']
+  157108, ['sub', '[eax],edx']
+ next: [157110]
+
+node :179
+node DriverEntry(156343) info:
+ start: 156343
+ prev: []
+ instructions: 
+  156343, ['push', 'ebx']
+  156344, ['mov', 'ebx,eax']
+  156346, ['pop', 'ebx']
+  156347, ['cmp', 'edx,eax']
+  156349, ['jz', 'shortloc_262F3']
+ next: [156351, 156403]
+
+node :180
+node DriverEntry(156351) info:
+ start: 156351
+ prev: []
+ instructions: 
+  156351, ['push', 'edx']
+  156352, ['mov', 'edx,ecx']
+  156354, ['pop', 'edx']
+  156355, ['push', 'edx']
+  156356, ['mov', 'edx,ecx']
+  156358, ['cmp', 'ebx,eax']
+  156360, ['jb', 'shortloc_262F2']
+ next: [156362, 156402]
+
+node :181
+node DriverEntry(155767) info:
+ start: 155767
+ prev: []
+ instructions: 
+  155767, ['pop', 'ecx']
+  155768, ['push', 'ebp']
+  155769, ['mov', 'ebp,edx']
+  155771, ['pop', 'ebp']
+  155772, ['push', 'eax']
+  155773, ['or', 'eax,ebp']
+  155775, ['pop', 'eax']
+  155776, ['cmp', 'ebx,edx']
+  155778, ['jnz', 'shortloc_2608C']
+ next: [155780, 155788]
+
+node :182
+node DriverEntry(155460) info:
+ start: 155460
+ prev: []
+ instructions: 
+  155460, ['cmp', 'eax,ebx']
+  155462, ['jz', 'shortloc_25FAC']
+ next: [155464, 155564]
+
+node :183
+node DriverEntry(156876) info:
+ start: 156876
+ prev: []
+ instructions: 
+  156876, ['cmp', 'eax,edx']
+  156878, ['jnb', 'shortloc_264F4']
+ next: [156880, 156916]
+
+node :184
+node DriverEntry(157110) info:
+ start: 157110
+ prev: []
+ instructions: 
+  157110, ['dec', 'ecx']
+ next: [157111]
+
+node :185
+node DriverEntry(157075) info:
+ start: 157075
+ prev: []
+ instructions: 
+  157075, ['lodsd']
+  157076, ['add', 'eax,ebx']
+  157078, ['mov', 'edi,eax']
+  157080, ['lodsd']
+  157081, ['sub', 'ecx,eax']
+  157083, ['sub', 'eax,8']
+  157086, ['shr', 'eax,1']
+  157088, ['push', 'ecx']
+  157089, ['mov', 'ecx,eax']
+  157091, ['jmp', 'shortloc_265B7']
+ next: [157111]
+
+node :186
+node DriverEntry(156527) info:
+ start: 156527
+ prev: []
+ instructions: 
+  156527, ['or', 'ecx,ecx']
+  156529, ['jnz', 'shortloc_2636A']
+ next: [156522, 156531]
+
+node :187
+node DriverEntry(154898) info:
+ start: 154898
+ prev: []
+ instructions: 
+  154898, ['push', 'eax']
+  154899, ['and', 'eax,ebp']
+  154901, ['pop', 'eax']
+  154902, ['push', 'eax']
+  154903, ['or', 'eax,edx']
+  154905, ['pop', 'eax']
+ next: [154906]
+
+node :188
+node DriverEntry(155563) info:
+ start: 155563
+ prev: []
+ instructions: 
+  155563, ['pop', 'ebx']
+ next: [155564]
+
+node :189
+node DriverEntry(155867) info:
+ start: 155867
+ prev: []
+ instructions: 
+  155867, ['pop', 'ebx']
+  155868, ['push', 'eax']
+  155869, ['xor', 'eax,ebp']
+  155871, ['pop', 'eax']
+ next: [155872]
+
+node :190
+node DriverEntry(155832) info:
+ start: 155832
+ prev: []
+ instructions: 
+  155832, ['push', 'edx']
+  155833, ['or', 'edx,ecx']
+  155835, ['pop', 'edx']
+  155836, ['push', 'ebx']
+  155837, ['mov', 'ebx,eax']
+  155839, ['pop', 'ebx']
+  155840, ['cmp', 'eax,ebp']
+  155842, ['jz', 'shortloc_260E0']
+ next: [155844, 155872]
+
+node :191
+node DriverEntry(153015) info:
+ start: 153015
+ prev: []
+ instructions: 
+  153015, ['push', 'ebp']
+  153016, ['and', 'ebp,ebx']
+  153018, ['pop', 'ebp']
+ next: [153019]
+
+node :192
+node DriverEntry(155719) info:
+ start: 155719
+ prev: []
+ instructions: 
+  155719, ['push', 'ebp']
+  155720, ['sub', 'ebp,eax']
+  155722, ['pop', 'ebp']
+  155723, ['push', 'ecx']
+  155724, ['and', 'ecx,eax']
+  155726, ['pop', 'ecx']
+ next: [155727]
+
+node :193
+node DriverEntry(155743) info:
+ start: 155743
+ prev: []
+ instructions: 
+  155743, ['push', 'ecx']
+  155744, ['mov', 'ecx,ebx']
+  155746, ['pop', 'ecx']
+ next: [155747]
+
+node :194
+node DriverEntry(153420) info:
+ start: 153420
+ prev: []
+ instructions: 
+  153420, ['push', 'edx']
+  153421, ['xor', 'edx,ecx']
+  153423, ['pop', 'edx']
+ next: [153424]
+
+node :195
+node DriverEntry(157111) info:
+ start: 157111
+ prev: []
+ instructions: 
+  157111, ['or', 'ecx,ecx']
+  157113, ['jnz', 'shortloc_265A5']
+ next: [157093, 157115]
+
+node :196
+node DriverEntry(155219) info:
+ start: 155219
+ prev: []
+ instructions: 
+  155219, ['push', 'ebp']
+  155220, ['and', 'ebp,ecx']
+  155222, ['pop', 'ebp']
+ next: [155223]
+
+node :197
+node DriverEntry(155931) info:
+ start: 155931
+ prev: []
+ instructions: 
+  155931, ['push', 'ecx']
+  155932, ['or', 'ecx,edx']
+  155934, ['pop', 'ecx']
+  155935, ['push', 'edx']
+  155936, ['and', 'edx,ebx']
+  155938, ['pop', 'edx']
+ next: [155939]
+
+node :198
+node DriverEntry(155448) info:
+ start: 155448
+ prev: []
+ instructions: 
+  155448, ['push', 'ecx']
+  155449, ['mov', 'ecx,edx']
+  155451, ['pop', 'ecx']
+ next: [155452]
+
+node :199
+node DriverEntry(155872) info:
+ start: 155872
+ prev: []
+ instructions: 
+  155872, ['push', 'edx']
+  155873, ['mov', 'edx,ebp']
+  155875, ['pop', 'edx']
+ next: [155876]
+
+node :200
+node DriverEntry(154871) info:
+ start: 154871
+ prev: []
+ instructions: 
+  154871, ['push', 'ebp']
+  154872, ['and', 'ebp,ecx']
+  154874, ['pop', 'ebp']
+ next: [154875]
+
+node :201
+node DriverEntry(156647) info:
+ start: 156647
+ prev: []
+ instructions: 
+  156647, ['pop', 'esi']
+  156648, ['cmp', 'ebp,edx']
+  156650, ['jnz', 'shortloc_263F4']
+ next: [156652, 156660]
+
+node :202
+node DriverEntry(156015) info:
+ start: 156015
+ prev: []
+ instructions: 
+  156015, ['push', 'edx']
+  156016, ['or', 'edx,ebx']
+  156018, ['pop', 'edx']
+ next: [156019]
+
+node :203
+node DriverEntry(155138) info:
+ start: 155138
+ prev: []
+ instructions: 
+  155138, ['push', 'ebx']
+  155139, ['xor', 'ebx,ecx']
+  155141, ['pop', 'ebx']
+  155142, ['cmp', 'ecx,ebp']
+  155144, ['jnb', 'shortloc_25E0E']
+ next: [155146, 155150]
+
+node :204
+node DriverEntry(156711) info:
+ start: 156711
+ prev: []
+ instructions: 
+  156711, ['push', 'ebp']
+  156712, ['mov', 'ebp,ecx']
+  156714, ['pop', 'ebp']
+  156715, ['push', 'ebp']
+  156716, ['mov', 'ebp,ecx']
+  156718, ['cmp', 'ebx,ebp']
+  156720, ['jbe', 'shortloc_26436']
+ next: [156722, 156726]
+
+node :205
+node DriverEntry(154939) info:
+ start: 154939
+ prev: []
+ instructions: 
+  154939, ['push', 'ebx']
+  154940, ['or', 'ebx,ebp']
+  154942, ['pop', 'ebx']
+ next: [154943]
+
+node :206
+node DriverEntry(156726) info:
+ start: 156726
+ prev: []
+ instructions: 
+  156726, ['pop', 'ebp']
+  156727, ['cmp', 'ebx,ebp']
+  156729, ['jbe', 'shortloc_2647F']
+ next: [156731, 156799]
+
+node :207
+node DriverEntry(155892) info:
+ start: 155892
+ prev: []
+ instructions: 
+  155892, ['push', 'eax']
+  155893, ['and', 'eax,ebx']
+  155895, ['pop', 'eax']
+  155896, ['push', 'eax']
+  155897, ['mov', 'eax,ecx']
+  155899, ['cmp', 'ebp,edx']
+  155901, ['jb', 'shortloc_26103']
+ next: [155903, 155907]
+
+node :208
+node DriverEntry(155999) info:
+ start: 155999
+ prev: []
+ instructions: 
+  155999, ['push', 'ebx']
+  156000, ['or', 'ebx,eax']
+  156002, ['pop', 'ebx']
+  156003, ['cmp', 'ecx,edx']
+  156005, ['jz', 'shortloc_2616B']
+ next: [156007, 156011]
+
+node :209
+node DriverEntry(156864) info:
+ start: 156864
+ prev: []
+ instructions: 
+  156864, ['push', 'ebp']
+  156865, ['sub', 'ebp,ebx']
+  156867, ['pop', 'ebp']
+ next: [156868]
+
+node :210
+node DriverEntry(153180) info:
+ start: 153180
+ prev: []
+ instructions: 
+  153180, ['push', 'edx']
+  153181, ['and', 'edx,eax']
+  153183, ['pop', 'edx']
+  153184, ['push', 'ebp']
+  153185, ['or', 'ebp,eax']
+  153187, ['cmp', 'ecx,edx']
+  153189, ['jnz', 'shortloc_256D3']
+ next: [153191, 153299]
+
+node :211
+node DriverEntry(155456) info:
+ start: 155456
+ prev: []
+ instructions: 
+  155456, ['push', 'edx']
+  155457, ['and', 'edx,ecx']
+  155459, ['pop', 'edx']
+ next: [155460]
+
+node :212
+node DriverEntry(154947) info:
+ start: 154947
+ prev: []
+ instructions: 
+  154947, ['push', 'ecx']
+  154948, ['mov', 'ecx,ebx']
+  154950, ['pop', 'ecx']
+  154951, ['push', 'edx']
+  154952, ['sub', 'edx,ebx']
+  154954, ['cmp', 'ecx,ebx']
+  154956, ['jnb', 'shortloc_25D56']
+ next: [154958, 154966]
+
+node :213
+node DriverEntry(155564) info:
+ start: 155564
+ prev: []
+ instructions: 
+  155564, ['cmp', 'ecx,edx']
+  155566, ['jnz', 'shortloc_25FBC']
+ next: [155568, 155580]
+
+node :214
+node DriverEntry(155005) info:
+ start: 155005
+ prev: []
+ instructions: 
+  155005, ['pop', 'eax']
+ next: [155006]
+
+node :215
+node DriverEntry(154966) info:
+ start: 154966
+ prev: []
+ instructions: 
+  154966, ['pop', 'edx']
+  154967, ['push', 'ecx']
+  154968, ['xor', 'ecx,ebx']
+  154970, ['cmp', 'ebx,edx']
+  154972, ['jnz', 'shortloc_25D7E']
+ next: [154974, 155006]
+
+node :216
+node DriverEntry(155011) info:
+ start: 155011
+ prev: []
+ instructions: 
+  155011, ['push', 'ebp']
+  155012, ['xor', 'ebp,eax']
+  155014, ['pop', 'ebp']
+ next: [155015]
+
+node :217
+node DriverEntry(154827) info:
+ start: 154827
+ prev: []
+ instructions: 
+  154827, ['push', 'ecx']
+  154828, ['and', 'ecx,ecx']
+  154830, ['pop', 'ecx']
+  154831, ['push', 'eax']
+  154832, ['sub', 'eax,edx']
+  154834, ['cmp', 'edx,ecx']
+  154836, ['jb', 'shortloc_25CE2']
+ next: [154838, 154850]
+
+node :218
+node DriverEntry(156381) info:
+ start: 156381
+ prev: []
+ instructions: 
+  156381, ['pop', 'ebp']
+  156382, ['cmp', 'ecx,ebx']
+  156384, ['jbe', 'shortloc_262F2']
+ next: [156386, 156402]
+
+node :219
+node DriverEntry(156403) info:
+ start: 156403
+ prev: []
+ instructions: 
+  156403, ['cmp', 'edx,ebp']
+  156405, ['jnz', 'shortloc_262FB']
+ next: [156407, 156411]
+
+node :220
+node DriverEntry(153343) info:
+ start: 153343
+ prev: []
+ instructions: 
+  153343, ['push', 'ebp']
+  153344, ['mov', 'ebp,eax']
+  153346, ['pop', 'ebp']
+  153347, ['cmp', 'eax,ebx']
+  153349, ['jb', 'shortloc_2570B']
+ next: [153351, 153355]
+
+node :221
+node DriverEntry(156402) info:
+ start: 156402
+ prev: []
+ instructions: 
+  156402, ['pop', 'edx']
+ next: [156403]
+
+node :222
+node DriverEntry(156652) info:
+ start: 156652
+ prev: []
+ instructions: 
+  156652, ['push', 'edx']
+  156653, ['mov', 'edx,ecx']
+  156655, ['pop', 'edx']
+  156656, ['push', 'ebp']
+  156657, ['and', 'ebp,edx']
+  156659, ['pop', 'ebp']
+ next: [156660]
+
+node :223
+node DriverEntry(156511) info:
+ start: 156511
+ prev: []
+ instructions: 
+  156511, ['mov', 'esi,[ebp+38h]']
+  156514, ['add', 'esi,[ebp+18h]']
+  156517, ['mov', 'ecx,[ebp+3Ch]']
+  156520, ['jmp', 'shortloc_2636F']
+ next: [156527]
+
+node :224
+node DriverEntry(156522) info:
+ start: 156522
+ prev: []
+ instructions: 
+  156522, ['xor', 'byteptr[esi],33h']
+  156525, ['inc', 'esi']
+  156526, ['dec', 'ecx']
+ next: [156527]
+
+node :225
+node DriverEntry(156411) info:
+ start: 156411
+ prev: []
+ instructions: 
+  156411, ['cmp', 'ebx,edx']
+  156413, ['jz', 'shortloc_2630F']
+ next: [156415, 156431]
+
+node :226
+node DriverEntry(156872) info:
+ start: 156872
+ prev: []
+ instructions: 
+  156872, ['push', 'edx']
+  156873, ['xor', 'edx,ebx']
+  156875, ['pop', 'edx']
+ next: [156876]
+
+node :227
+node DriverEntry(155155) info:
+ start: 155155
+ prev: []
+ instructions: 
+  155155, ['push', 'edx']
+  155156, ['and', 'edx,eax']
+  155158, ['pop', 'edx']
+  155159, ['cmp', 'ebp,ecx']
+  155161, ['jb', 'shortloc_25E4F']
+ next: [155163, 155215]
+
+node :228
+node DriverEntry(155780) info:
+ start: 155780
+ prev: []
+ instructions: 
+  155780, ['push', 'ebx']
+  155781, ['mov', 'ebx,ebx']
+  155783, ['pop', 'ebx']
+  155784, ['push', 'ebx']
+  155785, ['xor', 'ebx,ecx']
+  155787, ['pop', 'ebx']
+ next: [155788]
+
+node :229
+node DriverEntry(153087) info:
+ start: 153087
+ prev: []
+ instructions: 
+  153087, ['push', 'eax']
+  153088, ['or', 'eax,eax']
+  153090, ['pop', 'eax']
+  153091, ['push', 'ebx']
+  153092, ['and', 'ebx,ecx']
+  153094, ['cmp', 'eax,ebp']
+  153096, ['jz', 'shortloc_2562A']
+ next: [153098, 153130]
+
+node :230
+node DriverEntry(155464) info:
+ start: 155464
+ prev: []
+ instructions: 
+  155464, ['push', 'ebp']
+  155465, ['mov', 'ebp,edx']
+  155467, ['pop', 'ebp']
+  155468, ['push', 'ebx']
+  155469, ['xor', 'ebx,ebx']
+  155471, ['cmp', 'ecx,ebp']
+  155473, ['jnb', 'shortloc_25FAB']
+ next: [155475, 155563]
+
+node :231
+node DriverEntry(156362) info:
+ start: 156362
+ prev: []
+ instructions: 
+  156362, ['push', 'ebp']
+  156363, ['sub', 'ebp,eax']
+  156365, ['pop', 'ebp']
+  156366, ['push', 'ebp']
+  156367, ['and', 'ebp,ebx']
+  156369, ['cmp', 'ebp,ebp']
+  156371, ['jb', 'shortloc_262DD']
+ next: [156373, 156381]
+
+node :232
+node DriverEntry(156722) info:
+ start: 156722
+ prev: []
+ instructions: 
+  156722, ['push', 'ecx']
+  156723, ['xor', 'ecx,ebx']
+  156725, ['pop', 'ecx']
+ next: [156726]
+
+node :233
+node DriverEntry(156407) info:
+ start: 156407
+ prev: []
+ instructions: 
+  156407, ['push', 'edx']
+  156408, ['sub', 'edx,eax']
+  156410, ['pop', 'edx']
+ next: [156411]
+
+node :234
+node DriverEntry(153351) info:
+ start: 153351
+ prev: []
+ instructions: 
+  153351, ['push', 'edx']
+  153352, ['sub', 'edx,ebp']
+  153354, ['pop', 'edx']
+ next: [153355]
+
+node :235
+node DriverEntry(153098) info:
+ start: 153098
+ prev: []
+ instructions: 
+  153098, ['push', 'ebp']
+  153099, ['xor', 'ebp,ecx']
+  153101, ['pop', 'ebp']
+  153102, ['push', 'ecx']
+  153103, ['or', 'ecx,ebp']
+  153105, ['cmp', 'eax,ecx']
+  153107, ['jnb', 'shortloc_25621']
+ next: [153109, 153121]
+
+node :236
+node DriverEntry(155788) info:
+ start: 155788
+ prev: []
+ instructions: 
+  155788, ['push', 'ebx']
+  155789, ['xor', 'ebx,eax']
+  155791, ['cmp', 'ebx,ecx']
+  155793, ['jb', 'shortloc_2609F']
+ next: [155795, 155807]
+
+node :237
+node DriverEntry(156880) info:
+ start: 156880
+ prev: []
+ instructions: 
+  156880, ['push', 'ebp']
+  156881, ['and', 'ebp,ebp']
+  156883, ['pop', 'ebp']
+  156884, ['cmp', 'ebp,edx']
+  156886, ['jnz', 'shortloc_264F4']
+ next: [156888, 156916]
+
+node :238
+node DriverEntry(153109) info:
+ start: 153109
+ prev: []
+ instructions: 
+  153109, ['push', 'ecx']
+  153110, ['and', 'ecx,ecx']
+  153112, ['pop', 'ecx']
+  153113, ['cmp', 'ebx,ebp']
+  153115, ['jnz', 'shortloc_25621']
+ next: [153117, 153121]
+
+node :239
+node DriverEntry(156888) info:
+ start: 156888
+ prev: []
+ instructions: 
+  156888, ['push', 'ecx']
+  156889, ['or', 'ecx,ebx']
+  156891, ['pop', 'ecx']
+  156892, ['cmp', 'ebp,ebp']
+  156894, ['jnb', 'shortloc_264F4']
+ next: [156896, 156916]
+
+node :240
+node DriverEntry(155795) info:
+ start: 155795
+ prev: []
+ instructions: 
+  155795, ['push', 'ebx']
+  155796, ['and', 'ebx,ecx']
+  155798, ['pop', 'ebx']
+  155799, ['cmp', 'ebp,edx']
+  155801, ['jnz', 'shortloc_2609F']
+ next: [155803, 155807]
+
+node :241
+node DriverEntry(156896) info:
+ start: 156896
+ prev: []
+ instructions: 
+  156896, ['push', 'ecx']
+  156897, ['or', 'ecx,ebp']
+  156899, ['pop', 'ecx']
+  156900, ['push', 'ebx']
+  156901, ['xor', 'ebx,ecx']
+  156903, ['pop', 'ebx']
+  156904, ['push', 'ebp']
+  156905, ['sub', 'ebp,ebp']
+  156907, ['cmp', 'ebp,eax']
+  156909, ['jb', 'shortloc_264F3']
+ next: [156911, 156915]
+
+node :242
+node sub_26960(158422) info:
+ start: 158422
+ prev: []
+ instructions: 
+  158422, ['or', 'ecx,ecx']
+  158424, ['jnz', 'shortloc_26AD1']
+ next: [158417, 158426]
+
+node :243
+node DriverEntry(153191) info:
+ start: 153191
+ prev: []
+ instructions: 
+  153191, ['push', 'ecx']
+  153192, ['mov', 'ecx,eax']
+  153194, ['pop', 'ecx']
+  153195, ['push', 'ebp']
+  153196, ['sub', 'ebp,ebx']
+  153198, ['cmp', 'ecx,eax']
+  153200, ['jnz', 'shortloc_256A2']
+ next: [153202, 153250]
+
+node :244
+node sub_26960(158362) info:
+ start: 158362
+ prev: []
+ instructions: 
+  158362, ['push', '[ebp+var_1C]']
+  158365, ['call', 'sub_26839']
+  158370, ['or', 'eax,eax']
+  158372, ['jz', 'shortloc_26ADC']
+ next: [158374, 158428]
+
+node :245
+node DriverEntry(155803) info:
+ start: 155803
+ prev: []
+ instructions: 
+  155803, ['push', 'eax']
+  155804, ['and', 'eax,ecx']
+  155806, ['pop', 'eax']
+ next: [155807]
+
+node :246
+node DriverEntry(156547) info:
+ start: 156547
+ prev: []
+ instructions: 
+  156547, ['or', 'ecx,ecx']
+  156549, ['jnz', 'shortloc_2637E']
+ next: [156542, 156551]
+
+node :247
+node DriverEntry(153121) info:
+ start: 153121
+ prev: []
+ instructions: 
+  153121, ['pop', 'ecx']
+  153122, ['cmp', 'edx,edx']
+  153124, ['jb', 'shortloc_2562A']
+ next: [153126, 153130]
+
+node :248
+node DriverEntry(153117) info:
+ start: 153117
+ prev: []
+ instructions: 
+  153117, ['push', 'ebp']
+  153118, ['mov', 'ebp,ebp']
+  153120, ['pop', 'ebp']
+ next: [153121]
+
+node :249
+node DriverEntry(155807) info:
+ start: 155807
+ prev: []
+ instructions: 
+  155807, ['pop', 'ebx']
+ next: [155808]
+
+node :250
+node DriverEntry(153214) info:
+ start: 153214
+ prev: []
+ instructions: 
+  153214, ['push', 'ebx']
+  153215, ['or', 'ebx,eax']
+  153217, ['pop', 'ebx']
+  153218, ['push', 'ebp']
+  153219, ['and', 'ebp,ebp']
+  153221, ['pop', 'ebp']
+  153222, ['push', 'ecx']
+  153223, ['sub', 'ecx,eax']
+  153225, ['cmp', 'edx,edx']
+  153227, ['jbe', 'shortloc_2569D']
+ next: [153229, 153245]
+
+node :251
+node DriverEntry(153244) info:
+ start: 153244
+ prev: []
+ instructions: 
+  153244, ['pop', 'edx']
+ next: [153245]
+
+node :252
+node sub_26FE0(159712) info:
+ start: 159712
+ prev: []
+ instructions: 
+  159712, ['push', 'ecx']
+  159713, ['push', 'ebx']
+  159714, ['mov', 'ebx,[esp+8+var_4]']
+  159718, ['push', 'edi']
+  159719, ['xor', 'ecx,ecx']
+  159721, ['lea', 'esp,[esp+0]']
+ next: [159728]
+
+node :253
+node sub_26FE0(159728) info:
+ start: 159728
+ prev: []
+ instructions: 
+  159728, ['mov', 'edx,eax']
+  159730, ['and', 'edx,1']
+  159733, ['shr', 'eax,1']
+  159735, ['inc', 'ecx']
+  159736, ['cmp', 'eax,1']
+  159739, ['lea', 'ebx,[edx+ebx*2]']
+  159742, ['ja', 'shortloc_26FF0']
+ next: [159744, 159728]
+
+node :254
+node DriverEntry(156531) info:
+ start: 156531
+ prev: []
+ instructions: 
+  156531, ['mov', 'esi,[ebp+54h]']
+  156534, ['add', 'esi,[ebp+18h]']
+  156537, ['mov', 'ecx,[ebp+58h]']
+  156540, ['jmp', 'shortloc_26383']
+ next: [156547]
+
+node :255
+node DriverEntry(156542) info:
+ start: 156542
+ prev: []
+ instructions: 
+  156542, ['xor', 'byteptr[esi],33h']
+  156545, ['inc', 'esi']
+  156546, ['dec', 'ecx']
+ next: [156547]
+
+node :256
+node DriverEntry(155146) info:
+ start: 155146
+ prev: []
+ instructions: 
+  155146, ['push', 'ebx']
+  155147, ['sub', 'ebx,ebp']
+  155149, ['pop', 'ebx']
+ next: [155150]
+
+node :257
+node DriverEntry(153130) info:
+ start: 153130
+ prev: []
+ instructions: 
+  153130, ['pop', 'ebx']
+ next: [153131]
+
+node :258
+node DriverEntry(156915) info:
+ start: 156915
+ prev: []
+ instructions: 
+  156915, ['pop', 'ebp']
+ next: [156916]
+
+node :259
+node DriverEntry(153126) info:
+ start: 153126
+ prev: []
+ instructions: 
+  153126, ['push', 'eax']
+  153127, ['or', 'eax,ebx']
+  153129, ['pop', 'eax']
+ next: [153130]
+
+node :260
+node DriverEntry(156373) info:
+ start: 156373
+ prev: []
+ instructions: 
+  156373, ['push', 'eax']
+  156374, ['sub', 'eax,edx']
+  156376, ['pop', 'eax']
+  156377, ['push', 'ecx']
+  156378, ['and', 'ecx,ecx']
+  156380, ['pop', 'ecx']
+ next: [156381]
+
+node :261
+node DriverEntry(156758) info:
+ start: 156758
+ prev: []
+ instructions: 
+  156758, ['pop', 'ecx']
+  156759, ['cmp', 'ebp,ebp']
+  156761, ['jz', 'shortloc_2647F']
+ next: [156763, 156799]
+
+node :262
+node DriverEntry(156798) info:
+ start: 156798
+ prev: []
+ instructions: 
+  156798, ['pop', 'ebx']
+ next: [156799]
+
+node :263
+node DriverEntry(155903) info:
+ start: 155903
+ prev: []
+ instructions: 
+  155903, ['push', 'eax']
+  155904, ['xor', 'eax,ebp']
+  155906, ['pop', 'eax']
+ next: [155907]
+
+node :264
+node DriverEntry(156007) info:
+ start: 156007
+ prev: []
+ instructions: 
+  156007, ['push', 'ebp']
+  156008, ['sub', 'ebp,ebp']
+  156010, ['pop', 'ebp']
+ next: [156011]
+
+node :265
+node DriverEntry(155475) info:
+ start: 155475
+ prev: []
+ instructions: 
+  155475, ['push', 'edx']
+  155476, ['and', 'edx,ebx']
+  155478, ['pop', 'edx']
+  155479, ['cmp', 'ecx,ebx']
+  155481, ['jbe', 'shortloc_25FAB']
+ next: [155483, 155563]
+
+node :266
+node DriverEntry(153291) info:
+ start: 153291
+ prev: []
+ instructions: 
+  153291, ['push', 'eax']
+  153292, ['sub', 'eax,eax']
+  153294, ['pop', 'eax']
+  153295, ['push', 'ecx']
+  153296, ['and', 'ecx,ebp']
+  153298, ['pop', 'ecx']
+ next: [153299]
+
+node :267
+node DriverEntry(155562) info:
+ start: 155562
+ prev: []
+ instructions: 
+  155562, ['pop', 'ebp']
+ next: [155563]
+
+node :268
+node DriverEntry(156641) info:
+ start: 156641
+ prev: []
+ instructions: 
+  156641, ['cmp', 'dwordptr[edi+10h],0']
+  156645, ['jnz', 'shortloc_26395']
+ next: [156565, 156647]
+
+node :269
+node DriverEntry(156551) info:
+ start: 156551
+ prev: []
+ instructions: 
+  156551, ['mov', 'eax,[ebp+48h]']
+  156554, ['push', 'esi']
+  156555, ['or', 'eax,eax']
+  156557, ['jz', 'shortloc_263E7']
+ next: [156559, 156647]
+
+node :270
+node DriverEntry(156039) info:
+ start: 156039
+ prev: []
+ instructions: 
+  156039, ['push', 'ecx']
+  156040, ['mov', 'ecx,ebp']
+  156042, ['pop', 'ecx']
+  156043, ['cmp', 'edx,edx']
+  156045, ['jbe', 'loc_2628F']
+ next: [156051, 156303]
+
+node :271
+node DriverEntry(154958) info:
+ start: 154958
+ prev: []
+ instructions: 
+  154958, ['push', 'ebx']
+  154959, ['xor', 'ebx,edx']
+  154961, ['pop', 'ebx']
+  154962, ['push', 'ecx']
+  154963, ['and', 'ecx,ecx']
+  154965, ['pop', 'ecx']
+ next: [154966]
+
+node :272
+node DriverEntry(155568) info:
+ start: 155568
+ prev: []
+ instructions: 
+  155568, ['push', 'eax']
+  155569, ['and', 'eax,edx']
+  155571, ['pop', 'eax']
+  155572, ['cmp', 'ebx,ebp']
+  155574, ['jbe', 'shortloc_25FBC']
+ next: [155576, 155580]
+
+node :273
+node DriverEntry(153202) info:
+ start: 153202
+ prev: []
+ instructions: 
+  153202, ['push', 'ecx']
+  153203, ['mov', 'ecx,ebx']
+  153205, ['pop', 'ecx']
+  153206, ['push', 'ebp']
+  153207, ['or', 'ebp,edx']
+  153209, ['pop', 'ebp']
+  153210, ['cmp', 'ebp,ecx']
+  153212, ['jnb', 'shortloc_256A2']
+ next: [153214, 153250]
+
+node :274
+node DriverEntry(155387) info:
+ start: 155387
+ prev: []
+ instructions: 
+  155387, ['pop', 'ebp']
+  155388, ['push', 'edx']
+  155389, ['xor', 'edx,edx']
+  155391, ['cmp', 'edx,ecx']
+  155393, ['jnb', 'shortloc_25F07']
+ next: [155395, 155399]
+
+node :275
+node DriverEntry(156386) info:
+ start: 156386
+ prev: []
+ instructions: 
+  156386, ['push', 'ebp']
+  156387, ['sub', 'ebp,edx']
+  156389, ['pop', 'ebp']
+  156390, ['cmp', 'ecx,ecx']
+  156392, ['jnz', 'shortloc_262F2']
+ next: [156394, 156402]
+
+node :276
+node DriverEntry(154838) info:
+ start: 154838
+ prev: []
+ instructions: 
+  154838, ['push', 'ecx']
+  154839, ['mov', 'ecx,eax']
+  154841, ['pop', 'ecx']
+  154842, ['cmp', 'edx,edx']
+  154844, ['jnb', 'shortloc_25CE2']
+ next: [154846, 154850]
+
+node :277
+node DriverEntry(155019) info:
+ start: 155019
+ prev: []
+ instructions: 
+  155019, ['push', 'ebp']
+  155020, ['xor', 'ebp,ecx']
+  155022, ['pop', 'ebp']
+  155023, ['push', 'eax']
+  155024, ['sub', 'eax,ecx']
+  155026, ['cmp', 'edx,ebp']
+  155028, ['jb', 'shortloc_25DD2']
+ next: [155030, 155090]
+
+node :278
+node DriverEntry(155812) info:
+ start: 155812
+ prev: []
+ instructions: 
+  155812, ['push', 'edx']
+  155813, ['or', 'edx,eax']
+  155815, ['pop', 'edx']
+  155816, ['push', 'ecx']
+  155817, ['and', 'ecx,ebx']
+  155819, ['cmp', 'ebx,ecx']
+  155821, ['jb', 'shortloc_260B3']
+ next: [155823, 155827]
+
+node :279
+node DriverEntry(156415) info:
+ start: 156415
+ prev: []
+ instructions: 
+  156415, ['push', 'eax']
+  156416, ['or', 'eax,ebx']
+  156418, ['pop', 'eax']
+  156419, ['push', 'ecx']
+  156420, ['mov', 'ecx,eax']
+  156422, ['cmp', 'ebx,ebp']
+  156424, ['jnz', 'shortloc_2630E']
+ next: [156426, 156430]
+
+node :280
+node DriverEntry(156664) info:
+ start: 156664
+ prev: []
+ instructions: 
+  156664, ['push', 'eax']
+  156665, ['mov', 'eax,ebp']
+  156667, ['pop', 'eax']
+  156668, ['cmp', 'ebx,ebp']
+  156670, ['jnb', 'shortloc_26408']
+ next: [156672, 156680]
+
+node :281
+node sub_26960(158374) info:
+ start: 158374
+ prev: []
+ instructions: 
+  158374, ['push', 'dwordptr[eax+0Ch]']
+  158377, ['pop', 'dwordptrds:401898h']
+  158383, ['push', 'eax']
+  158384, ['push', 'dwordptr[eax+8]']
+  158387, ['push', 'dwordptr[eax+10h]']
+  158390, ['call', 'nearptrunk_25569']
+  158395, ['push', 'eax']
+  158396, ['pop', 'dwordptrds:40189Ch']
+  158402, ['pop', 'eax']
+  158403, ['mov', 'esi,[ebp+var_1C]']
+  158406, ['add', 'esi,[eax+14h]']
+  158409, ['mov', 'ecx,ds:40189Ch']
+  158415, ['jmp', 'shortloc_26AD6']
+ next: [158422]
+
+node :282
+node sub_26960(158417) info:
+ start: 158417
+ prev: []
+ instructions: 
+  158417, ['xor', 'byteptr[esi],33h']
+  158420, ['inc', 'esi']
+  158421, ['dec', 'ecx']
+ next: [158422]
+
+node :283
+node DriverEntry(156430) info:
+ start: 156430
+ prev: []
+ instructions: 
+  156430, ['pop', 'ecx']
+ next: [156431]
+
+node :284
+node DriverEntry(156911) info:
+ start: 156911
+ prev: []
+ instructions: 
+  156911, ['push', 'ebp']
+  156912, ['mov', 'ebp,edx']
+  156914, ['pop', 'ebp']
+ next: [156915]
+
+node :285
+node DriverEntry(156062) info:
+ start: 156062
+ prev: []
+ instructions: 
+  156062, ['push', 'ebp']
+  156063, ['sub', 'ebp,edx']
+  156065, ['pop', 'ebp']
+  156066, ['push', 'ebx']
+  156067, ['xor', 'ebx,ebx']
+  156069, ['cmp', 'ebx,edx']
+  156071, ['jnz', 'shortloc_261D5']
+ next: [156073, 156117]
+
+node :286
+node DriverEntry(155163) info:
+ start: 155163
+ prev: []
+ instructions: 
+  155163, ['push', 'ebp']
+  155164, ['xor', 'ebp,ebp']
+  155166, ['pop', 'ebp']
+  155167, ['cmp', 'eax,edx']
+  155169, ['jb', 'shortloc_25E4F']
+ next: [155171, 155215]
+
+node :287
+node DriverEntry(153250) info:
+ start: 153250
+ prev: []
+ instructions: 
+  153250, ['pop', 'ebp']
+  153251, ['cmp', 'edx,edx']
+  153253, ['jz', 'shortloc_256CB']
+ next: [153255, 153291]
+
+node :288
+node DriverEntry(155372) info:
+ start: 155372
+ prev: []
+ instructions: 
+  155372, ['push', 'eax']
+  155373, ['and', 'eax,eax']
+  155375, ['pop', 'eax']
+  155376, ['push', 'ebp']
+  155377, ['and', 'ebp,edx']
+  155379, ['cmp', 'eax,ebp']
+  155381, ['jbe', 'shortloc_25EFB']
+ next: [155383, 155387]
+
+node :289
+node DriverEntry(156051) info:
+ start: 156051
+ prev: []
+ instructions: 
+  156051, ['push', 'ebp']
+  156052, ['sub', 'ebp,ebx']
+  156054, ['pop', 'ebp']
+  156055, ['push', 'eax']
+  156056, ['mov', 'eax,eax']
+  156058, ['cmp', 'eax,ebx']
+  156060, ['jbe', 'shortloc_261D6']
+ next: [156062, 156118]
+
+node :290
+node DriverEntry(156731) info:
+ start: 156731
+ prev: []
+ instructions: 
+  156731, ['push', 'eax']
+  156732, ['and', 'eax,ebx']
+  156734, ['pop', 'eax']
+  156735, ['push', 'ecx']
+  156736, ['sub', 'ecx,ecx']
+  156738, ['cmp', 'eax,edx']
+  156740, ['jbe', 'shortloc_26456']
+ next: [156742, 156758]
+
+node :291
+node DriverEntry(156426) info:
+ start: 156426
+ prev: []
+ instructions: 
+  156426, ['push', 'edx']
+  156427, ['sub', 'edx,edx']
+  156429, ['pop', 'edx']
+ next: [156430]
+
+node :292
+node DriverEntry(153364) info:
+ start: 153364
+ prev: []
+ instructions: 
+  153364, ['push', 'edx']
+  153365, ['or', 'edx,edx']
+  153367, ['pop', 'edx']
+  153368, ['push', 'edx']
+  153369, ['or', 'edx,ebx']
+  153371, ['cmp', 'edx,eax']
+  153373, ['jz', 'shortloc_25727']
+ next: [153375, 153383]
+
+node :293
+node DriverEntry(153245) info:
+ start: 153245
+ prev: []
+ instructions: 
+  153245, ['pop', 'ecx']
+  153246, ['push', 'ecx']
+  153247, ['and', 'ecx,ebp']
+  153249, ['pop', 'ecx']
+ next: [153250]
+
+node :294
+node DriverEntry(156916) info:
+ start: 156916
+ prev: []
+ instructions: 
+  156916, ['cmp', 'edx,ebp']
+  156918, ['jnz', 'shortloc_26534']
+ next: [156920, 156980]
+
+node :295
+node DriverEntry(156117) info:
+ start: 156117
+ prev: []
+ instructions: 
+  156117, ['pop', 'ebx']
+ next: [156118]
+
+node :296
+node DriverEntry(156920) info:
+ start: 156920
+ prev: []
+ instructions: 
+  156920, ['push', 'ebx']
+  156921, ['sub', 'ebx,ebx']
+  156923, ['pop', 'ebx']
+  156924, ['cmp', 'ebp,ebp']
+  156926, ['jbe', 'shortloc_26534']
+ next: [156928, 156980]
+
+node :297
+node DriverEntry(155505) info:
+ start: 155505
+ prev: []
+ instructions: 
+  155505, ['push', 'ecx']
+  155506, ['sub', 'ecx,ebp']
+  155508, ['pop', 'ecx']
+  155509, ['push', 'ebp']
+  155510, ['or', 'ebp,eax']
+  155512, ['cmp', 'ecx,eax']
+  155514, ['jb', 'shortloc_25F84']
+ next: [155516, 155524]
+
+node :298
+node DriverEntry(156118) info:
+ start: 156118
+ prev: []
+ instructions: 
+  156118, ['pop', 'eax']
+  156119, ['cmp', 'edx,eax']
+  156121, ['jz', 'loc_26283']
+ next: [156127, 156291]
+
+node :299
+node DriverEntry(156928) info:
+ start: 156928
+ prev: []
+ instructions: 
+  156928, ['push', 'edx']
+  156929, ['and', 'edx,eax']
+  156931, ['pop', 'edx']
+  156932, ['push', 'ebx']
+  156933, ['or', 'ebx,ecx']
+  156935, ['cmp', 'ecx,ebp']
+  156937, ['jz', 'shortloc_26533']
+ next: [156939, 156979]
+
+node :300
+node DriverEntry(156978) info:
+ start: 156978
+ prev: []
+ instructions: 
+  156978, ['pop', 'edx']
+ next: [156979]
+
+node :301
+node DriverEntry(156127) info:
+ start: 156127
+ prev: []
+ instructions: 
+  156127, ['push', 'ecx']
+  156128, ['sub', 'ecx,ebx']
+  156130, ['pop', 'ecx']
+  156131, ['cmp', 'eax,ebx']
+  156133, ['jnz', 'loc_26283']
+ next: [156139, 156291]
+
+node :302
+node DriverEntry(156979) info:
+ start: 156979
+ prev: []
+ instructions: 
+  156979, ['pop', 'ebx']
+ next: [156980]
+
+node :303
+node sub_26960(158444) info:
+ start: 158444
+ prev: []
+ instructions: 
+  158444, ['push', '[ebp+var_1C]']
+  158447, ['call', 'sub_268D5']
+  158452, ['or', 'eax,eax']
+  158454, ['jz', 'shortloc_26B35']
+ next: [158456, 158517]
+
+node :304
+node sub_26960(158511) info:
+ start: 158511
+ prev: []
+ instructions: 
+  158511, ['or', 'ecx,ecx']
+  158513, ['jnz', 'shortloc_26B2A']
+ next: [158506, 158515]
+
+node :305
+node DriverEntry(156742) info:
+ start: 156742
+ prev: []
+ instructions: 
+  156742, ['push', 'eax']
+  156743, ['xor', 'eax,eax']
+  156745, ['pop', 'eax']
+  156746, ['cmp', 'ecx,ecx']
+  156748, ['jb', 'shortloc_26452']
+ next: [156750, 156754]
+
+node :306
+node DriverEntry(155483) info:
+ start: 155483
+ prev: []
+ instructions: 
+  155483, ['push', 'edx']
+  155484, ['and', 'edx,ebp']
+  155486, ['pop', 'edx']
+  155487, ['push', 'ecx']
+  155488, ['sub', 'ecx,ecx']
+  155490, ['cmp', 'ebx,ecx']
+  155492, ['jz', 'shortloc_25F9A']
+ next: [155494, 155546]
+
+node :307
+node DriverEntry(155516) info:
+ start: 155516
+ prev: []
+ instructions: 
+  155516, ['push', 'ecx']
+  155517, ['or', 'ecx,ecx']
+  155519, ['pop', 'ecx']
+  155520, ['push', 'ecx']
+  155521, ['mov', 'ecx,edx']
+  155523, ['pop', 'ecx']
+ next: [155524]
+
+node :308
+node DriverEntry(156212) info:
+ start: 156212
+ prev: []
+ instructions: 
+  156212, ['push', 'ebx']
+  156213, ['sub', 'ebx,eax']
+  156215, ['pop', 'ebx']
+  156216, ['cmp', 'eax,ebx']
+  156218, ['jnb', 'shortloc_2627C']
+ next: [156220, 156284]
+
+node :309
+node DriverEntry(155000) info:
+ start: 155000
+ prev: []
+ instructions: 
+  155000, ['pop', 'eax']
+  155001, ['push', 'edx']
+  155002, ['and', 'edx,edx']
+  155004, ['pop', 'edx']
+ next: [155005]
+
+node :310
+node DriverEntry(154974) info:
+ start: 154974
+ prev: []
+ instructions: 
+  154974, ['push', 'ebp']
+  154975, ['xor', 'ebp,ebp']
+  154977, ['pop', 'ebp']
+  154978, ['push', 'eax']
+  154979, ['xor', 'eax,eax']
+  154981, ['cmp', 'ecx,ecx']
+  154983, ['jnz', 'shortloc_25D7D']
+ next: [154985, 155005]
+
+node :311
+node DriverEntry(155576) info:
+ start: 155576
+ prev: []
+ instructions: 
+  155576, ['push', 'edx']
+  155577, ['mov', 'edx,ebp']
+  155579, ['pop', 'edx']
+ next: [155580]
+
+node :312
+node DriverEntry(156116) info:
+ start: 156116
+ prev: []
+ instructions: 
+  156116, ['pop', 'eax']
+ next: [156117]
+
+node :313
+node sub_26732(157549) info:
+ start: 157549
+ prev: []
+ instructions: 
+  157549, ['mov', 'eax,[ebp+0Ch]']
+  157552, ['lea', 'edx,[eax+1]']
+ next: [157555]
+
+node :314
+node sub_26732(157547) info:
+ start: 157547
+ prev: []
+ instructions: 
+  157547, ['mov', 'edi,eax']
+ next: [157549]
+
+node :315
+node sub_26732(157504) info:
+ start: 157504
+ prev: []
+ instructions: 
+  157504, ['push', '1']
+  157506, ['lea', 'eax,[ebp-0Ch]']
+  157509, ['push', 'eax']
+  157510, ['lea', 'eax,[esi+2Ch]']
+  157513, ['push', 'eax']
+  157514, ['call', 'dwordptr[ebp+14h]']
+  157517, ['test', 'eax,eax']
+  157519, ['jz', 'shortloc_26762']
+ next: [157521, 157538]
+
+node :316
+node sub_26732(157555) info:
+ start: 157555
+ prev: []
+ instructions: 
+  157555, ['mov', 'cl,[eax]']
+  157557, ['inc', 'eax']
+  157558, ['test', 'cl,cl']
+  157560, ['jnz', 'shortloc_26773']
+ next: [157562, 157555]
+
+node :317
+node sub_26732(157538) info:
+ start: 157538
+ prev: []
+ instructions: 
+  157538, ['push', 'eax']
+  157539, ['mov', 'eax,[ebp+10h]']
+  157542, ['mov', '[eax],edi']
+  157544, ['pop', 'eax']
+  157545, ['jmp', 'shortloc_2676D']
+ next: [157549]
+
+node :318
+node DriverEntry(156394) info:
+ start: 156394
+ prev: []
+ instructions: 
+  156394, ['push', 'ebx']
+  156395, ['mov', 'ebx,ebx']
+  156397, ['pop', 'ebx']
+  156398, ['push', 'edx']
+  156399, ['xor', 'edx,ebx']
+  156401, ['pop', 'edx']
+ next: [156402]
+
+node :319
+node DriverEntry(155089) info:
+ start: 155089
+ prev: []
+ instructions: 
+  155089, ['pop', 'ebx']
+ next: [155090]
+
+node :320
+node DriverEntry(154846) info:
+ start: 154846
+ prev: []
+ instructions: 
+  154846, ['push', 'eax']
+  154847, ['xor', 'eax,ebx']
+  154849, ['pop', 'eax']
+ next: [154850]
+
+node :321
+node DriverEntry(155395) info:
+ start: 155395
+ prev: []
+ instructions: 
+  155395, ['push', 'eax']
+  155396, ['mov', 'eax,ecx']
+  155398, ['pop', 'eax']
+ next: [155399]
+
+node :322
+node DriverEntry(155383) info:
+ start: 155383
+ prev: []
+ instructions: 
+  155383, ['push', 'ecx']
+  155384, ['mov', 'ecx,edx']
+  155386, ['pop', 'ecx']
+ next: [155387]
+
+node :323
+node DriverEntry(155823) info:
+ start: 155823
+ prev: []
+ instructions: 
+  155823, ['push', 'ebx']
+  155824, ['and', 'ebx,ecx']
+  155826, ['pop', 'ebx']
+ next: [155827]
+
+node :324
+node DriverEntry(155494) info:
+ start: 155494
+ prev: []
+ instructions: 
+  155494, ['push', 'eax']
+  155495, ['or', 'eax,edx']
+  155497, ['pop', 'eax']
+  155498, ['push', 'ebp']
+  155499, ['xor', 'ebp,edx']
+  155501, ['cmp', 'ecx,eax']
+  155503, ['jb', 'shortloc_25F85']
+ next: [155505, 155525]
+
+node :325
+node DriverEntry(156291) info:
+ start: 156291
+ prev: []
+ instructions: 
+  156291, ['push', 'eax']
+  156292, ['mov', 'eax,edx']
+  156294, ['cmp', 'eax,ebp']
+  156296, ['jnz', 'shortloc_2628E']
+ next: [156298, 156302]
+
+node :326
+node DriverEntry(156559) info:
+ start: 156559
+ prev: []
+ instructions: 
+  156559, ['mov', 'edi,eax']
+  156561, ['add', 'edi,ebx']
+  156563, ['jmp', 'shortloc_263E1']
+ next: [156641]
+
+node :327
+node DriverEntry(156637) info:
+ start: 156637
+ prev: []
+ instructions: 
+  156637, ['pop', 'edi']
+  156638, ['add', 'edi,14h']
+ next: [156641]
+
+node :328
+node DriverEntry(153375) info:
+ start: 153375
+ prev: []
+ instructions: 
+  153375, ['push', 'ebp']
+  153376, ['sub', 'ebp,ecx']
+  153378, ['pop', 'ebp']
+  153379, ['push', 'ecx']
+  153380, ['xor', 'ecx,edx']
+  153382, ['pop', 'ecx']
+ next: [153383]
+
+node :329
+node DriverEntry(156672) info:
+ start: 156672
+ prev: []
+ instructions: 
+  156672, ['push', 'ebx']
+  156673, ['and', 'ebx,eax']
+  156675, ['pop', 'ebx']
+  156676, ['push', 'ecx']
+  156677, ['mov', 'ecx,ebx']
+  156679, ['pop', 'ecx']
+ next: [156680]
+
+node :330
+node sub_26960(158426) info:
+ start: 158426
+ prev: []
+ instructions: 
+  158426, ['jmp', 'shortloc_26AEC']
+ next: [158444]
+
+node :331
+node sub_26960(158358) info:
+ start: 158358
+ prev: []
+ instructions: 
+  158358, ['or', 'ecx,ecx']
+  158360, ['jnz', 'shortloc_26A91']
+ next: [158353, 158362]
+
+node :332
+node sub_26960(158456) info:
+ start: 158456
+ prev: []
+ instructions: 
+  158456, ['mov', 'dwordptr[eax+24h],0E8000040h']
+  158463, ['push', 'dwordptr[eax+0Ch]']
+  158466, ['pop', 'dwordptrds:4018BCh']
+  158472, ['push', 'eax']
+  158473, ['push', 'dwordptr[eax+8]']
+  158476, ['push', 'dwordptr[eax+10h]']
+  158479, ['call', 'nearptrunk_25569']
+  158484, ['push', 'eax']
+  158485, ['pop', 'dwordptrds:4018C0h']
+  158491, ['pop', 'eax']
+  158492, ['mov', 'esi,[ebp+var_1C]']
+  158495, ['add', 'esi,[eax+14h]']
+  158498, ['mov', 'ecx,ds:4018C0h']
+  158504, ['jmp', 'shortloc_26B2F']
+ next: [158511]
+
+node :333
+node sub_26960(158506) info:
+ start: 158506
+ prev: []
+ instructions: 
+  158506, ['xor', 'byteptr[esi],33h']
+  158509, ['inc', 'esi']
+  158510, ['dec', 'ecx']
+ next: [158511]
+
+node :334
+node DriverEntry(156435) info:
+ start: 156435
+ prev: []
+ instructions: 
+  156435, ['push', 'edx']
+  156436, ['xor', 'edx,eax']
+  156438, ['pop', 'edx']
+  156439, ['push', 'edx']
+  156440, ['or', 'edx,ebp']
+  156442, ['cmp', 'ebp,ebx']
+  156444, ['jnb', 'shortloc_26322']
+ next: [156446, 156450]
+
+node :335
+node DriverEntry(156750) info:
+ start: 156750
+ prev: []
+ instructions: 
+  156750, ['push', 'ebx']
+  156751, ['sub', 'ebx,ebp']
+  156753, ['pop', 'ebx']
+ next: [156754]
+
+node :336
+node DriverEntry(156177) info:
+ start: 156177
+ prev: []
+ instructions: 
+  156177, ['pop', 'edx']
+ next: [156178]
+
+node :337
+node DriverEntry(156220) info:
+ start: 156220
+ prev: []
+ instructions: 
+  156220, ['push', 'ecx']
+  156221, ['mov', 'ecx,ebp']
+  156223, ['pop', 'ecx']
+  156224, ['cmp', 'ecx,ebp']
+  156226, ['jz', 'shortloc_2627C']
+ next: [156228, 156284]
+
+node :338
+node DriverEntry(156154) info:
+ start: 156154
+ prev: []
+ instructions: 
+  156154, ['push', 'edx']
+  156155, ['mov', 'edx,ebp']
+  156157, ['pop', 'edx']
+  156158, ['cmp', 'ebx,ebx']
+  156160, ['jb', 'shortloc_26212']
+ next: [156162, 156178]
+
+node :339
+node DriverEntry(155171) info:
+ start: 155171
+ prev: []
+ instructions: 
+  155171, ['push', 'ebp']
+  155172, ['sub', 'ebp,edx']
+  155174, ['pop', 'ebp']
+  155175, ['cmp', 'ecx,eax']
+  155177, ['jbe', 'shortloc_25E4F']
+ next: [155179, 155215]
+
+node :340
+node DriverEntry(156303) info:
+ start: 156303
+ prev: []
+ instructions: 
+  156303, ['push', 'ecx']
+  156304, ['mov', 'ecx,ebx']
+  156306, ['cmp', 'edx,ecx']
+  156308, ['jz', 'shortloc_262B2']
+ next: [156310, 156338]
+
+node :341
+node DriverEntry(153255) info:
+ start: 153255
+ prev: []
+ instructions: 
+  153255, ['push', 'ecx']
+  153256, ['xor', 'ecx,eax']
+  153258, ['pop', 'ecx']
+  153259, ['cmp', 'eax,ecx']
+  153261, ['jnb', 'shortloc_256CB']
+ next: [153263, 153291]
+
+node :342
+node DriverEntry(156302) info:
+ start: 156302
+ prev: []
+ instructions: 
+  156302, ['pop', 'eax']
+ next: [156303]
+
+node :343
+node DriverEntry(156298) info:
+ start: 156298
+ prev: []
+ instructions: 
+  156298, ['push', 'ebp']
+  156299, ['or', 'ebp,ebp']
+  156301, ['pop', 'ebp']
+ next: [156302]
+
+node :344
+node DriverEntry(156754) info:
+ start: 156754
+ prev: []
+ instructions: 
+  156754, ['push', 'edx']
+  156755, ['and', 'edx,eax']
+  156757, ['pop', 'edx']
+ next: [156758]
+
+node :345
+node DriverEntry(153391) info:
+ start: 153391
+ prev: []
+ instructions: 
+  153391, ['push', 'edx']
+  153392, ['and', 'edx,ebp']
+  153394, ['pop', 'edx']
+  153395, ['cmp', 'eax,eax']
+  153397, ['jnb', 'shortloc_25743']
+ next: [153399, 153411]
+
+node :346
+node DriverEntry(156139) info:
+ start: 156139
+ prev: []
+ instructions: 
+  156139, ['push', 'ebp']
+  156140, ['mov', 'ebp,eax']
+  156142, ['pop', 'ebp']
+  156143, ['push', 'ebx']
+  156144, ['or', 'ebx,ebx']
+  156146, ['cmp', 'eax,edx']
+  156148, ['jnz', 'loc_2627E']
+ next: [156154, 156286]
+
+node :347
+node DriverEntry(155524) info:
+ start: 155524
+ prev: []
+ instructions: 
+  155524, ['pop', 'ebp']
+ next: [155525]
+
+node :348
+node DriverEntry(156178) info:
+ start: 156178
+ prev: []
+ instructions: 
+  156178, ['push', 'ebp']
+  156179, ['mov', 'ebp,ecx']
+  156181, ['cmp', 'eax,ecx']
+  156183, ['jb', 'shortloc_2627D']
+ next: [156185, 156285]
+
+node :349
+node DriverEntry(155030) info:
+ start: 155030
+ prev: []
+ instructions: 
+  155030, ['push', 'eax']
+  155031, ['mov', 'eax,eax']
+  155033, ['pop', 'eax']
+  155034, ['push', 'ebx']
+  155035, ['xor', 'ebx,edx']
+  155037, ['cmp', 'ebx,ebx']
+  155039, ['jnz', 'shortloc_25DC1']
+ next: [155041, 155073]
+
+node :350
+node DriverEntry(156228) info:
+ start: 156228
+ prev: []
+ instructions: 
+  156228, ['push', 'eax']
+  156229, ['sub', 'eax,edx']
+  156231, ['pop', 'eax']
+  156232, ['cmp', 'ebx,ecx']
+  156234, ['jb', 'shortloc_2627C']
+ next: [156236, 156284]
+
+node :351
+node DriverEntry(156980) info:
+ start: 156980
+ prev: []
+ instructions: 
+  156980, ['cmp', 'ebx,ecx']
+  156982, ['jz', 'shortloc_26568']
+ next: [156984, 157032]
+
+node :352
+node DriverEntry(155041) info:
+ start: 155041
+ prev: []
+ instructions: 
+  155041, ['push', 'ebx']
+  155042, ['sub', 'ebx,edx']
+  155044, ['pop', 'ebx']
+  155045, ['push', 'eax']
+  155046, ['sub', 'eax,edx']
+  155048, ['pop', 'eax']
+  155049, ['push', 'edx']
+  155050, ['xor', 'edx,ecx']
+  155052, ['pop', 'edx']
+  155053, ['push', 'ebp']
+  155054, ['sub', 'ebp,ebp']
+  155056, ['cmp', 'eax,ebx']
+  155058, ['jz', 'shortloc_25DC0']
+ next: [155060, 155072]
+
+node :353
+node DriverEntry(156073) info:
+ start: 156073
+ prev: []
+ instructions: 
+  156073, ['push', 'ecx']
+  156074, ['or', 'ecx,edx']
+  156076, ['pop', 'ecx']
+  156077, ['push', 'ecx']
+  156078, ['and', 'ecx,edx']
+  156080, ['pop', 'ecx']
+  156081, ['push', 'ebx']
+  156082, ['mov', 'ebx,eax']
+  156084, ['cmp', 'ebx,ebx']
+  156086, ['jb', 'shortloc_261C4']
+ next: [156088, 156100]
+
+node :354
+node DriverEntry(156984) info:
+ start: 156984
+ prev: []
+ instructions: 
+  156984, ['push', 'edx']
+  156985, ['sub', 'edx,ebx']
+  156987, ['pop', 'edx']
+  156988, ['push', 'ebx']
+  156989, ['or', 'ebx,eax']
+  156991, ['pop', 'ebx']
+  156992, ['push', 'ebx']
+  156993, ['sub', 'ebx,ebp']
+  156995, ['cmp', 'ecx,edx']
+  156997, ['jnz', 'shortloc_26567']
+ next: [156999, 157031]
+
+node :355
+node DriverEntry(156236) info:
+ start: 156236
+ prev: []
+ instructions: 
+  156236, ['push', 'ebp']
+  156237, ['sub', 'ebp,eax']
+  156239, ['pop', 'ebp']
+  156240, ['push', 'ebp']
+  156241, ['sub', 'ebp,ebp']
+  156243, ['cmp', 'ebx,ecx']
+  156245, ['jnb', 'shortloc_2627B']
+ next: [156247, 156283]
+
+node :356
+node DriverEntry(155525) info:
+ start: 155525
+ prev: []
+ instructions: 
+  155525, ['pop', 'ebp']
+  155526, ['cmp', 'ebx,ebp']
+  155528, ['jnb', 'shortloc_25F9A']
+ next: [155530, 155546]
+
+node :357
+node DriverEntry(156185) info:
+ start: 156185
+ prev: []
+ instructions: 
+  156185, ['push', 'ecx']
+  156186, ['mov', 'ecx,edx']
+  156188, ['pop', 'ecx']
+  156189, ['cmp', 'eax,ecx']
+  156191, ['jnb', 'shortloc_2627D']
+ next: [156193, 156285]
+
+node :358
+node DriverEntry(157040) info:
+ start: 157040
+ prev: []
+ instructions: 
+  157040, ['cmp', 'edx,ecx']
+  157042, ['jz', 'shortloc_26578']
+ next: [157044, 157048]
+
+node :359
+node DriverEntry(156939) info:
+ start: 156939
+ prev: []
+ instructions: 
+  156939, ['push', 'eax']
+  156940, ['sub', 'eax,ebx']
+  156942, ['pop', 'eax']
+  156943, ['cmp', 'ebx,eax']
+  156945, ['jnz', 'shortloc_26517']
+ next: [156947, 156951]
+
+node :360
+node DriverEntry(155179) info:
+ start: 155179
+ prev: []
+ instructions: 
+  155179, ['push', 'edx']
+  155180, ['xor', 'edx,ebx']
+  155182, ['pop', 'edx']
+  155183, ['push', 'ecx']
+  155184, ['sub', 'ecx,ebp']
+  155186, ['cmp', 'eax,ecx']
+  155188, ['jnz', 'shortloc_25E4E']
+ next: [155190, 155214]
+
+node :361
+node DriverEntry(156193) info:
+ start: 156193
+ prev: []
+ instructions: 
+  156193, ['push', 'ecx']
+  156194, ['xor', 'ecx,eax']
+  156196, ['pop', 'ecx']
+  156197, ['cmp', 'edx,ebx']
+  156199, ['jz', 'shortloc_2622D']
+ next: [156201, 156205]
+
+node :362
+node DriverEntry(156999) info:
+ start: 156999
+ prev: []
+ instructions: 
+  156999, ['push', 'ebp']
+  157000, ['and', 'ebp,ecx']
+  157002, ['pop', 'ebp']
+  157003, ['push', 'ebx']
+  157004, ['xor', 'ebx,edx']
+  157006, ['cmp', 'ecx,ebx']
+  157008, ['jbe', 'shortloc_2655A']
+ next: [157010, 157018]
+
+node :363
+node DriverEntry(156820) info:
+ start: 156820
+ prev: []
+ instructions: 
+  156820, ['push', 'edx']
+  156821, ['and', 'edx,ebp']
+  156823, ['pop', 'edx']
+  156824, ['cmp', 'ebp,ebx']
+  156826, ['jnz', 'shortloc_264A0']
+ next: [156828, 156832]
+
+node :364
+node DriverEntry(155060) info:
+ start: 155060
+ prev: []
+ instructions: 
+  155060, ['push', 'edx']
+  155061, ['and', 'edx,ebp']
+  155063, ['pop', 'edx']
+  155064, ['cmp', 'ebx,ebp']
+  155066, ['jz', 'shortloc_25DC0']
+ next: [155068, 155072]
+
+node :365
+node DriverEntry(155530) info:
+ start: 155530
+ prev: []
+ instructions: 
+  155530, ['push', 'ecx']
+  155531, ['sub', 'ecx,ebp']
+  155533, ['pop', 'ecx']
+  155534, ['push', 'edx']
+  155535, ['sub', 'edx,ebx']
+  155537, ['cmp', 'ebp,ebx']
+  155539, ['jnb', 'shortloc_25F99']
+ next: [155541, 155545]
+
+node :366
+node DriverEntry(156088) info:
+ start: 156088
+ prev: []
+ instructions: 
+  156088, ['push', 'edx']
+  156089, ['xor', 'edx,edx']
+  156091, ['pop', 'edx']
+  156092, ['cmp', 'ebx,eax']
+  156094, ['jnz', 'shortloc_261C4']
+ next: [156096, 156100]
+
+node :367
+node DriverEntry(157062) info:
+ start: 157062
+ prev: []
+ instructions: 
+  157062, ['mov', 'edx,[ebp+1Ch]']
+  157065, ['add', 'esi,ebx']
+  157067, ['cmp', 'ebx,edx']
+  157069, ['jz', 'shortloc_265C0']
+ next: [157071, 157120]
+
+node :368
+node DriverEntry(156247) info:
+ start: 156247
+ prev: []
+ instructions: 
+  156247, ['push', 'ebp']
+  156248, ['and', 'ebp,edx']
+  156250, ['pop', 'ebp']
+  156251, ['cmp', 'ebx,ebx']
+  156253, ['jnb', 'shortloc_2627B']
+ next: [156255, 156283]
+
+node :369
+node DriverEntry(157044) info:
+ start: 157044
+ prev: []
+ instructions: 
+  157044, ['push', 'edx']
+  157045, ['xor', 'edx,ecx']
+  157047, ['pop', 'edx']
+ next: [157048]
+
+node :370
+node sub_26960(158428) info:
+ start: 158428
+ prev: []
+ instructions: 
+  158428, ['push', '0']
+  158430, ['pop', 'dwordptrds:401898h']
+  158436, ['push', '0']
+  158438, ['pop', 'dwordptrds:40189Ch']
+ next: [158444]
+
+node :371
+node DriverEntry(157048) info:
+ start: 157048
+ prev: []
+ instructions: 
+  157048, ['mov', 'eax,[ebp+20h]']
+  157051, ['push', 'eax']
+  157052, ['mov', 'eax,[ebp+24h]']
+  157055, ['pop', 'esi']
+  157056, ['mov', 'ecx,eax']
+  157058, ['or', 'esi,esi']
+  157060, ['jz', 'shortloc_265C0']
+ next: [157062, 157120]
+
+node :372
+node DriverEntry(157115) info:
+ start: 157115
+ prev: []
+ instructions: 
+  157115, ['pop', 'ecx']
+ next: [157116]
+
+node :373
+node DriverEntry(157071) info:
+ start: 157071
+ prev: []
+ instructions: 
+  157071, ['sub', 'edx,ebx']
+  157073, ['jmp', 'shortloc_265BC']
+ next: [157116]
+
+node :374
+node DriverEntry(156446) info:
+ start: 156446
+ prev: []
+ instructions: 
+  156446, ['push', 'eax']
+  156447, ['or', 'eax,edx']
+  156449, ['pop', 'eax']
+ next: [156450]
+
+node :375
+node DriverEntry(155844) info:
+ start: 155844
+ prev: []
+ instructions: 
+  155844, ['push', 'ecx']
+  155845, ['and', 'ecx,ecx']
+  155847, ['pop', 'ecx']
+  155848, ['push', 'ebx']
+  155849, ['sub', 'ebx,eax']
+  155851, ['cmp', 'ebp,eax']
+  155853, ['jbe', 'shortloc_260DB']
+ next: [155855, 155867]
+
+node :376
+node DriverEntry(156310) info:
+ start: 156310
+ prev: []
+ instructions: 
+  156310, ['push', 'ebx']
+  156311, ['or', 'ebx,ebp']
+  156313, ['pop', 'ebx']
+  156314, ['push', 'ebx']
+  156315, ['and', 'ebx,ecx']
+  156317, ['pop', 'ebx']
+  156318, ['cmp', 'eax,ebp']
+  156320, ['jb', 'shortloc_262B2']
+ next: [156322, 156338]
+
+node :377
+node DriverEntry(156205) info:
+ start: 156205
+ prev: []
+ instructions: 
+  156205, ['push', 'ecx']
+  156206, ['sub', 'ecx,edx']
+  156208, ['cmp', 'edx,edx']
+  156210, ['jz', 'shortloc_2627C']
+ next: [156212, 156284]
+
+node :378
+node DriverEntry(156255) info:
+ start: 156255
+ prev: []
+ instructions: 
+  156255, ['push', 'ebp']
+  156256, ['sub', 'ebp,ecx']
+  156258, ['pop', 'ebp']
+  156259, ['push', 'edx']
+  156260, ['and', 'edx,ebp']
+  156262, ['cmp', 'eax,ebp']
+  156264, ['jnz', 'shortloc_2626E']
+ next: [156266, 156270]
+
+node :379
+node DriverEntry(156162) info:
+ start: 156162
+ prev: []
+ instructions: 
+  156162, ['push', 'edx']
+  156163, ['mov', 'edx,ebp']
+  156165, ['pop', 'edx']
+  156166, ['push', 'edx']
+  156167, ['mov', 'edx,ecx']
+  156169, ['cmp', 'ebp,edx']
+  156171, ['jb', 'shortloc_26211']
+ next: [156173, 156177]
+
+node :380
+node DriverEntry(157031) info:
+ start: 157031
+ prev: []
+ instructions: 
+  157031, ['pop', 'ebx']
+ next: [157032]
+
+node :381
+node DriverEntry(156828) info:
+ start: 156828
+ prev: []
+ instructions: 
+  156828, ['push', 'ecx']
+  156829, ['and', 'ecx,ebp']
+  156831, ['pop', 'ecx']
+ next: [156832]
+
+node :382
+node sub_27363(160611) info:
+ start: 160611
+ prev: []
+ instructions: 
+  160611, ['mov', 'eax,[esp+arg_0]']
+  160615, ['cmp', 'eax,80h']
+  160620, ['push', 'esi']
+  160621, ['mov', 'esi,[esp+4+arg_4]']
+  160625, ['jnb', 'shortloc_2738C']
+ next: [160627, 160652]
+
+node :383
+node sub_27363(160652) info:
+ start: 160652
+ prev: []
+ instructions: 
+  160652, ['cmp', 'eax,ds:406548h']
+  160658, ['jz', 'shortloc_273CF']
+ next: [160660, 160719]
+
+node :384
+node DriverEntry(155190) info:
+ start: 155190
+ prev: []
+ instructions: 
+  155190, ['push', 'edx']
+  155191, ['xor', 'edx,ecx']
+  155193, ['pop', 'edx']
+  155194, ['push', 'ebp']
+  155195, ['and', 'ebp,eax']
+  155197, ['cmp', 'ebx,ebp']
+  155199, ['jb', 'shortloc_25E4D']
+ next: [155201, 155213]
+
+node :385
+node DriverEntry(157032) info:
+ start: 157032
+ prev: []
+ instructions: 
+  157032, ['cmp', 'edx,edx']
+  157034, ['jbe', 'shortloc_26570']
+ next: [157036, 157040]
+
+node :386
+node DriverEntry(156951) info:
+ start: 156951
+ prev: []
+ instructions: 
+  156951, ['push', 'edx']
+  156952, ['mov', 'edx,ecx']
+  156954, ['cmp', 'ecx,edx']
+  156956, ['jb', 'shortloc_26532']
+ next: [156958, 156978]
+
+node :387
+node DriverEntry(156832) info:
+ start: 156832
+ prev: []
+ instructions: 
+  156832, ['push', 'edx']
+  156833, ['sub', 'edx,eax']
+  156835, ['cmp', 'ebp,eax']
+  156837, ['jnb', 'shortloc_264AB']
+ next: [156839, 156843]
+
+node :388
+node DriverEntry(153229) info:
+ start: 153229
+ prev: []
+ instructions: 
+  153229, ['push', 'edx']
+  153230, ['or', 'edx,edx']
+  153232, ['pop', 'edx']
+  153233, ['push', 'edx']
+  153234, ['and', 'edx,ecx']
+  153236, ['cmp', 'ebx,edx']
+  153238, ['jnb', 'shortloc_2569C']
+ next: [153240, 153244]
+
+node :389
+node DriverEntry(156763) info:
+ start: 156763
+ prev: []
+ instructions: 
+  156763, ['push', 'ebx']
+  156764, ['and', 'ebx,ebx']
+  156766, ['pop', 'ebx']
+  156767, ['push', 'ebx']
+  156768, ['and', 'ebx,ebx']
+  156770, ['cmp', 'ebx,ecx']
+  156772, ['jnz', 'shortloc_2647E']
+ next: [156774, 156798]
+
+node :390
+node DriverEntry(155545) info:
+ start: 155545
+ prev: []
+ instructions: 
+  155545, ['pop', 'edx']
+ next: [155546]
+
+node :391
+node DriverEntry(156947) info:
+ start: 156947
+ prev: []
+ instructions: 
+  156947, ['push', 'ebp']
+  156948, ['and', 'ebp,ebp']
+  156950, ['pop', 'ebp']
+ next: [156951]
+
+node :392
+node DriverEntry(156632) info:
+ start: 156632
+ prev: []
+ instructions: 
+  156632, ['cmp', 'dwordptr[esi],0']
+  156635, ['jnz', 'shortloc_263B4']
+ next: [156596, 156637]
+
+node :393
+node DriverEntry(156100) info:
+ start: 156100
+ prev: []
+ instructions: 
+  156100, ['pop', 'ebx']
+  156101, ['push', 'eax']
+  156102, ['xor', 'eax,ecx']
+  156104, ['cmp', 'ebx,edx']
+  156106, ['jz', 'shortloc_261D4']
+ next: [156108, 156116]
+
+node :394
+node DriverEntry(154985) info:
+ start: 154985
+ prev: []
+ instructions: 
+  154985, ['push', 'eax']
+  154986, ['xor', 'eax,edx']
+  154988, ['pop', 'eax']
+  154989, ['push', 'eax']
+  154990, ['sub', 'eax,ebx']
+  154992, ['cmp', 'ebx,ecx']
+  154994, ['jz', 'shortloc_25D78']
+ next: [154996, 155000]
+
+node :395
+node DriverEntry(153399) info:
+ start: 153399
+ prev: []
+ instructions: 
+  153399, ['push', 'edx']
+  153400, ['xor', 'edx,ebp']
+  153402, ['pop', 'edx']
+  153403, ['cmp', 'edx,ebp']
+  153405, ['jz', 'shortloc_25743']
+ next: [153407, 153411]
+
+node :396
+node DriverEntry(155855) info:
+ start: 155855
+ prev: []
+ instructions: 
+  155855, ['push', 'edx']
+  155856, ['xor', 'edx,eax']
+  155858, ['pop', 'edx']
+  155859, ['cmp', 'eax,ebp']
+  155861, ['jb', 'shortloc_260DB']
+ next: [155863, 155867]
+
+node :397
+node DriverEntry(157010) info:
+ start: 157010
+ prev: []
+ instructions: 
+  157010, ['push', 'eax']
+  157011, ['sub', 'eax,ecx']
+  157013, ['pop', 'eax']
+  157014, ['push', 'ecx']
+  157015, ['sub', 'ecx,ebx']
+  157017, ['pop', 'ecx']
+ next: [157018]
+
+node :398
+node DriverEntry(157018) info:
+ start: 157018
+ prev: []
+ instructions: 
+  157018, ['pop', 'ebx']
+  157019, ['cmp', 'ebp,ebp']
+  157021, ['jb', 'shortloc_26567']
+ next: [157023, 157031]
+
+node :399
+node DriverEntry(155546) info:
+ start: 155546
+ prev: []
+ instructions: 
+  155546, ['pop', 'ecx']
+  155547, ['push', 'ebp']
+  155548, ['xor', 'ebp,edx']
+  155550, ['cmp', 'ebp,ebx']
+  155552, ['jnb', 'shortloc_25FAA']
+ next: [155554, 155562]
+
+node :400
+node DriverEntry(155073) info:
+ start: 155073
+ prev: []
+ instructions: 
+  155073, ['pop', 'ebx']
+  155074, ['push', 'ebx']
+  155075, ['xor', 'ebx,ecx']
+  155077, ['pop', 'ebx']
+  155078, ['push', 'ebx']
+  155079, ['mov', 'ebx,ebp']
+  155081, ['cmp', 'edx,ecx']
+  155083, ['jbe', 'shortloc_25DD1']
+ next: [155085, 155089]
+
+node :401
+node DriverEntry(155541) info:
+ start: 155541
+ prev: []
+ instructions: 
+  155541, ['push', 'ebx']
+  155542, ['sub', 'ebx,ecx']
+  155544, ['pop', 'ebx']
+ next: [155545]
+
+node :402
+node DriverEntry(155072) info:
+ start: 155072
+ prev: []
+ instructions: 
+  155072, ['pop', 'ebp']
+ next: [155073]
+
+node :403
+node DriverEntry(156096) info:
+ start: 156096
+ prev: []
+ instructions: 
+  156096, ['push', 'edx']
+  156097, ['or', 'edx,eax']
+  156099, ['pop', 'edx']
+ next: [156100]
+
+node :404
+node DriverEntry(155068) info:
+ start: 155068
+ prev: []
+ instructions: 
+  155068, ['push', 'ebx']
+  155069, ['or', 'ebx,eax']
+  155071, ['pop', 'ebx']
+ next: [155072]
+
+node :405
+node sub_27363(160627) info:
+ start: 160627
+ prev: []
+ instructions: 
+  160627, ['cmp', 'esi,4']
+  160630, ['jnb', 'shortloc_2738C']
+ next: [160632, 160652]
+
+node :406
+node DriverEntry(156201) info:
+ start: 156201
+ prev: []
+ instructions: 
+  156201, ['push', 'ebp']
+  156202, ['and', 'ebp,eax']
+  156204, ['pop', 'ebp']
+ next: [156205]
+
+node :407
+node DriverEntry(153263) info:
+ start: 153263
+ prev: []
+ instructions: 
+  153263, ['push', 'ebp']
+  153264, ['and', 'ebp,ebx']
+  153266, ['pop', 'ebp']
+  153267, ['push', 'eax']
+  153268, ['xor', 'eax,ebp']
+  153270, ['cmp', 'ebp,ecx']
+  153272, ['jnb', 'shortloc_256BE']
+ next: [153274, 153278]
+
+node :408
+node DriverEntry(155201) info:
+ start: 155201
+ prev: []
+ instructions: 
+  155201, ['push', 'eax']
+  155202, ['xor', 'eax,ebp']
+  155204, ['pop', 'eax']
+  155205, ['cmp', 'eax,ebx']
+  155207, ['jnb', 'shortloc_25E4D']
+ next: [155209, 155213]
+
+node :409
+node DriverEntry(156266) info:
+ start: 156266
+ prev: []
+ instructions: 
+  156266, ['push', 'ecx']
+  156267, ['and', 'ecx,eax']
+  156269, ['pop', 'ecx']
+ next: [156270]
+
+node :410
+node sub_27363(160660) info:
+ start: 160660
+ prev: []
+ instructions: 
+  160660, ['cmp', 'eax,80h']
+  160665, ['jnb', 'shortloc_273A0']
+ next: [160667, 160672]
+
+node :411
+node DriverEntry(156270) info:
+ start: 156270
+ prev: []
+ instructions: 
+  156270, ['pop', 'edx']
+  156271, ['cmp', 'ecx,ecx']
+  156273, ['jnb', 'shortloc_2627B']
+ next: [156275, 156283]
+
+node :412
+node sub_2660B(157293) info:
+ start: 157293
+ prev: []
+ instructions: 
+  157293, ['mov', 'eax,[ecx+eax*4]']
+  157296, ['cmp', 'eax,edi']
+  157298, ['jb', 'shortloc_2667D']
+ next: [157300, 157309]
+
+node :413
+node DriverEntry(155209) info:
+ start: 155209
+ prev: []
+ instructions: 
+  155209, ['push', 'ebx']
+  155210, ['xor', 'ebx,ebx']
+  155212, ['pop', 'ebx']
+ next: [155213]
+
+node :414
+node DriverEntry(156774) info:
+ start: 156774
+ prev: []
+ instructions: 
+  156774, ['push', 'ebp']
+  156775, ['or', 'ebp,ebp']
+  156777, ['pop', 'ebp']
+  156778, ['push', 'eax']
+  156779, ['sub', 'eax,ecx']
+  156781, ['cmp', 'edx,ecx']
+  156783, ['jnb', 'shortloc_2647D']
+ next: [156785, 156797]
+
+node :415
+node sub_27363(160672) info:
+ start: 160672
+ prev: []
+ instructions: 
+  160672, ['cmp', 'eax,500h']
+  160677, ['jb', 'shortloc_273A8']
+ next: [160679, 160680]
+
+node :416
+node DriverEntry(153274) info:
+ start: 153274
+ prev: []
+ instructions: 
+  153274, ['push', 'eax']
+  153275, ['xor', 'eax,ecx']
+  153277, ['pop', 'eax']
+ next: [153278]
+
+node :417
+node sub_2660B(157324) info:
+ start: 157324
+ prev: []
+ instructions: 
+  157324, ['mov', 'al,[edi]']
+  157326, ['mov', 'ebx,[ebp+var_C]']
+  157329, ['mov', '[ebp+var_1],al']
+  157332, ['cmp', 'al,[ebx]']
+  157334, ['jnz', 'shortloc_266B5']
+ next: [157336, 157365]
+
+node :418
+node sub_27363(160679) info:
+ start: 160679
+ prev: []
+ instructions: 
+  160679, ['dec', 'esi']
+ next: [160680]
+
+node :419
+node DriverEntry(156283) info:
+ start: 156283
+ prev: []
+ instructions: 
+  156283, ['pop', 'ebp']
+ next: [156284]
+
+node :420
+node DriverEntry(156785) info:
+ start: 156785
+ prev: []
+ instructions: 
+  156785, ['push', 'edx']
+  156786, ['sub', 'edx,eax']
+  156788, ['pop', 'edx']
+  156789, ['cmp', 'ebp,ebx']
+  156791, ['jbe', 'shortloc_2647D']
+ next: [156793, 156797]
+
+node :421
+node DriverEntry(156285) info:
+ start: 156285
+ prev: []
+ instructions: 
+  156285, ['pop', 'ebp']
+ next: [156286]
+
+node :422
+node sub_2660B(157340) info:
+ start: 157340
+ prev: []
+ instructions: 
+  157340, ['mov', 'al,[edi+1]']
+  157343, ['mov', '[ebp+var_1],al']
+  157346, ['cmp', 'al,[ebx+1]']
+  157349, ['jnz', 'shortloc_266B5']
+ next: [157351, 157365]
+
+node :423
+node DriverEntry(156322) info:
+ start: 156322
+ prev: []
+ instructions: 
+  156322, ['push', 'ebp']
+  156323, ['xor', 'ebp,ebx']
+  156325, ['pop', 'ebp']
+  156326, ['push', 'ebx']
+  156327, ['and', 'ebx,ecx']
+  156329, ['cmp', 'ecx,edx']
+  156331, ['jbe', 'shortloc_262B1']
+ next: [156333, 156337]
+
+node :424
+node sub_26960(158515) info:
+ start: 158515
+ prev: []
+ instructions: 
+  158515, ['jmp', 'short$+2']
+ next: [158517]
+
+node :425
+node DriverEntry(156958) info:
+ start: 156958
+ prev: []
+ instructions: 
+  156958, ['push', 'ebp']
+  156959, ['sub', 'ebp,edx']
+  156961, ['pop', 'ebp']
+  156962, ['cmp', 'edx,ecx']
+  156964, ['jnb', 'shortloc_2652E']
+ next: [156966, 156974]
+
+node :426
+node sub_26960(158619) info:
+ start: 158619
+ prev: []
+ instructions: 
+  158619, ['push', '0']
+  158621, ['pop', 'dwordptrds:4018A0h']
+  158627, ['push', '0']
+  158629, ['pop', 'dwordptrds:4018A4h']
+ next: [158635]
+
+node :427
+node sub_2660B(157300) info:
+ start: 157300
+ prev: []
+ instructions: 
+  157300, ['mov', 'ebx,[ebp+var_10]']
+  157303, ['add', 'ebx,edi']
+  157305, ['cmp', 'eax,ebx']
+  157307, ['jb', 'shortloc_266C1']
+ next: [157309, 157377]
+
+node :428
+node DriverEntry(153278) info:
+ start: 153278
+ prev: []
+ instructions: 
+  153278, ['pop', 'eax']
+  153279, ['push', 'eax']
+  153280, ['sub', 'eax,ebx']
+  153282, ['cmp', 'ebx,ebx']
+  153284, ['jnb', 'shortloc_256CA']
+ next: [153286, 153290]
+
+node :429
+node DriverEntry(155213) info:
+ start: 155213
+ prev: []
+ instructions: 
+  155213, ['pop', 'ebp']
+ next: [155214]
+
+node :430
+node sub_26960(158617) info:
+ start: 158617
+ prev: []
+ instructions: 
+  158617, ['jmp', 'shortloc_26BAB']
+ next: [158635]
+
+node :431
+node sub_2660B(157336) info:
+ start: 157336
+ prev: []
+ instructions: 
+  157336, ['test', 'al,al']
+  157338, ['jz', 'shortloc_266B1']
+ next: [157340, 157361]
+
+node :432
+node DriverEntry(156793) info:
+ start: 156793
+ prev: []
+ instructions: 
+  156793, ['push', 'ecx']
+  156794, ['xor', 'ecx,eax']
+  156796, ['pop', 'ecx']
+ next: [156797]
+
+node :433
+node DriverEntry(156286) info:
+ start: 156286
+ prev: []
+ instructions: 
+  156286, ['pop', 'ebx']
+  156287, ['push', 'ebp']
+  156288, ['or', 'ebp,eax']
+  156290, ['pop', 'ebp']
+ next: [156291]
+
+node :434
+node DriverEntry(156337) info:
+ start: 156337
+ prev: []
+ instructions: 
+  156337, ['pop', 'ebx']
+ next: [156338]
+
+node :435
+node DriverEntry(155214) info:
+ start: 155214
+ prev: []
+ instructions: 
+  155214, ['pop', 'ecx']
+ next: [155215]
+
+node :436
+node DriverEntry(156173) info:
+ start: 156173
+ prev: []
+ instructions: 
+  156173, ['push', 'ebp']
+  156174, ['sub', 'ebp,edx']
+  156176, ['pop', 'ebp']
+ next: [156177]
+
+node :437
+node DriverEntry(153290) info:
+ start: 153290
+ prev: []
+ instructions: 
+  153290, ['pop', 'eax']
+ next: [153291]
+
+node :438
+node sub_2660B(157351) info:
+ start: 157351
+ prev: []
+ instructions: 
+  157351, ['add', '[ebp+var_C],2']
+  157355, ['inc', 'edi']
+  157356, ['inc', 'edi']
+  157357, ['test', 'al,al']
+  157359, ['jnz', 'shortloc_2668C']
+ next: [157324, 157361]
+
+node :439
+node sub_2660B(157309) info:
+ start: 157309
+ prev: []
+ instructions: 
+  157309, ['mov', 'eax,[ebp+arg_4]']
+  157312, ['mov', '[ebp+var_C],eax']
+  157315, ['mov', 'eax,[ebp+var_8]']
+  157318, ['mov', 'edi,[esi+eax*4]']
+  157321, ['add', 'edi,[ebp+arg_0]']
+ next: [157324]
+
+node :440
+node DriverEntry(157036) info:
+ start: 157036
+ prev: []
+ instructions: 
+  157036, ['push', 'eax']
+  157037, ['mov', 'eax,ebp']
+  157039, ['pop', 'eax']
+ next: [157040]
+
+node :441
+node DriverEntry(156839) info:
+ start: 156839
+ prev: []
+ instructions: 
+  156839, ['push', 'ebx']
+  156840, ['mov', 'ebx,eax']
+  156842, ['pop', 'ebx']
+ next: [156843]
+
+node :442
+node DriverEntry(157023) info:
+ start: 157023
+ prev: []
+ instructions: 
+  157023, ['push', 'ecx']
+  157024, ['mov', 'ecx,eax']
+  157026, ['pop', 'ecx']
+  157027, ['push', 'eax']
+  157028, ['mov', 'eax,eax']
+  157030, ['pop', 'eax']
+ next: [157031]
+
+node :443
+node DriverEntry(153240) info:
+ start: 153240
+ prev: []
+ instructions: 
+  153240, ['push', 'ecx']
+  153241, ['mov', 'ecx,ecx']
+  153243, ['pop', 'ecx']
+ next: [153244]
+
+node :444
+node DriverEntry(156333) info:
+ start: 156333
+ prev: []
+ instructions: 
+  156333, ['push', 'edx']
+  156334, ['xor', 'edx,ecx']
+  156336, ['pop', 'edx']
+ next: [156337]
+
+node :445
+node DriverEntry(156974) info:
+ start: 156974
+ prev: []
+ instructions: 
+  156974, ['push', 'ebx']
+  156975, ['mov', 'ebx,ebp']
+  156977, ['pop', 'ebx']
+ next: [156978]
+
+node :446
+node DriverEntry(156275) info:
+ start: 156275
+ prev: []
+ instructions: 
+  156275, ['push', 'ecx']
+  156276, ['xor', 'ecx,eax']
+  156278, ['pop', 'ecx']
+  156279, ['push', 'ebp']
+  156280, ['or', 'ebp,ebx']
+  156282, ['pop', 'ebp']
+ next: [156283]
+
+node :447
+node sub_2660B(157271) info:
+ start: 157271
+ prev: []
+ instructions: 
+  157271, ['mov', 'eax,[ebp+var_8]']
+  157274, ['cmp', 'eax,[ebp+var_14]']
+  157277, ['movsx', 'ebx,wordptr[edx+eax*2]']
+  157281, ['mov', '[ebp+var_18],ebx']
+  157284, ['jnb', 'shortloc_266E1']
+ next: [157286, 157409]
+
+node :448
+node DriverEntry(154996) info:
+ start: 154996
+ prev: []
+ instructions: 
+  154996, ['push', 'eax']
+  154997, ['and', 'eax,ebp']
+  154999, ['pop', 'eax']
+ next: [155000]
+
+node :449
+node DriverEntry(156108) info:
+ start: 156108
+ prev: []
+ instructions: 
+  156108, ['push', 'ecx']
+  156109, ['sub', 'ecx,ecx']
+  156111, ['pop', 'ecx']
+  156112, ['push', 'edx']
+  156113, ['and', 'edx,eax']
+  156115, ['pop', 'edx']
+ next: [156116]
+
+node :450
+node DriverEntry(155863) info:
+ start: 155863
+ prev: []
+ instructions: 
+  155863, ['push', 'ecx']
+  155864, ['and', 'ecx,edx']
+  155866, ['pop', 'ecx']
+ next: [155867]
+
+node :451
+node DriverEntry(153407) info:
+ start: 153407
+ prev: []
+ instructions: 
+  153407, ['push', 'edx']
+  153408, ['mov', 'edx,eax']
+  153410, ['pop', 'edx']
+ next: [153411]
+
+node :452
+node DriverEntry(155554) info:
+ start: 155554
+ prev: []
+ instructions: 
+  155554, ['push', 'edx']
+  155555, ['sub', 'edx,ecx']
+  155557, ['pop', 'edx']
+  155558, ['push', 'eax']
+  155559, ['mov', 'eax,ebx']
+  155561, ['pop', 'eax']
+ next: [155562]
+
+node :453
+node DriverEntry(156797) info:
+ start: 156797
+ prev: []
+ instructions: 
+  156797, ['pop', 'eax']
+ next: [156798]
+
+node :454
+node DriverEntry(155085) info:
+ start: 155085
+ prev: []
+ instructions: 
+  155085, ['push', 'ebp']
+  155086, ['or', 'ebp,ecx']
+  155088, ['pop', 'ebp']
+ next: [155089]
+
+node :455
+node DriverEntry(156284) info:
+ start: 156284
+ prev: []
+ instructions: 
+  156284, ['pop', 'ecx']
+ next: [156285]
+
+node :456
+node DriverEntry(156966) info:
+ start: 156966
+ prev: []
+ instructions: 
+  156966, ['push', 'edx']
+  156967, ['or', 'edx,edx']
+  156969, ['pop', 'edx']
+  156970, ['push', 'ebx']
+  156971, ['xor', 'ebx,ebx']
+  156973, ['pop', 'ebx']
+ next: [156974]
+
+node :457
+node DriverEntry(153286) info:
+ start: 153286
+ prev: []
+ instructions: 
+  153286, ['push', 'ebx']
+  153287, ['and', 'ebx,eax']
+  153289, ['pop', 'ebx']
+ next: [153290]
+
+node :458
+node sub_2660B(157286) info:
+ start: 157286
+ prev: []
+ instructions: 
+  157286, ['mov', 'eax,ebx']
+  157288, ['cmp', 'eax,[ebp+var_20]']
+  157291, ['jnb', 'shortloc_266E1']
+ next: [157293, 157409]
+
+node :459
+node sub_26960(158635) info:
+ start: 158635
+ prev: []
+ instructions: 
+  158635, ['push', '[ebp+var_1C]']
+  158638, ['call', 'sub_268A1']
+  158643, ['or', 'eax,eax']
+  158645, ['jz', 'shortloc_26BF4']
+ next: [158647, 158708]
+
+node :460
+node sub_26FE0(159812) info:
+ start: 159812
+ prev: []
+ instructions: 
+  159812, ['mov', 'cl,[eax]']
+  159814, ['shl', 'cl,1']
+ next: [159816]
+
+node :461
+node sub_26FE0(159804) info:
+ start: 159804
+ prev: []
+ instructions: 
+  159804, ['mov', 'cl,[eax]']
+  159806, ['shl', 'cl,1']
+  159808, ['inc', 'cl']
+  159810, ['jmp', 'shortloc_27048']
+ next: [159816]
+
+node :462
+node sub_27363(160680) info:
+ start: 160680
+ prev: []
+ instructions: 
+  160680, ['cmp', 'eax,7D00h']
+  160685, ['jb', 'shortloc_273B0']
+ next: [160687, 160688]
+
+node :463
+node sub_26960(158517) info:
+ start: 158517
+ prev: []
+ instructions: 
+  158517, ['push', '[ebp+var_1C]']
+  158520, ['call', 'sub_2686D']
+  158525, ['or', 'eax,eax']
+  158527, ['jz', 'shortloc_26B9B']
+ next: [158529, 158619]
+
+node :464
+node DriverEntry(156618) info:
+ start: 156618
+ prev: []
+ instructions: 
+  156618, ['push', 'ebp']
+  156619, ['push', 'eax']
+  156620, ['push', 'ecx']
+  156621, ['call', 'sub_265C7']
+  156626, ['or', 'eax,eax']
+  156628, ['jz', 'shortloc_263D7']
+ next: [156630, 156631]
+
+node :465
+node sub_26FE0(159816) info:
+ start: 159816
+ prev: []
+ instructions: 
+  159816, ['mov', '[eax],cl']
+  159818, ['dec', 'dwordptrds:406540h']
+  159824, ['jnz', 'shortloc_2706E']
+ next: [159826, 159854]
+
+node :466
+node sub_26839(157793) info:
+ start: 157793
+ prev: []
+ instructions: 
+  157793, ['dec', 'ebx']
+ next: [157794]
+
+node :467
+node sub_2686D(157845) info:
+ start: 157845
+ prev: []
+ instructions: 
+  157845, ['dec', 'ebx']
+ next: [157846]
+
+node :468
+node sub_268D5(157949) info:
+ start: 157949
+ prev: []
+ instructions: 
+  157949, ['dec', 'ebx']
+ next: [157950]
+
+node :469
+node sub_27363(160667) info:
+ start: 160667
+ prev: []
+ instructions: 
+  160667, ['sub', 'esi,2']
+  160670, ['jmp', 'shortloc_273B0']
+ next: [160688]
+
+node :470
+node sub_26839(157753) info:
+ start: 157753
+ prev: []
+ instructions: 
+  157753, ['push', 'ebp']
+  157754, ['mov', 'ebp,esp']
+  157756, ['push', 'ebx']
+  157757, ['push', '[ebp+arg_0]']
+  157760, ['call', 'loc_25333']
+  157765, ['mov', 'ebx,eax']
+  157767, ['jmp', 'shortloc_26862']
+ next: [157794]
+
+node :471
+node sub_2686D(157805) info:
+ start: 157805
+ prev: []
+ instructions: 
+  157805, ['push', 'ebp']
+  157806, ['mov', 'ebp,esp']
+  157808, ['push', 'ebx']
+  157809, ['push', '[ebp+arg_0]']
+  157812, ['call', 'loc_25333']
+  157817, ['mov', 'ebx,eax']
+  157819, ['jmp', 'shortloc_26896']
+ next: [157846]
+
+node :472
+node sub_268A1(157857) info:
+ start: 157857
+ prev: []
+ instructions: 
+  157857, ['push', 'ebp']
+  157858, ['mov', 'ebp,esp']
+  157860, ['push', 'ebx']
+  157861, ['push', '[ebp+arg_0]']
+  157864, ['call', 'loc_25333']
+  157869, ['mov', 'ebx,eax']
+  157871, ['jmp', 'shortloc_268CA']
+ next: [157898]
+
+node :473
+node sub_27363(160632) info:
+ start: 160632
+ prev: []
+ instructions: 
+  160632, ['cmp', 'eax,ds:406548h']
+  160638, ['jz', 'shortloc_273CF']
+ next: [160640, 160719]
+
+node :474
+node sub_268A1(157897) info:
+ start: 157897
+ prev: []
+ instructions: 
+  157897, ['dec', 'ebx']
+ next: [157898]
+
+node :475
+node sub_27363(160687) info:
+ start: 160687
+ prev: []
+ instructions: 
+  160687, ['dec', 'esi']
+ next: [160688]
+
+node :476
+node DriverEntry(156565) info:
+ start: 156565
+ prev: []
+ instructions: 
+  156565, ['mov', 'eax,[edi+0Ch]']
+  156568, ['add', 'eax,ebx']
+  156570, ['push', 'ebp']
+  156571, ['push', 'eax']
+  156572, ['call', 'sub_265E3']
+  156577, ['mov', 'esi,[edi]']
+  156579, ['or', 'esi,esi']
+  156581, ['jnz', 'shortloc_263AA']
+ next: [156583, 156586]
+
+node :477
+node sub_268D5(157909) info:
+ start: 157909
+ prev: []
+ instructions: 
+  157909, ['push', 'ebp']
+  157910, ['mov', 'ebp,esp']
+  157912, ['push', 'ebx']
+  157913, ['push', '[ebp+arg_0]']
+  157916, ['call', 'loc_25333']
+  157921, ['mov', 'ebx,eax']
+  157923, ['jmp', 'shortloc_268FE']
+ next: [157950]
+
+node :478
+node sub_2660B(157361) info:
+ start: 157361
+ prev: []
+ instructions: 
+  157361, ['xor', 'eax,eax']
+  157363, ['jmp', 'shortloc_266BA']
+ next: [157370]
+
+node :479
+node sub_26FE0(159854) info:
+ start: 159854
+ prev: []
+ instructions: 
+  159854, ['mov', 'eax,ds:40653Ch']
+ next: [159859]
+
+node :480
+node sub_2660B(157365) info:
+ start: 157365
+ prev: []
+ instructions: 
+  157365, ['sbb', 'eax,eax']
+  157367, ['sbb', 'eax,0FFFFFFFFh']
+ next: [157370]
+
+node :481
+node sub_26839(157794) info:
+ start: 157794
+ prev: []
+ instructions: 
+  157794, ['or', 'ebx,ebx']
+  157796, ['jnz', 'shortloc_26849']
+ next: [157769, 157798]
+
+node :482
+node sub_265C7(157127) info:
+ start: 157127
+ prev: []
+ instructions: 
+  157127, ['push', 'ebp']
+  157128, ['mov', 'ebp,esp']
+  157130, ['mov', 'eax,[ebp+arg_0]']
+  157133, ['mov', 'edx,[ebp+arg_4]']
+  157136, ['push', 'ebp']
+  157137, ['mov', 'ebp,[ebp+arg_8]']
+  157140, ['push', '[ebp+arg_8]']
+  157143, ['push', 'edx']
+  157144, ['push', 'eax']
+  157145, ['call', 'sub_2660B']
+  157150, ['pop', 'ebp']
+  157151, ['leave']
+  157152, ['retn', '0Ch']
+ next: []
+
+node :483
+node sub_26960(158048) info:
+ start: 158048
+ prev: []
+ instructions: 
+  158048, ['push', 'ebp']
+  158049, ['mov', 'ebp,esp']
+  158051, ['add', 'esp,0FFFFFFE0h']
+  158054, ['push', 'ebx']
+  158055, ['push', 'esi']
+  158056, ['lea', 'eax,[ebp+var_10]']
+  158059, ['push', 'eax']
+  158060, ['push', 'dwordptrds:406000h']
+  158066, ['call', 'loc_25347']
+  158071, ['or', 'eax,eax']
+  158073, ['jz', 'loc_26C78']
+ next: [158079, 158840]
+
+node :484
+node sub_2686D(157846) info:
+ start: 157846
+ prev: []
+ instructions: 
+  157846, ['or', 'ebx,ebx']
+  157848, ['jnz', 'shortloc_2687D']
+ next: [157821, 157850]
+
+node :485
+node DriverEntry(156630) info:
+ start: 156630
+ prev: []
+ instructions: 
+  156630, ['stosd']
+ next: [156631]
+
+node :486
+node sub_26FE0(159826) info:
+ start: 159826
+ prev: []
+ instructions: 
+  159826, ['mov', 'edx,ds:406534h']
+  159832, ['mov', 'eax,edx']
+  159834, ['inc', 'edx']
+  159835, ['mov', 'ds:406540h,edi']
+  159841, ['mov', 'ds:40653Ch,eax']
+  159846, ['mov', 'ds:406534h,edx']
+  159852, ['jmp', 'shortloc_27073']
+ next: [159859]
+
+node :487
+node sub_268A1(157898) info:
+ start: 157898
+ prev: []
+ instructions: 
+  157898, ['or', 'ebx,ebx']
+  157900, ['jnz', 'shortloc_268B1']
+ next: [157873, 157902]
+
+node :488
+node DriverEntry(156583) info:
+ start: 156583
+ prev: []
+ instructions: 
+  156583, ['mov', 'esi,[edi+10h]']
+ next: [156586]
+
+node :489
+node sub_27363(160688) info:
+ start: 160688
+ prev: []
+ instructions: 
+  160688, ['shr', 'eax,8']
+  160691, ['add', 'eax,3']
+  160694, ['push', 'edi']
+  160695, ['push', 'eax']
+  160696, ['call', 'sub_26E65']
+  160701, ['push', 'esi']
+  160702, ['mov', 'edi,eax']
+  160704, ['call', 'sub_26E65']
+  160709, ['add', 'esp,8']
+  160712, ['lea', 'eax,[edi+eax+0Ah]']
+  160716, ['pop', 'edi']
+  160717, ['pop', 'esi']
+  160718, ['retn']
+ next: []
+
+node :490
+node sub_27363(160719) info:
+ start: 160719
+ prev: []
+ instructions: 
+  160719, ['push', 'esi']
+  160720, ['call', 'sub_26E65']
+  160725, ['add', 'esp,4']
+  160728, ['add', 'eax,4']
+  160731, ['pop', 'esi']
+  160732, ['retn']
+ next: []
+
+node :491
+node sub_268D5(157950) info:
+ start: 157950
+ prev: []
+ instructions: 
+  157950, ['or', 'ebx,ebx']
+  157952, ['jnz', 'shortloc_268E5']
+ next: [157925, 157954]
+
+node :492
+node DriverEntry(156631) info:
+ start: 156631
+ prev: []
+ instructions: 
+  156631, ['pop', 'eax']
+ next: [156632]
+
+node :493
+node DriverEntry(156586) info:
+ start: 156586
+ prev: []
+ instructions: 
+  156586, ['push', 'edi']
+  156587, ['mov', 'edi,[edi+10h]']
+  156590, ['add', 'edi,ebx']
+  156592, ['add', 'esi,ebx']
+  156594, ['jmp', 'shortloc_263D8']
+ next: [156632]
+
+node :494
+node sub_26960(158353) info:
+ start: 158353
+ prev: []
+ instructions: 
+  158353, ['xor', 'byteptr[esi],33h']
+  158356, ['inc', 'esi']
+  158357, ['dec', 'ecx']
+ next: [158358]
+
+node :495
+node sub_26960(158079) info:
+ start: 158079
+ prev: []
+ instructions: 
+  158079, ['push', '[ebp+var_8]']
+  158082, ['pop', '[ebp+var_1C]']
+  158085, ['mov', 'eax,[ebp+var_1C]']
+  158088, ['mov', 'eax,[eax+3Ch]']
+  158091, ['add', 'eax,[ebp+var_1C]']
+  158094, ['mov', 'eax,[eax+0A0h]']
+  158100, ['mov', 'ds:401888h,eax']
+  158105, ['mov', 'eax,[ebp+var_1C]']
+  158108, ['mov', 'eax,[eax+3Ch]']
+  158111, ['add', 'eax,[ebp+var_1C]']
+  158114, ['mov', 'eax,[eax+0A4h]']
+  158120, ['mov', 'ds:40188Ch,eax']
+  158125, ['mov', 'eax,[ebp+var_1C]']
+  158128, ['mov', 'eax,[eax+3Ch]']
+  158131, ['add', 'eax,[ebp+var_1C]']
+  158134, ['mov', 'eax,[eax+80h]']
+  158140, ['mov', 'ds:4018B0h,eax']
+  158145, ['mov', 'eax,[ebp+var_1C]']
+  158148, ['mov', 'eax,[eax+3Ch]']
+  158151, ['add', 'eax,[ebp+var_1C]']
+  158154, ['push', 'dwordptr[eax+34h]']
+  158157, ['pop', 'dwordptrds:401880h']
+  158163, ['push', 'dwordptr[eax+34h]']
+  158166, ['pop', 'dwordptrds:401884h']
+  158172, ['mov', 'eax,[ebp+var_1C]']
+  158175, ['mov', 'eax,[eax+3Ch]']
+  158178, ['add', 'eax,[ebp+var_1C]']
+  158181, ['mov', 'eax,[eax+28h]']
+  158184, ['mov', 'ds:4022ADh,eax']
+  158189, ['push', '1']
+  158191, ['push', '24F4h']
+  158196, ['push', '[ebp+var_1C]']
+  158199, ['call', 'nearptrunk_25471']
+  158204, ['mov', 'ebx,eax']
+  158206, ['add', 'ds:401840h,ebx']
+  158212, ['add', 'ds:40184Ch,ebx']
+  158218, ['add', 'ds:401850h,ebx']
+  158224, ['add', 'ds:401868h,ebx']
+  158230, ['add', 'ds:40186Ch,ebx']
+  158236, ['add', 'ds:401870h,ebx']
+  158242, ['add', 'ds:401874h,ebx']
+  158248, ['add', 'ds:401878h,ebx']
+  158254, ['mov', 'ds:40193Eh,ebx']
+  158260, ['mov', 'eax,[ebp+var_1C]']
+  158263, ['mov', 'eax,[eax+3Ch]']
+  158266, ['add', 'eax,[ebp+var_1C]']
+  158269, ['mov', 'edx,ebx']
+  158271, ['add', 'edx,6D3h']
+  158277, ['mov', '[eax+0A0h],edx']
+  158283, ['mov', 'dwordptr[eax+0A4h],0Ch']
+  158293, ['push', '[ebp+var_1C]']
+  158296, ['push', '0']
+  158298, ['call', 'loc_253DB']
+  158303, ['mov', 'dwordptr[eax+24h],0E8000020h']
+  158310, ['push', 'dwordptr[eax+0Ch]']
+  158313, ['pop', 'dwordptrds:401890h']
+  158319, ['push', 'eax']
+  158320, ['push', 'dwordptr[eax+8]']
+  158323, ['push', 'dwordptr[eax+10h]']
+  158326, ['call', 'nearptrunk_25569']
+  158331, ['push', 'eax']
+  158332, ['pop', 'dwordptrds:401894h']
+  158338, ['pop', 'eax']
+  158339, ['mov', 'esi,[ebp+var_1C]']
+  158342, ['add', 'esi,[eax+14h]']
+  158345, ['mov', 'ecx,ds:401894h']
+  158351, ['jmp', 'shortloc_26A96']
+ next: [158358]
+
+node :496
+node sub_26732(157521) info:
+ start: 157521
+ prev: []
+ instructions: 
+  157521, ['cmp', 'esi,ebx']
+  157523, ['jz', 'shortloc_2677E']
+ next: [157525, 157566]
+
+node :497
+node sub_26839(157769) info:
+ start: 157769
+ prev: []
+ instructions: 
+  157769, ['push', '[ebp+arg_0]']
+  157772, ['push', 'ebx']
+  157773, ['call', 'loc_253DB']
+  157778, ['lea', 'edx,[eax]']
+  157780, ['cmp', 'dwordptr[edx],7461642Eh']
+  157786, ['jnz', 'shortloc_26861']
+ next: [157788, 157793]
+
+node :498
+node sub_268A1(157873) info:
+ start: 157873
+ prev: []
+ instructions: 
+  157873, ['push', '[ebp+arg_0]']
+  157876, ['push', 'ebx']
+  157877, ['call', 'loc_253DB']
+  157882, ['lea', 'edx,[eax]']
+  157884, ['cmp', 'dwordptr[edx],54494E49h']
+  157890, ['jnz', 'shortloc_268C9']
+ next: [157892, 157897]
+
+node :499
+node sub_268D5(157925) info:
+ start: 157925
+ prev: []
+ instructions: 
+  157925, ['push', '[ebp+arg_0]']
+  157928, ['push', 'ebx']
+  157929, ['call', 'loc_253DB']
+  157934, ['lea', 'edx,[eax]']
+  157936, ['cmp', 'dwordptr[edx],45474150h']
+  157942, ['jnz', 'shortloc_268FD']
+ next: [157944, 157949]
+
+node :500
+node sub_2686D(157821) info:
+ start: 157821
+ prev: []
+ instructions: 
+  157821, ['push', '[ebp+arg_0]']
+  157824, ['push', 'ebx']
+  157825, ['call', 'loc_253DB']
+  157830, ['lea', 'edx,[eax]']
+  157832, ['cmp', 'dwordptr[edx],6164722Eh']
+  157838, ['jnz', 'shortloc_26895']
+ next: [157840, 157845]
+
+node :501
+node sub_26E65(159359) info:
+ start: 159359
+ prev: []
+ instructions: 
+  159359, ['cmp', 'eax,8']
+  159362, ['jge', 'shortloc_26E8A']
+ next: [159364, 159370]
+
+node :502
+node sub_26E65(159333) info:
+ start: 159333
+ prev: []
+ instructions: 
+  159333, ['mov', 'eax,[esp+arg_0]']
+  159337, ['cmp', 'eax,2']
+  159340, ['jge', 'shortloc_26E74']
+ next: [159342, 159348]
+
+node :503
+node sub_26E65(159455) info:
+ start: 159455
+ prev: []
+ instructions: 
+  159455, ['cmp', 'eax,800h']
+  159460, ['jge', 'shortloc_26EEC']
+ next: [159462, 159468]
+
+node :504
+node sub_26E65(159370) info:
+ start: 159370
+ prev: []
+ instructions: 
+  159370, ['cmp', 'eax,10h']
+  159373, ['jge', 'shortloc_26E95']
+ next: [159375, 159381]
+
+node :505
+node sub_26E65(159348) info:
+ start: 159348
+ prev: []
+ instructions: 
+  159348, ['cmp', 'eax,4']
+  159351, ['jge', 'shortloc_26E7F']
+ next: [159353, 159359]
+
+node :506
+node sub_26E65(159468) info:
+ start: 159468
+ prev: []
+ instructions: 
+  159468, ['cmp', 'eax,1000h']
+  159473, ['jge', 'shortloc_26EF9']
+ next: [159475, 159481]
+
+node :507
+node sub_26E65(159429) info:
+ start: 159429
+ prev: []
+ instructions: 
+  159429, ['cmp', 'eax,200h']
+  159434, ['jge', 'shortloc_26ED2']
+ next: [159436, 159442]
+
+node :508
+node sub_26E65(159442) info:
+ start: 159442
+ prev: []
+ instructions: 
+  159442, ['cmp', 'eax,400h']
+  159447, ['jge', 'shortloc_26EDF']
+ next: [159449, 159455]
+
+node :509
+node sub_26E65(159381) info:
+ start: 159381
+ prev: []
+ instructions: 
+  159381, ['cmp', 'eax,20h']
+  159384, ['jge', 'shortloc_26EA0']
+ next: [159386, 159392]
+
+node :510
+node sub_26E65(159416) info:
+ start: 159416
+ prev: []
+ instructions: 
+  159416, ['cmp', 'eax,100h']
+  159421, ['jge', 'shortloc_26EC5']
+ next: [159423, 159429]
+
+node :511
+node sub_26E65(159392) info:
+ start: 159392
+ prev: []
+ instructions: 
+  159392, ['cmp', 'eax,40h']
+  159395, ['jge', 'shortloc_26EAB']
+ next: [159397, 159403]
+
+node :512
+node sub_26E65(159403) info:
+ start: 159403
+ prev: []
+ instructions: 
+  159403, ['cmp', 'eax,80h']
+  159408, ['jge', 'shortloc_26EB8']
+ next: [159410, 159416]
+
+node :513
+node sub_26732(157525) info:
+ start: 157525
+ prev: []
+ instructions: 
+  157525, ['mov', 'esi,edi']
+  157527, ['cmp', 'dwordptr[esi+30h],0']
+  157531, ['mov', 'edi,[edi+4]']
+  157534, ['jnz', 'shortloc_26740']
+ next: [157504, 157536]
+
+node :514
+node DriverEntry(156606) info:
+ start: 156606
+ prev: []
+ instructions: 
+  156606, ['and', 'eax,7FFFFFFFh']
+  156611, ['jmp', 'shortloc_263CA']
+ next: [156618]
+
+node :515
+node DriverEntry(156613) info:
+ start: 156613
+ prev: []
+ instructions: 
+  156613, ['add', 'eax,ebx']
+  156615, ['add', 'eax,2']
+ next: [156618]
+
+node :516
+node sub_2660B(157374) info:
+ start: 157374
+ prev: []
+ instructions: 
+  157374, ['mov', 'edi,[ebp+var_24]']
+ next: [157377]
+
+node :517
+node sub_26732(157490) info:
+ start: 157490
+ prev: []
+ instructions: 
+  157490, ['pop', 'dwordptr[ebp-8]']
+  157493, ['mov', 'esi,[ebx+4]']
+  157496, ['cmp', '[esi+30h],ecx']
+  157499, ['mov', 'edi,[esi+4]']
+  157502, ['jz', 'shortloc_2677E']
+ next: [157504, 157566]
+
+node :518
+node sub_26FE0(159752) info:
+ start: 159752
+ prev: []
+ instructions: 
+  159752, ['push', 'esi']
+  159753, ['mov', 'esi,ecx']
+  159755, ['add', 'eax,0']
+ next: [159758]
+
+node :519
+node sub_26FE0(159872) info:
+ start: 159872
+ prev: []
+ instructions: 
+  159872, ['pop', 'esi']
+ next: [159873]
+
+node :520
+node sub_2660B(157377) info:
+ start: 157377
+ prev: []
+ instructions: 
+  157377, ['inc', '[ebp+var_8]']
+  157380, ['mov', 'eax,[ebp+var_8]']
+  157383, ['cmp', 'eax,[ebp+var_14]']
+  157386, ['jb', 'shortloc_26657']
+ next: [157271, 157388]
+
+node :521
+node sub_2660B(157195) info:
+ start: 157195
+ prev: []
+ instructions: 
+  157195, ['mov', 'edi,edi']
+  157197, ['push', 'ebp']
+  157198, ['mov', 'ebp,esp']
+  157200, ['sub', 'esp,24h']
+  157203, ['push', 'ebx']
+  157204, ['push', 'esi']
+  157205, ['mov', 'esi,[ebp+arg_0]']
+  157208, ['push', 'edi']
+  157209, ['xor', 'eax,eax']
+  157211, ['lea', 'ecx,[ebp+var_10]']
+  157214, ['push', 'ecx']
+  157215, ['push', 'eax']
+  157216, ['push', '1']
+  157218, ['push', 'esi']
+  157219, ['mov', '[ebp+var_1C],eax']
+  157222, ['mov', '[ebp+var_10],eax']
+  157225, ['call', '[ebp+arg_8]']
+  157228, ['mov', 'ecx,[eax+1Ch]']
+  157231, ['mov', 'edx,[eax+24h]']
+  157234, ['mov', 'ebx,[eax+18h]']
+  157237, ['and', '[ebp+var_8],0']
+  157241, ['mov', 'edi,eax']
+  157243, ['sub', 'edi,esi']
+  157245, ['add', 'ecx,esi']
+  157247, ['add', 'edx,esi']
+  157249, ['mov', 'esi,[eax+20h]']
+  157252, ['add', 'esi,[ebp+arg_0]']
+  157255, ['test', 'ebx,ebx']
+  157257, ['mov', 'eax,[eax+14h]']
+  157260, ['mov', '[ebp+var_24],edi']
+  157263, ['mov', '[ebp+var_14],ebx']
+  157266, ['mov', '[ebp+var_20],eax']
+  157269, ['jbe', 'shortloc_266CC']
+ next: [157271, 157388]
+
+node :522
+node sub_2660B(157370) info:
+ start: 157370
+ prev: []
+ instructions: 
+  157370, ['test', 'eax,eax']
+  157372, ['jz', 'shortloc_266D6']
+ next: [157374, 157398]
+
+node :523
+node sub_26E65(159481) info:
+ start: 159481
+ prev: []
+ instructions: 
+  159481, ['cmp', 'eax,2000h']
+  159486, ['jge', 'shortloc_26F06']
+ next: [159488, 159494]
+
+node :524
+node sub_26CC7(158919) info:
+ start: 158919
+ prev: []
+ instructions: 
+  158919, ['push', 'ebp']
+  158920, ['mov', 'ebp,esp']
+  158922, ['add', 'esp,0FFFFFEA8h']
+  158928, ['push', 'edi']
+  158929, ['push', 'ebx']
+  158930, ['cld']
+  158931, ['mov', 'edx,4Ch']
+  158936, ['mov', 'ecx,edx']
+  158938, ['xor', 'eax,eax']
+  158940, ['lea', 'edi,[ebp+var_4C]']
+  158943, ['rep', 'stosb']
+  158945, ['mov', '[ebp+var_155],0']
+  158952, ['lea', 'edi,[ebp+var_4C]']
+  158955, ['mov', '[edi],edx']
+  158957, ['push', '[ebp+arg_0]']
+  158960, ['pop', 'dwordptr[edi+4]']
+  158963, ['mov', 'dwordptr[edi+18h],1']
+  158970, ['lea', 'eax,ds:406004h']
+  158976, ['mov', '[edi+0Ch],eax']
+  158979, ['mov', 'dwordptr[edi+20h],104h']
+  158986, ['lea', 'eax,[ebp+var_155]']
+  158992, ['mov', '[edi+1Ch],eax']
+  158995, ['mov', 'dwordptr[edi+34h],881804h']
+  159002, ['lea', 'eax,[ebp+var_4C]']
+  159005, ['push', 'eax']
+  159006, ['call', 'nearptr283D9h']
+  159011, ['test', 'eax,eax']
+  159013, ['jz', 'shortloc_26D51']
+ next: [159015, 159057]
+
+node :525
+node sub_26FE0(159744) info:
+ start: 159744
+ prev: []
+ instructions: 
+  159744, ['dec', 'ecx']
+  159745, ['mov', 'edi,8']
+  159750, ['jz', 'shortloc_27081']
+ next: [159752, 159873]
+
+node :526
+node sub_26FE0(159859) info:
+ start: 159859
+ prev: []
+ instructions: 
+  159859, ['mov', 'dl,[eax]']
+  159861, ['shl', 'dl,1']
+  159863, ['inc', 'dl']
+  159865, ['shr', 'ebx,1']
+  159867, ['dec', 'esi']
+  159868, ['mov', '[eax],dl']
+  159870, ['jnz', 'shortloc_2700E']
+ next: [159758, 159872]
+
+node :527
+node sub_26F31(159537) info:
+ start: 159537
+ prev: []
+ instructions: 
+  159537, ['dec', 'dwordptrds:406540h']
+  159543, ['jnz', 'shortloc_26F59']
+ next: [159545, 159577]
+
+node :528
+node sub_26FE0(159873) info:
+ start: 159873
+ prev: []
+ instructions: 
+  159873, ['dec', 'dwordptrds:406540h']
+  159879, ['jnz', 'shortloc_270A5']
+ next: [159881, 159909]
+
+node :529
+node sub_26FE0(159758) info:
+ start: 159758
+ prev: []
+ instructions: 
+  159758, ['dec', 'dwordptrds:406540h']
+  159764, ['jnz', 'shortloc_27032']
+ next: [159766, 159794]
+
+node :530
+node sub_26FE0(159927) info:
+ start: 159927
+ prev: []
+ instructions: 
+  159927, ['mov', 'cl,[eax]']
+  159929, ['shl', 'cl,1']
+ next: [159931]
+
+node :531
+node sub_26CC7(159015) info:
+ start: 159015
+ prev: []
+ instructions: 
+  159015, ['lea', 'eax,[ebp+var_155]']
+  159021, ['push', 'eax']
+  159022, ['call', 'nearptr28385h']
+  159027, ['cmp', 'eax,3']
+  159030, ['jz', 'shortloc_26D51']
+ next: [159032, 159057]
+
+node :532
+node sub_26E65(159494) info:
+ start: 159494
+ prev: []
+ instructions: 
+  159494, ['cmp', 'eax,4000h']
+  159499, ['jge', 'shortloc_26F13']
+ next: [159501, 159507]
+
+node :533
+node sub_26FE0(159919) info:
+ start: 159919
+ prev: []
+ instructions: 
+  159919, ['mov', 'cl,[eax]']
+  159921, ['shl', 'cl,1']
+  159923, ['inc', 'cl']
+  159925, ['jmp', 'shortloc_270BB']
+ next: [159931]
+
+node :534
+node sub_26960(158702) info:
+ start: 158702
+ prev: []
+ instructions: 
+  158702, ['or', 'ecx,ecx']
+  158704, ['jnz', 'shortloc_26BE9']
+ next: [158697, 158706]
+
+node :535
+node sub_26E65(159507) info:
+ start: 159507
+ prev: []
+ instructions: 
+  159507, ['cmp', 'eax,8000h']
+  159512, ['jge', 'shortloc_26F20']
+ next: [159514, 159520]
+
+node :536
+node sub_26960(158529) info:
+ start: 158529
+ prev: []
+ instructions: 
+  158529, ['mov', 'dwordptr[eax+24h],0E8000040h']
+  158536, ['push', 'dwordptr[eax+0Ch]']
+  158539, ['pop', 'dwordptrds:4018A0h']
+  158545, ['push', 'eax']
+  158546, ['push', 'dwordptr[eax+8]']
+  158549, ['push', 'dwordptr[eax+10h]']
+  158552, ['call', 'nearptrunk_25569']
+  158557, ['push', 'eax']
+  158558, ['pop', 'dwordptrds:4018A4h']
+  158564, ['pop', 'eax']
+  158565, ['mov', 'edx,[ebp+var_1C]']
+  158568, ['mov', 'edx,[edx+3Ch]']
+  158571, ['add', 'edx,[ebp+var_1C]']
+  158574, ['mov', 'edx,[edx+0DCh]']
+  158580, ['add', 'ds:4018A0h,edx']
+  158586, ['sub', 'ds:4018A4h,edx']
+  158592, ['mov', 'esi,[ebp+var_1C]']
+  158595, ['add', 'esi,[eax+14h]']
+  158598, ['add', 'esi,edx']
+  158600, ['mov', 'ecx,ds:4018A4h']
+  158606, ['jmp', 'shortloc_26B95']
+ next: [158613]
+
+node :537
+node sub_26960(158608) info:
+ start: 158608
+ prev: []
+ instructions: 
+  158608, ['xor', 'byteptr[esi],33h']
+  158611, ['inc', 'esi']
+  158612, ['dec', 'ecx']
+ next: [158613]
+
+node :538
+node sub_26F31(159577) info:
+ start: 159577
+ prev: []
+ instructions: 
+  159577, ['mov', 'eax,ds:40653Ch']
+ next: [159582]
+
+node :539
+node sub_26960(158706) info:
+ start: 158706
+ prev: []
+ instructions: 
+  158706, ['jmp', 'short$+2']
+ next: [158708]
+
+node :540
+node sub_26732(157536) info:
+ start: 157536
+ prev: []
+ instructions: 
+  157536, ['jmp', 'shortloc_2677E']
+ next: [157566]
+
+node :541
+node sub_26FE0(159881) info:
+ start: 159881
+ prev: []
+ instructions: 
+  159881, ['mov', 'ecx,ds:406534h']
+  159887, ['mov', 'eax,ecx']
+  159889, ['inc', 'ecx']
+  159890, ['mov', 'ds:406540h,edi']
+  159896, ['mov', 'ds:40653Ch,eax']
+  159901, ['mov', 'ds:406534h,ecx']
+  159907, ['jmp', 'shortloc_270AA']
+ next: [159914]
+
+node :542
+node sub_267ED(157677) info:
+ start: 157677
+ prev: []
+ instructions: 
+  157677, ['push', 'ebp']
+  157678, ['mov', 'ebp,esp']
+  157680, ['add', 'esp,0FFFFFFE0h']
+  157683, ['lea', 'eax,[ebp+var_14]']
+  157686, ['push', 'eax']
+  157687, ['lea', 'eax,[ebp+var_18]']
+  157690, ['push', 'eax']
+  157691, ['push', 'dwordptrds:406000h']
+  157697, ['call', 'nearptr283E5h']
+  157702, ['lea', 'eax,[ebp+var_10]']
+  157705, ['push', 'eax']
+  157706, ['push', 'dwordptrds:406000h']
+  157712, ['call', 'loc_25347']
+  157717, ['or', 'eax,eax']
+  157719, ['jz', 'shortlocret_26837']
+ next: [157721, 157751]
+
+node :543
+node sub_26FE0(159766) info:
+ start: 159766
+ prev: []
+ instructions: 
+  159766, ['mov', 'edx,ds:406534h']
+  159772, ['mov', 'eax,edx']
+  159774, ['inc', 'edx']
+  159775, ['mov', 'ds:406540h,edi']
+  159781, ['mov', 'ds:40653Ch,eax']
+  159786, ['mov', 'ds:406534h,edx']
+  159792, ['jmp', 'shortloc_27037']
+ next: [159799]
+
+node :544
+node sub_26FA3(159651) info:
+ start: 159651
+ prev: []
+ instructions: 
+  159651, ['dec', 'dwordptrds:406540h']
+  159657, ['jnz', 'shortloc_26FD2']
+ next: [159659, 159698]
+
+node :545
+node sub_26F31(159545) info:
+ start: 159545
+ prev: []
+ instructions: 
+  159545, ['mov', 'ecx,ds:406534h']
+  159551, ['mov', 'eax,ecx']
+  159553, ['inc', 'ecx']
+  159554, ['mov', 'dwordptrds:406540h,8']
+  159564, ['mov', 'ds:40653Ch,eax']
+  159569, ['mov', 'ds:406534h,ecx']
+  159575, ['jmp', 'shortloc_26F5E']
+ next: [159582]
+
+node :546
+node sub_26FE0(159931) info:
+ start: 159931
+ prev: []
+ instructions: 
+  159931, ['mov', '[eax],cl']
+  159933, ['dec', 'dwordptrds:406540h']
+  159939, ['jnz', 'shortloc_270E9']
+ next: [159941, 159977]
+
+node :547
+node sub_26FE0(159909) info:
+ start: 159909
+ prev: []
+ instructions: 
+  159909, ['mov', 'eax,ds:40653Ch']
+ next: [159914]
+
+node :548
+node DriverEntry(157120) info:
+ start: 157120
+ prev: []
+ instructions: 
+  157120, ['popa']
+  157121, ['push', 'offsetloc_1470A']
+  157126, ['retn']
+ next: [83722]
+
+node :549
+node sub_26FE0(159794) info:
+ start: 159794
+ prev: []
+ instructions: 
+  159794, ['mov', 'eax,ds:40653Ch']
+ next: [159799]
+
+node :550
+node sub_26CC7(159032) info:
+ start: 159032
+ prev: []
+ instructions: 
+  159032, ['test', 'eax,10h']
+  159037, ['jnz', 'shortloc_26D51']
+ next: [159039, 159057]
+
+node :551
+node sub_26F72(159602) info:
+ start: 159602
+ prev: []
+ instructions: 
+  159602, ['dec', 'dwordptrds:406540h']
+  159608, ['jnz', 'shortloc_26F9B']
+ next: [159610, 159643]
+
+node :552
+node sub_26732(157562) info:
+ start: 157562
+ prev: []
+ instructions: 
+  157562, ['sub', 'eax,edx']
+  157564, ['jnz', 'shortloc_26782']
+ next: [157566, 157570]
+
+node :553
+node sub_26F31(159582) info:
+ start: 159582
+ prev: []
+ instructions: 
+  159582, ['mov', 'ecx,[esp+arg_0]']
+  159586, ['test', 'ecx,ecx']
+  159588, ['jz', 'shortloc_26F6F']
+ next: [159590, 159599]
+
+node :554
+node DriverEntry(83722) info:
+ start: 83722
+ prev: []
+ instructions: 
+  83722, ['push', 'esp']
+  83723, ['inc', 'edx']
+  83724, ['inc', 'ebx']
+  83725, ['push', 'esp']
+  83726, ['inc', 'ebx']
+  83727, ['push', 'edi']
+  83728, ['inc', 'esp']
+  83729, ['xor', 'edi,edi']
+ next: [83731]
+
+node :555
+node sub_2660B(157409) info:
+ start: 157409
+ prev: []
+ instructions: 
+  157409, ['xor', 'eax,eax']
+  157411, ['jmp', 'shortloc_266CF']
+ next: [157391]
+
+node :556
+node sub_2660B(157388) info:
+ start: 157388
+ prev: []
+ instructions: 
+  157388, ['mov', 'eax,[ebp+var_1C]']
+ next: [157391]
+
+node :557
+node sub_26960(158708) info:
+ start: 158708
+ prev: []
+ instructions: 
+  158708, ['mov', 'eax,[ebp+var_1C]']
+  158711, ['mov', 'eax,[eax+3Ch]']
+  158714, ['add', 'eax,[ebp+var_1C]']
+  158717, ['mov', 'edx,ebx']
+  158719, ['add', 'edx,5D5h']
+  158725, ['mov', '[eax+80h],edx']
+  158731, ['mov', 'dwordptr[eax+84h],28h']
+  158741, ['mov', 'eax,[ebp+var_1C]']
+  158744, ['mov', 'eax,[eax+3Ch]']
+  158747, ['add', 'eax,[ebp+var_1C]']
+  158750, ['mov', 'edx,ebx']
+  158752, ['add', 'edx,5FDh']
+  158758, ['mov', '[eax+0D8h],edx']
+  158764, ['mov', 'dwordptr[eax+0DCh],18h']
+  158774, ['mov', 'eax,[ebp+var_1C]']
+  158777, ['mov', 'eax,[eax+3Ch]']
+  158780, ['add', 'eax,[ebp+var_1C]']
+  158783, ['mov', 'dwordptr[eax+0A8h],0']
+  158793, ['mov', 'dwordptr[eax+0ACh],0']
+  158803, ['mov', 'dwordptr[eax+0C8h],0']
+  158813, ['mov', 'dwordptr[eax+0CCh],0']
+  158823, ['push', '[ebp+var_1C]']
+  158826, ['call', 'nearptrunk_25523']
+  158831, ['lea', 'eax,[ebp+var_10]']
+  158834, ['push', 'eax']
+  158835, ['call', 'loc_253B3']
+ next: [158840]
+
+node :558
+node sub_267ED(157721) info:
+ start: 157721
+ prev: []
+ instructions: 
+  157721, ['push', '[ebp+var_8]']
+  157724, ['pop', '[ebp+var_1C]']
+  157727, ['mov', 'eax,[ebp+var_1C]']
+  157730, ['mov', 'eax,[eax+3Ch]']
+  157733, ['add', 'eax,[ebp+var_1C]']
+  157736, ['push', '[ebp+var_14]']
+  157739, ['pop', 'dwordptr[eax+58h]']
+  157742, ['lea', 'eax,[ebp+var_10]']
+  157745, ['push', 'eax']
+  157746, ['call', 'loc_253B3']
+ next: [157751]
+
+node :559
+node sub_2660B(157398) info:
+ start: 157398
+ prev: []
+ instructions: 
+  157398, ['mov', 'eax,[ebp+var_18]']
+  157401, ['mov', 'eax,[ecx+eax*4]']
+  157404, ['add', 'eax,[ebp+arg_0]']
+  157407, ['jmp', 'shortloc_266CF']
+ next: [157391]
+
+node :560
+node sub_26732(157570) info:
+ start: 157570
+ prev: []
+ instructions: 
+  157570, ['lea', 'eax,[eax+eax+2]']
+  157574, ['push', '206B6444h']
+  157579, ['push', 'eax']
+  157580, ['lea', 'ecx,[eax-2]']
+  157583, ['push', '0']
+  157585, ['mov', '[ebp-0Ah],ax']
+  157589, ['mov', '[ebp-0Ch],cx']
+  157593, ['call', 'dwordptr[ebp+18h]']
+  157596, ['push', 'dwordptr[ebp+0Ch]']
+  157599, ['mov', '[ebp-8],eax']
+  157602, ['call', 'nearptrloc_267AC+1']
+  157607, ['and', 'eax,5300h']
+  157612, ['add', '[eax-1],dl']
+ next: [157615]
+
+node :561
+node sub_26732(157566) info:
+ start: 157566
+ prev: []
+ instructions: 
+  157566, ['xor', 'eax,eax']
+  157568, ['jmp', 'shortloc_267E6']
+ next: [157670]
+
+node :562
+node sub_26FE0(159914) info:
+ start: 159914
+ prev: []
+ instructions: 
+  159914, ['test', 'bl,1']
+  159917, ['jz', 'shortloc_270B7']
+ next: [159919, 159927]
+
+node :563
+node sub_26732(157615) info:
+ start: 157615
+ prev: []
+ instructions: 
+  157615, ['push', 'ebp']
+ next: []
+
+node :564
+node sub_268D5(157944) info:
+ start: 157944
+ prev: []
+ instructions: 
+  157944, ['pop', 'ebx']
+  157945, ['leave']
+  157946, ['retn', '4']
+ next: []
+
+node :565
+node sub_26E65(159475) info:
+ start: 159475
+ prev: []
+ instructions: 
+  159475, ['mov', 'eax,16h']
+  159480, ['retn']
+ next: []
+
+node :566
+node sub_26E65(159410) info:
+ start: 159410
+ prev: []
+ instructions: 
+  159410, ['mov', 'eax,0Ch']
+  159415, ['retn']
+ next: []
+
+node :567
+node sub_26839(157798) info:
+ start: 157798
+ prev: []
+ instructions: 
+  157798, ['xor', 'eax,eax']
+  157800, ['pop', 'ebx']
+  157801, ['leave']
+  157802, ['retn', '4']
+ next: []
+
+node :568
+node sub_26E65(159514) info:
+ start: 159514
+ prev: []
+ instructions: 
+  159514, ['mov', 'eax,1Ch']
+  159519, ['retn']
+ next: []
+
+node :569
+node sub_268D5(157954) info:
+ start: 157954
+ prev: []
+ instructions: 
+  157954, ['xor', 'eax,eax']
+  157956, ['pop', 'ebx']
+  157957, ['leave']
+  157958, ['retn', '4']
+ next: []
+
+node :570
+node sub_26E65(159375) info:
+ start: 159375
+ prev: []
+ instructions: 
+  159375, ['mov', 'eax,6']
+  159380, ['retn']
+ next: []
+
+node :571
+node sub_26FE0(159941) info:
+ start: 159941
+ prev: []
+ instructions: 
+  159941, ['mov', 'ecx,ds:406534h']
+  159947, ['mov', 'eax,ecx']
+  159949, ['inc', 'ecx']
+  159950, ['mov', 'ds:406540h,edi']
+  159956, ['mov', 'ds:406534h,ecx']
+  159962, ['mov', 'ds:40653Ch,eax']
+  159967, ['mov', 'cl,[eax]']
+  159969, ['shl', 'cl,1']
+  159971, ['pop', 'edi']
+  159972, ['mov', '[eax],cl']
+  159974, ['pop', 'ebx']
+  159975, ['pop', 'ecx']
+  159976, ['retn']
+ next: []
+
+node :572
+node sub_26FA3(159698) info:
+ start: 159698
+ prev: []
+ instructions: 
+  159698, ['mov', 'eax,ds:40653Ch']
+  159703, ['mov', 'cl,[eax]']
+  159705, ['shl', 'cl,1']
+  159707, ['inc', 'cl']
+  159709, ['mov', '[eax],cl']
+  159711, ['retn']
+ next: []
+
+node :573
+node sub_26E65(159436) info:
+ start: 159436
+ prev: []
+ instructions: 
+  159436, ['mov', 'eax,10h']
+  159441, ['retn']
+ next: []
+
+node :574
+node sub_26732(157670) info:
+ start: 157670
+ prev: []
+ instructions: 
+  157670, ['pop', 'edi']
+  157671, ['pop', 'esi']
+  157672, ['pop', 'ebx']
+  157673, ['leave']
+  157674, ['retn', '1Ch']
+ next: []
+
+node :575
+node sub_26E65(159353) info:
+ start: 159353
+ prev: []
+ instructions: 
+  159353, ['mov', 'eax,2']
+  159358, ['retn']
+ next: []
+
+node :576
+node sub_26E65(159462) info:
+ start: 159462
+ prev: []
+ instructions: 
+  159462, ['mov', 'eax,14h']
+  159467, ['retn']
+ next: []
+
+node :577
+node sub_26E65(159520) info:
+ start: 159520
+ prev: []
+ instructions: 
+  159520, ['xor', 'ecx,ecx']
+  159522, ['cmp', 'eax,offset__ImageBase']
+  159527, ['setnl', 'cl']
+  159530, ['lea', 'ecx,[ecx+ecx+1Eh]']
+  159534, ['mov', 'eax,ecx']
+  159536, ['retn']
+ next: []
+
+node :578
+node sub_26FE0(159799) info:
+ start: 159799
+ prev: []
+ instructions: 
+  159799, ['test', 'bl,1']
+  159802, ['jz', 'shortloc_27044']
+ next: [159804, 159812]
+
+node :579
+node sub_26F72(159643) info:
+ start: 159643
+ prev: []
+ instructions: 
+  159643, ['mov', 'eax,ds:40653Ch']
+  159648, ['shl', 'byteptr[eax],1']
+  159650, ['retn']
+ next: []
+
+node :580
+node sub_268A1(157902) info:
+ start: 157902
+ prev: []
+ instructions: 
+  157902, ['xor', 'eax,eax']
+  157904, ['pop', 'ebx']
+  157905, ['leave']
+  157906, ['retn', '4']
+ next: []
+
+node :581
+node sub_26CC7(159039) info:
+ start: 159039
+ prev: []
+ instructions: 
+  159039, ['lea', 'eax,[ebp+var_155]']
+  159045, ['push', 'eax']
+  159046, ['call', 'nearptr283D3h']
+  159051, ['pop', 'ebx']
+  159052, ['pop', 'edi']
+  159053, ['leave']
+  159054, ['retn', '4']
+ next: []
+
+node :582
+node sub_26D59(159065) info:
+ start: 159065
+ prev: []
+ instructions: 
+  159065, ['push', 'ebp']
+  159066, ['mov', 'ebp,esp']
+  159068, ['push', '[ebp+arg_0]']
+  159071, ['push', '0']
+  159073, ['push', '180h']
+  159078, ['push', 'dwordptrds:406021h']
+  159084, ['call', 'nearptr283CDh']
+  159089, ['leave']
+  159090, ['retn', '4']
+ next: []
+
+node :583
+node sub_26960(158697) info:
+ start: 158697
+ prev: []
+ instructions: 
+  158697, ['xor', 'byteptr[esi],33h']
+  158700, ['inc', 'esi']
+  158701, ['dec', 'ecx']
+ next: [158702]
+
+node :584
+node sub_26CC7(159057) info:
+ start: 159057
+ prev: []
+ instructions: 
+  159057, ['xor', 'eax,eax']
+  159059, ['pop', 'ebx']
+  159060, ['pop', 'edi']
+  159061, ['leave']
+  159062, ['retn', '4']
+ next: []
+
+node :585
+node sub_26960(158647) info:
+ start: 158647
+ prev: []
+ instructions: 
+  158647, ['mov', 'dwordptr[eax+24h],0E8000040h']
+  158654, ['push', 'dwordptr[eax+0Ch]']
+  158657, ['pop', 'dwordptrds:4018B4h']
+  158663, ['push', 'eax']
+  158664, ['push', 'dwordptr[eax+8]']
+  158667, ['push', 'dwordptr[eax+10h]']
+  158670, ['call', 'nearptrunk_25569']
+  158675, ['push', 'eax']
+  158676, ['pop', 'dwordptrds:4018B8h']
+  158682, ['pop', 'eax']
+  158683, ['mov', 'esi,[ebp+var_1C]']
+  158686, ['add', 'esi,[eax+14h]']
+  158689, ['mov', 'ecx,ds:4018B8h']
+  158695, ['jmp', 'shortloc_26BEE']
+ next: [158702]
+
+node :586
+node sub_27363(160640) info:
+ start: 160640
+ prev: []
+ instructions: 
+  160640, ['neg', 'eax']
+  160642, ['sbb', 'eax,eax']
+  160644, ['and', 'eax,6']
+  160647, ['add', 'eax,5']
+  160650, ['pop', 'esi']
+  160651, ['retn']
+ next: []
+
+node :587
+node sub_26FE0(159977) info:
+ start: 159977
+ prev: []
+ instructions: 
+  159977, ['mov', 'eax,ds:40653Ch']
+  159982, ['mov', 'cl,[eax]']
+  159984, ['shl', 'cl,1']
+  159986, ['pop', 'edi']
+  159987, ['mov', '[eax],cl']
+  159989, ['pop', 'ebx']
+  159990, ['pop', 'ecx']
+  159991, ['retn']
+ next: []
+
+node :588
+node sub_265E3(157155) info:
+ start: 157155
+ prev: []
+ instructions: 
+  157155, ['push', 'ebp']
+  157156, ['mov', 'ebp,esp']
+  157158, ['mov', 'edx,[ebp+arg_0]']
+  157161, ['push', 'ebp']
+  157162, ['mov', 'ebp,[ebp+arg_4]']
+  157165, ['push', '[ebp+var_s0]']
+  157168, ['push', 'dwordptr[ebp+4]']
+  157171, ['push', '[ebp+arg_4]']
+  157174, ['push', '[ebp+arg_0]']
+  157177, ['lea', 'eax,[ebp+arg_38]']
+  157180, ['push', 'eax']
+  157181, ['push', 'edx']
+  157182, ['push', '[ebp+arg_3C]']
+  157185, ['call', 'loc_266E5']
+  157190, ['pop', 'ebp']
+  157191, ['leave']
+  157192, ['retn', '8']
+ next: []
+
+node :589
+node sub_27941(162113) info:
+ start: 162113
+ prev: []
+ instructions: 
+  162113, ['mov', 'eax,[esp+arg_0]']
+  162117, ['mov', 'ecx,eax']
+  162119, ['shr', 'ecx,3']
+  162122, ['lea', 'eax,[ecx+eax+40h]']
+  162126, ['retn']
+ next: []
+
+node :590
+node sub_267ED(157751) info:
+ start: 157751
+ prev: []
+ instructions: 
+  157751, ['leave']
+  157752, ['retn']
+ next: []
+
+node :591
+node sub_26F72(159610) info:
+ start: 159610
+ prev: []
+ instructions: 
+  159610, ['mov', 'ecx,ds:406534h']
+  159616, ['mov', 'eax,ecx']
+  159618, ['inc', 'ecx']
+  159619, ['mov', 'ds:406534h,ecx']
+  159625, ['mov', 'dwordptrds:406540h,8']
+  159635, ['mov', 'ds:40653Ch,eax']
+  159640, ['shl', 'byteptr[eax],1']
+  159642, ['retn']
+ next: []
+
+node :592
+node sub_26E65(159488) info:
+ start: 159488
+ prev: []
+ instructions: 
+  159488, ['mov', 'eax,18h']
+  159493, ['retn']
+ next: []
+
+node :593
+node sub_26E65(159364) info:
+ start: 159364
+ prev: []
+ instructions: 
+  159364, ['mov', 'eax,4']
+  159369, ['retn']
+ next: []
+
+node :594
+node DriverEntry(156596) info:
+ start: 156596
+ prev: []
+ instructions: 
+  156596, ['push', 'eax']
+  156597, ['xchg', 'eax,ecx']
+  156598, ['lodsd']
+  156599, ['test', 'eax,80000000h']
+  156604, ['jz', 'shortloc_263C5']
+ next: [156606, 156613]
+
+node :595
+node sub_2686D(157850) info:
+ start: 157850
+ prev: []
+ instructions: 
+  157850, ['xor', 'eax,eax']
+  157852, ['pop', 'ebx']
+  157853, ['leave']
+  157854, ['retn', '4']
+ next: []
+
+node :596
+node sub_26E65(159386) info:
+ start: 159386
+ prev: []
+ instructions: 
+  159386, ['mov', 'eax,8']
+  159391, ['retn']
+ next: []
+
+node :597
+node sub_2660B(157391) info:
+ start: 157391
+ prev: []
+ instructions: 
+  157391, ['pop', 'edi']
+  157392, ['pop', 'esi']
+  157393, ['pop', 'ebx']
+  157394, ['leave']
+  157395, ['retn', '0Ch']
+ next: []
+
+node :598
+node sub_26E65(159449) info:
+ start: 159449
+ prev: []
+ instructions: 
+  159449, ['mov', 'eax,12h']
+  159454, ['retn']
+ next: []
+
+node :599
+node sub_26F31(159590) info:
+ start: 159590
+ prev: []
+ instructions: 
+  159590, ['mov', 'cl,[eax]']
+  159592, ['shl', 'cl,1']
+  159594, ['inc', 'cl']
+  159596, ['mov', '[eax],cl']
+  159598, ['retn']
+ next: []
+
+node :600
+node Root info:
+ start: 0
+ prev: []
+ instructions: 
+ next: ['DriverEntry(152960)', 'sub_265C7(157127)', 'sub_265E3(157155)', 'sub_2660B(157195)', 'sub_26732(157490)', 'sub_267ED(157677)', 'sub_26839(157753)', 'sub_2686D(157805)', 'sub_268A1(157857)', 'sub_268D5(157909)', 'sub_26960(158048)', 'sub_26CC7(158919)', 'sub_26D59(159065)', 'sub_26E65(159333)', 'sub_26F31(159537)', 'sub_26F72(159602)', 'sub_26FA3(159651)', 'sub_26FE0(159712)', 'sub_27363(160611)', 'sub_2793B(162107)', 'sub_27941(162113)']
+
+node :601
+node sub_26E65(159501) info:
+ start: 159501
+ prev: []
+ instructions: 
+  159501, ['mov', 'eax,1Ah']
+  159506, ['retn']
+ next: []
+
+node :602
+node sub_26F31(159599) info:
+ start: 159599
+ prev: []
+ instructions: 
+  159599, ['shl', 'byteptr[eax],1']
+  159601, ['retn']
+ next: []
+
+node :603
+node sub_26960(158613) info:
+ start: 158613
+ prev: []
+ instructions: 
+  158613, ['or', 'ecx,ecx']
+  158615, ['jnz', 'shortloc_26B90']
+ next: [158608, 158617]
+
+node :604
+node sub_2793B(162107) info:
+ start: 162107
+ prev: []
+ instructions: 
+  162107, ['mov', 'eax,0A0000h']
+  162112, ['retn']
+ next: []
+
+node :605
+node sub_26E65(159342) info:
+ start: 159342
+ prev: []
+ instructions: 
+  159342, ['mov', 'eax,64h']
+  159347, ['retn']
+ next: []
+
+node :606
+node sub_26FA3(159659) info:
+ start: 159659
+ prev: []
+ instructions: 
+  159659, ['mov', 'ecx,ds:406534h']
+  159665, ['mov', 'eax,ecx']
+  159667, ['inc', 'ecx']
+  159668, ['mov', 'ds:406534h,ecx']
+  159674, ['mov', 'dwordptrds:406540h,8']
+  159684, ['mov', 'ds:40653Ch,eax']
+  159689, ['mov', 'cl,[eax]']
+  159691, ['shl', 'cl,1']
+  159693, ['inc', 'cl']
+  159695, ['mov', '[eax],cl']
+  159697, ['retn']
+ next: []
+
+node :607
+node sub_26839(157788) info:
+ start: 157788
+ prev: []
+ instructions: 
+  157788, ['pop', 'ebx']
+  157789, ['leave']
+  157790, ['retn', '4']
+ next: []
+
+node :608
+node sub_26E65(159423) info:
+ start: 159423
+ prev: []
+ instructions: 
+  159423, ['mov', 'eax,0Eh']
+  159428, ['retn']
+ next: []
+
+node :609
+node sub_26960(158840) info:
+ start: 158840
+ prev: []
+ instructions: 
+  158840, ['push', '0']
+  158842, ['push', '0']
+  158844, ['push', '4']
+  158846, ['push', '0']
+  158848, ['push', '2']
+  158850, ['push', '40000000h']
+  158855, ['push', 'dwordptrds:406000h']
+  158861, ['call', 'nearptr28373h']
+  158866, ['mov', '[ebp+var_20],eax']
+  158869, ['push', '2']
+  158871, ['push', '0']
+  158873, ['push', '0']
+  158875, ['push', '[ebp+var_20]']
+  158878, ['call', 'nearptr283A3h']
+  158883, ['push', '0']
+  158885, ['lea', 'eax,[ebp+var_1C]']
+  158888, ['push', 'eax']
+  158889, ['push', '24F4h']
+  158894, ['push', '40126Bh']
+  158899, ['push', '[ebp+var_20]']
+  158902, ['call', 'nearptr283AFh']
+  158907, ['push', '[ebp+var_20]']
+  158910, ['call', 'nearptr2836Dh']
+  158915, ['pop', 'esi']
+  158916, ['pop', 'ebx']
+  158917, ['leave']
+  158918, ['retn']
+ next: []
+
+node :610
+node sub_268A1(157892) info:
+ start: 157892
+ prev: []
+ instructions: 
+  157892, ['pop', 'ebx']
+  157893, ['leave']
+  157894, ['retn', '4']
+ next: []
+
+node :611
+node sub_26E65(159397) info:
+ start: 159397
+ prev: []
+ instructions: 
+  159397, ['mov', 'eax,0Ah']
+  159402, ['retn']
+ next: []
+
+node :612
+node DriverEntry(83731) info:
+ start: 83731
+ prev: []
+ instructions: 
+ next: []
+
+node :613
+node sub_2686D(157840) info:
+ start: 157840
+ prev: []
+ instructions: 
+  157840, ['pop', 'ebx']
+  157841, ['leave']
+  157842, ['retn', '4']
+ next: []
+
