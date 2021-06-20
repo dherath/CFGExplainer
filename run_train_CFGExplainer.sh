@@ -2,7 +2,7 @@
 
 # the following params worked the best:
 declare -a batch_size="32" #"32" # always keep it 1, GPU cannot handle it
-declare -a path="../../../y_datasets/YANCFG_sample2"
+declare -a path="data"
 # "../../y_datasets/YANCFG_sample1"
 declare -a hiddens="1024-512-128"
 declare -a elr="0.00001" # "0.00001"
