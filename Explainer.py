@@ -6,7 +6,6 @@ class ExplainerModule(tf.keras.Model):
     def __init__(self, model, output_dim, **kwargs):
         super(ExplainerModule, self).__init__(**kwargs)
         with tf.name_scope("explainer") as scope:
-            # updated model with one more layer?
             self.elayers = [tf.keras.layers.Dense(64, tf.nn.relu),
                             tf.keras.layers.Dense(32, tf.nn.relu),
                             tf.keras.layers.Dense(1)]
@@ -21,18 +20,18 @@ class ExplainerModule(tf.keras.Model):
     def call(self, inputs, training=True, debug=False):
         x, embed, adj, node_mask = inputs
 
-        # call MLP1 and get node importance
-        importance = self.MLP1(embed, node_mask, training=training, debug=debug)  # obtains node importance
+        # call NN1 and get node importance
+        importance = self.NN1(embed, node_mask, training=training, debug=debug)  # obtains node importance
 
-        # call MLP2 to get graph classification
-        out = self.MLP2(importance, embed, training=training, debug=debug)  # gets class probabilities, might change it use GNN model component in future
+        # call NN2 to get graph classification
+        out = self.NN2(importance, embed, training=training, debug=debug)  # gets class probabilities, might change it use GNN model component in future
         if debug:
             print('+ call() node importance: ', tf.shape(importance))
             print('+ call() out', tf.shape(out))
         
         return out, importance
 
-    def MLP1(self, embed, node_mask=None, training=True, debug=False):
+    def NN1(self, embed, node_mask=None, training=True, debug=False):
         """
         First part of model: obtains block importance
         """
@@ -48,15 +47,12 @@ class ExplainerModule(tf.keras.Model):
         # do sigmoid() activation to get probability
         return tf.sigmoid(h)
 
-    def MLP2(self, importance, embed, training=True, debug=False):
+    def NN2(self, importance, embed, training=True, debug=False):
         """
         Second part of model: computes classification probability
         version 2: just use the node importance weighted by embeddings
+        [future variations: load GNN model weights to initalize layers]
         """
-        # Note (optimization?): instead of MLP2 it is possible to use the classification layers of GNN
-        # inorder to obtain the class probability, then the predlayers and class_layer is not needed
-        # this might  make training much faster: experiment in future
-        # current model uses a Neural Network that is trained from scratch for classification
         
         tf_shape = tf.shape(embed) # # usually [#batches, #nodes, #emb-length]
         _dim, _flatten = None, None
