@@ -1,0 +1,2 @@
+model_checkpoint_path: "classifier_lynxv2_yancfg_complete_sample2"
+all_model_checkpoint_paths: "classifier_lynxv2_yancfg_complete_sample2"
