@@ -46,7 +46,6 @@ def train_CFGExplainer():
         optimizer = tf.keras.optimizers.Adam(learning_rate=args.elr)
     print('+ gcn model:', model)
     print('+ explainer model:', explainer)
-    print('+ all args: \n', args)
 
     # running the training epochs
     for epoch in tqdm(range(args.eepochs), disable=args.disable_tqdm):
