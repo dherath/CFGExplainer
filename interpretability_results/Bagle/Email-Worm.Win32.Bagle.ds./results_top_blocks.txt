@@ -1,0 +1,1396 @@
+CFGExplainer result: [malware = Bagle |  graph = Email-Worm.Win32.Bagle.ds| #nodes = 113]
+
+node :1
+node sub_416290(4284987) info:
+ start: 4284987
+ prev: []
+ instructions: 
+  4284987, ['cmp', 'edi,ebx']
+ next: [4284989]
+
+node :2
+node sub_416290(4285077) info:
+ start: 4285077
+ prev: []
+ instructions: 
+  4285077, ['jnz', 'shortloc_41623D']
+ next: [4285079, 4284989]
+
+node :3
+node sub_416290(4284989) info:
+ start: 4284989
+ prev: []
+ instructions: 
+  4284989, ['jnb', 'shortloc_416284']
+ next: [4284991, 4285060]
+
+node :4
+node sub_416186(4284821) info:
+ start: 4284821
+ prev: []
+ instructions: 
+  4284821, ['xor', 'ecx,ecx']
+  4284823, ['call', 'sub_416200']
+  4284828, ['jnb', 'shortloc_4161BA']
+ next: [4284830, 4284858]
+
+node :5
+node sub_416290(4284998) info:
+ start: 4284998
+ prev: []
+ instructions: 
+  4284998, ['call', 'sub_416272']
+  4285003, ['xchg', 'eax,ecx']
+  4285004, ['call', 'sub_416272']
+  4285009, ['dec', 'eax']
+  4285010, ['dec', 'eax']
+  4285011, ['inc', 'ecx']
+  4285012, ['inc', 'ecx']
+  4285013, ['shl', 'eax,8']
+  4285016, ['lodsb']
+  4285017, ['inc', 'eax']
+  4285018, ['push', 'esi']
+  4285019, ['mov', 'esi,edi']
+  4285021, ['sub', 'esi,eax']
+  4285023, ['rep', 'movsb']
+  4285025, ['pop', 'esi']
+  4285026, ['jmp', 'shortloc_41623B']
+ next: [4284987]
+
+node :6
+node sub_416186(4284858) info:
+ start: 4284858
+ prev: []
+ instructions: 
+  4284858, ['call', 'sub_41620C']
+  4284863, ['sub', 'ecx,ebx']
+  4284865, ['jnz', 'shortloc_4161D3']
+ next: [4284867, 4284883]
+
+node :7
+node sub_416290(4284991) info:
+ start: 4284991
+ prev: []
+ instructions: 
+  4284991, ['call', 'sub_416264']
+  4284996, ['jnb', 'shortloc_41623A']
+ next: [4284986, 4284998]
+
+node :8
+node sub_416186(4284855) info:
+ start: 4284855
+ prev: []
+ instructions: 
+  4284855, ['stosb']
+  4284856, ['jmp', 'shortloc_41618E']
+ next: [4284814]
+
+node :9
+node sub_416186(4284918) info:
+ start: 4284918
+ prev: []
+ instructions: 
+  4284918, ['push', 'esi']
+  4284919, ['mov', 'esi,edi']
+  4284921, ['sub', 'esi,eax']
+  4284923, ['rep', 'movsb']
+  4284925, ['pop', 'esi']
+  4284926, ['jmp', 'shortloc_41618E']
+ next: [4284814]
+
+node :10
+node sub_416186(4284811) info:
+ start: 4284811
+ prev: []
+ instructions: 
+  4284811, ['movsb']
+  4284812, ['mov', 'bl,2']
+ next: [4284814]
+
+node :11
+node sub_416186(4284814) info:
+ start: 4284814
+ prev: []
+ instructions: 
+  4284814, ['call', 'sub_416200']
+  4284819, ['jnb', 'shortloc_41618B']
+ next: [4284811, 4284821]
+
+node :12
+node sub_416186(4284844) info:
+ start: 4284844
+ prev: []
+ instructions: 
+  4284844, ['call', 'sub_416200']
+  4284849, ['adc', 'al,al']
+  4284851, ['jnb', 'shortloc_4161AC']
+ next: [4284853, 4284844]
+
+node :13
+node sub_416186(4284839) info:
+ start: 4284839
+ prev: []
+ instructions: 
+  4284839, ['mov', 'bl,2']
+  4284841, ['inc', 'ecx']
+  4284842, ['mov', 'al,10h']
+ next: [4284844]
+
+node :14
+node sub_416272(4285042) info:
+ start: 4285042
+ prev: []
+ instructions: 
+  4285042, ['xor', 'eax,eax']
+  4285044, ['inc', 'eax']
+ next: [4285045]
+
+node :15
+node sub_41620C(4284940) info:
+ start: 4284940
+ prev: []
+ instructions: 
+  4284940, ['inc', 'ecx']
+ next: [4284941]
+
+node :16
+node sub_41620C(4284941) info:
+ start: 4284941
+ prev: []
+ instructions: 
+  4284941, ['call', 'sub_416200']
+  4284946, ['adc', 'ecx,ecx']
+  4284948, ['call', 'sub_416200']
+  4284953, ['jb', 'shortloc_41620D']
+ next: [4284955, 4284941]
+
+node :17
+node sub_416272(4285045) info:
+ start: 4285045
+ prev: []
+ instructions: 
+  4285045, ['call', 'sub_416264']
+  4285050, ['adc', 'eax,eax']
+  4285052, ['call', 'sub_416264']
+  4285057, ['jb', 'shortloc_416275']
+ next: [4285059, 4285045]
+
+node :18
+node sub_416186(4284830) info:
+ start: 4284830
+ prev: []
+ instructions: 
+  4284830, ['xor', 'eax,eax']
+  4284832, ['call', 'sub_416200']
+  4284837, ['jnb', 'shortloc_4161CA']
+ next: [4284839, 4284874]
+
+node :19
+node sub_416186(4284853) info:
+ start: 4284853
+ prev: []
+ instructions: 
+  4284853, ['jnz', 'shortloc_4161F6']
+ next: [4284855, 4284918]
+
+node :20
+node sub_416290(4285656) info:
+ start: 4285656
+ prev: []
+ instructions: 
+  4285656, ['xor', 'al,78h']
+  4285658, ['jns', 'shortloc_416543']
+ next: [4285660, 4285763]
+
+node :21
+node sub_416290(4285577) info:
+ start: 4285577
+ prev: []
+ instructions: 
+  4285577, ['nop']
+  4285578, ['nop']
+  4285579, ['mov', 'ebx,ebx']
+  4285581, ['xor', 'al,5Fh']
+  4285583, ['nop']
+  4285584, ['nop']
+  4285585, ['nop']
+  4285586, ['nop']
+  4285587, ['xor', 'al,42h']
+  4285589, ['nop']
+  4285590, ['nop']
+  4285591, ['jmp', 'shortloc_4164B3']
+ next: [4285619]
+
+node :22
+node start(4284745) info:
+ start: 4284745
+ prev: []
+ instructions: 
+  4284745, ['mov', 'ecx,eax']
+  4284747, ['lodsd']
+  4284748, ['lea', 'edi,[ebx+eax]']
+  4284751, ['push', 'esi']
+  4284752, ['push', 'edi']
+  4284753, ['nop']
+  4284754, ['mov', 'dx,dx']
+  4284757, ['mov', 'edi,esi']
+  4284759, ['call', 'sub_416290']
+  4284764, ['pop', 'edi']
+  4284765, ['pop', 'esi']
+  4284766, ['call', 'sub_416186']
+  4284771, ['pop', 'eax']
+  4284772, ['mov', 'ax,ax']
+  4284775, ['mov', 'cx,cx']
+  4284778, ['mov', 'dx,dx']
+  4284781, ['add', 'esi,eax']
+  4284783, ['mov', 'dx,dx']
+  4284786, ['mov', 'eax,eax']
+  4284788, ['jmp', 'shortloc_416120']
+ next: [4284704]
+
+node :23
+node sub_416290(4285613) info:
+ start: 4285613
+ prev: []
+ instructions: 
+  4285613, ['nop']
+  4285614, ['nop']
+  4285615, ['nop']
+  4285616, ['nop']
+  4285617, ['mov', 'ebx,ebx']
+ next: [4285619]
+
+node :24
+node sub_416290(4285660) info:
+ start: 4285660
+ prev: []
+ instructions: 
+  4285660, ['xor', 'al,90h']
+  4285662, ['xor', 'al,77h']
+  4285664, ['mov', 'ebx,ebx']
+ next: [4285666]
+
+node :25
+node sub_416290(4285605) info:
+ start: 4285605
+ prev: []
+ instructions: 
+  4285605, ['jmp', 'shortloc_4164E2']
+ next: [4285666]
+
+node :26
+node sub_416290(4285619) info:
+ start: 4285619
+ prev: []
+ instructions: 
+  4285619, ['mov', 'edx,edx']
+  4285621, ['nop']
+  4285622, ['nop']
+  4285623, ['jmp', 'shortloc_4164BB']
+ next: [4285627]
+
+node :27
+node sub_416290(4285608) info:
+ start: 4285608
+ prev: []
+ instructions: 
+  4285608, ['nop']
+  4285609, ['mov', 'eax,eax']
+  4285611, ['jns', 'shortloc_41647D']
+ next: [4285565, 4285613]
+
+node :28
+node sub_416290(4285550) info:
+ start: 4285550
+ prev: []
+ instructions: 
+  4285550, ['nop']
+  4285551, ['mov', 'ebx,ebx']
+  4285553, ['nop']
+  4285554, ['nop']
+  4285555, ['nop']
+  4285556, ['nop']
+  4285557, ['nop']
+  4285558, ['nop']
+  4285559, ['jmp', 'shortloc_416489']
+ next: [4285577]
+
+node :29
+node sub_416186(4284914) info:
+ start: 4284914
+ prev: []
+ instructions: 
+  4284914, ['mov', 'eax,ebp']
+  4284916, ['mov', 'bl,1']
+ next: [4284918]
+
+node :30
+node sub_416186(4284806) info:
+ start: 4284806
+ prev: []
+ instructions: 
+  4284806, ['pusha']
+  4284807, ['mov', 'dl,80h']
+  4284809, ['xor', 'ebx,ebx']
+ next: [4284811]
+
+node :31
+node sub_416290(4285627) info:
+ start: 4285627
+ prev: []
+ instructions: 
+  4285627, ['nop']
+  4285628, ['nop']
+  4285629, ['mov', 'ecx,ecx']
+  4285631, ['nop']
+  4285632, ['nop']
+  4285633, ['nop']
+  4285634, ['jmp', 'shortloc_4164E8']
+ next: [4285672]
+
+node :32
+node sub_416290(4285666) info:
+ start: 4285666
+ prev: []
+ instructions: 
+  4285666, ['mov', 'edx,edx']
+  4285668, ['mov', 'ecx,ecx']
+  4285670, ['nop']
+  4285671, ['nop']
+ next: [4285672]
+
+node :33
+node sub_416290(4285756) info:
+ start: 4285756
+ prev: []
+ instructions: 
+  4285756, ['xor', 'al,0D7h']
+  4285758, ['nop']
+  4285759, ['nop']
+  4285760, ['xor', 'al,0A7h']
+  4285762, ['nop']
+ next: [4285763]
+
+node :34
+node start(4284704) info:
+ start: 4284704
+ prev: []
+ instructions: 
+  4284704, ['lodsd']
+  4284705, ['test', 'eax,eax']
+  4284707, ['jz', 'shortloc_416176']
+ next: [4284709, 4284790]
+
+node :35
+node sub_416290(4285672) info:
+ start: 4285672
+ prev: []
+ instructions: 
+  4285672, ['mov', 'ecx,ecx']
+  4285674, ['nop']
+  4285675, ['nop']
+  4285676, ['nop']
+  4285677, ['nop']
+  4285678, ['nop']
+  4285679, ['nop']
+  4285680, ['nop']
+  4285681, ['nop']
+  4285682, ['nop']
+  4285683, ['xor', 'al,0DEh']
+  4285685, ['nop']
+  4285686, ['nop']
+  4285687, ['nop']
+  4285688, ['nop']
+  4285689, ['nop']
+  4285690, ['nop']
+  4285691, ['nop']
+  4285692, ['nop']
+  4285693, ['nop']
+  4285694, ['nop']
+  4285695, ['nop']
+  4285696, ['jmp', 'shortloc_416536']
+ next: [4285750]
+
+node :36
+node sub_416290(4285798) info:
+ start: 4285798
+ prev: []
+ instructions: 
+  4285798, ['nop']
+  4285799, ['mov', 'edx,edx']
+  4285801, ['nop']
+  4285802, ['nop']
+  4285803, ['nop']
+  4285804, ['nop']
+  4285805, ['nop']
+  4285806, ['nop']
+  4285807, ['nop']
+  4285808, ['nop']
+  4285809, ['nop']
+  4285810, ['nop']
+  4285811, ['nop']
+  4285812, ['mov', 'edx,edx']
+  4285814, ['jmp', 'shortloc_4165A4']
+ next: [4285860]
+
+node :37
+node sub_416290(4285763) info:
+ start: 4285763
+ prev: []
+ instructions: 
+  4285763, ['nop']
+  4285764, ['nop']
+  4285765, ['nop']
+  4285766, ['xor', 'al,0EFh']
+  4285768, ['nop']
+  4285769, ['nop']
+  4285770, ['nop']
+  4285771, ['nop']
+  4285772, ['nop']
+  4285773, ['nop']
+  4285774, ['xor', 'al,4Ah']
+  4285776, ['nop']
+  4285777, ['nop']
+  4285778, ['nop']
+  4285779, ['nop']
+  4285780, ['mov', 'ecx,ecx']
+  4285782, ['nop']
+  4285783, ['nop']
+  4285784, ['nop']
+  4285785, ['nop']
+  4285786, ['nop']
+  4285787, ['nop']
+  4285788, ['xor', 'al,37h']
+  4285790, ['nop']
+  4285791, ['nop']
+  4285792, ['nop']
+  4285793, ['nop']
+  4285794, ['nop']
+  4285795, ['nop']
+  4285796, ['nop']
+  4285797, ['nop']
+ next: [4285798]
+
+node :38
+node sub_416290(4285750) info:
+ start: 4285750
+ prev: []
+ instructions: 
+  4285750, ['jmp', 'shortloc_416566']
+ next: [4285798]
+
+node :39
+node sub_416290(4285282) info:
+ start: 4285282
+ prev: []
+ instructions: 
+  4285282, ['mov', 'ebx,ebx']
+  4285284, ['xor', 'al,7Ch']
+  4285286, ['nop']
+  4285287, ['nop']
+  4285288, ['nop']
+  4285289, ['nop']
+  4285290, ['nop']
+  4285291, ['nop']
+  4285292, ['nop']
+  4285293, ['nop']
+  4285294, ['nop']
+  4285295, ['nop']
+  4285296, ['nop']
+  4285297, ['nop']
+  4285298, ['nop']
+  4285299, ['nop']
+  4285300, ['nop']
+  4285301, ['nop']
+  4285302, ['nop']
+  4285303, ['nop']
+  4285304, ['nop']
+  4285305, ['nop']
+  4285306, ['mov', 'ebx,ebx']
+  4285308, ['nop']
+  4285309, ['nop']
+  4285310, ['xor', 'al,74h']
+  4285312, ['nop']
+  4285313, ['nop']
+  4285314, ['xor', 'al,0DFh']
+ next: [4285316]
+
+node :40
+node sub_416290(4285276) info:
+ start: 4285276
+ prev: []
+ instructions: 
+  4285276, ['nop']
+  4285277, ['nop']
+  4285278, ['jmp', 'shortloc_416384']
+ next: [4285316]
+
+node :41
+node sub_416290(4285860) info:
+ start: 4285860
+ prev: []
+ instructions: 
+  4285860, ['nop']
+  4285861, ['nop']
+  4285862, ['xor', 'al,0AFh']
+  4285864, ['stosb']
+  4285865, ['dec', 'ecx']
+  4285866, ['jnz', 'sub_416290']
+ next: [4285072, 4285872]
+
+node :42
+node sub_416290(4284986) info:
+ start: 4284986
+ prev: []
+ instructions: 
+  4284986, ['movsb']
+ next: [4284987]
+
+node :43
+node sub_416290(4285075) info:
+ start: 4285075
+ prev: []
+ instructions: 
+  4285075, ['jb', 'shortloc_4162D0']
+ next: [4285077, 4285136]
+
+node :44
+node start(4284709) info:
+ start: 4284709
+ prev: []
+ instructions: 
+  4284709, ['push', 'eax']
+  4284710, ['mov', 'ax,ax']
+  4284713, ['mov', 'cx,cx']
+  4284716, ['mov', 'edx,edx']
+  4284718, ['nop']
+  4284719, ['mov', 'dx,dx']
+  4284722, ['jmp', 'shortloc_416149']
+ next: [4284745]
+
+node :45
+node sub_416290(4285072) info:
+ start: 4285072
+ prev: []
+ instructions: 
+  4285072, ['lodsb']
+  4285073, ['jmp', 'shortloc_4162BB']
+ next: [4285115]
+
+node :46
+node sub_416290(4285316) info:
+ start: 4285316
+ prev: []
+ instructions: 
+  4285316, ['nop']
+  4285317, ['nop']
+  4285318, ['nop']
+  4285319, ['xor', 'al,23h']
+  4285321, ['mov', 'ecx,ecx']
+  4285323, ['nop']
+  4285324, ['nop']
+  4285325, ['mov', 'edx,edx']
+  4285327, ['nop']
+  4285328, ['nop']
+  4285329, ['nop']
+  4285330, ['nop']
+  4285331, ['nop']
+  4285332, ['jmp', 'shortloc_4163B6']
+ next: [4285366]
+
+node :47
+node sub_416290(4285244) info:
+ start: 4285244
+ prev: []
+ instructions: 
+  4285244, ['jb', 'shortloc_4162DD']
+ next: [4285149, 4285246]
+
+node :48
+node sub_416290(4285280) info:
+ start: 4285280
+ prev: []
+ instructions: 
+  4285280, ['jnz', 'shortloc_416343']
+ next: [4285251, 4285282]
+
+node :49
+node sub_416290(4285527) info:
+ start: 4285527
+ prev: []
+ instructions: 
+  4285527, ['nop']
+  4285528, ['nop']
+ next: [4285529]
+
+node :50
+node sub_416290(4285136) info:
+ start: 4285136
+ prev: []
+ instructions: 
+  4285136, ['nop']
+  4285137, ['nop']
+  4285138, ['jmp', 'shortloc_41634A']
+ next: [4285258]
+
+node :51
+node sub_416290(4285366) info:
+ start: 4285366
+ prev: []
+ instructions: 
+  4285366, ['nop']
+  4285367, ['nop']
+  4285368, ['mov', 'esi,esi']
+  4285370, ['nop']
+  4285371, ['nop']
+  4285372, ['jmp', 'shortloc_4163E2']
+ next: [4285410]
+
+node :52
+node sub_416290(4285264) info:
+ start: 4285264
+ prev: []
+ instructions: 
+  4285264, ['xor', 'al,0B9h']
+  4285266, ['xor', 'al,1']
+  4285268, ['jnz', 'shortloc_4162FF']
+ next: [4285183, 4285270]
+
+node :53
+node sub_416290(4285191) info:
+ start: 4285191
+ prev: []
+ instructions: 
+  4285191, ['xor', 'al,0BAh']
+  4285193, ['nop']
+  4285194, ['nop']
+  4285195, ['nop']
+  4285196, ['nop']
+  4285197, ['xor', 'al,26h']
+  4285199, ['nop']
+  4285200, ['nop']
+  4285201, ['nop']
+  4285202, ['nop']
+  4285203, ['mov', 'ebx,ebx']
+  4285205, ['mov', 'ebx,ebx']
+  4285207, ['nop']
+  4285208, ['nop']
+  4285209, ['jmp', 'shortloc_41632E']
+ next: [4285230]
+
+node :54
+node sub_416290(4285115) info:
+ start: 4285115
+ prev: []
+ instructions: 
+  4285115, ['nop']
+  4285116, ['nop']
+  4285117, ['mov', 'ebx,ebx']
+  4285119, ['nop']
+  4285120, ['nop']
+  4285121, ['nop']
+  4285122, ['nop']
+  4285123, ['mov', 'eax,eax']
+  4285125, ['nop']
+  4285126, ['nop']
+  4285127, ['nop']
+  4285128, ['nop']
+  4285129, ['nop']
+  4285130, ['jmp', 'shortloc_4162E2']
+ next: [4285154]
+
+node :55
+node sub_416290(4285640) info:
+ start: 4285640
+ prev: []
+ instructions: 
+  4285640, ['jnz', 'shortloc_41644E']
+ next: [4285518, 4285642]
+
+node :56
+node sub_416290(4285219) info:
+ start: 4285219
+ prev: []
+ instructions: 
+  4285219, ['xor', 'al,0E0h']
+  4285221, ['mov', 'eax,eax']
+  4285223, ['nop']
+  4285224, ['xor', 'al,6']
+  4285226, ['nop']
+  4285227, ['nop']
+  4285228, ['xor', 'al,11h']
+ next: [4285230]
+
+node :57
+node sub_416290(4285149) info:
+ start: 4285149
+ prev: []
+ instructions: 
+  4285149, ['nop']
+  4285150, ['xor', 'al,8Ch']
+  4285152, ['nop']
+  4285153, ['nop']
+ next: [4285154]
+
+node :58
+node sub_416290(4285408) info:
+ start: 4285408
+ prev: []
+ instructions: 
+  4285408, ['jns', 'shortloc_416459']
+ next: [4285410, 4285529]
+
+node :59
+node sub_416186(4284912) info:
+ start: 4284912
+ prev: []
+ instructions: 
+  4284912, ['inc', 'ecx']
+ next: [4284913]
+
+node :60
+node sub_416290(4285079) info:
+ start: 4285079
+ prev: []
+ instructions: 
+  4285079, ['nop']
+  4285080, ['nop']
+  4285081, ['mov', 'esi,esi']
+  4285083, ['jmp', 'shortlocret_4162B0']
+ next: [4285104]
+
+node :61
+node sub_416290(4285154) info:
+ start: 4285154
+ prev: []
+ instructions: 
+  4285154, ['xor', 'al,6Ch']
+  4285156, ['nop']
+  4285157, ['nop']
+  4285158, ['nop']
+  4285159, ['xor', 'al,0A8h']
+  4285161, ['nop']
+  4285162, ['nop']
+  4285163, ['xor', 'al,4Bh']
+  4285165, ['nop']
+  4285166, ['nop']
+  4285167, ['mov', 'eax,eax']
+  4285169, ['nop']
+  4285170, ['nop']
+  4285171, ['nop']
+  4285172, ['nop']
+  4285173, ['mov', 'ecx,ecx']
+  4285175, ['nop']
+  4285176, ['nop']
+  4285177, ['nop']
+  4285178, ['mov', 'edx,edx']
+  4285180, ['nop']
+  4285181, ['nop']
+  4285182, ['nop']
+ next: [4285183]
+
+node :62
+node sub_416290(4285575) info:
+ start: 4285575
+ prev: []
+ instructions: 
+  4285575, ['jmp', 'shortloc_41644F']
+ next: [4285519]
+
+node :63
+node sub_416290(4285529) info:
+ start: 4285529
+ prev: []
+ instructions: 
+  4285529, ['nop']
+  4285530, ['nop']
+  4285531, ['nop']
+  4285532, ['nop']
+  4285533, ['nop']
+  4285534, ['jmp', 'shortloc_416401']
+ next: [4285441]
+
+node :64
+node sub_416290(4285251) info:
+ start: 4285251
+ prev: []
+ instructions: 
+  4285251, ['nop']
+  4285252, ['nop']
+  4285253, ['nop']
+  4285254, ['nop']
+  4285255, ['nop']
+  4285256, ['nop']
+  4285257, ['nop']
+ next: [4285258]
+
+node :65
+node sub_416290(4285246) info:
+ start: 4285246
+ prev: []
+ instructions: 
+  4285246, ['mov', 'edx,edx']
+ next: [4285248]
+
+node :66
+node sub_416290(4285230) info:
+ start: 4285230
+ prev: []
+ instructions: 
+  4285230, ['nop']
+  4285231, ['nop']
+  4285232, ['nop']
+  4285233, ['mov', 'edx,edx']
+  4285235, ['nop']
+  4285236, ['nop']
+  4285237, ['nop']
+  4285238, ['jmp', 'shortloc_416340']
+ next: [4285248]
+
+node :67
+node sub_416290(4285518) info:
+ start: 4285518
+ prev: []
+ instructions: 
+  4285518, ['nop']
+ next: [4285519]
+
+node :68
+node sub_416290(4285410) info:
+ start: 4285410
+ prev: []
+ instructions: 
+  4285410, ['nop']
+  4285411, ['nop']
+  4285412, ['nop']
+  4285413, ['nop']
+  4285414, ['nop']
+  4285415, ['nop']
+  4285416, ['nop']
+  4285417, ['nop']
+  4285418, ['nop']
+  4285419, ['nop']
+  4285420, ['nop']
+  4285421, ['xor', 'al,0D7h']
+  4285423, ['nop']
+  4285424, ['nop']
+  4285425, ['mov', 'edx,edx']
+  4285427, ['nop']
+  4285428, ['nop']
+  4285429, ['nop']
+  4285430, ['nop']
+  4285431, ['nop']
+  4285432, ['nop']
+  4285433, ['mov', 'eax,eax']
+  4285435, ['xor', 'al,0A0h']
+  4285437, ['nop']
+  4285438, ['nop']
+  4285439, ['nop']
+  4285440, ['nop']
+ next: [4285441]
+
+node :69
+node sub_416186(4284906) info:
+ start: 4284906
+ prev: []
+ instructions: 
+  4284906, ['cmp', 'eax,7Fh']
+  4284909, ['ja', 'shortloc_4161F1']
+ next: [4284911, 4284913]
+
+node :70
+node sub_416290(4285642) info:
+ start: 4285642
+ prev: []
+ instructions: 
+  4285642, ['nop']
+  4285643, ['nop']
+  4285644, ['nop']
+  4285645, ['nop']
+  4285646, ['jmp', 'shortloc_416457']
+ next: [4285527]
+
+node :71
+node sub_416290(4285519) info:
+ start: 4285519
+ prev: []
+ instructions: 
+  4285519, ['nop']
+  4285520, ['nop']
+  4285521, ['nop']
+  4285522, ['nop']
+  4285523, ['nop']
+  4285524, ['nop']
+  4285525, ['nop']
+  4285526, ['nop']
+ next: [4285527]
+
+node :72
+node sub_416290(4285248) info:
+ start: 4285248
+ prev: []
+ instructions: 
+  4285248, ['nop']
+  4285249, ['nop']
+  4285250, ['nop']
+ next: [4285251]
+
+node :73
+node sub_416290(4285104) info:
+ start: 4285104
+ prev: []
+ instructions: 
+  4285104, ['leave']
+  4285105, ['nop']
+  4285106, ['nop']
+  4285107, ['nop']
+  4285108, ['nop']
+  4285109, ['nop']
+  4285110, ['nop']
+  4285111, ['nop']
+  4285112, ['nop']
+  4285113, ['xor', 'al,5']
+ next: [4285115]
+
+node :74
+node sub_416186(4284913) info:
+ start: 4284913
+ prev: []
+ instructions: 
+  4284913, ['xchg', 'eax,ebp']
+ next: [4284914]
+
+node :75
+node sub_416186(4284867) info:
+ start: 4284867
+ prev: []
+ instructions: 
+  4284867, ['call', 'sub_41620A']
+  4284872, ['jmp', 'shortloc_4161F2']
+ next: [4284914]
+
+node :76
+node sub_416290(4285258) info:
+ start: 4285258
+ prev: []
+ instructions: 
+  4285258, ['nop']
+  4285259, ['nop']
+  4285260, ['nop']
+  4285261, ['nop']
+  4285262, ['jmp', 'shortloc_41635C']
+ next: [4285276]
+
+node :77
+node sub_416290(4285270) info:
+ start: 4285270
+ prev: []
+ instructions: 
+  4285270, ['nop']
+  4285271, ['nop']
+  4285272, ['nop']
+  4285273, ['nop']
+  4285274, ['nop']
+  4285275, ['nop']
+ next: [4285276]
+
+node :78
+node sub_416290(4285183) info:
+ start: 4285183
+ prev: []
+ instructions: 
+  4285183, ['nop']
+  4285184, ['nop']
+  4285185, ['jmp', 'shortloc_416323']
+ next: [4285219]
+
+node :79
+node sub_416290(4285452) info:
+ start: 4285452
+ prev: []
+ instructions: 
+  4285452, ['xchg', 'eax,esp']
+  4285453, ['nop']
+  4285454, ['nop']
+ next: [4285455]
+
+node :80
+node sub_416290(4285441) info:
+ start: 4285441
+ prev: []
+ instructions: 
+  4285441, ['nop']
+  4285442, ['nop']
+  4285443, ['jmp', 'shortloc_41640F']
+ next: [4285455]
+
+node :81
+node start(4284624) info:
+ start: 4284624
+ prev: []
+ instructions: 
+  4284624, ['push', 'edx']
+ next: [4284625]
+
+node :82
+node start(4284649) info:
+ start: 4284649
+ prev: []
+ instructions: 
+  4284649, ['nop']
+  4284650, ['nop']
+  4284651, ['mov', 'dx,dx']
+  4284654, ['mov', 'eax,eax']
+  4284656, ['nop']
+  4284657, ['nop']
+  4284658, ['loop', 'loc_4160E9']
+ next: [4284660, 4284649]
+
+node :83
+node start(4284614) info:
+ start: 4284614
+ prev: []
+ instructions: 
+  4284614, ['jmp', 'shortloc_4160D1']
+ next: [4284625]
+
+node :84
+node start(4284625) info:
+ start: 4284625
+ prev: []
+ instructions: 
+  4284625, ['nop']
+  4284626, ['nop']
+  4284627, ['nop']
+  4284628, ['nop']
+  4284629, ['nop']
+  4284630, ['nop']
+  4284631, ['nop']
+  4284632, ['nop']
+  4284633, ['nop']
+  4284634, ['nop']
+  4284635, ['nop']
+  4284636, ['nop']
+  4284637, ['nop']
+  4284638, ['nop']
+  4284639, ['xor', 'ecx,ecx']
+  4284641, ['mov', 'edx,edx']
+  4284643, ['sub', 'ecx,186A0h']
+ next: [4284649]
+
+node :85
+node sub_416290(4285599) info:
+ start: 4285599
+ prev: []
+ instructions: 
+  4285599, ['jmp', 'shortloc_4164A8']
+ next: [4285608]
+
+node :86
+node sub_416200(4284928) info:
+ start: 4284928
+ prev: []
+ instructions: 
+  4284928, ['add', 'dl,dl']
+  4284930, ['jnz', 'shortlocret_416209']
+ next: [4284932, 4284937]
+
+node :87
+node sub_416186(4284874) info:
+ start: 4284874
+ prev: []
+ instructions: 
+  4284874, ['lodsb']
+  4284875, ['shr', 'eax,1']
+  4284877, ['jz', 'shortloc_41621C']
+ next: [4284879, 4284956]
+
+node :88
+node sub_416290(4285455) info:
+ start: 4285455
+ prev: []
+ instructions: 
+  4285455, ['nop']
+  4285456, ['nop']
+  4285457, ['nop']
+  4285458, ['nop']
+  4285459, ['xor', 'al,9Ah']
+  4285461, ['nop']
+  4285462, ['nop']
+ next: [4285463]
+
+node :89
+node sub_416264(4285028) info:
+ start: 4285028
+ prev: []
+ instructions: 
+  4285028, ['add', 'dx,dx']
+  4285031, ['jnz', 'shortlocret_416271']
+ next: [4285033, 4285041]
+
+node :90
+node sub_416186(4284883) info:
+ start: 4284883
+ prev: []
+ instructions: 
+  4284883, ['xchg', 'eax,ecx']
+  4284884, ['dec', 'eax']
+  4284885, ['shl', 'eax,8']
+  4284888, ['lodsb']
+  4284889, ['call', 'sub_41620A']
+  4284894, ['cmp', 'eax,7D00h']
+  4284899, ['jnb', 'shortloc_4161EF']
+ next: [4284901, 4284911]
+
+node :91
+node sub_416290(4285565) info:
+ start: 4285565
+ prev: []
+ instructions: 
+  4285565, ['nop']
+  4285566, ['nop']
+  4285567, ['xor', 'al,0F9h']
+  4285569, ['xor', 'al,3Dh']
+  4285571, ['nop']
+  4285572, ['nop']
+  4285573, ['jmp', 'shortloc_416417']
+ next: [4285463]
+
+node :92
+node sub_416290(4285213) info:
+ start: 4285213
+ prev: []
+ instructions: 
+  4285213, ['xor', 'al,0ECh']
+  4285215, ['nop']
+  4285216, ['nop']
+  4285217, ['nop']
+  4285218, ['nop']
+ next: [4285219]
+
+node :93
+node start(4284660) info:
+ start: 4284660
+ prev: []
+ instructions: 
+  4284660, ['pusha']
+  4284661, ['call', '$+5']
+  4284666, ['pop', 'ebp']
+  4284667, ['jmp', 'shortloc_416106']
+ next: [4284678]
+
+node :94
+node start(4284678) info:
+ start: 4284678
+ prev: []
+ instructions: 
+  4284678, ['sub', 'ebp,0BEh']
+  4284684, ['nop']
+  4284685, ['mov', 'ax,ax']
+  4284688, ['mov', 'cx,cx']
+  4284691, ['mov', 'dx,dx']
+  4284694, ['mov', 'ebx,[ebp+18h]']
+  4284697, ['lea', 'esi,[ebx+12DE6h]']
+  4284703, ['cld']
+ next: [4284704]
+
+node :95
+node sub_416290(4285538) info:
+ start: 4285538
+ prev: []
+ instructions: 
+  4285538, ['xor', 'al,81h']
+  4285540, ['nop']
+  4285541, ['nop']
+  4285542, ['nop']
+  4285543, ['nop']
+  4285544, ['nop']
+  4285545, ['nop']
+  4285546, ['nop']
+  4285547, ['nop']
+  4285548, ['nop']
+  4285549, ['nop']
+ next: [4285550]
+
+node :96
+node sub_416290(4285463) info:
+ start: 4285463
+ prev: []
+ instructions: 
+  4285463, ['nop']
+  4285464, ['mov', 'ebx,ebx']
+  4285466, ['nop']
+  4285467, ['nop']
+  4285468, ['nop']
+  4285469, ['nop']
+  4285470, ['nop']
+  4285471, ['xor', 'al,7']
+  4285473, ['xor', 'al,0BEh']
+  4285475, ['mov', 'ebx,ebx']
+  4285477, ['xor', 'al,2Eh']
+  4285479, ['xor', 'al,5Dh']
+  4285481, ['xor', 'al,7Dh']
+  4285483, ['nop']
+  4285484, ['nop']
+  4285485, ['nop']
+  4285486, ['nop']
+  4285487, ['nop']
+  4285488, ['jmp', 'shortloc_41646E']
+ next: [4285550]
+
+node :97
+node sub_416186(4284901) info:
+ start: 4284901
+ prev: []
+ instructions: 
+  4284901, ['cmp', 'ah,5']
+  4284904, ['jnb', 'shortloc_4161F0']
+ next: [4284906, 4284912]
+
+node :98
+node sub_41620A(4284938) info:
+ start: 4284938
+ prev: []
+ instructions: 
+  4284938, ['xor', 'ecx,ecx']
+ next: [4284940]
+
+node :99
+node sub_416200(4284932) info:
+ start: 4284932
+ prev: []
+ instructions: 
+  4284932, ['mov', 'dl,[esi]']
+  4284934, ['inc', 'esi']
+  4284935, ['adc', 'dl,dl']
+ next: [4284937]
+
+node :100
+node sub_416264(4285033) info:
+ start: 4285033
+ prev: []
+ instructions: 
+  4285033, ['xchg', 'eax,edx']
+  4285034, ['lodsw']
+  4285036, ['xchg', 'eax,edx']
+  4285037, ['add', 'dx,dx']
+  4285040, ['inc', 'edx']
+ next: [4285041]
+
+node :101
+node start(4284790) info:
+ start: 4284790
+ prev: []
+ instructions: 
+  4284790, ['lea', 'eax,[ebx+0CDE8h]']
+  4284796, ['nop']
+  4284797, ['call', 'eax']
+  4284799, ['popa']
+  4284800, ['push', 'offsetword_401272']
+  4284805, ['retn']
+ next: [4199026]
+
+node :102
+node sub_416186(4284879) info:
+ start: 4284879
+ prev: []
+ instructions: 
+  4284879, ['adc', 'ecx,ecx']
+  4284881, ['jmp', 'shortloc_4161EF']
+ next: [4284911]
+
+node :103
+node sub_416186(4284911) info:
+ start: 4284911
+ prev: []
+ instructions: 
+  4284911, ['inc', 'ecx']
+ next: [4284912]
+
+node :104
+node sub_416290(4285872) info:
+ start: 4285872
+ prev: []
+ instructions: 
+  4285872, ['retn']
+ next: []
+
+node :105
+node start(4199026) info:
+ start: 4199026
+ prev: []
+ instructions: 
+ next: []
+
+node :106
+node sub_41620A(4284940) info:
+ start: 4284940
+ prev: []
+ instructions: 
+  4284940, ['inc', 'ecx']
+ next: []
+
+node :107
+node sub_416290(4285060) info:
+ start: 4285060
+ prev: []
+ instructions: 
+  4285060, ['xchg', 'eax,edi']
+  4285061, ['sub', 'eax,[esp+arg_10]']
+  4285065, ['pop', 'edi']
+  4285066, ['pop', 'esi']
+  4285067, ['nop']
+  4285068, ['pop', 'ebx']
+  4285069, ['retn', '0Ch']
+ next: []
+
+node :108
+node sub_416186(4284956) info:
+ start: 4284956
+ prev: []
+ instructions: 
+  4284956, ['sub', 'edi,[esp+20h+arg_4]']
+  4284960, ['mov', '[esp+20h+var_4],edi']
+  4284964, ['popa']
+  4284965, ['retn']
+ next: []
+
+node :109
+node sub_41620C(4284955) info:
+ start: 4284955
+ prev: []
+ instructions: 
+  4284955, ['retn']
+ next: []
+
+node :110
+node sub_416264(4285041) info:
+ start: 4285041
+ prev: []
+ instructions: 
+  4285041, ['retn']
+ next: []
+
+node :111
+node sub_416272(4285059) info:
+ start: 4285059
+ prev: []
+ instructions: 
+  4285059, ['retn']
+ next: []
+
+node :112
+node Root info:
+ start: 0
+ prev: []
+ instructions: 
+ next: ['start(4284614)', 'sub_416186(4284806)', 'sub_416200(4284928)', 'sub_41620A(4284938)', 'sub_41620C(4284940)', 'sub_416264(4285028)', 'sub_416272(4285042)', 'sub_416290(4285072)']
+
+node :113
+node sub_416200(4284937) info:
+ start: 4284937
+ prev: []
+ instructions: 
+  4284937, ['retn']
+ next: []
+

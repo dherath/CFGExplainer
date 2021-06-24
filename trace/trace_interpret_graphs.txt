@@ -1,0 +1,283 @@
+2021-06-23 23:27:12.116872: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-06-23 23:27:13.417753: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-23 23:27:13.418378: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-06-23 23:27:15.237024: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2021-06-23 23:27:15.237068: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-06-23 23:27:15.239350: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-06-23 23:27:15.239382: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-06-23 23:27:15.240275: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 23:27:15.240447: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 23:27:15.242524: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 23:27:15.242968: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-06-23 23:27:15.243080: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-06-23 23:27:15.244399: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 23:27:15.247061: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-06-23 23:27:15.247730: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2021-06-23 23:27:15.247744: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-06-23 23:27:15.247756: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-06-23 23:27:15.247765: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-06-23 23:27:15.247774: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-06-23 23:27:15.247782: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-06-23 23:27:15.247790: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-06-23 23:27:15.247798: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-06-23 23:27:15.247805: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-06-23 23:27:15.248991: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-06-23 23:27:15.249018: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-06-23 23:27:15.641503: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-23 23:27:15.641551: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-06-23 23:27:15.641558: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-06-23 23:27:15.643652: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 13968 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:01:00.0, compute capability: 7.5)
+2021-06-23 23:27:20.721733: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-06-23 23:27:21.050734: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+sys.args:  ['exp_interpret_graphs.py', 'data', '1024-512-128', 'classifier_lynxv2_', 'yancfg_complete_sample2', 'ep300_b32_elr00001_']
+> Dynamic Prune graphs [will run CFGExplainer iteratively]
+created Graph GCN model
++ loaded GCN model:  <util.models.GCN object at 0x7f0adb1de280>
++ loaded explainer model:  <Explainer.ExplainerModule object at 0x7f0a940c1e50>
+
+>> running  Bagle  CFGExplainer experiment
+malware =  Bagle started
++ done:  8c4567b464e29f634baaf747a905ea95  | time:  56.83745718002319
++ done:  Email-Worm.Win32.Bagle.cy  | time:  47.52966380119324
++ done:  Email-Worm.Win32.Bagle.df  | time:  47.47939324378967
++ done:  Email-Worm.Win32.Bagle.do  | time:  47.40612506866455
++ done:  Email-Worm.Win32.Bagle.ds  | time:  47.34423470497131
++ done:  Email-Worm.Win32.Bagle.iu  | time:  47.14479875564575
++ done:  Email-Worm.Win32.Bagle.jn  | time:  47.81345987319946
++ done:  Email-Worm.Win32.Bagle.m  | time:  49.605403423309326
++ done:  Email-Worm.Win32.Bagle.maj  | time:  47.23581671714783
++ done:  Email-Worm.Win32.Bagle.t  | time:  48.58517909049988
++ done:  Email-Worm.Win32.Bagle.u  | time:  49.24576759338379
++ done:  Trojan-Downloader.Win32.Bagle.bj  | time:  47.17831301689148
++ done:  Trojan-Downloader.Win32.Bagle.ch  | time:  49.48982572555542
++ done:  Trojan-Downloader.Win32.Bagle.cq  | time:  47.24923253059387
++ done:  Trojan-Downloader.Win32.Bagle.v  | time:  49.44435477256775
+malware  Bagle completed | time =  48.63926836649577 
+
+
+>> running  Benign  CFGExplainer experiment
+malware =  Benign started
++ done:  09ae02badc8b2086b93bf9a8e6e571d9  | time:  68.21851468086243
++ done:  1719b8adc6f009f969a4422340fe9a3  | time:  69.62997245788574
++ done:  2320f97b2b182525aa85be617ba020b  | time:  69.39774823188782
++ done:  3698fc40b2eb21b260b46d8315c3e173  | time:  68.49985861778259
++ done:  5466909c288218d868aab8061d308e71  | time:  66.67398500442505
++ done:  626a24ed1228580b9518c01930936df9  | time:  67.10016870498657
++ done:  72b05bc52f93ccf523965ef393e5380  | time:  67.91858553886414
++ done:  85efc7bcbf6327b9c7fa774d374313  | time:  69.88905119895935
++ done:  8ca3cfefbcf81b4898e0b108d28f0d91  | time:  68.32977271080017
++ done:  8dfbb95989af28058c7431704ce7cd66  | time:  67.60059070587158
++ done:  971dd3c6144211fa16404c108b4ffb83  | time:  66.55710673332214
++ done:  9d3cea31bc4b539ea7dc77201532fb2  | time:  67.73954057693481
++ done:  5f28c8e37b3d4f310f1b52f4db4b47f  | time:  65.39939665794373
++ done:  99282054bec68e81b76d71b1c0a4ad0  | time:  66.71128535270691
++ done:  f9dd81ecf0933dc7cc3f1513e462cec0  | time:  67.32443189620972
+malware  Benign completed | time =  67.79933393796286 
+
+
+>> running  Bifrose  CFGExplainer experiment
+malware =  Bifrose started
++ done:  03063720.EXE  | time:  57.228394746780396
++ done:  156534ec5243f97262c5d74d54056ed80c5f4603  | time:  56.7178258895874
++ done:  2A4BC730804FAC614BC4A71E975C1FF0  | time:  56.70166325569153
++ done:  2cc1f49e4980f279dc102eb87126f895f3b52e13  | time:  56.3678617477417
++ done:  327f4c00326b42a6b3495f7ab83530d2  | time:  67.93830680847168
++ done:  4F3A51A0.EXE  | time:  57.14444541931152
++ done:  556bf178a8b368e81bf12ccc7fc95680d2f86750  | time:  57.49345278739929
++ done:  577c704834dd34cdf7acc21db50c9046  | time:  56.62781357765198
++ done:  716dff8e65775c89849ff4108a56f099  | time:  56.78346824645996
++ done:  naele.EXE  | time:  56.862873792648315
++ done:  r4up-0eda207ec5  | time:  56.758538007736206
++ done:  r4up-144876686b  | time:  68.52776002883911
++ done:  r4up-1d58a08f00  | time:  56.56731581687927
++ done:  r4up-22b962451  | time:  58.467315673828125
++ done:  r4up-71534ae13  | time:  57.04178428649902
+malware  Bifrose completed | time =  58.48192133903503 
+
+
+>> running  Hupigon  CFGExplainer experiment
+malware =  Hupigon started
++ done:  2F9FF6FE43F167334C5728053207AE0E.VIR  | time:  61.257648229599
++ done:  57dc247f59a26fa6be6e1a5e3bc72a98  | time:  66.80692958831787
++ done:  Backdoor.Win32.Agent.eho  | time:  67.55148768424988
++ done:  Backdoor.Win32.Hupigon.ajcm  | time:  61.47403120994568
++ done:  Backdoor.Win32.Hupigon.aul  | time:  61.99424386024475
++ done:  Backdoor.Win32.Hupigon.ayx  | time:  61.25967216491699
++ done:  Backdoor.Win32.Hupigon.bbo  | time:  63.965585708618164
++ done:  Backdoor.Win32.Hupigon.bbq  | time:  62.17069625854492
++ done:  Backdoor.Win32.Hupigon.bt  | time:  61.49028539657593
++ done:  Backdoor.Win32.Hupigon.bvj  | time:  61.12447690963745
++ done:  Backdoor.Win32.Hupigon.cbb  | time:  61.33373999595642
++ done:  Backdoor.Win32.Hupigon.es  | time:  61.22183442115784
++ done:  Backdoor.Win32.Hupigon.gbx  | time:  60.981602907180786
++ done:  Backdoor.Win32.Hupigon.mf  | time:  61.33377027511597
++ done:  Backdoor.Win32.Hupigon.sr  | time:  62.81417918205261
+malware  Hupigon completed | time =  62.45201225280762 
+
+
+>> running  Ldpinch  CFGExplainer experiment
+malware =  Ldpinch started
++ done:  301AC8F8E5E2316EF1B94FA8EC713EE7.VIR  | time:  51.266114711761475
++ done:  Trojan-PSW.Win32.LdPinch.aadh  | time:  53.52306795120239
++ done:  Trojan-PSW.Win32.LdPinch.aix  | time:  51.148662090301514
++ done:  Trojan-PSW.Win32.LdPinch.arb  | time:  50.08492088317871
++ done:  Trojan-PSW.Win32.LdPinch.b  | time:  52.30728888511658
++ done:  Trojan-PSW.Win32.LdPinch.bio  | time:  49.42719078063965
++ done:  Trojan-PSW.Win32.LdPinch.bu  | time:  53.542235136032104
++ done:  Trojan-PSW.Win32.LdPinch.dis  | time:  50.8909227848053
++ done:  Trojan-PSW.Win32.LdPinch.gh  | time:  50.83243703842163
++ done:  Trojan-PSW.Win32.LdPinch.os  | time:  50.28049850463867
++ done:  Trojan-PSW.Win32.LdPinch.th  | time:  50.85034775733948
++ done:  Trojan-PSW.Win32.LdPinch.vht  | time:  50.91807961463928
++ done:  Trojan-PSW.Win32.LdPinch.xah  | time:  51.39035153388977
++ done:  Trojan-PSW.Win32.LdPinch.ydm  | time:  51.82980823516846
++ done:  14498d7962c2a5231593bacc05b4d0  | time:  50.81744122505188
+malware  Ldpinch completed | time =  51.27395780881246 
+
+
+>> running  Lmir  CFGExplainer experiment
+malware =  Lmir started
++ done:  Trojan-GameThief.Win32.Lmir.ach  | time:  59.86441445350647
++ done:  Trojan-GameThief.Win32.Lmir.afy  | time:  60.32749557495117
++ done:  Trojan-GameThief.Win32.Lmir.ain  | time:  60.43992304801941
++ done:  Trojan-GameThief.Win32.Lmir.ao  | time:  61.96052598953247
++ done:  Trojan-GameThief.Win32.Lmir.aon  | time:  61.74244713783264
++ done:  Trojan-GameThief.Win32.Lmir.aqw  | time:  61.36597490310669
++ done:  Trojan-GameThief.Win32.Lmir.atr  | time:  61.537981033325195
++ done:  Trojan-GameThief.Win32.Lmir.b  | time:  61.167864084243774
++ done:  Trojan-GameThief.Win32.Lmir.oz  | time:  67.00622415542603
++ done:  Trojan-GameThief.Win32.Lmir.vr  | time:  66.8119752407074
++ done:  Trojan-GameThief.Win32.Lmir.xh  | time:  59.92878580093384
++ done:  Trojan-PSW.Win32.Lmir.arm  | time:  60.49520707130432
++ done:  Trojan-PSW.Win32.Lmir.ay  | time:  61.290759563446045
++ done:  Trojan-PSW.Win32.Lmir.oz  | time:  67.36634016036987
++ done:  Trojan-PSW.Win32.Lmir.qy  | time:  68.6098484992981
+malware  Lmir completed | time =  62.66105111440023 
+
+
+>> running  Rbot  CFGExplainer experiment
+malware =  Rbot started
++ done:  Backdoor.Win32.IRCBot.ao  | time:  55.117833852767944
++ done:  Backdoor.Win32.Rbot.io  | time:  52.699188470840454
++ done:  Backdoor.Win32.Rbot.it  | time:  52.9822564125061
++ done:  Backdoor.Win32.Rbot.jls  | time:  53.05232310295105
++ done:  Backdoor.Win32.Rbot.kkx  | time:  52.288365602493286
++ done:  Backdoor.Win32.Rbot.row  | time:  54.882994174957275
++ done:  Backdoor.Win32.Rbot.soy  | time:  59.04120707511902
++ done:  Backdoor.Win32.Rbot.u  | time:  63.0891387462616
++ done:  Backdoor.Win32.Rbot.un  | time:  52.59458637237549
++ done:  Backdoor.Win32.Rbot.x  | time:  48.849732637405396
++ done:  Backdoor.Win32.Rbot.y  | time:  50.10883092880249
++ done:  Trojan-GameThief.Win32.Lmir.f  | time:  58.93318223953247
++ done:  Trojan-GameThief.Win32.Lmir.ro  | time:  60.21200084686279
++ done:  Trojan-PSW.Win32.LdPinch.dis  | time:  51.39181399345398
++ done:  Trojan-PSW.Win32.LdPinch.th  | time:  51.327619552612305
+malware  Rbot completed | time =  54.43807160059611 
+
+
+>> running  Sdbot  CFGExplainer experiment
+malware =  Sdbot started
++ done:  Backdoor.Win32.SdBot.04.WARNING:tensorflow:Unresolved object in checkpoint: (root).pred_layer.kernel
+WARNING:tensorflow:Unresolved object in checkpoint: (root).pred_layer.bias
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.
+  | time:  60.74950647354126
++ done:  Backdoor.Win32.SdBot.agj  | time:  60.42862868309021
++ done:  Backdoor.Win32.SdBot.amv  | time:  60.26816725730896
++ done:  Backdoor.Win32.SdBot.bu  | time:  59.48733186721802
++ done:  Backdoor.Win32.SdBot.ev  | time:  60.03226566314697
++ done:  Backdoor.Win32.SdBot.hj  | time:  61.2346830368042
++ done:  Backdoor.Win32.SdBot.hv  | time:  59.3881196975708
++ done:  Backdoor.Win32.SdBot.m  | time:  61.723745822906494
++ done:  Backdoor.Win32.SdBot.mw  | time:  59.62181758880615
++ done:  Backdoor.Win32.SdBot.ob  | time:  59.34028887748718
++ done:  Backdoor.Win32.SdBot.wj  | time:  60.91978716850281
++ done:  Backdoor.Win32.SdBot.wr  | time:  60.047730684280396
++ done:  Backdoor.Win32.SdBot.xj  | time:  59.49077820777893
++ done:  Backdoor.Win32.SdBot.xu  | time:  63.1761679649353
++ done:  Backdoor.Win32.SdBot.zr  | time:  61.930036783218384
+malware  Sdbot completed | time =  60.52260371843974 
+
+
+>> running  Swizzor  CFGExplainer experiment
+malware =  Swizzor started
++ done:  06C52786.EXE  | time:  66.92674994468689
++ done:  1cb546df21ddb6a2257a10914c9149c7  | time:  68.8069965839386
++ done:  775318a7832aa2f9bf33dbc71d6b9f7c675bc752  | time:  69.06185007095337
++ done:  7aa88b76b5a135c65af8facee6851a3e891bc595  | time:  69.85083436965942
++ done:  84DC1C01.EXE  | time:  69.6926200389862
++ done:  8D61CE53.EXE  | time:  69.70183157920837
++ done:  CDC5ABE3.EXE  | time:  69.61626362800598
++ done:  Trojan-Downloader.Win32.Obfuscated.abn  | time:  70.6715190410614
++ done:  Trojan-Downloader.Win32.Obfuscated.ads  | time:  71.07964015007019
++ done:  Trojan-Downloader.Win32.Obfuscated.z  | time:  71.47347164154053
++ done:  Trojan-Downloader.Win32.Swizzor.  | time:  70.7186028957367
++ done:  Trojan.Win32.Obfuscated.exo  | time:  70.15164470672607
++ done:  Trojan.Win32.Obfuscated.gcs  | time:  71.1642575263977
++ done:  Trojan.Win32.Obfuscated.sr  | time:  71.06123518943787
++ done:  Trojan.Win32.Obfuscated.srj  | time:  70.31083822250366
+malware  Swizzor completed | time =  70.01922370592753 
+
+
+>> running  Vundo  CFGExplainer experiment
+malware =  Vundo started
++ done:  024083b8274ff6f7edeadd453564382b  | time:  56.73610019683838
++ done:  0404E71B66B85D50BBB82A3B15D6261F  | time:  54.69696617126465
++ done:  070fb588b2cbf294e6e8c527e2e64e53  | time:  66.45016551017761
++ done:  0c7c7fee86d959075440a3dffe29eca0  | time:  57.149670124053955
++ done:  27b10180faa53882135cdd7e728818b1.8b1  | time:  65.85289287567139
++ done:  3FCC04C3570B7F0E74A9C9E062D701B2  | time:  56.918452978134155
++ done:  434FB546531B5AC1DC9DDD1DF558E62B.VIR  | time:  55.02063322067261
++ done:  4F64CA9A5FD735C8A6C3D5C2A057BF25.VIR  | time:  57.99110174179077
++ done:  4FA502129D83DED09CD5E40D4D15A43D  | time:  57.65481090545654
++ done:  Backdoor.Win32.Agent.xao  | time:  55.17592096328735
++ done:  Backdoor.Win32.Bifrose.adn  | time:  57.55682110786438
++ done:  Trojan-Spy.Win32.Agent.ihb  | time:  67.89785647392273
++ done:  Trojan.Win32.Agent.bbdb  | time:  57.6395525932312
++ done:  Trojan.Win32.Monder.au  | time:  54.94991326332092
++ done:  Trojan.Win32.Monder.by  | time:  55.191166162490845
+malware  Vundo completed | time =  58.45880161921183 
+
+
+>> running  Zbot  CFGExplainer experiment
+malware =  Zbot started
++ done:  012587  | time:  55.74426889419556
++ done:  021478  | time:  48.138341665267944
++ done:  444e8e38a96e9da1e4f24122aac7d4e7  | time:  65.9193115234375
++ done:  483438  | time:  49.53053331375122
++ done:  4E9E033F.EXE  | time:  51.58232641220093
++ done:  748aafaa4c870949acd5a282005f33c4.EXE  | time:  47.55415868759155
++ done:  88  | time:  57.1201593875885
++ done:  975c13eb6480b2986ce75a7885e405b2  | time:  64.43912053108215
++ done:  Trojan-Spy.Win32.Zbot.bq  | time:  69.43624329566956
++ done:  Trojan-Spy.Win32.Zbot.bvq  | time:  60.94943690299988
++ done:  Trojan-Spy.Win32.Zbot.faf  | time:  60.421168088912964
++ done:  Trojan-Spy.Win32.Zbot.nqv  | time:  66.18067526817322
++ done:  zeusbin_6a5527c594b198d1802d8147773dedfd.ex0  | time:  48.90198540687561
++ done:  zeusbin_6c9b5fac8ef3abe44cd767c3b306ae00.ex0  | time:  47.97170948982239
++ done:  zeusbin_f6646d2e6dd312d1a60037650c4d0a09.ex0  | time:  57.95190691947937
+malware  Zbot completed | time =  56.78942305246989 
+
+
+>> running  Zlob  CFGExplainer experiment
+malware =  Zlob started
++ done:  0229daa972845536ef9d8a1be4fed4e2  | time:  56.67425179481506
++ done:  Trojan-Downloader.Win32.Agent.anwx  | time:  61.22384762763977
++ done:  Trojan-Downloader.Win32.Zlob.ab  | time:  57.69789433479309
++ done:  Trojan-Downloader.Win32.Zlob.acj  | time:  55.51505947113037
++ done:  Trojan-Downloader.Win32.Zlob.tw  | time:  58.367737770080566
++ done:  Trojan-Downloader.Win32.Zlob.uw  | time:  59.836650371551514
++ done:  Trojan-Downloader.Win32.Zlob.wv  | time:  60.87734937667847
++ done:  Trojan-Downloader.Win32.Zlob.xq  | time:  60.554441690444946
++ done:  Trojan-Downloader.Win32.Zlob.xzr  | time:  58.39969801902771
++ done:  Trojan-Downloader.Win32.Zlob.y  | time:  58.54952311515808
++ done:  Trojan-Downloader.Win32.Zlob.ybr  | time:  57.987497091293335
++ done:  Trojan-Downloader.Win32.Zlob.y  | time:  58.28952193260193
++ done:  Trojan-Downloader.Win32.Zlob.yef  | time:  58.69248652458191
++ done:  Trojan-Downloader.Win32.Zlob.zkw  | time:  58.2736713886261
++ done:  Trojan-Downloader.Win32.Zlob.zmu  | time:  57.87123417854309
+malware  Zlob completed | time =  58.587390979131065 
+

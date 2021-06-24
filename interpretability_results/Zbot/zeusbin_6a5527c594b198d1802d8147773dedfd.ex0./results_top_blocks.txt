@@ -1,0 +1,4808 @@
+CFGExplainer result: [malware = Zbot |  graph = zeusbin_6a5527c594b198d1802d8147773dedfd.ex0| #nodes = 495]
+
+node :1
+node start(4203624) info:
+ start: 4203624
+ prev: []
+ instructions: 
+  4203624, ['cmp', 'eax,0E86C364Ch']
+  4203630, ['jz', 'short$+2']
+ next: [4203632, 4203632]
+
+node :2
+node start(4203666) info:
+ start: 4203666
+ prev: []
+ instructions: 
+  4203666, ['cmp', 'eax,0F1C96h']
+  4203672, ['jz', 'shortloc_4024AB']
+ next: [4203674, 4203691]
+
+node :3
+node start(4203674) info:
+ start: 4203674
+ prev: []
+ instructions: 
+  4203674, ['cmp', 'eax,1C98B791h']
+  4203680, ['jz', 'shortloc_4024AB']
+ next: [4203682, 4203691]
+
+node :4
+node start(4203632) info:
+ start: 4203632
+ prev: []
+ instructions: 
+  4203632, ['cmp', 'eax,0E4D61310h']
+  4203638, ['jnz', 'short$+2']
+ next: [4203640, 4203640]
+
+node :5
+node start(4200445) info:
+ start: 4200445
+ prev: []
+ instructions: 
+  4200445, ['cmp', 'eax,0C81FE325h']
+  4200451, ['jz', 'shortloc_401821']
+ next: [4200453, 4200481]
+
+node :6
+node start(4198778) info:
+ start: 4198778
+ prev: []
+ instructions: 
+  4198778, ['cmp', 'eax,23h']
+  4198781, ['jnz', 'short$+2']
+ next: [4198783, 4198783]
+
+node :7
+node start(4203682) info:
+ start: 4203682
+ prev: []
+ instructions: 
+  4203682, ['call', 'ds:GetCommandLineW']
+  4203688, ['mov', '[ebp+var_58],eax']
+ next: [4203691]
+
+node :8
+node start(4203049) info:
+ start: 4203049
+ prev: []
+ instructions: 
+  4203049, ['call', 'ds:GetCommandLineA']
+  4203055, ['mov', '[ebp+var_158],eax']
+  4203061, ['lea', 'eax,[ebp+flOldProtect]']
+  4203067, ['push', 'eax;lpflOldProtect']
+  4203068, ['push', '40h;flNewProtect']
+  4203070, ['push', '0;hWnd']
+  4203072, ['call', 'ds:GetDC']
+  4203078, ['test', 'eax,eax']
+  4203080, ['mov', '[ebp+var_80],eax']
+  4203083, ['jnz', 'shortloc_402261']
+ next: [4203085, 4203105]
+
+node :9
+node start(4203640) info:
+ start: 4203640
+ prev: []
+ instructions: 
+  4203640, ['mov', 'eax,[ebp+var_94]']
+  4203646, ['mov', '[ebp+var_3C],eax']
+  4203649, ['call', 'ds:GetCurrentThreadId']
+  4203655, ['mov', '[ebp+var_54],eax']
+  4203658, ['cmp', 'eax,9ECC3242h']
+  4203664, ['jnz', 'shortloc_4024C2']
+ next: [4203666, 4203714]
+
+node :10
+node start(4200421) info:
+ start: 4200421
+ prev: []
+ instructions: 
+  4200421, ['jz', 'shortloc_401824']
+ next: [4200423, 4200484]
+
+node :11
+node start(4200453) info:
+ start: 4200453
+ prev: []
+ instructions: 
+  4200453, ['push', 'offsetaIrjf94vta;"IRjf94vTa"']
+  4200458, ['push', '0;bInheritHandle']
+  4200460, ['push', '1F0001h;dwDesiredAccess']
+  4200465, ['call', 'ds:OpenMutexA']
+  4200471, ['mov', '[ebp+var_F4],eax']
+  4200477, ['test', 'eax,eax']
+  4200479, ['jz', 'short$+2']
+ next: [4200481, 4200481]
+
+node :12
+node start(4200481) info:
+ start: 4200481
+ prev: []
+ instructions: 
+  4200481, ['mov', '[ebp+var_8],eax']
+ next: [4200484]
+
+node :13
+node start(4203691) info:
+ start: 4203691
+ prev: []
+ instructions: 
+  4203691, ['and', '[ebp+var_124],eax']
+  4203697, ['cmp', 'eax,4Eh']
+  4203700, ['jz', 'shortloc_4024C2']
+ next: [4203702, 4203714]
+
+node :14
+node start(4203383) info:
+ start: 4203383
+ prev: []
+ instructions: 
+  4203383, ['or', 'eax,eax']
+  4203385, ['jz', 'loc_4017E5']
+ next: [4200421, 4203391]
+
+node :15
+node start(4198770) info:
+ start: 4198770
+ prev: []
+ instructions: 
+  4198770, ['cmp', 'eax,0FCh']
+  4198776, ['jnz', 'short$+2']
+ next: [4198778, 4198778]
+
+node :16
+node start(4200423) info:
+ start: 4200423
+ prev: []
+ instructions: 
+  4200423, ['call', 'ds:GetCurrentProcessId']
+  4200429, ['cmp', 'eax,0A03BF5FAh']
+  4200435, ['jnz', 'short$+2']
+ next: [4200437, 4200437]
+
+node :17
+node start(4203105) info:
+ start: 4203105
+ prev: []
+ instructions: 
+  4203105, ['push', '0;lpFileSizeHigh']
+  4203107, ['push', '[ebp+var_84];hFile']
+  4203113, ['call', 'ds:GetFileSize']
+  4203119, ['cmp', 'eax,0FFFFFFFFh']
+  4203122, ['jz', 'loc_402306']
+ next: [4203128, 4203270]
+
+node :18
+node start(4200437) info:
+ start: 4200437
+ prev: []
+ instructions: 
+  4200437, ['cmp', 'eax,1C958E31h']
+  4200443, ['jz', 'shortloc_401821']
+ next: [4200445, 4200481]
+
+node :19
+node start(4203316) info:
+ start: 4203316
+ prev: []
+ instructions: 
+  4203316, ['call', 'ds:GetCommandLineA']
+  4203322, ['mov', '[ebp+var_158],eax']
+  4203328, ['push', 'offsetunk_417150']
+  4203333, ['push', '[ebp+var_94]']
+  4203339, ['call', 'ds:GetCurrentProcessId']
+  4203345, ['mov', '[ebp+var_A0],eax']
+  4203351, ['or', '[ebp+var_180],eax']
+  4203357, ['sub', '[ebp+var_9C],eax']
+  4203363, ['push', '120Eh']
+  4203368, ['push', 'offsetaMilvn1rtmvsubh;"MIlvn1RtmvsubHd"']
+  4203373, ['call', 'ds:RegisterWindowMessageA']
+  4203379, ['test', 'eax,eax']
+  4203381, ['jnz', 'shortloc_40237F']
+ next: [4203383, 4203391]
+
+node :20
+node start(4203151) info:
+ start: 4203151
+ prev: []
+ instructions: 
+  4203151, ['push', 'offsetaVjhe7uv00;"vjhE7Uv00"']
+  4203156, ['call', 'ds:RegisterWindowMessageA']
+  4203162, ['cmp', 'eax,0']
+  4203165, ['jz', 'loc_4016D6']
+ next: [4200150, 4203171]
+
+node :21
+node start(4198783) info:
+ start: 4198783
+ prev: []
+ instructions: 
+  4198783, ['cmp', 'eax,0EEAD2EA9h']
+  4198789, ['jz', 'shortloc_4011A6']
+ next: [4198791, 4198822]
+
+node :22
+node start(4203085) info:
+ start: 4203085
+ prev: []
+ instructions: 
+  4203085, ['call', 'ds:GetProcessHeap']
+  4203091, ['or', 'eax,eax']
+  4203093, ['mov', '[ebp+var_15C],eax']
+  4203099, ['jz', 'loc_402065']
+ next: [4202597, 4203105]
+
+node :23
+node start(4200406) info:
+ start: 4200406
+ prev: []
+ instructions: 
+  4200406, ['push', '[ebp+hModule];hModule']
+  4200412, ['call', 'ds:GetVersion']
+  4200418, ['cmp', 'eax,20h']
+ next: [4200421]
+
+node :24
+node start(4198596) info:
+ start: 4198596
+ prev: []
+ instructions: 
+  4198596, ['push', 'ebp']
+  4198597, ['mov', 'ebp,esp']
+  4198599, ['add', 'esp,0FFFFFE48h']
+  4198605, ['call', 'ds:GetTickCount']
+  4198611, ['xor', '[ebp+flOldProtect],eax']
+  4198617, ['cmp', 'eax,0BEB04718h']
+  4198623, ['jnz', 'loc_401162']
+ next: [4198629, 4198754]
+
+node :25
+node start(4198791) info:
+ start: 4198791
+ prev: []
+ instructions: 
+  4198791, ['cmp', 'eax,0B8h']
+  4198797, ['jnz', 'shortloc_4011A6']
+ next: [4198799, 4198822]
+
+node :26
+node start(4203714) info:
+ start: 4203714
+ prev: []
+ instructions: 
+  4203714, ['sub', '[ebp+var_3C],3CA670BCh']
+  4203721, ['add', '[ebp+var_3C],0BCE640C3h']
+  4203728, ['call', 'ds:GetCurrentThreadId']
+  4203734, ['cmp', 'eax,1CFB29A9h']
+  4203740, ['jz', 'shortloc_4024EA']
+ next: [4203742, 4203754]
+
+node :27
+node start(4202842) info:
+ start: 4202842
+ prev: []
+ instructions: 
+  4202842, ['mov', '[ebp+var_1B0],eax']
+  4202848, ['or', '[ebp+var_144],eax']
+  4202854, ['cmp', 'eax,4042A3B7h']
+  4202860, ['jz', 'loc_402229']
+ next: [4202866, 4203049]
+
+node :28
+node start(4203043) info:
+ start: 4203043
+ prev: []
+ instructions: 
+  4203043, ['mov', '[ebp+var_120],eax']
+ next: [4203049]
+
+node :29
+node start(4203128) info:
+ start: 4203128
+ prev: []
+ instructions: 
+  4203128, ['add', '[ebp+var_100],eax']
+  4203134, ['mov', '[ebp+var_38],eax']
+  4203137, ['sub', '[ebp+var_F8],eax']
+  4203143, ['cmp', 'eax,38583467h']
+  4203149, ['jnz', 'shortloc_402306']
+ next: [4203151, 4203270]
+
+node :30
+node start(4200363) info:
+ start: 4200363
+ prev: []
+ instructions: 
+  4200363, ['push', 'offsetLibFileName;"cewmdm.dll"']
+  4200368, ['call', 'ds:LoadLibraryA']
+  4200374, ['mov', '[ebp+hModule],eax']
+  4200380, ['push', 'offsetProcName;"DllGetClassObject"']
+  4200385, ['call', 'ds:GetProcessHeap']
+  4200391, ['and', 'eax,eax']
+  4200393, ['mov', '[ebp+var_F4],eax']
+  4200399, ['jnz', 'shortloc_4017D6']
+ next: [4200401, 4200406]
+
+node :31
+node start(4203171) info:
+ start: 4203171
+ prev: []
+ instructions: 
+  4203171, ['mov', '[ebp+var_D8],eax']
+  4203177, ['mov', '[ebp+var_6C],eax']
+  4203180, ['cmp', 'eax,59h']
+  4203183, ['jz', 'shortloc_402306']
+ next: [4203185, 4203270]
+
+node :32
+node start(4202959) info:
+ start: 4202959
+ prev: []
+ instructions: 
+  4202959, ['cmp', 'eax,0E5h']
+  4202965, ['jnz', 'shortloc_402223']
+ next: [4202967, 4203043]
+
+node :33
+node start(4202816) info:
+ start: 4202816
+ prev: []
+ instructions: 
+  4202816, ['call', 'ds:GetCurrentThreadId']
+  4202822, ['cmp', 'eax,8EB528EAh']
+  4202828, ['jz', 'shortloc_40215A']
+ next: [4202830, 4202842]
+
+node :34
+node start(4203185) info:
+ start: 4203185
+ prev: []
+ instructions: 
+  4203185, ['cmp', 'eax,0F84D3169h']
+  4203191, ['jz', 'shortloc_402300']
+ next: [4203193, 4203264]
+
+node :35
+node start(4203210) info:
+ start: 4203210
+ prev: []
+ instructions: 
+  4203210, ['cmp', 'eax,0Eh']
+  4203213, ['jnz', 'shortloc_402300']
+ next: [4203215, 4203264]
+
+node :36
+node start(4203258) info:
+ start: 4203258
+ prev: []
+ instructions: 
+  4203258, ['mov', '[ebp+var_178],eax']
+ next: [4203264]
+
+node :37
+node start(4200864) info:
+ start: 4200864
+ prev: []
+ instructions: 
+  4200864, ['cmp', 'eax,4C24EC54h']
+  4200870, ['jz', 'shortloc_4019C4']
+ next: [4200872, 4200900]
+
+node :38
+node start(4198679) info:
+ start: 4198679
+ prev: []
+ instructions: 
+  4198679, ['cmp', 'eax,387CA072h']
+  4198685, ['jz', 'shortloc_40114B']
+ next: [4198687, 4198731]
+
+node :39
+node start(4200484) info:
+ start: 4200484
+ prev: []
+ instructions: 
+  4200484, ['mov', '[ebp+var_74],eax']
+  4200487, ['or', '[ebp+var_30],eax']
+  4200490, ['call', 'ds:GetProcAddress']
+  4200496, ['mov', '[ebp+var_13C],eax']
+  4200502, ['call', 'ds:GetEnvironmentStringsW']
+  4200508, ['mov', '[ebp+var_118],eax']
+  4200514, ['call', 'ds:GetProcessHeap']
+  4200520, ['mov', '[ebp+var_60],eax']
+  4200523, ['call', 'ds:GetCommandLineA']
+  4200529, ['mov', '[ebp+var_158],eax']
+  4200535, ['call', 'ds:GetEnvironmentStrings']
+  4200541, ['mov', '[ebp+var_B4],eax']
+  4200547, ['call', 'ds:GetCurrentThreadId']
+  4200553, ['xor', '[ebp+var_19C],eax']
+  4200559, ['cmp', 'eax,0BC99BC39h']
+  4200565, ['jnz', 'shortloc_401888']
+ next: [4200567, 4200584]
+
+node :40
+node start(4198983) info:
+ start: 4198983
+ prev: []
+ instructions: 
+  4198983, ['call', 'ds:GetFileSize']
+  4198989, ['cmp', 'eax,0FFFFFFFFh']
+  4198992, ['jz', 'short$+2']
+ next: [4198994, 4198994]
+
+node :41
+node start(4201742) info:
+ start: 4201742
+ prev: []
+ instructions: 
+  4201742, ['cmp', 'eax,0C2h']
+  4201748, ['jz', 'loc_401D9D']
+ next: [4201754, 4201885]
+
+node :42
+node start(4198734) info:
+ start: 4198734
+ prev: []
+ instructions: 
+  4198734, ['mov', '[ebp+var_108],eax']
+  4198740, ['cmp', 'eax,0E46E2B42h']
+  4198746, ['jnz', 'short$+2']
+ next: [4198748, 4198748]
+
+node :43
+node start(4200743) info:
+ start: 4200743
+ prev: []
+ instructions: 
+  4200743, ['cmp', 'eax,1EB3EFE9h']
+  4200749, ['jz', 'shortloc_401938']
+ next: [4200751, 4200760]
+
+node :44
+node start(4201754) info:
+ start: 4201754
+ prev: []
+ instructions: 
+  4201754, ['cmp', 'eax,0C6F0506h']
+  4201760, ['jnz', 'shortloc_401D36']
+ next: [4201762, 4201782]
+
+node :45
+node start(4198762) info:
+ start: 4198762
+ prev: []
+ instructions: 
+  4198762, ['cmp', 'eax,0A2h']
+  4198768, ['jnz', 'shortloc_4011C0']
+ next: [4198770, 4198848]
+
+node :46
+node start(4203702) info:
+ start: 4203702
+ prev: []
+ instructions: 
+  4203702, ['call', 'ds:GetEnvironmentStringsW']
+  4203708, ['mov', '[ebp+var_194],eax']
+ next: [4203714]
+
+node :47
+node start(4200872) info:
+ start: 4200872
+ prev: []
+ instructions: 
+  4200872, ['push', '[ebp+hFile];hResInfo']
+  4200878, ['push', '0;hModule']
+  4200880, ['call', 'ds:SizeofResource']
+  4200886, ['mov', '[ebp+var_F8],eax']
+  4200892, ['test', 'eax,eax']
+  4200894, ['jnz', 'loc_401136']
+ next: [4198710, 4200900]
+
+node :48
+node start(4198687) info:
+ start: 4198687
+ prev: []
+ instructions: 
+  4198687, ['push', '0;hTemplateFile']
+  4198689, ['push', '80h;dwFlagsAndAttributes']
+  4198694, ['push', '3;dwCreationDisposition']
+  4198696, ['push', '0;lpSecurityAttributes']
+  4198698, ['push', '2;dwShareMode']
+  4198700, ['push', '0E0000000h;dwDesiredAccess']
+  4198705, ['push', 'offsetFileName;"P.c5e"']
+ next: [4198710]
+
+node :49
+node start(4203264) info:
+ start: 4203264
+ prev: []
+ instructions: 
+  4203264, ['xor', '[ebp+var_A8],eax']
+ next: [4203270]
+
+node :50
+node start(4198754) info:
+ start: 4198754
+ prev: []
+ instructions: 
+  4198754, ['cmp', 'eax,0ECh']
+  4198760, ['jnz', 'shortloc_4011C0']
+ next: [4198762, 4198848]
+
+node :51
+node start(4200840) info:
+ start: 4200840
+ prev: []
+ instructions: 
+  4200840, ['cmp', 'eax,0BECB28A0h']
+  4200846, ['jz', 'short$+2']
+ next: [4200848, 4200848]
+
+node :52
+node start(4200567) info:
+ start: 4200567
+ prev: []
+ instructions: 
+  4200567, ['call', 'ds:GetFocus']
+  4200573, ['cmp', 'eax,0']
+  4200576, ['mov', '[ebp+hFile],eax']
+  4200582, ['jnz', 'short$+2']
+ next: [4200584, 4200584]
+
+node :53
+node start(4203391) info:
+ start: 4203391
+ prev: []
+ instructions: 
+  4203391, ['cmp', 'eax,57h']
+  4203394, ['jnz', 'loc_402468']
+ next: [4203400, 4203624]
+
+node :54
+node start(4203615) info:
+ start: 4203615
+ prev: []
+ instructions: 
+  4203615, ['add', '[ebp+var_130],eax']
+  4203621, ['mov', '[ebp+var_50],eax']
+ next: [4203624]
+
+node :55
+node start(4198710) info:
+ start: 4198710
+ prev: []
+ instructions: 
+  4198710, ['call', 'ds:CreateFileA']
+  4198716, ['cmp', 'eax,0FFFFFFFFh']
+  4198719, ['mov', '[ebp+hFile],eax']
+  4198725, ['jnz', 'loc_402334']
+ next: [4198731, 4203316]
+
+node :56
+node start(4203270) info:
+ start: 4203270
+ prev: []
+ instructions: 
+  4203270, ['sub', '[ebp+var_114],eax']
+  4203276, ['push', '483Ah;dwSize']
+  4203281, ['push', 'offsetunk_417150;lpAddress']
+  4203286, ['call', 'ds:GetEnvironmentStrings']
+  4203292, ['mov', '[ebp+var_118],eax']
+  4203298, ['call', 'ds:VirtualProtect']
+  4203304, ['call', 'ds:GetEnvironmentStringsW']
+  4203310, ['mov', '[ebp+var_AC],eax']
+ next: [4203316]
+
+node :57
+node start(4198748) info:
+ start: 4198748
+ prev: []
+ instructions: 
+  4198748, ['xor', '[ebp+flOldProtect],eax']
+ next: [4198754]
+
+node :58
+node start(4198830) info:
+ start: 4198830
+ prev: []
+ instructions: 
+  4198830, ['call', 'ds:GetCurrentProcess']
+  4198836, ['add', '[ebp+flOldProtect],eax']
+  4198842, ['or', '[ebp+flOldProtect],eax']
+ next: [4198848]
+
+node :59
+node start(4203742) info:
+ start: 4203742
+ prev: []
+ instructions: 
+  4203742, ['xor', '[ebp+var_108],eax']
+  4203748, ['and', '[ebp+var_1B8],eax']
+ next: [4203754]
+
+node :60
+node start(4201296) info:
+ start: 4201296
+ prev: []
+ instructions: 
+  4201296, ['cmp', 'eax,0B44BBBCFh']
+  4201302, ['jnz', 'loc_402016']
+ next: [4201308, 4202518]
+
+node :61
+node start(4200682) info:
+ start: 4200682
+ prev: []
+ instructions: 
+  4200682, ['push', '0']
+  4200684, ['call', 'ds:GetCurrentProcessId']
+  4200690, ['cmp', 'eax,5C5627B8h']
+  4200696, ['jz', 'loc_4019D8']
+ next: [4200702, 4200920]
+
+node :62
+node start(4203900) info:
+ start: 4203900
+ prev: []
+ instructions: 
+  4203900, ['call', 'ds:GetProcessHeap']
+  4203906, ['mov', '[ebp+var_8C],eax']
+ next: [4203912]
+
+node :63
+node start(4202967) info:
+ start: 4202967
+ prev: []
+ instructions: 
+  4202967, ['call', 'ds:GetOEMCP']
+  4202973, ['cmp', 'eax,0A2h']
+  4202979, ['jz', 'shortloc_402223']
+ next: [4202981, 4203043]
+
+node :64
+node start(4202830) info:
+ start: 4202830
+ prev: []
+ instructions: 
+  4202830, ['call', 'ds:GetEnvironmentStrings']
+  4202836, ['mov', '[ebp+var_F0],eax']
+ next: [4202842]
+
+node :65
+node start(4198799) info:
+ start: 4198799
+ prev: []
+ instructions: 
+  4198799, ['call', 'ds:GetCurrentThreadId']
+  4198805, ['cmp', 'eax,0Fh']
+  4198808, ['jnz', 'shortloc_4011A6']
+ next: [4198810, 4198822]
+
+node :66
+node start(4203998) info:
+ start: 4203998
+ prev: []
+ instructions: 
+  4203998, ['cmp', 'eax,84610056h']
+  4204004, ['jz', 'shortloc_402628']
+ next: [4204006, 4204072]
+
+node :67
+node start(4201782) info:
+ start: 4201782
+ prev: []
+ instructions: 
+  4201782, ['cmp', 'eax,33h']
+  4201785, ['jz', 'shortloc_401D98']
+ next: [4201787, 4201880]
+
+node :68
+node start(4198848) info:
+ start: 4198848
+ prev: []
+ instructions: 
+  4198848, ['cmp', 'eax,0C85F7123h']
+  4198854, ['jnz', 'shortloc_401203']
+ next: [4198856, 4198915]
+
+node :69
+node start(4201308) info:
+ start: 4201308
+ prev: []
+ instructions: 
+  4201308, ['sub', '[ebp+flOldProtect],eax']
+  4201314, ['cmp', 'eax,0A6h']
+  4201320, ['jz', 'loc_402016']
+ next: [4201326, 4202518]
+
+node :70
+node start(4198994) info:
+ start: 4198994
+ prev: []
+ instructions: 
+  4198994, ['mov', '[ebp+var_108],eax']
+  4199000, ['cmp', 'eax,0BC62AC23h']
+  4199006, ['jnz', 'shortloc_401269']
+ next: [4199008, 4199017]
+
+node :71
+node start(4203912) info:
+ start: 4203912
+ prev: []
+ instructions: 
+  4203912, ['mov', '[ebp+var_110],eax']
+  4203918, ['cmp', 'eax,0A4DE730Ah']
+  4203924, ['jz', 'shortloc_4025B2']
+ next: [4203926, 4203954]
+
+node :72
+node start(4202530) info:
+ start: 4202530
+ prev: []
+ instructions: 
+  4202530, ['add', '[ebp+var_98],eax']
+  4202536, ['mov', '[ebp+var_9C],eax']
+  4202542, ['or', '[ebp+var_C0],eax']
+ next: [4202548]
+
+node :73
+node start(4200920) info:
+ start: 4200920
+ prev: []
+ instructions: 
+  4200920, ['call', 'ds:GetEnvironmentStrings']
+  4200926, ['mov', '[ebp+var_B4],eax']
+  4200932, ['call', '[ebp+var_13C]']
+  4200938, ['mov', '[ebp+var_94],eax']
+  4200944, ['push', '0;lpFileSizeHigh']
+  4200946, ['push', '[ebp+var_F4];hFile']
+  4200952, ['call', 'ds:GetFileSize']
+  4200958, ['cmp', 'eax,0FFFFFFFFh']
+  4200961, ['jz', 'loc_402034']
+ next: [4200967, 4202548]
+
+node :74
+node start(4203754) info:
+ start: 4203754
+ prev: []
+ instructions: 
+  4203754, ['cmp', 'eax,3Eh']
+  4203757, ['jnz', 'shortloc_4024FB']
+ next: [4203759, 4203771]
+
+node :75
+node start(4200751) info:
+ start: 4200751
+ prev: []
+ instructions: 
+  4200751, ['call', 'ds:GetEnvironmentStringsW']
+  4200757, ['mov', '[ebp+var_24],eax']
+ next: [4200760]
+
+node :76
+node start(4202051) info:
+ start: 4202051
+ prev: []
+ instructions: 
+  4202051, ['cmp', 'eax,0AEB943CCh']
+  4202057, ['jnz', 'shortloc_401E62']
+ next: [4202059, 4202082]
+
+node :77
+node start(4203798) info:
+ start: 4203798
+ prev: []
+ instructions: 
+  4203798, ['mov', '[ebp+var_BC],eax']
+  4203804, ['sub', '[ebp+var_3C],38142C53h']
+  4203811, ['push', 'offsetaM8b46aq9itace8;"m8b46aQ9ITacE8"']
+  4203816, ['push', '0;bInheritHandle']
+  4203818, ['push', '1F0001h;dwDesiredAccess']
+  4203823, ['call', 'ds:OpenMutexA']
+  4203829, ['mov', '[ebp+var_1A0],eax']
+  4203835, ['and', 'eax,eax']
+  4203837, ['jz', 'shortloc_402552']
+ next: [4203839, 4203858]
+
+node :78
+node start(4198629) info:
+ start: 4198629
+ prev: []
+ instructions: 
+  4198629, ['cmp', 'eax,0A458D457h']
+  4198635, ['jnz', 'shortloc_40114E']
+ next: [4198637, 4198734]
+
+node :79
+node start(4203895) info:
+ start: 4203895
+ prev: []
+ instructions: 
+  4203895, ['cmp', 'eax,19h']
+  4203898, ['jz', 'shortloc_402588']
+ next: [4203900, 4203912]
+
+node :80
+node start(4198822) info:
+ start: 4198822
+ prev: []
+ instructions: 
+  4198822, ['cmp', 'eax,0E418A275h']
+  4198828, ['jz', 'shortloc_4011C0']
+ next: [4198830, 4198848]
+
+node :81
+node start(4200735) info:
+ start: 4200735
+ prev: []
+ instructions: 
+  4200735, ['cmp', 'eax,81h']
+  4200741, ['jnz', 'shortloc_40197A']
+ next: [4200743, 4200826]
+
+node :82
+node start(4200584) info:
+ start: 4200584
+ prev: []
+ instructions: 
+  4200584, ['and', '[ebp+var_38],eax']
+  4200587, ['push', '38h;nIndex']
+  4200589, ['call', 'ds:GetSystemMetrics']
+  4200595, ['mov', '[ebp+var_1A8],eax']
+  4200601, ['call', 'ds:GetFocus']
+  4200607, ['mov', '[ebp+var_60],eax']
+  4200610, ['push', '0']
+  4200612, ['call', 'ds:GetTickCount']
+  4200618, ['sub', '[ebp+var_C0],eax']
+  4200624, ['call', 'ds:GetProcessHeap']
+  4200630, ['mov', '[ebp+hFile],eax']
+  4200636, ['or', 'eax,eax']
+  4200638, ['jnz', 'shortloc_4018C5']
+ next: [4200640, 4200645]
+
+node :83
+node start(4201326) info:
+ start: 4201326
+ prev: []
+ instructions: 
+  4201326, ['cmp', 'eax,0C79FCCCh']
+  4201332, ['jnz', 'shortloc_401B9E']
+ next: [4201334, 4201374]
+
+node :84
+node start(4198952) info:
+ start: 4198952
+ prev: []
+ instructions: 
+  4198952, ['call', 'ds:GetEnvironmentStringsW']
+  4198958, ['mov', '[ebp+var_24],eax']
+  4198961, ['call', 'ds:GetACP']
+  4198967, ['cmp', 'eax,0D3h']
+  4198973, ['jnz', 'shortloc_4012A3']
+ next: [4198975, 4199075]
+
+node :85
+node start(4201134) info:
+ start: 4201134
+ prev: []
+ instructions: 
+  4201134, ['push', '[ebp+var_F4];hResInfo']
+  4201140, ['push', '0;hModule']
+  4201142, ['call', 'ds:SizeofResource']
+  4201148, ['test', 'eax,eax']
+  4201150, ['jnz', 'loc_4018C5']
+ next: [4200645, 4201156]
+
+node :86
+node start(4203926) info:
+ start: 4203926
+ prev: []
+ instructions: 
+  4203926, ['cmp', 'eax,69h']
+  4203929, ['jnz', 'shortloc_4025AA']
+ next: [4203931, 4203946]
+
+node :87
+node start(4199069) info:
+ start: 4199069
+ prev: []
+ instructions: 
+  4199069, ['or', '[ebp+flOldProtect],eax']
+ next: [4199075]
+
+node :88
+node start(4201762) info:
+ start: 4201762
+ prev: []
+ instructions: 
+  4201762, ['cmp', 'eax,0E81E2003h']
+  4201768, ['jnz', 'short$+2']
+ next: [4201770, 4201770]
+
+node :89
+node start(4203759) info:
+ start: 4203759
+ prev: []
+ instructions: 
+  4203759, ['call', 'ds:GetVersion']
+  4203765, ['sub', '[ebp+var_104],eax']
+ next: [4203771]
+
+node :90
+node start(4201787) info:
+ start: 4201787
+ prev: []
+ instructions: 
+  4201787, ['add', '[ebp+var_7C],eax']
+  4201790, ['cmp', 'eax,0F8788A6Eh']
+  4201796, ['jz', 'shortloc_401D8A']
+ next: [4201798, 4201866]
+
+node :91
+node start(4198856) info:
+ start: 4198856
+ prev: []
+ instructions: 
+  4198856, ['cmp', 'eax,45h']
+  4198859, ['jnz', 'short$+2']
+ next: [4198861, 4198861]
+
+node :92
+node start(4200102) info:
+ start: 4200102
+ prev: []
+ instructions: 
+  4200102, ['mov', '[ebp+var_19C],eax']
+  4200108, ['and', '[ebp+var_144],eax']
+ next: [4200114]
+
+node :93
+node start(4202548) info:
+ start: 4202548
+ prev: []
+ instructions: 
+  4202548, ['cmp', 'eax,8EE4FF47h']
+  4202554, ['jz', 'short$+2']
+ next: [4202556, 4202556]
+
+node :94
+node start(4203839) info:
+ start: 4203839
+ prev: []
+ instructions: 
+  4203839, ['push', '29h;nIndex']
+  4203841, ['call', 'ds:GetSystemMetrics']
+  4203847, ['cmp', 'eax,0F1h']
+  4203853, ['jnz', 'short$+2']
+ next: [4203855, 4203855]
+
+node :95
+node start(4202059) info:
+ start: 4202059
+ prev: []
+ instructions: 
+  4202059, ['mov', '[ebp+var_5C],eax']
+  4202062, ['sub', '[ebp+var_134],eax']
+  4202068, ['cmp', 'eax,34785AB7h']
+  4202074, ['jnz', 'short$+2']
+ next: [4202076, 4202076]
+
+node :96
+node start(4200848) info:
+ start: 4200848
+ prev: []
+ instructions: 
+  4200848, ['cmp', 'eax,88h']
+  4200854, ['jnz', 'shortloc_4019CC']
+ next: [4200856, 4200908]
+
+node :97
+node start(4204006) info:
+ start: 4204006
+ prev: []
+ instructions: 
+  4204006, ['and', '[ebp+var_88],eax']
+  4204012, ['cmp', 'eax,0FEEE97E8h']
+  4204018, ['jz', 'shortloc_402612']
+ next: [4204020, 4204050]
+
+node :98
+node start(4201351) info:
+ start: 4201351
+ prev: []
+ instructions: 
+  4201351, ['mov', '[ebp+var_98],eax']
+  4201357, ['sub', '[ebp+var_168],eax']
+  4201363, ['cmp', 'eax,4401DC13h']
+  4201369, ['jz', 'short$+2']
+ next: [4201371, 4201371]
+
+node :99
+node start(4200760) info:
+ start: 4200760
+ prev: []
+ instructions: 
+  4200760, ['cmp', 'eax,0D1h']
+  4200766, ['jnz', 'shortloc_40196C']
+ next: [4200768, 4200812]
+
+node :100
+node start(4199115) info:
+ start: 4199115
+ prev: []
+ instructions: 
+  4199115, ['cmp', 'eax,0BAh']
+  4199121, ['jz', 'shortloc_4012FD']
+ next: [4199123, 4199165]
+
+node :101
+node start(4199017) info:
+ start: 4199017
+ prev: []
+ instructions: 
+  4199017, ['cmp', 'eax,0F9h']
+  4199023, ['jz', 'shortloc_4012A3']
+ next: [4199025, 4199075]
+
+node :102
+node start(4203978) info:
+ start: 4203978
+ prev: []
+ instructions: 
+  4203978, ['cmp', 'eax,40159AC7h']
+  4203984, ['jz', 'loc_4026A1']
+ next: [4203990, 4204193]
+
+node :103
+node start(4199801) info:
+ start: 4199801
+ prev: []
+ instructions: 
+  4199801, ['cmp', 'eax,95h']
+  4199807, ['jnz', 'loc_4016B2']
+ next: [4199813, 4200114]
+
+node :104
+node start(4200856) info:
+ start: 4200856
+ prev: []
+ instructions: 
+  4200856, ['cmp', 'eax,0AFh']
+  4200862, ['jnz', 'short$+2']
+ next: [4200864, 4200864]
+
+node :105
+node start(4199842) info:
+ start: 4199842
+ prev: []
+ instructions: 
+  4199842, ['cmp', 'eax,7EA40D5Fh']
+  4199848, ['jnz', 'loc_4016A6']
+ next: [4199854, 4200102]
+
+node :106
+node start(4200096) info:
+ start: 4200096
+ prev: []
+ instructions: 
+  4200096, ['xor', '[ebp+var_108],eax']
+ next: [4200102]
+
+node :107
+node start(4199525) info:
+ start: 4199525
+ prev: []
+ instructions: 
+  4199525, ['cmp', 'eax,99h']
+  4199531, ['jz', 'loc_401579']
+ next: [4199537, 4199801]
+
+node :108
+node start(4199795) info:
+ start: 4199795
+ prev: []
+ instructions: 
+  4199795, ['xor', '[ebp+var_168],eax']
+ next: [4199801]
+
+node :109
+node start(4198810) info:
+ start: 4198810
+ prev: []
+ instructions: 
+  4198810, ['call', 'ds:GetProcessHeap']
+  4198816, ['mov', '[ebp+hFile],eax']
+ next: [4198822]
+
+node :110
+node start(4203883) info:
+ start: 4203883
+ prev: []
+ instructions: 
+  4203883, ['cmp', 'eax,0D8h']
+  4203889, ['jz', 'loc_4026A1']
+ next: [4203895, 4204193]
+
+node :111
+node start(4201334) info:
+ start: 4201334
+ prev: []
+ instructions: 
+  4201334, ['xor', '[ebp+var_E0],eax']
+  4201340, ['and', '[ebp+var_30],eax']
+  4201343, ['cmp', 'eax,0B876D74Eh']
+  4201349, ['jnz', 'shortloc_401B9B']
+ next: [4201351, 4201371]
+
+node :112
+node start(4203400) info:
+ start: 4203400
+ prev: []
+ instructions: 
+  4203400, ['cmp', 'eax,24A1400Ah']
+  4203406, ['jz', 'loc_40245F']
+ next: [4203412, 4203615]
+
+node :113
+node start(4200114) info:
+ start: 4200114
+ prev: []
+ instructions: 
+  4200114, ['cmp', 'eax,141CD75Eh']
+  4200120, ['jz', 'shortloc_4016D6']
+ next: [4200122, 4200150]
+
+node :114
+node start(4204020) info:
+ start: 4204020
+ prev: []
+ instructions: 
+  4204020, ['call', 'ds:GetTickCount']
+  4204026, ['cmp', 'eax,0BBh']
+  4204032, ['jnz', 'shortloc_402612']
+ next: [4204034, 4204050]
+
+node :115
+node start(4201371) info:
+ start: 4201371
+ prev: []
+ instructions: 
+  4201371, ['sub', '[ebp+var_30],eax']
+ next: [4201374]
+
+node :116
+node start(4201798) info:
+ start: 4201798
+ prev: []
+ instructions: 
+  4201798, ['call', 'ds:GetCurrentProcess']
+  4201804, ['mov', '[ebp+var_98],eax']
+  4201810, ['cmp', 'eax,35h']
+  4201813, ['jnz', 'shortloc_401D84']
+ next: [4201815, 4201860]
+
+node :117
+node start(4199123) info:
+ start: 4199123
+ prev: []
+ instructions: 
+  4199123, ['or', '[ebp+flOldProtect],eax']
+  4199129, ['cmp', 'eax,0F8738561h']
+  4199135, ['jnz', 'shortloc_4012EF']
+ next: [4199137, 4199151]
+
+node :118
+node start(4200768) info:
+ start: 4200768
+ prev: []
+ instructions: 
+  4200768, ['push', '0;hTemplateFile']
+  4200770, ['push', '181h;dwFlagsAndAttributes']
+  4200775, ['push', '3;dwCreationDisposition']
+  4200777, ['push', '0;lpSecurityAttributes']
+  4200779, ['push', '4;dwShareMode']
+  4200781, ['push', '0A0000000h;dwDesiredAccess']
+  4200786, ['push', 'offsetaYk36ky2krn_5sa;"Yk36Ky2krN.5Sa"']
+  4200791, ['call', 'ds:CreateFileA']
+  4200797, ['cmp', 'eax,0FFFFFFFFh']
+  4200800, ['mov', '[ebp+hFile],eax']
+  4200806, ['jnz', 'loc_40179C']
+ next: [4200348, 4200812]
+
+node :119
+node start(4202866) info:
+ start: 4202866
+ prev: []
+ instructions: 
+  4202866, ['cmp', 'eax,70761B3Eh']
+  4202872, ['jz', 'shortloc_4021CF']
+ next: [4202874, 4202959]
+
+node :120
+node start(4203990) info:
+ start: 4203990
+ prev: []
+ instructions: 
+  4203990, ['cmp', 'eax,81h']
+  4203996, ['jnz', 'shortloc_40262E']
+ next: [4203998, 4204078]
+
+node :121
+node start(4203946) info:
+ start: 4203946
+ prev: []
+ instructions: 
+  4203946, ['cmp', 'eax,0EFh']
+  4203952, ['jz', 'short$+2']
+ next: [4203954, 4203954]
+
+node :122
+node start(4198637) info:
+ start: 4198637
+ prev: []
+ instructions: 
+  4198637, ['call', 'ds:GetCurrentThreadId']
+  4198643, ['cmp', 'eax,0FC3A5823h']
+  4198649, ['jz', 'shortloc_40114E']
+ next: [4198651, 4198734]
+
+node :123
+node start(4200730) info:
+ start: 4200730
+ prev: []
+ instructions: 
+  4200730, ['cmp', 'eax,2Ah']
+  4200733, ['jz', 'short$+2']
+ next: [4200735, 4200735]
+
+node :124
+node start(4200645) info:
+ start: 4200645
+ prev: []
+ instructions: 
+  4200645, ['push', '0']
+  4200647, ['call', 'ds:GetCurrentProcessId']
+  4200653, ['mov', '[ebp+var_D8],eax']
+  4200659, ['mov', '[ebp+var_130],eax']
+  4200665, ['cmp', 'eax,0D2h']
+  4200671, ['jnz', 'shortloc_4018EA']
+ next: [4200673, 4200682]
+
+node :125
+node start(4200702) info:
+ start: 4200702
+ prev: []
+ instructions: 
+  4200702, ['cmp', 'eax,8C1E160Ah']
+  4200708, ['jz', 'shortloc_401980']
+ next: [4200710, 4200832]
+
+node :126
+node start(4203771) info:
+ start: 4203771
+ prev: []
+ instructions: 
+  4203771, ['call', '[ebp+var_3C]']
+  4203774, ['mov', 'eax,[ebp+var_94]']
+  4203780, ['mov', '[ebp+var_3C],eax']
+  4203783, ['push', '38h;nIndex']
+  4203785, ['call', 'ds:GetSystemMetrics']
+  4203791, ['or', 'eax,eax']
+  4203793, ['jnz', 'shortloc_402516']
+ next: [4203795, 4203798]
+
+node :127
+node start(4199075) info:
+ start: 4199075
+ prev: []
+ instructions: 
+  4199075, ['push', '[ebp+hFile];hResInfo']
+  4199081, ['push', '0;hModule']
+  4199083, ['call', 'ds:SizeofResource']
+  4199089, ['mov', '[ebp+var_A8],eax']
+  4199095, ['call', 'ds:GetVersion']
+  4199101, ['or', '[ebp+var_108],eax']
+  4199107, ['and', '[ebp+var_70],eax']
+  4199110, ['cmp', 'eax,7Ah']
+  4199113, ['jnz', 'shortloc_401303']
+ next: [4199115, 4199171]
+
+node :128
+node start(4203931) info:
+ start: 4203931
+ prev: []
+ instructions: 
+  4203931, ['add', '[ebp+var_120],eax']
+  4203937, ['add', '[ebp+var_4C],eax']
+  4203940, ['and', '[ebp+var_108],eax']
+ next: [4203946]
+
+node :129
+node start(4200710) info:
+ start: 4200710
+ prev: []
+ instructions: 
+  4200710, ['mov', '[ebp+var_40],eax']
+  4200713, ['mov', '[ebp+var_184],eax']
+  4200719, ['mov', '[ebp+var_2C],eax']
+  4200722, ['cmp', 'eax,0D2h']
+  4200728, ['jz', 'shortloc_401980']
+ next: [4200730, 4200832]
+
+node :130
+node start(4203966) info:
+ start: 4203966
+ prev: []
+ instructions: 
+  4203966, ['cmp', 'eax,80586130h']
+  4203972, ['jnz', 'loc_4026A1']
+ next: [4203978, 4204193]
+
+node :131
+node start(4201770) info:
+ start: 4201770
+ prev: []
+ instructions: 
+  4201770, ['xor', '[ebp+var_150],eax']
+  4201776, ['mov', '[ebp+var_100],eax']
+ next: [4201782]
+
+node :132
+node start(4203954) info:
+ start: 4203954
+ prev: []
+ instructions: 
+  4203954, ['cmp', 'eax,64B13CACh']
+  4203960, ['jz', 'loc_4026A1']
+ next: [4203966, 4204193]
+
+node :133
+node start(4199008) info:
+ start: 4199008
+ prev: []
+ instructions: 
+  4199008, ['call', 'ds:GetEnvironmentStringsW']
+  4199014, ['mov', '[ebp+var_24],eax']
+ next: [4199017]
+
+node :134
+node start(4203795) info:
+ start: 4203795
+ prev: []
+ instructions: 
+  4203795, ['mov', '[ebp+var_64],eax']
+ next: [4203798]
+
+node :135
+node start(4199033) info:
+ start: 4199033
+ prev: []
+ instructions: 
+  4199033, ['call', 'ds:GetACP']
+  4199039, ['cmp', 'eax,0EAh']
+  4199045, ['jnz', 'shortloc_401297']
+ next: [4199047, 4199063]
+
+node :136
+node start(4203412) info:
+ start: 4203412
+ prev: []
+ instructions: 
+  4203412, ['cmp', 'eax,2Ah']
+  4203415, ['jz', 'short$+2']
+ next: [4203417, 4203417]
+
+node :137
+node start(4204181) info:
+ start: 4204181
+ prev: []
+ instructions: 
+  4204181, ['add', '[ebp+var_D8],eax']
+  4204187, ['add', '[ebp+var_140],eax']
+ next: [4204193]
+
+node :138
+node start(4202556) info:
+ start: 4202556
+ prev: []
+ instructions: 
+  4202556, ['cmp', 'eax,10h']
+  4202559, ['jnz', 'shortloc_402071']
+ next: [4202561, 4202609]
+
+node :139
+node start(4202031) info:
+ start: 4202031
+ prev: []
+ instructions: 
+  4202031, ['cmp', 'eax,5C77C91Eh']
+  4202037, ['jnz', 'loc_401FCB']
+ next: [4202043, 4202443]
+
+node :140
+node start(4201860) info:
+ start: 4201860
+ prev: []
+ instructions: 
+  4201860, ['sub', '[ebp+var_90],eax']
+ next: [4201866]
+
+node :141
+node start(4201880) info:
+ start: 4201880
+ prev: []
+ instructions: 
+  4201880, ['cmp', 'eax,5Ah']
+  4201883, ['jz', 'short$+2']
+ next: [4201885, 4201885]
+
+node :142
+node start(4204078) info:
+ start: 4204078
+ prev: []
+ instructions: 
+  4204078, ['cmp', 'eax,0E4DEEF25h']
+  4204084, ['jnz', 'shortloc_4026A1']
+ next: [4204086, 4204193]
+
+node :143
+node start(4204034) info:
+ start: 4204034
+ prev: []
+ instructions: 
+  4204034, ['call', 'ds:GetFocus']
+  4204040, ['and', 'eax,eax']
+  4204042, ['mov', '[ebp+var_84],eax']
+  4204048, ['jz', 'short$+2']
+ next: [4204050, 4204050]
+
+node :144
+node start(4202076) info:
+ start: 4202076
+ prev: []
+ instructions: 
+  4202076, ['mov', '[ebp+var_1B8],eax']
+ next: [4202082]
+
+node :145
+node start(4201823) info:
+ start: 4201823
+ prev: []
+ instructions: 
+  4201823, ['cmp', 'eax,9C8B08B2h']
+  4201829, ['jz', 'shortloc_401D78']
+ next: [4201831, 4201848]
+
+node :146
+node start(4200812) info:
+ start: 4200812
+ prev: []
+ instructions: 
+  4200812, ['and', '[ebp+var_180],eax']
+  4200818, ['cmp', 'eax,68255133h']
+  4200824, ['jnz', 'short$+2']
+ next: [4200826, 4200826]
+
+node :147
+node start(4200122) info:
+ start: 4200122
+ prev: []
+ instructions: 
+  4200122, ['push', 'offsetName;"Zm30s"']
+  4200127, ['push', '0;bInheritHandle']
+  4200129, ['push', '1F0001h;dwDesiredAccess']
+  4200134, ['call', 'ds:OpenMutexA']
+  4200140, ['mov', '[ebp+var_F4],eax']
+  4200146, ['and', 'eax,eax']
+  4200148, ['jz', 'short$+2']
+ next: [4200150, 4200150]
+
+node :148
+node start(4203855) info:
+ start: 4203855
+ prev: []
+ instructions: 
+  4203855, ['mov', '[ebp+var_14],eax']
+ next: [4203858]
+
+node :149
+node start(4198861) info:
+ start: 4198861
+ prev: []
+ instructions: 
+  4198861, ['or', '[ebp+var_108],eax']
+  4198867, ['cmp', 'eax,0A3h']
+  4198873, ['jz', 'short$+2']
+ next: [4198875, 4198875]
+
+node :150
+node start(4201930) info:
+ start: 4201930
+ prev: []
+ instructions: 
+  4201930, ['cmp', 'eax,7Bh']
+  4201933, ['jnz', 'shortloc_401DEE']
+ next: [4201935, 4201966]
+
+node :151
+node start(4199137) info:
+ start: 4199137
+ prev: []
+ instructions: 
+  4199137, ['call', 'ds:GetOEMCP']
+  4199143, ['cmp', 'eax,0B0h']
+  4199149, ['jz', 'short$+2']
+ next: [4199151, 4199151]
+
+node :152
+node start(4201374) info:
+ start: 4201374
+ prev: []
+ instructions: 
+  4201374, ['cmp', 'eax,3041129Ch']
+  4201380, ['jz', 'loc_401FF3']
+ next: [4201386, 4202483]
+
+node :153
+node start(4202652) info:
+ start: 4202652
+ prev: []
+ instructions: 
+  4202652, ['add', '[ebp+var_144],eax']
+  4202658, ['cmp', 'eax,1Fh']
+  4202661, ['jnz', 'shortloc_4020D4']
+ next: [4202663, 4202708]
+
+node :154
+node start(4198875) info:
+ start: 4198875
+ prev: []
+ instructions: 
+  4198875, ['cmp', 'eax,0F8h']
+  4198881, ['jz', 'shortloc_401203']
+ next: [4198883, 4198915]
+
+node :155
+node start(4203417) info:
+ start: 4203417
+ prev: []
+ instructions: 
+  4203417, ['cmp', 'eax,5Fh']
+  4203420, ['jnz', 'shortloc_4023AB']
+ next: [4203422, 4203435]
+
+node :156
+node start(4201885) info:
+ start: 4201885
+ prev: []
+ instructions: 
+  4201885, ['cmp', 'eax,78445BB4h']
+  4201891, ['jz', 'shortloc_401DB3']
+ next: [4201893, 4201907]
+
+node :157
+node start(4201831) info:
+ start: 4201831
+ prev: []
+ instructions: 
+  4201831, ['cmp', 'eax,12h']
+  4201834, ['jz', 'shortloc_401D78']
+ next: [4201836, 4201848]
+
+node :158
+node start(4201935) info:
+ start: 4201935
+ prev: []
+ instructions: 
+  4201935, ['cmp', 'eax,0FAh']
+  4201941, ['jz', 'shortloc_401DE8']
+ next: [4201943, 4201960]
+
+node :159
+node start(4202082) info:
+ start: 4202082
+ prev: []
+ instructions: 
+  4202082, ['and', '[ebp+var_30],eax']
+  4202085, ['cmp', 'eax,743E2BA5h']
+  4202091, ['jnz', 'shortloc_401E75']
+ next: [4202093, 4202101]
+
+node :160
+node start(4204193) info:
+ start: 4204193
+ prev: []
+ instructions: 
+  4204193, ['xor', '[ebp+var_150],eax']
+  4204199, ['cmp', 'eax,545FD9B3h']
+  4204205, ['jz', 'shortloc_4026BB']
+ next: [4204207, 4204219]
+
+node :161
+node start(4201386) info:
+ start: 4201386
+ prev: []
+ instructions: 
+  4201386, ['call', 'ds:GetOEMCP']
+  4201392, ['cmp', 'eax,0F3h']
+  4201398, ['jnz', 'shortloc_401BC4']
+ next: [4201400, 4201412]
+
+node :162
+node start(4198651) info:
+ start: 4198651
+ prev: []
+ instructions: 
+  4198651, ['cmp', 'eax,8C58BA17h']
+  4198657, ['jz', 'shortloc_40110F']
+ next: [4198659, 4198671]
+
+node :163
+node start(4202561) info:
+ start: 4202561
+ prev: []
+ instructions: 
+  4202561, ['push', 'offseta6fkwyfswaw;"6FKwyfSWAw"']
+  4202566, ['call', 'ds:RegisterWindowMessageA']
+  4202572, ['sub', '[ebp+var_2C],eax']
+  4202575, ['cmp', 'eax,0BEAD893Ch']
+  4202581, ['jnz', 'shortloc_402065']
+ next: [4202583, 4202597]
+
+node :164
+node start(4202874) info:
+ start: 4202874
+ prev: []
+ instructions: 
+  4202874, ['call', 'ds:GetCurrentProcess']
+  4202880, ['cmp', 'eax,6421A431h']
+  4202886, ['jnz', 'shortloc_4021CF']
+ next: [4202888, 4202959]
+
+node :165
+node start(4202953) info:
+ start: 4202953
+ prev: []
+ instructions: 
+  4202953, ['mov', '[ebp+var_E8],eax']
+ next: [4202959]
+
+node :166
+node start(4200832) info:
+ start: 4200832
+ prev: []
+ instructions: 
+  4200832, ['cmp', 'eax,0C5h']
+  4200838, ['jz', 'shortloc_4019CC']
+ next: [4200840, 4200908]
+
+node :167
+node start(4199425) info:
+ start: 4199425
+ prev: []
+ instructions: 
+  4199425, ['push', '[ebp+hFile];hResInfo']
+  4199431, ['push', '0;hModule']
+  4199433, ['call', 'ds:SizeofResource']
+  4199439, ['and', 'eax,eax']
+  4199441, ['jz', 'shortloc_40141F']
+ next: [4199443, 4199455]
+
+node :168
+node start(4199493) info:
+ start: 4199493
+ prev: []
+ instructions: 
+  4199493, ['cmp', 'eax,0CEBDEB14h']
+  4199499, ['jnz', 'short$+2']
+ next: [4199501, 4199501]
+
+node :169
+node start(4202043) info:
+ start: 4202043
+ prev: []
+ instructions: 
+  4202043, ['cmp', 'eax,0A1h']
+  4202049, ['jz', 'shortloc_401E75']
+ next: [4202051, 4202101]
+
+node :170
+node start(4199025) info:
+ start: 4199025
+ prev: []
+ instructions: 
+  4199025, ['cmp', 'eax,1CA38F35h']
+  4199031, ['jz', 'shortloc_40129D']
+ next: [4199033, 4199069]
+
+node :171
+node start(4201815) info:
+ start: 4201815
+ prev: []
+ instructions: 
+  4201815, ['cmp', 'eax,0BC8594E8h']
+  4201821, ['jnz', 'short$+2']
+ next: [4201823, 4201823]
+
+node :172
+node start(4201490) info:
+ start: 4201490
+ prev: []
+ instructions: 
+  4201490, ['cmp', 'eax,0AEh']
+  4201496, ['jz', 'loc_401D0E']
+ next: [4201502, 4201742]
+
+node :173
+node start(4203858) info:
+ start: 4203858
+ prev: []
+ instructions: 
+  4203858, ['add', '[ebp+var_3C],0B8555DC5h']
+  4203865, ['call', 'ds:GetACP']
+  4203871, ['cmp', 'eax,86h']
+  4203877, ['jnz', 'loc_4026A1']
+ next: [4203883, 4204193]
+
+node :174
+node start(4201460) info:
+ start: 4201460
+ prev: []
+ instructions: 
+  4201460, ['cmp', 'eax,5C04C4ABh']
+  4201466, ['jz', 'loc_401DCA']
+ next: [4201472, 4201930]
+
+node :175
+node start(4201472) info:
+ start: 4201472
+ prev: []
+ instructions: 
+  4201472, ['call', 'ds:GetACP']
+  4201478, ['cmp', 'eax,0F4h']
+  4201484, ['jnz', 'loc_401DB3']
+ next: [4201490, 4201907]
+
+node :176
+node start(4200826) info:
+ start: 4200826
+ prev: []
+ instructions: 
+  4200826, ['mov', '[ebp+var_150],eax']
+ next: [4200832]
+
+node :177
+node start(4199455) info:
+ start: 4199455
+ prev: []
+ instructions: 
+  4199455, ['cmp', 'eax,2Bh']
+  4199458, ['jz', 'shortloc_401439']
+ next: [4199460, 4199481]
+
+node :178
+node start(4201442) info:
+ start: 4201442
+ prev: []
+ instructions: 
+  4201442, ['xor', '[ebp+var_138],eax']
+  4201448, ['cmp', 'eax,0C3h']
+  4201454, ['jz', 'loc_401DEE']
+ next: [4201460, 4201966]
+
+node :179
+node start(4199481) info:
+ start: 4199481
+ prev: []
+ instructions: 
+  4199481, ['cmp', 'eax,0E7h']
+  4199487, ['jz', 'loc_40173A']
+ next: [4199493, 4200250]
+
+node :180
+node start(4199443) info:
+ start: 4199443
+ prev: []
+ instructions: 
+  4199443, ['call', 'ds:GetOEMCP']
+  4199449, ['and', '[ebp+flOldProtect],eax']
+ next: [4199455]
+
+node :181
+node start(4199501) info:
+ start: 4199501
+ prev: []
+ instructions: 
+  4199501, ['cmp', 'eax,88h']
+  4199507, ['jnz', 'loc_4016D9']
+ next: [4199513, 4200153]
+
+node :182
+node start(4199513) info:
+ start: 4199513
+ prev: []
+ instructions: 
+  4199513, ['cmp', 'eax,94h']
+  4199519, ['jz', 'loc_4016D9']
+ next: [4199525, 4200153]
+
+node :183
+node start(4201866) info:
+ start: 4201866
+ prev: []
+ instructions: 
+  4201866, ['add', '[ebp+var_D8],eax']
+  4201872, ['cmp', 'eax,9CBA5372h']
+  4201878, ['jz', 'short$+2']
+ next: [4201880, 4201880]
+
+node :184
+node start(4199047) info:
+ start: 4199047
+ prev: []
+ instructions: 
+  4199047, ['call', 'ds:GetProcessHeap']
+  4199053, ['or', 'eax,eax']
+  4199055, ['mov', '[ebp+hFile],eax']
+  4199061, ['jnz', 'short$+2']
+ next: [4199063, 4199063]
+
+node :185
+node start(4198659) info:
+ start: 4198659
+ prev: []
+ instructions: 
+  4198659, ['mov', '[ebp+flOldProtect],eax']
+  4198665, ['or', '[ebp+flOldProtect],eax']
+ next: [4198671]
+
+node :186
+node start(4198883) info:
+ start: 4198883
+ prev: []
+ instructions: 
+  4198883, ['push', '0;hTemplateFile']
+  4198885, ['push', '3;dwFlagsAndAttributes']
+  4198887, ['push', '3;dwCreationDisposition']
+  4198889, ['push', '0;lpSecurityAttributes']
+  4198891, ['push', '7;dwShareMode']
+  4198893, ['push', '0A0000000h;dwDesiredAccess']
+  4198898, ['push', 'offsetaH_y83;"H.Y83"']
+  4198903, ['call', 'ds:CreateFileW']
+  4198909, ['mov', '[ebp+hFile],eax']
+ next: [4198915]
+
+node :187
+node start(4201943) info:
+ start: 4201943
+ prev: []
+ instructions: 
+  4201943, ['mov', '[ebp+var_138],eax']
+  4201949, ['cmp', 'eax,248D8CE3h']
+  4201955, ['jz', 'short$+2']
+ next: [4201957, 4201957]
+
+node :188
+node start(4203422) info:
+ start: 4203422
+ prev: []
+ instructions: 
+  4203422, ['cmp', 'eax,40782482h']
+  4203428, ['jz', 'short$+2']
+ next: [4203430, 4203430]
+
+node :189
+node start(4200161) info:
+ start: 4200161
+ prev: []
+ instructions: 
+  4200161, ['cmp', 'eax,83h']
+  4200167, ['jz', 'shortloc_40173A']
+ next: [4200169, 4200250]
+
+node :190
+node start(4202583) info:
+ start: 4202583
+ prev: []
+ instructions: 
+  4202583, ['call', 'ds:GetFocus']
+  4202589, ['cmp', 'eax,0']
+  4202592, ['mov', '[ebp+var_80],eax']
+  4202595, ['jz', 'short$+2']
+ next: [4202597, 4202597]
+
+node :191
+node start(4200150) info:
+ start: 4200150
+ prev: []
+ instructions: 
+  4200150, ['and', '[ebp+var_30],eax']
+ next: [4200153]
+
+node :192
+node start(4202663) info:
+ start: 4202663
+ prev: []
+ instructions: 
+  4202663, ['call', 'ds:GetOEMCP']
+  4202669, ['or', '[ebp+var_138],eax']
+  4202675, ['cmp', 'eax,0B873CB10h']
+  4202681, ['jz', 'short$+2']
+ next: [4202683, 4202683]
+
+node :193
+node start(4204219) info:
+ start: 4204219
+ prev: []
+ instructions: 
+  4204219, ['cmp', 'eax,72h']
+  4204222, ['jz', 'shortloc_4026DB']
+ next: [4204224, 4204251]
+
+node :194
+node start(4199151) info:
+ start: 4199151
+ prev: []
+ instructions: 
+  4199151, ['sub', '[ebp+var_108],eax']
+  4199157, ['cmp', 'eax,9454B87Ah']
+  4199163, ['jnz', 'short$+2']
+ next: [4199165, 4199165]
+
+node :195
+node start(4199372) info:
+ start: 4199372
+ prev: []
+ instructions: 
+  4199372, ['mov', '[ebp+var_184],eax']
+  4199378, ['cmp', 'eax,0C460449h']
+  4199384, ['jz', 'shortloc_4013E6']
+ next: [4199386, 4199398]
+
+node :196
+node start(4204050) info:
+ start: 4204050
+ prev: []
+ instructions: 
+  4204050, ['xor', '[ebp+flOldProtect],eax']
+  4204056, ['cmp', 'eax,78h']
+  4204059, ['jz', 'shortloc_402628']
+ next: [4204061, 4204072]
+
+node :197
+node start(4201893) info:
+ start: 4201893
+ prev: []
+ instructions: 
+  4201893, ['push', '0;hWnd']
+  4201895, ['call', 'ds:GetDC']
+  4201901, ['mov', '[ebp+var_F4],eax']
+ next: [4201907]
+
+node :198
+node start(4201836) info:
+ start: 4201836
+ prev: []
+ instructions: 
+  4201836, ['call', 'ds:GetCommandLineA']
+  4201842, ['mov', '[ebp+var_158],eax']
+ next: [4201848]
+
+node :199
+node start(4202285) info:
+ start: 4202285
+ prev: []
+ instructions: 
+  4202285, ['add', '[ebp+var_1B8],eax']
+ next: [4202291]
+
+node :200
+node start(4201400) info:
+ start: 4201400
+ prev: []
+ instructions: 
+  4201400, ['mov', '[ebp+var_188],eax']
+  4201406, ['and', '[ebp+var_90],eax']
+ next: [4201412]
+
+node :201
+node start(4202093) info:
+ start: 4202093
+ prev: []
+ instructions: 
+  4202093, ['sub', '[ebp+var_54],eax']
+  4202096, ['cmp', 'eax,53h']
+  4202099, ['jnz', 'short$+2']
+ next: [4202101, 4202101]
+
+node :202
+node start(4201907) info:
+ start: 4201907
+ prev: []
+ instructions: 
+  4201907, ['cmp', 'eax,6Eh']
+  4201910, ['jnz', 'shortloc_401DCA']
+ next: [4201912, 4201930]
+
+node :203
+node start(4202981) info:
+ start: 4202981
+ prev: []
+ instructions: 
+  4202981, ['xor', '[ebp+var_D8],eax']
+  4202987, ['cmp', 'eax,541FCCFEh']
+  4202993, ['jnz', 'shortloc_402223']
+ next: [4202995, 4203043]
+
+node :204
+node start(4203031) info:
+ start: 4203031
+ prev: []
+ instructions: 
+  4203031, ['or', '[ebp+var_138],eax']
+  4203037, ['mov', '[ebp+var_14C],eax']
+ next: [4203043]
+
+node :205
+node start(4204061) info:
+ start: 4204061
+ prev: []
+ instructions: 
+  4204061, ['push', '0;hWnd']
+  4204063, ['call', 'ds:GetDC']
+  4204069, ['mov', '[ebp+var_78],eax']
+ next: [4204072]
+
+node :206
+node start(4201848) info:
+ start: 4201848
+ prev: []
+ instructions: 
+  4201848, ['mov', '[ebp+var_160],eax']
+  4201854, ['mov', '[ebp+var_104],eax']
+ next: [4201860]
+
+node :207
+node start(4199460) info:
+ start: 4199460
+ prev: []
+ instructions: 
+  4199460, ['mov', '[ebp+flOldProtect],eax']
+  4199466, ['mov', '[ebp+var_C0],eax']
+  4199472, ['mov', '[ebp+var_7C],eax']
+  4199475, ['or', '[ebp+var_174],eax']
+ next: [4199481]
+
+node :208
+node start(4198671) info:
+ start: 4198671
+ prev: []
+ instructions: 
+  4198671, ['cmp', 'eax,0EAh']
+  4198677, ['jz', 'shortloc_40114E']
+ next: [4198679, 4198734]
+
+node :209
+node start(4201736) info:
+ start: 4201736
+ prev: []
+ instructions: 
+  4201736, ['and', '[ebp+var_138],eax']
+ next: [4201742]
+
+node :210
+node start(4201502) info:
+ start: 4201502
+ prev: []
+ instructions: 
+  4201502, ['and', '[ebp+var_174],eax']
+  4201508, ['sub', '[ebp+var_2C],eax']
+  4201511, ['cmp', 'eax,0CCh']
+  4201517, ['jz', 'loc_401D0E']
+ next: [4201523, 4201742]
+
+node :211
+node start(4200900) info:
+ start: 4200900
+ prev: []
+ instructions: 
+  4200900, ['cmp', 'eax,0AAh']
+  4200906, ['jnz', 'short$+2']
+ next: [4200908, 4200908]
+
+node :212
+node start(4201430) info:
+ start: 4201430
+ prev: []
+ instructions: 
+  4201430, ['cmp', 'eax,343E9E98h']
+  4201436, ['jz', 'loc_401DF3']
+ next: [4201442, 4201971]
+
+node :213
+node start(4200153) info:
+ start: 4200153
+ prev: []
+ instructions: 
+  4200153, ['cmp', 'eax,9452F2C8h']
+  4200159, ['jnz', 'shortloc_40173A']
+ next: [4200161, 4200250]
+
+node :214
+node start(4200673) info:
+ start: 4200673
+ prev: []
+ instructions: 
+  4200673, ['call', 'ds:GetProcessHeap']
+  4200679, ['mov', '[ebp+var_60],eax']
+ next: [4200682]
+
+node :215
+node start(4202257) info:
+ start: 4202257
+ prev: []
+ instructions: 
+  4202257, ['mov', '[ebp+var_150],eax']
+ next: [4202263]
+
+node :216
+node start(4204072) info:
+ start: 4204072
+ prev: []
+ instructions: 
+  4204072, ['mov', '[ebp+var_12C],eax']
+ next: [4204078]
+
+node :217
+node start(4202101) info:
+ start: 4202101
+ prev: []
+ instructions: 
+  4202101, ['cmp', 'eax,0BAh']
+  4202107, ['jnz', 'loc_401F17']
+ next: [4202113, 4202263]
+
+node :218
+node start(4202597) info:
+ start: 4202597
+ prev: []
+ instructions: 
+  4202597, ['mov', '[ebp+var_F8],eax']
+  4202603, ['or', '[ebp+var_140],eax']
+ next: [4202609]
+
+node :219
+node start(4204224) info:
+ start: 4204224
+ prev: []
+ instructions: 
+  4204224, ['push', '13h;nIndex']
+  4204226, ['call', 'ds:GetSystemMetrics']
+  4204232, ['or', '[ebp+var_C],eax']
+  4204235, ['cmp', 'eax,9EC08266h']
+  4204241, ['jnz', 'shortloc_4026DB']
+ next: [4204243, 4204251]
+
+node :220
+node start(4200169) info:
+ start: 4200169
+ prev: []
+ instructions: 
+  4200169, ['mov', '[ebp+var_1B8],eax']
+  4200175, ['add', '[ebp+var_38],eax']
+  4200178, ['cmp', 'eax,0A4F009DDh']
+  4200184, ['jz', 'shortloc_401734']
+ next: [4200186, 4200244]
+
+node :221
+node start(4202291) info:
+ start: 4202291
+ prev: []
+ instructions: 
+  4202291, ['mov', '[ebp+var_9C],eax']
+  4202297, ['cmp', 'eax,0EEB8130Ch']
+  4202303, ['jz', 'shortloc_401F4C']
+ next: [4202305, 4202316]
+
+node :222
+node start(4199386) info:
+ start: 4199386
+ prev: []
+ instructions: 
+  4199386, ['call', 'ds:GetCommandLineA']
+  4199392, ['mov', '[ebp+var_158],eax']
+ next: [4199398]
+
+node :223
+node start(4200250) info:
+ start: 4200250
+ prev: []
+ instructions: 
+  4200250, ['cmp', 'eax,0E84721D8h']
+  4200256, ['jnz', 'shortloc_401752']
+ next: [4200258, 4200274]
+
+node :224
+node start(4200348) info:
+ start: 4200348
+ prev: []
+ instructions: 
+  4200348, ['cmp', 'eax,0FFFFFFFFh']
+  4200351, ['mov', '[ebp+var_F4],eax']
+  4200357, ['jnz', 'loc_401613']
+ next: [4199955, 4200363]
+
+node :225
+node start(4198915) info:
+ start: 4198915
+ prev: []
+ instructions: 
+  4198915, ['push', '0;hTemplateFile']
+  4198917, ['push', '5;dwFlagsAndAttributes']
+  4198919, ['push', '3;dwCreationDisposition']
+  4198921, ['push', '0;lpSecurityAttributes']
+  4198923, ['push', '3;dwShareMode']
+  4198925, ['push', '60000000h;dwDesiredAccess']
+  4198930, ['push', 'offsetaKgyfrkld_dr0;"KGYfrKlD.dr0"']
+  4198935, ['call', 'ds:CreateFileW']
+  4198941, ['mov', '[ebp+hFile],eax']
+  4198947, ['cmp', 'eax,0FFFFFFFFh']
+  4198950, ['jz', 'short$+2']
+ next: [4198952, 4198952]
+
+node :226
+node start(4201412) info:
+ start: 4201412
+ prev: []
+ instructions: 
+  4201412, ['xor', '[ebp+var_19C],eax']
+  4201418, ['cmp', 'eax,0D9h']
+  4201424, ['jnz', 'loc_401FEB']
+ next: [4201430, 4202475]
+
+node :227
+node start(4199367) info:
+ start: 4199367
+ prev: []
+ instructions: 
+  4199367, ['cmp', 'eax,3Eh']
+  4199370, ['jnz', 'shortloc_4013E6']
+ next: [4199372, 4199398]
+
+node :228
+node start(4200908) info:
+ start: 4200908
+ prev: []
+ instructions: 
+  4200908, ['mov', '[ebp+var_D4],eax']
+  4200914, ['or', '[ebp+var_180],eax']
+ next: [4200920]
+
+node :229
+node start(4202263) info:
+ start: 4202263
+ prev: []
+ instructions: 
+  4202263, ['cmp', 'eax,0B8397888h']
+  4202269, ['jz', 'shortloc_401F4C']
+ next: [4202271, 4202316]
+
+node :230
+node start(4202271) info:
+ start: 4202271
+ prev: []
+ instructions: 
+  4202271, ['call', 'ds:GetCurrentThreadId']
+  4202277, ['cmp', 'eax,0F04C0077h']
+  4202283, ['jnz', 'shortloc_401F33']
+ next: [4202285, 4202291]
+
+node :231
+node start(4204207) info:
+ start: 4204207
+ prev: []
+ instructions: 
+  4204207, ['mov', '[ebp+var_C4],eax']
+  4204213, ['xor', '[ebp+var_110],eax']
+ next: [4204219]
+
+node :232
+node start(4199063) info:
+ start: 4199063
+ prev: []
+ instructions: 
+  4199063, ['xor', '[ebp+var_108],eax']
+ next: [4199069]
+
+node :233
+node start(4201912) info:
+ start: 4201912
+ prev: []
+ instructions: 
+  4201912, ['and', '[ebp+var_140],eax']
+  4201918, ['and', '[ebp+var_A8],eax']
+  4201924, ['mov', '[ebp+var_68],eax']
+  4201927, ['add', '[ebp+var_38],eax']
+ next: [4201930]
+
+node :234
+node start(4199361) info:
+ start: 4199361
+ prev: []
+ instructions: 
+  4199361, ['or', '[ebp+var_100],eax']
+ next: [4199367]
+
+node :235
+node start(4199303) info:
+ start: 4199303
+ prev: []
+ instructions: 
+  4199303, ['call', 'ds:GetCommandLineA']
+  4199309, ['mov', '[ebp+var_158],eax']
+  4199315, ['push', 'offsetaJ4ccacoavmg7s;"j4CCAcoavmG7s"']
+  4199320, ['call', 'ds:RegisterWindowMessageA']
+  4199326, ['cmp', 'eax,0D2h']
+  4199332, ['jz', 'shortloc_4013C7']
+ next: [4199334, 4199367]
+
+node :236
+node start(4203430) info:
+ start: 4203430
+ prev: []
+ instructions: 
+  4203430, ['cmp', 'eax,52h']
+  4203433, ['jz', 'short$+2']
+ next: [4203435, 4203435]
+
+node :237
+node start(4200216) info:
+ start: 4200216
+ prev: []
+ instructions: 
+  4200216, ['xor', '[ebp+var_54],eax']
+  4200219, ['or', '[ebp+var_A8],eax']
+  4200225, ['mov', '[ebp+var_98],eax']
+ next: [4200231]
+
+node :238
+node start(4202609) info:
+ start: 4202609
+ prev: []
+ instructions: 
+  4202609, ['or', '[ebp+var_74],eax']
+  4202612, ['mov', 'eax,[ebp+var_94]']
+  4202618, ['mov', '[ebp+var_3C],eax']
+  4202621, ['call', 'ds:GetCurrentThreadId']
+  4202627, ['sub', '[ebp+var_90],eax']
+  4202633, ['cmp', 'eax,17A27Fh']
+  4202639, ['jnz', 'short$+2']
+ next: [4202641, 4202641]
+
+node :239
+node start(4199237) info:
+ start: 4199237
+ prev: []
+ instructions: 
+  4199237, ['sub', '[ebp+var_108],eax']
+  4199243, ['cmp', 'eax,9CE82092h']
+  4199249, ['jnz', 'short$+2']
+ next: [4199251, 4199251]
+
+node :240
+node start(4201957) info:
+ start: 4201957
+ prev: []
+ instructions: 
+  4201957, ['add', '[ebp+var_74],eax']
+ next: [4201960]
+
+node :241
+node start(4202305) info:
+ start: 4202305
+ prev: []
+ instructions: 
+  4202305, ['mov', '[ebp+var_C8],eax']
+  4202311, ['cmp', 'eax,39h']
+  4202314, ['jnz', 'short$+2']
+ next: [4202316, 4202316]
+
+node :242
+node start(4202683) info:
+ start: 4202683
+ prev: []
+ instructions: 
+  4202683, ['cmp', 'eax,0AC16A7BBh']
+  4202689, ['jnz', 'short$+2']
+ next: [4202691, 4202691]
+
+node :243
+node start(4201966) info:
+ start: 4201966
+ prev: []
+ instructions: 
+  4201966, ['cmp', 'eax,7Dh']
+  4201969, ['jz', 'short$+2']
+ next: [4201971, 4201971]
+
+node :244
+node start(4200258) info:
+ start: 4200258
+ prev: []
+ instructions: 
+  4200258, ['cmp', 'eax,0E4DCE67Dh']
+  4200264, ['jz', 'short$+2']
+ next: [4200266, 4200266]
+
+node :245
+node start(4199165) info:
+ start: 4199165
+ prev: []
+ instructions: 
+  4199165, ['sub', '[ebp+var_108],eax']
+ next: [4199171]
+
+node :246
+node start(4200186) info:
+ start: 4200186
+ prev: []
+ instructions: 
+  4200186, ['cmp', 'eax,0C171DE4h']
+  4200192, ['jnz', 'short$+2']
+ next: [4200194, 4200194]
+
+node :247
+node start(4202363) info:
+ start: 4202363
+ prev: []
+ instructions: 
+  4202363, ['cmp', 'eax,0D004A30Ch']
+  4202369, ['jz', 'shortloc_401F8F']
+ next: [4202371, 4202383]
+
+node :248
+node start(4199398) info:
+ start: 4199398
+ prev: []
+ instructions: 
+  4199398, ['cmp', 'eax,20h']
+  4199401, ['jz', 'loc_40176E']
+ next: [4199407, 4200302]
+
+node :249
+node start(4201112) info:
+ start: 4201112
+ prev: []
+ instructions: 
+  4201112, ['cmp', 'eax,1E8F77FFh']
+  4201118, ['jnz', 'loc_401B28']
+ next: [4201124, 4201256]
+
+node :250
+node start(4204243) info:
+ start: 4204243
+ prev: []
+ instructions: 
+  4204243, ['cmp', 'eax,0A6h']
+  4204249, ['jnz', 'short$+2']
+ next: [4204251, 4204251]
+
+node :251
+node start(4203025) info:
+ start: 4203025
+ prev: []
+ instructions: 
+  4203025, ['mov', '[ebp+var_164],eax']
+ next: [4203031]
+
+node :252
+node start(4202995) info:
+ start: 4202995
+ prev: []
+ instructions: 
+  4202995, ['push', 'offsetaZffq2iibcyy;"ZffQ2iiBCyY"']
+  4203000, ['call', 'ds:RegisterWindowMessageA']
+  4203006, ['and', 'eax,eax']
+  4203008, ['jnz', 'shortloc_402217']
+ next: [4203010, 4203031]
+
+node :253
+node start(4200194) info:
+ start: 4200194
+ prev: []
+ instructions: 
+  4200194, ['mov', '[ebp+var_198],eax']
+  4200200, ['cmp', 'eax,0E41B0577h']
+  4200206, ['jz', 'shortloc_401727']
+ next: [4200208, 4200231]
+
+node :254
+node start(4200208) info:
+ start: 4200208
+ prev: []
+ instructions: 
+  4200208, ['cmp', 'eax,1C92EC95h']
+  4200214, ['jnz', 'short$+2']
+ next: [4200216, 4200216]
+
+node :255
+node start(4204086) info:
+ start: 4204086
+ prev: []
+ instructions: 
+  4204086, ['cmp', 'eax,24D36B2Ch']
+  4204092, ['jz', 'shortloc_402695']
+ next: [4204094, 4204181]
+
+node :256
+node start(4201613) info:
+ start: 4201613
+ prev: []
+ instructions: 
+  4201613, ['jz', 'shortloc_401CB5']
+ next: [4201615, 4201653]
+
+node :257
+node start(4201971) info:
+ start: 4201971
+ prev: []
+ instructions: 
+  4201971, ['cmp', 'eax,64AD43A4h']
+  4201977, ['jnz', 'shortloc_401E20']
+ next: [4201979, 4202016]
+
+node :258
+node start(4200401) info:
+ start: 4200401
+ prev: []
+ instructions: 
+  4200401, ['jmp', 'loc_401750']
+ next: [4200272]
+
+node :259
+node start(4199932) info:
+ start: 4199932
+ prev: []
+ instructions: 
+  4199932, ['mov', '[ebp+var_30],eax']
+ next: [4199935]
+
+node :260
+node start(4204099) info:
+ start: 4204099
+ prev: []
+ instructions: 
+  4204099, ['mov', '[ebp+var_FC],eax']
+  4204105, ['cmp', 'eax,0E5h']
+  4204111, ['jnz', 'shortloc_40268F']
+ next: [4204113, 4204175]
+
+node :261
+node start(4204251) info:
+ start: 4204251
+ prev: []
+ instructions: 
+  4204251, ['call', 'ds:GetCurrentProcessId']
+  4204257, ['cmp', 'eax,0E3h']
+  4204263, ['jz', 'loc_402799']
+ next: [4204269, 4204441]
+
+node :262
+node start(4199854) info:
+ start: 4199854
+ prev: []
+ instructions: 
+  4199854, ['cmp', 'eax,38h']
+  4199857, ['jz', 'shortloc_4015FF']
+ next: [4199859, 4199935]
+
+node :263
+node start(4200231) info:
+ start: 4200231
+ prev: []
+ instructions: 
+  4200231, ['cmp', 'eax,1C57291Dh']
+  4200237, ['jz', 'shortloc_401734']
+ next: [4200239, 4200244]
+
+node :264
+node start(4199171) info:
+ start: 4199171
+ prev: []
+ instructions: 
+  4199171, ['push', '33h;nIndex']
+  4199173, ['call', 'ds:GetSystemMetrics']
+  4199179, ['test', 'eax,eax']
+  4199181, ['jnz', 'shortloc_401315']
+ next: [4199183, 4199189]
+
+node :265
+node start(4200266) info:
+ start: 4200266
+ prev: []
+ instructions: 
+  4200266, ['cmp', 'eax,0AAh']
+ next: [4200272]
+
+node :266
+node start(4202371) info:
+ start: 4202371
+ prev: []
+ instructions: 
+  4202371, ['or', '[ebp+var_E0],eax']
+  4202377, ['xor', '[ebp+var_90],eax']
+ next: [4202383]
+
+node :267
+node start(4201124) info:
+ start: 4201124
+ prev: []
+ instructions: 
+  4201124, ['cmp', 'eax,22h']
+  4201127, ['jnz', 'shortloc_401B20']
+ next: [4201129, 4201248]
+
+node :268
+node start(4202641) info:
+ start: 4202641
+ prev: []
+ instructions: 
+  4202641, ['add', '[ebp+var_190],eax']
+  4202647, ['cmp', 'eax,25h']
+  4202650, ['jz', 'shortloc_4020D4']
+ next: [4202652, 4202708]
+
+node :269
+node start(4203435) info:
+ start: 4203435
+ prev: []
+ instructions: 
+  4203435, ['cmp', 'eax,0D86C683Ch']
+  4203441, ['jnz', 'loc_40245F']
+ next: [4203447, 4203615]
+
+node :270
+node start(4199407) info:
+ start: 4199407
+ prev: []
+ instructions: 
+  4199407, ['call', 'ds:GetCurrentProcessId']
+  4199413, ['cmp', 'eax,24460FEBh']
+  4199419, ['jz', 'loc_401752']
+ next: [4199425, 4200274]
+
+node :271
+node start(4200967) info:
+ start: 4200967
+ prev: []
+ instructions: 
+  4200967, ['call', 'ds:GetCurrentProcessId']
+  4200973, ['cmp', 'eax,54h']
+  4200976, ['jz', 'loc_402022']
+ next: [4200982, 4202530]
+
+node :272
+node start(4199813) info:
+ start: 4199813
+ prev: []
+ instructions: 
+  4199813, ['cmp', 'eax,53h']
+  4199816, ['jnz', 'shortloc_4015A2']
+ next: [4199818, 4199842]
+
+node :273
+node start(4200299) info:
+ start: 4200299
+ prev: []
+ instructions: 
+  4200299, ['or', '[ebp+var_C],eax']
+ next: [4200302]
+
+node :274
+node start(4201960) info:
+ start: 4201960
+ prev: []
+ instructions: 
+  4201960, ['xor', '[ebp+var_154],eax']
+ next: [4201966]
+
+node :275
+node start(4201129) info:
+ start: 4201129
+ prev: []
+ instructions: 
+  4201129, ['cmp', 'eax,28h']
+  4201132, ['jnz', 'shortloc_401B0F']
+ next: [4201134, 4201231]
+
+node :276
+node start(4199537) info:
+ start: 4199537
+ prev: []
+ instructions: 
+  4199537, ['cmp', 'eax,0B2h']
+  4199543, ['jnz', 'loc_401573']
+ next: [4199549, 4199795]
+
+node :277
+node start(4200302) info:
+ start: 4200302
+ prev: []
+ instructions: 
+  4200302, ['push', '[ebp+hFile];hResInfo']
+  4200308, ['push', '0;hModule']
+  4200310, ['call', 'ds:SizeofResource']
+  4200316, ['xor', '[ebp+var_108],eax']
+  4200322, ['push', '0;hTemplateFile']
+  4200324, ['push', '6;dwFlagsAndAttributes']
+  4200326, ['push', '3;dwCreationDisposition']
+  4200328, ['push', '0;lpSecurityAttributes']
+  4200330, ['push', '0;dwShareMode']
+  4200332, ['push', '20000000h;dwDesiredAccess']
+  4200337, ['push', 'offsetaHi_7pn;"hI.7pN"']
+  4200342, ['call', 'ds:CreateFileW']
+ next: [4200348]
+
+node :278
+node start(4200239) info:
+ start: 4200239
+ prev: []
+ instructions: 
+  4200239, ['cmp', 'eax,23h']
+  4200242, ['jnz', 'short$+2']
+ next: [4200244, 4200244]
+
+node :279
+node start(4200982) info:
+ start: 4200982
+ prev: []
+ instructions: 
+  4200982, ['cmp', 'eax,9CB97588h']
+  4200988, ['jnz', 'loc_401B28']
+ next: [4200994, 4201256]
+
+node :280
+node start(4204113) info:
+ start: 4204113
+ prev: []
+ instructions: 
+  4204113, ['cmp', 'eax,99h']
+  4204119, ['jz', 'shortloc_402664']
+ next: [4204121, 4204132]
+
+node :281
+node start(4199183) info:
+ start: 4199183
+ prev: []
+ instructions: 
+  4199183, ['or', '[ebp+flOldProtect],eax']
+ next: [4199189]
+
+node :282
+node start(4201008) info:
+ start: 4201008
+ prev: []
+ instructions: 
+  4201008, ['or', '[ebp+var_8],eax']
+  4201011, ['cmp', 'eax,0CE91A084h']
+  4201017, ['jz', 'shortloc_401A54']
+ next: [4201019, 4201044]
+
+node :283
+node start(4201535) info:
+ start: 4201535
+ prev: []
+ instructions: 
+  4201535, ['cmp', 'eax,5']
+  4201538, ['jnz', 'shortloc_401C52']
+ next: [4201540, 4201554]
+
+node :284
+node start(4201653) info:
+ start: 4201653
+ prev: []
+ instructions: 
+  4201653, ['cmp', 'eax,66h']
+  4201656, ['jz', 'shortloc_401CEE']
+ next: [4201658, 4201710]
+
+node :285
+node start(4201979) info:
+ start: 4201979
+ prev: []
+ instructions: 
+  4201979, ['cmp', 'eax,4Ch']
+  4201982, ['jz', 'shortloc_401E20']
+ next: [4201984, 4202016]
+
+node :286
+node start(4202316) info:
+ start: 4202316
+ prev: []
+ instructions: 
+  4202316, ['cmp', 'eax,0E4F9E103h']
+  4202322, ['jnz', 'shortloc_401FCB']
+ next: [4202324, 4202443]
+
+node :287
+node start(4199935) info:
+ start: 4199935
+ prev: []
+ instructions: 
+  4199935, ['cmp', 'eax,7EE8DE1Ch']
+  4199941, ['jz', 'shortloc_401613']
+ next: [4199943, 4199955]
+
+node :288
+node start(4199251) info:
+ start: 4199251
+ prev: []
+ instructions: 
+  4199251, ['call', 'ds:GetACP']
+  4199257, ['mov', '[ebp+var_124],eax']
+  4199263, ['mov', '[ebp+var_A8],eax']
+  4199269, ['cmp', 'eax,0BCC9E7FEh']
+  4199275, ['jz', 'shortloc_40137E']
+ next: [4199277, 4199294]
+
+node :289
+node start(4199610) info:
+ start: 4199610
+ prev: []
+ instructions: 
+  4199610, ['cmp', 'eax,830B60Eh']
+  4199616, ['jz', 'shortloc_401506']
+ next: [4199618, 4199686]
+
+node :290
+node start(4199972) info:
+ start: 4199972
+ prev: []
+ instructions: 
+  4199972, ['cmp', 'eax,0FE9EEE57h']
+  4199978, ['jz', 'shortloc_401640']
+ next: [4199980, 4200000]
+
+node :291
+node start(4203472) info:
+ start: 4203472
+ prev: []
+ instructions: 
+  4203472, ['push', 'offsetaQqr2ww7p8rqwpk;"QQr2WW7p8RqwpKqd"']
+  4203477, ['push', '0;bInheritHandle']
+  4203479, ['push', '1F0001h;dwDesiredAccess']
+  4203484, ['call', 'ds:OpenMutexA']
+  4203490, ['mov', '[ebp+var_1A0],eax']
+  4203496, ['or', 'eax,eax']
+  4203498, ['jz', 'shortloc_402444']
+ next: [4203500, 4203588]
+
+node :292
+node start(4201248) info:
+ start: 4201248
+ prev: []
+ instructions: 
+  4201248, ['cmp', 'eax,82h']
+  4201254, ['jnz', 'short$+2']
+ next: [4201256, 4201256]
+
+node :293
+node start(4201156) info:
+ start: 4201156
+ prev: []
+ instructions: 
+  4201156, ['cmp', 'eax,2Fh']
+  4201159, ['jz', 'shortloc_401ACF']
+ next: [4201161, 4201167]
+
+node :294
+node start(4202004) info:
+ start: 4202004
+ prev: []
+ instructions: 
+  4202004, ['and', '[ebp+var_134],eax']
+  4202010, ['mov', '[ebp+var_170],eax']
+ next: [4202016]
+
+node :295
+node start(4202429) info:
+ start: 4202429
+ prev: []
+ instructions: 
+  4202429, ['cmp', 'eax,9C922B12h']
+  4202435, ['jz', 'shortloc_401FCB']
+ next: [4202437, 4202443]
+
+node :296
+node start(4204441) info:
+ start: 4204441
+ prev: []
+ instructions: 
+  4204441, ['cmp', 'eax,0C4h']
+  4204447, ['jz', 'short$+2']
+ next: [4204449, 4204449]
+
+node :297
+node start(4202383) info:
+ start: 4202383
+ prev: []
+ instructions: 
+  4202383, ['cmp', 'eax,942CF070h']
+  4202389, ['jz', 'shortloc_401FCB']
+ next: [4202391, 4202443]
+
+node :298
+node start(4200272) info:
+ start: 4200272
+ prev: []
+ instructions: 
+  4200272, ['jnz', 'short$+2']
+ next: [4200274, 4200274]
+
+node :299
+node start(4202691) info:
+ start: 4202691
+ prev: []
+ instructions: 
+  4202691, ['cmp', 'eax,1CE0C7F9h']
+  4202697, ['jz', 'shortloc_4020D4']
+ next: [4202699, 4202708]
+
+node :300
+node start(4203500) info:
+ start: 4203500
+ prev: []
+ instructions: 
+  4203500, ['call', 'ds:GetCurrentThreadId']
+  4203506, ['cmp', 'eax,0D1h']
+  4203512, ['jnz', 'shortloc_40243E']
+ next: [4203514, 4203582]
+
+node :301
+node start(4202699) info:
+ start: 4202699
+ prev: []
+ instructions: 
+  4202699, ['call', 'ds:GetEnvironmentStrings']
+  4202705, ['mov', '[ebp+var_24],eax']
+ next: [4202708]
+
+node :302
+node start(4203447) info:
+ start: 4203447
+ prev: []
+ instructions: 
+  4203447, ['cmp', 'eax,59h']
+  4203450, ['jz', 'loc_402444']
+ next: [4203456, 4203588]
+
+node :303
+node start(4199618) info:
+ start: 4199618
+ prev: []
+ instructions: 
+  4199618, ['cmp', 'eax,71h']
+  4199621, ['jnz', 'shortloc_401500']
+ next: [4199623, 4199680]
+
+node :304
+node start(4201178) info:
+ start: 4201178
+ prev: []
+ instructions: 
+  4201178, ['jz', 'shortloc_401B09']
+ next: [4201180, 4201225]
+
+node :305
+node start(4202443) info:
+ start: 4202443
+ prev: []
+ instructions: 
+  4202443, ['cmp', 'eax,0A5h']
+  4202449, ['jz', 'shortloc_401FEB']
+ next: [4202451, 4202475]
+
+node :306
+node start(4200008) info:
+ start: 4200008
+ prev: []
+ instructions: 
+  4200008, ['call', 'ds:GetOEMCP']
+  4200014, ['mov', '[ebp+flOldProtect],eax']
+  4200020, ['cmp', 'eax,0F5h']
+  4200026, ['jz', 'shortloc_40167E']
+ next: [4200028, 4200062]
+
+node :307
+node start(4199735) info:
+ start: 4199735
+ prev: []
+ instructions: 
+  4199735, ['cmp', 'eax,907B92ECh']
+  4199741, ['jnz', 'shortloc_40156D']
+ next: [4199743, 4199789]
+
+node :308
+node start(4199189) info:
+ start: 4199189
+ prev: []
+ instructions: 
+  4199189, ['and', '[ebp+var_A8],eax']
+  4199195, ['call', 'ds:GetEnvironmentStringsW']
+  4199201, ['mov', '[ebp+var_24],eax']
+  4199204, ['push', 'offsetString;"Yf6pEh9fGMTSy"']
+  4199209, ['call', 'ds:RegisterWindowMessageA']
+  4199215, ['and', '[ebp+var_70],eax']
+  4199218, ['push', '13h;nIndex']
+  4199220, ['call', 'ds:GetSystemMetrics']
+  4199226, ['mov', '[ebp+var_100],eax']
+  4199232, ['cmp', 'eax,0']
+  4199235, ['jnz', 'shortloc_401353']
+ next: [4199237, 4199251]
+
+node :309
+node start(4201523) info:
+ start: 4201523
+ prev: []
+ instructions: 
+  4201523, ['cmp', 'eax,0E2h']
+  4201529, ['jnz', 'loc_401D08']
+ next: [4201535, 4201736]
+
+node :310
+node start(4202324) info:
+ start: 4202324
+ prev: []
+ instructions: 
+  4202324, ['cmp', 'eax,0A0h']
+  4202330, ['jnz', 'shortloc_401F7B']
+ next: [4202332, 4202363]
+
+node :311
+node start(4202391) info:
+ start: 4202391
+ prev: []
+ instructions: 
+  4202391, ['push', '[ebp+var_80];hFile']
+  4202394, ['call', 'ds:GetFileType']
+  4202400, ['mov', '[ebp+var_B8],eax']
+  4202406, ['cmp', 'eax,0']
+  4202409, ['jz', 'shortloc_401FBD']
+ next: [4202411, 4202429]
+
+node :312
+node start(4202016) info:
+ start: 4202016
+ prev: []
+ instructions: 
+  4202016, ['sub', '[ebp+var_38],eax']
+  4202019, ['cmp', 'eax,0B2h']
+  4202025, ['jz', 'loc_401FEB']
+ next: [4202031, 4202475]
+
+node :313
+node start(4201984) info:
+ start: 4201984
+ prev: []
+ instructions: 
+  4201984, ['call', 'ds:GetCurrentProcessId']
+  4201990, ['xor', '[ebp+var_140],eax']
+  4201996, ['cmp', 'eax,384C1B84h']
+  4202002, ['jz', 'short$+2']
+ next: [4202004, 4202004]
+
+node :314
+node start(4199943) info:
+ start: 4199943
+ prev: []
+ instructions: 
+  4199943, ['call', 'ds:GetCommandLineW']
+  4199949, ['mov', '[ebp+var_158],eax']
+ next: [4199955]
+
+node :315
+node start(4200244) info:
+ start: 4200244
+ prev: []
+ instructions: 
+  4200244, ['add', '[ebp+var_100],eax']
+ next: [4200250]
+
+node :316
+node start(4199818) info:
+ start: 4199818
+ prev: []
+ instructions: 
+  4199818, ['call', 'ds:GetOEMCP']
+  4199824, ['sub', '[ebp+var_90],eax']
+  4199830, ['mov', '[ebp+var_E0],eax']
+  4199836, ['xor', '[ebp+var_124],eax']
+ next: [4199842]
+
+node :317
+node start(4201106) info:
+ start: 4201106
+ prev: []
+ instructions: 
+  4201106, ['mov', '[ebp+var_134],eax']
+ next: [4201112]
+
+node :318
+node start(4201056) info:
+ start: 4201056
+ prev: []
+ instructions: 
+  4201056, ['cmp', 'eax,0CDh']
+  4201062, ['jz', 'shortloc_401A98']
+ next: [4201064, 4201112]
+
+node :319
+node start(4203193) info:
+ start: 4203193
+ prev: []
+ instructions: 
+  4203193, ['cmp', 'eax,0E858A9F8h']
+  4203199, ['jnz', 'shortloc_4022CA']
+ next: [4203201, 4203210]
+
+node :320
+node start(4200994) info:
+ start: 4200994
+ prev: []
+ instructions: 
+  4200994, ['sub', '[ebp+var_174],eax']
+  4201000, ['cmp', 'eax,0D8h']
+  4201006, ['jz', 'shortloc_401A60']
+ next: [4201008, 4201056]
+
+node :321
+node start(4203010) info:
+ start: 4203010
+ prev: []
+ instructions: 
+  4203010, ['xor', '[ebp+var_184],eax']
+  4203016, ['or', 'eax,eax']
+  4203018, ['jnz', 'shortloc_402211']
+ next: [4203020, 4203025]
+
+node :322
+node start(4199549) info:
+ start: 4199549
+ prev: []
+ instructions: 
+  4199549, ['mov', '[ebp+var_90],eax']
+  4199555, ['xor', '[ebp+var_C0],eax']
+  4199561, ['mov', '[ebp+var_180],eax']
+  4199567, ['cmp', 'eax,0BDh']
+  4199573, ['jz', 'loc_401573']
+ next: [4199579, 4199795]
+
+node :323
+node start(4199955) info:
+ start: 4199955
+ prev: []
+ instructions: 
+  4199955, ['cmp', 'eax,0Ah']
+  4199958, ['jz', 'loc_4016A0']
+ next: [4199964, 4200096]
+
+node :324
+node start(4202411) info:
+ start: 4202411
+ prev: []
+ instructions: 
+  4202411, ['or', '[ebp+var_A4],eax']
+  4202417, ['mov', '[ebp+var_10C],eax']
+  4202423, ['mov', '[ebp+var_190],eax']
+ next: [4202429]
+
+node :325
+node start(4199980) info:
+ start: 4199980
+ prev: []
+ instructions: 
+  4199980, ['call', 'ds:GetCurrentProcessId']
+  4199986, ['mov', '[ebp+var_7C],eax']
+  4199989, ['cmp', 'eax,0F83186E4h']
+  4199995, ['jz', 'short$+2']
+ next: [4199997, 4199997]
+
+node :326
+node start(4201698) info:
+ start: 4201698
+ prev: []
+ instructions: 
+  4201698, ['and', '[ebp+var_D8],eax']
+ next: [4201704]
+
+node :327
+node start(4201256) info:
+ start: 4201256
+ prev: []
+ instructions: 
+  4201256, ['mov', '[ebp+var_38],eax']
+  4201259, ['cmp', 'eax,2Ch']
+  4201262, ['jnz', 'shortloc_401B3C']
+ next: [4201264, 4201276]
+
+node :328
+node start(4201658) info:
+ start: 4201658
+ prev: []
+ instructions: 
+  4201658, ['cmp', 'eax,40h']
+  4201661, ['jnz', 'shortloc_401CDA']
+ next: [4201663, 4201690]
+
+node :329
+node start(4199277) info:
+ start: 4199277
+ prev: []
+ instructions: 
+  4199277, ['mov', '[ebp+var_174],eax']
+  4199283, ['mov', '[ebp+var_108],eax']
+  4199289, ['cmp', 'eax,47h']
+  4199292, ['jz', 'short$+2']
+ next: [4199294, 4199294]
+
+node :330
+node start(4204376) info:
+ start: 4204376
+ prev: []
+ instructions: 
+  4204376, ['cmp', 'eax,4Ch']
+  4204379, ['jz', 'shortloc_402790']
+ next: [4204381, 4204432]
+
+node :331
+node start(4199743) info:
+ start: 4199743
+ prev: []
+ instructions: 
+  4199743, ['mov', '[ebp+var_168],eax']
+  4199749, ['cmp', 'eax,0E0h']
+  4199755, ['jnz', 'shortloc_401567']
+ next: [4199757, 4199783]
+
+node :332
+node start(4201161) info:
+ start: 4201161
+ prev: []
+ instructions: 
+  4201161, ['xor', '[ebp+var_1A8],eax']
+ next: [4201167]
+
+node :333
+node start(4200056) info:
+ start: 4200056
+ prev: []
+ instructions: 
+  4200056, ['mov', '[ebp+flOldProtect],eax']
+ next: [4200062]
+
+node :334
+node start(4201019) info:
+ start: 4201019
+ prev: []
+ instructions: 
+  4201019, ['push', 'offsetaQuvreylm;"QuvReyLm"']
+  4201024, ['push', '0;bInheritHandle']
+  4201026, ['push', '1F0001h;dwDesiredAccess']
+  4201031, ['call', 'ds:OpenMutexA']
+  4201037, ['mov', '[ebp+var_80],eax']
+  4201040, ['or', 'eax,eax']
+  4201042, ['jz', 'short$+2']
+ next: [4201044, 4201044]
+
+node :335
+node start(4199873) info:
+ start: 4199873
+ prev: []
+ instructions: 
+  4199873, ['cmp', 'eax,34h']
+  4199876, ['jnz', 'shortloc_4015E3']
+ next: [4199878, 4199907]
+
+node :336
+node start(4201180) info:
+ start: 4201180
+ prev: []
+ instructions: 
+  4201180, ['cmp', 'eax,0C3h']
+  4201186, ['jnz', 'shortloc_401B09']
+ next: [4201188, 4201225]
+
+node :337
+node start(4203456) info:
+ start: 4203456
+ prev: []
+ instructions: 
+  4203456, ['cmp', 'eax,0D0h']
+  4203462, ['jz', 'short$+2']
+ next: [4203464, 4203464]
+
+node :338
+node start(4201540) info:
+ start: 4201540
+ prev: []
+ instructions: 
+  4201540, ['call', 'ds:GetCurrentThreadId']
+  4201546, ['cmp', 'eax,3Fh']
+  4201549, ['jz', 'shortloc_401C52']
+ next: [4201551, 4201554]
+
+node :339
+node start(4202451) info:
+ start: 4202451
+ prev: []
+ instructions: 
+  4202451, ['push', 'offsetaVvgv2hnrumzpv;"vVGv2HNRuMzpV"']
+  4202456, ['push', '0;bInheritHandle']
+  4202458, ['push', '1F0001h;dwDesiredAccess']
+  4202463, ['call', 'ds:OpenMutexA']
+  4202469, ['mov', '[ebp+var_1A0],eax']
+ next: [4202475]
+
+node :340
+node start(4200274) info:
+ start: 4200274
+ prev: []
+ instructions: 
+  4200274, ['cmp', 'eax,78385C6Dh']
+  4200280, ['jnz', 'shortloc_401760']
+ next: [4200282, 4200288]
+
+node :341
+node start(4202167) info:
+ start: 4202167
+ prev: []
+ instructions: 
+  4202167, ['push', 'offsetaYmplz0mnid0l4e;"YmpLz0MniD0L4E"']
+  4202172, ['push', '1;bInheritHandle']
+  4202174, ['push', '1F0001h;dwDesiredAccess']
+  4202179, ['call', 'ds:OpenMutexA']
+  4202185, ['mov', '[ebp+var_60],eax']
+  4202188, ['cmp', 'eax,0']
+  4202191, ['jz', 'shortloc_401F0B']
+ next: [4202193, 4202251]
+
+node :342
+node start(4204269) info:
+ start: 4204269
+ prev: []
+ instructions: 
+  4204269, ['cmp', 'eax,0B4h']
+  4204275, ['jnz', 'loc_402790']
+ next: [4204281, 4204432]
+
+node :343
+node start(4200028) info:
+ start: 4200028
+ prev: []
+ instructions: 
+  4200028, ['sub', '[ebp+var_30],eax']
+  4200031, ['cmp', 'eax,0A054750Eh']
+  4200037, ['jnz', 'shortloc_401670']
+ next: [4200039, 4200048]
+
+node :344
+node start(4203514) info:
+ start: 4203514
+ prev: []
+ instructions: 
+  4203514, ['mov', '[ebp+var_E4],eax']
+  4203520, ['mov', '[ebp+var_174],eax']
+  4203526, ['or', '[ebp+var_150],eax']
+  4203532, ['cmp', 'eax,0BCA05404h']
+  4203538, ['jnz', 'shortloc_40243E']
+ next: [4203540, 4203582]
+
+node :345
+node start(4204449) info:
+ start: 4204449
+ prev: []
+ instructions: 
+  4204449, ['cmp', 'eax,4Ch']
+  4204452, ['jz', 'shortloc_4027AC']
+ next: [4204454, 4204460]
+
+node :346
+node start(4199623) info:
+ start: 4199623
+ prev: []
+ instructions: 
+  4199623, ['mov', '[ebp+var_C],eax']
+  4199626, ['cmp', 'eax,0E43D475Eh']
+  4199632, ['jz', 'shortloc_401500']
+ next: [4199634, 4199680]
+
+node :347
+node start(4202708) info:
+ start: 4202708
+ prev: []
+ instructions: 
+  4202708, ['add', '[ebp+var_3C],4C9BFD80h']
+  4202715, ['call', 'ds:GetEnvironmentStringsW']
+  4202721, ['mov', '[ebp+var_118],eax']
+  4202727, ['sub', '[ebp+var_3C],0CC5C1C43h']
+  4202734, ['call', 'ds:GetCurrentProcess']
+  4202740, ['cmp', 'eax,368475h']
+  4202746, ['jz', 'short$+2']
+ next: [4202748, 4202748]
+
+node :348
+node start(4204121) info:
+ start: 4204121
+ prev: []
+ instructions: 
+  4204121, ['mov', '[ebp+var_28],eax']
+  4204124, ['cmp', 'eax,983D11F4h']
+  4204130, ['jnz', 'short$+2']
+ next: [4204132, 4204132]
+
+node :349
+node start(4203201) info:
+ start: 4203201
+ prev: []
+ instructions: 
+  4203201, ['mov', '[ebp+var_18],eax']
+  4203204, ['mov', '[ebp+var_16C],eax']
+ next: [4203210]
+
+node :350
+node start(4203020) info:
+ start: 4203020
+ prev: []
+ instructions: 
+  4203020, ['jmp', 'loc_401C8D']
+ next: [4201613]
+
+node :351
+node start(4201607) info:
+ start: 4201607
+ prev: []
+ instructions: 
+  4201607, ['cmp', 'eax,1C40DAB0h']
+ next: [4201613]
+
+node :352
+node start(4204432) info:
+ start: 4204432
+ prev: []
+ instructions: 
+  4204432, ['add', '[ebp+var_C4],eax']
+  4204438, ['mov', '[ebp+var_44],eax']
+ next: [4204441]
+
+node :353
+node start(4202437) info:
+ start: 4202437
+ prev: []
+ instructions: 
+  4202437, ['sub', '[ebp+var_190],eax']
+ next: [4202443]
+
+node :354
+node start(4201276) info:
+ start: 4201276
+ prev: []
+ instructions: 
+  4201276, ['cmp', 'eax,80465B51h']
+  4201282, ['jz', 'loc_402022']
+ next: [4201288, 4202530]
+
+node :355
+node start(4199686) info:
+ start: 4199686
+ prev: []
+ instructions: 
+  4199686, ['mov', '[ebp+var_C0],eax']
+  4199692, ['cmp', 'eax,0BAh']
+  4199698, ['jz', 'shortloc_401537']
+ next: [4199700, 4199735]
+
+node :356
+node start(4204281) info:
+ start: 4204281
+ prev: []
+ instructions: 
+  4204281, ['xor', '[ebp+var_174],eax']
+  4204287, ['cmp', 'eax,0A3h']
+  4204293, ['jz', 'shortloc_402758']
+ next: [4204295, 4204376]
+
+node :357
+node start(4199294) info:
+ start: 4199294
+ prev: []
+ instructions: 
+  4199294, ['call', 'ds:GetEnvironmentStrings']
+  4199300, ['mov', '[ebp+var_24],eax']
+ next: [4199303]
+
+node :358
+node start(4202332) info:
+ start: 4202332
+ prev: []
+ instructions: 
+  4202332, ['push', '[ebp+var_F4];hResInfo']
+  4202338, ['push', '0;hModule']
+  4202340, ['call', 'ds:SizeofResource']
+  4202346, ['mov', '[ebp+var_4C],eax']
+  4202349, ['test', 'eax,eax']
+  4202351, ['jnz', 'loc_401387']
+ next: [4199303, 4202357]
+
+node :359
+node start(4199598) info:
+ start: 4199598
+ prev: []
+ instructions: 
+  4199598, ['cmp', 'eax,0ACh']
+  4199604, ['jz', 'loc_40156D']
+ next: [4199610, 4199789]
+
+node :360
+node start(4203464) info:
+ start: 4203464
+ prev: []
+ instructions: 
+  4203464, ['cmp', 'eax,0EC1F777h']
+  4203470, ['jz', 'shortloc_402444']
+ next: [4203472, 4203588]
+
+node :361
+node start(4199579) info:
+ start: 4199579
+ prev: []
+ instructions: 
+  4199579, ['push', '14h;nIndex']
+  4199581, ['call', 'ds:GetSystemMetrics']
+  4199587, ['cmp', 'eax,0']
+  4199590, ['jnz', 'shortloc_4014AE']
+ next: [4199592, 4199598]
+
+node :362
+node start(4199964) info:
+ start: 4199964
+ prev: []
+ instructions: 
+  4199964, ['cmp', 'eax,442753DBh']
+  4199970, ['jz', 'shortloc_40167E']
+ next: [4199972, 4200062]
+
+node :363
+node start(4201044) info:
+ start: 4201044
+ prev: []
+ instructions: 
+  4201044, ['sub', '[ebp+var_198],eax']
+  4201050, ['add', '[ebp+var_D8],eax']
+ next: [4201056]
+
+node :364
+node start(4201172) info:
+ start: 4201172
+ prev: []
+ instructions: 
+  4201172, ['cmp', 'eax,285EBE1Ch']
+ next: [4201178]
+
+node :365
+node start(4203551) info:
+ start: 4203551
+ prev: []
+ instructions: 
+  4203551, ['push', 'offsetaCw0rexmi36ds;"cW0rEXmi36dS"']
+  4203556, ['call', 'ds:RegisterWindowMessageA']
+  4203562, ['add', '[ebp+var_184],eax']
+  4203568, ['test', 'eax,eax']
+  4203570, ['jz', 'loc_401ADA']
+ next: [4201178, 4203576]
+
+node :366
+node start(4202896) info:
+ start: 4202896
+ prev: []
+ instructions: 
+  4202896, ['cmp', 'eax,0BCB35F3Fh']
+  4202902, ['jz', 'shortloc_4021A7']
+ next: [4202904, 4202919]
+
+node :367
+node start(4201264) info:
+ start: 4201264
+ prev: []
+ instructions: 
+  4201264, ['call', 'ds:GetEnvironmentStringsW']
+  4201270, ['mov', '[ebp+var_18C],eax']
+ next: [4201276]
+
+node :368
+node start(4199859) info:
+ start: 4199859
+ prev: []
+ instructions: 
+  4199859, ['add', '[ebp+var_168],eax']
+  4199865, ['cmp', 'eax,80h']
+  4199871, ['jnz', 'shortloc_4015FC']
+ next: [4199873, 4199932]
+
+node :369
+node start(4201615) info:
+ start: 4201615
+ prev: []
+ instructions: 
+  4201615, ['cmp', 'eax,0C469DA76h']
+  4201621, ['jnz', 'shortloc_401CB5']
+ next: [4201623, 4201653]
+
+node :370
+node start(4201650) info:
+ start: 4201650
+ prev: []
+ instructions: 
+  4201650, ['mov', '[ebp+var_20],eax']
+ next: [4201653]
+
+node :371
+node start(4203540) info:
+ start: 4203540
+ prev: []
+ instructions: 
+  4203540, ['xor', '[ebp+var_70],eax']
+  4203543, ['cmp', 'eax,5EBFD969h']
+  4203549, ['jnz', 'shortloc_402438']
+ next: [4203551, 4203576]
+
+node :372
+node start(4201167) info:
+ start: 4201167
+ prev: []
+ instructions: 
+  4201167, ['cmp', 'eax,68h']
+  4201170, ['jnz', 'shortloc_401B09']
+ next: [4201172, 4201225]
+
+node :373
+node start(4202919) info:
+ start: 4202919
+ prev: []
+ instructions: 
+  4202919, ['cmp', 'eax,8Dh']
+  4202925, ['jnz', 'shortloc_4021C9']
+ next: [4202927, 4202953]
+
+node :374
+node start(4201188) info:
+ start: 4201188
+ prev: []
+ instructions: 
+  4201188, ['cmp', 'eax,0F40F5F6Dh']
+  4201194, ['jz', 'short$+2']
+ next: [4201196, 4201196]
+
+node :375
+node start(4204132) info:
+ start: 4204132
+ prev: []
+ instructions: 
+  4204132, ['cmp', 'eax,0ACh']
+  4204138, ['jnz', 'shortloc_40268F']
+ next: [4204140, 4204175]
+
+node :376
+node start(4204381) info:
+ start: 4204381
+ prev: []
+ instructions: 
+  4204381, ['cmp', 'eax,0DEh']
+  4204387, ['jnz', 'shortloc_40276B']
+ next: [4204389, 4204395]
+
+node :377
+node start(4201704) info:
+ start: 4201704
+ prev: []
+ instructions: 
+  4201704, ['mov', '[ebp+var_98],eax']
+ next: [4201710]
+
+node :378
+node start(4201566) info:
+ start: 4201566
+ prev: []
+ instructions: 
+  4201566, ['call', 'ds:GetCurrentProcess']
+  4201572, ['cmp', 'eax,38h']
+  4201575, ['jz', 'loc_401CEE']
+ next: [4201581, 4201710]
+
+node :379
+node start(4204460) info:
+ start: 4204460
+ prev: []
+ instructions: 
+  4204460, ['cmp', 'eax,0BEA385C0h']
+  4204466, ['jnz', 'shortloc_4027D3']
+ next: [4204468, 4204499]
+
+node :380
+node start(4200282) info:
+ start: 4200282
+ prev: []
+ instructions: 
+  4200282, ['sub', '[ebp+var_144],eax']
+ next: [4200288]
+
+node :381
+node start(4203215) info:
+ start: 4203215
+ prev: []
+ instructions: 
+  4203215, ['push', 'offsetaNkexl;"nKexl"']
+  4203220, ['call', 'ds:RegisterWindowMessageA']
+  4203226, ['and', 'eax,eax']
+  4203228, ['jnz', 'shortloc_4022EC']
+ next: [4203230, 4203244]
+
+node :382
+node start(4199878) info:
+ start: 4199878
+ prev: []
+ instructions: 
+  4199878, ['push', '43h;nIndex']
+  4199880, ['call', 'ds:GetSystemMetrics']
+  4199886, ['or', '[ebp+var_A8],eax']
+  4199892, ['and', 'eax,eax']
+  4199894, ['jz', 'short$+2']
+ next: [4199896, 4199896]
+
+node :383
+node start(4200062) info:
+ start: 4200062
+ prev: []
+ instructions: 
+  4200062, ['cmp', 'eax,0E4D97ECEh']
+  4200068, ['jz', 'shortloc_40169A']
+ next: [4200070, 4200090]
+
+node :384
+node start(4199334) info:
+ start: 4199334
+ prev: []
+ instructions: 
+  4199334, ['cmp', 'eax,7Ch']
+  4199337, ['jnz', 'shortloc_4013B3']
+ next: [4199339, 4199347]
+
+node :385
+node start(4199757) info:
+ start: 4199757
+ prev: []
+ instructions: 
+  4199757, ['call', 'ds:GetOEMCP']
+  4199763, ['cmp', 'eax,0BCA63830h']
+  4199769, ['jz', 'short$+2']
+ next: [4199771, 4199771]
+
+node :386
+node start(4202748) info:
+ start: 4202748
+ prev: []
+ instructions: 
+  4202748, ['call', 'ds:GetACP']
+  4202754, ['cmp', 'eax,8Fh']
+  4202760, ['jz', 'short$+2']
+ next: [4202762, 4202762]
+
+node :387
+node start(4203582) info:
+ start: 4203582
+ prev: []
+ instructions: 
+  4203582, ['mov', '[ebp+var_128],eax']
+ next: [4203588]
+
+node :388
+node start(4202193) info:
+ start: 4202193
+ prev: []
+ instructions: 
+  4202193, ['call', 'ds:GetTickCount']
+  4202199, ['cmp', 'eax,2499CE13h']
+  4202205, ['jnz', 'shortloc_401EFC']
+ next: [4202207, 4202236]
+
+node :389
+node start(4199634) info:
+ start: 4199634
+ prev: []
+ instructions: 
+  4199634, ['or', '[ebp+var_184],eax']
+  4199640, ['cmp', 'eax,70460A43h']
+  4199646, ['jnz', 'shortloc_401500']
+ next: [4199648, 4199680]
+
+node :390
+node start(4199674) info:
+ start: 4199674
+ prev: []
+ instructions: 
+  4199674, ['mov', '[ebp+var_138],eax']
+ next: [4199680]
+
+node :391
+node start(4199997) info:
+ start: 4199997
+ prev: []
+ instructions: 
+  4199997, ['mov', '[ebp+var_40],eax']
+ next: [4200000]
+
+node :392
+node start(4201663) info:
+ start: 4201663
+ prev: []
+ instructions: 
+  4201663, ['cmp', 'eax,0A443CB48h']
+  4201669, ['jnz', 'shortloc_401CDA']
+ next: [4201671, 4201690]
+
+node :393
+node start(4201551) info:
+ start: 4201551
+ prev: []
+ instructions: 
+  4201551, ['xor', '[ebp+var_2C],eax']
+ next: [4201554]
+
+node :394
+node start(4204334) info:
+ start: 4204334
+ prev: []
+ instructions: 
+  4204334, ['cmp', 'eax,6016F0DBh']
+  4204340, ['jz', 'shortloc_40274F']
+ next: [4204342, 4204367]
+
+node :395
+node start(4201207) info:
+ start: 4201207
+ prev: []
+ instructions: 
+  4201207, ['add', '[ebp+var_130],eax']
+  4201213, ['xor', '[ebp+flOldProtect],eax']
+  4201219, ['and', '[ebp+var_1A8],eax']
+ next: [4201225]
+
+node :396
+node start(4200039) info:
+ start: 4200039
+ prev: []
+ instructions: 
+  4200039, ['call', 'ds:GetCurrentProcess']
+  4200045, ['mov', '[ebp+var_74],eax']
+ next: [4200048]
+
+node :397
+node start(4202475) info:
+ start: 4202475
+ prev: []
+ instructions: 
+  4202475, ['cmp', 'eax,3E93A898h']
+  4202481, ['jnz', 'short$+2']
+ next: [4202483, 4202483]
+
+node :398
+node start(4203588) info:
+ start: 4203588
+ prev: []
+ instructions: 
+  4203588, ['xor', '[ebp+var_54],eax']
+  4203591, ['cmp', 'eax,2ED1BE3Bh']
+  4203597, ['jz', 'shortloc_402459']
+ next: [4203599, 4203609]
+
+node :399
+node start(4204468) info:
+ start: 4204468
+ prev: []
+ instructions: 
+  4204468, ['xor', '[ebp+var_1B8],eax']
+  4204474, ['cmp', 'eax,5EB90C1Ah']
+  4204480, ['jnz', 'shortloc_4027D3']
+ next: [4204482, 4204499]
+
+node :400
+node start(4204303) info:
+ start: 4204303
+ prev: []
+ instructions: 
+  4204303, ['cmp', 'eax,0B9h']
+  4204309, ['jz', 'shortloc_402728']
+ next: [4204311, 4204328]
+
+node :401
+node start(4202207) info:
+ start: 4202207
+ prev: []
+ instructions: 
+  4202207, ['mov', '[ebp+var_88],eax']
+  4202213, ['cmp', 'eax,7Ch']
+  4202216, ['jz', 'shortloc_401EF6']
+ next: [4202218, 4202230]
+
+node :402
+node start(4204342) info:
+ start: 4204342
+ prev: []
+ instructions: 
+  4204342, ['cmp', 'eax,3Eh']
+  4204345, ['jnz', 'shortloc_402747']
+ next: [4204347, 4204359]
+
+node :403
+node start(4201225) info:
+ start: 4201225
+ prev: []
+ instructions: 
+  4201225, ['sub', '[ebp+var_1A8],eax']
+ next: [4201231]
+
+node :404
+node start(4204389) info:
+ start: 4204389
+ prev: []
+ instructions: 
+  4204389, ['mov', '[ebp+var_1B4],eax']
+ next: [4204395]
+
+node :405
+node start(4199896) info:
+ start: 4199896
+ prev: []
+ instructions: 
+  4199896, ['mov', '[ebp+var_38],eax']
+  4199899, ['cmp', 'eax,0A4F9E31Ah']
+  4199905, ['jnz', 'short$+2']
+ next: [4199907, 4199907]
+
+node :406
+node start(4199339) info:
+ start: 4199339
+ prev: []
+ instructions: 
+  4199339, ['cmp', 'eax,0BCE19DAAh']
+  4199345, ['jz', 'short$+2']
+ next: [4199347, 4199347]
+
+node :407
+node start(4200000) info:
+ start: 4200000
+ prev: []
+ instructions: 
+  4200000, ['cmp', 'eax,9EC290A1h']
+  4200006, ['jnz', 'shortloc_40167E']
+ next: [4200008, 4200062]
+
+node :408
+node start(4202113) info:
+ start: 4202113
+ prev: []
+ instructions: 
+  4202113, ['cmp', 'eax,2E9CFC05h']
+  4202119, ['jz', 'loc_401F11']
+ next: [4202125, 4202257]
+
+node :409
+node start(4201671) info:
+ start: 4201671
+ prev: []
+ instructions: 
+  4201671, ['cmp', 'eax,9CE8A472h']
+  4201677, ['jz', 'shortloc_401CDA']
+ next: [4201679, 4201690]
+
+node :410
+node start(4201288) info:
+ start: 4201288
+ prev: []
+ instructions: 
+  4201288, ['cmp', 'eax,20723ECEh']
+  4201294, ['jz', 'short$+2']
+ next: [4201296, 4201296]
+
+node :411
+node start(4200048) info:
+ start: 4200048
+ prev: []
+ instructions: 
+  4200048, ['cmp', 'eax,1CFD10D9h']
+  4200054, ['jnz', 'short$+2']
+ next: [4200056, 4200056]
+
+node :412
+node start(4202139) info:
+ start: 4202139
+ prev: []
+ instructions: 
+  4202139, ['cmp', 'eax,0B3h']
+  4202145, ['jz', 'shortloc_401F0B']
+ next: [4202147, 4202251]
+
+node :413
+node start(4203244) info:
+ start: 4203244
+ prev: []
+ instructions: 
+  4203244, ['cmp', 'eax,2Bh']
+  4203247, ['jnz', 'shortloc_4022FA']
+ next: [4203249, 4203258]
+
+node :414
+node start(4204295) info:
+ start: 4204295
+ prev: []
+ instructions: 
+  4204295, ['cmp', 'eax,0BCDDA154h']
+  4204301, ['jz', 'shortloc_40272E']
+ next: [4204303, 4204334]
+
+node :415
+node start(4201196) info:
+ start: 4201196
+ prev: []
+ instructions: 
+  4201196, ['xor', '[ebp+var_7C],eax']
+  4201199, ['cmp', 'eax,0AC3E17F3h']
+  4201205, ['jnz', 'shortloc_401B09']
+ next: [4201207, 4201225]
+
+node :416
+node start(4201690) info:
+ start: 4201690
+ prev: []
+ instructions: 
+  4201690, ['cmp', 'eax,4E923070h']
+  4201696, ['jnz', 'shortloc_401CE8']
+ next: [4201698, 4201704]
+
+node :417
+node start(4201623) info:
+ start: 4201623
+ prev: []
+ instructions: 
+  4201623, ['push', 'offsetaS67cxb4;"s67CXB4"']
+  4201628, ['call', 'ds:RegisterWindowMessageA']
+  4201634, ['or', 'eax,eax']
+  4201636, ['jnz', 'shortloc_401CB2']
+ next: [4201638, 4201650]
+
+node :418
+node start(4201581) info:
+ start: 4201581
+ prev: []
+ instructions: 
+  4201581, ['call', 'ds:GetCurrentThreadId']
+  4201587, ['xor', '[ebp+var_90],eax']
+  4201593, ['cmp', 'eax,16h']
+  4201596, ['jnz', 'shortloc_401C87']
+ next: [4201598, 4201607]
+
+node :419
+node start(4199700) info:
+ start: 4199700
+ prev: []
+ instructions: 
+  4199700, ['push', '0;hTemplateFile']
+  4199702, ['push', '127h;dwFlagsAndAttributes']
+  4199707, ['push', '3;dwCreationDisposition']
+  4199709, ['push', '0;lpSecurityAttributes']
+  4199711, ['push', '0;dwShareMode']
+  4199713, ['push', '0A0000000h;dwDesiredAccess']
+  4199718, ['push', 'offsetaI0vgnuuffqufvg;"i0vgNUUFfQuFvGCcPe.Dd8"']
+  4199723, ['call', 'ds:CreateFileW']
+  4199729, ['mov', '[ebp+hFile],eax']
+ next: [4199735]
+
+node :420
+node start(4201064) info:
+ start: 4201064
+ prev: []
+ instructions: 
+  4201064, ['add', '[ebp+var_D4],eax']
+  4201070, ['or', '[ebp+var_144],eax']
+  4201076, ['cmp', 'eax,24E71895h']
+  4201082, ['jz', 'shortloc_401A92']
+ next: [4201084, 4201106]
+
+node :421
+node start(4204094) info:
+ start: 4204094
+ prev: []
+ instructions: 
+  4204094, ['cmp', 'eax,22h']
+  4204097, ['jz', 'shortloc_40268F']
+ next: [4204099, 4204175]
+
+node :422
+node start(4199680) info:
+ start: 4199680
+ prev: []
+ instructions: 
+  4199680, ['or', '[ebp+var_70],eax']
+  4199683, ['xor', '[ebp+var_C],eax']
+ next: [4199686]
+
+node :423
+node start(4199592) info:
+ start: 4199592
+ prev: []
+ instructions: 
+  4199592, ['add', '[ebp+var_A8],eax']
+ next: [4199598]
+
+node :424
+node start(4199347) info:
+ start: 4199347
+ prev: []
+ instructions: 
+  4199347, ['cmp', 'eax,3Ch']
+  4199350, ['jnz', 'shortloc_4013C1']
+ next: [4199352, 4199361]
+
+node :425
+node start(4201554) info:
+ start: 4201554
+ prev: []
+ instructions: 
+  4201554, ['cmp', 'eax,4C603C49h']
+  4201560, ['jz', 'loc_401D02']
+ next: [4201566, 4201730]
+
+node :426
+node start(4204454) info:
+ start: 4204454
+ prev: []
+ instructions: 
+  4204454, ['sub', '[ebp+var_F8],eax']
+ next: [4204460]
+
+node :427
+node start(4202888) info:
+ start: 4202888
+ prev: []
+ instructions: 
+  4202888, ['cmp', 'eax,0E4BA3450h']
+  4202894, ['jz', 'short$+2']
+ next: [4202896, 4202896]
+
+node :428
+node start(4202927) info:
+ start: 4202927
+ prev: []
+ instructions: 
+  4202927, ['call', 'ds:GetFocus']
+  4202933, ['cmp', 'eax,0']
+  4202936, ['mov', '[ebp+var_60],eax']
+  4202939, ['jnz', 'shortloc_4021C9']
+ next: [4202941, 4202953]
+
+node :429
+node start(4200288) info:
+ start: 4200288
+ prev: []
+ instructions: 
+  4200288, ['cmp', 'eax,9C84ECF2h']
+  4200294, ['jnz', 'shortloc_40176B']
+ next: [4200296, 4200299]
+
+node :430
+node start(4199648) info:
+ start: 4199648
+ prev: []
+ instructions: 
+  4199648, ['mov', '[ebp+var_54],eax']
+  4199651, ['cmp', 'eax,9CCC1412h']
+  4199657, ['jnz', 'shortloc_4014FA']
+ next: [4199659, 4199674]
+
+node :431
+node start(4202147) info:
+ start: 4202147
+ prev: []
+ instructions: 
+  4202147, ['mov', '[ebp+var_6C],eax']
+  4202150, ['mov', '[ebp+var_154],eax']
+  4202156, ['or', '[ebp+var_108],eax']
+  4202162, ['cmp', 'eax,31h']
+  4202165, ['jz', 'shortloc_401F0B']
+ next: [4202167, 4202251]
+
+node :432
+node start(4199907) info:
+ start: 4199907
+ prev: []
+ instructions: 
+  4199907, ['mov', '[ebp+var_144],eax']
+  4199913, ['cmp', 'eax,56h']
+  4199916, ['jnz', 'shortloc_4015FC']
+ next: [4199918, 4199932]
+
+node :433
+node start(4204359) info:
+ start: 4204359
+ prev: []
+ instructions: 
+  4204359, ['cmp', 'eax,0D9h']
+  4204365, ['jnz', 'short$+2']
+ next: [4204367, 4204367]
+
+node :434
+node start(4202218) info:
+ start: 4202218
+ prev: []
+ instructions: 
+  4202218, ['push', '10h;nIndex']
+  4202220, ['call', 'ds:GetSystemMetrics']
+  4202226, ['and', 'eax,eax']
+  4202228, ['jz', 'short$+2']
+ next: [4202230, 4202230]
+
+node :435
+node start(4203599) info:
+ start: 4203599
+ prev: []
+ instructions: 
+  4203599, ['mov', '[ebp+var_D0],eax']
+  4203605, ['test', 'eax,eax']
+  4203607, ['jnz', 'short$+2']
+ next: [4203609, 4203609]
+
+node :436
+node start(4204311) info:
+ start: 4204311
+ prev: []
+ instructions: 
+  4204311, ['cmp', 'eax,0EEB1263Bh']
+  4204317, ['jz', 'shortloc_402725']
+ next: [4204319, 4204325]
+
+node :437
+node start(4202483) info:
+ start: 4202483
+ prev: []
+ instructions: 
+  4202483, ['xor', '[ebp+var_9C],eax']
+  4202489, ['cmp', 'eax,9CD7A9C2h']
+  4202495, ['jnz', 'shortloc_402016']
+ next: [4202497, 4202518]
+
+node :438
+node start(4200070) info:
+ start: 4200070
+ prev: []
+ instructions: 
+  4200070, ['cmp', 'eax,583C977Bh']
+  4200076, ['jz', 'shortloc_40169A']
+ next: [4200078, 4200090]
+
+node :439
+node start(4199771) info:
+ start: 4199771
+ prev: []
+ instructions: 
+  4199771, ['sub', '[ebp+var_184],eax']
+  4199777, ['mov', '[ebp+flOldProtect],eax']
+ next: [4199783]
+
+node :440
+node start(4201231) info:
+ start: 4201231
+ prev: []
+ instructions: 
+  4201231, ['cmp', 'eax,0F5h']
+  4201237, ['jnz', 'short$+2']
+ next: [4201239, 4201239]
+
+node :441
+node start(4204482) info:
+ start: 4204482
+ prev: []
+ instructions: 
+  4204482, ['cmp', 'eax,58h']
+  4204485, ['jnz', 'shortloc_4027D3']
+ next: [4204487, 4204499]
+
+node :442
+node start(4204140) info:
+ start: 4204140
+ prev: []
+ instructions: 
+  4204140, ['push', '0;hTemplateFile']
+  4204142, ['push', '1A5h;dwFlagsAndAttributes']
+  4204147, ['push', '3;dwCreationDisposition']
+  4204149, ['push', '0;lpSecurityAttributes']
+  4204151, ['push', '0;dwShareMode']
+  4204153, ['push', '20000000h;dwDesiredAccess']
+  4204158, ['push', 'offseta3lroslnaxr_2ft;"3LRosLnaXr.2fT"']
+  4204163, ['call', 'ds:CreateFileW']
+  4204169, ['mov', '[ebp+var_15C],eax']
+ next: [4204175]
+
+node :443
+node start(4204395) info:
+ start: 4204395
+ prev: []
+ instructions: 
+  4204395, ['cmp', 'eax,9E9A7E65h']
+  4204401, ['jz', 'shortloc_40278A']
+ next: [4204403, 4204426]
+
+node :444
+node start(4202762) info:
+ start: 4202762
+ prev: []
+ instructions: 
+  4202762, ['xor', '[ebp+var_C],eax']
+  4202765, ['cmp', 'eax,1EF98A79h']
+  4202771, ['jnz', 'short$+2']
+ next: [4202773, 4202773]
+
+node :445
+node start(4201710) info:
+ start: 4201710
+ prev: []
+ instructions: 
+  4201710, ['cmp', 'eax,249FA862h']
+  4201716, ['jz', 'shortloc_401D02']
+ next: [4201718, 4201730]
+
+node :446
+node start(4201084) info:
+ start: 4201084
+ prev: []
+ instructions: 
+  4201084, ['cmp', 'eax,4Dh']
+  4201087, ['jnz', 'short$+2']
+ next: [4201089, 4201089]
+
+node :447
+node start(4202904) info:
+ start: 4202904
+ prev: []
+ instructions: 
+  4202904, ['add', '[ebp+var_188],eax']
+  4202910, ['mov', '[ebp+var_1C],eax']
+  4202913, ['or', '[ebp+var_30],eax']
+  4202916, ['and', '[ebp+var_8],eax']
+ next: [4202919]
+
+node :448
+node start(4203230) info:
+ start: 4203230
+ prev: []
+ instructions: 
+  4203230, ['push', '2Bh;nIndex']
+  4203232, ['call', 'ds:GetSystemMetrics']
+  4203238, ['add', '[ebp+var_138],eax']
+ next: [4203244]
+
+node :449
+node start(4204367) info:
+ start: 4204367
+ prev: []
+ instructions: 
+  4204367, ['mov', '[ebp+var_11C],eax']
+  4204373, ['mov', '[ebp+var_10],eax']
+ next: [4204376]
+
+node :450
+node start(4202125) info:
+ start: 4202125
+ prev: []
+ instructions: 
+  4202125, ['or', '[ebp+var_154],eax']
+  4202131, ['mov', '[ebp+var_48],eax']
+  4202134, ['cmp', 'eax,22h']
+  4202137, ['jz', 'shortloc_401F0B']
+ next: [4202139, 4202251]
+
+node :451
+node start(4201679) info:
+ start: 4201679
+ prev: []
+ instructions: 
+  4201679, ['cmp', 'eax,57h']
+  4201682, ['jnz', 'short$+2']
+ next: [4201684, 4201684]
+
+node :452
+node start(4204403) info:
+ start: 4204403
+ prev: []
+ instructions: 
+  4204403, ['cmp', 'eax,0CC30A244h']
+  4204409, ['jnz', 'shortloc_40278A']
+ next: [4204411, 4204426]
+
+node :453
+node start(4204175) info:
+ start: 4204175
+ prev: []
+ instructions: 
+  4204175, ['sub', '[ebp+flOldProtect],eax']
+ next: [4204181]
+
+node :454
+node start(4204487) info:
+ start: 4204487
+ prev: []
+ instructions: 
+  4204487, ['call', 'ds:GetCommandLineW']
+  4204493, ['mov', '[ebp+var_EC],eax']
+ next: [4204499]
+
+node :455
+node start(4203609) info:
+ start: 4203609
+ prev: []
+ instructions: 
+  4203609, ['mov', '[ebp+var_DC],eax']
+ next: [4203615]
+
+node :456
+node start(4201089) info:
+ start: 4201089
+ prev: []
+ instructions: 
+  4201089, ['sub', '[ebp+var_124],eax']
+  4201095, ['cmp', 'eax,57h']
+  4201098, ['jz', 'short$+2']
+ next: [4201100, 4201100]
+
+node :457
+node start(4199918) info:
+ start: 4199918
+ prev: []
+ instructions: 
+  4199918, ['or', '[ebp+var_A8],eax']
+  4199924, ['cmp', 'eax,15h']
+  4199927, ['jz', 'short$+2']
+ next: [4199929, 4199929]
+
+node :458
+node start(4202357) info:
+ start: 4202357
+ prev: []
+ instructions: 
+  4202357, ['mov', '[ebp+var_A4],eax']
+ next: [4202363]
+
+node :459
+node start(4202251) info:
+ start: 4202251
+ prev: []
+ instructions: 
+  4202251, ['mov', '[ebp+var_CC],eax']
+ next: [4202257]
+
+node :460
+node start(4201684) info:
+ start: 4201684
+ prev: []
+ instructions: 
+  4201684, ['mov', '[ebp+var_140],eax']
+ next: [4201690]
+
+node :461
+node start(4202776) info:
+ start: 4202776
+ prev: []
+ instructions: 
+  4202776, ['call', 'ds:GetCurrentProcess']
+  4202782, ['sub', '[ebp+var_108],eax']
+  4202788, ['push', '[ebp+var_15C];hFile']
+  4202794, ['call', 'ds:GetFileType']
+  4202800, ['and', 'eax,eax']
+  4202802, ['jnz', 'loc_40197A']
+ next: [4200826, 4202808]
+
+node :462
+node start(4200078) info:
+ start: 4200078
+ prev: []
+ instructions: 
+  4200078, ['call', 'ds:GetEnvironmentStringsW']
+  4200084, ['mov', '[ebp+var_18C],eax']
+ next: [4200090]
+
+node :463
+node start(4198731) info:
+ start: 4198731
+ prev: []
+ instructions: 
+  4198731, ['mov', '[ebp+var_70],eax']
+ next: [4198734]
+
+node :464
+node start(4204347) info:
+ start: 4204347
+ prev: []
+ instructions: 
+  4204347, ['call', 'ds:GetCommandLineA']
+  4204353, ['mov', '[ebp+var_EC],eax']
+ next: [4204359]
+
+node :465
+node start(4204328) info:
+ start: 4204328
+ prev: []
+ instructions: 
+  4204328, ['or', '[ebp+var_108],eax']
+ next: [4204334]
+
+node :466
+node start(4203249) info:
+ start: 4203249
+ prev: []
+ instructions: 
+  4203249, ['or', '[ebp+var_68],eax']
+  4203252, ['mov', '[ebp+var_140],eax']
+ next: [4203258]
+
+node :467
+node start(4201598) info:
+ start: 4201598
+ prev: []
+ instructions: 
+  4201598, ['mov', '[ebp+var_70],eax']
+  4201601, ['and', '[ebp+var_100],eax']
+ next: [4201607]
+
+node :468
+node start(4204426) info:
+ start: 4204426
+ prev: []
+ instructions: 
+  4204426, ['xor', '[ebp+var_148],eax']
+ next: [4204432]
+
+node :469
+node start(4201730) info:
+ start: 4201730
+ prev: []
+ instructions: 
+  4201730, ['sub', '[ebp+var_154],eax']
+ next: [4201736]
+
+node :470
+node start(4201638) info:
+ start: 4201638
+ prev: []
+ instructions: 
+  4201638, ['call', 'ds:GetFocus']
+  4201644, ['mov', '[ebp+var_15C],eax']
+ next: [4201650]
+
+node :471
+node start(4202518) info:
+ start: 4202518
+ prev: []
+ instructions: 
+  4202518, ['mov', '[ebp+var_CC],eax']
+  4202524, ['or', '[ebp+var_CC],eax']
+ next: [4202530]
+
+node :472
+node start(4201239) info:
+ start: 4201239
+ prev: []
+ instructions: 
+  4201239, ['mov', '[ebp+var_114],eax']
+  4201245, ['or', '[ebp+var_38],eax']
+ next: [4201248]
+
+node :473
+node start(4198975) info:
+ start: 4198975
+ prev: []
+ instructions: 
+  4198975, ['push', '0;lpFileSizeHigh']
+  4198977, ['push', '[ebp+hFile];hFile']
+ next: [4198983]
+
+node :474
+node start(4200640) info:
+ start: 4200640
+ prev: []
+ instructions: 
+  4200640, ['jmp', 'loc_401247']
+ next: [4198983]
+
+node :475
+node start(4199789) info:
+ start: 4199789
+ prev: []
+ instructions: 
+  4199789, ['or', '[ebp+var_168],eax']
+ next: [4199795]
+
+node :476
+node start(4201100) info:
+ start: 4201100
+ prev: []
+ instructions: 
+  4201100, ['add', '[ebp+var_130],eax']
+ next: [4201106]
+
+node :477
+node start(4199352) info:
+ start: 4199352
+ prev: []
+ instructions: 
+  4199352, ['call', 'ds:GetEnvironmentStrings']
+  4199358, ['mov', '[ebp+var_24],eax']
+ next: [4199361]
+
+node :478
+node start(4201718) info:
+ start: 4201718
+ prev: []
+ instructions: 
+  4201718, ['mov', '[ebp+var_154],eax']
+  4201724, ['mov', '[ebp+var_40],eax']
+  4201727, ['or', '[ebp+var_7C],eax']
+ next: [4201730]
+
+node :479
+node start(4199783) info:
+ start: 4199783
+ prev: []
+ instructions: 
+  4199783, ['and', '[ebp+var_7C],eax']
+  4199786, ['add', '[ebp+var_7C],eax']
+ next: [4199789]
+
+node :480
+node start(4202236) info:
+ start: 4202236
+ prev: []
+ instructions: 
+  4202236, ['or', '[ebp+var_4],eax']
+  4202239, ['or', '[ebp+var_154],eax']
+  4202245, ['sub', '[ebp+var_198],eax']
+ next: [4202251]
+
+node :481
+node start(4200090) info:
+ start: 4200090
+ prev: []
+ instructions: 
+  4200090, ['or', '[ebp+var_C0],eax']
+ next: [4200096]
+
+node :482
+node start(4204319) info:
+ start: 4204319
+ prev: []
+ instructions: 
+  4204319, ['sub', '[ebp+var_184],eax']
+ next: [4204325]
+
+node :483
+node start(4204411) info:
+ start: 4204411
+ prev: []
+ instructions: 
+  4204411, ['mov', '[ebp+var_34],eax']
+  4204414, ['add', '[ebp+var_140],eax']
+  4204420, ['mov', '[ebp+var_17C],eax']
+ next: [4204426]
+
+node :484
+node start(4202497) info:
+ start: 4202497
+ prev: []
+ instructions: 
+  4202497, ['sub', '[ebp+flOldProtect],eax']
+  4202503, ['mov', '[ebp+var_128],eax']
+  4202509, ['add', '[ebp+var_70],eax']
+  4202512, ['or', '[ebp+var_174],eax']
+ next: [4202518]
+
+node :485
+node start(4203576) info:
+ start: 4203576
+ prev: []
+ instructions: 
+  4203576, ['mov', '[ebp+var_148],eax']
+ next: [4203582]
+
+node :486
+node start(4202941) info:
+ start: 4202941
+ prev: []
+ instructions: 
+  4202941, ['call', 'ds:GetFocus']
+  4202947, ['mov', '[ebp+var_84],eax']
+ next: [4202953]
+
+node :487
+node start(4199659) info:
+ start: 4199659
+ prev: []
+ instructions: 
+  4199659, ['and', '[ebp+var_108],eax']
+  4199665, ['or', '[ebp+var_100],eax']
+  4199671, ['and', '[ebp+var_70],eax']
+ next: [4199674]
+
+node :488
+node start(4200296) info:
+ start: 4200296
+ prev: []
+ instructions: 
+  4200296, ['and', '[ebp+var_40],eax']
+ next: [4200299]
+
+node :489
+node start(4199929) info:
+ start: 4199929
+ prev: []
+ instructions: 
+  4199929, ['mov', '[ebp+var_4],eax']
+ next: [4199932]
+
+node :490
+node start(4204325) info:
+ start: 4204325
+ prev: []
+ instructions: 
+  4204325, ['or', '[ebp+var_64],eax']
+ next: [4204328]
+
+node :491
+node start(4202230) info:
+ start: 4202230
+ prev: []
+ instructions: 
+  4202230, ['xor', '[ebp+var_144],eax']
+ next: [4202236]
+
+node :492
+node start(4202773) info:
+ start: 4202773
+ prev: []
+ instructions: 
+  4202773, ['jmp', '[ebp+var_3C]']
+ next: []
+
+node :493
+node start(4204499) info:
+ start: 4204499
+ prev: []
+ instructions: 
+  4204499, ['call', '[ebp+var_3C]']
+  4204502, ['leave']
+  4204503, ['retn']
+ next: []
+
+node :494
+node start(4202808) info:
+ start: 4202808
+ prev: []
+ instructions: 
+  4202808, ['push', '0;uExitCode']
+  4202810, ['call', 'ds:ExitProcess']
+ next: []
+
+node :495
+node Root info:
+ start: 0
+ prev: []
+ instructions: 
+ next: ['start(4198596)']
+
