@@ -103,8 +103,6 @@ def evaluate_model(model, batch_dataset):
     Returns
     results (dict): a dictionary for {'loss', 'accuracy'}
     """
-    # Not sure if the model could step throught the entire dataset
-    # in one pass, so will break it into batches as well
     outputs, labels, losses = [], [], []
     # loop through all val. batches
     for batch_id, ts_batch in enumerate(batch_dataset):
@@ -141,7 +139,7 @@ def main(arguments):
     """
     # other arguments are left intact as defaults, check config.py
     # add new arguments: model
-    args.d = 13  # the number of features (fixed)
+    args.d = 13  # for features
     args.c = 12  # the number of classes (fixed)
     args.batch_size = int(arguments[0])  # batch size
     args.path = str(arguments[1])  # the path to load the data

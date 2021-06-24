@@ -77,7 +77,7 @@ def get_all_block_info(graph):
 def interpret(step_size, feat, graph, node_mask, class_label, all_nodes, node_ordering, data_loader, model, explainer):
     """
     Main interpretability function: Algorithm 2
-    Will call CFGExplainer and obtain the class_probability, subgraphs, and node_order
+    Will call CFGExplainer and obtain the subgraphs, and node_order
     -------------------
     Args:
     step_size (int): the step size to prune graph from 100 -> 0 %
@@ -93,7 +93,6 @@ def interpret(step_size, feat, graph, node_mask, class_label, all_nodes, node_or
     ------------------
     Returns:
     block_order (str, [#nodes]): the node names ordered from most important -> least important w.r.t classification
-    classification_result (dict, key=graph_size, values=[calss.probability, num.nodes]): the classification result from GNN model
     subgraphs (dict, key=graph_size, value=pruned_graph): the pruned graphs
     time_taken (float): the time taken per graph
     """
@@ -178,7 +177,7 @@ def scaled_interpret_experiment(malware_name, class_label, graph_load_path, path
     will iteratively run the interpret() function on each graph
     -------------------
     Args:
-    malware_name (str): the namae of the malware
+    malware_name (str): the name of the malware
     class_label (int): the class label id of the malware
     graph_load_path (str): the path to load graphs
     model (tf.Model): the classifier tensorflor model
@@ -261,7 +260,7 @@ def main(arguments):
 
     # other arguments are left intact as defaults, check config.py
     # add new arguments: model
-    args.d = 13  # the number of features (fixed)
+    args.d = 13  # for features
     args.c = 12  # the number of classes (fixed)
     args.n = 4690  # the number of nodes, fixed for experiment
     args.batch_size = 1  # batch size

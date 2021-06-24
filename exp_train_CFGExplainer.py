@@ -106,7 +106,7 @@ def main(arguments):
     """
     # other arguments are left intact as defaults, check config.py
     # add new arguments: model
-    args.d = 13  # the number of features (fixed)
+    args.d = 13  # for features
     args.c = 12  # the number of classes (fixed)
     args.n = 4690  # the number of nodes in padded graph (fixed for experiment)
     args.batch_size = int(arguments[0])  # batch size
@@ -118,9 +118,6 @@ def main(arguments):
     args.dataset = str(arguments[5])  # 'yancfg_test'
     args.eepochs = int(arguments[6])  # [explainer] epochs 1000
     args.embnormlize = False  # keep this False: else the output becomes NaN
-
-    # add arguments: for logging results
-    # args.writer_path = None  # change this back !!! if we want to save the model!!
     
     args.writer_path = './logs/explainer/'  # wont change
     args.disable_tqdm = True  # make True to hide progress bar
