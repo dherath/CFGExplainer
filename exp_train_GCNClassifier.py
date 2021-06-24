@@ -139,7 +139,7 @@ def main(arguments):
     """
     # other arguments are left intact as defaults, check config.py
     # add new arguments: model
-    args.d = 13  # for features
+    args.d = 13  
     args.c = 12  # the number of classes (fixed)
     args.batch_size = int(arguments[0])  # batch size
     args.path = str(arguments[1])  # the path to load the data

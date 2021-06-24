@@ -1,4 +1,4 @@
-# CFGExplainer
+### CFGExplainer: Explaining Graph Neural Network-Based Malware Classification from Control Flow Graphs
 
 ![model](images/fig1_CFGExplainer-pipeline_v9_combined.jpg)
 
