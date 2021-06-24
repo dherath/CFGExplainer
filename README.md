@@ -15,7 +15,7 @@ This model produces a set of pruned subgraphs and an ordering of the nodes deeme
 
 The `interpretability_results/` folder stores the results for running CFGExplainer. For each graph sample the model stores the following:
 
-+ **results-top_blocks.txt**: the ordering of nodes from most important to least important w.r.t the classification task in text format. The file also includes the assembly instructions for each node.
++ **results_top_blocks.txt**: the ordering of nodes from most important to least important w.r.t the classification task in text format. The file also includes the assembly instructions for each node.
 + **top_blocks.pickle**: the ordering of the nodes saved in pickle format for later analysis if needed.
 + **subgraph_10percent.gpickle**: the subgraph from top 10% nodes in networkx graph pickle format.
 + **subgraph_20percent.gpickle**: the subgraph from top 20% nodes in networkx graph pickle format.
