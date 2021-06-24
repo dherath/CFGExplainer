@@ -1,6 +1,6 @@
 # CFGExplainer
 
-![model](images/fig1_CFGExplainer-pipeline_v9_combined.jpg){:width="540px"}
+![model](images/fig1_CFGExplainer-pipeline_v9_combined.jpg)
 
 CFGExplainer is an interpretability model designed to explain Graph Neural Network (GNN) based malware classification using Control Flow Graphs (CFGs).
 This model produces a set of pruned subgraphs and an ordering of the nodes deemed most usful for a classifcation task. The code provided here are for classification of 11 malware families (i.e., Bagle, Bifrose, Hupigon, Ldpinch, Lmir, Rbot, Sdbot, Swizzor, Vundo, Zbot and Zlob) and one benign class. The requirements for the experiments are in `requirements.txt`.
