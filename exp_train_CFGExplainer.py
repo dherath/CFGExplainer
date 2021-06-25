@@ -52,7 +52,7 @@ def train_CFGExplainer():
 
         # run a minibatch for each epoch
         losses, exp_outputs, labels = [], [], []
-        train_batch = train.shuffle(args.batch_size).batch(args.batch_size)  # removed the batch_size from here, the code only works for batch training?
+        train_batch = train.shuffle(args.batch_size).batch(args.batch_size)
         for batch_id, ts_batch in enumerate(train_batch):
 
             with tf.device(device):
