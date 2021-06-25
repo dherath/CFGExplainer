@@ -50,7 +50,6 @@ def train_CFGExplainer():
     # running the training epochs
     for epoch in tqdm(range(args.eepochs), disable=args.disable_tqdm):
 
-        # run a minibatch for each epoch
         losses, exp_outputs, labels = [], [], []
         train_batch = train.shuffle(args.batch_size).batch(args.batch_size)
         for batch_id, ts_batch in enumerate(train_batch):
