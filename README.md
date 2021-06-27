@@ -8,8 +8,8 @@ This model produces an ordered set of nodes with respect to its usefulness towar
 ### Running the code
 
 1. `run_train_GCNClassifier.sh`: will run the code for training the GNN classifier model.
-2. `run_train_CFGExplainer.sh`: will run the initial learning stage of CFGExplainer (Algorithm-1).
-3. `run_interpret_graphs.sh`: will run the interpret stage of CFGExplainer (Algorithm-2).
+2. `run_train_CFGExplainer.sh`: will run the initial learning stage of CFGExplainer.
+3. `run_interpret_graphs.sh`: will run the interpret stage of CFGExplainer.
 
 ### Interpretability Results
 
