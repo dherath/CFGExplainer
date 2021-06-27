@@ -261,7 +261,7 @@ def main(arguments):
     # other arguments are left intact as defaults, check config.py
     # add new arguments: model
     args.d = 13  
-    args.c = 12  # the number of classes (fixed)
+    args.c = 12  
     args.n = 4690  # the number of nodes, fixed for experiment
     args.batch_size = 1  # batch size
     args.path = str(arguments[0])  # the path to load the data
