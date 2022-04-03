@@ -21,9 +21,3 @@ The `interpretability_results/` folder stores the results for running CFGExplain
 + `subgraph_20percent.gpickle`: the subgraph from top 20% nodes in networkx graph pickle format.
 
 It is possible to save more graphs by changing the code in `exp_interpret_graphs.py`.
-
-```
-@inproceedings{
-
-}
-```
