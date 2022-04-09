@@ -20,4 +20,4 @@ The `interpretability_results/` folder stores the results for running CFGExplain
 + `subgraph_10percent.gpickle`: the subgraph from top 10% nodes in networkx graph pickle format.
 + `subgraph_20percent.gpickle`: the subgraph from top 20% nodes in networkx graph pickle format.
 
-For example, considering the `Bagle` malware family and sample name `Email-Worm.Win32.Bagle.cy.`. The results can be found folder `interpretability_results/Bagle/Email-Worm.Win32.Bagle.cy./`. The same folder pattern is followed for results saved for all other malware families. It is possible to save more graphs by changing the code in `exp_interpret_graphs.py` (line 235).
+For example, considering the `Bagle` malware family and sample name `Email-Worm.Win32.Bagle.cy.`. The results can be found in folder: `interpretability_results/Bagle/Email-Worm.Win32.Bagle.cy./`. The same folder pattern is followed for results saved for all other malware families. It is possible to save more graphs by changing the code in `exp_interpret_graphs.py` (line 235).
